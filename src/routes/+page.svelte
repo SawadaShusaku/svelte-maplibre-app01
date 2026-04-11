@@ -25,7 +25,7 @@
   }
 </script>
 
-<div class="flex h-screen w-full overflow-hidden">
+<div class="flex min-h-screen w-full overflow-hidden">
   <!-- サイドバー -->
   {#if sidebarOpen}
     <aside class="w-72 flex-shrink-0 flex flex-col bg-white shadow-lg z-10 overflow-hidden">
