@@ -7,12 +7,16 @@
     FullScreenControl,
     Marker,
     Popup,
+    GeoJSONSource,
+    LineLayer,
   } from 'svelte-maplibre-gl';
   import CategoryFilter from '$lib/components/CategoryFilter.svelte';
   import { CATEGORY_COLOR, CATEGORY_LABEL } from '$lib/categories.js';
   import { getFacilities, type GeoFeature } from '$lib/data.js';
   import { WARD_REGISTRY, groupByPrefecture } from '$lib/registry.js';
   import type { CategoryId } from '$lib/types.js';
+  import type { LineString } from 'geojson';
+  import maplibregl from 'maplibre-gl';
 
   const allCategories: CategoryId[] = [
     'battery', 'fluorescent', 'cooking-oil',
@@ -28,6 +32,13 @@
   let openPopupId = $state<string | null>(null);
   let sidebarOpen = $state(true);
   let facilities = $state<GeoFeature[]>([]);
+
+  let routeGeoJSON = $state<LineString | null>(null);
+  let routeInfo = $state<{ distance: number, duration: number } | null>(null);
+  let isFetchingRoute = $state(false);
+  let travelMode = $state<'foot' | 'bike' | 'car'>('foot');
+  let map = $state<maplibregl.Map | null>(null);
+  let routeError = $state<string | null>(null);
 
   $effect(() => {
     getFacilities(selectedCityKeys, selectedCategories).then((f) => {
@@ -52,6 +63,61 @@
 
   function selectFacility(id: string) {
     openPopupId = openPopupId === id ? null : id;
+  }
+
+  async function getRoute(facility: GeoFeature) {
+    isFetchingRoute = true;
+    routeGeoJSON = null;
+    routeInfo = null;
+    routeError = null;
+
+    try {
+      const userCoords = await new Promise<GeolocationCoordinates>((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => resolve(pos.coords),
+          (err) => reject(err)
+        );
+      });
+
+      const [lng1, lat1] = [userCoords.longitude, userCoords.latitude];
+      const [lng2, lat2] = facility.geometry.coordinates;
+
+      const url = `https://router.project-osrm.org/route/v1/${travelMode}/${lng1},${lat1};${lng2},${lat2}?overview=full&geometries=geojson`;
+
+      const res = await fetch(url);
+      if (!res.ok) {
+        throw new Error(`Failed to fetch route: ${res.statusText}`);
+      }
+      const data = await res.json();
+
+      if (data.routes && data.routes.length > 0) {
+        const route = data.routes[0];
+        routeGeoJSON = route.geometry;
+        routeInfo = {
+          distance: route.distance,
+          duration: route.duration,
+        };
+
+        if (map && routeGeoJSON) {
+          const bounds = routeGeoJSON.coordinates.reduce(
+            (b, coord) => b.extend(coord as [number, number]),
+            new maplibregl.LngLatBounds(routeGeoJSON.coordinates[0] as [number, number], routeGeoJSON.coordinates[0] as [number, number])
+          );
+          map.fitBounds(bounds, { padding: 80 });
+        }
+      } else {
+        throw new Error('No route found');
+      }
+    } catch (err) {
+      console.error('Error getting route:', err);
+      if (err instanceof GeolocationPositionError) {
+        routeError = `位置情報の取得に失敗しました: ${err.message}`;
+      } else {
+        routeError = '経路の取得に失敗しました。ネットワーク接続を確認するか、時間をおいて再度お試しください。';
+      }
+    } finally {
+      isFetchingRoute = false;
+    }
   }
 
   function pinGradientId(id: string) {
@@ -149,7 +215,28 @@
       >施設一覧</button>
     {/if}
 
+    {#if routeInfo}
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white shadow-lg rounded-lg px-4 py-3 flex items-center gap-4">
+        <div>
+          <p class="text-sm font-medium text-gray-800">
+            距離: <span class="font-bold">{(routeInfo.distance / 1000).toFixed(1)}</span> km
+          </p>
+          <p class="text-sm font-medium text-gray-800">
+            所要時間: <span class="font-bold">{Math.round(routeInfo.duration / 60)}</span> 分
+          </p>
+        </div>
+        <button
+          onclick={() => { routeGeoJSON = null; routeInfo = null; }}
+          class="flex-shrink-0 w-7 h-7 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors"
+          aria-label="経路を消去"
+        >
+          ✕
+        </button>
+      </div>
+    {/if}
+
     <MapLibre
+      bind:map={map}
       class="h-full w-full"
       style="https://tiles.openfreemap.org/styles/liberty"
       center={[139.745, 35.710]}
@@ -158,6 +245,23 @@
       <NavigationControl position="top-right" />
       <GeolocateControl position="top-right" />
       <FullScreenControl position="top-right" />
+
+      {#if routeGeoJSON}
+        <GeoJSONSource id="route" data={routeGeoJSON}>
+          <LineLayer
+            id="route-line"
+            paint={{
+              'line-color': '#007cbf',
+              'line-width': 6,
+              'line-opacity': 0.8,
+            }}
+            layout={{
+              'line-join': 'round',
+              'line-cap': 'round',
+            }}
+          />
+        </GeoJSONSource>
+      {/if}
 
       {#each facilities as feature (feature.properties.id)}
         {@const { id, name, address, categories, hours, notes, prefecture } = feature.properties}
@@ -237,6 +341,37 @@
                 </div>
                 {#if hours}<p class="text-xs text-gray-500 mt-0.5">{hours}</p>{/if}
                 {#if notes}<p class="text-xs text-gray-400 mt-0.5">{notes}</p>{/if}
+
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <label for="travel-mode-{id}" class="text-sm font-medium text-gray-600">交通手段:</label>
+                      <select
+                        id="travel-mode-{id}"
+                        bind:value={travelMode}
+                        class="block w-auto rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      >
+                        <option value="foot">徒歩</option>
+                        <option value="bike">自転車</option>
+                        <option value="car">車</option>
+                      </select>
+                    </div>
+                    <button
+                      onclick={() => getRoute(feature)}
+                      disabled={isFetchingRoute}
+                      class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {#if isFetchingRoute}
+                        検索中...
+                      {:else}
+                        経路を検索
+                      {/if}
+                    </button>
+                  </div>
+                  {#if routeError}
+                    <p class="text-sm text-red-600 mt-2">{routeError}</p>
+                  {/if}
+                </div>
               </div>
             </div>
           </Popup>

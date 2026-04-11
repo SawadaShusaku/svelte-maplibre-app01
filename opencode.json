@@ -1,0 +1,43 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (local)",
+      "options": { "baseURL": "http://127.0.0.1:1234/v1" },
+      "models": {
+        "qwen3-coder-30b": { "name": "Qwen3 Coder 30B (local)" },
+        "glm-4.7-flash": { "name": "GLM-4.7-Flash (local)" },
+        "devstral-small-2": { "name": "Devstral Small 2 (local)" }
+      }
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "options": { "baseURL": "https://api.anthropic.com/v1" }
+    }
+  },
+  "model": "lmstudio/qwen3-coder-30b",
+  "small_model": "lmstudio/glm-4.7-flash",
+  "agent": {
+    "local-heavy": {
+      "description": "ローカル高品質（普段の実装）",
+      "model": "lmstudio/qwen3-coder-30b",
+      "mode": "primary"
+    },
+    "local-light": {
+      "description": "ローカル軽量（雑タスク）",
+      "model": "lmstudio/glm-4.7-flash",
+      "mode": "primary"
+    },
+    "opus": {
+      "description": "クラウド最強（設計/難バグ/最終レビュー）",
+      "model": "anthropic/claude-opus-4-5-20251101",
+      "mode": "primary"
+    },
+    "sonnet": {
+      "description": "クラウド高速（広めの作業）",
+      "model": "anthropic/claude-sonnet-4-5-20250929",
+      "mode": "primary"
+    }
+  }
+}
