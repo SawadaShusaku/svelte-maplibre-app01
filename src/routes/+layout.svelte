@@ -9,6 +9,4 @@
   </div>
 </header>
 
-<main class="pt-16 md:pt-20">
-  <slot />
- </main>
+<slot />
