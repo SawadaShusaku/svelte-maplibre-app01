@@ -1,7 +1,6 @@
 import type { CategoryId, RecycleFacility } from './types.js';
-import toshimaData from './data/toshima.geojson';
 
-interface GeoFeature {
+export interface GeoFeature {
   type: 'Feature';
   geometry: { type: 'Point'; coordinates: [number, number] };
   properties: RecycleFacility;
@@ -12,15 +11,40 @@ interface GeoFeatureCollection {
   features: GeoFeature[];
 }
 
-const geojson = toshimaData as unknown as GeoFeatureCollection;
+// Vite が src/lib/data/**/*.geojson をすべて遅延インポート可能にする
+const dataFiles = import.meta.glob<{ default: GeoFeatureCollection }>(
+  './data/**/*.geojson'
+);
 
-export function getFacilities(selectedCategories: CategoryId[]): GeoFeature[] {
-  if (selectedCategories.length === 0) return [];
-  return geojson.features.filter((f) =>
-    f.properties.categories.some((c) => selectedCategories.includes(c))
-  );
+/** prefecture/city に対応する GeoJSON を動的ロード */
+export async function loadWard(prefecture: string, city: string): Promise<GeoFeature[]> {
+  const key = `./data/${prefecture}/${city}.geojson`;
+  const loader = dataFiles[key];
+  if (!loader) {
+    console.warn(`データファイルが見つかりません: ${key}`);
+    return [];
+  }
+  const mod = await loader();
+  return mod.default.features;
 }
 
-export function getAllFacilities(): GeoFeature[] {
-  return geojson.features;
+/** 選択中の区リストに対応する施設をロード・フィルタして返す */
+export async function getFacilities(
+  selectedCities: string[],
+  selectedCategories: CategoryId[]
+): Promise<GeoFeature[]> {
+  if (selectedCities.length === 0 || selectedCategories.length === 0) return [];
+
+  const allFeatures = (
+    await Promise.all(
+      selectedCities.map((cityKey) => {
+        const [prefecture, city] = cityKey.split('/');
+        return loadWard(prefecture, city);
+      })
+    )
+  ).flat();
+
+  return allFeatures.filter((f) =>
+    f.properties.categories.some((c) => selectedCategories.includes(c))
+  );
 }

@@ -3,11 +3,14 @@ export type CategoryId =
   | 'fluorescent'
   | 'cooking-oil'
   | 'ink-cartridge'
-  | 'small-appliance';
+  | 'small-appliance'
+  | 'used-clothing';
 
 export interface RecycleFacility {
   id: string;
-  ward: string;
+  prefecture: string;
+  city: string;
+  cityLabel: string;
   name: string;
   address: string;
   categories: CategoryId[];

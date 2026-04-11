@@ -12,6 +12,7 @@ export const CATEGORIES: CategoryDef[] = [
   { id: 'cooking-oil',   label: '廃食油',             color: '#F97316' },
   { id: 'ink-cartridge', label: 'インクカートリッジ', color: '#3B82F6' },
   { id: 'small-appliance', label: '小型家電',         color: '#A855F7' },
+  { id: 'used-clothing',  label: '古布',             color: '#EC4899' },
 ];
 
 export const CATEGORY_COLOR: Record<CategoryId, string> = Object.fromEntries(

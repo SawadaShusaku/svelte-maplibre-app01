@@ -12,7 +12,9 @@
       },
       "properties": {
         "id": "toshima-001",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "池袋図書館",
         "address": "豊島区池袋3-29-10",
         "categories": [
@@ -33,7 +35,9 @@
       },
       "properties": {
         "id": "toshima-002",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "みらい館大明",
         "address": "豊島区池袋3-30-8",
         "categories": [
@@ -56,7 +60,9 @@
       },
       "properties": {
         "id": "toshima-003",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "豊島清掃事務所",
         "address": "豊島区池袋本町1-7-3",
         "categories": [
@@ -79,7 +85,9 @@
       },
       "properties": {
         "id": "toshima-004",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "サミットストア巣鴨店",
         "address": "豊島区巣鴨1-15-2",
         "categories": [
@@ -100,7 +108,9 @@
       },
       "properties": {
         "id": "toshima-005",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "西友巣鴨店",
         "address": "豊島区巣鴨2-6-1",
         "categories": [
@@ -121,7 +131,9 @@
       },
       "properties": {
         "id": "toshima-006",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "巣鴨図書館",
         "address": "豊島区巣鴨3-8-2",
         "categories": [
@@ -142,7 +154,9 @@
       },
       "properties": {
         "id": "toshima-007",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区役所東池袋分庁舎",
         "address": "豊島区東池袋1-39-2",
         "categories": [
@@ -163,7 +177,9 @@
       },
       "properties": {
         "id": "toshima-008",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "中央図書館",
         "address": "豊島区東池袋4-5-2",
         "categories": [
@@ -185,7 +201,9 @@
       },
       "properties": {
         "id": "toshima-009",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "西友サンシャイン店",
         "address": "豊島区東池袋4-27-10",
         "categories": [
@@ -206,7 +224,9 @@
       },
       "properties": {
         "id": "toshima-010",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区役所本庁舎",
         "address": "豊島区南池袋2-45-1",
         "categories": [
@@ -230,7 +250,9 @@
       },
       "properties": {
         "id": "toshima-011",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば池袋",
         "address": "豊島区池袋4-21-10",
         "categories": [
@@ -252,7 +274,9 @@
       },
       "properties": {
         "id": "toshima-012",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば豊成",
         "address": "豊島区上池袋1-28-7",
         "categories": [
@@ -275,7 +299,9 @@
       },
       "properties": {
         "id": "toshima-013",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば上池袋",
         "address": "豊島区上池袋3-13-5",
         "categories": [
@@ -296,7 +322,9 @@
       },
       "properties": {
         "id": "toshima-014",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば駒込",
         "address": "豊島区駒込2-2-4",
         "categories": [
@@ -318,7 +346,9 @@
       },
       "properties": {
         "id": "toshima-015",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば仰高",
         "address": "豊島区駒込4-12-3",
         "categories": [
@@ -341,7 +371,9 @@
       },
       "properties": {
         "id": "toshima-016",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば清和第一",
         "address": "豊島区巣鴨3-15-20",
         "categories": [
@@ -365,7 +397,9 @@
       },
       "properties": {
         "id": "toshima-017",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば朝日",
         "address": "豊島区西巣鴨4-10-12",
         "categories": [
@@ -386,7 +420,9 @@
       },
       "properties": {
         "id": "toshima-018",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "雑司が谷地域文化創造館",
         "address": "豊島区雑司が谷3-1-7",
         "categories": [
@@ -409,7 +445,9 @@
       },
       "properties": {
         "id": "toshima-019",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば高南第一",
         "address": "豊島区高田2-11-2",
         "categories": [
@@ -431,7 +469,9 @@
       },
       "properties": {
         "id": "toshima-020",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば高南第二",
         "address": "豊島区高田3-38-7",
         "categories": [
@@ -453,7 +493,9 @@
       },
       "properties": {
         "id": "toshima-021",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば高松",
         "address": "豊島区高松2-25-9",
         "categories": [
@@ -475,7 +517,9 @@
       },
       "properties": {
         "id": "toshima-022",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "西部区民事務所",
         "address": "豊島区千早2-39-16",
         "categories": [
@@ -498,7 +542,9 @@
       },
       "properties": {
         "id": "toshima-023",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば長崎",
         "address": "豊島区長崎2-27-18",
         "categories": [
@@ -520,7 +566,9 @@
       },
       "properties": {
         "id": "toshima-024",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば西巣鴨第一",
         "address": "豊島区西巣鴨2-35-3",
         "categories": [
@@ -543,7 +591,9 @@
       },
       "properties": {
         "id": "toshima-025",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "シルバー人材センター",
         "address": "豊島区東池袋2-55-6",
         "categories": [
@@ -565,7 +615,9 @@
       },
       "properties": {
         "id": "toshima-026",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば南池袋",
         "address": "豊島区南池袋3-5-12",
         "categories": [
@@ -587,7 +639,9 @@
       },
       "properties": {
         "id": "toshima-027",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "東部区民事務所",
         "address": "豊島区南大塚2-36-2",
         "categories": [
@@ -609,7 +663,9 @@
       },
       "properties": {
         "id": "toshima-028",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば富士見台",
         "address": "豊島区南長崎1-6-1",
         "categories": [
@@ -632,7 +688,9 @@
       },
       "properties": {
         "id": "toshima-029",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろばさくら第一",
         "address": "豊島区南長崎6-20-15",
         "categories": [
@@ -654,7 +712,9 @@
       },
       "properties": {
         "id": "toshima-030",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば目白",
         "address": "豊島区目白2-20-26",
         "categories": [
@@ -677,7 +737,9 @@
       },
       "properties": {
         "id": "toshima-031",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "巣鴨信用金庫池袋支店",
         "address": "豊島区池袋2-48-1",
         "categories": [
@@ -698,7 +760,9 @@
       },
       "properties": {
         "id": "toshima-032",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "HIRAKU 01",
         "address": "豊島区上池袋2-2-15",
         "categories": [
@@ -719,7 +783,9 @@
       },
       "properties": {
         "id": "toshima-033",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "巣鴨信用金庫本店営業部",
         "address": "豊島区巣鴨2-10-2",
         "categories": [
@@ -740,7 +806,9 @@
       },
       "properties": {
         "id": "toshima-034",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "豊島リサイクルセンター",
         "address": "豊島区北大塚3-29-11",
         "categories": [
@@ -763,7 +831,9 @@
       },
       "properties": {
         "id": "toshima-035",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば要",
         "address": "豊島区要町1-5-1",
         "categories": [
@@ -785,7 +855,9 @@
       },
       "properties": {
         "id": "toshima-036",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば千早",
         "address": "豊島区要町3-7-10",
         "categories": [
@@ -807,7 +879,9 @@
       },
       "properties": {
         "id": "toshima-037",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "駒込地域文化創造館",
         "address": "豊島区駒込2-2-2",
         "categories": [
@@ -830,7 +904,9 @@
       },
       "properties": {
         "id": "toshima-038",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "巣鴨地域文化創造館",
         "address": "豊島区巣鴨4-15-11",
         "categories": [
@@ -853,7 +929,9 @@
       },
       "properties": {
         "id": "toshima-039",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "としま産業振興プラザIKE・Biz",
         "address": "豊島区西池袋2-37-4",
         "categories": [
@@ -875,7 +953,9 @@
       },
       "properties": {
         "id": "toshima-040",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろば朋有",
         "address": "豊島区東池袋2-38-10",
         "categories": [
@@ -897,7 +977,9 @@
       },
       "properties": {
         "id": "toshima-041",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "南大塚地域文化創造館",
         "address": "豊島区南大塚2-36-1",
         "categories": [
@@ -919,7 +1001,9 @@
       },
       "properties": {
         "id": "toshima-042",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "区民ひろばさくら第二",
         "address": "豊島区長崎6-37-11",
         "categories": [
@@ -941,7 +1025,9 @@
       },
       "properties": {
         "id": "toshima-043",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "東部障害支援センター",
         "address": "豊島区南大塚2-36-2",
         "categories": [
@@ -962,7 +1048,9 @@
       },
       "properties": {
         "id": "toshima-044",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "千早地域文化創造館",
         "address": "豊島区千早2-35-12",
         "categories": [
@@ -983,7 +1071,9 @@
       },
       "properties": {
         "id": "toshima-045",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "千早図書館",
         "address": "豊島区千早2-44-2",
         "categories": [
@@ -1004,7 +1094,9 @@
       },
       "properties": {
         "id": "toshima-046",
-        "ward": "toshima",
+        "prefecture": "tokyo",
+        "city": "toshima",
+        "cityLabel": "豊島区",
         "name": "北大塚区民事務所",
         "address": "豊島区北大塚1-15-10",
         "categories": [
