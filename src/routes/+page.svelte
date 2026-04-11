@@ -6,6 +6,7 @@
     FullScreenControl,
     Marker,
   } from 'svelte-maplibre-gl';
+  import 'maplibre-gl/dist/maplibre-gl.css';
 </script>
 
 <MapLibre 
