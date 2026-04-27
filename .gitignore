@@ -64,5 +64,14 @@ dist
 yarn.lock
 pnpm-lock.yaml
 
+# Backup files
+*.bak
+
+# jj version control
+.jj/
+
+# Build artifacts
+static/recycling.db
+
 # Ensure we keep specs tracked
 !openspec/

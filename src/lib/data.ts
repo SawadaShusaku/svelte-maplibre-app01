@@ -1,50 +1,116 @@
-import type { CategoryId, RecycleFacility } from './types.js';
+import { browser } from '$app/environment';
+import { initDatabase, getRepository } from './db';
+import type { Repository } from './db';
+import type { FacilityWithCategories } from './db/types';
 
 export interface GeoFeature {
-  type: 'Feature';
-  geometry: { type: 'Point'; coordinates: [number, number] };
-  properties: RecycleFacility;
+	type: 'Feature';
+	geometry: { type: 'Point'; coordinates: [number, number] };
+	properties: {
+		id: string;
+		prefecture: string;
+		city: string;
+		cityLabel: string;
+		name: string;
+		address: string;
+		categories: string[];
+		hours: string | null;
+		notes: string | null;
+	};
 }
 
-interface GeoFeatureCollection {
-  type: 'FeatureCollection';
-  features: GeoFeature[];
+// Initialize database on first load (client-side only)
+let dbInitialized = false;
+
+async function ensureDb(): Promise<Repository> {
+	if (!browser) {
+		throw new Error('Database can only be accessed in the browser');
+	}
+	if (!dbInitialized) {
+		await initDatabase();
+		dbInitialized = true;
+	}
+	return getRepository();
 }
 
-// Vite が src/lib/data/**/*.geojson をすべて遅延インポート可能にする
-const dataFiles = import.meta.glob<{ default: GeoFeatureCollection }>(
-  './data/**/*.geojson'
-);
-
-/** prefecture/city に対応する GeoJSON を動的ロード */
-export async function loadWard(prefecture: string, city: string): Promise<GeoFeature[]> {
-  const key = `./data/${prefecture}/${city}.geojson`;
-  const loader = dataFiles[key];
-  if (!loader) {
-    console.warn(`データファイルが見つかりません: ${key}`);
-    return [];
-  }
-  const mod = await loader();
-  return mod.default.features;
-}
-
-/** 選択中の区リストに対応する施設をロード・フィルタして返す */
+/**
+ * Load facilities for selected wards and categories
+ */
 export async function getFacilities(
-  selectedCities: string[],
-  selectedCategories: CategoryId[]
+	selectedCities: string[],
+	selectedCategories: string[]
 ): Promise<GeoFeature[]> {
-  if (selectedCities.length === 0 || selectedCategories.length === 0) return [];
+	// Convert city keys to ward IDs (e.g., "tokyo/toshima" -> "toshima")
+	const wardIds = selectedCities.map(key => key.split('/')[1]).filter(Boolean);
+	
+	const repo = await ensureDb();
+	const facilities = repo.getFacilities(wardIds, selectedCategories);
+	
+	// Convert to GeoJSON format
+	return facilities.map(f => ({
+		type: 'Feature' as const,
+		geometry: {
+			type: 'Point' as const,
+			coordinates: [f.longitude, f.latitude] as [number, number]
+		},
+		properties: {
+			id: f.id,
+			prefecture: 'tokyo',
+			city: f.ward_id,
+			cityLabel: getWardLabel(f.ward_id),
+			name: f.name,
+			address: f.address,
+			categories: f.categories,
+			hours: f.hours,
+			notes: f.notes
+		}
+	}));
+}
 
-  const allFeatures = (
-    await Promise.all(
-      selectedCities.map((cityKey) => {
-        const [prefecture, city] = cityKey.split('/');
-        return loadWard(prefecture, city);
-      })
-    )
-  ).flat();
+/**
+ * Get available categories for selected wards
+ */
+export async function getAvailableCategories(wardIds: string[]): Promise<string[]> {
+	const repo = await ensureDb();
+	const categories = repo.getAvailableCategories(wardIds);
+	return categories.map(c => c.id);
+}
 
-  return allFeatures.filter((f) =>
-    f.properties.categories.some((c) => selectedCategories.includes(c))
-  );
+/**
+ * Search facilities by query
+ */
+export async function searchFacilities(
+	query: string,
+	wardIds: string[]
+): Promise<GeoFeature[]> {
+	const repo = await ensureDb();
+	const facilities = repo.searchFacilities(query, wardIds);
+	
+	return facilities.map(f => ({
+		type: 'Feature' as const,
+		geometry: {
+			type: 'Point' as const,
+			coordinates: [f.longitude, f.latitude] as [number, number]
+		},
+		properties: {
+			id: f.id,
+			prefecture: 'tokyo',
+			city: f.ward_id,
+			cityLabel: getWardLabel(f.ward_id),
+			name: f.name,
+			address: f.address,
+			categories: f.categories,
+			hours: f.hours,
+			notes: f.notes
+		}
+	}));
+}
+
+// Helper to get ward label
+function getWardLabel(wardId: string): string {
+	const labels: Record<string, string> = {
+		toshima: '豊島区',
+		chiyoda: '千代田区'
+	};
+	return labels[wardId] || wardId;
 }

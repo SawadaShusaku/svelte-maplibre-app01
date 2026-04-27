@@ -1,68 +1,201 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
   import 'maplibre-gl/dist/maplibre-gl.css';
   import {
     MapLibre,
     NavigationControl,
     GeolocateControl,
     FullScreenControl,
-    Marker,
-    Popup,
+    AttributionControl,
     GeoJSONSource,
     LineLayer,
+    Marker,
+    Popup
   } from 'svelte-maplibre-gl';
-  import CategoryFilter from '$lib/components/CategoryFilter.svelte';
-  import { CATEGORY_COLOR, CATEGORY_LABEL } from '$lib/categories.js';
-  import { getFacilities, type GeoFeature } from '$lib/data.js';
-  import { WARD_REGISTRY, groupByPrefecture } from '$lib/registry.js';
-  import type { CategoryId } from '$lib/types.js';
-  import type { LineString } from 'geojson';
   import maplibregl from 'maplibre-gl';
+  import { ChevronRight, Footprints, Bike, Car, ExternalLink } from 'lucide-svelte';
+  import { fly } from 'svelte/transition';
 
+  import AppHeader from '$lib/components/AppHeader.svelte';
+  import SettingsSidebar from '$lib/components/SettingsSidebar.svelte';
+  import MapMarker from '$lib/components/MapMarker.svelte';
+  import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
+  import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
+  import { getFacilities, type GeoFeature } from '$lib/data.js';
+  import { WARD_REGISTRY } from '$lib/registry.js';
+  import type { CategoryId, MarkerStyle } from '$lib/types.js';
+  import type { LineString } from 'geojson';
+
+  // カテゴリごとの情報源URL（豊島区）
+  const CATEGORY_SOURCE_URLS: Record<string, string> = {
+    'fluorescent': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/026267.html',
+    'dry-battery': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2509251342.html',
+    'cooking-oil': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013326.html',
+    'ink-cartridge': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/022688.html',
+    'small-appliance': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/034106.html'
+  };
+
+  // 初期データ
   const allCategories: CategoryId[] = [
-    'battery', 'fluorescent', 'cooking-oil',
-    'ink-cartridge', 'small-appliance', 'used-clothing',
+    'rechargeable-battery', 'button-battery', 'dry-battery',
+    'small-appliance', 'fluorescent', 'ink-cartridge',
+    'cooking-oil', 'used-clothing'
   ];
   const allCityKeys = WARD_REGISTRY.map((w) => `${w.prefecture}/${w.city}`);
-  const prefectureGroups = groupByPrefecture(WARD_REGISTRY);
-  /** prefecture キー → 都道府県名ラベルの引き当てMap */
-  const prefLabelMap = new Map(WARD_REGISTRY.map((w) => [w.prefecture, w.prefectureLabel]));
 
+
+  // 状態管理
   let selectedCategories = $state<CategoryId[]>([...allCategories]);
   let selectedCityKeys = $state<string[]>([...allCityKeys]);
-  let openPopupId = $state<string | null>(null);
-  let sidebarOpen = $state(true);
+  let sidebarOpen = $state(false);
   let facilities = $state<GeoFeature[]>([]);
+  let openPopupId = $state<string | null>(null);
+  let markerStyle = $state<MarkerStyle>(getMarkerStyle());
+  let solidColor = $state<string>(getSolidColor());
+  
+  // 検索管理
+  let searchQuery = $state("");
+  let searchResults = $state<GeoFeature[]>([]);
 
+  // ルーティング・地図管理
   let routeGeoJSON = $state<LineString | null>(null);
   let routeInfo = $state<{ distance: number, duration: number } | null>(null);
   let isFetchingRoute = $state(false);
   let travelMode = $state<'foot' | 'bike' | 'car'>('foot');
-  let map = $state<maplibregl.Map | null>(null);
+  let map = $state<maplibregl.Map | undefined>(undefined);
   let routeError = $state<string | null>(null);
+  let popupTab = $state<'basic' | 'details'>('basic');
+  let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
+  let isMobile = $state(browser ? window.innerWidth <= 640 : false);
 
+  // ボトムシートスワイプ検出
+  let touchStartY = $state(0);
+  let touchStartTime = $state(0);
+
+  function handleTouchStart(e: TouchEvent) {
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+  }
+
+  function handleTouchEnd(e: TouchEvent) {
+    const deltaY = e.changedTouches[0].clientY - touchStartY;
+    const duration = Date.now() - touchStartTime;
+    if (deltaY > 30 && duration < 500) {
+      openPopupId = null;
+    }
+  }
+
+  function syncMobileAttributionState() {
+    if (!browser || !map) return;
+    const attribution = map.getContainer().querySelector('.maplibregl-ctrl-attrib');
+    if (!(attribution instanceof HTMLElement)) return;
+
+    if (window.innerWidth <= 640) {
+      attribution.classList.remove('maplibregl-compact-show');
+    }
+  }
+
+  // データフェッチ
   $effect(() => {
-    getFacilities(selectedCityKeys, selectedCategories).then((f) => {
+    if (!browser) return;
+    
+    // Spread to convert proxy to regular array
+    getFacilities([...selectedCityKeys], [...selectedCategories]).then((f) => {
       facilities = f;
-      // 別区に切り替えたとき開いていたポップアップを閉じる
+      // 表示対象外になったポップアップを閉じる
       if (openPopupId && !f.find((x) => x.properties.id === openPopupId)) {
         openPopupId = null;
       }
+    }).catch(err => {
+      console.error('Failed to load facilities:', err);
     });
   });
 
-  function toggleCity(key: string) {
-    // 既にその区だけ選択中 → 全区を戻す
-    if (selectedCityKeys.length === 1 && selectedCityKeys[0] === key) {
-      selectedCityKeys = [...allCityKeys];
-    } else {
-      // それ以外を非表示にしてその区だけ表示
-      selectedCityKeys = [key];
+  // 検索ロジック
+  $effect(() => {
+    if (!searchQuery.trim()) {
+      searchResults = [];
+      return;
     }
-    openPopupId = null;
+    const q = searchQuery.toLowerCase().trim().split(/\s+/);
+    searchResults = facilities.filter(f => {
+      const { name, address, categories } = f.properties;
+      const textToSearch = [
+        name, 
+        address, 
+        ...categories.map(c => CATEGORY_LABEL[c])
+      ].join(" ").toLowerCase();
+      
+      return q.every(keyword => textToSearch.includes(keyword));
+    }).slice(0, 50);
+  });
+
+  // 検索結果が1件だけになったときのオートズーム
+  $effect(() => {
+    if (searchResults.length === 1 && map) {
+      const facility = searchResults[0];
+      const [lng, lat] = facility.geometry.coordinates;
+      if (isMobile) {
+        const offset = window.innerHeight * 0.25;
+        map.easeTo({ center: [lng, lat], zoom: 16, offset: [0, -offset], duration: 300 });
+      } else {
+        map.flyTo({ center: [lng, lat], zoom: 16 });
+      }
+      openPopupId = facility.properties.id;
+      popupTab = 'basic';
+    }
+  });
+
+  $effect(() => {
+    if (!browser || !map) return;
+
+    syncMobileAttributionState();
+    const frameId = window.requestAnimationFrame(() => {
+      syncMobileAttributionState();
+    });
+
+    const handleResize = () => {
+      isMobile = window.innerWidth <= 640;
+      syncMobileAttributionState();
+    };
+
+    isMobile = window.innerWidth <= 640;
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+
+  // 検索結果の選択ハンドラ
+  function handleSelectFacility(facility: GeoFeature) {
+    const [lng, lat] = facility.geometry.coordinates;
+    if (map) {
+      if (isMobile) {
+        const offset = window.innerHeight * 0.25;
+        map.easeTo({ center: [lng, lat], zoom: 16, offset: [0, -offset], duration: 300 });
+      } else {
+        map.flyTo({ center: [lng, lat], zoom: 16 });
+      }
+    }
+    searchQuery = ""; // 検索をクリア
+    openPopupId = facility.properties.id;
+    popupTab = 'basic';
   }
 
   function selectFacility(id: string) {
+    const wasOpen = openPopupId === id;
     openPopupId = openPopupId === id ? null : id;
+    popupTab = 'basic';
+
+    if (!wasOpen && isMobile && map) {
+      const facility = facilities.find(f => f.properties.id === id);
+      if (facility) {
+        const [lng, lat] = facility.geometry.coordinates;
+        const offset = window.innerHeight * 0.25;
+        map.easeTo({ center: [lng, lat], offset: [0, -offset], duration: 300 });
+      }
+    }
   }
 
   async function getRoute(facility: GeoFeature) {
@@ -104,6 +237,7 @@
             new maplibregl.LngLatBounds(routeGeoJSON.coordinates[0] as [number, number], routeGeoJSON.coordinates[0] as [number, number])
           );
           map.fitBounds(bounds, { padding: 80 });
+          openPopupId = null; // 経路表示時はポップアップを閉じる
         }
       } else {
         throw new Error('No route found');
@@ -115,268 +249,370 @@
       } else {
         routeError = '経路の取得に失敗しました。ネットワーク接続を確認するか、時間をおいて再度お試しください。';
       }
+      if (routeError) alert(routeError);
     } finally {
       isFetchingRoute = false;
     }
   }
 
-  function pinGradientId(id: string) {
-    return `pin-grad-${id.replace(/[^a-z0-9]/gi, '-')}`;
-  }
 </script>
 
-<div class="flex h-screen w-full overflow-hidden">
-  <!-- サイドバー -->
-  {#if sidebarOpen}
-    <aside class="w-72 flex-shrink-0 flex flex-col bg-white shadow-lg z-10 overflow-hidden">
-
-      <!-- タイトル -->
-      <div class="flex items-center justify-between px-4 py-3 border-b bg-gray-50">
-        <div>
-          <h1 class="font-bold text-sm text-gray-800">東京リサイクルマップ</h1>
-          <p class="text-xs text-gray-400 mt-0.5">{facilities.length} 件表示中</p>
-        </div>
-        <button
-          onclick={() => (sidebarOpen = false)}
-          class="text-gray-400 hover:text-gray-700 transition-colors text-sm"
-          aria-label="閉じる"
-        >✕</button>
-      </div>
-
-      <!-- 区フィルタ -->
-      <div class="px-4 py-3 border-b">
-        {#each [...prefectureGroups.entries()] as [pref, wards]}
-          <p class="text-xs font-semibold text-gray-400 mb-1.5">{wards[0].prefectureLabel}</p>
-          <div class="flex flex-wrap gap-1.5">
-            {#each wards as ward}
-              {@const key = `${ward.prefecture}/${ward.city}`}
-              {@const active = selectedCityKeys.includes(key)}
-              <button
-                onclick={() => toggleCity(key)}
-                class="px-2.5 py-1 rounded-full text-xs font-medium border transition-all"
-                class:bg-gray-800={active}
-                class:text-white={active}
-                class:border-gray-800={active}
-                class:text-gray-500={!active}
-                class:border-gray-300={!active}
-              >{ward.cityLabel}</button>
-            {/each}
-          </div>
-        {/each}
-      </div>
-
-      <!-- 品目フィルタ -->
-      <div class="px-4 py-3 border-b">
-        <p class="text-xs font-semibold text-gray-400 mb-1.5">品目</p>
-        <CategoryFilter
-          selected={selectedCategories}
-          onchange={(v) => { selectedCategories = v; openPopupId = null; }}
-        />
-      </div>
-
-      <!-- 施設一覧 -->
-      <div class="flex-1 overflow-y-auto">
-        {#each facilities as feature (feature.properties.id)}
-          {@const { id, name, address, categories, hours, cityLabel } = feature.properties}
-          {@const active = openPopupId === id}
-          <button
-            onclick={() => selectFacility(id)}
-            class="w-full text-left px-4 py-3 border-b hover:bg-gray-50 transition-colors"
-            class:bg-blue-50={active}
-          >
-            <div class="flex items-center gap-1 mb-1">
-              <span class="text-xs text-gray-400">{cityLabel}</span>
-              <span class="mx-1 text-gray-200">|</span>
-              {#each categories as cat}
-                <span
-                  class="inline-block w-2 h-2 rounded-full"
-                  style:background-color={CATEGORY_COLOR[cat]}
-                  title={CATEGORY_LABEL[cat]}
-                ></span>
-              {/each}
-            </div>
-            <p class="text-sm font-medium leading-tight" class:text-blue-700={active}>{name}</p>
-            <p class="text-xs text-gray-500 mt-0.5">{address}</p>
-            {#if hours}
-              <p class="text-xs text-gray-400 mt-0.5">{hours}</p>
-            {/if}
-          </button>
-        {/each}
-      </div>
-    </aside>
-  {/if}
-
-  <!-- 地図エリア -->
-  <div class="relative flex-1" style="height: 100vh;">
-    {#if !sidebarOpen}
+{#snippet popupCard(f: GeoFeature)}
+  {@const { name, address, categories, hours, notes } = f.properties}
+  <div class="flex w-full h-2">
+    {#each categories as cat}
+      <div class="flex-1" style:background-color={CATEGORY_COLOR[cat]}></div>
+    {/each}
+  </div>
+  <div class="p-4">
+    <div class="flex items-start justify-between gap-2 mb-1">
+      <h3 class="font-bold text-lg text-gray-900 leading-snug">{name}</h3>
       <button
-        onclick={() => (sidebarOpen = true)}
-        class="absolute top-3 left-3 z-10 bg-white shadow-md rounded-lg px-3 py-2 text-sm font-medium hover:bg-gray-50 transition-colors"
-      >施設一覧</button>
-    {/if}
+        onclick={() => (openPopupId = null)}
+        class="flex-shrink-0 w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center text-gray-500 hover:text-gray-800 transition-colors text-lg"
+        aria-label="閉じる"
+      >✕</button>
+    </div>
+    
+    <div class="flex flex-wrap gap-1.5">
+      {#each categories as cat}
+        <span
+          class="px-2 py-0.5 rounded-full text-white text-xs font-bold shadow-sm"
+          style:background-color={CATEGORY_COLOR[cat]}
+        >{CATEGORY_LABEL[cat]}</span>
+      {/each}
+    </div>
+  </div>
 
-    {#if routeInfo}
-      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white shadow-lg rounded-lg px-4 py-3 flex items-center gap-4">
-        <div>
-          <p class="text-sm font-medium text-gray-800">
-            距離: <span class="font-bold">{(routeInfo.distance / 1000).toFixed(1)}</span> km
-          </p>
-          <p class="text-sm font-medium text-gray-800">
-            所要時間: <span class="font-bold">{Math.round(routeInfo.duration / 60)}</span> 分
-          </p>
-        </div>
-        <button
-          onclick={() => { routeGeoJSON = null; routeInfo = null; }}
-          class="flex-shrink-0 w-7 h-7 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors"
-          aria-label="経路を消去"
-        >
-          ✕
-        </button>
-      </div>
-    {/if}
+  <!-- タブ -->
+  <div class="px-4 border-b border-gray-100">
+    <div class="flex gap-4">
+      <button
+        onclick={() => popupTab = 'basic'}
+        class="pb-2 text-sm font-bold transition-colors {popupTab === 'basic' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+      >基本情報</button>
+      <button
+        onclick={() => popupTab = 'details'}
+        class="pb-2 text-sm font-bold transition-colors {popupTab === 'details' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+      >カテゴリ詳細</button>
+    </div>
+  </div>
 
-    <MapLibre
-      bind:map={map}
-      class="h-full w-full"
-      style="https://tiles.openfreemap.org/styles/liberty"
-      center={[139.745, 35.710]}
-      zoom={12}
-    >
-      <NavigationControl position="top-right" />
-      <GeolocateControl position="top-right" />
-      <FullScreenControl position="top-right" />
-
-      {#if routeGeoJSON}
-        <GeoJSONSource id="route" data={routeGeoJSON}>
-          <LineLayer
-            id="route-line"
-            paint={{
-              'line-color': '#007cbf',
-              'line-width': 6,
-              'line-opacity': 0.8,
-            }}
-            layout={{
-              'line-join': 'round',
-              'line-cap': 'round',
-            }}
-          />
-        </GeoJSONSource>
+  <!-- タブコンテンツ -->
+  <div class="px-4 py-3 min-h-[3.5rem]">
+    {#if popupTab === 'basic'}
+      <p class="text-sm text-gray-700 leading-relaxed">{address}</p>
+      {#if hours}
+        <p class="text-sm text-gray-500 mt-1">営業時間: {hours}</p>
       {/if}
-
-      {#each facilities as feature (feature.properties.id)}
-        {@const { id, name, address, categories, hours, notes, prefecture } = feature.properties}
-        {@const gradId = pinGradientId(id)}
-        {@const [lng, lat] = feature.geometry.coordinates}
-        {@const stops = categories.map((cat, i) => ({
-          color: CATEGORY_COLOR[cat],
-          pct: Math.round((i / Math.max(categories.length - 1, 1)) * 100),
-        }))}
-
-        <Marker lnglat={[lng, lat]}>
-          {#snippet content()}
-            <button
-              onclick={() => selectFacility(id)}
-              onkeydown={(e) => e.key === 'Enter' && selectFacility(id)}
-              title={name}
-              style="background:none;border:none;padding:0;cursor:pointer;"
-              class="hover:scale-110 active:scale-95 transition-transform origin-bottom block"
-            >
-              <svg width="28" height="38" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg"
-                style="filter:drop-shadow(0 3px 5px rgba(0,0,0,0.4))">
-                <defs>
-                  <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="100%">
-                    {#if stops.length === 1}
-                      <stop offset="0%" stop-color={stops[0].color} stop-opacity="0.7"/>
-                      <stop offset="100%" stop-color={stops[0].color}/>
-                    {:else}
-                      {#each stops as stop}
-                        <stop offset="{stop.pct}%" stop-color={stop.color}/>
-                      {/each}
-                    {/if}
-                  </linearGradient>
-                  <radialGradient id="gloss-{gradId}" cx="38%" cy="28%" r="55%">
-                    <stop offset="0%" stop-color="white" stop-opacity="0.5"/>
-                    <stop offset="100%" stop-color="white" stop-opacity="0"/>
-                  </radialGradient>
-                </defs>
-                <path
-                  d="M14 1 C6.3 1 0 7.3 0 15 C0 24 14 37 14 37 C14 37 28 24 28 15 C28 7.3 21.7 1 14 1 Z"
-                  fill="url(#{gradId})" stroke="white" stroke-width="1.5"
-                />
-                <path
-                  d="M14 1 C6.3 1 0 7.3 0 15 C0 24 14 37 14 37 C14 37 28 24 28 15 C28 7.3 21.7 1 14 1 Z"
-                  fill="url(#gloss-{gradId})"
-                />
-                <circle cx="14" cy="15" r="5" fill="white" opacity="0.85"/>
-              </svg>
-            </button>
-          {/snippet}
-        </Marker>
-
-        {#if openPopupId === id}
-          <Popup lnglat={[lng, lat]} onclose={() => (openPopupId = null)} closeButton={false} closeOnClick={false} maxWidth="none">
-            <div class="relative w-72">
-              <div class="h-2 rounded-t-[15px] overflow-hidden flex">
-                {#each categories as cat}
-                  <div class="flex-1" style:background-color={CATEGORY_COLOR[cat]}></div>
-                {/each}
-              </div>
-              <div class="px-5 pt-4 pb-5">
-                <div class="flex items-start justify-between gap-2 mb-2">
-                  <p class="font-bold text-base leading-snug text-gray-800">{name}</p>
-                  <button
-                    onclick={() => (openPopupId = null)}
-                    class="flex-shrink-0 w-6 h-6 rounded-full bg-black/8 hover:bg-black/15 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors text-xs leading-none"
-                  >✕</button>
-                </div>
-                <p class="text-xs text-gray-400 mb-1">{prefLabelMap.get(prefecture) ?? prefecture}</p>
-                <p class="text-sm text-gray-600 mb-3">{address}</p>
-                <div class="flex flex-wrap gap-1.5 mb-3">
-                  {#each categories as cat}
-                    <span
-                      class="px-2.5 py-0.5 rounded-full text-white text-xs font-medium shadow-sm"
-                      style:background-color={CATEGORY_COLOR[cat]}
-                    >{CATEGORY_LABEL[cat]}</span>
-                  {/each}
-                </div>
-                {#if hours}<p class="text-xs text-gray-500 mt-0.5">{hours}</p>{/if}
-                {#if notes}<p class="text-xs text-gray-400 mt-0.5">{notes}</p>{/if}
-
-                <div class="mt-4 pt-4 border-t border-gray-200">
-                  <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <label for="travel-mode-{id}" class="text-sm font-medium text-gray-600">交通手段:</label>
-                      <select
-                        id="travel-mode-{id}"
-                        bind:value={travelMode}
-                        class="block w-auto rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                      >
-                        <option value="foot">徒歩</option>
-                        <option value="bike">自転車</option>
-                        <option value="car">車</option>
-                      </select>
-                    </div>
-                    <button
-                      onclick={() => getRoute(feature)}
-                      disabled={isFetchingRoute}
-                      class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      {#if isFetchingRoute}
-                        検索中...
-                      {:else}
-                        経路を検索
-                      {/if}
-                    </button>
-                  </div>
-                  {#if routeError}
-                    <p class="text-sm text-red-600 mt-2">{routeError}</p>
-                  {/if}
-                </div>
-              </div>
-            </div>
-          </Popup>
+      {#if notes}
+        <p class="text-sm text-amber-600 mt-1">{notes}</p>
+      {/if}
+    {:else}
+      {#each categories as cat}
+        {@const details = getCategoryDetails(cat)}
+        {#if Object.keys(details).length > 0}
+          <div class="mb-3 last:mb-0">
+            <p class="text-sm font-bold mb-1" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
+            {#each Object.entries(details) as [field, content]}
+              <p class="text-sm text-gray-700 leading-relaxed">{content}</p>
+            {/each}
+            {#if CATEGORY_SOURCE_URLS[cat]}
+              <a
+                href={CATEGORY_SOURCE_URLS[cat]}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 hover:underline mt-1"
+                title="参考URLを開く"
+              >
+                <ExternalLink size={14} />
+                <span>参考URL</span>
+              </a>
+            {/if}
+          </div>
         {/if}
       {/each}
-    </MapLibre>
+    {/if}
   </div>
+
+  <div class="px-4 pb-4 pt-3 border-t border-gray-100 flex items-center justify-between bg-gray-50/50 gap-4">
+    <div class="flex items-center gap-0 bg-gray-100 rounded-lg p-1">
+      <button
+        onclick={() => travelMode = 'foot'}
+        class="relative h-10 w-14 rounded-md flex items-center justify-center transition-colors {travelMode === 'foot' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        aria-label="徒歩"
+      >
+        <Footprints size={22} />
+        {#if travelMode === 'foot'}
+          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-emerald-600 rounded-full"></span>
+        {/if}
+      </button>
+      <button
+        onclick={() => travelMode = 'bike'}
+        class="relative h-10 w-14 rounded-md flex items-center justify-center transition-colors {travelMode === 'bike' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        aria-label="自転車"
+      >
+        <Bike size={22} />
+        {#if travelMode === 'bike'}
+          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-emerald-600 rounded-full"></span>
+        {/if}
+      </button>
+      <button
+        onclick={() => travelMode = 'car'}
+        class="relative h-10 w-14 rounded-md flex items-center justify-center transition-colors {travelMode === 'car' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        aria-label="車"
+      >
+        <Car size={22} />
+        {#if travelMode === 'car'}
+          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-emerald-600 rounded-full"></span>
+        {/if}
+      </button>
+    </div>
+    <button
+      onclick={() => getRoute(f)}
+      disabled={isFetchingRoute}
+      class="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-2.5 text-sm font-bold text-white shadow-md hover:bg-blue-700 transition-colors disabled:opacity-50 min-w-[10rem]"
+    >
+      {isFetchingRoute ? '検索中...' : '経路を検索'}
+    </button>
+  </div>
+{/snippet}
+
+<!-- UIヘッダー（オーバーレイ） -->
+<AppHeader 
+  bind:searchQuery 
+  {searchResults} 
+  bind:selectedKeys={selectedCityKeys} 
+  allKeys={allCityKeys} 
+  bind:selectedCategories 
+  {allCategories} 
+  onSelectFacility={handleSelectFacility}
+  onMenuClick={() => (sidebarOpen = true)}
+/>
+
+<!-- 設定サイドバー -->
+<SettingsSidebar bind:open={sidebarOpen} bind:markerStyle bind:solidColor />
+
+<!-- 地図エリア（フルスクリーン） -->
+<div class="relative w-full h-screen bg-gray-100 overflow-hidden">
+  {#if isTitleCollapsed}
+    <button
+      class="map-title-tab map-title-anchor absolute z-20"
+      onclick={() => (isTitleCollapsed = false)}
+      aria-label="タイトルを表示"
+    >
+      <ChevronRight size={16} strokeWidth={2.4} />
+    </button>
+  {:else}
+    <button
+      class="map-title map-title-anchor absolute z-20 text-left"
+      onclick={() => (isTitleCollapsed = true)}
+      aria-label="タイトルを閉じる"
+    >
+      <p class="map-title-kicker">TOSHIMA WARD</p>
+      <p class="map-title-text">豊島区リサイクルマップ<span class="map-title-note">（仮）</span></p>
+    </button>
+  {/if}
+  
+  {#if routeInfo}
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl px-6 py-4 flex items-center gap-6 border border-white/50">
+      <div>
+        <p class="text-xs font-bold text-gray-500 mb-1">ルート情報</p>
+        <div class="flex items-end gap-4">
+          <p class="text-sm font-medium text-gray-800">
+            距離: <span class="font-black text-lg text-blue-600">{(routeInfo.distance / 1000).toFixed(1)}</span> <span class="text-gray-500">km</span>
+          </p>
+          <p class="text-sm font-medium text-gray-800">
+            所要時間: <span class="font-black text-lg text-blue-600">{Math.round(routeInfo.duration / 60)}</span> <span class="text-gray-500">分</span>
+          </p>
+        </div>
+      </div>
+      <button
+        onclick={() => { routeGeoJSON = null; routeInfo = null; }}
+        class="flex-shrink-0 w-10 h-10 rounded-full bg-red-50 hover:bg-red-100 flex items-center justify-center text-red-500 transition-colors shadow-sm"
+        aria-label="経路を消去"
+      >
+        ✕
+      </button>
+    </div>
+  {/if}
+
+  <MapLibre
+    bind:map={map}
+    class="h-full w-full"
+    style="https://tiles.openfreemap.org/styles/liberty"
+    center={[139.7159, 35.7324]}
+    zoom={13.4}
+    attributionControl={false}
+  >
+    <!-- MapLibre UI Controls -->
+    <AttributionControl position="bottom-right" />
+    <NavigationControl position="bottom-right" />
+    <GeolocateControl 
+      position="bottom-right"
+      trackUserLocation={true}
+      showAccuracyCircle={true}
+      showUserLocation={true}
+    />
+    <FullScreenControl position="bottom-right" />
+
+    {#if routeGeoJSON}
+      <GeoJSONSource id="route" data={routeGeoJSON}>
+        <LineLayer
+          id="route-line-bg"
+          paint={{
+            'line-color': '#ffffff',
+            'line-width': 10,
+            'line-opacity': 0.8,
+          }}
+          layout={{
+            'line-join': 'round',
+            'line-cap': 'round',
+          }}
+        />
+        <LineLayer
+          id="route-line"
+          paint={{
+            'line-color': '#2563eb',
+            'line-width': 6,
+            'line-opacity': 0.9,
+          }}
+          layout={{
+            'line-join': 'round',
+            'line-cap': 'round',
+          }}
+        />
+      </GeoJSONSource>
+    {/if}
+
+    {#each facilities as feature (feature.properties.id)}
+      {@const { id, name, address, categories, hours, notes } = feature.properties}
+      {@const [lng, lat] = feature.geometry.coordinates}
+
+      <Marker lnglat={[lng, lat]}>
+        {#snippet content()}
+          <button
+            onclick={() => selectFacility(id)}
+            onkeydown={(e) => e.key === 'Enter' && selectFacility(id)}
+            title={name}
+            style="background:none;border:none;padding:0;cursor:pointer;"
+            class="hover:scale-110 active:scale-95 transition-transform origin-bottom block"
+          >
+            <MapMarker categories={categories as CategoryId[]} style={markerStyle} {id} {solidColor} />
+          </button>
+        {/snippet}
+      </Marker>
+
+      {#if openPopupId === id && !isMobile}
+        <Popup lnglat={[lng, lat]} onclose={() => { openPopupId = null; popupTab = 'basic'; }} closeButton={false} closeOnClick={false} maxWidth="none" offset={[0, -24]}>
+          <div class="relative w-96 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 overflow-hidden text-left">
+            {@render popupCard(feature)}
+          </div>
+        </Popup>
+      {/if}
+    {/each}
+  </MapLibre>
+
+  {#if isMobile && openPopupId}
+    {@const openFacility = facilities.find(f => f.properties.id === openPopupId)}
+    {#if openFacility}
+      <div
+        class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md rounded-t-2xl shadow-[0_-8px_32px_rgba(0,0,0,0.15)] max-h-[60vh] flex flex-col"
+        transition:fly={{ y: 300, duration: 300, opacity: 1 }}
+        style="padding-bottom: max(env(safe-area-inset-bottom), 16px)"
+      >
+        <div
+          class="flex-shrink-0 pt-3 pb-2 flex justify-center touch-pan-y"
+          role="button"
+          tabindex="-1"
+          aria-label="スワイプで閉じる"
+          ontouchstart={handleTouchStart}
+          ontouchend={handleTouchEnd}
+        >
+          <div class="w-12 h-1.5 rounded-full bg-gray-300"></div>
+        </div>
+        <div class="flex-1 overflow-y-auto">
+          {@render popupCard(openFacility)}
+        </div>
+      </div>
+    {/if}
+  {/if}
 </div>
+
+<style>
+  .map-title-anchor {
+    left: 0.25rem;
+    bottom: 0.5rem;
+  }
+
+  .map-title {
+    border: 0;
+    padding: 0.65rem 0.85rem 0.7rem 0.75rem;
+    border-left: 2px solid rgba(31, 41, 55, 0.45);
+    background: rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    cursor: pointer;
+  }
+
+  .map-title-tab {
+    border: 0;
+    width: 1.7rem;
+    height: 2.8rem;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: rgba(55, 65, 81, 0.88);
+    cursor: pointer;
+  }
+
+  .map-title-kicker {
+    margin: 0 0 0.18rem;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: rgba(75, 85, 99, 0.9);
+  }
+
+  .map-title-text {
+    margin: 0;
+    font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif JP", "Hiragino Mincho ProN", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: rgba(17, 24, 39, 0.92);
+  }
+
+  .map-title-note {
+    margin-left: 0.2rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(75, 85, 99, 0.8);
+  }
+
+  @media (max-width: 640px) {
+    .map-title-anchor {
+      left: 0.25rem;
+      bottom: 1.6rem;
+    }
+  }
+
+  /* svelte-maplibre-gl のポップアップスタイルをリセット */
+  :global(.maplibregl-popup-content) {
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 1rem !important;
+  }
+  :global(.maplibregl-popup-tip) {
+    border-top-color: rgba(255, 255, 255, 0.95) !important;
+  }
+</style>

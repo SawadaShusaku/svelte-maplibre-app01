@@ -1,14 +1,19 @@
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig, type Plugin } from 'vite';
+import { defineConfig } from 'vite';
 
-const geojsonPlugin: Plugin = {
-  name: 'geojson',
-  transform(code, id) {
-    if (id.endsWith('.geojson')) {
-      return { code: `export default ${code}`, map: null };
+export default defineConfig({
+  plugins: [tailwindcss(), sveltekit()],
+  server: {
+    host: true,
+  },
+  optimizeDeps: {
+    include: ['sql.js']
+  },
+  build: {
+    rollupOptions: {
+      external: [/\.sqlite$/]
     }
   },
-};
-
-export default defineConfig({ plugins: [tailwindcss(), sveltekit(), geojsonPlugin] });
+  assetsInclude: ['**/*.db']
+});
