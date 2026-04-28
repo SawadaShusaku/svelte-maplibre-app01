@@ -42,7 +42,7 @@
   </button>
 
   {#if open}
-    <div class="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-lg shadow-xl border border-white/50 p-3 z-50">
+    <div class="absolute top-full right-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-lg shadow-xl border border-white/50 p-3 z-50">
       <div class="max-h-80 overflow-y-auto">
         <button
           onclick={() => { selectedKeys = [...allKeys]; open = false; }}

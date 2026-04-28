@@ -125,7 +125,9 @@
         <SearchBar bind:value={searchQuery} results={searchResults} onselect={onSelectFacility} />
       </div>
 
-      <WardSelector bind:selectedKeys allKeys={allKeys} />
+      <div class="flex-shrink-0 ml-auto">
+        <WardSelector bind:selectedKeys allKeys={allKeys} />
+      </div>
     </div>
 
     <!-- 下段: カテゴリ -->
