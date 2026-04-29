@@ -108,9 +108,6 @@ export async function searchFacilities(
 
 // Helper to get ward label
 function getWardLabel(wardId: string): string {
-	const labels: Record<string, string> = {
-		toshima: '豊島区',
-		chiyoda: '千代田区'
-	};
-	return labels[wardId] || wardId;
+	const ward = (await import('./registry.js')).WARD_REGISTRY.find(w => w.city === wardId);
+	return ward?.cityLabel || wardId;
 }
