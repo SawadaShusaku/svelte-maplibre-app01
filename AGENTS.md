@@ -55,7 +55,7 @@ src/lib/db/
 ```
 
 **Data Flow**:
-1. Build time: `scripts/migrate-to-sqlite.ts` converts GeoJSON → SQLite
+1. Build time: `src/lib/db/migrate.ts` converts GeoJSON → SQLite
 2. Runtime: `sql.js` loads `static/recycling.db` in browser
 3. Repository interface abstracts database operations
 4. Components use `data.ts` functions which delegate to Repository
