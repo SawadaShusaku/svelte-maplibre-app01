@@ -1,0 +1,528 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75354,
+          35.693947
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-001",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "千代田区役所",
+        "address": "千代田区九段南1-2-1",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月〜土 8:30〜17:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.739761,
+          35.685356
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-002",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "麹町出張所",
+        "address": "千代田区麹町2-8",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎日 8:30〜22:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.746231,
+          35.699139
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-003",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "富士見出張所",
+        "address": "千代田区富士見1-6-7",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎日 8:30〜17:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.755508,
+          35.697754
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-004",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神保町出張所",
+        "address": "千代田区神田神保町2-40",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 8:30〜22:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767853,
+          35.692726
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-005",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田公園出張所",
+        "address": "千代田区神田司町2-2",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月〜金 8:30〜17:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770752,
+          35.697628
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-006",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "万世橋出張所",
+        "address": "千代田区外神田1-1-13",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "月〜金 8:30〜17:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.774338,
+          35.697285
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-007",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "和泉橋出張所",
+        "address": "千代田区神田佐久間町1-11-7",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月〜金 8:30〜17:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.77597,
+          35.699192
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-008",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ちよだパークサイドプラザ",
+        "address": "千代田区神田和泉町1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜22:00（日祝〜17:00）",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767685,
+          35.689342
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-009",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "スポーツセンター",
+        "address": "千代田区内神田2-1-8",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜21:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.751984,
+          35.695339
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-010",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "九段生涯学習館",
+        "address": "千代田区九段南1-5-10",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜21:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.769836,
+          35.701454
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-011",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "昌平まちかど図書館",
+        "address": "千代田区外神田3-4-7",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜20:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.768494,
+          35.693047
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-012",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田まちかど図書館",
+        "address": "千代田区神田司町2-16",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜20:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75502,
+          35.698715
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-013",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "西神田コスモス館",
+        "address": "千代田区西神田2-6-2",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎日 7:00〜22:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.769821,
+          35.698151
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-014",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "千代田清掃事務所",
+        "address": "千代田区外神田1-1-6",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月〜金 7:40〜17:00・土祝 7:40〜16:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.749207,
+          35.702
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-015",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "飯田橋車庫",
+        "address": "千代田区飯田橋3-13-2",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月〜土祝 7:40〜16:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.760956,
+          35.700001
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-016",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "障害者福祉センターえみふる",
+        "address": "千代田区神田駿河台2-5",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜21:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.739395,
+          35.68676
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-017",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "いきいきプラザ一番町",
+        "address": "千代田区一番町12",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 9:00〜22:00",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767685,
+          35.689342
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-018",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "リサイクルセンター鎌倉橋",
+        "address": "千代田区内神田2-1-8",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "地下1階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.742767,
+          35.687504
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-019",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "一番町児童館",
+        "address": "千代田区一番町5",
+        "categories": [
+          "battery"
+        ],
+        "hours": "",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.756943,
+          35.699356
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-020",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "西神田児童センター",
+        "address": "千代田区西神田1-3-1",
+        "categories": [
+          "battery"
+        ],
+        "hours": "",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767853,
+          35.692726
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-021",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田児童館",
+        "address": "千代田区神田司町2-2",
+        "categories": [
+          "battery"
+        ],
+        "hours": "",
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.737656,
+          35.68959
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-022",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "四番町児童館",
+        "address": "千代田区四番町4",
+        "categories": [
+          "battery"
+        ],
+        "hours": "",
+        "notes": ""
+      }
+    }
+  ]
+}

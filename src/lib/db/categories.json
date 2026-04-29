@@ -1,0 +1,116 @@
+{
+  "categories": [
+    {
+      "id": "rechargeable-battery",
+      "label": "小型充電式電池",
+      "color": "#dc2626",
+      "icon": "Battery"
+    },
+    {
+      "id": "dry-battery",
+      "label": "乾電池",
+      "color": "#7dd3fc",
+      "icon": "Battery"
+    },
+    {
+      "id": "button-battery",
+      "label": "ボタン電池",
+      "color": "#fde047",
+      "icon": "Battery"
+    },
+    {
+      "id": "small-appliance",
+      "label": "小型家電",
+      "color": "#0891b2",
+      "icon": "Smartphone"
+    },
+    {
+      "id": "fluorescent",
+      "label": "蛍光灯",
+      "color": "#fdba74",
+      "icon": "Lightbulb"
+    },
+    {
+      "id": "ink-cartridge",
+      "label": "インクカートリッジ",
+      "color": "#a855f7",
+      "icon": "Printer"
+    },
+    {
+      "id": "cooking-oil",
+      "label": "廃食用油",
+      "color": "#c9956a",
+      "icon": "Droplet"
+    },
+    {
+      "id": "used-clothing",
+      "label": "古布・衣類",
+      "color": "#db2777",
+      "icon": "Shirt"
+    },
+    {
+      "id": "paper-pack",
+      "label": "紙パック",
+      "color": "#059669",
+      "icon": "Package"
+    },
+    {
+      "id": "styrofoam",
+      "label": "発泡スチロール",
+      "color": "#8b5cf6",
+      "icon": "Box"
+    }
+  ],
+  "details": [
+    {
+      "category_id": "rechargeable-battery",
+      "field": "warning",
+      "content": "端子を絶縁テープで覆うこと。可燃ごみに出さない。"
+    },
+    {
+      "category_id": "rechargeable-battery",
+      "field": "examples",
+      "content": "リチウムイオン電池、モバイルバッテリー、充電式電池"
+    },
+    {
+      "category_id": "button-battery",
+      "field": "examples",
+      "content": "時計、体温計、電卓、補聴器用電池"
+    },
+    {
+      "category_id": "dry-battery",
+      "field": "note",
+      "content": "可燃ごみとしても出せますが、回収が推奨されます"
+    },
+    {
+      "category_id": "small-appliance",
+      "field": "note",
+      "content": "金属資源回収（都市鉱山）の対象"
+    },
+    {
+      "category_id": "fluorescent",
+      "field": "warning",
+      "content": "割れた場合は直接触れない。水銀対策のため専用回収。"
+    },
+    {
+      "category_id": "fluorescent",
+      "field": "examples",
+      "content": "蛍光管、電球型蛍光灯、環形蛍光灯"
+    },
+    {
+      "category_id": "cooking-oil",
+      "field": "warning",
+      "content": "天カス等不純物は紙でこして取り除く。温度が下がってから容器に入れる。ガラス瓶は使用不可。"
+    },
+    {
+      "category_id": "cooking-oil",
+      "field": "note",
+      "content": "A方式（対面回収）またはB方式（ボックス回収）で回収。未使用の油も回収可。"
+    },
+    {
+      "category_id": "ink-cartridge",
+      "field": "note",
+      "content": "純正・互換インクカートリッジどちらも回収可。包装材は外して出す。"
+    }
+  ]
+}

@@ -21,3 +21,57 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.*.json
+
+# Coverage
+coverage
+.nyc_output
+
+# Build caches
+.cache
+.parcel-cache
+.turbo
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing artifacts
+playwright-report
+test-results
+.vitest
+
+# Editors
+.idea
+*.swp
+*.swo
+*~
+
+# Builds
+dist
+
+# Package managers (prefer npm lockfile)
+yarn.lock
+pnpm-lock.yaml
+
+# Backup files
+*.bak
+
+# jj version control
+.jj/
+
+# Build artifacts
+static/recycling.db
+
+# Ensure we keep specs tracked
+!openspec/
