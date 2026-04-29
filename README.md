@@ -80,8 +80,9 @@ src/lib/data/{都道府県}/{市区町村}.geojson  →  npm run build:db  →  
 
 ## 参考URL
 
-### 一般社団法人電池工業会 ：
+### 一般社団法人電池工業会
 - http://www.botankaishu.jp/srch/srch10.php
 
-###　一般社団法人JBRC
+
+### 一般社団法人JBRC
 - https://www.jbrc-system.com/page/pc/techc010/

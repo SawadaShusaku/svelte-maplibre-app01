@@ -1,0 +1,3 @@
+# Cloudflare Pages deployment configuration
+name = "svelte-maplibre-app01"
+compatibility_date = "2026-04-29"
