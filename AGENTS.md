@@ -159,6 +159,43 @@ src/
 - sql.js doesn't have `.all()` method; use `step()` + `getAsObject()` loop
 - See `SqlJsRepository` for correct pattern
 
+## Deployment
+
+This project is deployed to **Cloudflare Workers with Static Assets**.
+
+**Important context**: Cloudflare is consolidating Pages into the Workers platform. New projects are created under **Workers & Pages** (unified) in the Cloudflare dashboard, where the deployment model is essentially Workers with Static Assets. The legacy standalone "Cloudflare Pages" project type is being phased out.
+
+### Configuration
+
+- **Adapter**: `@sveltejs/adapter-cloudflare` (not `adapter-cloudflare-workers`)
+- **Build command**: `npm run build`
+- **Build output**: `.svelte-kit/cloudflare`
+- **Required files**:
+  - `wrangler.toml` — Must include `main`, `[assets]` block with `directory` and `binding`
+  - `worker-configuration.d.ts` — Generated via `npx wrangler types`
+
+### Example `wrangler.toml`
+
+```toml
+name = "svelte-maplibre-app01"
+main = ".svelte-kit/cloudflare/_worker.js"
+compatibility_date = "2026-04-29"
+
+[assets]
+directory = ".svelte-kit/cloudflare"
+binding = "ASSETS"
+```
+
+### Deploy settings (Cloudflare Dashboard)
+
+| Setting | Value |
+|---------|-------|
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | `/` |
+
+Do **not** use GitHub Actions for deployment — the Cloudflare Git integration handles builds and deployments automatically.
+
 ## Aliases
 
 - `$lib` → `src/lib/` (SvelteKit default)
