@@ -42,6 +42,10 @@
       selectedCategories = selectedCategories.filter((cat: CategoryId) => 
         availableCategories.includes(cat)
       );
+      // If no previously-selected categories are available, select all available ones
+      if (selectedCategories.length === 0 && availableCategories.length > 0) {
+        selectedCategories = [...availableCategories];
+      }
     });
   });
 </script>
