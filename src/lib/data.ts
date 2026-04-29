@@ -2,6 +2,7 @@ import { browser } from '$app/environment';
 import { initDatabase, getRepository } from './db';
 import type { Repository } from './db';
 import type { FacilityWithCategories } from './db/types';
+import { WARD_REGISTRY } from './registry';
 
 export interface GeoFeature {
 	type: 'Feature';
@@ -108,6 +109,6 @@ export async function searchFacilities(
 
 // Helper to get ward label
 function getWardLabel(wardId: string): string {
-	const ward = (await import('./registry.js')).WARD_REGISTRY.find(w => w.city === wardId);
+	const ward = WARD_REGISTRY.find(w => w.city === wardId);
 	return ward?.cityLabel || wardId;
 }
