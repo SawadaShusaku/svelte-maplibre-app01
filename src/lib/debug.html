@@ -1,0 +1,26 @@
+<!-- Debug script to check what's happening -->
+<script>
+  // Log to see if module is loading
+  console.log('[DEBUG] Page loading started');
+  
+  window.addEventListener('error', (e) => {
+    console.error('[DEBUG] Global error:', e.message, e.filename, e.lineno);
+  });
+  
+  window.addEventListener('unhandledrejection', (e) => {
+    console.error('[DEBUG] Unhandled promise rejection:', e.reason);
+  });
+  
+  // Check fetch
+  const originalFetch = window.fetch;
+  window.fetch = function(...args) {
+    console.log('[DEBUG] fetch called:', args[0]);
+    return originalFetch.apply(this, args).then(response => {
+      console.log('[DEBUG] fetch response:', args[0], response.status);
+      return response;
+    }).catch(err => {
+      console.error('[DEBUG] fetch error:', args[0], err);
+      throw err;
+    });
+  };
+</script>

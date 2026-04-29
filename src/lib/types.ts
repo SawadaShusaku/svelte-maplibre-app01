@@ -1,10 +1,16 @@
+export type MarkerStyle = 'adaptive' | 'solid' | 'gradient';
+
 export type CategoryId =
-  | 'battery'
-  | 'fluorescent'
-  | 'cooking-oil'
-  | 'ink-cartridge'
+  | 'rechargeable-battery'
+  | 'button-battery'
+  | 'dry-battery'
   | 'small-appliance'
-  | 'used-clothing';
+  | 'fluorescent'
+  | 'ink-cartridge'
+  | 'cooking-oil'
+  | 'used-clothing'
+  | 'paper-pack'
+  | 'styrofoam';
 
 export interface RecycleFacility {
   id: string;
