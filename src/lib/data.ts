@@ -1,7 +1,6 @@
 import { browser } from '$app/environment';
 import { initDatabase, getRepository } from './db';
 import type { Repository } from './db';
-import type { FacilityWithCategories } from './db/types';
 import { WARD_REGISTRY } from './registry';
 
 export interface GeoFeature {
@@ -17,6 +16,8 @@ export interface GeoFeature {
 		categories: string[];
 		hours: string | null;
 		notes: string | null;
+		officialUrl: string | null;
+		categoryUrls: Record<string, string> | null;
 	};
 }
 
@@ -63,7 +64,9 @@ export async function getFacilities(
 			address: f.address,
 			categories: f.categories,
 			hours: f.hours,
-			notes: f.notes
+			notes: f.notes,
+			officialUrl: f.official_url,
+			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null
 		}
 	}));
 }
@@ -102,7 +105,9 @@ export async function searchFacilities(
 			address: f.address,
 			categories: f.categories,
 			hours: f.hours,
-			notes: f.notes
+			notes: f.notes,
+			officialUrl: f.official_url,
+			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null
 		}
 	}));
 }

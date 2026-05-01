@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
+  import { env } from '$env/dynamic/public';
   import 'maplibre-gl/dist/maplibre-gl.css';
   import {
     MapLibre,
@@ -22,18 +23,12 @@
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
   import { getFacilities, type GeoFeature } from '$lib/data.js';
-  import { WARD_REGISTRY } from '$lib/registry.js';
+  import { getCategorySourceUrl, WARD_REGISTRY } from '$lib/registry.js';
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
 
-  // カテゴリごとの情報源URL（豊島区）
-  const CATEGORY_SOURCE_URLS: Record<string, string> = {
-    'fluorescent': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/026267.html',
-    'dry-battery': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2509251342.html',
-    'cooking-oil': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013326.html',
-    'ink-cartridge': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/022688.html',
-    'small-appliance': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/034106.html'
-  };
+  const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() ?? '';
+  const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() ?? '';
 
   // 初期データ
   const allCategories: CategoryId[] = [
@@ -63,6 +58,7 @@
   let isFetchingRoute = $state(false);
   let travelMode = $state<'foot' | 'bike' | 'car'>('foot');
   let map = $state<maplibregl.Map | undefined>(undefined);
+  let geolocateControl = $state<maplibregl.GeolocateControl | undefined>(undefined);
   let routeError = $state<string | null>(null);
   let popupTab = $state<'basic' | 'details'>('basic');
   let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
@@ -93,6 +89,24 @@
     if (window.innerWidth <= 640) {
       attribution.classList.remove('maplibregl-compact-show');
     }
+  }
+
+  function getGeolocationErrorMessage(err: GeolocationPositionError): string {
+    switch (err.code) {
+      case err.PERMISSION_DENIED:
+        return '位置情報へのアクセスが拒否されました。ブラウザの設定で位置情報を許可してください。';
+      case err.POSITION_UNAVAILABLE:
+        return '現在位置を取得できませんでした。GPS信号が弱い場所の可能性があります。';
+      case err.TIMEOUT:
+        return '位置情報の取得がタイムアウトしました。時間をおいて再度お試しください。';
+      default:
+        return `位置情報の取得に失敗しました: ${err.message}`;
+    }
+  }
+
+  function handleGeolocateError(err: GeolocationPositionError) {
+    console.error('GeolocateControl error:', err);
+    alert(getGeolocationErrorMessage(err));
   }
 
   // データフェッチ
@@ -205,17 +219,23 @@
     routeError = null;
 
     try {
+      if (!osrmBaseUrl) {
+        throw new Error('Routing service is not configured');
+      }
+
       const userCoords = await new Promise<GeolocationCoordinates>((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(
           (pos) => resolve(pos.coords),
-          (err) => reject(err)
+          (err) => reject(err),
+          { enableHighAccuracy: true, timeout: 10000 }
         );
       });
 
       const [lng1, lat1] = [userCoords.longitude, userCoords.latitude];
       const [lng2, lat2] = facility.geometry.coordinates;
 
-      const url = `https://router.project-osrm.org/route/v1/${travelMode}/${lng1},${lat1};${lng2},${lat2}?overview=full&geometries=geojson`;
+      const baseUrl = osrmBaseUrl.replace(/\/$/, '');
+      const url = `${baseUrl}/route/v1/${travelMode}/${lng1},${lat1};${lng2},${lat2}?overview=full&geometries=geojson`;
 
       const res = await fetch(url);
       if (!res.ok) {
@@ -245,7 +265,7 @@
     } catch (err) {
       console.error('Error getting route:', err);
       if (err instanceof GeolocationPositionError) {
-        routeError = `位置情報の取得に失敗しました: ${err.message}`;
+        routeError = getGeolocationErrorMessage(err);
       } else {
         routeError = '経路の取得に失敗しました。ネットワーク接続を確認するか、時間をおいて再度お試しください。';
       }
@@ -258,7 +278,7 @@
 </script>
 
 {#snippet popupCard(f: GeoFeature)}
-  {@const { name, address, categories, hours, notes } = f.properties}
+  {@const { city, name, address, categories, hours, notes } = f.properties}
   <div class="flex w-full h-2">
     {#each categories as cat}
       <div class="flex-1" style:background-color={CATEGORY_COLOR[cat]}></div>
@@ -317,9 +337,9 @@
             {#each Object.entries(details) as [field, content]}
               <p class="text-sm text-gray-700 leading-relaxed">{content}</p>
             {/each}
-            {#if CATEGORY_SOURCE_URLS[cat]}
+            {#if getCategorySourceUrl(city, cat)}
               <a
-                href={CATEGORY_SOURCE_URLS[cat]}
+                href={getCategorySourceUrl(city, cat)}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 hover:underline mt-1"
@@ -440,7 +460,7 @@
   <MapLibre
     bind:map={map}
     class="h-full w-full"
-    style="https://tiles.openfreemap.org/styles/liberty"
+    style={mapStyleUrl}
     center={[139.7159, 35.7324]}
     zoom={13.4}
     attributionControl={false}
@@ -448,11 +468,16 @@
     <!-- MapLibre UI Controls -->
     <AttributionControl position="bottom-right" />
     <NavigationControl position="bottom-right" />
-    <GeolocateControl 
+    <GeolocateControl
+      bind:control={geolocateControl}
       position="bottom-right"
       trackUserLocation={true}
       showAccuracyCircle={true}
       showUserLocation={true}
+      positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
+      fitBoundsOptions={isMobile ? { padding: { top: 100, bottom: 100, left: 20, right: 20 }, maxZoom: 14 } : { padding: 80, maxZoom: 14 }}
+      onerror={handleGeolocateError}
+      autoTrigger={true}
     />
     <FullScreenControl position="bottom-right" />
 

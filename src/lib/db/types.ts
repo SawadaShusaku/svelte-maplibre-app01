@@ -39,6 +39,8 @@ export interface Facility {
 	latitude: number;
 	longitude: number;
 	url: string | null;
+	official_url: string | null;
+	category_urls: string | null;
 	collector_id: string | null;
 	hours: string | null;
 	notes: string | null;

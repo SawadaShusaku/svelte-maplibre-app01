@@ -51,6 +51,8 @@ CREATE TABLE facilities (
     latitude REAL NOT NULL,
     longitude REAL NOT NULL,
     url TEXT,
+    official_url TEXT,
+    category_urls TEXT,
     collector_id TEXT,
     hours TEXT,
     notes TEXT,

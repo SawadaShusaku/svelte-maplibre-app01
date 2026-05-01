@@ -6,12 +6,517 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          139.770996,
+          35.700275
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-001",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ソフマップ AKIBAパソコン・デジタル館",
+        "address": "千代田区外神田3-13-12 IMYビル",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.772156,
+          35.698097
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-002",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ソフマップ AKIBA駅前館",
+        "address": "千代田区外神田1-15-8",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771042,
+          35.698093
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-003",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "エディオン AKIBA",
+        "address": "千代田区外神田1-2-9",
+        "categories": [
+          "rechargeable-battery",
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.762878,
+          35.675388
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-004",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ビックカメラ有楽町店",
+        "address": "千代田区有楽町1-11-1",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "レジカウンター",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771606,
+          35.699734
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-005",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ビックカメラAKIBA",
+        "address": "千代田区外神田4-1-1",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "レジカウンター",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.775192,
+          35.698475
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-006",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "エイド 東京秋葉原サテライト",
+        "address": "千代田区神田佐久間町1-26 第七砂川ビル3F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6206-4271",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.773178,
+          35.691139
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-007",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "オーディオ・ノバ 神田店",
+        "address": "千代田区鍛冶町1-8-8 神田鍛治町ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3255-2245",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767242,
+          35.681252
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-008",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "オグラ眼鏡 大丸東京店",
+        "address": "千代田区丸の内1-9-1 大丸東京店10Fメガネサロン",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3212-8980",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.768066,
+          35.697571
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-009",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "オリンピック 淡路町店",
+        "address": "千代田区神田淡路町2-105 ワテラスアネックスB1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5289-3989",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.765335,
+          35.695869
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-010",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "パナソニック補聴器 プラザ東京",
+        "address": "千代田区神田駿河台3-2 新御茶ノ水アーバントリニティービルB2階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3251-3349",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.768707,
+          35.694592
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-011",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ブルーム 神田店",
+        "address": "千代田区神田多町2-11-28 中林ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3256-4735",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.764359,
+          35.674953
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-012",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ブルーム 有楽町店",
+        "address": "千代田区有楽町2-10-1 東京交通会館2階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3201-4133",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771957,
+          35.699669
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-013",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "メガネスーパー 秋葉原駅前",
+        "address": "千代田区外神田4-1-8 カンブンドービル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6206-4818",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.755264,
+          35.700905
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-014",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "メガネスーパー 水道橋",
+        "address": "千代田区三崎町2-9-1 TSビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5275-5038",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.772598,
+          35.70303
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-015",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "ライフアップ補聴器 外神田店",
+        "address": "千代田区外神田5-6-16 山下ビル2階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3834-1133",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771072,
+          35.698345
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-016",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "株式会社オノデン",
+        "address": "千代田区外神田1-2-7",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3253-3911",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.768219,
+          35.691326
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-017",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "朝日電機商事",
+        "address": "千代田区内神田2-13-6",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3252-8915",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.764771,
+          35.68644
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-018",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "富士メガネ 東京大手町ビル店",
+        "address": "千代田区大手町1-6-1 大手町ビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3214-4751",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           139.75354,
           35.693947
         ]
       },
       "properties": {
-        "id": "chiyoda-001",
+        "id": "chiyoda-019",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -20,10 +525,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "月〜土 8:30〜17:00",
-        "notes": ""
+        "hours": "月～金曜日 8:30～17:00 土曜日 8:30～17:00（総合窓口課のみ）",
+        "notes": "設置場所: 2階総合窓口課・5階安全生活課窓口。休館日: 土・日曜日、祝日、年末年始。廃食用油・古布回収: 5階環境政策課窓口、月～金 8:30～17:00",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -36,7 +547,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-002",
+        "id": "chiyoda-020",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -45,10 +556,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "毎日 8:30〜22:00",
-        "notes": ""
+        "hours": "毎日 8:30～22:00",
+        "notes": "設置場所: 1階ロビー。休館日: 年末年始、毎月第2日曜日。廃食用油・古布回収: ストックヤード、月～金 8:30～17:00",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -61,7 +578,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-003",
+        "id": "chiyoda-021",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -70,10 +587,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "毎日 8:30〜17:00",
-        "notes": ""
+        "hours": "毎日 8:30～22:00",
+        "notes": "設置場所: 1階ロビー。休館日: 年末年始。廃食用油・古布回収: ストックヤード、月～金 8:30～17:00",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -86,17 +609,23 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-004",
+        "id": "chiyoda-022",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神保町出張所",
         "address": "千代田区神田神保町2-40",
         "categories": [
-          "small-appliance"
+          "small-appliance",
+          "ink-cartridge"
         ],
-        "hours": "毎日 8:30〜22:00",
-        "notes": ""
+        "hours": "毎日 8:30～22:00",
+        "notes": "設置場所: 1階ロビー。休館日: 年末年始（12月29日～翌年1月3日）",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -109,7 +638,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-005",
+        "id": "chiyoda-023",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -118,10 +647,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "月〜金 8:30〜17:00",
-        "notes": ""
+        "hours": "月～金曜日 8:30～17:15",
+        "notes": "設置場所: 地下1階ストックヤード。休館日: 土・日曜日、祝日、年末年始。廃食用油・古布回収: ストックヤード、月～金 8:30～17:15",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -129,22 +664,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.770752,
-          35.697628
+          139.770538,
+          35.697792
         ]
       },
       "properties": {
-        "id": "chiyoda-006",
+        "id": "chiyoda-024",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "万世橋出張所",
-        "address": "千代田区外神田1-1-13",
+        "address": "千代田区外神田1-1-11",
         "categories": [
-          "small-appliance"
+          "small-appliance",
+          "ink-cartridge"
         ],
-        "hours": "月〜金 8:30〜17:00",
-        "notes": ""
+        "hours": "月～金曜日 8:30～17:00",
+        "notes": "設置場所: 1階出張所窓口。休館日: 土・日曜日、祝日、年末年始",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -157,7 +698,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-007",
+        "id": "chiyoda-025",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -166,10 +707,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "月〜金 8:30〜17:00",
-        "notes": ""
+        "hours": "月～金曜日 8:30～17:15",
+        "notes": "設置場所: 地下1階ストックヤード。休館日: 土・日曜日、祝日、年末年始。廃食用油・古布回収: ストックヤード、月～金 8:30～17:15",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -182,7 +729,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-008",
+        "id": "chiyoda-026",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -191,8 +738,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜22:00（日祝〜17:00）",
-        "notes": ""
+        "hours": "毎日 9:00～22:00（日曜日・祝日は～17:00）",
+        "notes": "設置場所: 1階ロビー。休館日: 毎月第3日曜日、年末年始",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -205,7 +757,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-009",
+        "id": "chiyoda-027",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -214,8 +766,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜21:00",
-        "notes": ""
+        "hours": "毎日 9:00～21:00",
+        "notes": "設置場所: 1階ロビー。休館日: 毎月第3月曜日（祝日が重なると翌日）、年末年始",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -228,7 +785,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-010",
+        "id": "chiyoda-028",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -237,8 +794,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜21:00",
-        "notes": ""
+        "hours": "毎日 9:00～20:00（12月29日、30日は～17:00）",
+        "notes": "設置場所: 1階ロビー。休館日: 毎月第2日曜日、年末年始",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -251,7 +813,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-011",
+        "id": "chiyoda-029",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -260,8 +822,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜20:00",
-        "notes": ""
+        "hours": "毎日 9:00～20:00（12月29日、30日は～17:00）",
+        "notes": "設置場所: 受付カウンター付近。休館日: 毎月第2日曜日、年末年始",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -274,7 +841,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-012",
+        "id": "chiyoda-030",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -283,8 +850,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜20:00",
-        "notes": ""
+        "hours": "毎日 9:00～20:00（12月29日、30日は～17:00）",
+        "notes": "設置場所: 受付カウンター付近。休館日: 毎月第3日曜日、年末年始",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -297,7 +869,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-013",
+        "id": "chiyoda-031",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -308,8 +880,13 @@
           "cooking-oil",
           "used-clothing"
         ],
-        "hours": "毎日 7:00〜22:00",
-        "notes": ""
+        "hours": "毎日 7:00～22:00",
+        "notes": "設置場所: 地下1階ストックヤード。休館日: 年末年始。廃食用油・古布回収: ストックヤード、毎日 7:00～22:00（12月29日～翌年1月3日除く）",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -322,7 +899,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-014",
+        "id": "chiyoda-032",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -331,10 +908,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "月〜金 7:40〜17:00・土祝 7:40〜16:00",
-        "notes": ""
+        "hours": "月～金曜日 7:40～17:00（12月29日、30日は～16:00） 土曜日・祝日 7:40～16:00",
+        "notes": "設置場所: 2階事務所前。休館日: 日曜日、年末年始。廃食用油・古布回収: 月～土 7:40～17:00（土・祝、12/29・30は～16:00）",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -347,7 +930,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-015",
+        "id": "chiyoda-033",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -356,10 +939,16 @@
         "categories": [
           "small-appliance",
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "月〜土祝 7:40〜16:00",
-        "notes": ""
+        "hours": "月～土曜日・祝日 7:40～16:00",
+        "notes": "設置場所: 2階事務所前。休館日: 日曜日、年末年始。廃食用油・古布回収: 月～土・祝 7:40～16:00",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -372,7 +961,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-016",
+        "id": "chiyoda-034",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -381,8 +970,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜21:00",
-        "notes": ""
+        "hours": "毎日 9:00～21:00",
+        "notes": "設置場所: 1階エントランス。休館日: 毎月第2土曜日、年末年始（12月31日～翌年1月3日）",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -395,7 +989,7 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-017",
+        "id": "chiyoda-035",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
@@ -404,8 +998,13 @@
         "categories": [
           "small-appliance"
         ],
-        "hours": "毎日 9:00〜22:00",
-        "notes": ""
+        "hours": "毎日 9:00～22:00（12月31日～翌年1月3日は～18:00）",
+        "notes": "設置場所: 1階玄関ロビー。休館日: 毎月最終日曜日",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -418,18 +1017,24 @@
         ]
       },
       "properties": {
-        "id": "chiyoda-018",
+        "id": "chiyoda-036",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "リサイクルセンター鎌倉橋",
-        "address": "千代田区内神田2-1-8",
+        "address": "千代田区内神田2-1-8 スポーツセンター地下1階",
         "categories": [
           "cooking-oil",
-          "used-clothing"
+          "used-clothing",
+          "ink-cartridge"
         ],
-        "hours": "",
-        "notes": "地下1階"
+        "hours": "毎月1日～25日 10:00～18:00",
+        "notes": "設置場所: スポーツセンター地下1階。休館日: 月曜日、26日～月末、1月1日～4日",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -437,22 +1042,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.742767,
-          35.687504
+          139.766266,
+          35.683708
         ]
       },
       "properties": {
-        "id": "chiyoda-019",
+        "id": "chiyoda-037",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
-        "name": "一番町児童館",
-        "address": "千代田区一番町5",
+        "name": "丸の内センタービル内郵便局",
+        "address": "千代田区丸の内1-6-1",
         "categories": [
-          "battery"
+          "ink-cartridge"
         ],
         "hours": "",
-        "notes": ""
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -460,22 +1070,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.756943,
-          35.699356
+          139.769562,
+          35.682667
         ]
       },
       "properties": {
-        "id": "chiyoda-020",
+        "id": "chiyoda-038",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
-        "name": "西神田児童センター",
-        "address": "千代田区西神田1-3-1",
+        "name": "鉄鋼ビル郵便局",
+        "address": "千代田区丸の内1-8-2",
         "categories": [
-          "battery"
+          "ink-cartridge"
         ],
         "hours": "",
-        "notes": ""
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -483,22 +1098,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.767853,
-          35.692726
+          139.764679,
+          35.679085
         ]
       },
       "properties": {
-        "id": "chiyoda-021",
+        "id": "chiyoda-039",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
-        "name": "神田児童館",
-        "address": "千代田区神田司町2-2",
+        "name": "東京中央郵便局",
+        "address": "千代田区丸の内2-7-2",
         "categories": [
-          "battery"
+          "ink-cartridge"
         ],
         "hours": "",
-        "notes": ""
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     },
     {
@@ -506,22 +1126,587 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.737656,
-          35.68959
+          139.740433,
+          35.692226
         ]
       },
       "properties": {
-        "id": "chiyoda-022",
+        "id": "chiyoda-040",
         "prefecture": "tokyo",
         "city": "chiyoda",
         "cityLabel": "千代田区",
-        "name": "四番町児童館",
-        "address": "千代田区四番町4",
+        "name": "麹町郵便局",
+        "address": "千代田区九段南4-5-9",
         "categories": [
-          "battery"
+          "ink-cartridge"
         ],
         "hours": "",
-        "notes": ""
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.764343,
+          35.687778
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-041",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "KDDI大手町ビル内郵便局",
+        "address": "千代田区大手町1-8-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767426,
+          35.686779
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-042",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "大手町郵便局",
+        "address": "千代田区大手町2-3-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777283,
+          35.693882
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-043",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "千代田岩本町郵便局",
+        "address": "千代田区岩本町2-11-9",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.739197,
+          35.679234
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-044",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "長野県東京事務所（都道府県会館）",
+        "address": "千代田区平河町2-6-3 都道府県会館12階",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.760757,
+          35.675838
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-045",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "第一生命館内郵便局",
+        "address": "千代田区有楽町1-13-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.779083,
+          35.696373
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-046",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "東神田郵便局",
+        "address": "千代田区東神田2-4-5",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.744385,
+          35.677414
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-047",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "国会内郵便局",
+        "address": "千代田区永田町1-7-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.740585,
+          35.673264
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-048",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "山王パークタワー内郵便局",
+        "address": "千代田区永田町2-11-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.738052,
+          35.676807
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-049",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "山王グランドビル内郵便局",
+        "address": "千代田区永田町2-14-2",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.766052,
+          35.69458
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-050",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "小川町駅前郵便局",
+        "address": "千代田区神田小川町1-3-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.762054,
+          35.696419
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-051",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "小川町郵便局",
+        "address": "千代田区神田小川町3-22",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.768799,
+          35.697632
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-052",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田郵便局",
+        "address": "千代田区神田淡路町2-12",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.757339,
+          35.696217
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-053",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田北神保町郵便局",
+        "address": "千代田区神田神保町2-2",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763672,
+          35.691158
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-054",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田錦町郵便局",
+        "address": "千代田区神田錦町1-17-4",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.774185,
+          35.695427
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-055",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田須田町郵便局",
+        "address": "千代田区神田須田町2-8",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771988,
+          35.690617
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-056",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "神田今川橋郵便局",
+        "address": "千代田区鍛冶町1-7-11",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771866,
+          35.693462
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-057",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "千代田鍛冶町郵便局",
+        "address": "千代田区鍛冶町2-11-22",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.752213,
+          35.673378
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-058",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "霞ヶ関郵便局",
+        "address": "千代田区霞が関1-2-1",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.74791,
+          35.671192
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-059",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "霞が関ビル内郵便局",
+        "address": "千代田区霞が関3-2-5 霞が関ビル3階",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.736557,
+          35.683468
+        ]
+      },
+      "properties": {
+        "id": "chiyoda-060",
+        "prefecture": "tokyo",
+        "city": "chiyoda",
+        "cityLabel": "千代田区",
+        "name": "海事ビル内郵便局",
+        "address": "千代田区麹町4-5",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.chiyoda.lg.jp/",
+        "categoryUrls": {
+          "fluorescent": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+          "ink-cartridge": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html"
+        }
       }
     }
   ]

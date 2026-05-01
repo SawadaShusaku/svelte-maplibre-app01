@@ -29,6 +29,14 @@ npm run dev
 npm run dev -- --open
 ```
 
+公開設定は `.env.example` を元に `.env` を作成して設定します。
+
+```env
+PUBLIC_GTAG_ID=G-XXXXXXXXXX
+PUBLIC_OSRM_BASE_URL=https://router.project-osrm.org
+PUBLIC_MAP_STYLE_URL=https://tiles.openfreemap.org/styles/liberty
+```
+
 ## Building
 
 To create a production version of your app:
@@ -72,6 +80,12 @@ src/lib/data/{都道府県}/{市区町村}.geojson  →  npm run build:db  →  
    npm run smoke
    ```
 
+### 自治体のURL・出典URLを更新する場合
+
+- 自治体ごとの公式URLやカテゴリ別の出典URLは [src/lib/registry.ts](/Volumes/ASMT%202462%20NVME%20Media/Projects/svelte-maplibre-app01/src/lib/registry.ts) で管理します
+- 施設データ本体はこれまで通り GeoJSON が source of truth です
+- URL メタデータを将来 DB から引きたくなった場合も、まずは `registry.ts` などのリポジトリ内データを元に migration する方針を推奨します
+
 ### 新しい市区町村を追加する場合
 
 1. `src/lib/registry.ts` の `WARD_REGISTRY` に市区町村を追加
@@ -86,3 +100,6 @@ src/lib/data/{都道府県}/{市区町村}.geojson  →  npm run build:db  →  
 
 ### 一般社団法人JBRC
 - https://www.jbrc-system.com/page/pc/techc010/
+
+### インクカートリッジ里帰りプロジェクト
+- https://www.inksatogaeri.jp/

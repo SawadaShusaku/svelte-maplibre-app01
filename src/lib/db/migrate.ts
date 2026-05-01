@@ -50,13 +50,23 @@ const CATEGORY_DETAILS = [
 const COLLECTORS = [
 	{ id: 'jbrc', name: 'JBRC（日本小型家電リサイクル協会）', url: 'https://www.jbrc.co.jp/' },
 	{ id: 'toshima-city', name: '豊島区環境課', url: 'https://www.city.toshima.lg.jp/' },
-	{ id: 'chiyoda-city', name: '千代田区環境課', url: 'https://www.city.chiyoda.lg.jp/' }
+	{ id: 'chiyoda-city', name: '千代田区環境課', url: 'https://www.city.chiyoda.lg.jp/' },
+	{ id: 'chuo-city', name: '中央区環境課', url: 'https://www.city.chuo.lg.jp/' },
+	{ id: 'minato-city', name: '港区環境課', url: 'https://www.city.minato.tokyo.jp/' },
+	{ id: 'shinjuku-city', name: '新宿区環境課', url: 'https://www.city.shinjuku.lg.jp/' },
+	{ id: 'bunkyo-city', name: '文京区環境課', url: 'https://www.city.bunkyo.lg.jp/' },
+	{ id: 'taito-city', name: '台東区環境課', url: 'https://www.city.taito.lg.jp/' }
 ];
 
 // Wards configuration
 const WARDS = [
 	{ id: 'toshima', prefecture: 'tokyo', city_label: '豊島区', url: 'https://www.city.toshima.lg.jp/' },
-	{ id: 'chiyoda', prefecture: 'tokyo', city_label: '千代田区', url: 'https://www.city.chiyoda.lg.jp/' }
+	{ id: 'chiyoda', prefecture: 'tokyo', city_label: '千代田区', url: 'https://www.city.chiyoda.lg.jp/' },
+	{ id: 'chuo', prefecture: 'tokyo', city_label: '中央区', url: 'https://www.city.chuo.lg.jp/' },
+	{ id: 'minato', prefecture: 'tokyo', city_label: '港区', url: 'https://www.city.minato.tokyo.jp/' },
+	{ id: 'shinjuku', prefecture: 'tokyo', city_label: '新宿区', url: 'https://www.city.shinjuku.lg.jp/' },
+	{ id: 'bunkyo', prefecture: 'tokyo', city_label: '文京区', url: 'https://www.city.bunkyo.lg.jp/' },
+	{ id: 'taito', prefecture: 'tokyo', city_label: '台東区', url: 'https://www.city.taito.lg.jp/' }
 ];
 
 async function migrate() {
@@ -128,8 +138,8 @@ async function migrate() {
 	const prefectures = fs.readdirSync(dataDir);
 	
 	const insertFacility = db.prepare(
-		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, collector_id, hours, notes) ' +
-		'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, official_url, category_urls, collector_id, hours, notes) ' +
+		'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
 	);
 	const insertFacilityCategory = db.prepare(
 		'INSERT INTO facility_categories (facility_id, category_id) VALUES (?, ?)'
@@ -158,11 +168,14 @@ async function migrate() {
 				const props = feature.properties;
 				const coords = feature.geometry.coordinates;
 				
-				const categories = props.categories || [];
+				const rawCategories: unknown[] = Array.isArray(props.categories) ? props.categories : [];
+				const categories: string[] = rawCategories.filter(
+					(category): category is string => typeof category === 'string'
+				);
 				const uniqueCategories = [...new Set(categories)];
 				
 				// Validate categories
-				const validCategories = uniqueCategories.filter(c => c !== 'battery');
+				const validCategories: string[] = uniqueCategories.filter((c) => c !== 'battery');
 				if (categories.includes('battery')) {
 					console.warn(`  Warning: ${props.id} (${props.name}) has 'battery' category - needs manual classification`);
 				}
@@ -175,9 +188,24 @@ async function migrate() {
 					collectorId = 'toshima-city';
 				} else if (city === 'chiyoda') {
 					collectorId = 'chiyoda-city';
+				} else if (city === 'chuo') {
+					collectorId = 'chuo-city';
+				} else if (city === 'minato') {
+					collectorId = 'minato-city';
+				} else if (city === 'shinjuku') {
+					collectorId = 'shinjuku-city';
+				} else if (city === 'bunkyo') {
+					collectorId = 'bunkyo-city';
+				} else if (city === 'taito') {
+					collectorId = 'taito-city';
 				}
 				
 				// Insert facility
+				const officialUrl = typeof props.officialUrl === 'string' ? props.officialUrl : null;
+				const categoryUrls = props.categoryUrls && typeof props.categoryUrls === 'object'
+					? JSON.stringify(props.categoryUrls)
+					: null;
+
 				insertFacility.run(
 					props.id,
 					city,
@@ -186,6 +214,8 @@ async function migrate() {
 					coords[1], // latitude
 					coords[0], // longitude
 					null,
+					officialUrl,
+					categoryUrls,
 					collectorId,
 					props.hours || null,
 					props.notes || null
