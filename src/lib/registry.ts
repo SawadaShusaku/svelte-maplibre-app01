@@ -9,68 +9,51 @@ export interface WardMeta {
   categorySourceUrls?: Partial<Record<CategoryId, string>>;
 }
 
-export const WARD_REGISTRY: WardMeta[] = [
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'toshima',
-    cityLabel: '豊島区',
-    officialUrl: 'https://www.city.toshima.lg.jp/',
-    categorySourceUrls: {
-      fluorescent: 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/026267.html',
-      'dry-battery': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2509251342.html',
-      'cooking-oil': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013326.html',
-      'ink-cartridge': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/022688.html',
-      'small-appliance': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/034106.html'
-    }
-  },
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'chiyoda',
-    cityLabel: '千代田区',
-    officialUrl: 'https://www.city.chiyoda.lg.jp/',
-    categorySourceUrls: {
-      fluorescent: 'https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html',
-      'ink-cartridge': 'https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/ink.html'
-    }
-  },
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'chuo',
-    cityLabel: '中央区',
-    officialUrl: 'https://www.city.chuo.lg.jp/'
-  },
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'minato',
-    cityLabel: '港区',
-    officialUrl: 'https://www.city.minato.tokyo.jp/'
-  },
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'shinjuku',
-    cityLabel: '新宿区',
-    officialUrl: 'https://www.city.shinjuku.lg.jp/'
-  },
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'bunkyo',
-    cityLabel: '文京区',
-    officialUrl: 'https://www.city.bunkyo.lg.jp/'
-  },
-  {
-    prefecture: 'tokyo',
-    prefectureLabel: '東京都',
-    city: 'taito',
-    cityLabel: '台東区',
-    officialUrl: 'https://www.city.taito.lg.jp/'
-  }
-];
+interface GeoJsonFeatureCollection {
+  features?: Array<{
+    properties?: {
+      prefecture?: string;
+      city?: string;
+      cityLabel?: string;
+      officialUrl?: string;
+      categoryUrls?: Partial<Record<CategoryId, string>>;
+    };
+  }>;
+}
+
+const PREFECTURE_LABELS: Record<string, string> = {
+  tokyo: '東京都'
+};
+
+function toWardMeta(path: string, geojson: GeoJsonFeatureCollection): WardMeta | null {
+  const match = path.match(/\.\/data\/([^/]+)\/([^/.]+)\.geojson$/);
+  if (!match) return null;
+
+  const [, prefectureFromPath, cityFromPath] = match;
+  const firstFeature = geojson.features?.[0]?.properties;
+  const prefecture = firstFeature?.prefecture ?? prefectureFromPath;
+  const city = firstFeature?.city ?? cityFromPath;
+
+  return {
+    prefecture,
+    prefectureLabel: PREFECTURE_LABELS[prefecture] ?? prefecture,
+    city,
+    cityLabel: firstFeature?.cityLabel ?? city,
+    officialUrl: firstFeature?.officialUrl,
+    categorySourceUrls: firstFeature?.categoryUrls
+  };
+}
+
+const wardDataModules = import.meta.glob('./data/*/*.geojson', {
+  eager: true,
+  query: '?raw',
+  import: 'default'
+}) as Record<string, string>;
+
+export const WARD_REGISTRY: WardMeta[] = Object.entries(wardDataModules)
+  .map(([path, rawGeojson]) => toWardMeta(path, JSON.parse(rawGeojson) as GeoJsonFeatureCollection))
+  .filter((ward): ward is WardMeta => ward !== null)
+  .sort((a, b) => a.cityLabel.localeCompare(b.cityLabel, 'ja'));
 
 /** 都道府県ごとにグループ化 */
 export function groupByPrefecture(wards: WardMeta[]): Map<string, WardMeta[]> {
