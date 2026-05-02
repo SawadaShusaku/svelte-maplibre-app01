@@ -6,37 +6,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.8172708,
-          35.672773
-        ]
-      },
-      "properties": {
-        "id": "koto-001",
-        "prefecture": "tokyo",
-        "city": "koto",
-        "cityLabel": "江東区",
-        "name": "城東郵便局 / 森下町郵便局 / 江東亀戸六郵便局 / 江東亀戸郵便局 / 江東区役所（２箇所） / 環境学習情報館（えこっくる江東） / 総合区民センター / 江東豊洲郵便局 / 深川郵便局 / 江東牡丹郵便局 / 江東住吉郵便局 / 江東区文化センター内郵便局 / ＴＦＴ内郵便局 / 江東潮見郵便局",
-        "address": "江東区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.koto.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.8310546875,
           35.690799713134766
         ]
       },
       "properties": {
-        "id": "koto-002",
+        "id": "koto-001",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -61,7 +36,7 @@
         ]
       },
       "properties": {
-        "id": "koto-003",
+        "id": "koto-002",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -86,7 +61,7 @@
         ]
       },
       "properties": {
-        "id": "koto-004",
+        "id": "koto-003",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -111,7 +86,7 @@
         ]
       },
       "properties": {
-        "id": "koto-005",
+        "id": "koto-004",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -137,7 +112,7 @@
         ]
       },
       "properties": {
-        "id": "koto-006",
+        "id": "koto-005",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -162,7 +137,7 @@
         ]
       },
       "properties": {
-        "id": "koto-007",
+        "id": "koto-006",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -187,7 +162,7 @@
         ]
       },
       "properties": {
-        "id": "koto-008",
+        "id": "koto-007",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -212,7 +187,7 @@
         ]
       },
       "properties": {
-        "id": "koto-009",
+        "id": "koto-008",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -237,12 +212,12 @@
         ]
       },
       "properties": {
-        "id": "koto-010",
+        "id": "koto-009",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
         "name": "コーナン商事（株）　ホームセンターコーナンドイト南砂店",
-        "address": "東京都江東区南砂６ー７ー１５",
+        "address": "東京都江東区南砂-ー１５",
         "categories": [
           "rechargeable-battery"
         ],
@@ -262,7 +237,7 @@
         ]
       },
       "properties": {
-        "id": "koto-011",
+        "id": "koto-010",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -288,7 +263,7 @@
         ]
       },
       "properties": {
-        "id": "koto-012",
+        "id": "koto-011",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -313,7 +288,7 @@
         ]
       },
       "properties": {
-        "id": "koto-013",
+        "id": "koto-012",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -338,7 +313,7 @@
         ]
       },
       "properties": {
-        "id": "koto-014",
+        "id": "koto-013",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -363,12 +338,12 @@
         ]
       },
       "properties": {
-        "id": "koto-015",
+        "id": "koto-014",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
         "name": "眼鏡市場　スーパービバホーム豊洲",
-        "address": "東京都江東区豊洲３ー４ー８２１４ーA区画",
+        "address": "東京都江東区豊洲-ー８２１４ーA区画",
         "categories": [
           "button-battery"
         ],
@@ -388,7 +363,7 @@
         ]
       },
       "properties": {
-        "id": "koto-016",
+        "id": "koto-015",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -413,7 +388,7 @@
         ]
       },
       "properties": {
-        "id": "koto-017",
+        "id": "koto-016",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -438,7 +413,7 @@
         ]
       },
       "properties": {
-        "id": "koto-018",
+        "id": "koto-017",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -463,7 +438,7 @@
         ]
       },
       "properties": {
-        "id": "koto-019",
+        "id": "koto-018",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -488,7 +463,7 @@
         ]
       },
       "properties": {
-        "id": "koto-020",
+        "id": "koto-019",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -513,7 +488,7 @@
         ]
       },
       "properties": {
-        "id": "koto-021",
+        "id": "koto-020",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -538,7 +513,7 @@
         ]
       },
       "properties": {
-        "id": "koto-022",
+        "id": "koto-021",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -563,7 +538,7 @@
         ]
       },
       "properties": {
-        "id": "koto-023",
+        "id": "koto-022",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -588,7 +563,7 @@
         ]
       },
       "properties": {
-        "id": "koto-024",
+        "id": "koto-023",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -613,7 +588,7 @@
         ]
       },
       "properties": {
-        "id": "koto-025",
+        "id": "koto-024",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -638,7 +613,7 @@
         ]
       },
       "properties": {
-        "id": "koto-026",
+        "id": "koto-025",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -663,7 +638,7 @@
         ]
       },
       "properties": {
-        "id": "koto-027",
+        "id": "koto-026",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -688,7 +663,7 @@
         ]
       },
       "properties": {
-        "id": "koto-028",
+        "id": "koto-027",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -713,7 +688,7 @@
         ]
       },
       "properties": {
-        "id": "koto-029",
+        "id": "koto-028",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -738,7 +713,7 @@
         ]
       },
       "properties": {
-        "id": "koto-030",
+        "id": "koto-029",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -763,7 +738,7 @@
         ]
       },
       "properties": {
-        "id": "koto-031",
+        "id": "koto-030",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -788,7 +763,7 @@
         ]
       },
       "properties": {
-        "id": "koto-032",
+        "id": "koto-031",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -813,7 +788,7 @@
         ]
       },
       "properties": {
-        "id": "koto-033",
+        "id": "koto-032",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -838,7 +813,7 @@
         ]
       },
       "properties": {
-        "id": "koto-034",
+        "id": "koto-033",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -863,7 +838,7 @@
         ]
       },
       "properties": {
-        "id": "koto-035",
+        "id": "koto-034",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -888,7 +863,7 @@
         ]
       },
       "properties": {
-        "id": "koto-036",
+        "id": "koto-035",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -913,7 +888,7 @@
         ]
       },
       "properties": {
-        "id": "koto-037",
+        "id": "koto-036",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -938,12 +913,12 @@
         ]
       },
       "properties": {
-        "id": "koto-038",
+        "id": "koto-037",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
         "name": "眼鏡市場　カメイドクロック",
-        "address": "東京都江東区亀戸６丁目３１ー６カメイドクロック４階",
+        "address": "東京都江東区亀戸６丁目３-カメイドクロック４階",
         "categories": [
           "button-battery"
         ],
@@ -963,7 +938,7 @@
         ]
       },
       "properties": {
-        "id": "koto-039",
+        "id": "koto-038",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -988,7 +963,7 @@
         ]
       },
       "properties": {
-        "id": "koto-040",
+        "id": "koto-039",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1013,7 +988,7 @@
         ]
       },
       "properties": {
-        "id": "koto-041",
+        "id": "koto-040",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1038,12 +1013,12 @@
         ]
       },
       "properties": {
-        "id": "koto-042",
+        "id": "koto-041",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
         "name": "眼鏡市場　有明ガーデン",
-        "address": "東京都江東区有明２丁目１ー８有明ガーデン２階",
+        "address": "東京都江東区有明２丁目-有明ガーデン２階",
         "categories": [
           "button-battery"
         ],
@@ -1063,7 +1038,7 @@
         ]
       },
       "properties": {
-        "id": "koto-043",
+        "id": "koto-042",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1088,7 +1063,7 @@
         ]
       },
       "properties": {
-        "id": "koto-044",
+        "id": "koto-043",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1113,7 +1088,7 @@
         ]
       },
       "properties": {
-        "id": "koto-045",
+        "id": "koto-044",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1138,7 +1113,7 @@
         ]
       },
       "properties": {
-        "id": "koto-046",
+        "id": "koto-045",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1163,7 +1138,7 @@
         ]
       },
       "properties": {
-        "id": "koto-047",
+        "id": "koto-046",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1188,7 +1163,7 @@
         ]
       },
       "properties": {
-        "id": "koto-048",
+        "id": "koto-047",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1213,7 +1188,7 @@
         ]
       },
       "properties": {
-        "id": "koto-049",
+        "id": "koto-048",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1238,7 +1213,7 @@
         ]
       },
       "properties": {
-        "id": "koto-050",
+        "id": "koto-049",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1263,7 +1238,7 @@
         ]
       },
       "properties": {
-        "id": "koto-051",
+        "id": "koto-050",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1288,7 +1263,7 @@
         ]
       },
       "properties": {
-        "id": "koto-052",
+        "id": "koto-051",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1313,7 +1288,7 @@
         ]
       },
       "properties": {
-        "id": "koto-053",
+        "id": "koto-052",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1338,7 +1313,7 @@
         ]
       },
       "properties": {
-        "id": "koto-054",
+        "id": "koto-053",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1363,7 +1338,7 @@
         ]
       },
       "properties": {
-        "id": "koto-055",
+        "id": "koto-054",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1388,7 +1363,7 @@
         ]
       },
       "properties": {
-        "id": "koto-056",
+        "id": "koto-055",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1413,7 +1388,7 @@
         ]
       },
       "properties": {
-        "id": "koto-057",
+        "id": "koto-056",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1438,7 +1413,7 @@
         ]
       },
       "properties": {
-        "id": "koto-058",
+        "id": "koto-057",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1463,7 +1438,7 @@
         ]
       },
       "properties": {
-        "id": "koto-059",
+        "id": "koto-058",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1488,7 +1463,7 @@
         ]
       },
       "properties": {
-        "id": "koto-060",
+        "id": "koto-059",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1513,7 +1488,7 @@
         ]
       },
       "properties": {
-        "id": "koto-061",
+        "id": "koto-060",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1538,7 +1513,7 @@
         ]
       },
       "properties": {
-        "id": "koto-062",
+        "id": "koto-061",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1563,7 +1538,7 @@
         ]
       },
       "properties": {
-        "id": "koto-063",
+        "id": "koto-062",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1588,7 +1563,7 @@
         ]
       },
       "properties": {
-        "id": "koto-064",
+        "id": "koto-063",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1613,7 +1588,7 @@
         ]
       },
       "properties": {
-        "id": "koto-065",
+        "id": "koto-064",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1638,7 +1613,7 @@
         ]
       },
       "properties": {
-        "id": "koto-066",
+        "id": "koto-065",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1663,7 +1638,7 @@
         ]
       },
       "properties": {
-        "id": "koto-067",
+        "id": "koto-066",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1688,7 +1663,7 @@
         ]
       },
       "properties": {
-        "id": "koto-068",
+        "id": "koto-067",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1713,7 +1688,7 @@
         ]
       },
       "properties": {
-        "id": "koto-069",
+        "id": "koto-068",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1738,7 +1713,7 @@
         ]
       },
       "properties": {
-        "id": "koto-070",
+        "id": "koto-069",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1763,7 +1738,7 @@
         ]
       },
       "properties": {
-        "id": "koto-071",
+        "id": "koto-070",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1788,7 +1763,7 @@
         ]
       },
       "properties": {
-        "id": "koto-072",
+        "id": "koto-071",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1813,7 +1788,7 @@
         ]
       },
       "properties": {
-        "id": "koto-073",
+        "id": "koto-072",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1838,7 +1813,7 @@
         ]
       },
       "properties": {
-        "id": "koto-074",
+        "id": "koto-073",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1863,7 +1838,7 @@
         ]
       },
       "properties": {
-        "id": "koto-075",
+        "id": "koto-074",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1888,7 +1863,7 @@
         ]
       },
       "properties": {
-        "id": "koto-076",
+        "id": "koto-075",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1913,7 +1888,7 @@
         ]
       },
       "properties": {
-        "id": "koto-077",
+        "id": "koto-076",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1938,7 +1913,7 @@
         ]
       },
       "properties": {
-        "id": "koto-078",
+        "id": "koto-077",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1963,7 +1938,7 @@
         ]
       },
       "properties": {
-        "id": "koto-079",
+        "id": "koto-078",
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
@@ -1974,6 +1949,356 @@
         ],
         "hours": "月～木 10:00～20:00、土 10:00～21:00、日・祝 10:00～20:00（金曜休業）",
         "notes": "容器ごと回収。1階入口前。2～4階。TEL: 03-5836-1301",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8292058,
+          35.6897684
+        ]
+      },
+      "properties": {
+        "id": "koto-079",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "城東郵便局",
+        "address": "東京都江東区大島三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.797868,
+          35.687845
+        ]
+      },
+      "properties": {
+        "id": "koto-080",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "森下町郵便局",
+        "address": "東京都江東区森下一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.831439,
+          35.696482
+        ]
+      },
+      "properties": {
+        "id": "koto-081",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東亀戸六郵便局",
+        "address": "東京都江東区亀戸六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825172,
+          35.703233
+        ]
+      },
+      "properties": {
+        "id": "koto-082",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東亀戸郵便局",
+        "address": "東京都江東区亀戸三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8172708,
+          35.672773
+        ]
+      },
+      "properties": {
+        "id": "koto-083",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東区役所（２箇所）",
+        "address": "東京都江東区東陽四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8116914,
+          35.6555805
+        ]
+      },
+      "properties": {
+        "id": "koto-084",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "環境学習情報館（えこっくる江東）",
+        "address": "東京都江東区潮見一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8269171,
+          35.6890767
+        ]
+      },
+      "properties": {
+        "id": "koto-085",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "総合区民センター",
+        "address": "東京都江東区大島四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.796054,
+          35.65731
+        ]
+      },
+      "properties": {
+        "id": "koto-086",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東豊洲郵便局",
+        "address": "東京都江東区豊洲三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8179347,
+          35.6703483
+        ]
+      },
+      "properties": {
+        "id": "koto-087",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "深川郵便局",
+        "address": "東京都江東区東陽四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798542,
+          35.668689
+        ]
+      },
+      "properties": {
+        "id": "koto-088",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東牡丹郵便局",
+        "address": "東京都江東区牡丹三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.814517,
+          35.688764
+        ]
+      },
+      "properties": {
+        "id": "koto-089",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東住吉郵便局",
+        "address": "東京都江東区住吉二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818847,
+          35.672391
+        ]
+      },
+      "properties": {
+        "id": "koto-090",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東区文化センター内郵便局",
+        "address": "東京都江東区東陽四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.789956,
+          35.630826
+        ]
+      },
+      "properties": {
+        "id": "koto-091",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "ＴＦＴ内郵便局",
+        "address": "東京都江東区有明三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.813847,
+          35.658779
+        ]
+      },
+      "properties": {
+        "id": "koto-092",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "江東潮見郵便局",
+        "address": "東京都江東区潮見一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
         "officialUrl": "https://www.city.koto.lg.jp/",
         "categoryUrls": {}
       }

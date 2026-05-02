@@ -6,37 +6,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.651811191477,
-          35.6461343607084
-        ]
-      },
-      "properties": {
-        "id": "setagaya-001",
-        "prefecture": "tokyo",
-        "city": "setagaya",
-        "cityLabel": "世田谷区",
-        "name": "エコプラザ用賀 / 世田谷区役所　北沢総合支所 / 世田谷区役所　本庁舎第２庁舎 / 世田谷区役所　玉川総合支所 / 世田谷区役所　砧総合支所 / 世田谷区役所　烏山総合支所 / リサイクル千歳台 / 世田谷桜新町郵便局 / 千歳船橋駅前郵便局 / 玉川郵便局 / 成城郵便局 / 梅ケ丘駅前郵便局 / 世田谷郵便局 / 世田谷駒沢郵便局 / 二子玉川郵便局 / 千歳郵便局 / 世田谷池尻郵便局 / 世田谷上馬郵便局 / 千歳烏山郵便局 / 豪徳寺駅前郵便局 / 世田谷祖師谷四郵便局 / 八幡山駅前郵便局",
-        "address": "世田谷区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.setagaya.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.64671325683594,
           35.65397644042969
         ]
       },
       "properties": {
-        "id": "setagaya-002",
+        "id": "setagaya-001",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -62,7 +37,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-003",
+        "id": "setagaya-002",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -87,7 +62,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-004",
+        "id": "setagaya-003",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -112,7 +87,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-005",
+        "id": "setagaya-004",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -138,7 +113,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-006",
+        "id": "setagaya-005",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -163,7 +138,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-007",
+        "id": "setagaya-006",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -189,7 +164,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-008",
+        "id": "setagaya-007",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -214,7 +189,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-009",
+        "id": "setagaya-008",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -239,7 +214,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-010",
+        "id": "setagaya-009",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -264,7 +239,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-011",
+        "id": "setagaya-010",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -289,7 +264,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-012",
+        "id": "setagaya-011",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -314,7 +289,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-013",
+        "id": "setagaya-012",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -339,7 +314,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-014",
+        "id": "setagaya-013",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -364,7 +339,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-015",
+        "id": "setagaya-014",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -389,7 +364,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-016",
+        "id": "setagaya-015",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -414,7 +389,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-017",
+        "id": "setagaya-016",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -439,7 +414,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-018",
+        "id": "setagaya-017",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -464,7 +439,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-019",
+        "id": "setagaya-018",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -489,7 +464,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-020",
+        "id": "setagaya-019",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -514,7 +489,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-021",
+        "id": "setagaya-020",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -539,7 +514,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-022",
+        "id": "setagaya-021",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -564,7 +539,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-023",
+        "id": "setagaya-022",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -589,7 +564,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-024",
+        "id": "setagaya-023",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -614,7 +589,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-025",
+        "id": "setagaya-024",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -639,7 +614,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-026",
+        "id": "setagaya-025",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -664,7 +639,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-027",
+        "id": "setagaya-026",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -689,7 +664,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-028",
+        "id": "setagaya-027",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -714,7 +689,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-029",
+        "id": "setagaya-028",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -739,7 +714,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-030",
+        "id": "setagaya-029",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -764,7 +739,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-031",
+        "id": "setagaya-030",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -789,7 +764,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-032",
+        "id": "setagaya-031",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -814,7 +789,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-033",
+        "id": "setagaya-032",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -839,7 +814,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-034",
+        "id": "setagaya-033",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -864,7 +839,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-035",
+        "id": "setagaya-034",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -889,7 +864,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-036",
+        "id": "setagaya-035",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -914,7 +889,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-037",
+        "id": "setagaya-036",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -939,7 +914,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-038",
+        "id": "setagaya-037",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -964,7 +939,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-039",
+        "id": "setagaya-038",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -989,7 +964,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-040",
+        "id": "setagaya-039",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1014,7 +989,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-041",
+        "id": "setagaya-040",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1039,7 +1014,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-042",
+        "id": "setagaya-041",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1064,7 +1039,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-043",
+        "id": "setagaya-042",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1089,7 +1064,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-044",
+        "id": "setagaya-043",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1114,7 +1089,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-045",
+        "id": "setagaya-044",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1139,7 +1114,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-046",
+        "id": "setagaya-045",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1164,7 +1139,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-047",
+        "id": "setagaya-046",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1189,7 +1164,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-048",
+        "id": "setagaya-047",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1214,7 +1189,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-049",
+        "id": "setagaya-048",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1239,7 +1214,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-050",
+        "id": "setagaya-049",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1264,7 +1239,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-051",
+        "id": "setagaya-050",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1289,7 +1264,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-052",
+        "id": "setagaya-051",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1314,7 +1289,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-053",
+        "id": "setagaya-052",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1339,7 +1314,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-054",
+        "id": "setagaya-053",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1364,7 +1339,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-055",
+        "id": "setagaya-054",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1389,7 +1364,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-056",
+        "id": "setagaya-055",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1414,7 +1389,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-057",
+        "id": "setagaya-056",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1439,7 +1414,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-058",
+        "id": "setagaya-057",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1464,7 +1439,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-059",
+        "id": "setagaya-058",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1489,7 +1464,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-060",
+        "id": "setagaya-059",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1514,7 +1489,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-061",
+        "id": "setagaya-060",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1539,7 +1514,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-062",
+        "id": "setagaya-061",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1564,7 +1539,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-063",
+        "id": "setagaya-062",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1589,7 +1564,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-064",
+        "id": "setagaya-063",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1614,7 +1589,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-065",
+        "id": "setagaya-064",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1639,7 +1614,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-066",
+        "id": "setagaya-065",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1664,7 +1639,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-067",
+        "id": "setagaya-066",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1689,7 +1664,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-068",
+        "id": "setagaya-067",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1714,7 +1689,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-069",
+        "id": "setagaya-068",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1739,7 +1714,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-070",
+        "id": "setagaya-069",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1764,7 +1739,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-071",
+        "id": "setagaya-070",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1789,7 +1764,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-072",
+        "id": "setagaya-071",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1814,7 +1789,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-073",
+        "id": "setagaya-072",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1839,7 +1814,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-074",
+        "id": "setagaya-073",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1864,7 +1839,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-075",
+        "id": "setagaya-074",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1890,7 +1865,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-076",
+        "id": "setagaya-075",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1915,7 +1890,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-077",
+        "id": "setagaya-076",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1941,7 +1916,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-078",
+        "id": "setagaya-077",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1966,7 +1941,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-079",
+        "id": "setagaya-078",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -1991,7 +1966,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-080",
+        "id": "setagaya-079",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2016,7 +1991,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-081",
+        "id": "setagaya-080",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2042,7 +2017,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-082",
+        "id": "setagaya-081",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2067,7 +2042,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-083",
+        "id": "setagaya-082",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2093,7 +2068,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-084",
+        "id": "setagaya-083",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2119,7 +2094,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-085",
+        "id": "setagaya-084",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2146,7 +2121,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-086",
+        "id": "setagaya-085",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2173,7 +2148,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-087",
+        "id": "setagaya-086",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2198,7 +2173,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-088",
+        "id": "setagaya-087",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2223,7 +2198,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-089",
+        "id": "setagaya-088",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2248,7 +2223,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-090",
+        "id": "setagaya-089",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2273,7 +2248,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-091",
+        "id": "setagaya-090",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2298,7 +2273,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-092",
+        "id": "setagaya-091",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2323,7 +2298,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-093",
+        "id": "setagaya-092",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2348,7 +2323,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-094",
+        "id": "setagaya-093",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2373,7 +2348,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-095",
+        "id": "setagaya-094",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2398,7 +2373,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-096",
+        "id": "setagaya-095",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2423,7 +2398,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-097",
+        "id": "setagaya-096",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2448,7 +2423,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-098",
+        "id": "setagaya-097",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2473,7 +2448,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-099",
+        "id": "setagaya-098",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2498,7 +2473,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-100",
+        "id": "setagaya-099",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2523,7 +2498,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-101",
+        "id": "setagaya-100",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2548,7 +2523,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-102",
+        "id": "setagaya-101",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2573,7 +2548,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-103",
+        "id": "setagaya-102",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2598,7 +2573,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-104",
+        "id": "setagaya-103",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2623,7 +2598,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-105",
+        "id": "setagaya-104",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2648,7 +2623,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-106",
+        "id": "setagaya-105",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2673,7 +2648,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-107",
+        "id": "setagaya-106",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2698,7 +2673,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-108",
+        "id": "setagaya-107",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2723,7 +2698,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-109",
+        "id": "setagaya-108",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2748,7 +2723,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-110",
+        "id": "setagaya-109",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2773,7 +2748,7 @@
         ]
       },
       "properties": {
-        "id": "setagaya-111",
+        "id": "setagaya-110",
         "prefecture": "tokyo",
         "city": "setagaya",
         "cityLabel": "世田谷区",
@@ -2784,6 +2759,556 @@
         ],
         "hours": "8:00～17:00",
         "notes": "ふくのわプロジェクト古着回収ボックス",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6305446,
+          35.6269136
+        ]
+      },
+      "properties": {
+        "id": "setagaya-111",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "エコプラザ用賀",
+        "address": "東京都世田谷区用賀四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6698287,
+          35.6621401
+        ]
+      },
+      "properties": {
+        "id": "setagaya-112",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷区役所　北沢総合支所",
+        "address": "東京都世田谷区北沢二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651811191477,
+          35.6461343607084
+        ]
+      },
+      "properties": {
+        "id": "setagaya-113",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷区役所　本庁舎第２庁舎",
+        "address": "東京都世田谷区世田谷四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6484268,
+          35.6086129
+        ]
+      },
+      "properties": {
+        "id": "setagaya-114",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷区役所　玉川総合支所",
+        "address": "東京都世田谷区等々力三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6005826,
+          35.6412442
+        ]
+      },
+      "properties": {
+        "id": "setagaya-115",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷区役所　砧総合支所",
+        "address": "東京都世田谷区成城六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5980006,
+          35.669801
+        ]
+      },
+      "properties": {
+        "id": "setagaya-116",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷区役所　烏山総合支所",
+        "address": "東京都世田谷区南烏山六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6171225,
+          35.6456552
+        ]
+      },
+      "properties": {
+        "id": "setagaya-117",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "リサイクル千歳台",
+        "address": "東京都世田谷区千歳台一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.643655,
+          35.630268
+        ]
+      },
+      "properties": {
+        "id": "setagaya-118",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷桜新町郵便局",
+        "address": "東京都世田谷区桜新町一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.624077,
+          35.648618
+        ]
+      },
+      "properties": {
+        "id": "setagaya-119",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "千歳船橋駅前郵便局",
+        "address": "東京都世田谷区船橋一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6499375,
+          35.6161175
+        ]
+      },
+      "properties": {
+        "id": "setagaya-120",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "玉川郵便局",
+        "address": "東京都世田谷区等々力八丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.592944,
+          35.6481902
+        ]
+      },
+      "properties": {
+        "id": "setagaya-121",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "成城郵便局",
+        "address": "東京都世田谷区成城八丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.652982,
+          35.656718
+        ]
+      },
+      "properties": {
+        "id": "setagaya-122",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "梅ケ丘駅前郵便局",
+        "address": "東京都世田谷区松原六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6677378,
+          35.640226
+        ]
+      },
+      "properties": {
+        "id": "setagaya-123",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷郵便局",
+        "address": "東京都世田谷区三軒茶屋二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654384,
+          35.630721
+        ]
+      },
+      "properties": {
+        "id": "setagaya-124",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷駒沢郵便局",
+        "address": "東京都世田谷区駒沢三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.629233,
+          35.612714
+        ]
+      },
+      "properties": {
+        "id": "setagaya-125",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "二子玉川郵便局",
+        "address": "東京都世田谷区玉川二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6323322,
+          35.6493632
+        ]
+      },
+      "properties": {
+        "id": "setagaya-126",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "千歳郵便局",
+        "address": "東京都世田谷区経堂一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677838,
+          35.648576
+        ]
+      },
+      "properties": {
+        "id": "setagaya-127",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷池尻郵便局",
+        "address": "東京都世田谷区池尻三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.663213,
+          35.634732
+        ]
+      },
+      "properties": {
+        "id": "setagaya-128",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷上馬郵便局",
+        "address": "東京都世田谷区上馬四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599001,
+          35.669992
+        ]
+      },
+      "properties": {
+        "id": "setagaya-129",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "千歳烏山郵便局",
+        "address": "東京都世田谷区南烏山六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.648161,
+          35.655221
+        ]
+      },
+      "properties": {
+        "id": "setagaya-130",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "豪徳寺駅前郵便局",
+        "address": "東京都世田谷区豪徳寺一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.608191,
+          35.647999
+        ]
+      },
+      "properties": {
+        "id": "setagaya-131",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷祖師谷四郵便局",
+        "address": "東京都世田谷区祖師谷四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.61643,
+          35.66928
+        ]
+      },
+      "properties": {
+        "id": "setagaya-132",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "八幡山駅前郵便局",
+        "address": "東京都世田谷区八幡山三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
         "officialUrl": "https://www.city.setagaya.lg.jp/",
         "categoryUrls": {}
       }

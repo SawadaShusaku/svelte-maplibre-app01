@@ -6,37 +6,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.807098,
-          35.688272
-        ]
-      },
-      "properties": {
-        "id": "sumida-001",
-        "prefecture": "tokyo",
-        "city": "sumida",
-        "cityLabel": "墨田区",
-        "name": "向島郵便局 / 墨田両国三郵便局 / 墨田菊川郵便局 / 墨田横網郵便局 / 本所郵便局 / 本所吾妻橋駅前郵便局",
-        "address": "墨田区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.sumida.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.822998046875,
           35.726505279541016
         ]
       },
       "properties": {
-        "id": "sumida-002",
+        "id": "sumida-001",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -62,7 +37,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-003",
+        "id": "sumida-002",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -87,7 +62,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-004",
+        "id": "sumida-003",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -112,7 +87,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-005",
+        "id": "sumida-004",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -137,7 +112,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-006",
+        "id": "sumida-005",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -162,7 +137,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-007",
+        "id": "sumida-006",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -187,7 +162,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-008",
+        "id": "sumida-007",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -212,7 +187,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-009",
+        "id": "sumida-008",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -237,7 +212,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-010",
+        "id": "sumida-009",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -262,7 +237,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-011",
+        "id": "sumida-010",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -287,7 +262,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-012",
+        "id": "sumida-011",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -312,7 +287,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-013",
+        "id": "sumida-012",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -337,7 +312,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-014",
+        "id": "sumida-013",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -362,7 +337,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-015",
+        "id": "sumida-014",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -387,7 +362,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-016",
+        "id": "sumida-015",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -412,7 +387,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-017",
+        "id": "sumida-016",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -437,7 +412,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-018",
+        "id": "sumida-017",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -462,7 +437,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-019",
+        "id": "sumida-018",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -487,7 +462,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-020",
+        "id": "sumida-019",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -512,7 +487,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-021",
+        "id": "sumida-020",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -537,7 +512,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-022",
+        "id": "sumida-021",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -562,7 +537,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-023",
+        "id": "sumida-022",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -587,7 +562,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-024",
+        "id": "sumida-023",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -612,7 +587,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-025",
+        "id": "sumida-024",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -637,7 +612,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-026",
+        "id": "sumida-025",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -662,7 +637,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-027",
+        "id": "sumida-026",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -687,7 +662,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-028",
+        "id": "sumida-027",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -713,7 +688,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-029",
+        "id": "sumida-028",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -738,7 +713,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-030",
+        "id": "sumida-029",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -763,7 +738,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-031",
+        "id": "sumida-030",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -788,7 +763,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-032",
+        "id": "sumida-031",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -813,7 +788,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-033",
+        "id": "sumida-032",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -838,7 +813,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-034",
+        "id": "sumida-033",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -863,7 +838,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-035",
+        "id": "sumida-034",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -888,7 +863,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-036",
+        "id": "sumida-035",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -913,7 +888,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-037",
+        "id": "sumida-036",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -938,7 +913,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-038",
+        "id": "sumida-037",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -963,7 +938,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-039",
+        "id": "sumida-038",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -988,7 +963,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-040",
+        "id": "sumida-039",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1013,7 +988,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-041",
+        "id": "sumida-040",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1038,7 +1013,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-042",
+        "id": "sumida-041",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1063,7 +1038,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-043",
+        "id": "sumida-042",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1088,7 +1063,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-044",
+        "id": "sumida-043",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1113,7 +1088,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-045",
+        "id": "sumida-044",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1141,7 +1116,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-046",
+        "id": "sumida-045",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1166,7 +1141,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-047",
+        "id": "sumida-046",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1191,7 +1166,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-048",
+        "id": "sumida-047",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1216,7 +1191,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-049",
+        "id": "sumida-048",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1241,7 +1216,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-050",
+        "id": "sumida-049",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1266,7 +1241,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-051",
+        "id": "sumida-050",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1291,7 +1266,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-052",
+        "id": "sumida-051",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1316,7 +1291,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-053",
+        "id": "sumida-052",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1341,7 +1316,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-054",
+        "id": "sumida-053",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1368,7 +1343,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-055",
+        "id": "sumida-054",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1393,7 +1368,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-056",
+        "id": "sumida-055",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1418,7 +1393,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-057",
+        "id": "sumida-056",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1443,7 +1418,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-058",
+        "id": "sumida-057",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1468,7 +1443,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-059",
+        "id": "sumida-058",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1493,7 +1468,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-060",
+        "id": "sumida-059",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1518,7 +1493,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-061",
+        "id": "sumida-060",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1543,7 +1518,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-062",
+        "id": "sumida-061",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1568,7 +1543,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-063",
+        "id": "sumida-062",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1593,7 +1568,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-064",
+        "id": "sumida-063",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1618,7 +1593,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-065",
+        "id": "sumida-064",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1644,7 +1619,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-066",
+        "id": "sumida-065",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1669,7 +1644,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-067",
+        "id": "sumida-066",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1694,7 +1669,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-068",
+        "id": "sumida-067",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1719,7 +1694,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-069",
+        "id": "sumida-068",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1746,7 +1721,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-070",
+        "id": "sumida-069",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1773,7 +1748,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-071",
+        "id": "sumida-070",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1798,7 +1773,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-072",
+        "id": "sumida-071",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1823,7 +1798,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-073",
+        "id": "sumida-072",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1848,7 +1823,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-074",
+        "id": "sumida-073",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1873,7 +1848,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-075",
+        "id": "sumida-074",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1898,7 +1873,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-076",
+        "id": "sumida-075",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1923,7 +1898,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-077",
+        "id": "sumida-076",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1948,7 +1923,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-078",
+        "id": "sumida-077",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1973,7 +1948,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-079",
+        "id": "sumida-078",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -1998,7 +1973,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-080",
+        "id": "sumida-079",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2023,7 +1998,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-081",
+        "id": "sumida-080",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2050,7 +2025,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-082",
+        "id": "sumida-081",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2077,7 +2052,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-083",
+        "id": "sumida-082",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2103,7 +2078,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-084",
+        "id": "sumida-083",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2128,7 +2103,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-085",
+        "id": "sumida-084",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2153,7 +2128,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-086",
+        "id": "sumida-085",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2178,7 +2153,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-087",
+        "id": "sumida-086",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2206,7 +2181,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-088",
+        "id": "sumida-087",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2231,7 +2206,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-089",
+        "id": "sumida-088",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2256,7 +2231,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-090",
+        "id": "sumida-089",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2283,7 +2258,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-091",
+        "id": "sumida-090",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2311,7 +2286,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-092",
+        "id": "sumida-091",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2337,7 +2312,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-093",
+        "id": "sumida-092",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2363,7 +2338,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-094",
+        "id": "sumida-093",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2389,7 +2364,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-095",
+        "id": "sumida-094",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2416,7 +2391,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-096",
+        "id": "sumida-095",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2441,7 +2416,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-097",
+        "id": "sumida-096",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2466,7 +2441,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-098",
+        "id": "sumida-097",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2493,7 +2468,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-099",
+        "id": "sumida-098",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2518,7 +2493,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-100",
+        "id": "sumida-099",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2545,7 +2520,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-101",
+        "id": "sumida-100",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2571,7 +2546,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-102",
+        "id": "sumida-101",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2598,7 +2573,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-103",
+        "id": "sumida-102",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2623,7 +2598,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-104",
+        "id": "sumida-103",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2650,7 +2625,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-105",
+        "id": "sumida-104",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2675,7 +2650,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-106",
+        "id": "sumida-105",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2702,7 +2677,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-107",
+        "id": "sumida-106",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2727,7 +2702,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-108",
+        "id": "sumida-107",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2752,7 +2727,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-109",
+        "id": "sumida-108",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2777,7 +2752,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-110",
+        "id": "sumida-109",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2802,7 +2777,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-111",
+        "id": "sumida-110",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2827,7 +2802,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-112",
+        "id": "sumida-111",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2854,7 +2829,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-113",
+        "id": "sumida-112",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2879,7 +2854,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-114",
+        "id": "sumida-113",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2904,7 +2879,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-115",
+        "id": "sumida-114",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2929,7 +2904,7 @@
         ]
       },
       "properties": {
-        "id": "sumida-116",
+        "id": "sumida-115",
         "prefecture": "tokyo",
         "city": "sumida",
         "cityLabel": "墨田区",
@@ -2940,6 +2915,156 @@
         ],
         "hours": "平日10:00～16:00",
         "notes": "衣料品・ファッション雑貨・生活雑貨・おもちゃ回収",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8176035,
+          35.7197044
+        ]
+      },
+      "properties": {
+        "id": "sumida-116",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "向島郵便局",
+        "address": "東京都墨田区東向島二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.794053,
+          35.693123
+        ]
+      },
+      "properties": {
+        "id": "sumida-117",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田両国三郵便局",
+        "address": "東京都墨田区両国三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807098,
+          35.688272
+        ]
+      },
+      "properties": {
+        "id": "sumida-118",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田菊川郵便局",
+        "address": "東京都墨田区菊川三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.79686,
+          35.6983
+        ]
+      },
+      "properties": {
+        "id": "sumida-119",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田横網郵便局",
+        "address": "東京都墨田区横網一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8177762,
+          35.7026444
+        ]
+      },
+      "properties": {
+        "id": "sumida-120",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "本所郵便局",
+        "address": "東京都墨田区太平四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803614,
+          35.70874
+        ]
+      },
+      "properties": {
+        "id": "sumida-121",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "本所吾妻橋駅前郵便局",
+        "address": "東京都墨田区吾妻橋二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
         "officialUrl": "https://www.city.sumida.lg.jp/",
         "categoryUrls": {}
       }

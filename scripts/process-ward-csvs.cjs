@@ -9,7 +9,7 @@
  *   node scripts/process-ward-csvs.js 港区 minato
  *
  * This script:
- * 1. Filters tokyo_ink_collection.csv for the ward (has lat/lon)
+ * 1. Filters tokyo_ink_with_address.csv for the ward (has lat/lon)
  * 2. Filters tokyo_jbrc_battery_shops.csv for the ward (has lat/lon)
  * 3. Filters tokyo_button_battery.csv for the ward, then geocodes addresses via GSI API
  * 4. Appends all features to src/lib/data/tokyo/{city-code}.geojson
@@ -77,9 +77,9 @@ function makeFeature(name, address, lat, lon, categories, notes = '', url = '') 
 
 /* ===================== 1. Ink Collection (has coordinates) ===================== */
 function processInkCollection() {
-  const file = path.join(CSV_DIR, 'tokyo_ink_collection.csv');
+  const file = path.join(CSV_DIR, 'tokyo_ink_with_address.csv');
   if (!fs.existsSync(file)) {
-    console.log('  [skip] tokyo_ink_collection.csv not found');
+    console.log('  [skip] tokyo_ink_with_address.csv not found');
     return 0;
   }
   let content = fs.readFileSync(file, 'utf8');
