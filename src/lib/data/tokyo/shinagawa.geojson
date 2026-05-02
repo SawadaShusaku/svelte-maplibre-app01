@@ -541,7 +541,11 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "総合体育館",
+<<<<<<< HEAD
+        "address": "東京都品川区東五反田二丁目11番２号",
+=======
         "address": "東京都稲城市長峰一丁目",
+>>>>>>> origin/main
         "categories": [
           "ink-cartridge"
         ],
@@ -1265,7 +1269,7 @@
         "prefecture": "tokyo",
         "city": "shinagawa",
         "cityLabel": "品川区",
-        "name": "�螢戰螢読霏⊂�山店",
+        "name": "パルム",
         "address": "東京都品川区小山３−２５−１",
         "categories": [
           "button-battery"
@@ -1315,7 +1319,7 @@
         "prefecture": "tokyo",
         "city": "shinagawa",
         "cityLabel": "品川区",
-        "name": "�螢螢�ネットセンター城南 目黒店",
+        "name": "㈱リオネットセンター城南 目黒店",
         "address": "東京都品川区上大崎３−３−１オバタビル２階",
         "categories": [
           "button-battery"
@@ -1465,7 +1469,7 @@
         "prefecture": "tokyo",
         "city": "shinagawa",
         "cityLabel": "品川区",
-        "name": "�螢筌泪瀬妊鵐�テックランド西友大森店",
+        "name": "テックランド西友大森店",
         "address": "東京都品川区南大井六丁目２７-２５西友大森店4階",
         "categories": [
           "button-battery"
@@ -1765,7 +1769,7 @@
         "prefecture": "tokyo",
         "city": "shinagawa",
         "cityLabel": "品川区",
-        "name": "�螢筌泪瀬妊鵐�　LABI LIFE SELECT 品川大井町店",
+        "name": "LABI LIFE SELECT 品川大井町店",
         "address": "東京都品川区東大井5-20-1",
         "categories": [
           "button-battery"

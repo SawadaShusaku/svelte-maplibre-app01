@@ -6,7 +6,8 @@
 	"scripts": {
 		"dev": "npm run build:db && vite dev",
 		"build": "npm run build:db && vite build",
-		"build:db": "tsx src/lib/db/migrate.ts",
+		"build:db": "npm run audit:data && tsx src/lib/db/migrate.ts",
+		"audit:data": "tsx scripts/audit-geojson.ts",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

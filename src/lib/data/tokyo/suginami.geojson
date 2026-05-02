@@ -1215,7 +1215,7 @@
         "prefecture": "tokyo",
         "city": "suginami",
         "cityLabel": "杉並区",
-        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ井草店",
+        "name": "カメラ井草店",
         "address": "東京都杉並区井草3-17-10",
         "categories": [
           "button-battery"
@@ -1290,7 +1290,7 @@
         "prefecture": "tokyo",
         "city": "suginami",
         "cityLabel": "杉並区",
-        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ善福寺店",
+        "name": "カメラ善福寺店",
         "address": "東京都杉並区善福寺１ー３４ー２４",
         "categories": [
           "button-battery"
@@ -1665,7 +1665,7 @@
         "prefecture": "tokyo",
         "city": "suginami",
         "cityLabel": "杉並区",
-        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ高井戸東店",
+        "name": "カメラ高井戸東店",
         "address": "東京都杉並区高井戸東４−２−１",
         "categories": [
           "button-battery"
@@ -2268,7 +2268,9 @@
         "name": "ごみ減量対策課",
         "address": "東京都杉並区阿佐谷南1丁目15番1号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "small-appliance",
+          "used-clothing"
         ],
         "hours": "午前8時30分～午後5時（土曜日・日曜日・祝日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2293,7 +2295,8 @@
         "name": "杉並清掃事務所",
         "address": "東京都杉並区成田東5丁目15番20号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "small-appliance"
         ],
         "hours": "午前8時30分～午後5時（日曜日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2318,7 +2321,8 @@
         "name": "杉並清掃事務所方南支所",
         "address": "東京都杉並区方南1丁目3番4号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "small-appliance"
         ],
         "hours": "午前8時30分～午後5時（日曜日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2343,7 +2347,8 @@
         "name": "杉並清掃事務所高円寺車庫",
         "address": "東京都杉並区高円寺南2丁目36番31号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "small-appliance"
         ],
         "hours": "午前8時30分～午後4時（日曜日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2368,7 +2373,9 @@
         "name": "環境活動推進センター4階",
         "address": "東京都杉並区高井戸東3丁目7番4号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "small-appliance",
+          "used-clothing"
         ],
         "hours": "午前9時～午後5時（水曜日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2418,7 +2425,8 @@
         "name": "井草地域区民センター",
         "address": "東京都杉並区下井草5丁目7番22号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "used-clothing"
         ],
         "hours": "午前9時～午後9時（第1・第3木曜日・第3木曜日の前日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2443,7 +2451,8 @@
         "name": "永福和泉地域区民センター",
         "address": "東京都杉並区和泉3丁目8番18号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "used-clothing"
         ],
         "hours": "午前9時～午後9時（第2・第4水曜日・年末年始・毎月15日（館内整理日）を除く）",
         "notes": "廃食用油回収拠点",
@@ -2468,7 +2477,8 @@
         "name": "荻窪地域区民センター",
         "address": "東京都杉並区荻窪2丁目34番20号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "used-clothing"
         ],
         "hours": "午前9時～午後9時（第2・第4月曜日・年末年始・毎月20日（館内整理日）を除く）",
         "notes": "廃食用油回収拠点",
@@ -2493,7 +2503,8 @@
         "name": "高円寺地域区民センター（セシオン杉並）",
         "address": "東京都杉並区梅里1丁目22番32号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "used-clothing"
         ],
         "hours": "午前9時～午後9時（第2木曜日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2543,7 +2554,8 @@
         "name": "西荻地域区民センター",
         "address": "東京都杉並区桃井4丁目3番2号",
         "categories": [
-          "cooking-oil"
+          "cooking-oil",
+          "used-clothing"
         ],
         "hours": "午前9時～午後9時（第2木曜日・年末年始を除く）",
         "notes": "廃食用油回収拠点",
@@ -2573,6 +2585,106 @@
         "hours": "民間施設",
         "notes": "廃食用油回収拠点",
         "officialUrl": "https://www.city.suginami.tokyo.jp/s104/747.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.607222,
+          35.725833
+        ]
+      },
+      "properties": {
+        "id": "suginami-104",
+        "prefecture": "tokyo",
+        "city": "suginami",
+        "cityLabel": "杉並区",
+        "name": "柿木図書館",
+        "address": "東京都杉並区上井草1丁目6番13号",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.suginami.tokyo.jp/s104/730.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.603611,
+          35.687222
+        ]
+      },
+      "properties": {
+        "id": "suginami-105",
+        "prefecture": "tokyo",
+        "city": "suginami",
+        "cityLabel": "杉並区",
+        "name": "宮前図書館",
+        "address": "東京都杉並区宮前5丁目5番27号",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.suginami.tokyo.jp/s104/732.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6475,
+          35.6725
+        ]
+      },
+      "properties": {
+        "id": "suginami-106",
+        "prefecture": "tokyo",
+        "city": "suginami",
+        "cityLabel": "杉並区",
+        "name": "方南会館",
+        "address": "東京都杉並区和泉4丁目42番5号",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.suginami.tokyo.jp/s104/732.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.623333,
+          35.681667
+        ]
+      },
+      "properties": {
+        "id": "suginami-107",
+        "prefecture": "tokyo",
+        "city": "suginami",
+        "cityLabel": "杉並区",
+        "name": "コミュニティふらっと本天沼",
+        "address": "東京都杉並区本天沼2丁目12番10号",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.suginami.tokyo.jp/s104/732.html",
         "categoryUrls": {}
       }
     }
