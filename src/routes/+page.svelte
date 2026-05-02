@@ -27,8 +27,10 @@
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
 
-  const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() ?? '';
-  const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() ?? '';
+  const DEFAULT_OSRM_BASE_URL = 'https://router.project-osrm.org';
+  const DEFAULT_MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/liberty';
+  const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() || DEFAULT_OSRM_BASE_URL;
+  const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() || DEFAULT_MAP_STYLE_URL;
 
   // 初期データ
   const allCategories: CategoryId[] = [
