@@ -30,6 +30,7 @@ This is a **SvelteKit + MapLibre GL + SQLite** application using Svelte 5 runes 
 | **Styling** | Tailwind CSS v4 | Utility-first CSS |
 | **Testing** | Vitest (unit) + Playwright (E2E) | Test framework |
 | **Build** | Vite | Build tool and dev server |
+| **Version Control** | Jujutsu (jj) | Primary VCS (git colocated) |
 
 ### Database Architecture
 

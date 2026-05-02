@@ -92,7 +92,7 @@ src/lib/data/{都道府県}/{市区町村}.geojson  →  npm run build:db  →  
 2. `src/lib/data/{都道府県}/{市区町村}.geojson` にGeoJSONファイルを作成
 3. `npm run build:db` を実行
 
-## 参考URL
+## データソース
 
 ### 一般社団法人電池工業会
 - http://www.botankaishu.jp/srch/srch10.php
@@ -103,3 +103,6 @@ src/lib/data/{都道府県}/{市区町村}.geojson  →  npm run build:db  →  
 
 ### インクカートリッジ里帰りプロジェクト
 - https://www.inksatogaeri.jp/
+
+### 使用済み食用油の都内回収所
+- https://www.kankyo.metro.tokyo.lg.jp/resource/recycle/wastecookingoil/collectionpoint

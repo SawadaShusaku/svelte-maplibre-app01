@@ -40,10 +40,11 @@
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
-        "name": "区役所別館",
+        "name": "区役所別館 / 区役所本庁舎",
         "address": "中央区築地1-1-1",
         "categories": [
-          "dry-battery"
+          "dry-battery",
+          "small-appliance"
         ],
         "hours": "",
         "notes": "",
@@ -118,13 +119,17 @@
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
-        "name": "日本橋社会教育会館",
+        "name": "日本橋小学校 / 日本橋社会教育会館",
         "address": "中央区人形町1-1-17",
         "categories": [
-          "dry-battery"
+          "cooking-oil",
+          "dry-battery",
+          "fluorescent",
+          "small-appliance",
+          "used-clothing"
         ],
-        "hours": "",
-        "notes": "座標は仮（正確なジオコーディング未解決）",
+        "hours": "土曜日 9:00～11:00",
+        "notes": "座標は仮（正確なジオコーディング未解決） / 座標は仮",
         "officialUrl": "https://www.city.chuo.lg.jp/",
         "categoryUrls": {}
       }
@@ -247,38 +252,17 @@
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
-        "name": "中央清掃事務所",
+        "name": "中央清掃事務所 / 城東小学校（中央清掃事務所代替）",
         "address": "中央区京橋1-19-6",
         "categories": [
-          "small-appliance"
+          "cooking-oil",
+          "dry-battery",
+          "fluorescent",
+          "small-appliance",
+          "used-clothing"
         ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.771927,
-          35.670841
-        ]
-      },
-      "properties": {
-        "id": "chuo-011",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "区役所本庁舎",
-        "address": "中央区築地1-1-1",
-        "categories": [
-          "small-appliance"
-        ],
-        "hours": "",
-        "notes": "",
+        "hours": "土曜日 9:30～11:30",
+        "notes": "土曜日のみ回収",
         "officialUrl": "https://www.city.chuo.lg.jp/",
         "categoryUrls": {}
       }
@@ -293,7 +277,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-012",
+        "id": "chuo-011",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -317,41 +301,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.773895,
-          35.677197
-        ]
-      },
-      "properties": {
-        "id": "chuo-013",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "城東小学校（中央清掃事務所代替）",
-        "address": "中央区京橋1-19-6",
-        "categories": [
-          "cooking-oil",
-          "used-clothing",
-          "fluorescent",
-          "dry-battery",
-          "small-appliance"
-        ],
-        "hours": "土曜日 9:30～11:30",
-        "notes": "土曜日のみ回収",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.761124,
           35.672058
         ]
       },
       "properties": {
-        "id": "chuo-014",
+        "id": "chuo-012",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -380,7 +335,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-015",
+        "id": "chuo-013",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -409,7 +364,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-016",
+        "id": "chuo-014",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -438,7 +393,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-017",
+        "id": "chuo-015",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -467,7 +422,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-018",
+        "id": "chuo-016",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -496,7 +451,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-019",
+        "id": "chuo-017",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -525,7 +480,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-020",
+        "id": "chuo-018",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -549,41 +504,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.772003,
-          35.670601
-        ]
-      },
-      "properties": {
-        "id": "chuo-021",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋小学校",
-        "address": "中央区人形町1-1-17",
-        "categories": [
-          "cooking-oil",
-          "used-clothing",
-          "fluorescent",
-          "dry-battery",
-          "small-appliance"
-        ],
-        "hours": "土曜日 9:00～11:00",
-        "notes": "座標は仮",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.787003,
           35.691845
         ]
       },
       "properties": {
-        "id": "chuo-022",
+        "id": "chuo-019",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -612,7 +538,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-023",
+        "id": "chuo-020",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -641,7 +567,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-024",
+        "id": "chuo-021",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -670,7 +596,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-025",
+        "id": "chuo-022",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -699,7 +625,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-026",
+        "id": "chuo-023",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -728,7 +654,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-027",
+        "id": "chuo-024",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -757,7 +683,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-028",
+        "id": "chuo-025",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -786,7 +712,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-029",
+        "id": "chuo-026",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -815,7 +741,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-030",
+        "id": "chuo-027",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -844,7 +770,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-031",
+        "id": "chuo-028",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -873,786 +799,11 @@
         ]
       },
       "properties": {
-        "id": "chuo-032",
+        "id": "chuo-029",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
-        "name": "中央区役所本庁舎１階",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7843214,
-          35.6824856
-        ]
-      },
-      "properties": {
-        "id": "chuo-033",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋特別出張所",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7821888,
-          35.6619989
-        ]
-      },
-      "properties": {
-        "id": "chuo-034",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "月島特別出張所",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.775728817468,
-          35.6747955371112
-        ]
-      },
-      "properties": {
-        "id": "chuo-035",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "リサイクルハウスかざぐるま八丁堀",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.789035,
-          35.6812025
-        ]
-      },
-      "properties": {
-        "id": "chuo-036",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "リサイクルハウスかざぐるま箱崎町",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.78006124549,
-          35.6518680196134
-        ]
-      },
-      "properties": {
-        "id": "chuo-037",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "晴海特別出張所",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.785753,
-          35.695452
-        ]
-      },
-      "properties": {
-        "id": "chuo-038",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "両国郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.785904,
-          35.690795
-        ]
-      },
-      "properties": {
-        "id": "chuo-039",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "中央浜町一郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.782266,
-          35.657584
-        ]
-      },
-      "properties": {
-        "id": "chuo-040",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "晴海トリトンスクエア郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.782312,
-          35.685414
-        ]
-      },
-      "properties": {
-        "id": "chuo-041",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋人形町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.758999,
-          35.669347
-        ]
-      },
-      "properties": {
-        "id": "chuo-042",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "銀座西郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.763364,
-          35.670575
-        ]
-      },
-      "properties": {
-        "id": "chuo-043",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "銀座みゆき通郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.772602,
-          35.687537
-        ]
-      },
-      "properties": {
-        "id": "chuo-044",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋室町三井タワー内郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.781713,
-          35.661895
-        ]
-      },
-      "properties": {
-        "id": "chuo-045",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "京橋月島郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7691172,
-          35.6672675
-        ]
-      },
-      "properties": {
-        "id": "chuo-046",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "京橋郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.775212,
-          35.676385
-        ]
-      },
-      "properties": {
-        "id": "chuo-047",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "中央八丁堀郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.780895,
-          35.690117
-        ]
-      },
-      "properties": {
-        "id": "chuo-048",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋大伝馬町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.781215,
-          35.682823
-        ]
-      },
-      "properties": {
-        "id": "chuo-049",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋小網町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.776382,
-          35.690573
-        ]
-      },
-      "properties": {
-        "id": "chuo-050",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋本町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.777209,
-          35.687541
-        ]
-      },
-      "properties": {
-        "id": "chuo-051",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋小舟町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.77402578927,
-          35.6799227993788
-        ]
-      },
-      "properties": {
-        "id": "chuo-052",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.779176,
-          35.691404
-        ]
-      },
-      "properties": {
-        "id": "chuo-053",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "小伝馬町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.772806,
-          35.681551
-        ]
-      },
-      "properties": {
-        "id": "chuo-054",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋南郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.78377,
-          35.674693
-        ]
-      },
-      "properties": {
-        "id": "chuo-055",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "中央新川二郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.76753,
-          35.673304
-        ]
-      },
-      "properties": {
-        "id": "chuo-056",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "銀座通郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.778278,
-          35.678662
-        ]
-      },
-      "properties": {
-        "id": "chuo-057",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋茅場町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.785541,
-          35.684601
-        ]
-      },
-      "properties": {
-        "id": "chuo-058",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "中央人形町二郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.77533,
-          35.68608
-        ]
-      },
-      "properties": {
-        "id": "chuo-059",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "日本橋室町郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.773924,
-          35.688688
-        ]
-      },
-      "properties": {
-        "id": "chuo-060",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "新日本橋駅前郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.778661,
-          35.667002
-        ]
-      },
-      "properties": {
-        "id": "chuo-061",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "聖路加ガーデン内郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.765256,
-          35.667045
-        ]
-      },
-      "properties": {
-        "id": "chuo-062",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "銀座七郵便局",
-        "address": "中央区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.chuo.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.770185,
-          35.672639
-        ]
-      },
-      "properties": {
-        "id": "chuo-063",
-        "prefecture": "tokyo",
-        "city": "chuo",
-        "cityLabel": "中央区",
-        "name": "銀座一郵便局",
+        "name": "リサイクルハウスかざぐるま八丁堀 / 中央区役所本庁舎１階 / 日本橋特別出張所 / 月島特別出張所 / リサイクルハウスかざぐるま箱崎町 / 晴海特別出張所 / 両国郵便局 / 中央浜町一郵便局 / 晴海トリトンスクエア郵便局 / 日本橋人形町郵便局 / 銀座西郵便局 / 銀座みゆき通郵便局 / 日本橋室町三井タワー内郵便局 / 京橋月島郵便局 / 京橋郵便局 / 中央八丁堀郵便局 / 日本橋大伝馬町郵便局 / 日本橋小網町郵便局 / 日本橋本町郵便局 / 日本橋小舟町郵便局 / 日本橋郵便局 / 小伝馬町郵便局 / 日本橋南郵便局 / 中央新川二郵便局 / 銀座通郵便局 / 日本橋茅場町郵便局 / 中央人形町二郵便局 / 日本橋室町郵便局 / 新日本橋駅前郵便局 / 聖路加ガーデン内郵便局 / 銀座七郵便局 / 銀座一郵便局",
         "address": "中央区",
         "categories": [
           "ink-cartridge"
@@ -1673,7 +824,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-064",
+        "id": "chuo-030",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1698,7 +849,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-065",
+        "id": "chuo-031",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1723,7 +874,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-066",
+        "id": "chuo-032",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1748,7 +899,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-067",
+        "id": "chuo-033",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1773,7 +924,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-068",
+        "id": "chuo-034",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1798,7 +949,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-069",
+        "id": "chuo-035",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1823,7 +974,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-070",
+        "id": "chuo-036",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1848,7 +999,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-071",
+        "id": "chuo-037",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1873,7 +1024,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-072",
+        "id": "chuo-038",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1898,7 +1049,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-073",
+        "id": "chuo-039",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1923,7 +1074,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-074",
+        "id": "chuo-040",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1948,7 +1099,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-075",
+        "id": "chuo-041",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1973,7 +1124,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-076",
+        "id": "chuo-042",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -1998,7 +1149,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-077",
+        "id": "chuo-043",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -2023,7 +1174,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-078",
+        "id": "chuo-044",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -2048,7 +1199,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-079",
+        "id": "chuo-045",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",
@@ -2073,7 +1224,7 @@
         ]
       },
       "properties": {
-        "id": "chuo-080",
+        "id": "chuo-046",
         "prefecture": "tokyo",
         "city": "chuo",
         "cityLabel": "中央区",

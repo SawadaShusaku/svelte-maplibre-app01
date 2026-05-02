@@ -1,0 +1,2792 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651811191477,
+          35.6461343607084
+        ]
+      },
+      "properties": {
+        "id": "setagaya-001",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "エコプラザ用賀 / 世田谷区役所　北沢総合支所 / 世田谷区役所　本庁舎第２庁舎 / 世田谷区役所　玉川総合支所 / 世田谷区役所　砧総合支所 / 世田谷区役所　烏山総合支所 / リサイクル千歳台 / 世田谷桜新町郵便局 / 千歳船橋駅前郵便局 / 玉川郵便局 / 成城郵便局 / 梅ケ丘駅前郵便局 / 世田谷郵便局 / 世田谷駒沢郵便局 / 二子玉川郵便局 / 千歳郵便局 / 世田谷池尻郵便局 / 世田谷上馬郵便局 / 千歳烏山郵便局 / 豪徳寺駅前郵便局 / 世田谷祖師谷四郵便局 / 八幡山駅前郵便局",
+        "address": "世田谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.64671325683594,
+          35.65397644042969
+        ]
+      },
+      "properties": {
+        "id": "setagaya-002",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "桜井ミシン電気商会",
+        "address": "東京都世田谷区豪徳寺１−４５−３",
+        "categories": [
+          "rechargeable-battery",
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.64080810546875,
+          35.61354446411133
+        ]
+      },
+      "properties": {
+        "id": "setagaya-003",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "（株）芝江電機　いつも電気シバコー",
+        "address": "東京都世田谷区上野毛１−１８−１７臼井ビル１Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.62435913085938,
+          35.66987991333008
+        ]
+      },
+      "properties": {
+        "id": "setagaya-004",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "（有）ムトウ電器",
+        "address": "東京都世田谷区上北沢４−１７−２０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6424102783203,
+          35.61906051635742
+        ]
+      },
+      "properties": {
+        "id": "setagaya-005",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "有限会社セキネデンキ / （有）セキネデンキ",
+        "address": "東京都世田谷区中町４−８−５",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-3701-5543",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6632080078125,
+          35.653934478759766
+        ]
+      },
+      "properties": {
+        "id": "setagaya-006",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "（株）シグマ　シグマ代田",
+        "address": "東京都世田谷区代田１−３４−１５舘コーポ１Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63685607910156,
+          35.62586975097656
+        ]
+      },
+      "properties": {
+        "id": "setagaya-007",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "コジマ×ビックカメラ用賀店　１階レジカウンター / �螢灰献沺．灰献沺潺咼奪�カメラ用賀店",
+        "address": "東京都世田谷区用賀２−２０−１２",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-5491-2611",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66021728515625,
+          35.650726318359375
+        ]
+      },
+      "properties": {
+        "id": "setagaya-008",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "コジマ×ビックカメラ若林店　１階レジ（電話、ＡＶ、ＰＣ、カメラ、おもちゃ）Ｂ１階レジ（電池、家電）",
+        "address": "東京都世田谷区若林５−４１−２０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6138153076172,
+          35.674339294433594
+        ]
+      },
+      "properties": {
+        "id": "setagaya-009",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "（株）ヤマダデンキ　テックランド東京本店",
+        "address": "東京都世田谷区上北沢５−３７−１８",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6051788330078,
+          35.63256072998047
+        ]
+      },
+      "properties": {
+        "id": "setagaya-010",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "コジマ×ビックカメラ成城店　２階レジカウンター",
+        "address": "東京都世田谷区成城１−３−１サミットストア成城店２Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.61981201171875,
+          35.6365966796875
+        ]
+      },
+      "properties": {
+        "id": "setagaya-011",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "（株）ピーシーデポコーポレーション　ＰＣ　ＤＥＰＯＴ　スマートライフ世田谷砧店",
+        "address": "東京都世田谷区砧１−１６−６",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66542053222656,
+          35.60358810424805
+        ]
+      },
+      "properties": {
+        "id": "setagaya-012",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "三宝カメラ（株）",
+        "address": "東京都世田谷区奥沢６−１９−２１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.623886,
+          35.648041
+        ]
+      },
+      "properties": {
+        "id": "setagaya-013",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "有限会社　青山堂",
+        "address": "東京都世田谷区船橋１−１−９アトゥリオ青山",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3420-6237",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.626038,
+          35.613369
+        ]
+      },
+      "properties": {
+        "id": "setagaya-014",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ブルーム二子玉川店",
+        "address": "東京都世田谷区玉川３−１０−１１ジ・エイペックスビル２F-A",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6447-9833",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667297,
+          35.662716
+        ]
+      },
+      "properties": {
+        "id": "setagaya-015",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネの愛眼 下北沢店",
+        "address": "東京都世田谷区北沢2-30-3サンセルボンビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3465-0255",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.621841,
+          35.659668
+        ]
+      },
+      "properties": {
+        "id": "setagaya-016",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "コーナンPRO世田谷八幡山店",
+        "address": "東京都世田谷区八幡山一丁目9番3号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5316-2157",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.613815,
+          35.674339
+        ]
+      },
+      "properties": {
+        "id": "setagaya-017",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "�螢筌泪瀬妊鵐�　テックランド東京本店",
+        "address": "東京都世田谷区上北沢5-37-18",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5316-7070",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.588562,
+          35.636429
+        ]
+      },
+      "properties": {
+        "id": "setagaya-018",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　喜多見店",
+        "address": "東京都世田谷区喜多見8-18-16",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5727-2848",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634583,
+          35.626431
+        ]
+      },
+      "properties": {
+        "id": "setagaya-019",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "オーケー用賀駅前店",
+        "address": "東京都世田谷区用賀２−３９−１８",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5797-5655",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599579,
+          35.632866
+        ]
+      },
+      "properties": {
+        "id": "setagaya-020",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "オーケー成城店",
+        "address": "東京都世田谷区成城３−１８−３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5494-6370",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.59845,
+          35.640316
+        ]
+      },
+      "properties": {
+        "id": "setagaya-021",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネ　パリ　ミキ　成城学園前店",
+        "address": "東京都世田谷区成城６−５−２９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3483-7481",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634933,
+          35.653301
+        ]
+      },
+      "properties": {
+        "id": "setagaya-022",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "カーダヒヤリング",
+        "address": "東京都世田谷区経堂２−７−１３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5450-4133",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.621918,
+          35.647068
+        ]
+      },
+      "properties": {
+        "id": "setagaya-023",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "チトセメガネ補聴器相談室",
+        "address": "東京都世田谷区桜丘５−４７−２３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3427-0321",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.644028,
+          35.62986
+        ]
+      },
+      "properties": {
+        "id": "setagaya-024",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　桜新町店",
+        "address": "東京都世田谷区桜新町1-8-8橋本ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5477-6748",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669479,
+          35.64698
+        ]
+      },
+      "properties": {
+        "id": "setagaya-025",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "�螢螢�ネットセンター城南　三軒茶屋店",
+        "address": "東京都世田谷区太子堂３−１４−１千葉ビル１０２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6805-3140",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.660355,
+          35.653168
+        ]
+      },
+      "properties": {
+        "id": "setagaya-026",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "山菱電器産業株式会社",
+        "address": "東京都世田谷区代田１−２３−７",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3411-2723",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631287,
+          35.647835
+        ]
+      },
+      "properties": {
+        "id": "setagaya-027",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ビーバープロ経堂店",
+        "address": "東京都世田谷区経堂５−３３−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5426-5533",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.626038,
+          35.613728
+        ]
+      },
+      "properties": {
+        "id": "setagaya-028",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ヒヤリングストア二子玉川店",
+        "address": "東京都世田谷区玉川3-10-8アークビル３階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5797-5588",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.600906,
+          35.668892
+        ]
+      },
+      "properties": {
+        "id": "setagaya-029",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネスーパー千歳烏山",
+        "address": "東京都世田谷区南烏山4-12-6ＡＭビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5314-2150",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677872,
+          35.649601
+        ]
+      },
+      "properties": {
+        "id": "setagaya-030",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "オーケー池尻大橋店",
+        "address": "東京都世田谷区池尻3-27-11",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5787-5087",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.58847,
+          35.636745
+        ]
+      },
+      "properties": {
+        "id": "setagaya-031",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "喜多見ドレミ補聴器",
+        "address": "東京都世田谷区喜多見８−２２−６",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5727-8202",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.640808,
+          35.613544
+        ]
+      },
+      "properties": {
+        "id": "setagaya-032",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "株式会社　芝江電機　上野毛店",
+        "address": "東京都世田谷区上野毛１−１８−１７−１Ｆウスイビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3703-1944",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.647919,
+          35.654789
+        ]
+      },
+      "properties": {
+        "id": "setagaya-033",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　豪徳寺店",
+        "address": "東京都世田谷区豪徳寺1-41-4",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5450-5938",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637009,
+          35.650318
+        ]
+      },
+      "properties": {
+        "id": "setagaya-034",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネスーパー経堂農大通り",
+        "address": "東京都世田谷区経堂1-21-19",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5451-7955",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669037,
+          35.643196
+        ]
+      },
+      "properties": {
+        "id": "setagaya-035",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネスーパー三軒茶屋",
+        "address": "東京都世田谷区三軒茶屋2-14-8鍋谷ビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5779-6877",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631439,
+          35.627613
+        ]
+      },
+      "properties": {
+        "id": "setagaya-036",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "オーケー新用賀店",
+        "address": "東京都世田谷区用賀4−21−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6447-9415",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.600662,
+          35.668186
+        ]
+      },
+      "properties": {
+        "id": "setagaya-037",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "プラスワンライフ事業協同組合シグマ烏山",
+        "address": "東京都世田谷区南烏山６−４−３２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3300-2560",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.605179,
+          35.632561
+        ]
+      },
+      "properties": {
+        "id": "setagaya-038",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ成城店",
+        "address": "東京都世田谷区成城１−３−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3415-3122",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.658691,
+          35.670296
+        ]
+      },
+      "properties": {
+        "id": "setagaya-039",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "株式会社カクシン電機代田橋",
+        "address": "東京都世田谷区大原2-17-6ステーションプラザ105",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3323-5505",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.636475,
+          35.649204
+        ]
+      },
+      "properties": {
+        "id": "setagaya-040",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　経堂店",
+        "address": "東京都世田谷区経堂1-24-17Mビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5450-5758",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637299,
+          35.656887
+        ]
+      },
+      "properties": {
+        "id": "setagaya-041",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "サンドラッグ赤堤",
+        "address": "東京都世田谷区赤堤３−２４−４",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5355-4725",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.656601,
+          35.631516
+        ]
+      },
+      "properties": {
+        "id": "setagaya-042",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネスーパー駒沢大学前",
+        "address": "東京都世田谷区駒沢2-17-9ザ・コマザワタワー１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3411-3400",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.611725,
+          35.658749
+        ]
+      },
+      "properties": {
+        "id": "setagaya-043",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネ パリ ミキ　千歳台店",
+        "address": "東京都世田谷区千歳台５−２３−１３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3483-8561",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.665421,
+          35.603588
+        ]
+      },
+      "properties": {
+        "id": "setagaya-044",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "三宝カメラ株式会社",
+        "address": "東京都世田谷区奥沢6-19-21",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6432-2725",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.588898,
+          35.636021
+        ]
+      },
+      "properties": {
+        "id": "setagaya-045",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "アンアント",
+        "address": "東京都世田谷区喜多見８−１５−２９小田川ビル１F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5727-9600",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.600586,
+          35.66758
+        ]
+      },
+      "properties": {
+        "id": "setagaya-046",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "有限会社　烏山電化南口店",
+        "address": "東京都世田谷区南烏山5-32-14アルファビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3309-1666",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639282,
+          35.665718
+        ]
+      },
+      "properties": {
+        "id": "setagaya-047",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "リケン補聴器センター下高井戸店",
+        "address": "東京都世田谷区赤堤4-48-10雪華堂ビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6379-2950",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599014,
+          35.640396
+        ]
+      },
+      "properties": {
+        "id": "setagaya-048",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ヒヤリングストア成城コルティ店",
+        "address": "東京都世田谷区成城6-5-34成城コルティ2F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 050-3355-6576",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.588409,
+          35.636024
+        ]
+      },
+      "properties": {
+        "id": "setagaya-049",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "（有）シンエツ電機",
+        "address": "東京都世田谷区喜多見８丁目１８番３号サンハウス1F（水・木定休日）",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5727-8504",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669327,
+          35.647221
+        ]
+      },
+      "properties": {
+        "id": "setagaya-050",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "株式会社日の出電機　三軒茶屋店",
+        "address": "東京都世田谷区太子堂３−１４−３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3413-6531",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6371,
+          35.617119
+        ]
+      },
+      "properties": {
+        "id": "setagaya-051",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "�蠧�の出電機",
+        "address": "東京都世田谷区上野毛４−３５−２１サンズ日の出",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3704-3445",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66864,
+          35.643284
+        ]
+      },
+      "properties": {
+        "id": "setagaya-052",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネ パリ ミキ　三軒茶屋店",
+        "address": "東京都世田谷区太子堂４−３−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3487-6781",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.608459,
+          35.641907
+        ]
+      },
+      "properties": {
+        "id": "setagaya-053",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　祖師谷店",
+        "address": "東京都世田谷区砧8-8-23渋川ビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3749-7608",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.655533,
+          35.596523
+        ]
+      },
+      "properties": {
+        "id": "setagaya-054",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "リケン補聴器センター世田谷店",
+        "address": "東京都世田谷区尾山台１‐１‐１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6802-8578",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651932,
+          35.64246
+        ]
+      },
+      "properties": {
+        "id": "setagaya-055",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "プラスワン　みのる",
+        "address": "東京都世田谷区世田谷１−１４−１８",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3427-8110",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.660217,
+          35.650726
+        ]
+      },
+      "properties": {
+        "id": "setagaya-056",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ若林店",
+        "address": "東京都世田谷区若林5-41-20",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5779-3600",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.598831,
+          35.641094
+        ]
+      },
+      "properties": {
+        "id": "setagaya-057",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "成城補聴器フィッティングルーム",
+        "address": "東京都世田谷区成城６−１５−２３成城プラザ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3484-3236",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.630478,
+          35.649353
+        ]
+      },
+      "properties": {
+        "id": "setagaya-058",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ビーバートザン経堂店",
+        "address": "東京都世田谷区経堂４-42-10",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5426-1301",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631012,
+          35.65905
+        ]
+      },
+      "properties": {
+        "id": "setagaya-059",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "株式会社共栄電化",
+        "address": "東京都世田谷区桜上水1-10-14",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5317-3565",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.58902,
+          35.636005
+        ]
+      },
+      "properties": {
+        "id": "setagaya-060",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "村田電器",
+        "address": "東京都世田谷区喜多見８−１６−１１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3417-5111",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678482,
+          35.603302
+        ]
+      },
+      "properties": {
+        "id": "setagaya-061",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ルシファーフジ",
+        "address": "東京都世田谷区奥沢１−３９−９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3727-2527",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63562,
+          35.652905
+        ]
+      },
+      "properties": {
+        "id": "setagaya-062",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "国際電気株式会社",
+        "address": "東京都世田谷区宮坂3‐20‐1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3426-4122",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.625122,
+          35.61747
+        ]
+      },
+      "properties": {
+        "id": "setagaya-063",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "石塚デンキ",
+        "address": "東京都世田谷区玉川４−１０−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3700-9706",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669739,
+          35.646275
+        ]
+      },
+      "properties": {
+        "id": "setagaya-064",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　三軒茶屋店",
+        "address": "東京都世田谷区太子堂4-30-29",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3412-1767",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.630524,
+          35.639641
+        ]
+      },
+      "properties": {
+        "id": "setagaya-065",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "眼鏡市場　世田谷馬事公苑",
+        "address": "東京都世田谷区上用賀2-5-21",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5426-2498",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.663208,
+          35.653934
+        ]
+      },
+      "properties": {
+        "id": "setagaya-066",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "プラスワンライフ　シグマ代田",
+        "address": "東京都世田谷区代田１−３４−１５舘コーポ１F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3412-4572",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.607254,
+          35.649513
+        ]
+      },
+      "properties": {
+        "id": "setagaya-067",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "祖師谷電気��",
+        "address": "東京都世田谷区祖師谷４−２６−３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3483-0462",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.660355,
+          35.634636
+        ]
+      },
+      "properties": {
+        "id": "setagaya-068",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "有限会社　須山ミシン電器商会",
+        "address": "東京都世田谷区上馬4-7-8",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3421-7461",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602875,
+          35.627693
+        ]
+      },
+      "properties": {
+        "id": "setagaya-069",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "有限会社　メルテスミヤ",
+        "address": "東京都世田谷区喜多見5-14-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3416-7411",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.619705,
+          35.64785
+        ]
+      },
+      "properties": {
+        "id": "setagaya-070",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　千歳船橋店",
+        "address": "東京都世田谷区船橋1-37-6橋場屋マンション1FA号室",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3428-1058",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.636429,
+          35.651634
+        ]
+      },
+      "properties": {
+        "id": "setagaya-071",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "オプティクパリミキ経堂コルティ店",
+        "address": "東京都世田谷区経堂2−1−33経堂コルティ2F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3425-7731",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634918,
+          35.627739
+        ]
+      },
+      "properties": {
+        "id": "setagaya-072",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　用賀大山通り店",
+        "address": "東京都世田谷区用賀4-13-5ウィング用賀1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5717-3288",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.671951,
+          35.64513
+        ]
+      },
+      "properties": {
+        "id": "setagaya-073",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "(有)　補聴器のセベ",
+        "address": "東京都世田谷区太子堂２−１４−２０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3410-2460",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.652222,
+          35.604073
+        ]
+      },
+      "properties": {
+        "id": "setagaya-074",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "メガネストアー　尾山台店",
+        "address": "東京都世田谷区尾山台3-9-8ダイヤ石上ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5707-9398",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.652161,
+          35.646118
+        ]
+      },
+      "properties": {
+        "id": "setagaya-075",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "世田谷区役所第2庁舎 / 世田谷区役所第二庁舎",
+        "address": "世田谷区世田谷4-22-35",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "月～金（祝日除く）8:30～17:15 / 毎月第2・4土曜日 10:00～12:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室 / 回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669952,
+          35.662132
+        ]
+      },
+      "properties": {
+        "id": "setagaya-076",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "北沢総合支所",
+        "address": "世田谷区北沢2-8-18",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 8:00～22:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階ロビー",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.648712,
+          35.608311
+        ]
+      },
+      "properties": {
+        "id": "setagaya-077",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "玉川総合支所",
+        "address": "世田谷区等々力3-4-1",
+        "categories": [
+          "small-appliance",
+          "cooking-oil"
+        ],
+        "hours": "毎日 8:30～22:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階エレベーター前",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.601028,
+          35.641003
+        ]
+      },
+      "properties": {
+        "id": "setagaya-078",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "砧総合支所",
+        "address": "世田谷区成城6-2-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "毎日 8:30～22:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.598145,
+          35.669556
+        ]
+      },
+      "properties": {
+        "id": "setagaya-079",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "烏山総合支所",
+        "address": "世田谷区南烏山6-22-14",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "月～金（祝日除く）8:30～17:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.671249,
+          35.64473
+        ]
+      },
+      "properties": {
+        "id": "setagaya-080",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "太子堂出張所",
+        "address": "世田谷区太子堂2-17-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "月～金 8:30～22:00、土日祝 9:00～22:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638184,
+          35.665291
+        ]
+      },
+      "properties": {
+        "id": "setagaya-081",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "松沢まちづくりセンター",
+        "address": "世田谷区赤堤5-31-5",
+        "categories": [
+          "small-appliance",
+          "cooking-oil"
+        ],
+        "hours": "月～金 8:30～22:00、土日祝 9:00～22:00",
+        "notes": "使用済小型電子機器回収ボックス設置。まちかど図書室前",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.640869,
+          35.611538
+        ]
+      },
+      "properties": {
+        "id": "setagaya-082",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "上野毛まちづくりセンター",
+        "address": "世田谷区中町2-33-11",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "月～金 8:30～22:00、土日祝 9:00～22:00（第3土曜休館）",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.661697,
+          35.606884
+        ]
+      },
+      "properties": {
+        "id": "setagaya-083",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "九品仏まちづくりセンター / 奥沢地区会館",
+        "address": "世田谷区奥沢7-35-4",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "月～金 8:30～22:00、土日祝 9:00～22:00（第2土曜休館） / 毎月第2・4土曜日 10:00～12:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室 / 回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.60112,
+          35.628948
+        ]
+      },
+      "properties": {
+        "id": "setagaya-084",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "喜多見まちづくりセンター",
+        "address": "世田谷区喜多見5-11-10",
+        "categories": [
+          "small-appliance",
+          "cooking-oil"
+        ],
+        "hours": "月～金 8:30～22:00、土日祝 9:00～22:00",
+        "notes": "使用済小型電子機器回収ボックス設置。1階風除室",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.630844,
+          35.626644
+        ]
+      },
+      "properties": {
+        "id": "setagaya-085",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "エコプラザ用賀",
+        "address": "世田谷区用賀4-7-1",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月曜（祝日の場合は翌日）を除く 9:00～17:00",
+        "notes": "開館時間中回収。ふくのわプロジェクト古着回収ボックスあり",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.61705,
+          35.645573
+        ]
+      },
+      "properties": {
+        "id": "setagaya-086",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "リサイクル千歳台",
+        "address": "世田谷区千歳台1-1-5",
+        "categories": [
+          "small-appliance",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月曜（祝日の場合は翌日）を除く 10:00～16:00",
+        "notes": "開館時間中回収。ふくのわプロジェクト古着回収ボックスあり",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.605087,
+          35.662842
+        ]
+      },
+      "properties": {
+        "id": "setagaya-087",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "粕谷区民センター",
+        "address": "世田谷区粕谷4-13-6",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.617523,
+          35.669216
+        ]
+      },
+      "properties": {
+        "id": "setagaya-088",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "上北沢地区会館",
+        "address": "世田谷区上北沢2-1-3",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599564,
+          35.657101
+        ]
+      },
+      "properties": {
+        "id": "setagaya-089",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "上祖師谷まちづくりセンター",
+        "address": "世田谷区上祖師谷2-7-6",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602081,
+          35.679897
+        ]
+      },
+      "properties": {
+        "id": "setagaya-090",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "北烏山東敬老会館",
+        "address": "世田谷区北烏山2-2-6",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602676,
+          35.623512
+        ]
+      },
+      "properties": {
+        "id": "setagaya-091",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "宇奈根地区会館",
+        "address": "世田谷区宇奈根2-23-20",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.613922,
+          35.622051
+        ]
+      },
+      "properties": {
+        "id": "setagaya-092",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "鎌田区民センター",
+        "address": "世田谷区鎌田3-35-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.610001,
+          35.637917
+        ]
+      },
+      "properties": {
+        "id": "setagaya-093",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "砧まちづくりセンター",
+        "address": "世田谷区砧5-8-18",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.604187,
+          35.642216
+        ]
+      },
+      "properties": {
+        "id": "setagaya-094",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "砧図書館",
+        "address": "世田谷区祖師谷3-10-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67305,
+          35.59996
+        ]
+      },
+      "properties": {
+        "id": "setagaya-095",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "奥沢図書館仮事務所（旧・奥沢まちづくりセンター）",
+        "address": "世田谷区奥沢3-5-7",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654373,
+          35.631283
+        ]
+      },
+      "properties": {
+        "id": "setagaya-096",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "駒沢地区会館",
+        "address": "世田谷区駒沢3-13-5",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.633179,
+          35.623146
+        ]
+      },
+      "properties": {
+        "id": "setagaya-097",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "玉川台区民センター",
+        "address": "世田谷区玉川台1-6-15",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.65358,
+          35.620384
+        ]
+      },
+      "properties": {
+        "id": "setagaya-098",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "深沢区民センター",
+        "address": "世田谷区深沢4-33-11",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.672577,
+          35.666477
+        ]
+      },
+      "properties": {
+        "id": "setagaya-099",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "北沢地区会館",
+        "address": "世田谷区北沢3-3-10",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.668137,
+          35.65765
+        ]
+      },
+      "properties": {
+        "id": "setagaya-100",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "代沢地区会館",
+        "address": "世田谷区代沢5-8-19",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.653656,
+          35.656872
+        ]
+      },
+      "properties": {
+        "id": "setagaya-101",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "梅丘分庁舎",
+        "address": "世田谷区松原6-3-5",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6828,
+          35.646278
+        ]
+      },
+      "properties": {
+        "id": "setagaya-102",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "池尻地区会館（池尻複合施設）",
+        "address": "世田谷区池尻2-3-11",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.632263,
+          35.651878
+        ]
+      },
+      "properties": {
+        "id": "setagaya-103",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "経堂地区会館",
+        "address": "世田谷区経堂3-37-13",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679031,
+          35.635872
+        ]
+      },
+      "properties": {
+        "id": "setagaya-104",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "下馬地区会館",
+        "address": "世田谷区下馬4-13-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673355,
+          35.642822
+        ]
+      },
+      "properties": {
+        "id": "setagaya-105",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "太子堂区民センター",
+        "address": "世田谷区太子堂1-14-20",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.643967,
+          35.637608
+        ]
+      },
+      "properties": {
+        "id": "setagaya-106",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "中央図書館（教育会館）",
+        "address": "世田谷区弦巻3-16-8",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "回収員手渡し方式による回収（毎月第2・4土曜日の午前10時～正午）",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641525,
+          35.619766
+        ]
+      },
+      "properties": {
+        "id": "setagaya-107",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "ヨークマート中町店",
+        "address": "世田谷区中町5-30-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2・4土曜日 10:00～12:00",
+        "notes": "民間施設",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.61441,
+          35.628792
+        ]
+      },
+      "properties": {
+        "id": "setagaya-108",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "総合運動場温水プール（ふくのわ）",
+        "address": "世田谷区大蔵4-6-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "9:00～21:00",
+        "notes": "ふくのわプロジェクト古着回収ボックス",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.614807,
+          35.630001
+        ]
+      },
+      "properties": {
+        "id": "setagaya-109",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "大蔵第二運動場（ふくのわ）",
+        "address": "世田谷区大蔵4-7-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "9:00～22:00",
+        "notes": "ふくのわプロジェクト古着回収ボックス",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.618393,
+          35.65802
+        ]
+      },
+      "properties": {
+        "id": "setagaya-110",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "千歳温水プール（ふくのわ）",
+        "address": "世田谷区船橋7-9-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "9:00～21:00",
+        "notes": "ふくのわプロジェクト古着回収ボックス",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657501,
+          35.626083
+        ]
+      },
+      "properties": {
+        "id": "setagaya-111",
+        "prefecture": "tokyo",
+        "city": "setagaya",
+        "cityLabel": "世田谷区",
+        "name": "駒沢オリンピック公園総合運動場屋内球技場（ふくのわ）",
+        "address": "世田谷区駒沢公園1-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "8:00～17:00",
+        "notes": "ふくのわプロジェクト古着回収ボックス",
+        "officialUrl": "https://www.city.setagaya.lg.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}
