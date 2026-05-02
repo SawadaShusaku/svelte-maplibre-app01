@@ -8,9 +8,11 @@
     GeolocateControl,
     FullScreenControl,
     AttributionControl,
+    Image,
     GeoJSONSource,
+    CircleLayer,
     LineLayer,
-    Marker,
+    SymbolLayer,
     Popup
   } from 'svelte-maplibre-gl';
   import maplibregl from 'maplibre-gl';
@@ -19,10 +21,22 @@
 
   import AppHeader from '$lib/components/AppHeader.svelte';
   import SettingsSidebar from '$lib/components/SettingsSidebar.svelte';
-  import MapMarker from '$lib/components/MapMarker.svelte';
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
   import { getFacilities, type GeoFeature } from '$lib/data.js';
+  import {
+    buildFacilityIndex,
+    buildMarkerFeatureCollection,
+    buildMarkerImageDescriptors,
+    buildWardSummaryFeatureCollection,
+    fitToWardSummary,
+    INDIVIDUAL_MARKER_MIN_ZOOM,
+    MARKER_ICON_SIZE,
+    WARD_SUMMARY_MAX_ZOOM,
+    panToFacility,
+    resolveSelectedFacility
+  } from '$lib/map/facility-rendering.js';
+  import { getMarkerImage } from '$lib/map/marker-images.js';
   import { getCategorySourceUrl, WARD_REGISTRY } from '$lib/registry.js';
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
@@ -46,9 +60,10 @@
   let selectedCityKeys = $state<string[]>([...allCityKeys]);
   let sidebarOpen = $state(false);
   let facilities = $state<GeoFeature[]>([]);
-  let openPopupId = $state<string | null>(null);
+  let selectedFacilityId = $state<string | null>(null);
   let markerStyle = $state<MarkerStyle>(getMarkerStyle());
   let solidColor = $state<string>(getSolidColor());
+  let markerImages = $state<Array<{ id: string; image: ImageData }>>([]);
   
   // 検索管理
   let searchQuery = $state("");
@@ -65,6 +80,13 @@
   let popupTab = $state<'basic' | 'details'>('basic');
   let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
   let isMobile = $state(browser ? window.innerWidth <= 640 : false);
+  let facilitiesRequestVersion = 0;
+  let markerImagesRequestVersion = 0;
+
+  const facilityIndex = $derived(buildFacilityIndex(facilities));
+  const selectedFacility = $derived(resolveSelectedFacility(facilityIndex, selectedFacilityId));
+  const markerSourceData = $derived(buildMarkerFeatureCollection(facilities, markerStyle, solidColor));
+  const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities));
 
   // ボトムシートスワイプ検出
   let touchStartY = $state(0);
@@ -79,7 +101,7 @@
     const deltaY = e.changedTouches[0].clientY - touchStartY;
     const duration = Date.now() - touchStartTime;
     if (deltaY > 30 && duration < 500) {
-      openPopupId = null;
+      selectedFacilityId = null;
     }
   }
 
@@ -119,8 +141,8 @@
     getFacilities([...selectedCityKeys], [...selectedCategories]).then((f) => {
       facilities = f;
       // 表示対象外になったポップアップを閉じる
-      if (openPopupId && !f.find((x) => x.properties.id === openPopupId)) {
-        openPopupId = null;
+      if (selectedFacilityId && !f.find((x) => x.properties.id === selectedFacilityId)) {
+        selectedFacilityId = null;
       }
     }).catch(err => {
       console.error('Failed to load facilities:', err);
@@ -150,16 +172,30 @@
   $effect(() => {
     if (searchResults.length === 1 && map) {
       const facility = searchResults[0];
-      const [lng, lat] = facility.geometry.coordinates;
-      if (isMobile) {
-        const offset = window.innerHeight * 0.25;
-        map.easeTo({ center: [lng, lat], zoom: 16, offset: [0, -offset], duration: 300 });
-      } else {
-        map.flyTo({ center: [lng, lat], zoom: 16 });
-      }
-      openPopupId = facility.properties.id;
+      panToFacility(map, facility, isMobile, { zoom: 16 });
+      selectedFacilityId = facility.properties.id;
       popupTab = 'basic';
     }
+  });
+
+  $effect(() => {
+    if (!browser) return;
+
+    const descriptors = buildMarkerImageDescriptors(facilities, markerStyle, solidColor);
+    const requestVersion = ++markerImagesRequestVersion;
+
+    Promise.all(
+      descriptors.map(async (descriptor) => ({
+        id: descriptor.iconKey,
+        image: await getMarkerImage(descriptor)
+      }))
+    ).then((images) => {
+      if (requestVersion !== markerImagesRequestVersion) return;
+      markerImages = images;
+    }).catch((err) => {
+      if (requestVersion !== markerImagesRequestVersion) return;
+      console.error('Failed to prepare marker images:', err);
+    });
   });
 
   $effect(() => {
@@ -185,33 +221,70 @@
 
   // 検索結果の選択ハンドラ
   function handleSelectFacility(facility: GeoFeature) {
-    const [lng, lat] = facility.geometry.coordinates;
     if (map) {
-      if (isMobile) {
-        const offset = window.innerHeight * 0.25;
-        map.easeTo({ center: [lng, lat], zoom: 16, offset: [0, -offset], duration: 300 });
-      } else {
-        map.flyTo({ center: [lng, lat], zoom: 16 });
-      }
+      panToFacility(map, facility, isMobile, { zoom: 16 });
     }
     searchQuery = ""; // 検索をクリア
-    openPopupId = facility.properties.id;
+    selectedFacilityId = facility.properties.id;
     popupTab = 'basic';
   }
 
   function selectFacility(id: string) {
-    const wasOpen = openPopupId === id;
-    openPopupId = openPopupId === id ? null : id;
+    const wasOpen = selectedFacilityId === id;
+    selectedFacilityId = selectedFacilityId === id ? null : id;
     popupTab = 'basic';
 
     if (!wasOpen && isMobile && map) {
-      const facility = facilities.find(f => f.properties.id === id);
+      const facility = facilityIndex.get(id);
       if (facility) {
-        const [lng, lat] = facility.geometry.coordinates;
-        const offset = window.innerHeight * 0.25;
-        map.easeTo({ center: [lng, lat], offset: [0, -offset], duration: 300 });
+        panToFacility(map, facility, true);
       }
     }
+  }
+
+  function handleWardSummaryClick(event: maplibregl.MapLayerMouseEvent) {
+    const summary = event.features?.[0]?.properties;
+    if (!summary || !map) return;
+
+    const minLng = Number(summary.minLng);
+    const minLat = Number(summary.minLat);
+    const maxLng = Number(summary.maxLng);
+    const maxLat = Number(summary.maxLat);
+    const city = typeof summary.city === 'string' ? summary.city : null;
+
+    if ([minLng, minLat, maxLng, maxLat].some(Number.isNaN)) return;
+
+    fitToWardSummary(
+      map,
+      {
+        city: city ?? '',
+        cityLabel: typeof summary.cityLabel === 'string' ? summary.cityLabel : '',
+        facilityCount: Number(summary.facilityCount ?? 0),
+        minLng,
+        minLat,
+        maxLng,
+        maxLat
+      },
+      isMobile
+    );
+    selectedFacilityId = null;
+  }
+
+  function handleFacilityLayerClick(event: maplibregl.MapLayerMouseEvent) {
+    const facilityId = event.features?.[0]?.properties?.facilityId;
+    if (typeof facilityId === 'string') {
+      selectFacility(facilityId);
+    }
+  }
+
+  function handleLayerMouseEnter() {
+    if (!map) return;
+    map.getCanvas().style.cursor = 'pointer';
+  }
+
+  function handleLayerMouseLeave() {
+    if (!map) return;
+    map.getCanvas().style.cursor = '';
   }
 
   async function getRoute(facility: GeoFeature) {
@@ -259,7 +332,7 @@
             new maplibregl.LngLatBounds(routeGeoJSON.coordinates[0] as [number, number], routeGeoJSON.coordinates[0] as [number, number])
           );
           map.fitBounds(bounds, { padding: 80 });
-          openPopupId = null; // 経路表示時はポップアップを閉じる
+          selectedFacilityId = null; // 経路表示時はポップアップを閉じる
         }
       } else {
         throw new Error('No route found');
@@ -290,7 +363,7 @@
     <div class="mb-2 flex items-start justify-between gap-3">
       <h3 class="pr-2 text-xl font-bold leading-snug text-gray-900">{name}</h3>
       <button
-        onclick={() => (openPopupId = null)}
+        onclick={() => (selectedFacilityId = null)}
         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-black/5 text-xl text-gray-500 transition-colors hover:bg-black/10 hover:text-gray-800"
         aria-label="閉じる"
       >✕</button>
@@ -459,7 +532,7 @@
     </div>
   {/if}
 
-  <MapLibre
+	  <MapLibre
     bind:map={map}
     class="h-full w-full"
     style={mapStyleUrl}
@@ -483,7 +556,7 @@
     />
     <FullScreenControl position="bottom-right" />
 
-    {#if routeGeoJSON}
+	    {#if routeGeoJSON}
       <GeoJSONSource id="route" data={routeGeoJSON}>
         <LineLayer
           id="route-line-bg"
@@ -509,43 +582,83 @@
             'line-cap': 'round',
           }}
         />
+	      </GeoJSONSource>
+	    {/if}
+
+      {#each markerImages as markerImage (markerImage.id)}
+        <Image id={markerImage.id} image={markerImage.image} />
+      {/each}
+
+      <GeoJSONSource
+        id="ward-summaries"
+        data={wardSummarySourceData}
+      >
+        <CircleLayer
+          id="ward-summary-circles"
+          maxzoom={WARD_SUMMARY_MAX_ZOOM}
+          paint={{
+            'circle-color': '#0f766e',
+            'circle-radius': 26,
+            'circle-opacity': 0.9,
+            'circle-stroke-color': '#ffffff',
+            'circle-stroke-width': 2
+          }}
+          onclick={handleWardSummaryClick}
+          onmouseenter={handleLayerMouseEnter}
+          onmouseleave={handleLayerMouseLeave}
+        />
+        <SymbolLayer
+          id="ward-summary-labels"
+          maxzoom={WARD_SUMMARY_MAX_ZOOM}
+          layout={{
+            'text-field': ['get', 'cityLabel'],
+            'text-size': 11,
+            'text-font': ['Noto Sans Regular'],
+            'text-allow-overlap': true,
+            'text-ignore-placement': true
+          }}
+          paint={{
+            'text-color': '#ffffff'
+          }}
+          onclick={handleWardSummaryClick}
+          onmouseenter={handleLayerMouseEnter}
+          onmouseleave={handleLayerMouseLeave}
+        />
       </GeoJSONSource>
-    {/if}
 
-    {#each facilities as feature (feature.properties.id)}
-      {@const { id, name, address, categories, hours, notes } = feature.properties}
-      {@const [lng, lat] = feature.geometry.coordinates}
+      <GeoJSONSource
+        id="facilities"
+        data={markerSourceData}
+      >
+        <SymbolLayer
+          id="facility-markers"
+          minzoom={INDIVIDUAL_MARKER_MIN_ZOOM}
+          layout={{
+            'icon-image': ['get', 'iconKey'],
+            'icon-size': MARKER_ICON_SIZE,
+            'icon-anchor': 'bottom',
+            'icon-allow-overlap': true,
+            'icon-ignore-placement': true
+          }}
+          onclick={handleFacilityLayerClick}
+          onmouseenter={handleLayerMouseEnter}
+          onmouseleave={handleLayerMouseLeave}
+        />
+      </GeoJSONSource>
 
-      <Marker lnglat={[lng, lat]}>
-        {#snippet content()}
-          <button
-            onclick={() => selectFacility(id)}
-            onkeydown={(e) => e.key === 'Enter' && selectFacility(id)}
-            title={name}
-            style="background:none;border:none;padding:0;cursor:pointer;"
-            class="hover:scale-110 active:scale-95 transition-transform origin-bottom block"
-          >
-            <MapMarker categories={categories as CategoryId[]} style={markerStyle} {id} {solidColor} />
-          </button>
-        {/snippet}
-      </Marker>
-
-      {#if openPopupId === id && !isMobile}
-        <Popup lnglat={[lng, lat]} onclose={() => { openPopupId = null; popupTab = 'basic'; }} closeButton={false} closeOnClick={false} maxWidth="none" offset={[0, -24]}>
+      {#if selectedFacility && !isMobile}
+        <Popup lnglat={selectedFacility.geometry.coordinates} onclose={() => { selectedFacilityId = null; popupTab = 'basic'; }} closeButton={false} closeOnClick={false} maxWidth="none" offset={[0, -24]}>
           <div class="relative w-[28rem] max-w-[calc(100vw-2rem)] bg-white/95 text-left backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 overflow-hidden">
-            {@render popupCard(feature)}
+            {@render popupCard(selectedFacility)}
           </div>
         </Popup>
       {/if}
-    {/each}
-  </MapLibre>
-
-  {#if isMobile && openPopupId}
-    {@const openFacility = facilities.find(f => f.properties.id === openPopupId)}
-    {#if openFacility}
-      <div
-        class="fixed bottom-2 left-2 right-2 z-50 flex max-h-[72vh] flex-col overflow-hidden rounded-3xl bg-white/95 shadow-[0_-8px_32px_rgba(0,0,0,0.15)] backdrop-blur-md"
-        transition:fly={{ y: 300, duration: 300, opacity: 1 }}
+	  </MapLibre>
+	
+	  {#if isMobile && selectedFacility}
+	      <div
+	        class="fixed bottom-2 left-2 right-2 z-50 flex max-h-[72vh] flex-col overflow-hidden rounded-3xl bg-white/95 shadow-[0_-8px_32px_rgba(0,0,0,0.15)] backdrop-blur-md"
+	        transition:fly={{ y: 300, duration: 300, opacity: 1 }}
         style="padding-bottom: max(env(safe-area-inset-bottom), 16px)"
       >
         <div
@@ -555,15 +668,14 @@
           aria-label="スワイプで閉じる"
           ontouchstart={handleTouchStart}
           ontouchend={handleTouchEnd}
-        >
-          <div class="w-12 h-1.5 rounded-full bg-gray-300"></div>
-        </div>
-        <div class="flex-1 overflow-y-auto">
-          {@render popupCard(openFacility)}
-        </div>
-      </div>
-    {/if}
-  {/if}
+	        >
+	          <div class="w-12 h-1.5 rounded-full bg-gray-300"></div>
+	        </div>
+	        <div class="flex-1 overflow-y-auto">
+	          {@render popupCard(selectedFacility)}
+	        </div>
+	      </div>
+	  {/if}
 </div>
 
 <style>

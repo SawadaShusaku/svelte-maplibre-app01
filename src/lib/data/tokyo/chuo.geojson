@@ -929,7 +929,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "井上電気商会合同会社",
-        "address": "東京都中央区日本橋浜町２−２２−５−１０１ ヴェラハイツ浜町",
+        "address": "日本、〒103-0007 東京都中央区日本橋浜町２丁目２２−５ ヴェラハイツ浜町",
         "categories": [
           "button-battery"
         ],
@@ -1229,7 +1229,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "リサイクルハウスかざぐるま八丁堀",
-        "address": "東京都中央区八丁堀三丁目",
+        "address": "日本、〒104-0032 東京都中央区八丁堀３丁目１７−９",
         "categories": [
           "ink-cartridge"
         ],
@@ -1254,7 +1254,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "中央区役所本庁舎１階",
-        "address": "東京都中央区築地一丁目",
+        "address": "日本、〒104-8404 東京都中央区築地１丁目１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1279,7 +1279,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋特別出張所",
-        "address": "東京都中央区日本橋蛎殻町一丁目",
+        "address": "日本、〒103-0014 東京都中央区日本橋蛎殻町１丁目３１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1304,7 +1304,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "月島特別出張所",
-        "address": "東京都中央区月島四丁目",
+        "address": "日本、〒104-0052 東京都中央区月島４丁目１−１ 月島区民センタ 1階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1329,7 +1329,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "リサイクルハウスかざぐるま箱崎町",
-        "address": "東京都中央区日本橋箱崎町",
+        "address": "日本、〒103-0015 東京都中央区日本橋箱崎町３６−１５",
         "categories": [
           "ink-cartridge"
         ],
@@ -1354,7 +1354,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "晴海特別出張所",
-        "address": "東京都中央区晴海四丁目",
+        "address": "日本、〒104-0053 東京都中央区晴海４丁目８−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1379,7 +1379,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "両国郵便局",
-        "address": "東京都中央区東日本橋二丁目",
+        "address": "日本、〒103-0004 東京都中央区東日本橋２丁目２７−１２",
         "categories": [
           "ink-cartridge"
         ],
@@ -1404,7 +1404,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "中央浜町一郵便局",
-        "address": "東京都中央区東日本橋一丁目",
+        "address": "日本、〒103-0007 東京都中央区日本橋浜町１丁目５−１ クレヴィア日本橋浜町公園",
         "categories": [
           "ink-cartridge"
         ],
@@ -1429,7 +1429,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "晴海トリトンスクエア郵便局",
-        "address": "東京都中央区晴海一丁目",
+        "address": "日本、〒104-0053 東京都中央区晴海１丁目８−１６",
         "categories": [
           "ink-cartridge"
         ],
@@ -1454,7 +1454,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋人形町郵便局",
-        "address": "東京都中央区日本橋人形町一丁目",
+        "address": "日本、〒103-0013 東京都中央区日本橋人形町１丁目５−１０",
         "categories": [
           "ink-cartridge"
         ],
@@ -1479,7 +1479,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "銀座西郵便局",
-        "address": "東京都中央区銀座八丁目",
+        "address": "日本、〒104-0061 東京都中央区銀座８丁目３−先",
         "categories": [
           "ink-cartridge"
         ],
@@ -1504,7 +1504,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "銀座みゆき通郵便局",
-        "address": "東京都中央区銀座六丁目",
+        "address": "日本、〒104-0061 東京都中央区銀座６丁目８−３ 尾張町TOWER 4階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1529,7 +1529,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋室町三井タワー内郵便局",
-        "address": "東京都中央区日本橋室町三丁目",
+        "address": "日本、〒103-0022 東京都中央区日本橋室町３丁目２−１ 日本橋室町三井タワー B1",
         "categories": [
           "ink-cartridge"
         ],
@@ -1554,7 +1554,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "京橋月島郵便局",
-        "address": "東京都中央区月島四丁目",
+        "address": "日本、〒104-0052 東京都中央区月島４丁目１−１４",
         "categories": [
           "ink-cartridge"
         ],
@@ -1579,7 +1579,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "京橋郵便局",
-        "address": "東京都中央区築地四丁目",
+        "address": "日本、〒104-8799 東京都中央区築地４丁目２−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -1604,7 +1604,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "中央八丁堀郵便局",
-        "address": "東京都中央区八丁堀二丁目",
+        "address": "日本、〒104-0032 東京都中央区八丁堀２丁目９−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1629,7 +1629,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋大伝馬町郵便局",
-        "address": "東京都中央区日本橋大伝馬町",
+        "address": "日本、〒103-0011 東京都中央区日本橋大伝馬町１２−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1654,7 +1654,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋小網町郵便局",
-        "address": "東京都中央区日本橋小網町",
+        "address": "日本、〒103-0016 東京都中央区日本橋小網町１１−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -1679,7 +1679,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋本町郵便局",
-        "address": "東京都中央区日本橋本町四丁目",
+        "address": "日本、〒103-0023 東京都中央区日本橋本町４丁目１４−２ 第二カワイビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -1704,7 +1704,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋小舟町郵便局",
-        "address": "東京都中央区日本橋小舟町",
+        "address": "日本、〒103-0024 東京都中央区日本橋小舟町４−１ 伊場仙ビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -1729,7 +1729,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋郵便局",
-        "address": "東京都中央区日本橋三丁目",
+        "address": "日本、〒103-8994 東京都中央区日本橋３丁目９−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1754,7 +1754,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "小伝馬町郵便局",
-        "address": "東京都中央区日本橋小伝馬町",
+        "address": "神奈川県相模原市中央区小山",
         "categories": [
           "ink-cartridge"
         ],
@@ -1779,7 +1779,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋南郵便局",
-        "address": "東京都中央区日本橋二丁目",
+        "address": "日本、〒103-0027 東京都中央区日本橋２丁目２−１０ 1階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1804,7 +1804,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "中央新川二郵便局",
-        "address": "東京都中央区新川二丁目",
+        "address": "日本、〒104-0033 東京都中央区新川２丁目１５−１１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1829,7 +1829,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "銀座通郵便局",
-        "address": "東京都中央区銀座二丁目",
+        "address": "日本、〒104-0061 東京都中央区銀座２丁目７ 藤田ビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -1854,7 +1854,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋茅場町郵便局",
-        "address": "東京都中央区日本橋茅場町二丁目",
+        "address": "日本、〒103-0025 東京都中央区日本橋茅場町２丁目４−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -1879,7 +1879,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "中央人形町二郵便局",
-        "address": "東京都中央区日本橋人形町二丁目",
+        "address": "日本、〒103-0013 東京都中央区日本橋人形町２丁目１５−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -1904,7 +1904,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "日本橋室町郵便局",
-        "address": "東京都中央区日本橋室町一丁目",
+        "address": "日本、〒103-0022 東京都中央区日本橋室町１丁目１２−１３ 日本橋鮒佐ビル １階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1929,7 +1929,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "新日本橋駅前郵便局",
-        "address": "東京都中央区日本橋本町三丁目",
+        "address": "日本、〒103-0023 東京都中央区日本橋本町３丁目３−４ 日本橋本町ビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -1954,7 +1954,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "聖路加ガーデン内郵便局",
-        "address": "東京都中央区明石町",
+        "address": "日本、〒104-0044 東京都中央区明石町８−１ 聖路加ガーデン １階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1979,7 +1979,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "銀座七郵便局",
-        "address": "東京都中央区銀座七丁目",
+        "address": "日本、〒104-0061 東京都中央区銀座７丁目１５−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -2004,7 +2004,7 @@
         "city": "chuo",
         "cityLabel": "中央区",
         "name": "銀座一郵便局",
-        "address": "東京都中央区銀座一丁目",
+        "address": "日本、〒104-0061 東京都中央区銀座１丁目２０−１４",
         "categories": [
           "ink-cartridge"
         ],

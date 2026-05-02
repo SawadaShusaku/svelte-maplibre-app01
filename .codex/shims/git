@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cat >&2 <<'EOF'
+git is disabled in this repository. Use jj instead.
+
+Common replacements:
+  git status        -> jj st
+  git log           -> jj log
+  git diff          -> jj diff
+  git fetch         -> jj git fetch
+  git push          -> jj git push
+  git branch        -> jj bookmark list
+  git checkout      -> jj edit / jj new
+  git stash         -> jj new @-
+
+If direct git access is still available, tighten the harness:
+  1. Launch agents via .codex/with-agent-path.sh
+  2. Prefer non-colocated repos with:
+       jj git colocation disable
+EOF
+
+exit 1

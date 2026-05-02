@@ -2778,7 +2778,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "エコプラザ用賀",
-        "address": "東京都世田谷区用賀四丁目",
+        "address": "日本、〒158-0097 東京都世田谷区用賀４丁目７−１ エコプラザ用賀",
         "categories": [
           "ink-cartridge"
         ],
@@ -2803,7 +2803,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷区役所　北沢総合支所",
-        "address": "東京都世田谷区北沢二丁目",
+        "address": "日本、〒155-0031 東京都世田谷区北沢２丁目８−１８",
         "categories": [
           "ink-cartridge"
         ],
@@ -2828,7 +2828,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷区役所　本庁舎第２庁舎",
-        "address": "東京都世田谷区世田谷四丁目",
+        "address": "日本、〒154-0017 東京都世田谷区世田谷４丁目２２−３５",
         "categories": [
           "ink-cartridge"
         ],
@@ -2853,7 +2853,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷区役所　玉川総合支所",
-        "address": "東京都世田谷区等々力三丁目",
+        "address": "日本、〒158-0082 東京都世田谷区等々力３丁目４−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2878,7 +2878,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷区役所　砧総合支所",
-        "address": "東京都世田谷区成城六丁目",
+        "address": "日本、〒157-0066 東京都世田谷区成城６丁目２−１ 砧総合支所 1階",
         "categories": [
           "ink-cartridge"
         ],
@@ -2903,7 +2903,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷区役所　烏山総合支所",
-        "address": "東京都世田谷区南烏山六丁目",
+        "address": "日本、〒157-0062 東京都世田谷区南烏山６丁目２２−１４",
         "categories": [
           "ink-cartridge"
         ],
@@ -2928,7 +2928,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "リサイクル千歳台",
-        "address": "東京都世田谷区千歳台一丁目",
+        "address": "日本、〒157-0071 東京都世田谷区千歳台１丁目１−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -2953,7 +2953,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷桜新町郵便局",
-        "address": "東京都世田谷区桜新町一丁目",
+        "address": "日本、〒154-0015 東京都世田谷区桜新町１丁目１４−２３",
         "categories": [
           "ink-cartridge"
         ],
@@ -2978,7 +2978,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "千歳船橋駅前郵便局",
-        "address": "東京都世田谷区船橋一丁目",
+        "address": "日本、〒156-0055 東京都世田谷区船橋１丁目３−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -3003,7 +3003,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "玉川郵便局",
-        "address": "東京都世田谷区等々力八丁目",
+        "address": "日本、〒158-8799 東京都世田谷区等々力８丁目２２−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -3028,7 +3028,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "成城郵便局",
-        "address": "東京都世田谷区成城八丁目",
+        "address": "日本、〒157-8799 東京都世田谷区成城８丁目３０−２５",
         "categories": [
           "ink-cartridge"
         ],
@@ -3053,7 +3053,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "梅ケ丘駅前郵便局",
-        "address": "東京都世田谷区松原六丁目",
+        "address": "日本、〒156-0043 東京都世田谷区松原６丁目２−９",
         "categories": [
           "ink-cartridge"
         ],
@@ -3078,7 +3078,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷郵便局",
-        "address": "東京都世田谷区三軒茶屋二丁目",
+        "address": "日本、〒154-8799 東京都世田谷区三軒茶屋２丁目１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -3103,7 +3103,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷駒沢郵便局",
-        "address": "東京都世田谷区駒沢三丁目",
+        "address": "日本、〒154-0012 東京都世田谷区駒沢３丁目１５−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -3128,7 +3128,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "二子玉川郵便局",
-        "address": "東京都世田谷区玉川二丁目",
+        "address": "東京都世田谷区玉川二丁目２番",
         "categories": [
           "ink-cartridge"
         ],
@@ -3153,7 +3153,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "千歳郵便局",
-        "address": "東京都世田谷区経堂一丁目",
+        "address": "日本、〒156-8799 東京都世田谷区経堂１丁目４０−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -3178,7 +3178,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷池尻郵便局",
-        "address": "東京都世田谷区池尻三丁目",
+        "address": "日本、〒154-0001 東京都世田谷区池尻３丁目２８−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -3203,7 +3203,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷上馬郵便局",
-        "address": "東京都世田谷区上馬四丁目",
+        "address": "日本、〒154-0011 東京都世田谷区上馬４丁目２−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -3228,7 +3228,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "千歳烏山郵便局",
-        "address": "東京都世田谷区南烏山六丁目",
+        "address": "日本、〒157-0062 東京都世田谷区南烏山６丁目２９ 千歳烏山郵便局",
         "categories": [
           "ink-cartridge"
         ],
@@ -3253,7 +3253,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "豪徳寺駅前郵便局",
-        "address": "東京都世田谷区豪徳寺一丁目",
+        "address": "日本、〒154-0021 東京都世田谷区豪徳寺１丁目３８−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -3278,7 +3278,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "世田谷祖師谷四郵便局",
-        "address": "東京都世田谷区祖師谷四丁目",
+        "address": "日本、〒157-0072 東京都世田谷区祖師谷４丁目２３−２０ 世田谷祖師谷四郵便局",
         "categories": [
           "ink-cartridge"
         ],
@@ -3303,7 +3303,7 @@
         "city": "setagaya",
         "cityLabel": "世田谷区",
         "name": "八幡山駅前郵便局",
-        "address": "東京都世田谷区八幡山三丁目",
+        "address": "日本、〒156-0056 東京都世田谷区八幡山３丁目３４−１５",
         "categories": [
           "ink-cartridge"
         ],

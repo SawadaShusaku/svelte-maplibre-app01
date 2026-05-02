@@ -4,6 +4,24 @@
 
 ## 🔴 Critical Mistakes
 
+### Using `git` at All in This Repository
+
+**Mistake**: Running any `git` command in this repo
+
+**Problem**: This repository's agent harness intentionally blocks `git` to prevent mixed `git`/`jj` workflows and branch drift
+
+**Correct**:
+```bash
+# Launch shells and commands through the wrapper
+.codex/with-agent-path.sh zsh
+
+# Use jj equivalents instead
+jj st
+jj log
+jj diff
+jj git fetch
+```
+
 ### Using `git add`
 
 **Mistake**: Using `git add` to stage files
@@ -35,6 +53,34 @@ jj new main -b myfeature
 
 # Edit existing commit
 jj edit <revision>
+```
+
+### Using Bookmarks or `jj new` Alone for Parallel Agent Work
+
+**Mistake**: Starting multiple agents in one workspace and separating them only with bookmarks or `jj new`
+
+**Problem**: The agents still share one working directory, dependency tree, and generated files, so their edits can collide
+
+**Correct**:
+```bash
+# Create a sibling workspace per task or agent
+jj workspace add ../myproj.feature-a -r main
+jj workspace add ../myproj.feature-b -r main
+
+# Then work inside each directory separately
+cd ../myproj.feature-a
+```
+
+### Creating a Nested Workspace by Accident
+
+**Mistake**: Running `jj workspace add feature-a`
+
+**Problem**: Without `../` or an absolute path, the new workspace is created inside the current repo
+
+**Correct**:
+```bash
+# Use a sibling path or absolute path
+jj workspace add ../myproj.feature-a -r main
 ```
 
 ### Using `git stash`
@@ -90,7 +136,7 @@ jj rebase -r A -o B
 
 **Misconception**: `jj new` equals `git checkout -b`
 
-**Correct**: `jj new` creates a new change based on current `@`, no bookmark name
+**Correct**: `jj new` creates a new change based on current `@`, no bookmark name, and it does not create a separate workspace
 
 ```bash
 # Create new change (no bookmark)
@@ -200,10 +246,13 @@ jj bookmark list --tracked
 
 Before operating, quick check:
 - [ ] Don't use `git add`
+- [ ] Don't use `git` at all in this repository
 - [ ] Don't use `jj co` or `jj checkout`
 - [ ] Use `jj commit` not `git commit`
 - [ ] Use `jj bookmark` not `git branch`
 - [ ] Use `jj new @ A` not `git merge`
 - [ ] Use `jj rebase -b`, `-s`, or `-r` for rebase
 - [ ] Use `jj new @-` for stash, not `git stash`
+- [ ] Use `jj workspace add ../repo.task -r main` for concurrent agent work
+- [ ] Do not create nested workspaces with `jj workspace add feature-a`
 - [ ] Diverged change IDs need explicit commit ID

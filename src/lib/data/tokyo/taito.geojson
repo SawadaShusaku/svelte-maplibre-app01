@@ -16,7 +16,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東区役所",
-        "address": "東京都台東区東上野四丁目",
+        "address": "日本、〒110-8615 東京都台東区東上野４丁目５−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -41,7 +41,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東清掃事務所",
-        "address": "東京都台東区今戸一丁目",
+        "address": "日本、〒111-0024 東京都台東区今戸１丁目６−２６",
         "categories": [
           "ink-cartridge"
         ],
@@ -66,7 +66,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東清掃事務所北上野分室",
-        "address": "東京都台東区北上野一丁目",
+        "address": "日本、〒110-0014 東京都台東区北上野２丁目１６−８ 台東清掃事務所北上野分室",
         "categories": [
           "ink-cartridge"
         ],
@@ -91,7 +91,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "環境ふれあい館",
-        "address": "東京都台東区蔵前四丁目",
+        "address": "日本、〒111-0051 東京都台東区蔵前４丁目１４−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -116,7 +116,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東入谷郵便局",
-        "address": "東京都台東区入谷一丁目",
+        "address": "日本、〒110-0013 東京都台東区入谷１丁目１７−２ 橋本ビル １階",
         "categories": [
           "ink-cartridge"
         ],
@@ -141,7 +141,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東清川郵便局",
-        "address": "東京都台東区清川一丁目",
+        "address": "日本、〒111-0022 東京都台東区清川１丁目２８−４",
         "categories": [
           "ink-cartridge"
         ],
@@ -166,7 +166,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "浅草橋郵便局",
-        "address": "東京都台東区浅草橋五丁目",
+        "address": "日本、〒111-0053 東京都台東区浅草橋５丁目５−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +191,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "元浅草郵便局",
-        "address": "東京都台東区元浅草一丁目",
+        "address": "日本、〒111-0041 東京都台東区元浅草１丁目５−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +216,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "上野郵便局",
-        "address": "東京都台東区下谷一丁目",
+        "address": "日本、〒110-8799 東京都台東区下谷１丁目５−１２",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +241,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "浅草郵便局",
-        "address": "東京都台東区西浅草一丁目",
+        "address": "日本、〒111-8799 東京都台東区西浅草１丁目１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -266,7 +266,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "鳥越神社前郵便局",
-        "address": "東京都台東区浅草橋三丁目",
+        "address": "日本、〒111-0053 東京都台東区浅草橋３丁目３３−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -291,7 +291,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東三郵便局",
-        "address": "東京都台東区台東三丁目",
+        "address": "日本、〒110-0016 東京都台東区台東３丁目１２−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -316,7 +316,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "雷門郵便局",
-        "address": "東京都台東区雷門二丁目",
+        "address": "日本、〒111-0034 東京都台東区雷門２丁目２−８",
         "categories": [
           "ink-cartridge"
         ],
@@ -341,7 +341,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "仲御徒町郵便局",
-        "address": "東京都台東区上野五丁目",
+        "address": "日本、〒110-0005 東京都台東区上野５丁目１６−１２",
         "categories": [
           "ink-cartridge"
         ],
@@ -366,7 +366,7 @@
         "city": "taito",
         "cityLabel": "台東区",
         "name": "台東一郵便局",
-        "address": "東京都台東区台東一丁目",
+        "address": "日本、〒110-0016 東京都台東区台東１丁目２３−５",
         "categories": [
           "ink-cartridge"
         ],

@@ -1,5 +1,7 @@
 # Command Reference (with Explanations)
 
+This file is a Git-to-`jj` mapping aid. In this repository, do not run `git`; use the `jj` command shown in the right column.
+
 > Based on official docs: https://www.jj-vcs.dev/latest/git-command-table/
 
 ## Basic Operations
@@ -44,6 +46,7 @@
 - jj has no `jj co` or `jj checkout` commands!
 - Use `jj edit <revision>` to switch to a commit for editing
 - Use `jj new` to create new changes (not switching!)
+- Use `jj workspace add` when you need a separate working directory for parallel agents
 
 ## Rebase and Merge
 
@@ -68,6 +71,19 @@
 | `git push <remote> <branch>` | `jj git push --bookmark <name>` | |
 | `git remote add` | `jj git remote add` | |
 | `git branch -u <remote>/<branch>` | `jj bookmark track <name> --remote=<remote>` | Track remote |
+
+## Workspace Operations
+
+| Git | Jujutsu | Notes |
+|-----|---------|-------|
+| `git worktree list` | `jj workspace list` | List workspaces |
+| `git worktree add ../repo.feature-a main` | `jj workspace add ../repo.feature-a -r main` | Preferred way to isolate parallel agent work |
+| `git worktree remove ../repo.feature-a` | `jj workspace forget repo.feature-a` + `rm -rf ../repo.feature-a` | Both steps are required |
+
+**Workspace Notes**:
+- Use sibling paths like `../repo.feature-a`
+- Keep the workspace name equal to the directory name
+- Do not run `jj workspace add feature-a` inside the repo
 
 ## Stashing and Undo
 

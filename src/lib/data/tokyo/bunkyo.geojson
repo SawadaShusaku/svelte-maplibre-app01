@@ -16,7 +16,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京シビックセンター",
-        "address": "東京都文京区春日一丁目",
+        "address": "日本、〒112-0003 東京都文京区春日１丁目１６ 文京シビックセンター",
         "categories": [
           "ink-cartridge"
         ],
@@ -41,7 +41,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区礫川地域活動センター",
-        "address": "東京都文京区小石川二丁目",
+        "address": "日本、〒112-0002 東京都文京区小石川２丁目１８−１８",
         "categories": [
           "ink-cartridge"
         ],
@@ -66,7 +66,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区大原地域活動センター",
-        "address": "東京都文京区千石一丁目",
+        "address": "日本、〒112-0011 東京都文京区千石１丁目４−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -91,7 +91,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区大塚地域活動センター",
-        "address": "東京都文京区大塚一丁目",
+        "address": "日本、〒112-0012 東京都文京区大塚１丁目４−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -116,7 +116,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区音羽地域活動センター",
-        "address": "東京都文京区音羽一丁目",
+        "address": "日本、〒112-0013 東京都文京区音羽１丁目２２−１４",
         "categories": [
           "ink-cartridge"
         ],
@@ -141,7 +141,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区湯島地域活動センター",
-        "address": "東京都文京区湯島四丁目",
+        "address": "日本、〒113-0034 東京都文京区湯島４丁目",
         "categories": [
           "ink-cartridge"
         ],
@@ -166,7 +166,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区向丘地域活動センター",
-        "address": "東京都文京区向丘一丁目",
+        "address": "日本、〒113-0023 東京都文京区向丘１丁目２０−８",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +191,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区根津地域活動センター",
-        "address": "東京都文京区根津二丁目",
+        "address": "日本、〒113-0031 東京都文京区根津２丁目２０−７ 文京区立不忍通りふれあい館",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +216,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区汐見地域活動センター",
-        "address": "東京都文京区千駄木三丁目",
+        "address": "日本、〒113-0022 東京都文京区千駄木３丁目２−６ 汐見地域センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +241,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区駒込地域活動センター",
-        "address": "東京都文京区本駒込三丁目",
+        "address": "日本、〒113-0021 東京都文京区本駒込３丁目２２−４",
         "categories": [
           "ink-cartridge"
         ],
@@ -266,7 +266,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京清掃事務所播磨坂清掃事業所",
-        "address": "東京都文京区小石川五丁目",
+        "address": "日本、〒112-0002 東京都文京区小石川５丁目４０ 播磨坂清掃事業所",
         "categories": [
           "ink-cartridge"
         ],
@@ -291,7 +291,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京福祉センター江戸川橋",
-        "address": "東京都文京区小日向二丁目",
+        "address": "日本、〒112-0006 東京都文京区小日向２丁目１６−１５",
         "categories": [
           "ink-cartridge"
         ],
@@ -316,7 +316,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "本郷四郵便局",
-        "address": "東京都文京区本郷四丁目",
+        "address": "日本、〒113-0033 東京都文京区本郷４丁目２−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -341,7 +341,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "東京大学内郵便局",
-        "address": "東京都文京区本郷七丁目",
+        "address": "日本、〒113-0033 東京都文京区本郷７丁目３−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -366,7 +366,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "東京ドームシティ郵便局",
-        "address": "東京都文京区後楽一丁目",
+        "address": "日本、〒112-0004 東京都文京区後楽１丁目３−６１",
         "categories": [
           "ink-cartridge"
         ],
@@ -391,7 +391,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "湯島四郵便局",
-        "address": "東京都文京区湯島四丁目",
+        "address": "日本、〒113-0034 東京都文京区湯島４丁目６−１１",
         "categories": [
           "ink-cartridge"
         ],
@@ -416,7 +416,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京関口一郵便局",
-        "address": "東京都文京区関口一丁目",
+        "address": "日本、〒112-0014 東京都文京区関口１丁目２３−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -441,7 +441,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "小石川郵便局",
-        "address": "東京都文京区小石川四丁目",
+        "address": "日本、〒112-8799 東京都文京区小石川４丁目４−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -466,7 +466,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "本郷郵便局",
-        "address": "東京都文京区本郷六丁目",
+        "address": "日本、〒113-8799 東京都文京区本郷６丁目１−１５",
         "categories": [
           "ink-cartridge"
         ],
@@ -491,7 +491,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京根津郵便局",
-        "address": "東京都文京区根津一丁目",
+        "address": "日本、〒113-0031 東京都文京区根津１丁目１７−１ シーアイマンション根津弥生坂",
         "categories": [
           "ink-cartridge"
         ],
@@ -516,7 +516,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "小石川一郵便局",
-        "address": "東京都文京区小石川一丁目",
+        "address": "日本、〒112-0002 東京都文京区小石川１丁目２７−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -541,7 +541,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京千駄木四郵便局",
-        "address": "東京都文京区千駄木四丁目",
+        "address": "日本、〒113-0022 東京都文京区千駄木４丁目６−７",
         "categories": [
           "ink-cartridge"
         ],
@@ -566,7 +566,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京大塚五郵便局",
-        "address": "東京都文京区大塚五丁目",
+        "address": "日本、〒112-0012 東京都文京区大塚５丁目７−１１",
         "categories": [
           "ink-cartridge"
         ],
@@ -591,7 +591,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京グリーンコート郵便局",
-        "address": "東京都文京区本駒込二丁目",
+        "address": "日本、〒113-0021 東京都文京区本駒込２丁目２８−２８−８",
         "categories": [
           "ink-cartridge"
         ],

@@ -208,18 +208,25 @@ This repository includes a local Jujutsu skill for agents that support project-l
 
 Use this skill when working with `jj` commands, bookmarks, rebasing, revsets, or conflict resolution in this repository.
 
-<<<<<<< HEAD
 ### Jujutsu Workflow
 
 - For any new feature, fix, or OpenSpec change, prefer a separate `jj workspace` over a bookmark-only workflow. Use sibling directories named `{repo}.{workspace}` and keep the workspace name equal to the directory name.
-- Create workspaces from the main repo with commands such as `jj workspace add ../svelte-maplibre-app01.feature-a -r main`. Always use `../...` or an absolute path. Do not run `jj workspace add feature-a`, which would create a nested workspace inside the current one.
+- Workspace creation patterns:
+  - Pattern A: derive from `main` for normal isolated work, for example `jj workspace add ../svelte-maplibre-app01.feature-a -r main`
+  - Pattern B: omit `-r` to inherit the current working state when you want an agent to continue what you are already editing, for example `jj workspace add ../svelte-maplibre-app01.feature-a`
+  - Pattern C: derive from any specific revision, such as `jj workspace add ../svelte-maplibre-app01.feature-a -r @-`, `jj workspace add ../svelte-maplibre-app01.feature-a -r abc123`, or `jj workspace add ../svelte-maplibre-app01.feature-a -r my-branch`
+- Always use `../...` or an absolute path with `jj workspace add`. Do not run `jj workspace add feature-a`, which would create a nested workspace inside the current one.
 - Use one workspace per concurrent AI agent. Do not rely on `jj new` alone inside the same workspace when agents may touch the same files or generated assets. Use bookmarks for publishing and remote tracking, not as the primary isolation boundary.
 - Recommended one-time setup: `jj config set --user snapshot.auto-update-stale true`. Optional zsh safeguard: `preexec() { [[ -d .jj ]] && jj status >/dev/null 2>&1 }`.
 - Dependencies, caches, and untracked files are workspace-local. Run installs inside each workspace as needed, and manually link or copy files such as `.env`.
 - Cleanup requires both `jj workspace forget <name>` and removal of the sibling workspace directory.
 
-=======
->>>>>>> origin/main
+### Agent Harness
+
+- This repository uses `jj` as the only supported VCS CLI for agent work. Do not use the `git` command in this repo, even for read-only inspection. Use `jj st`, `jj log`, `jj diff`, `jj git fetch`, and `jj git push` instead.
+- A repo-local shim is provided at `.codex/shims/git` to hard-block any `git` invocation and print the `jj` equivalent. This is intentional.
+- Launch agent shells and agent commands through `.codex/with-agent-path.sh` so the shim is placed first on `PATH`. Example: `.codex/with-agent-path.sh codex` or `.codex/with-agent-path.sh zsh`.
+- When operationally feasible, prefer non-colocated Jujutsu/Git repos as an additional guardrail. For an existing repo, use `jj git colocation disable`. For new repos, use `jj git clone --no-colocate` or set `git.colocate = false`.
 ## Aliases
 
 - `$lib` → `src/lib/` (SvelteKit default)

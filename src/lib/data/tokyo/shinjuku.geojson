@@ -1909,7 +1909,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "信濃町駅前郵便局",
-        "address": "東京都新宿区南元町",
+        "address": "日本、〒160-0012 東京都新宿区南元町１９",
         "categories": [
           "ink-cartridge"
         ],
@@ -1934,7 +1934,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "北新宿三郵便局",
-        "address": "東京都新宿区北新宿三丁目",
+        "address": "日本、〒169-0074 東京都新宿区北新宿３丁目９−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -1959,7 +1959,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "四谷特別出張所",
-        "address": "東京都新宿区内藤町",
+        "address": "東京都新宿区四谷",
         "categories": [
           "ink-cartridge"
         ],
@@ -1984,7 +1984,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿区役所本庁舎",
-        "address": "東京都新宿区歌舞伎町一丁目",
+        "address": "日本、〒160-8484 東京都新宿区歌舞伎町１丁目４−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2009,7 +2009,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "東京都庁舎（４ヶ所）",
-        "address": "東京都新宿区西新宿二丁目",
+        "address": "日本、〒163-8001 東京都新宿区西新宿２丁目８−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2034,7 +2034,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿清掃事務所",
-        "address": "東京都新宿区下落合二丁目",
+        "address": "日本、〒161-0033 東京都新宿区下落合２丁目１−１ 新宿区新宿清掃事務所",
         "categories": [
           "ink-cartridge"
         ],
@@ -2059,7 +2059,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "西早稲田リサイクル活動センター",
-        "address": "東京都新宿区西早稲田三丁目",
+        "address": "日本、〒169-0051 東京都新宿区西早稲田３丁目１９−５ 新宿 区立 西 早稲田 リサイクル 活動 センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -2084,7 +2084,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "環境学習情報センター",
-        "address": "東京都新宿区西新宿二丁目",
+        "address": "日本、〒160-0023 東京都新宿区西新宿２丁目",
         "categories": [
           "ink-cartridge"
         ],
@@ -2109,7 +2109,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "箪笥町特別出張所",
-        "address": "東京都新宿区箪笥町",
+        "address": "日本、〒162-0833 東京都新宿区箪笥町１５ 新宿区箪笥町特別出張所",
         "categories": [
           "ink-cartridge"
         ],
@@ -2134,7 +2134,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "榎町特別出張所",
-        "address": "東京都新宿区早稲田町",
+        "address": "日本、〒162-0042 東京都新宿区早稲田町８５ 新宿区榎町特別出張所",
         "categories": [
           "ink-cartridge"
         ],
@@ -2159,7 +2159,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "若松町特別出張所",
-        "address": "東京都新宿区若松町",
+        "address": "日本、〒162-0056 東京都新宿区若松町１２−６ 東京都新宿区立若松区民センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -2184,7 +2184,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "大久保特別出張所",
-        "address": "東京都新宿区大久保二丁目",
+        "address": "日本、〒169-0072 東京都新宿区大久保２丁目１２−７",
         "categories": [
           "ink-cartridge"
         ],
@@ -2209,7 +2209,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "戸塚特別出張所",
-        "address": "東京都新宿区高田馬場二丁目",
+        "address": "日本、〒169-0075 東京都新宿区高田馬場２丁目１８−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2234,7 +2234,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "落合第一特別出張所",
-        "address": "東京都新宿区下落合四丁目",
+        "address": "日本、〒161-0033 東京都新宿区下落合４丁目６−７ 新宿区落合第一特別出張所",
         "categories": [
           "ink-cartridge"
         ],
@@ -2259,7 +2259,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "落合第二特別出張所",
-        "address": "東京都新宿区中落合四丁目",
+        "address": "日本、〒161-0032 東京都新宿区中落合４丁目１７−１３ 新宿区落合第二特別出張所 １階",
         "categories": [
           "ink-cartridge"
         ],
@@ -2284,7 +2284,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "柏木特別出張所",
-        "address": "東京都新宿区北新宿二丁目",
+        "address": "日本、〒169-0074 東京都新宿区北新宿２丁目３−７",
         "categories": [
           "ink-cartridge"
         ],
@@ -2309,7 +2309,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "角筈特別出張所",
-        "address": "東京都新宿区西新宿四丁目",
+        "address": "日本、〒160-0023 東京都新宿区西新宿４丁目３３−７ 角筈特別出張所等区民施設 １F",
         "categories": [
           "ink-cartridge"
         ],
@@ -2334,7 +2334,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿リサイクル活動センター",
-        "address": "東京都新宿区高田馬場四丁目",
+        "address": "日本、〒169-0075 東京都新宿区高田馬場４丁目１０−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2359,7 +2359,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿東清掃センター",
-        "address": "東京都新宿区四谷三栄町",
+        "address": "東京都新宿区新宿",
         "categories": [
           "ink-cartridge"
         ],
@@ -2384,7 +2384,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿下落合三郵便局",
-        "address": "東京都新宿区下落合三丁目",
+        "address": "日本、〒161-0033 東京都新宿区下落合３丁目１８−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -2409,7 +2409,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿西落合郵便局",
-        "address": "東京都新宿区西落合一丁目",
+        "address": "日本、〒161-0031 東京都新宿区西落合１丁目２１−１７",
         "categories": [
           "ink-cartridge"
         ],
@@ -2434,7 +2434,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "四谷駅前郵便局",
-        "address": "東京都新宿区四谷一丁目",
+        "address": "東京都新宿区四谷一丁目４番地",
         "categories": [
           "ink-cartridge"
         ],
@@ -2459,7 +2459,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿神楽坂郵便局",
-        "address": "東京都新宿区神楽坂四丁目",
+        "address": "日本、〒162-0825 東京都新宿区神楽坂４丁目１−１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2484,7 +2484,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿郵便局",
-        "address": "東京都新宿区西新宿一丁目",
+        "address": "日本、〒163-8799 東京都新宿区西新宿１丁目８−８",
         "categories": [
           "ink-cartridge"
         ],
@@ -2509,7 +2509,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿大久保郵便局",
-        "address": "東京都新宿区大久保二丁目",
+        "address": "日本、〒169-0072 東京都新宿区大久保２丁目１３−１０",
         "categories": [
           "ink-cartridge"
         ],
@@ -2534,7 +2534,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿天神郵便局",
-        "address": "東京都新宿区天神町",
+        "address": "東京都新宿区新宿",
         "categories": [
           "ink-cartridge"
         ],
@@ -2559,7 +2559,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "飯田橋駅東口郵便局",
-        "address": "東京都新宿区下宮比町",
+        "address": "日本、〒162-0822 東京都新宿区下宮比町３−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2584,7 +2584,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿保健会館内郵便局",
-        "address": "東京都新宿区市谷砂土原町一丁目",
+        "address": "日本、〒162-0842 東京都新宿区市谷砂土原町１丁目２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2609,7 +2609,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿第一生命ビル内郵便局",
-        "address": "東京都新宿区西新宿二丁目",
+        "address": "日本、〒163-0701 東京都新宿区西新宿２丁目７−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2634,7 +2634,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿北郵便局",
-        "address": "東京都新宿区大久保三丁目",
+        "address": "日本、〒169-8799 東京都新宿区大久保３丁目１４−１４−８",
         "categories": [
           "ink-cartridge"
         ],
@@ -2659,7 +2659,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿野村ビル内郵便局",
-        "address": "東京都新宿区西新宿一丁目",
+        "address": "日本、〒163-0590 東京都新宿区西新宿１丁目２６−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2684,7 +2684,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "牛込郵便局",
-        "address": "東京都新宿区北山伏町",
+        "address": "日本、〒162-8799 東京都新宿区北山伏町１−５",
         "categories": [
           "ink-cartridge"
         ],
@@ -2709,7 +2709,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "四谷通二郵便局",
-        "address": "東京都新宿区四谷三栄町",
+        "address": "東京都新宿区四谷",
         "categories": [
           "ink-cartridge"
         ],
@@ -2734,7 +2734,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "牛込若松町郵便局",
-        "address": "東京都新宿区若松町",
+        "address": "日本、〒162-0056 東京都新宿区若松町６−９",
         "categories": [
           "ink-cartridge"
         ],
@@ -2759,7 +2759,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿諏訪町郵便局",
-        "address": "東京都新宿区高田馬場一丁目",
+        "address": "日本、〒169-0075 東京都新宿区高田馬場１丁目２９−１８",
         "categories": [
           "ink-cartridge"
         ],
@@ -2784,7 +2784,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿小滝橋郵便局",
-        "address": "東京都新宿区高田馬場四丁目",
+        "address": "日本、〒169-0075 東京都新宿区高田馬場４丁目４０−１１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2809,7 +2809,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿センタービル内郵便局",
-        "address": "東京都新宿区西新宿一丁目",
+        "address": "日本、〒160-0023 東京都新宿区西新宿１丁目２５−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2834,7 +2834,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "東京オペラシティ郵便局",
-        "address": "東京都新宿区西新宿三丁目",
+        "address": "日本、〒163-1401 東京都新宿区西新宿３丁目２０−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2859,7 +2859,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿二郵便局",
-        "address": "東京都新宿区新宿二丁目",
+        "address": "日本、〒160-0022 東京都新宿区新宿２丁目１１−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2884,7 +2884,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "高田馬場二郵便局",
-        "address": "東京都新宿区高田馬場二丁目",
+        "address": "日本、〒169-0075 東京都新宿区高田馬場２丁目１４−２６",
         "categories": [
           "ink-cartridge"
         ],
@@ -2909,7 +2909,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿パークタワー内郵便局",
-        "address": "東京都新宿区西新宿三丁目",
+        "address": "日本、〒160-0023 東京都新宿区西新宿３丁目７−１ 新宿パークタワ 地下１階",
         "categories": [
           "ink-cartridge"
         ],
@@ -2934,7 +2934,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿アイタウン郵便局",
-        "address": "東京都新宿区西新宿六丁目",
+        "address": "日本、〒160-0023 東京都新宿区西新宿６丁目２１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2959,7 +2959,7 @@
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "新宿下落合四郵便局",
-        "address": "東京都新宿区目白五丁目",
+        "address": "日本、〒171-0031 東京都豊島区目白５丁目",
         "categories": [
           "ink-cartridge"
         ],

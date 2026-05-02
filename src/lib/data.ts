@@ -23,6 +23,7 @@ export interface GeoFeature {
 
 // Initialize database on first load (client-side only)
 let dbInitialized = false;
+const facilitiesCache = new Map<string, Promise<GeoFeature[]>>();
 
 async function ensureDb(): Promise<Repository> {
 	if (!browser) {
@@ -39,6 +40,24 @@ async function ensureDb(): Promise<Repository> {
  * Load facilities for selected wards and categories
  */
 export async function getFacilities(
+	selectedCities: string[],
+	selectedCategories: string[]
+): Promise<GeoFeature[]> {
+	const cacheKey = JSON.stringify({
+		cities: [...selectedCities].sort(),
+		categories: [...selectedCategories].sort()
+	});
+	const cached = facilitiesCache.get(cacheKey);
+	if (cached) {
+		return cached;
+	}
+
+	const promise = loadFacilities(selectedCities, selectedCategories);
+	facilitiesCache.set(cacheKey, promise);
+	return promise;
+}
+
+async function loadFacilities(
 	selectedCities: string[],
 	selectedCategories: string[]
 ): Promise<GeoFeature[]> {
@@ -67,8 +86,8 @@ export async function getFacilities(
 			notes: f.notes,
 			officialUrl: f.official_url,
 			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null
-		}
-	}));
+			}
+		}));
 }
 
 /**

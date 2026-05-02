@@ -16,7 +16,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川区役所本庁舎",
-        "address": "東京都品川区広町二丁目",
+        "address": "日本、〒140-0005 東京都品川区広町２丁目１−３６ 第三庁舎 4階",
         "categories": [
           "ink-cartridge"
         ],
@@ -41,7 +41,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "中小企業センター",
-        "address": "東京都品川区西品川一丁目",
+        "address": "日本、〒141-0033 東京都品川区西品川１丁目２８−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -66,7 +66,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川第一地域センター",
-        "address": "東京都品川区北品川三丁目",
+        "address": "日本、〒140-0001 東京都品川区北品川３丁目１１−１６ 品川第一地域センタービル",
         "categories": [
           "ink-cartridge"
         ],
@@ -91,7 +91,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川第二地域センター",
-        "address": "東京都品川区南品川五丁目",
+        "address": "日本、〒140-0004 東京都品川区南品川５丁目３−２０",
         "categories": [
           "ink-cartridge"
         ],
@@ -116,7 +116,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "大崎第一地域センター",
-        "address": "東京都品川区西五反田三丁目",
+        "address": "日本、〒141-0031 東京都品川区西五反田３丁目６−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -141,7 +141,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "大崎第二地域センター",
-        "address": "東京都品川区大崎二丁目",
+        "address": "日本、〒141-0032 東京都品川区大崎２丁目９−４",
         "categories": [
           "ink-cartridge"
         ],
@@ -166,7 +166,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "大井第一地域センター 南大井文化センター",
-        "address": "東京都品川区南大井一丁目",
+        "address": "日本、〒140-0013 東京都品川区南大井１丁目１２−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +191,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "大井第二地域センター",
-        "address": "東京都品川区大井二丁目",
+        "address": "日本、〒140-0014 東京都品川区大井２丁目２７−２０ 品川区大井第二地域センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +216,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "大井第三地域センター",
-        "address": "東京都品川区西大井四丁目",
+        "address": "日本、〒140-0015 東京都品川区西大井４丁目１−８ 品川区役所大井第三地域センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +241,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原第一地域センター",
-        "address": "東京都品川区小山三丁目",
+        "address": "日本、〒142-0062 東京都品川区小山３丁目１４−１ シティタワー武蔵小山 商業施設棟 ２階",
         "categories": [
           "ink-cartridge"
         ],
@@ -266,7 +266,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原第二地域センター",
-        "address": "東京都品川区荏原六丁目",
+        "address": "日本、〒142-0063 東京都品川区荏原６丁目１７−１２",
         "categories": [
           "ink-cartridge"
         ],
@@ -291,7 +291,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原第三地域センター",
-        "address": "東京都品川区平塚一丁目",
+        "address": "日本、〒142-0051 東京都品川区平塚１丁目１３−１８",
         "categories": [
           "ink-cartridge"
         ],
@@ -316,7 +316,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原第四地域センター",
-        "address": "東京都品川区中延五丁目",
+        "address": "日本、〒142-0053 東京都品川区中延５丁目３−１２ 品川区荏原第四地域センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -341,7 +341,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原第五地域センター",
-        "address": "東京都品川区二葉一丁目",
+        "address": "日本、〒142-0043 東京都品川区二葉１丁目１−１−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -366,7 +366,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "八潮地域センター",
-        "address": "東京都品川区八潮五丁目",
+        "address": "東京都品川区八潮五丁目８番",
         "categories": [
           "ink-cartridge"
         ],
@@ -391,7 +391,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "五反田文化センター",
-        "address": "東京都品川区西五反田六丁目",
+        "address": "東京都品川区西五反田六丁目５番",
         "categories": [
           "ink-cartridge"
         ],
@@ -416,7 +416,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原文化センター",
-        "address": "東京都品川区中延一丁目",
+        "address": "日本、〒142-0053 東京都品川区中延１丁目",
         "categories": [
           "ink-cartridge"
         ],
@@ -441,7 +441,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "東品川文化センター",
-        "address": "東京都品川区東品川三丁目",
+        "address": "日本、〒140-0002 東京都品川区東品川３丁目３２−１０",
         "categories": [
           "ink-cartridge"
         ],
@@ -466,7 +466,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "旗の台文化センター",
-        "address": "東京都品川区旗の台五丁目",
+        "address": "日本、〒142-0064 東京都品川区旗の台５丁目１９−５ 旗の台児童センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -491,7 +491,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川図書館",
-        "address": "東京都品川区北品川二丁目",
+        "address": "日本、〒140-0001 東京都品川区北品川２丁目３２−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -516,7 +516,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原保健センター",
-        "address": "東京都品川区西五反田六丁目",
+        "address": "日本、〒141-0031 東京都品川区西五反田６丁目６−２０",
         "categories": [
           "ink-cartridge"
         ],
@@ -541,11 +541,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "総合体育館",
-<<<<<<< HEAD
         "address": "東京都品川区東五反田二丁目11番２号",
-=======
-        "address": "東京都稲城市長峰一丁目",
->>>>>>> origin/main
         "categories": [
           "ink-cartridge"
         ],
@@ -570,7 +566,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "戸越体育館",
-        "address": "東京都品川区豊町二丁目",
+        "address": "日本、〒142-0042 東京都品川区豊町２丁目１−１７",
         "categories": [
           "ink-cartridge"
         ],
@@ -595,7 +591,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川区消費者センター",
-        "address": "東京都品川区西品川一丁目",
+        "address": "日本、〒140-0033 東京都品川区西品川１丁目２８−３ 中小企業センタ 4階",
         "categories": [
           "ink-cartridge"
         ],
@@ -620,7 +616,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川区清掃事務所　品川庁舎",
-        "address": "東京都品川区大崎一丁目",
+        "address": "日本、〒141-0032 東京都品川区大崎１丁目１４−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -645,7 +641,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川区清掃事務所　荏原分室",
-        "address": "東京都品川区平塚一丁目",
+        "address": "日本、〒142-0051 東京都品川区平塚１丁目１０−１１ 品川区清掃事務所荏原庁舎",
         "categories": [
           "ink-cartridge"
         ],
@@ -670,7 +666,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川小山三郵便局",
-        "address": "東京都品川区小山三丁目",
+        "address": "日本、〒142-0062 東京都品川区小山３丁目 品川小山三郵便局",
         "categories": [
           "ink-cartridge"
         ],
@@ -695,7 +691,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川中延五郵便局",
-        "address": "東京都品川区中延五丁目",
+        "address": "日本、〒142-0053 東京都品川区中延５丁目５−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -720,7 +716,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "荏原郵便局",
-        "address": "東京都品川区西中延一丁目",
+        "address": "日本、〒142-0054 東京都品川区西中延１丁目７−２３",
         "categories": [
           "ink-cartridge"
         ],
@@ -745,7 +741,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川郵便局",
-        "address": "東京都品川区東大井五丁目",
+        "address": "日本、〒140-8799 東京都品川区東大井５丁目２３−３４",
         "categories": [
           "ink-cartridge"
         ],
@@ -770,7 +766,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "南品川一郵便局",
-        "address": "東京都品川区南品川一丁目",
+        "address": "日本、〒140-0004 東京都品川区南品川１丁目８−１０ ＭＮビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -795,7 +791,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "大崎郵便局",
-        "address": "東京都品川区西五反田二丁目",
+        "address": "日本、〒141-8799 東京都品川区西五反田２丁目３２−３２−７",
         "categories": [
           "ink-cartridge"
         ],
@@ -820,7 +816,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川八潮郵便局",
-        "address": "東京都品川区八潮五丁目",
+        "address": "日本、〒140-0003 東京都品川区八潮５丁目５−７",
         "categories": [
           "ink-cartridge"
         ],
@@ -845,7 +841,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "品川区役所前郵便局",
-        "address": "東京都品川区二葉一丁目",
+        "address": "日本、〒142-0043 東京都品川区二葉１丁目８−１８",
         "categories": [
           "ink-cartridge"
         ],

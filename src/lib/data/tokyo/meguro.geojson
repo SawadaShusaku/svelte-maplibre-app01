@@ -1783,7 +1783,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "下目黒郵便局",
-        "address": "東京都目黒区下目黒三丁目",
+        "address": "日本、〒153-0064 東京都目黒区下目黒３丁目２−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -1808,7 +1808,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "目黒郵便局",
-        "address": "東京都目黒区目黒本町一丁目",
+        "address": "日本、〒152-8799 東京都目黒区目黒本町１丁目１５−１６",
         "categories": [
           "ink-cartridge"
         ],
@@ -1833,7 +1833,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "目黒大橋郵便局",
-        "address": "東京都目黒区大橋一丁目",
+        "address": "日本、〒153-0044 東京都目黒区大橋１丁目１０−１ １０３",
         "categories": [
           "ink-cartridge"
         ],
@@ -1858,7 +1858,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "目黒自由が丘郵便局",
-        "address": "東京都目黒区自由が丘二丁目",
+        "address": "日本、〒152-0035 東京都目黒区自由が丘２丁目１１−１９",
         "categories": [
           "ink-cartridge"
         ],

@@ -783,34 +783,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-<<<<<<< HEAD
-=======
           139.827011,
           35.68877
-        ]
-      },
-      "properties": {
-        "id": "koto-032",
-        "prefecture": "tokyo",
-        "city": "koto",
-        "cityLabel": "江東区",
-        "name": "�蠖�晃電気センター",
-        "address": "東京都江東区大島４丁目３−７",
-        "categories": [
-          "button-battery"
-        ],
-        "hours": "",
-        "notes": "TEL: 03-3685-1048",
-        "officialUrl": "https://www.city.koto.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
->>>>>>> origin/main
           139.812546,
           35.689758
         ]
@@ -1146,7 +1120,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "富岡出張所",
-        "address": "江東区富岡1丁目",
+        "address": "日本、〒135-0047 東京都江東区富岡１丁目１６−１２ 江東区役所富岡出張所",
         "categories": [
           "small-appliance"
         ],
@@ -1171,7 +1145,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "小松橋出張所",
-        "address": "江東区扇橋2丁目",
+        "address": "日本、〒135-0011 東京都江東区扇橋２丁目１−５ 小松橋出張所小松橋区民館",
         "categories": [
           "small-appliance"
         ],
@@ -1196,7 +1170,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "砂町出張所",
-        "address": "江東区北砂4丁目",
+        "address": "日本、〒136-0073 東京都江東区北砂４丁目７−３ 江東区砂町出張所",
         "categories": [
           "small-appliance"
         ],
@@ -1221,7 +1195,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "南砂出張所 / 江東図書館",
-        "address": "江東区南砂6丁目",
+        "address": "日本、〒136-0076 東京都江東区南砂６丁目７ 江東図書館入口",
         "categories": [
           "small-appliance"
         ],
@@ -1246,7 +1220,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "総合区民センター 2階正面入り口1 / 総合区民センター 2階正面入り口2",
-        "address": "江東区大島4丁目",
+        "address": "日本、〒136-0072 東京都江東区大島４丁目５−１",
         "categories": [
           "small-appliance"
         ],
@@ -1271,7 +1245,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "豊洲シビックセンター",
-        "address": "江東区豊洲2丁目",
+        "address": "日本、〒135-0061 東京都江東区豊洲２丁目２−１８",
         "categories": [
           "small-appliance"
         ],
@@ -1296,7 +1270,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "深川江戸資料館",
-        "address": "江東区白河1丁目",
+        "address": "日本、〒135-0021 東京都江東区白河１丁目３−２８",
         "categories": [
           "small-appliance"
         ],
@@ -1321,7 +1295,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "環境学習情報館えこっくる江東",
-        "address": "江東区潮見1丁目",
+        "address": "日本、〒135-0052 東京都江東区潮見１丁目２９−７ 環境学習情報館えこっくる江東",
         "categories": [
           "small-appliance"
         ],
@@ -1346,7 +1320,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "こどもプラザ",
-        "address": "江東区住吉1丁目",
+        "address": "日本、〒135-0002 東京都江東区住吉１丁目９−８ こどもプラザ",
         "categories": [
           "small-appliance"
         ],
@@ -1371,7 +1345,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "深川図書館",
-        "address": "江東区清澄3丁目",
+        "address": "日本、〒135-0024 東京都江東区清澄３丁目３−３９",
         "categories": [
           "small-appliance"
         ],
@@ -1396,7 +1370,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "東陽図書館",
-        "address": "江東区東陽2丁目",
+        "address": "日本、〒135-0016 東京都江東区東陽２丁目３−６",
         "categories": [
           "small-appliance"
         ],
@@ -1421,7 +1395,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "東雲図書館",
-        "address": "江東区東雲2丁目",
+        "address": "日本、〒135-0062 東京都江東区東雲２丁目７−５ トミンタワー東雲2階",
         "categories": [
           "small-appliance"
         ],
@@ -1446,7 +1420,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "亀戸図書館",
-        "address": "江東区亀戸7丁目",
+        "address": "日本、〒136-0071 東京都江東区亀戸７丁目",
         "categories": [
           "small-appliance"
         ],
@@ -1471,7 +1445,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "東大島図書館",
-        "address": "江東区大島9丁目",
+        "address": "日本、〒136-0072 東京都江東区大島９丁目４−２ 東大島ファミールハイツ２号館 1階",
         "categories": [
           "small-appliance"
         ],
@@ -1496,7 +1470,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東区文化センター",
-        "address": "江東区東陽4丁目",
+        "address": "日本、〒135-0016 東京都江東区東陽４丁目１１−３",
         "categories": [
           "small-appliance"
         ],
@@ -1521,7 +1495,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "森下文化センター",
-        "address": "江東区森下3丁目",
+        "address": "日本、〒135-0004 東京都江東区森下３丁目１２−１７ 森下文化センター",
         "categories": [
           "small-appliance"
         ],
@@ -1546,7 +1520,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "古石場文化センター",
-        "address": "江東区古石場2丁目",
+        "address": "日本、〒135-0045 東京都江東区古石場２丁目１６",
         "categories": [
           "small-appliance"
         ],
@@ -1571,12 +1545,12 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "亀戸文化センター",
-        "address": "江東区亀戸2丁目",
+        "address": "東京都江東区亀戸2丁目19番1号 カメリアプラザ5階",
         "categories": [
           "small-appliance"
         ],
         "hours": "",
-        "notes": "小型家電回収ボックス設置",
+        "notes": "小型家電回収ボックス設置（TEL: 03-5626-2121）",
         "officialUrl": "https://www.city.koto.lg.jp/",
         "categoryUrls": {}
       }
@@ -1596,7 +1570,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "東大島文化センター",
-        "address": "江東区大島8丁目",
+        "address": "日本、〒136-0072 東京都江東区大島８丁目３３−９ 東大島文化センター",
         "categories": [
           "small-appliance"
         ],
@@ -1621,7 +1595,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "砂町文化センター",
-        "address": "江東区北砂5丁目",
+        "address": "日本、〒136-0073 東京都江東区北砂５丁目１−７ 砂町文化センター",
         "categories": [
           "small-appliance"
         ],
@@ -1646,7 +1620,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "深川スポーツセンター",
-        "address": "江東区越中島1丁目",
+        "address": "日本、〒135-0044 東京都江東区越中島１丁目２−１８",
         "categories": [
           "small-appliance"
         ],
@@ -1671,7 +1645,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "亀戸スポーツセンター",
-        "address": "江東区亀戸8丁目",
+        "address": "日本、〒136-0071 東京都江東区亀戸８丁目２２−１",
         "categories": [
           "small-appliance"
         ],
@@ -1696,7 +1670,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "有明スポーツセンター",
-        "address": "江東区有明2丁目",
+        "address": "日本、〒135-0063 東京都江東区有明２丁目３ 有明スポーツセンター(B棟)",
         "categories": [
           "small-appliance"
         ],
@@ -1721,7 +1695,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "東砂スポーツセンター",
-        "address": "江東区東砂4丁目",
+        "address": "日本、〒136-0074 東京都江東区東砂４丁目２４−１",
         "categories": [
           "small-appliance"
         ],
@@ -1746,7 +1720,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "深川北スポーツセンター",
-        "address": "江東区平野3丁目",
+        "address": "日本、〒135-0023 東京都江東区平野３丁目２−２０",
         "categories": [
           "small-appliance"
         ],
@@ -1971,7 +1945,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "城東郵便局",
-        "address": "東京都江東区大島三丁目",
+        "address": "日本、〒136-8799 東京都江東区大島３丁目１５−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -1996,7 +1970,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "森下町郵便局",
-        "address": "東京都江東区森下一丁目",
+        "address": "日本、〒135-0004 東京都江東区森下１丁目１２−６",
         "categories": [
           "ink-cartridge"
         ],
@@ -2021,7 +1995,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東亀戸六郵便局",
-        "address": "東京都江東区亀戸六丁目",
+        "address": "日本、〒136-0071 東京都江東区亀戸６丁目４２−４２−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -2046,7 +2020,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東亀戸郵便局",
-        "address": "東京都江東区亀戸三丁目",
+        "address": "日本、〒136-0071 東京都江東区亀戸３丁目６２−１２ 川村ビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -2071,7 +2045,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東区役所（２箇所）",
-        "address": "東京都江東区東陽四丁目",
+        "address": "日本、〒135-8383 東京都江東区東陽４丁目１１−２８",
         "categories": [
           "ink-cartridge"
         ],
@@ -2096,7 +2070,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "環境学習情報館（えこっくる江東）",
-        "address": "東京都江東区潮見一丁目",
+        "address": "日本、〒135-0052 東京都江東区潮見１丁目２９−７ 環境学習情報館えこっくる江東",
         "categories": [
           "ink-cartridge"
         ],
@@ -2121,7 +2095,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "総合区民センター",
-        "address": "東京都江東区大島四丁目",
+        "address": "日本、〒136-0072 東京都江東区大島４丁目５−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2146,7 +2120,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東豊洲郵便局",
-        "address": "東京都江東区豊洲三丁目",
+        "address": "日本、〒135-0061 東京都江東区豊洲３丁目２−２０ Toyosu Front, 1F",
         "categories": [
           "ink-cartridge"
         ],
@@ -2171,7 +2145,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "深川郵便局",
-        "address": "東京都江東区東陽四丁目",
+        "address": "日本、〒135-8799 東京都江東区東陽４丁目４−２",
         "categories": [
           "ink-cartridge"
         ],
@@ -2196,7 +2170,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東牡丹郵便局",
-        "address": "東京都江東区牡丹三丁目",
+        "address": "日本、〒135-0046 東京都江東区牡丹３丁目８−３",
         "categories": [
           "ink-cartridge"
         ],
@@ -2221,7 +2195,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東住吉郵便局",
-        "address": "東京都江東区住吉二丁目",
+        "address": "日本、〒135-0002 東京都江東区住吉２丁目３−９",
         "categories": [
           "ink-cartridge"
         ],
@@ -2246,7 +2220,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東区文化センター内郵便局",
-        "address": "東京都江東区東陽四丁目",
+        "address": "日本、〒135-0016 東京都江東区東陽４丁目１１−１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2271,7 +2245,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "ＴＦＴ内郵便局",
-        "address": "東京都江東区有明三丁目",
+        "address": "日本、〒135-0063 東京都江東区有明３丁目６−１１",
         "categories": [
           "ink-cartridge"
         ],
@@ -2296,7 +2270,7 @@
         "city": "koto",
         "cityLabel": "江東区",
         "name": "江東潮見郵便局",
-        "address": "東京都江東区潮見一丁目",
+        "address": "日本、〒135-0052 東京都江東区潮見１丁目２−１",
         "categories": [
           "ink-cartridge"
         ],

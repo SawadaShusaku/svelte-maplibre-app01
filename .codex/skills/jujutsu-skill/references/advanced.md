@@ -2,7 +2,83 @@
 
 > Supplementary content based on official docs
 
-## Colocated Workspaces
+## Repository Harness
+
+This repository is designed for `jj`-only agent workflows.
+
+```bash
+# Launch commands with the repo-local git shim enabled
+.codex/with-agent-path.sh zsh
+.codex/with-agent-path.sh codex
+
+# When feasible, remove direct git access from the workspace itself
+jj git colocation disable
+```
+
+- `.codex/shims/git` hard-blocks the `git` CLI and points users to the `jj` equivalent
+- This prevents accidental `git` mutations and also avoids "safe" read-only git commands drifting into mixed workflows
+- Prefer non-colocated repos for new setups: `jj git clone --no-colocate ...`
+
+## Sibling Workspaces for Parallel Agents
+
+Use sibling-directory workspaces as the default layout for concurrent AI agents and unrelated tasks.
+
+### Recommended Setup
+
+```bash
+# One-time setup to reduce stale workspace friction
+jj config set --user snapshot.auto-update-stale true
+
+# Pattern A: derive from main (general default)
+jj workspace add ../myproj.feature-a -r main
+jj workspace add ../myproj.feature-b -r main
+
+# Pattern B: inherit the current working state (omit -r)
+# Use this when you want an agent to continue what you are currently editing
+jj workspace add ../myproj.feature-a
+
+# Pattern C: derive from any specific revision
+jj workspace add ../myproj.feature-a -r @-
+jj workspace add ../myproj.feature-a -r abc123
+jj workspace add ../myproj.feature-a -r my-branch
+
+# Check workspace positions
+jj workspace list
+jj log
+```
+
+### Conventions
+
+- Name workspaces as `{repo}.{workspace}` and keep the directory name identical to the workspace name
+- Pattern A is the standard choice for clean work based on the latest `main`
+- Pattern B copies the current working state into a new workspace
+- Pattern C gives explicit control over the parent revision
+- Always pass `../...` or an absolute path to `jj workspace add`
+- Do not run `jj workspace add feature-a`, which would create a nested workspace inside the current repo
+- Use one workspace per concurrent agent; `jj new` inside one workspace is not enough isolation
+
+### Dependency and Env Notes
+
+```bash
+cd ../myproj.feature-a
+npm install
+ln -s ../myproj/.env .env
+```
+
+- Dependencies and build caches are per-workspace
+- Untracked files such as `.env` are not copied automatically
+
+### Cleanup
+
+```bash
+cd ../myproj
+jj workspace forget myproj.feature-a
+rm -rf ../myproj.feature-a
+```
+
+Both steps are required. `forget` alone leaves the directory behind, and deleting the directory alone leaves stale workspace metadata.
+
+## Colocated Repositories
 
 jj and git can coexist in the same directory, facilitating migration and tool interoperability.
 
@@ -18,6 +94,8 @@ jj git clone <url>
 jj git init --no-colocate
 jj git clone --no-colocate <url>
 ```
+
+In this repository, colocated mode should be treated as a migration state, not a normal operating mode for agents.
 
 ### Mixing jj and git
 

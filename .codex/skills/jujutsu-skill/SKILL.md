@@ -1,6 +1,6 @@
 ---
 name: jujutsu
-description: "Use Jujutsu (jj) for version control in jj-enabled projects. Covers command workflows, bookmark management, rebasing, conflict resolution, revsets, and common pitfalls. Triggers when: project has a `.jj/` directory, README requires jj, or user explicitly requests jj commands. Do NOT use for regular git-only projects."
+description: "Use Jujutsu (jj) for version control in jj-enabled projects. Covers command workflows, workspace management, bookmark management, rebasing, conflict resolution, revsets, and common pitfalls. Triggers when: project has a `.jj/` directory, README requires jj, or user explicitly requests jj commands. Do NOT use for regular git-only projects."
 ---
 
 # Jujutsu Usage Guide
@@ -24,10 +24,11 @@ Jujutsu (jj) is a next-generation VCS compatible with Git repositories but with 
 1. **Auto-tracking** — jj tracks all changes automatically, no `git add` needed
 2. **Mutable commits** — commits are editable "changes", can be modified anytime
 3. **Undoable operations** — almost all operations can be undone with `jj undo`
-4. **Bookmarks** — lightweight pointers, similar to Git branches but with tracked concept
-5. **Revsets** — powerful query syntax for complex conditions
-6. **No checkout** — use `jj edit` to switch to a commit
-7. **Non-blocking conflicts** — conflicts are recorded in commits, can be resolved later
+4. **Workspaces for parallelism** — separate `jj workspace`s are the isolation boundary for concurrent agents
+5. **Bookmarks** — lightweight pointers for publishing/tracking, not workspace isolation
+6. **Revsets** — powerful query syntax for complex conditions
+7. **No checkout** — use `jj edit` to switch to a commit
+8. **Non-blocking conflicts** — conflicts are recorded in commits, can be resolved later
 
 ## Core Concepts
 
@@ -48,12 +49,19 @@ Jujutsu (jj) is a next-generation VCS compatible with Git repositories but with 
 - **No "current bookmark"** — jj has no concept of active branch
 - **Tracked bookmark**: Automatically tracks remote bookmark of the same name
 
-### Colocated Workspaces
+### Repository Harness
 
-jj and git can coexist in the same directory:
-- `.jj/` + `.git/` coexist
-- jj and git commands can be mixed
-- jj automatically imports/exports to git
+This repository treats `jj` as the only supported VCS CLI for agent work.
+
+- Do not run `git` in this repo, even for read-only inspection
+- Use the repo-local wrapper `.codex/with-agent-path.sh` so `.codex/shims/git` is first on `PATH`
+- Prefer non-colocated repos when operationally feasible: `jj git colocation disable`
+
+## Workspace vs Bookmark
+
+- **Workspace**: Separate working directory with its own working-copy commit, dependency cache, and untracked files
+- **Bookmark**: Named pointer used for publishing and remote tracking
+- For parallel AI agent work, use separate sibling-directory workspaces instead of splitting tasks only with bookmarks or `jj new` inside one workspace
 
 ## Quick Command Reference
 
@@ -86,6 +94,11 @@ jj bookmark create <name> -r <revision>       # Create bookmark
 jj bookmark delete <name>                     # Delete bookmark
 jj bookmark move <name> --to <revision>       # Move bookmark
 jj bookmark track <name> --remote=<remote>    # Track remote bookmark
+
+# Workspaces (preferred for parallel agent work)
+jj workspace list                             # List workspaces
+jj workspace add ../repo.feature-a -r main    # Create sibling workspace from main
+jj workspace forget repo.feature-a            # Remove workspace registration (delete dir separately)
 
 # Rebase
 jj rebase -b <bookmark> -o <dest>  # Move entire branch
@@ -139,6 +152,43 @@ jj edit <revision>
 jj new main -b topic
 ```
 
+### Parallel AI Agent Work (Preferred)
+```bash
+# One-time setup to reduce stale workspace friction
+jj config set --user snapshot.auto-update-stale true
+
+# Pattern A: derive from main (general default)
+jj workspace add ../myproj.feature-a -r main
+jj workspace add ../myproj.feature-b -r main
+
+# Pattern B: inherit the current working state (omit -r)
+# Use this when you want an agent to continue what you are currently editing
+jj workspace add ../myproj.feature-a
+
+# Pattern C: derive from any specific revision
+jj workspace add ../myproj.feature-a -r @-
+jj workspace add ../myproj.feature-a -r abc123
+jj workspace add ../myproj.feature-a -r my-branch
+
+# Inside each workspace, install deps and link untracked env files if needed
+cd ../myproj.feature-a
+npm install
+ln -s ../myproj/.env .env
+
+# Cleanup after the work is no longer needed
+cd ../myproj
+jj workspace forget myproj.feature-a
+rm -rf ../myproj.feature-a
+```
+
+- Use sibling directory names like `{repo}.{workspace}` and keep the workspace name equal to the directory name
+- Pattern A is the normal choice when you want a clean workspace from the latest `main`
+- Pattern B inherits the current working state, which is useful when splitting off in-progress work to another agent
+- Pattern C is for exact parent control when you want to branch from a particular revision, change ID, or bookmark
+- Always pass `../...` or an absolute path to `jj workspace add`
+- Do not run `jj workspace add feature-a`, which nests a workspace inside the current repo
+- Use one workspace per concurrent agent; `jj new` alone is not sufficient isolation for parallel edits
+
 ### Rebase
 ```bash
 jj rebase -b topic -o main           # Move entire branch (with all descendants)
@@ -177,6 +227,8 @@ jj squash --from <source> --into <target>            # Merge both versions
 4. **Conflicts don't block** — can continue working, resolve later
 5. **`jj new` creates a change** — editable empty commit, NOT a checkout
 6. **Bookmarks have tracked concept** — like Git's upstream
+7. **`git` is disabled in this repo's agent harness** — use `jj` equivalents only
+7. **Prefer `jj workspace add` for concurrent agent work** — bookmarks and sibling changes do not isolate file-system side effects
 
 ## Revset Quick Reference
 
