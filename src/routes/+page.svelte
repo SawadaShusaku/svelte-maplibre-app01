@@ -1,3 +1,11 @@
+<svelte:head>
+  <title>東京リサイクルマップ</title>
+  <meta
+    name="description"
+    content="東京のリサイクル回収施設を地図で探せるアプリ。区の選択、カテゴリ絞り込み、施設情報の確認ができます。"
+  />
+</svelte:head>
+
 <script lang="ts">
   import { browser } from '$app/environment';
   import { env } from '$env/dynamic/public';
@@ -504,8 +512,8 @@
       onclick={() => (isTitleCollapsed = true)}
       aria-label="タイトルを閉じる"
     >
-      <p class="map-title-kicker">TOSHIMA WARD</p>
-      <p class="map-title-text">豊島区リサイクルマップ<span class="map-title-note">（仮）</span></p>
+      <p class="map-title-kicker">TOKYO</p>
+      <p class="map-title-text">東京リサイクルマップ</p>
     </button>
   {/if}
   
@@ -546,7 +554,7 @@
     <GeolocateControl
       bind:control={geolocateControl}
       position="bottom-right"
-      trackUserLocation={true}
+      trackUserLocation={false}
       showAccuracyCircle={true}
       showUserLocation={true}
       positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
@@ -728,13 +736,6 @@
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: rgba(17, 24, 39, 0.92);
-  }
-
-  .map-title-note {
-    margin-left: 0.2rem;
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: rgba(75, 85, 99, 0.8);
   }
 
   @media (max-width: 640px) {

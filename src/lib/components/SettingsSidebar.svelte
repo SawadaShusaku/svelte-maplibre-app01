@@ -170,7 +170,7 @@
       </section>
 
       <div class="mt-8 pt-6 border-t border-gray-100 px-4">
-        <p class="text-xs text-gray-400 font-medium">© 2026 Recycle Map Tokyo</p>
+        <p class="text-xs text-gray-400 font-medium">© 2026 Tokyo Recycle Map</p>
       </div>
     </div>
   </aside>
