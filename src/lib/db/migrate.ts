@@ -55,7 +55,15 @@ const COLLECTORS = [
 	{ id: 'minato-city', name: '港区環境課', url: 'https://www.city.minato.tokyo.jp/' },
 	{ id: 'shinjuku-city', name: '新宿区環境課', url: 'https://www.city.shinjuku.lg.jp/' },
 	{ id: 'bunkyo-city', name: '文京区環境課', url: 'https://www.city.bunkyo.lg.jp/' },
-	{ id: 'taito-city', name: '台東区環境課', url: 'https://www.city.taito.lg.jp/' }
+	{ id: 'taito-city', name: '台東区環境課', url: 'https://www.city.taito.lg.jp/' },
+	{ id: 'sumida-city', name: '墨田区環境課', url: 'https://www.city.sumida.lg.jp/' },
+	{ id: 'koto-city', name: '江東区環境課', url: 'https://www.city.koto.lg.jp/' },
+	{ id: 'shinagawa-city', name: '品川区環境課', url: 'https://www.city.shinagawa.tokyo.jp/' },
+	{ id: 'meguro-city', name: '目黒区環境課', url: 'https://www.city.meguro.tokyo.jp/' },
+	{ id: 'ota-city', name: '大田区環境課', url: 'https://www.city.ota.tokyo.jp/' },
+	{ id: 'setagaya-city', name: '世田谷区環境課', url: 'https://www.city.setagaya.lg.jp/' },
+	{ id: 'shibuya-city', name: '渋谷区環境課', url: 'https://www.city.shibuya.tokyo.jp/' },
+	{ id: 'nakano-city', name: '中野区環境課', url: 'https://www.city.tokyo-nakano.lg.jp/' }
 ];
 
 // Wards configuration
@@ -66,7 +74,15 @@ const WARDS = [
 	{ id: 'minato', prefecture: 'tokyo', city_label: '港区', url: 'https://www.city.minato.tokyo.jp/' },
 	{ id: 'shinjuku', prefecture: 'tokyo', city_label: '新宿区', url: 'https://www.city.shinjuku.lg.jp/' },
 	{ id: 'bunkyo', prefecture: 'tokyo', city_label: '文京区', url: 'https://www.city.bunkyo.lg.jp/' },
-	{ id: 'taito', prefecture: 'tokyo', city_label: '台東区', url: 'https://www.city.taito.lg.jp/' }
+	{ id: 'taito', prefecture: 'tokyo', city_label: '台東区', url: 'https://www.city.taito.lg.jp/' },
+	{ id: 'sumida', prefecture: 'tokyo', city_label: '墨田区', url: 'https://www.city.sumida.lg.jp/' },
+	{ id: 'koto', prefecture: 'tokyo', city_label: '江東区', url: 'https://www.city.koto.lg.jp/' },
+	{ id: 'shinagawa', prefecture: 'tokyo', city_label: '品川区', url: 'https://www.city.shinagawa.tokyo.jp/' },
+	{ id: 'meguro', prefecture: 'tokyo', city_label: '目黒区', url: 'https://www.city.meguro.tokyo.jp/' },
+	{ id: 'ota', prefecture: 'tokyo', city_label: '大田区', url: 'https://www.city.ota.tokyo.jp/' },
+	{ id: 'setagaya', prefecture: 'tokyo', city_label: '世田谷区', url: 'https://www.city.setagaya.lg.jp/' },
+	{ id: 'shibuya', prefecture: 'tokyo', city_label: '渋谷区', url: 'https://www.city.shibuya.tokyo.jp/' },
+	{ id: 'nakano', prefecture: 'tokyo', city_label: '中野区', url: 'https://www.city.tokyo-nakano.lg.jp/' }
 ];
 
 async function migrate() {
@@ -198,6 +214,22 @@ async function migrate() {
 					collectorId = 'bunkyo-city';
 				} else if (city === 'taito') {
 					collectorId = 'taito-city';
+				} else if (city === 'sumida') {
+					collectorId = 'sumida-city';
+				} else if (city === 'koto') {
+					collectorId = 'koto-city';
+				} else if (city === 'shinagawa') {
+					collectorId = 'shinagawa-city';
+				} else if (city === 'meguro') {
+					collectorId = 'meguro-city';
+				} else if (city === 'ota') {
+					collectorId = 'ota-city';
+				} else if (city === 'setagaya') {
+					collectorId = 'setagaya-city';
+				} else if (city === 'shibuya') {
+					collectorId = 'shibuya-city';
+				} else if (city === 'nakano') {
+					collectorId = 'nakano-city';
 				}
 				
 				// Insert facility
