@@ -783,6 +783,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+<<<<<<< HEAD
+=======
+          139.827011,
+          35.68877
+        ]
+      },
+      "properties": {
+        "id": "koto-032",
+        "prefecture": "tokyo",
+        "city": "koto",
+        "cityLabel": "江東区",
+        "name": "�蠖�晃電気センター",
+        "address": "東京都江東区大島４丁目３−７",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3685-1048",
+        "officialUrl": "https://www.city.koto.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+>>>>>>> origin/main
           139.812546,
           35.689758
         ]

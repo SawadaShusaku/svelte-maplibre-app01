@@ -541,7 +541,11 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "総合体育館",
+<<<<<<< HEAD
         "address": "東京都品川区東五反田二丁目11番２号",
+=======
+        "address": "東京都稲城市長峰一丁目",
+>>>>>>> origin/main
         "categories": [
           "ink-cartridge"
         ],

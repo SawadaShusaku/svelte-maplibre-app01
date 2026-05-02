@@ -208,6 +208,7 @@ This repository includes a local Jujutsu skill for agents that support project-l
 
 Use this skill when working with `jj` commands, bookmarks, rebasing, revsets, or conflict resolution in this repository.
 
+<<<<<<< HEAD
 ### Jujutsu Workflow
 
 - For any new feature, fix, or OpenSpec change, prefer a separate `jj workspace` over a bookmark-only workflow. Use sibling directories named `{repo}.{workspace}` and keep the workspace name equal to the directory name.
@@ -217,6 +218,8 @@ Use this skill when working with `jj` commands, bookmarks, rebasing, revsets, or
 - Dependencies, caches, and untracked files are workspace-local. Run installs inside each workspace as needed, and manually link or copy files such as `.env`.
 - Cleanup requires both `jj workspace forget <name>` and removal of the sibling workspace directory.
 
+=======
+>>>>>>> origin/main
 ## Aliases
 
 - `$lib` → `src/lib/` (SvelteKit default)
