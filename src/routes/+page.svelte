@@ -31,6 +31,7 @@
   import SettingsSidebar from '$lib/components/SettingsSidebar.svelte';
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
+  import { getLogoFont } from '$lib/font-style.js';
   import { getFacilities, type GeoFeature } from '$lib/data.js';
   import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER } from '$lib/site.js';
   import {
@@ -47,7 +48,7 @@
   } from '$lib/map/facility-rendering.js';
   import { getMarkerImage } from '$lib/map/marker-images.js';
   import { getCategorySourceUrl, WARD_REGISTRY } from '$lib/registry.js';
-  import type { CategoryId, MarkerStyle } from '$lib/types.js';
+  import type { CategoryId, LogoFont, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
 
   const DEFAULT_OSRM_BASE_URL = 'https://router.project-osrm.org';
@@ -72,6 +73,7 @@
   let selectedFacilityId = $state<string | null>(null);
   let markerStyle = $state<MarkerStyle>(getMarkerStyle());
   let solidColor = $state<string>(getSolidColor());
+  let logoFont = $state<LogoFont>(getLogoFont());
   let markerImages = $state<Array<{ id: string; image: ImageData }>>([]);
   
   // 検索管理
@@ -495,7 +497,7 @@
 />
 
 <!-- 設定サイドバー -->
-<SettingsSidebar bind:open={sidebarOpen} bind:markerStyle bind:solidColor />
+<SettingsSidebar bind:open={sidebarOpen} bind:markerStyle bind:solidColor bind:logoFont />
 
 <!-- 地図エリア（フルスクリーン） -->
 <div class="relative w-full h-screen bg-gray-100 overflow-hidden">

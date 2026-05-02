@@ -1,0 +1,1731 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7833718,
+          35.7360827
+        ]
+      },
+      "properties": {
+        "id": "arakawa-001",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区役所　本庁舎",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7844496,
+          35.732997
+        ]
+      },
+      "properties": {
+        "id": "arakawa-002",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区あらかわエコセンター",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7792239,
+          35.7529473
+        ]
+      },
+      "properties": {
+        "id": "arakawa-003",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区清掃リサイクル事務所",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7688724,
+          35.7482445
+        ]
+      },
+      "properties": {
+        "id": "arakawa-004",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区男女平等推進センター",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7954181,
+          35.7375192
+        ]
+      },
+      "properties": {
+        "id": "arakawa-005",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区南千住図書館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.766234274149,
+          35.7505243345433
+        ]
+      },
+      "properties": {
+        "id": "arakawa-006",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区尾久図書館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7787213,
+          35.7512641
+        ]
+      },
+      "properties": {
+        "id": "arakawa-007",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区町屋図書館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.77492,
+          35.7311577
+        ]
+      },
+      "properties": {
+        "id": "arakawa-008",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区日暮里図書館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7983987,
+          35.7331808
+        ]
+      },
+      "properties": {
+        "id": "arakawa-009",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区南千住駅前ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8073536,
+          35.7352226
+        ]
+      },
+      "properties": {
+        "id": "arakawa-010",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区汐入ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.783963,
+          35.7425543
+        ]
+      },
+      "properties": {
+        "id": "arakawa-011",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区荒川山吹ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7833987,
+          35.7504061
+        ]
+      },
+      "properties": {
+        "id": "arakawa-012",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区荒木田ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7533541,
+          35.7515991
+        ]
+      },
+      "properties": {
+        "id": "arakawa-013",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区西尾久ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7901827,
+          35.7296614
+        ]
+      },
+      "properties": {
+        "id": "arakawa-014",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区東日暮里ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7707924,
+          35.7362736
+        ]
+      },
+      "properties": {
+        "id": "arakawa-015",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区西日暮里ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7841663,
+          35.7337774
+        ]
+      },
+      "properties": {
+        "id": "arakawa-016",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区峡田ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.791031,
+          35.738174
+        ]
+      },
+      "properties": {
+        "id": "arakawa-017",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区南千住ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.785807,
+          35.744157
+        ]
+      },
+      "properties": {
+        "id": "arakawa-018",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区町屋ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76337,
+          35.750226
+        ]
+      },
+      "properties": {
+        "id": "arakawa-019",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区尾久ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805848,
+          35.731399
+        ]
+      },
+      "properties": {
+        "id": "arakawa-020",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区石浜ふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.781231,
+          35.730075
+        ]
+      },
+      "properties": {
+        "id": "arakawa-021",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区夕やけこやけふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807882,
+          35.728483
+        ]
+      },
+      "properties": {
+        "id": "arakawa-022",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "あらかわリサイクルセンター",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "fluorescent",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.784141,
+          35.73964
+        ]
+      },
+      "properties": {
+        "id": "arakawa-023",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "ゆいの森あらかわ",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "fluorescent",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771451774515,
+          35.7448158508372
+        ]
+      },
+      "properties": {
+        "id": "arakawa-024",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "東尾久本町通りふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.775878940493,
+          35.732909602872
+        ]
+      },
+      "properties": {
+        "id": "arakawa-025",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "ひぐらしふれあい館",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.756548,
+          35.749034
+        ]
+      },
+      "properties": {
+        "id": "arakawa-026",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川西尾久七郵便局",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807259,
+          35.737239
+        ]
+      },
+      "properties": {
+        "id": "arakawa-027",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川汐入郵便局",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76934,
+          35.749435
+        ]
+      },
+      "properties": {
+        "id": "arakawa-028",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "熊野前郵便局",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.789201,
+          35.735884
+        ]
+      },
+      "properties": {
+        "id": "arakawa-029",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川南千住郵便局",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7841524,
+          35.7344579
+        ]
+      },
+      "properties": {
+        "id": "arakawa-030",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川郵便局",
+        "address": "荒川区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7845916748047,
+          35.73345184326172
+        ]
+      },
+      "properties": {
+        "id": "arakawa-031",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "星電機工業（株）",
+        "address": "東京都荒川区荒川１−５０−１１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76229858398438,
+          35.7494010925293
+        ]
+      },
+      "properties": {
+        "id": "arakawa-032",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "（株）今井",
+        "address": "東京都荒川区西尾久２−３５−７",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.80271911621094,
+          35.73289489746094
+        ]
+      },
+      "properties": {
+        "id": "arakawa-033",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "ロイヤルホームセンター　南千住店",
+        "address": "東京都荒川区南千住４−１−４",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76741,
+          35.734077
+        ]
+      },
+      "properties": {
+        "id": "arakawa-034",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "リケン補聴器センター西日暮里店",
+        "address": "東京都荒川区西日暮里５‐３２‐１０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5811-5343",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.78035,
+          35.742023
+        ]
+      },
+      "properties": {
+        "id": "arakawa-035",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "メガネストアー　町屋店",
+        "address": "東京都荒川区荒川7-46-1マークスタワー町屋106号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5901-6388",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.774216,
+          35.728462
+        ]
+      },
+      "properties": {
+        "id": "arakawa-036",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "メガネ　パリ　ミキ　日暮里店",
+        "address": "東京都荒川区東日暮里５−４５−１０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3806-8898",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.788925,
+          35.730865
+        ]
+      },
+      "properties": {
+        "id": "arakawa-037",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "オリンピック三ノ輪店",
+        "address": "東京都荒川区東日暮里1-14-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3891-8411",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.77916,
+          35.74305
+        ]
+      },
+      "properties": {
+        "id": "arakawa-038",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "ビジョンメガネ町屋店",
+        "address": "東京都荒川区荒川６−１９−１０ブランメゾン諸星１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5692-6799",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.802719,
+          35.732895
+        ]
+      },
+      "properties": {
+        "id": "arakawa-039",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "ロイヤルホームセンター南千住",
+        "address": "東京都荒川区南千住4丁目1番4号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5615-5631",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.762299,
+          35.749401
+        ]
+      },
+      "properties": {
+        "id": "arakawa-040",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "今井でんき",
+        "address": "東京都荒川区西尾久2-35-7",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3893-7749",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.766266,
+          35.727715
+        ]
+      },
+      "properties": {
+        "id": "arakawa-041",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "株式会社近藤電機商会",
+        "address": "東京都荒川区西日暮里3-15-3",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3828-7147",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.797501,
+          35.734035
+        ]
+      },
+      "properties": {
+        "id": "arakawa-042",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "株式会社　サンエスでんき",
+        "address": "東京都荒川区南千住5-40-13",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3805-1861",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76181,
+          35.744968
+        ]
+      },
+      "properties": {
+        "id": "arakawa-043",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "アペックス　西尾久店",
+        "address": "東京都荒川区西尾久4-2-10",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3800-6401",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.778854,
+          35.730492
+        ]
+      },
+      "properties": {
+        "id": "arakawa-044",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "こうわでんき",
+        "address": "東京都荒川区東日暮里3-44-12",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3803-5588",
+        "officialUrl": "https://www.city.arakawa.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.784317,
+          35.733135
+        ]
+      },
+      "properties": {
+        "id": "arakawa-045",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "あらかわエコセンター",
+        "address": "東京都荒川区荒川1-53-20",
+        "categories": [
+          "cooking-oil",
+          "fluorescent",
+          "small-appliance"
+        ],
+        "hours": "午前8時30分から午後5時15分（土曜、日曜、祝日、年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.778854,
+          35.752865
+        ]
+      },
+      "properties": {
+        "id": "arakawa-046",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "清掃リサイクル事務所",
+        "address": "東京都荒川区町屋5-19-1",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "午前8時30分から午後5時15分（日曜、年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.765366,
+          35.750607
+        ]
+      },
+      "properties": {
+        "id": "arakawa-047",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "尾久区民事務所",
+        "address": "東京都荒川区西尾久3-7-15",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "午前8時30分から午後5時15分（土曜、日曜、祝日、年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777405,
+          35.728775
+        ]
+      },
+      "properties": {
+        "id": "arakawa-048",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "日暮里区民事務所",
+        "address": "東京都荒川区東日暮里6-17-6",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "午前8時30分から午後5時15分（土曜、日曜、祝日、年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.79541,
+          35.737411
+        ]
+      },
+      "properties": {
+        "id": "arakawa-049",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "南千住図書館",
+        "address": "東京都荒川区南千住6-63-1",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "火曜～土曜 午前9時から午後7時30分 日曜・祝日 午前9時～午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.779068,
+          35.751099
+        ]
+      },
+      "properties": {
+        "id": "arakawa-050",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "町屋図書館",
+        "address": "東京都荒川区町屋5-11-18",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "火曜～金曜 午前9時から午後7時30分 土曜・日曜・祝日 午前9時～午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.766113,
+          35.750355
+        ]
+      },
+      "properties": {
+        "id": "arakawa-051",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "尾久図書館",
+        "address": "東京都荒川区東尾久8-45-4",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "火曜～金曜 午前9時から午後7時30分 土曜・日曜・祝日 午前9時～午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.775192,
+          35.731117
+        ]
+      },
+      "properties": {
+        "id": "arakawa-052",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "日暮里図書館",
+        "address": "東京都荒川区東日暮里6-38-4",
+        "categories": [
+          "cooking-oil",
+          "fluorescent"
+        ],
+        "hours": "火曜～金曜 午前9時から午後7時30分 土曜・日曜・祝日 午前9時～午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.783615,
+          35.73513
+        ]
+      },
+      "properties": {
+        "id": "arakawa-053",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川区役所本庁舎",
+        "address": "東京都荒川区荒川2-2-3",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "午前8時30分から午後5時15分（土曜、日曜、祝日、年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.785629,
+          35.744049
+        ]
+      },
+      "properties": {
+        "id": "arakawa-054",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "町屋ふれあい館",
+        "address": "東京都荒川区町屋1-35-8",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "火曜～金曜 午前9時から午後7時30分 土曜・日曜・祝日 午前9時～午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.783493,
+          35.750278
+        ]
+      },
+      "properties": {
+        "id": "arakawa-055",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒木田ふれあい館",
+        "address": "東京都荒川区町屋6-13-2",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763321,
+          35.750423
+        ]
+      },
+      "properties": {
+        "id": "arakawa-056",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "尾久ふれあい館",
+        "address": "東京都荒川区西尾久2-25-13",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75351,
+          35.751556
+        ]
+      },
+      "properties": {
+        "id": "arakawa-057",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "西尾久ふれあい館",
+        "address": "東京都荒川区西尾久8-33-31",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.790192,
+          35.729561
+        ]
+      },
+      "properties": {
+        "id": "arakawa-058",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "東日暮里ふれあい館",
+        "address": "東京都荒川区東日暮里1-17-13",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.781189,
+          35.730007
+        ]
+      },
+      "properties": {
+        "id": "arakawa-059",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "夕やけこやけふれあい館",
+        "address": "東京都荒川区東日暮里3-11-19",
+        "categories": [
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.790268,
+          35.731991
+        ]
+      },
+      "properties": {
+        "id": "arakawa-060",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "ヨークフーズ 三ノ輪店",
+        "address": "東京都荒川区南千住1-9-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/haishokuyurecycle.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.768723,
+          35.748184
+        ]
+      },
+      "properties": {
+        "id": "arakawa-061",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "アクト21",
+        "address": "東京都荒川区東尾久5-9-3",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805466,
+          35.728836
+        ]
+      },
+      "properties": {
+        "id": "arakawa-062",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "石浜ふれあい館",
+        "address": "東京都荒川区南千住3-28-2",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.791199,
+          35.738144
+        ]
+      },
+      "properties": {
+        "id": "arakawa-063",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "南千住ふれあい館",
+        "address": "東京都荒川区南千住6-36-13",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798203,
+          35.733074
+        ]
+      },
+      "properties": {
+        "id": "arakawa-064",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "南千住駅前ふれあい館",
+        "address": "東京都荒川区南千住7-1-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807388,
+          35.735054
+        ]
+      },
+      "properties": {
+        "id": "arakawa-065",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "汐入ふれあい館",
+        "address": "東京都荒川区南千住8-2-2",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.783936,
+          35.742664
+        ]
+      },
+      "properties": {
+        "id": "arakawa-066",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "荒川山吹ふれあい館",
+        "address": "東京都荒川区荒川7-6-8",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.783875,
+          35.733818
+        ]
+      },
+      "properties": {
+        "id": "arakawa-067",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "峡田ふれあい館",
+        "address": "東京都荒川区荒川3-3-10",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770828,
+          35.736153
+        ]
+      },
+      "properties": {
+        "id": "arakawa-068",
+        "prefecture": "tokyo",
+        "city": "arakawa",
+        "cityLabel": "荒川区",
+        "name": "西日暮里ふれあい館",
+        "address": "東京都荒川区西日暮里6-24-4",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後9時まで（年末年始を除く）",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/kogatakaden1.html",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}
