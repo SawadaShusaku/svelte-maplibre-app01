@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { SITE_NAME_EN } from '$lib/site.js';
   import type { MarkerStyle } from '$lib/types.js';
   import {
     getMarkerStyle,
@@ -170,7 +171,7 @@
       </section>
 
       <div class="mt-8 pt-6 border-t border-gray-100 px-4">
-        <p class="text-xs text-gray-400 font-medium">© 2026 Tokyo Recycle Map</p>
+        <p class="text-xs text-gray-400 font-medium">© 2026 {SITE_NAME_EN}</p>
       </div>
     </div>
   </aside>

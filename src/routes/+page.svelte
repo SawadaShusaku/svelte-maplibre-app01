@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>東京リサイクルマップ</title>
+  <title>{buildPageTitle()}</title>
   <meta
     name="description"
-    content="東京のリサイクル回収施設を地図で探せるアプリ。区の選択、カテゴリ絞り込み、施設情報の確認ができます。"
+    content={`${SITE_NAME_JA}。東京のリサイクル回収施設を地図で探せるアプリ。区の選択、カテゴリ絞り込み、施設情報の確認ができます。`}
   />
 </svelte:head>
 
@@ -32,6 +32,7 @@
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
   import { getFacilities, type GeoFeature } from '$lib/data.js';
+  import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER } from '$lib/site.js';
   import {
     buildFacilityIndex,
     buildMarkerFeatureCollection,
@@ -512,8 +513,8 @@
       onclick={() => (isTitleCollapsed = true)}
       aria-label="タイトルを閉じる"
     >
-      <p class="map-title-kicker">TOKYO</p>
-      <p class="map-title-text">東京リサイクルマップ</p>
+      <p class="map-title-kicker">{SITE_NAME_KICKER}</p>
+      <p class="map-title-text">{SITE_NAME_JA}</p>
     </button>
   {/if}
   
@@ -700,6 +701,12 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    max-width: calc(100vw - 0.75rem);
+    overflow: visible;
     cursor: pointer;
   }
 
@@ -724,7 +731,9 @@
     margin: 0 0 0.18rem;
     font-size: 0.62rem;
     font-weight: 700;
+    line-height: 1.2;
     letter-spacing: 0.18em;
+    white-space: nowrap;
     color: rgba(75, 85, 99, 0.9);
   }
 
@@ -735,6 +744,7 @@
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    white-space: nowrap;
     color: rgba(17, 24, 39, 0.92);
   }
 

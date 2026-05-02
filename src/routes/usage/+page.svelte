@@ -1,12 +1,14 @@
 <svelte:head>
-  <title>使い方 | 東京リサイクルマップ</title>
+  <title>{buildPageTitle('使い方')}</title>
   <meta
     name="description"
-    content="東京リサイクルマップの使い方。区の選択、カテゴリ絞り込み、地図マーカーの見方、表示設定の使い方を確認できます。"
+    content={`${SITE_NAME_JA}の使い方。区の選択、カテゴリ絞り込み、地図マーカーの見方、表示設定の使い方を確認できます。`}
   />
 </svelte:head>
 
 <script lang="ts">
+  import { buildPageTitle, SITE_NAME_JA } from '$lib/site.js';
+
   const cautions = [
     '施設を利用する前に、必ず事前に電話で確認をしてください。',
     'このデータは最新のものではなく、間違っている可能性があります。',
@@ -77,7 +79,7 @@
       <p class="text-xs font-bold tracking-[0.18em] text-stone-500">GUIDE</p>
       <h1 class="mt-2 text-3xl font-black tracking-tight text-stone-900 sm:text-4xl">使い方</h1>
       <p class="mt-4 text-sm leading-8 text-stone-600 sm:text-base">
-        東京リサイクルマップは、区ごとに異なる回収拠点を地図上で探すためのアプリです。
+        {SITE_NAME_JA}は、区ごとに異なる回収拠点を地図上で探すためのアプリです。
         まず区を選び、必要に応じてカテゴリで絞り込むと、持ち込み先を見つけやすくなります。
       </p>
     </section>
