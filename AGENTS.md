@@ -30,6 +30,7 @@ This is a **SvelteKit + MapLibre GL + SQLite** application using Svelte 5 runes 
 | **Styling** | Tailwind CSS v4 | Utility-first CSS |
 | **Testing** | Vitest (unit) + Playwright (E2E) | Test framework |
 | **Build** | Vite | Build tool and dev server |
+| **Version Control** | Jujutsu (jj) | Primary VCS (git colocated) |
 
 ### Database Architecture
 
@@ -195,6 +196,15 @@ binding = "ASSETS"
 | Root directory | `/` |
 
 Do **not** use GitHub Actions for deployment — the Cloudflare Git integration handles builds and deployments automatically.
+
+## Skills
+
+This repository includes a local Jujutsu skill for agents that support project-level skills:
+
+- `.agents/skills/jujutsu-skill/SKILL.md`
+- `.codex/skills/jujutsu-skill/SKILL.md`
+
+Use this skill when working with `jj` commands, bookmarks, rebasing, revsets, or conflict resolution in this repository.
 
 ## Aliases
 

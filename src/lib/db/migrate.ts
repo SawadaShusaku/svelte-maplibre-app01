@@ -50,13 +50,41 @@ const CATEGORY_DETAILS = [
 const COLLECTORS = [
 	{ id: 'jbrc', name: 'JBRC（日本小型家電リサイクル協会）', url: 'https://www.jbrc.co.jp/' },
 	{ id: 'toshima-city', name: '豊島区環境課', url: 'https://www.city.toshima.lg.jp/' },
-	{ id: 'chiyoda-city', name: '千代田区環境課', url: 'https://www.city.chiyoda.lg.jp/' }
+	{ id: 'chiyoda-city', name: '千代田区環境課', url: 'https://www.city.chiyoda.lg.jp/' },
+	{ id: 'chuo-city', name: '中央区環境課', url: 'https://www.city.chuo.lg.jp/' },
+	{ id: 'minato-city', name: '港区環境課', url: 'https://www.city.minato.tokyo.jp/' },
+	{ id: 'shinjuku-city', name: '新宿区環境課', url: 'https://www.city.shinjuku.lg.jp/' },
+	{ id: 'bunkyo-city', name: '文京区環境課', url: 'https://www.city.bunkyo.lg.jp/' },
+	{ id: 'taito-city', name: '台東区環境課', url: 'https://www.city.taito.lg.jp/' },
+	{ id: 'sumida-city', name: '墨田区環境課', url: 'https://www.city.sumida.lg.jp/' },
+	{ id: 'koto-city', name: '江東区環境課', url: 'https://www.city.koto.lg.jp/' },
+	{ id: 'shinagawa-city', name: '品川区環境課', url: 'https://www.city.shinagawa.tokyo.jp/' },
+	{ id: 'meguro-city', name: '目黒区環境課', url: 'https://www.city.meguro.tokyo.jp/' },
+	{ id: 'ota-city', name: '大田区環境課', url: 'https://www.city.ota.tokyo.jp/' },
+	{ id: 'setagaya-city', name: '世田谷区環境課', url: 'https://www.city.setagaya.lg.jp/' },
+	{ id: 'shibuya-city', name: '渋谷区環境課', url: 'https://www.city.shibuya.tokyo.jp/' },
+	{ id: 'nakano-city', name: '中野区環境課', url: 'https://www.city.tokyo-nakano.lg.jp/' },
+	{ id: 'suginami-city', name: '杉並区環境課', url: 'https://www.city.suginami.tokyo.jp/' }
 ];
 
 // Wards configuration
 const WARDS = [
 	{ id: 'toshima', prefecture: 'tokyo', city_label: '豊島区', url: 'https://www.city.toshima.lg.jp/' },
-	{ id: 'chiyoda', prefecture: 'tokyo', city_label: '千代田区', url: 'https://www.city.chiyoda.lg.jp/' }
+	{ id: 'chiyoda', prefecture: 'tokyo', city_label: '千代田区', url: 'https://www.city.chiyoda.lg.jp/' },
+	{ id: 'chuo', prefecture: 'tokyo', city_label: '中央区', url: 'https://www.city.chuo.lg.jp/' },
+	{ id: 'minato', prefecture: 'tokyo', city_label: '港区', url: 'https://www.city.minato.tokyo.jp/' },
+	{ id: 'shinjuku', prefecture: 'tokyo', city_label: '新宿区', url: 'https://www.city.shinjuku.lg.jp/' },
+	{ id: 'bunkyo', prefecture: 'tokyo', city_label: '文京区', url: 'https://www.city.bunkyo.lg.jp/' },
+	{ id: 'taito', prefecture: 'tokyo', city_label: '台東区', url: 'https://www.city.taito.lg.jp/' },
+	{ id: 'sumida', prefecture: 'tokyo', city_label: '墨田区', url: 'https://www.city.sumida.lg.jp/' },
+	{ id: 'koto', prefecture: 'tokyo', city_label: '江東区', url: 'https://www.city.koto.lg.jp/' },
+	{ id: 'shinagawa', prefecture: 'tokyo', city_label: '品川区', url: 'https://www.city.shinagawa.tokyo.jp/' },
+	{ id: 'meguro', prefecture: 'tokyo', city_label: '目黒区', url: 'https://www.city.meguro.tokyo.jp/' },
+	{ id: 'ota', prefecture: 'tokyo', city_label: '大田区', url: 'https://www.city.ota.tokyo.jp/' },
+	{ id: 'setagaya', prefecture: 'tokyo', city_label: '世田谷区', url: 'https://www.city.setagaya.lg.jp/' },
+	{ id: 'shibuya', prefecture: 'tokyo', city_label: '渋谷区', url: 'https://www.city.shibuya.tokyo.jp/' },
+	{ id: 'nakano', prefecture: 'tokyo', city_label: '中野区', url: 'https://www.city.tokyo-nakano.lg.jp/' },
+	{ id: 'suginami', prefecture: 'tokyo', city_label: '杉並区', url: 'https://www.city.suginami.tokyo.jp/' }
 ];
 
 async function migrate() {
@@ -128,8 +156,8 @@ async function migrate() {
 	const prefectures = fs.readdirSync(dataDir);
 	
 	const insertFacility = db.prepare(
-		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, collector_id, hours, notes) ' +
-		'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, official_url, category_urls, collector_id, hours, notes) ' +
+		'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
 	);
 	const insertFacilityCategory = db.prepare(
 		'INSERT INTO facility_categories (facility_id, category_id) VALUES (?, ?)'
@@ -158,11 +186,14 @@ async function migrate() {
 				const props = feature.properties;
 				const coords = feature.geometry.coordinates;
 				
-				const categories = props.categories || [];
+				const rawCategories: unknown[] = Array.isArray(props.categories) ? props.categories : [];
+				const categories: string[] = rawCategories.filter(
+					(category): category is string => typeof category === 'string'
+				);
 				const uniqueCategories = [...new Set(categories)];
 				
 				// Validate categories
-				const validCategories = uniqueCategories.filter(c => c !== 'battery');
+				const validCategories: string[] = uniqueCategories.filter((c) => c !== 'battery');
 				if (categories.includes('battery')) {
 					console.warn(`  Warning: ${props.id} (${props.name}) has 'battery' category - needs manual classification`);
 				}
@@ -175,9 +206,42 @@ async function migrate() {
 					collectorId = 'toshima-city';
 				} else if (city === 'chiyoda') {
 					collectorId = 'chiyoda-city';
+				} else if (city === 'chuo') {
+					collectorId = 'chuo-city';
+				} else if (city === 'minato') {
+					collectorId = 'minato-city';
+				} else if (city === 'shinjuku') {
+					collectorId = 'shinjuku-city';
+				} else if (city === 'bunkyo') {
+					collectorId = 'bunkyo-city';
+				} else if (city === 'taito') {
+					collectorId = 'taito-city';
+				} else if (city === 'sumida') {
+					collectorId = 'sumida-city';
+				} else if (city === 'koto') {
+					collectorId = 'koto-city';
+				} else if (city === 'shinagawa') {
+					collectorId = 'shinagawa-city';
+				} else if (city === 'meguro') {
+					collectorId = 'meguro-city';
+				} else if (city === 'ota') {
+					collectorId = 'ota-city';
+				} else if (city === 'setagaya') {
+					collectorId = 'setagaya-city';
+				} else if (city === 'shibuya') {
+					collectorId = 'shibuya-city';
+				} else if (city === 'nakano') {
+					collectorId = 'nakano-city';
+				} else if (city === 'suginami') {
+					collectorId = 'suginami-city';
 				}
 				
 				// Insert facility
+				const officialUrl = typeof props.officialUrl === 'string' ? props.officialUrl : null;
+				const categoryUrls = props.categoryUrls && typeof props.categoryUrls === 'object'
+					? JSON.stringify(props.categoryUrls)
+					: null;
+
 				insertFacility.run(
 					props.id,
 					city,
@@ -186,6 +250,8 @@ async function migrate() {
 					coords[1], // latitude
 					coords[0], // longitude
 					null,
+					officialUrl,
+					categoryUrls,
 					collectorId,
 					props.hours || null,
 					props.notes || null

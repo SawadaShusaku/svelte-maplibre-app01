@@ -1,0 +1,3073 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.822998046875,
+          35.726505279541016
+        ]
+      },
+      "properties": {
+        "id": "sumida-001",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "アヴァンワタナベ / 渡辺電器照明（株）　アヴアン　ワタナベ",
+        "address": "東京都墨田区東向島６−５３−２０",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-3614-2020",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82232666015625,
+          35.71654510498047
+        ]
+      },
+      "properties": {
+        "id": "sumida-002",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "小沢電気商会",
+        "address": "東京都墨田区京島３−１０−１９",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.81961059570312,
+          35.716163635253906
+        ]
+      },
+      "properties": {
+        "id": "sumida-003",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "（有）立川電気",
+        "address": "東京都墨田区京島１−２７−５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8148651123047,
+          35.700599670410156
+        ]
+      },
+      "properties": {
+        "id": "sumida-004",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "（株）ヤマダデンキ　テックランド錦糸町店",
+        "address": "東京都墨田区太平４−１−５　２Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8171844482422,
+          35.71732711791992
+        ]
+      },
+      "properties": {
+        "id": "sumida-005",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "（株）イトーヨーカ堂　曳舟店",
+        "address": "東京都墨田区京島１−２−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.80860900878906,
+          35.7100830078125
+        ]
+      },
+      "properties": {
+        "id": "sumida-006",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "Ａｉｒ　ＢｉｃＣａｍｅｒａ　東京スカイツリータウン・ソラマチ店　レジカウンター",
+        "address": "東京都墨田区押上１−１−２タワーヤード３Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.823868,
+          35.706295
+        ]
+      },
+      "properties": {
+        "id": "sumida-007",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "オリンピック墨田文花店",
+        "address": "東京都墨田区文花１−３１−9",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5247-3211",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.815231,
+          35.696064
+        ]
+      },
+      "properties": {
+        "id": "sumida-008",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "喫煙具専門店ラ・ピエール",
+        "address": "東京都墨田区江東橋4-27-14楽天地ビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3632-2660",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.814865,
+          35.7006
+        ]
+      },
+      "properties": {
+        "id": "sumida-009",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "�螢筌泪瀬妊鵐�テックランド錦糸町店",
+        "address": "東京都墨田区太平４丁目１番５号（２階）",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5819-0217",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.804367,
+          35.706684
+        ]
+      },
+      "properties": {
+        "id": "sumida-010",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "パートナーズ補聴器",
+        "address": "東京都墨田区東駒形3-18-10エグゼクトビル601",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5809-7586",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.814407,
+          35.70998
+        ]
+      },
+      "properties": {
+        "id": "sumida-011",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "メガネストアー　押上店",
+        "address": "東京都墨田区押上1-24-2川新ビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3622-0248",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819611,
+          35.716164
+        ]
+      },
+      "properties": {
+        "id": "sumida-012",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "有限会社立川電気",
+        "address": "東京都墨田区京島１−２７−５コルディアーレ曳舟１階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3611-3511",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805695,
+          35.687439
+        ]
+      },
+      "properties": {
+        "id": "sumida-013",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "メガネストアー　菊川店",
+        "address": "東京都墨田区菊川2-3-10オークラビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3846-7348",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.817184,
+          35.717327
+        ]
+      },
+      "properties": {
+        "id": "sumida-014",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "眼鏡市場　イトーヨーカドー曳舟",
+        "address": "東京都墨田区京島１-２-１イトーヨーカドー曳舟店２階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5655-5088",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819534,
+          35.71804
+        ]
+      },
+      "properties": {
+        "id": "sumida-015",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "オーケー曳舟店",
+        "address": "東京都墨田区京島1-37-24",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6657-1250",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.814896,
+          35.700195
+        ]
+      },
+      "properties": {
+        "id": "sumida-016",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "眼鏡市場オリナス錦糸町",
+        "address": "東京都墨田区太平４丁目１番２号3階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5637-3180",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.813568,
+          35.697708
+        ]
+      },
+      "properties": {
+        "id": "sumida-017",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ブルーム錦糸町店",
+        "address": "東京都墨田区錦糸3-2-1アルカイースト2階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5619-4133",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.811859,
+          35.697659
+        ]
+      },
+      "properties": {
+        "id": "sumida-018",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "和真メガネ　アルカキット錦糸町店",
+        "address": "東京都墨田区錦糸２−２−１アルカキット錦糸町９Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5637-7145",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.813324,
+          35.69981
+        ]
+      },
+      "properties": {
+        "id": "sumida-019",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "城東補聴器センター　錦糸町店",
+        "address": "東京都墨田区太平３−１−２KOWA5ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3624-3304",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.817459,
+          35.695663
+        ]
+      },
+      "properties": {
+        "id": "sumida-020",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "メガネ パリ ミキ　錦糸町店",
+        "address": "東京都墨田区江東橋４丁目２５番８号オカバ錦糸町ビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3634-2320",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825119,
+          35.726727
+        ]
+      },
+      "properties": {
+        "id": "sumida-021",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ホームセンターコーナンドイト東向島店",
+        "address": "東京都墨田区東向島６-５７-１５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5631-3811",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810699,
+          35.689907
+        ]
+      },
+      "properties": {
+        "id": "sumida-022",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "オーケー住吉店",
+        "address": "東京都墨田区江東橋5-5-3",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5669-0084",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.792145,
+          35.695133
+        ]
+      },
+      "properties": {
+        "id": "sumida-023",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヘアーサロン フクダ",
+        "address": "墨田区両国2-18-3",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805023,
+          35.69445
+        ]
+      },
+      "properties": {
+        "id": "sumida-024",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "カットサロンしのづか",
+        "address": "墨田区緑3-11-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798401,
+          35.691467
+        ]
+      },
+      "properties": {
+        "id": "sumida-025",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヘアーサロン ハラ",
+        "address": "墨田区立川1-17-16",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.801208,
+          35.690342
+        ]
+      },
+      "properties": {
+        "id": "sumida-026",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "理容サトウ",
+        "address": "墨田区立川2-1-18",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.806519,
+          35.690975
+        ]
+      },
+      "properties": {
+        "id": "sumida-027",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "高砂湯",
+        "address": "墨田区立川4-11-12",
+        "categories": [
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807236,
+          35.687569
+        ]
+      },
+      "properties": {
+        "id": "sumida-028",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "有限会社 キタハラ商会",
+        "address": "墨田区菊川3-6-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.80661,
+          35.688541
+        ]
+      },
+      "properties": {
+        "id": "sumida-029",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "キング理容室",
+        "address": "墨田区菊川3-16-16",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798859,
+          35.700233
+        ]
+      },
+      "properties": {
+        "id": "sumida-030",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヘアメイク イグレ",
+        "address": "墨田区石原1-23-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798096,
+          35.700386
+        ]
+      },
+      "properties": {
+        "id": "sumida-031",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "株式会社 平和堂",
+        "address": "墨田区石原1-29-15",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805695,
+          35.703068
+        ]
+      },
+      "properties": {
+        "id": "sumida-032",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "クリーニングプロショップりふれ",
+        "address": "墨田区本所4-3-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.804535,
+          35.701454
+        ]
+      },
+      "properties": {
+        "id": "sumida-033",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "御谷湯",
+        "address": "墨田区石原3-30-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.806458,
+          35.699627
+        ]
+      },
+      "properties": {
+        "id": "sumida-034",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヘアーサロン みどり",
+        "address": "墨田区石原4-9-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.800705,
+          35.703648
+        ]
+      },
+      "properties": {
+        "id": "sumida-035",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "荒井湯",
+        "address": "墨田区本所2-8-7",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803665,
+          35.702881
+        ]
+      },
+      "properties": {
+        "id": "sumida-036",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "井口理髪店",
+        "address": "墨田区本所3-5-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805023,
+          35.704029
+        ]
+      },
+      "properties": {
+        "id": "sumida-037",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "山田屋ランドリー",
+        "address": "墨田区本所4-19-15",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805756,
+          35.70472
+        ]
+      },
+      "properties": {
+        "id": "sumida-038",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "斉藤理髪店",
+        "address": "墨田区本所4-21-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.800842,
+          35.705441
+        ]
+      },
+      "properties": {
+        "id": "sumida-039",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "理容イワヤ",
+        "address": "墨田区東駒形2-2-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.811844,
+          35.702335
+        ]
+      },
+      "properties": {
+        "id": "sumida-040",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "BARBER トモイ",
+        "address": "墨田区太平2-19-11",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.81427,
+          35.70182
+        ]
+      },
+      "properties": {
+        "id": "sumida-041",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "有限会社 金崎クリーニング店",
+        "address": "墨田区太平3-13-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.813568,
+          35.702053
+        ]
+      },
+      "properties": {
+        "id": "sumida-042",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ふたばクリーニング店",
+        "address": "墨田区太平3-15-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.813751,
+          35.70509
+        ]
+      },
+      "properties": {
+        "id": "sumida-043",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "大黒湯",
+        "address": "墨田区横川3-12-14",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.816574,
+          35.706127
+        ]
+      },
+      "properties": {
+        "id": "sumida-044",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだリサイクルセンター / ヘアーサロンプリメールOGAWA",
+        "address": "墨田区横川5-10-1",
+        "categories": [
+          "dry-battery",
+          "rechargeable-battery",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店） / 拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805313,
+          35.712948
+        ]
+      },
+      "properties": {
+        "id": "sumida-045",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヘアーズ Hatogai",
+        "address": "墨田区向島1-5-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810013,
+          35.718281
+        ]
+      },
+      "properties": {
+        "id": "sumida-046",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヨシザワ理容所",
+        "address": "墨田区向島5-18-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810715,
+          35.717113
+        ]
+      },
+      "properties": {
+        "id": "sumida-047",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ミエ美容室",
+        "address": "墨田区向島5-28-11",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.811874,
+          35.720818
+        ]
+      },
+      "properties": {
+        "id": "sumida-048",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "カットバンク 立花美容室",
+        "address": "墨田区向島5-48-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819733,
+          35.719772
+        ]
+      },
+      "properties": {
+        "id": "sumida-049",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "有限会社 橋本商店",
+        "address": "墨田区東向島2-49-14",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818573,
+          35.723885
+        ]
+      },
+      "properties": {
+        "id": "sumida-050",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "井上文具店",
+        "address": "墨田区東向島4-31-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.822998,
+          35.726505
+        ]
+      },
+      "properties": {
+        "id": "sumida-051",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "アヴァン ワタナベ",
+        "address": "墨田区東向島6-53-20",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819931,
+          35.728268
+        ]
+      },
+      "properties": {
+        "id": "sumida-052",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "日の丸クリーニング店",
+        "address": "墨田区墨田3-1-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.811798,
+          35.712765
+        ]
+      },
+      "properties": {
+        "id": "sumida-053",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ共生社会推進センター / ナカムラ理髪店 / すみだ消費者センター",
+        "address": "墨田区押上2-12-7",
+        "categories": [
+          "dry-battery",
+          "rechargeable-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店） / 拠点回収施設 / 拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818588,
+          35.715893
+        ]
+      },
+      "properties": {
+        "id": "sumida-054",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "尾花クリーニング商会",
+        "address": "墨田区京島1-9-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.822754,
+          35.716541
+        ]
+      },
+      "properties": {
+        "id": "sumida-055",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "電気湯",
+        "address": "墨田区京島3-10-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.820786,
+          35.709896
+        ]
+      },
+      "properties": {
+        "id": "sumida-056",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "スタークリーニング商会",
+        "address": "墨田区文花1-8-8",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.820816,
+          35.709442
+        ]
+      },
+      "properties": {
+        "id": "sumida-057",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ヘアーサロン文花",
+        "address": "墨田区文花1-10-7",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.822601,
+          35.722115
+        ]
+      },
+      "properties": {
+        "id": "sumida-058",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ファッションクリーニング アヤベ",
+        "address": "墨田区八広1-7-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825699,
+          35.720768
+        ]
+      },
+      "properties": {
+        "id": "sumida-059",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "八広ドライクリーニング",
+        "address": "墨田区八広1-36-9",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830765,
+          35.723068
+        ]
+      },
+      "properties": {
+        "id": "sumida-060",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "越路ランドリー",
+        "address": "墨田区八広4-51-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.827103,
+          35.724277
+        ]
+      },
+      "properties": {
+        "id": "sumida-061",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "オガワ商店",
+        "address": "墨田区八広5-29-15",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830963,
+          35.706551
+        ]
+      },
+      "properties": {
+        "id": "sumida-062",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "下町のせんたくやさん",
+        "address": "墨田区立花1-23-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830719,
+          35.709286
+        ]
+      },
+      "properties": {
+        "id": "sumida-063",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "有限会社 橋本パッケージ",
+        "address": "墨田区立花4-13-3",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830521,
+          35.717831
+        ]
+      },
+      "properties": {
+        "id": "sumida-064",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "有限会社 染谷商店",
+        "address": "墨田区東墨田2-1-3",
+        "categories": [
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.792007,
+          35.696163
+        ]
+      },
+      "properties": {
+        "id": "sumida-065",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "東日本旅客鉄道株式会社 両国駅",
+        "address": "墨田区横網1-3-20",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819229,
+          35.735584
+        ]
+      },
+      "properties": {
+        "id": "sumida-066",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "フィボナッチ紳士洋品店",
+        "address": "墨田区墨田5-4-7",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.812775,
+          35.706676
+        ]
+      },
+      "properties": {
+        "id": "sumida-067",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ラブタイムカフェ",
+        "address": "墨田区業平3-8-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "エコストア（墨田区リサイクル協力店）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.800797,
+          35.695763
+        ]
+      },
+      "properties": {
+        "id": "sumida-068",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "緑図書館",
+        "address": "墨田区緑2-24-5",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803085,
+          35.693619
+        ]
+      },
+      "properties": {
+        "id": "sumida-069",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "緑出張所",
+        "address": "墨田区緑3-7-3",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807739,
+          35.693111
+        ]
+      },
+      "properties": {
+        "id": "sumida-070",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだボランティアセンター分館",
+        "address": "墨田区緑4-4-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807739,
+          35.695866
+        ]
+      },
+      "properties": {
+        "id": "sumida-071",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだふれあいセンター",
+        "address": "墨田区緑4-35-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807526,
+          35.695671
+        ]
+      },
+      "properties": {
+        "id": "sumida-072",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "江東橋保育園",
+        "address": "墨田区緑4-35-9",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.799332,
+          35.690403
+        ]
+      },
+      "properties": {
+        "id": "sumida-073",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "立川児童館",
+        "address": "墨田区立川1-5-2",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.809738,
+          35.695953
+        ]
+      },
+      "properties": {
+        "id": "sumida-074",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "江東橋児童館",
+        "address": "墨田区江東橋1-15-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.813736,
+          35.695351
+        ]
+      },
+      "properties": {
+        "id": "sumida-075",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ産業会館",
+        "address": "墨田区江東橋3-9-10",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819016,
+          35.696415
+        ]
+      },
+      "properties": {
+        "id": "sumida-076",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "きんし保育園",
+        "address": "墨田区江東橋4-30-2",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.799484,
+          35.698708
+        ]
+      },
+      "properties": {
+        "id": "sumida-077",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "亀沢保育園",
+        "address": "墨田区亀沢1-27-5",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.808167,
+          35.698952
+        ]
+      },
+      "properties": {
+        "id": "sumida-078",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "亀沢のぞみの家",
+        "address": "墨田区亀沢4-18-11",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798676,
+          35.703304
+        ]
+      },
+      "properties": {
+        "id": "sumida-079",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "本所地域プラザ（BIG SHIP）",
+        "address": "墨田区本所1-13-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807602,
+          35.705452
+        ]
+      },
+      "properties": {
+        "id": "sumida-080",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "東駒形コミュニティ会館",
+        "address": "墨田区東駒形4-14-1",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.801895,
+          35.710602
+        ]
+      },
+      "properties": {
+        "id": "sumida-081",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田区役所",
+        "address": "墨田区吾妻橋1-23-20",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.815079,
+          35.698021
+        ]
+      },
+      "properties": {
+        "id": "sumida-082",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ひがしんアリーナ（墨田区総合体育館）",
+        "address": "墨田区錦糸4-15-1",
+        "categories": [
+          "rechargeable-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810898,
+          35.701988
+        ]
+      },
+      "properties": {
+        "id": "sumida-083",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "横川橋保育園",
+        "address": "墨田区太平1-27-13",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818054,
+          35.704685
+        ]
+      },
+      "properties": {
+        "id": "sumida-084",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ保健子育て総合センター",
+        "address": "墨田区横川5-7-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.816772,
+          35.704929
+        ]
+      },
+      "properties": {
+        "id": "sumida-085",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "横川コミュニティ会館",
+        "address": "墨田区横川5-9-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818237,
+          35.706886
+        ]
+      },
+      "properties": {
+        "id": "sumida-086",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ清掃事務所本署",
+        "address": "墨田区業平5-6-2",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810959,
+          35.713428
+        ]
+      },
+      "properties": {
+        "id": "sumida-087",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ福祉保健センター",
+        "address": "墨田区向島3-36-7",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.815887,
+          35.718376
+        ]
+      },
+      "properties": {
+        "id": "sumida-088",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだボランティアセンター",
+        "address": "墨田区東向島2-17-14",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818771,
+          35.721107
+        ]
+      },
+      "properties": {
+        "id": "sumida-089",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "東向島出張所",
+        "address": "墨田区東向島2-38-7",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.820877,
+          35.726124
+        ]
+      },
+      "properties": {
+        "id": "sumida-090",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ清掃事務所分室",
+        "address": "墨田区東向島5-9-11",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "cooking-oil",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819565,
+          35.72131
+        ]
+      },
+      "properties": {
+        "id": "sumida-091",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "東向島児童館",
+        "address": "墨田区東向島6-6-12",
+        "categories": [
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.816681,
+          35.735668
+        ]
+      },
+      "properties": {
+        "id": "sumida-092",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "梅若橋コミュニティ会館",
+        "address": "墨田区堤通2-9-1",
+        "categories": [
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.819016,
+          35.729168
+        ]
+      },
+      "properties": {
+        "id": "sumida-093",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田児童会館",
+        "address": "墨田区墨田2-30-15",
+        "categories": [
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818481,
+          35.730976
+        ]
+      },
+      "properties": {
+        "id": "sumida-094",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田二丁目出張所",
+        "address": "墨田区墨田2-36-11",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.822601,
+          35.732162
+        ]
+      },
+      "properties": {
+        "id": "sumida-095",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "すみだ保育園",
+        "address": "墨田区墨田4-22-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.811783,
+          35.711212
+        ]
+      },
+      "properties": {
+        "id": "sumida-096",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "押上保育園",
+        "address": "墨田区押上2-10-17",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.818939,
+          35.716995
+        ]
+      },
+      "properties": {
+        "id": "sumida-097",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "ひきふね図書館",
+        "address": "墨田区京島1-36-5",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.81868,
+          35.718613
+        ]
+      },
+      "properties": {
+        "id": "sumida-098",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "曳舟文化センター",
+        "address": "墨田区京島1-38-11",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.822998,
+          35.707592
+        ]
+      },
+      "properties": {
+        "id": "sumida-099",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "文花出張所",
+        "address": "墨田区文花1-32-1",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830963,
+          35.71307
+        ]
+      },
+      "properties": {
+        "id": "sumida-100",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "中川児童館",
+        "address": "墨田区立花5-18-9",
+        "categories": [
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.833984,
+          35.710476
+        ]
+      },
+      "properties": {
+        "id": "sumida-101",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "立花図書館",
+        "address": "墨田区立花6-8-1",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82962,
+          35.717651
+        ]
+      },
+      "properties": {
+        "id": "sumida-102",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "八広児童館",
+        "address": "墨田区東墨田1-2-6",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.83316,
+          35.716789
+        ]
+      },
+      "properties": {
+        "id": "sumida-103",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田清掃工場【1階事務所入口】",
+        "address": "墨田区東墨田1-10-23",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82991,
+          35.71862
+        ]
+      },
+      "properties": {
+        "id": "sumida-104",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "中川保育園",
+        "address": "墨田区東墨田2-1-15",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830032,
+          35.718998
+        ]
+      },
+      "properties": {
+        "id": "sumida-105",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "社会福祉会館",
+        "address": "墨田区東墨田2-7-1",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.832809,
+          35.721405
+        ]
+      },
+      "properties": {
+        "id": "sumida-106",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "東墨田会館",
+        "address": "墨田区東墨田2-12-9",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82355761123648,
+          35.70769092523913
+        ]
+      },
+      "properties": {
+        "id": "sumida-107",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "いきいきプラザ",
+        "address": "墨田区文花1-32-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設（Google Maps座標）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82439174702694,
+          35.708674793498716
+        ]
+      },
+      "properties": {
+        "id": "sumida-108",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "文花児童館",
+        "address": "墨田区文花1-32-11",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設（Google Maps座標）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82949438148032,
+          35.72459945879352
+        ]
+      },
+      "properties": {
+        "id": "sumida-109",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "八広はなみずき児童館",
+        "address": "墨田区八広4-27-8",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設（Google Maps座標）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82935867860562,
+          35.7234347410121
+        ]
+      },
+      "properties": {
+        "id": "sumida-110",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "八広地域プラザ（吾嬬の里）",
+        "address": "墨田区八広4-35-17",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設（Google Maps座標）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825777640594,
+          35.72483803725907
+        ]
+      },
+      "properties": {
+        "id": "sumida-111",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "八広図書館",
+        "address": "墨田区八広5-10-1",
+        "categories": [
+          "rechargeable-battery",
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設（Google Maps座標）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82941318645882,
+          35.70461887943809
+        ]
+      },
+      "properties": {
+        "id": "sumida-112",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "東あずま保育園",
+        "address": "墨田区立花1-27-6",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "拠点回収施設（Google Maps座標）",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.800827,
+          35.691475
+        ]
+      },
+      "properties": {
+        "id": "sumida-113",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "立川リサイクルストックヤード",
+        "address": "墨田区立川2-9-5",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "平日9:00～16:00",
+        "notes": "衣料品・ファッション雑貨・生活雑貨・おもちゃ回収",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.815109,
+          35.721806
+        ]
+      },
+      "properties": {
+        "id": "sumida-114",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "喜楽里すみだ工房",
+        "address": "墨田区東向島3-34-4",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "平日10:00～16:00",
+        "notes": "衣料品・ファッション雑貨・生活雑貨・おもちゃ回収",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.834427,
+          35.710243
+        ]
+      },
+      "properties": {
+        "id": "sumida-115",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田さんさんプラザ",
+        "address": "墨田区立花4-30-16",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "平日10:00～16:00",
+        "notes": "衣料品・ファッション雑貨・生活雑貨・おもちゃ回収",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8176035,
+          35.7197044
+        ]
+      },
+      "properties": {
+        "id": "sumida-116",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "向島郵便局",
+        "address": "東京都墨田区東向島二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.794053,
+          35.693123
+        ]
+      },
+      "properties": {
+        "id": "sumida-117",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田両国三郵便局",
+        "address": "東京都墨田区両国三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807098,
+          35.688272
+        ]
+      },
+      "properties": {
+        "id": "sumida-118",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田菊川郵便局",
+        "address": "東京都墨田区菊川三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.79686,
+          35.6983
+        ]
+      },
+      "properties": {
+        "id": "sumida-119",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "墨田横網郵便局",
+        "address": "東京都墨田区横網一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8177762,
+          35.7026444
+        ]
+      },
+      "properties": {
+        "id": "sumida-120",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "本所郵便局",
+        "address": "東京都墨田区太平四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803614,
+          35.70874
+        ]
+      },
+      "properties": {
+        "id": "sumida-121",
+        "prefecture": "tokyo",
+        "city": "sumida",
+        "cityLabel": "墨田区",
+        "name": "本所吾妻橋駅前郵便局",
+        "address": "東京都墨田区吾妻橋二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.sumida.lg.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}

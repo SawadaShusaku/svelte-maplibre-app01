@@ -1,0 +1,1872 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.708052,
+          35.636755
+        ]
+      },
+      "properties": {
+        "id": "meguro-001",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "田道ふれあい館1階 / 目黒区エコプラザ",
+        "address": "目黒区目黒1-25-26",
+        "categories": [
+          "cooking-oil",
+          "dry-battery",
+          "ink-cartridge",
+          "paper-pack",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "田道ふれあい館地下1階。植物性廃食油、ペットボトルキャップ、使用済インクカートリッジ、コンタクトレンズ空ケース、小説・児童書、小型家電、紙パック、衣類を回収 / 目黒区エコプラザ（地下1階）で小型家電等も回収",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69837951660156,
+          35.6426887512207
+        ]
+      },
+      "properties": {
+        "id": "meguro-002",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "古谷電気（株）",
+        "address": "東京都目黒区上目黒２−１２−１１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68521118164062,
+          35.65031814575195
+        ]
+      },
+      "properties": {
+        "id": "meguro-003",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "関戸電気商会",
+        "address": "東京都目黒区東山３−１４−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70286560058594,
+          35.6312370300293
+        ]
+      },
+      "properties": {
+        "id": "meguro-004",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "（株）星野電機商会",
+        "address": "東京都目黒区目黒４−１２−３",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69158935546875,
+          35.615943908691406
+        ]
+      },
+      "properties": {
+        "id": "meguro-005",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "スズキデンキ",
+        "address": "東京都目黒区原町２−９−８",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7098846435547,
+          35.62763977050781
+        ]
+      },
+      "properties": {
+        "id": "meguro-006",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "加藤電気",
+        "address": "東京都目黒区下目黒３−１９−９−１０１",
+        "categories": [
+          "rechargeable-battery",
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6728515625,
+          35.60862350463867
+        ]
+      },
+      "properties": {
+        "id": "meguro-007",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "（株）ヤマダデンキ　ＬＡＢＩ　自由が丘 / �螢筌泪瀬妊鵐�　ＬＡＢＩ　自由が丘",
+        "address": "東京都目黒区緑が丘２−１７−９",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-5731-7255",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68630981445312,
+          35.629974365234375
+        ]
+      },
+      "properties": {
+        "id": "meguro-008",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "（株）山崎商会　マツヤデンキ　学芸大学店 / �螢筌泪瀬妊鵐�　マツヤデンキ　学芸大学店",
+        "address": "東京都目黒区鷹番２−２１−１１",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-3792-8431",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6846466064453,
+          35.622779846191406
+        ]
+      },
+      "properties": {
+        "id": "meguro-009",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "イオンリテール（株）　イオンスタイル碑文谷",
+        "address": "東京都目黒区碑文谷４−１−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7079315185547,
+          35.633697509765625
+        ]
+      },
+      "properties": {
+        "id": "meguro-010",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "（株）岩佐商会　本店",
+        "address": "東京都目黒区目黒２−１１−１０Ｊパーク目黒１Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670425,
+          35.615044
+        ]
+      },
+      "properties": {
+        "id": "meguro-011",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "メガネの愛眼　自由が丘店",
+        "address": "東京都目黒区中根1-21-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5701-4141",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669296,
+          35.608852
+        ]
+      },
+      "properties": {
+        "id": "meguro-012",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "ヒヤリングストア自由が丘店",
+        "address": "東京都目黒区自由が丘１−２６−４ステラ自由が丘６階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3723-2055",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699265,
+          35.632778
+        ]
+      },
+      "properties": {
+        "id": "meguro-013",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "（有）東大でんき",
+        "address": "東京都目黒区目黒４−２３−２１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3715-0228",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698456,
+          35.616199
+        ]
+      },
+      "properties": {
+        "id": "meguro-014",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "�螢筌泪瀬妊鵐�　マツヤデンキ　西小山店",
+        "address": "東京都目黒区原町１−６−６",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3716-4121",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670151,
+          35.608444
+        ]
+      },
+      "properties": {
+        "id": "meguro-015",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "エイド�蠎�由が丘",
+        "address": "東京都目黒区自由が丘1-13-14自由が丘スカイビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5726-0520",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697403,
+          35.635338
+        ]
+      },
+      "properties": {
+        "id": "meguro-016",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "株式会社ナカザト",
+        "address": "東京都目黒区中目黒５−２４−１９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3719-7456",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68396,
+          35.629311
+        ]
+      },
+      "properties": {
+        "id": "meguro-017",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "ウエノデンキ",
+        "address": "東京都目黒区鷹番3-15-23アヴァンビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3714-1644",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686691,
+          35.628937
+        ]
+      },
+      "properties": {
+        "id": "meguro-018",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "メガネの愛眼 学芸大学店",
+        "address": "東京都目黒区鷹番2-19-23サンビームプラザビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3791-4671",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.676605,
+          35.618576
+        ]
+      },
+      "properties": {
+        "id": "meguro-019",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "メガネストアー　都立大学駅前店",
+        "address": "東京都目黒区中根1-1-13イーサ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3723-4988",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.668823,
+          35.607132
+        ]
+      },
+      "properties": {
+        "id": "meguro-020",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "リオネットセンター自由が丘",
+        "address": "東京都目黒区自由が丘１−8−18マイセンビル2階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3718-4191",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669785,
+          35.607471
+        ]
+      },
+      "properties": {
+        "id": "meguro-021",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "眼鏡市場　自由が丘マリ・クレール",
+        "address": "東京都目黒区自由が丘-ー３自由が丘第２ビル１階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5726-6022",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.707901,
+          35.632618
+        ]
+      },
+      "properties": {
+        "id": "meguro-022",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "（有）蛯澤電機商会",
+        "address": "東京都目黒区目黒３丁目９番６号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3712-9492",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697617,
+          35.645699
+        ]
+      },
+      "properties": {
+        "id": "meguro-023",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "テンオーワン　中目黒店",
+        "address": "東京都目黒区上目黒1-16-8Y-ファームビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3712-9728",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66922,
+          35.608734
+        ]
+      },
+      "properties": {
+        "id": "meguro-024",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "テンオーワン　自由が丘店",
+        "address": "東京都目黒区自由が丘1-26-5",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5731-1001",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667969,
+          35.608047
+        ]
+      },
+      "properties": {
+        "id": "meguro-025",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "メガネ パリ ミキ　自由が丘店",
+        "address": "東京都目黒区自由が丘２−１０−７",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3723-1571",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697159,
+          35.645496
+        ]
+      },
+      "properties": {
+        "id": "meguro-026",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "リケン補聴器センター中目黒店",
+        "address": "東京都目黒区上目黒３−１４−８M.Fビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5724-3583",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667328,
+          35.607025
+        ]
+      },
+      "properties": {
+        "id": "meguro-027",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "ブルーム自由が丘店",
+        "address": "東京都目黒区自由が丘２−１２−１９３．４．１buildingwest２階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3724-3341",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683746,
+          35.61348
+        ]
+      },
+      "properties": {
+        "id": "meguro-028",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "(有)タニムラ電気",
+        "address": "東京都目黒区大岡山１−１−１２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3723-2800",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702866,
+          35.631237
+        ]
+      },
+      "properties": {
+        "id": "meguro-029",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "株式会社　星野電機商会",
+        "address": "東京都目黒区目黒4-12-3",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3711-3873",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686523,
+          35.656219
+        ]
+      },
+      "properties": {
+        "id": "meguro-030",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "駒場住区センター",
+        "address": "目黒区駒場1-22-4",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679169,
+          35.657799
+        ]
+      },
+      "properties": {
+        "id": "meguro-031",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "駒場体育館",
+        "address": "目黒区駒場2-19-39",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695877,
+          35.649788
+        ]
+      },
+      "properties": {
+        "id": "meguro-032",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "菅刈住区センター",
+        "address": "目黒区青葉台2-10-18",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686203,
+          35.647285
+        ]
+      },
+      "properties": {
+        "id": "meguro-033",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "東山住区センター",
+        "address": "目黒区東山2-24-30",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.685593,
+          35.648048
+        ]
+      },
+      "properties": {
+        "id": "meguro-034",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "東山社会教育館",
+        "address": "目黒区東山3-24-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.688248,
+          35.651997
+        ]
+      },
+      "properties": {
+        "id": "meguro-035",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "北部地区サービス事務所",
+        "address": "目黒区大橋1-5-1",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6987,
+          35.640465
+        ]
+      },
+      "properties": {
+        "id": "meguro-036",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒区総合庁舎1階西口",
+        "address": "目黒区上目黒2-19-15",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691803,
+          35.644054
+        ]
+      },
+      "properties": {
+        "id": "meguro-037",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "烏森住区センター",
+        "address": "目黒区上目黒3-44-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702911,
+          35.640362
+        ]
+      },
+      "properties": {
+        "id": "meguro-038",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "中目黒住区センター",
+        "address": "目黒区中目黒2-10-13",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703644,
+          35.638931
+        ]
+      },
+      "properties": {
+        "id": "meguro-039",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒区清掃事業所",
+        "address": "目黒区中目黒4-1-2",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700912,
+          35.63575
+        ]
+      },
+      "properties": {
+        "id": "meguro-040",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "特別養護老人ホーム中目黒",
+        "address": "目黒区中目黒5-7-35",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.712662,
+          35.638866
+        ]
+      },
+      "properties": {
+        "id": "meguro-041",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "田道住区センター三田分室",
+        "address": "目黒区三田2-10-33",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.707764,
+          35.635323
+        ]
+      },
+      "properties": {
+        "id": "meguro-042",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒区民センター本館1階総合案内横",
+        "address": "目黒区目黒2-4-36",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709503,
+          35.633007
+        ]
+      },
+      "properties": {
+        "id": "meguro-043",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "下目黒住区センター",
+        "address": "目黒区下目黒2-20-19",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702393,
+          35.630302
+        ]
+      },
+      "properties": {
+        "id": "meguro-044",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "不動児童館",
+        "address": "目黒区下目黒5-18-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.701065,
+          35.62653
+        ]
+      },
+      "properties": {
+        "id": "meguro-045",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "不動住区センター",
+        "address": "目黒区下目黒6-8-23",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699646,
+          35.63131
+        ]
+      },
+      "properties": {
+        "id": "meguro-046",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "油面住区センター",
+        "address": "目黒区中町1-6-23",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.694061,
+          35.637077
+        ]
+      },
+      "properties": {
+        "id": "meguro-047",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "上目黒住区センター",
+        "address": "目黒区祐天寺2-6-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692337,
+          35.629261
+        ]
+      },
+      "properties": {
+        "id": "meguro-048",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "防災センター",
+        "address": "目黒区中央町1-9-7",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692123,
+          35.631126
+        ]
+      },
+      "properties": {
+        "id": "meguro-049",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "中央地区サービス事務所",
+        "address": "目黒区中央町2-9-13",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689316,
+          35.633408
+        ]
+      },
+      "properties": {
+        "id": "meguro-050",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "五本木住区センター",
+        "address": "目黒区中央町2-17-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683182,
+          35.628342
+        ]
+      },
+      "properties": {
+        "id": "meguro-051",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "鷹番住区センター",
+        "address": "目黒区鷹番3-17-20",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692154,
+          35.625301
+        ]
+      },
+      "properties": {
+        "id": "meguro-052",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒区清掃事務所",
+        "address": "目黒区目黒本町2-13-19",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.694611,
+          35.622124
+        ]
+      },
+      "properties": {
+        "id": "meguro-053",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "月光原住区センター",
+        "address": "目黒区目黒本町4-16-18",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698563,
+          35.618561
+        ]
+      },
+      "properties": {
+        "id": "meguro-054",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "向原住区センター",
+        "address": "目黒区目黒本町5-22-11",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690491,
+          35.618874
+        ]
+      },
+      "properties": {
+        "id": "meguro-055",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "南部地区サービス事務所",
+        "address": "目黒区碑文谷1-18-14",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68959,
+          35.61507
+        ]
+      },
+      "properties": {
+        "id": "meguro-056",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "原町住区センター",
+        "address": "目黒区南1-8-9",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687805,
+          35.620728
+        ]
+      },
+      "properties": {
+        "id": "meguro-057",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "碑住区センター",
+        "address": "目黒区碑文谷2-16-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.684296,
+          35.617981
+        ]
+      },
+      "properties": {
+        "id": "meguro-058",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "大岡山東住区センター",
+        "address": "目黒区碑文谷3-15-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.682648,
+          35.621506
+        ]
+      },
+      "properties": {
+        "id": "meguro-059",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒碑文谷四郵便局",
+        "address": "目黒区碑文谷4-16-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679108,
+          35.615971
+        ]
+      },
+      "properties": {
+        "id": "meguro-060",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "大岡山西住区センター",
+        "address": "目黒区平町1-15-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679642,
+          35.612923
+        ]
+      },
+      "properties": {
+        "id": "meguro-061",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "中根住区センター",
+        "address": "目黒区大岡山1-37-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669296,
+          35.609863
+        ]
+      },
+      "properties": {
+        "id": "meguro-062",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "自由が丘住区センター",
+        "address": "目黒区自由が丘1-24-12",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67337,
+          35.609695
+        ]
+      },
+      "properties": {
+        "id": "meguro-063",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "緑が丘コミュニティセンター本館",
+        "address": "目黒区緑が丘2-14-23",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674423,
+          35.609631
+        ]
+      },
+      "properties": {
+        "id": "meguro-064",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "緑が丘コミュニティセンター別館",
+        "address": "目黒区緑が丘2-7-20",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675735,
+          35.619823
+        ]
+      },
+      "properties": {
+        "id": "meguro-065",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "西部地区サービス事務所",
+        "address": "目黒区柿の木坂1-28-10",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.672562,
+          35.61858
+        ]
+      },
+      "properties": {
+        "id": "meguro-066",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "八雲住区センター",
+        "address": "目黒区八雲1-10-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.665344,
+          35.615707
+        ]
+      },
+      "properties": {
+        "id": "meguro-067",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "自由が丘住区センター宮前分室",
+        "address": "目黒区八雲3-22-15",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.669861,
+          35.627186
+        ]
+      },
+      "properties": {
+        "id": "meguro-068",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "東根住区センター",
+        "address": "目黒区東が丘1-7-14",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67099,
+          35.626492
+        ]
+      },
+      "properties": {
+        "id": "meguro-069",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "特別養護老人ホーム東が丘",
+        "address": "目黒区東が丘1-6-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673553,
+          35.622326
+        ]
+      },
+      "properties": {
+        "id": "meguro-070",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "めぐろ区民キャンパス",
+        "address": "目黒区八雲1-1-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709056,
+          35.631379
+        ]
+      },
+      "properties": {
+        "id": "meguro-071",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "下目黒郵便局",
+        "address": "東京都目黒区下目黒三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6938525,
+          35.627745
+        ]
+      },
+      "properties": {
+        "id": "meguro-072",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒郵便局",
+        "address": "東京都目黒区目黒本町一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686554,
+          35.651373
+        ]
+      },
+      "properties": {
+        "id": "meguro-073",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒大橋郵便局",
+        "address": "東京都目黒区大橋一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667146,
+          35.607967
+        ]
+      },
+      "properties": {
+        "id": "meguro-074",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒自由が丘郵便局",
+        "address": "東京都目黒区自由が丘二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}

@@ -2,19 +2,73 @@ schema: spec-driven
 
 # Project context (optional)
 # This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  Tech stack: SvelteKit 2.x + Svelte 5 (runes mode), MapLibre GL, SQLite (sql.js), Tailwind CSS v4, Vite
+  Version control: Jujutsu (jj) — PRIMARY. Git is colocated but jj is the main tool.
+  Deployment: Cloudflare Workers with Static Assets
+  Data source of truth: GeoJSON files in src/lib/data/{prefecture}/{city}.geojson
+  Database: static/recycling.db is a BUILD ARTIFACT generated from GeoJSON. Never edit directly.
+  Testing: npm run smoke (required for browser-only API changes), npm run test (Vitest), npm run test:e2e (Playwright)
+  Geocoding: GSI Japan Address Search API (https://msearch.gsi.go.jp/address-search/AddressSearch?q=...). Never use Nominatim for Japanese addresses.
+
+# Jujutsu (jj) workflow rules
+jj_workflow: |
+  ## Basic Concepts
+  - Working copy IS a commit (unlike Git). File changes are automatically tracked.
+  - Each change has a stable Change ID (separate from commit hash).
+  - Changes are amended automatically by the next jj command.
+  - `git add` is NOT needed. New files are tracked automatically unless in .gitignore.
+
+  ## Recommended Commands
+  - `jj status` / `jj st` — Check working copy status
+  - `jj diff` — View diff (like git diff)
+  - `jj describe -m "message"` — Add description to current change (like git commit -m, but amends)
+  - `jj new` — Create new empty change on top of current (start new work)
+  - `jj new -m "message"` — Create new change with description in one step
+  - `jj bookmark set <name> -r @` — Set bookmark (like git branch)
+  - `jj git push` — Push to git remote
+  - `jj undo` — Undo last operation
+
+  ## Recommended Workflow
+  ```
+  # 1. Describe current change
+  jj describe -m "WIP: what you're doing"
+
+  # 2. Edit files (automatically tracked)
+
+  # 3. Check diff
+  jj diff
+
+  # 4. Update description when done
+  jj describe -m "feat: what you did"
+
+  # 5. Start next change
+  jj new -m "feat: next task"
+
+  # 6. Set bookmark and push
+  jj bookmark set develop -r @
+  jj git push
+  ```
+
+  ## NOT Recommended
+  - `jj commit` — Exists for git compatibility, but NOT the jj-native workflow. Use `jj describe` + `jj new` instead.
 
 # Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+rules:
+  proposal:
+    - Include data quality requirements as first-class concerns
+  design:
+    - Address deduplication strategy must be documented
+    - GeoJSON schema requirements must be explicit
+  tasks:
+    - Break tasks into ward-by-ward chunks
+    - Include data validation tasks before implementation tasks
+    - Add "jj describe" step after each ward completion (NOT jj commit)
+  implementation:
+    - CRITICAL: Report ANY data with missing/invalid addresses immediately. Do NOT proceed with generic addresses like "文京区" or "港区".
+    - CRITICAL: If geocoding fails for an address, report it and do NOT assign a fallback/centroid coordinate without explicit user approval.
+    - CRITICAL: Merge duplicate facilities (same address + same or similar name). Use categories array for multi-category facilities. Never create separate Features for the same location.
+    - CRITICAL: Run "npm run build:db" and "npm run smoke" after EACH ward's data is complete, not per category.
+    - Use jj (jujutsu) for version control per jj_workflow above. Do NOT use git commit.
+    - Use openspec skills (openspec-apply-change, openspec-archive-change, etc.) for task management. Do NOT bypass the workflow.
+    - When CSV source lacks detailed addresses (e.g., only ward name for post offices), STOP and report. Do NOT create features with incomplete addresses.

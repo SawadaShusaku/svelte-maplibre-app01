@@ -1,0 +1,1969 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7488555908203,
+          35.668487548828125
+        ]
+      },
+      "properties": {
+        "id": "minato-001",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "イーエル商会",
+        "address": "東京都港区虎ノ門１−１６−６虎ノ門ラポート１０２",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.73240661621094,
+          35.669742584228516
+        ]
+      },
+      "properties": {
+        "id": "minato-002",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "（株）今野商店　今野電機",
+        "address": "東京都港区赤坂７−１０−６",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.74549865722656,
+          35.64925003051758
+        ]
+      },
+      "properties": {
+        "id": "minato-003",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "有限会社ミナトライトクラノ / （有）ミナトライトクラノ",
+        "address": "東京都港区芝５−１２−４セントラル三田ハイツ１０４",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-3451-8709",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.740478515625,
+          35.64586639404297
+        ]
+      },
+      "properties": {
+        "id": "minato-004",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "ＤＣＭ三田店 / ＤＣＭ（株）　ＤＣＭ三田店",
+        "address": "東京都港区三田４−２−２０",
+        "categories": [
+          "button-battery",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点 / TEL: 03-5442-5828",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.73681640625,
+          35.67710494995117
+        ]
+      },
+      "properties": {
+        "id": "minato-005",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "ビックカメラ赤坂見附駅店　レジカウンター",
+        "address": "東京都港区赤坂３−１−６東京メトロ赤坂見附駅ビル",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.77359008789062,
+          35.627803802490234
+        ]
+      },
+      "properties": {
+        "id": "minato-006",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "Ａｉｒ　ＢＩＣ　ＣＡＭＥＲＡ　アクアシティお台場店　レジカウンター",
+        "address": "東京都港区台場１−７−１アクアシティーお台場４階",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.755844,
+          35.668629
+        ]
+      },
+      "properties": {
+        "id": "minato-007",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "メガネスーパー新橋外堀通り",
+        "address": "東京都港区新橋1-18-12新橋一丁目ビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5532-1275",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.746445,
+          35.648113
+        ]
+      },
+      "properties": {
+        "id": "minato-008",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "�螢瓮�ネのヒラタ",
+        "address": "東京都港区芝5-22-8",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3453-2900",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.732407,
+          35.669743
+        ]
+      },
+      "properties": {
+        "id": "minato-009",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "今野電機",
+        "address": "東京都港区赤坂７−１０−６今野ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3582-6216",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.71109,
+          35.66259
+        ]
+      },
+      "properties": {
+        "id": "minato-010",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "メガネ　パリミキ　DIGNA HOUSE Audio studio",
+        "address": "東京都港区南青山5-10-2第2九曜ビル104号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6805-1350",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.732498,
+          35.647068
+        ]
+      },
+      "properties": {
+        "id": "minato-011",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "(有)古川橋電気商会",
+        "address": "東京都港区白金１−１−１古川橋電気商会",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3441-8846",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7453,
+          35.651802
+        ]
+      },
+      "properties": {
+        "id": "minato-012",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "浜野無線株式会社",
+        "address": "東京都港区芝３−１７−１４三田浜ビル１階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3452-2441",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.780258,
+          35.630127
+        ]
+      },
+      "properties": {
+        "id": "minato-013",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "オーケーお台場店",
+        "address": "東京都港区台場2-2-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6457-2812",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.745026,
+          35.649288
+        ]
+      },
+      "properties": {
+        "id": "minato-014",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "ブルーム三田店",
+        "address": "東京都港区芝５−１３−１３つるやビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5730-2416",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.736313,
+          35.655384
+        ]
+      },
+      "properties": {
+        "id": "minato-015",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "メガネスーパー麻布十番",
+        "address": "東京都港区麻布十番2-1-8グランドメゾン麻布十番館１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5439-5733",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.718979,
+          35.657715
+        ]
+      },
+      "properties": {
+        "id": "minato-016",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "有限会社ワガヤ電気商会",
+        "address": "東京都港区西麻布４-19-11",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3400-6266",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730331,
+          35.633125
+        ]
+      },
+      "properties": {
+        "id": "minato-017",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "カンノデンキ株式会社",
+        "address": "東京都港区白金台2-12-28",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3449-3343",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.713303,
+          35.665047
+        ]
+      },
+      "properties": {
+        "id": "minato-018",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "有限会社　清水商店",
+        "address": "東京都港区南青山３−１８−２０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3401-1535",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.744904,
+          35.644859
+        ]
+      },
+      "properties": {
+        "id": "minato-019",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "オーケー札の辻店",
+        "address": "東京都港区芝5-36-4",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6665-8075",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.750259,
+          35.648853
+        ]
+      },
+      "properties": {
+        "id": "minato-020",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "AudioNova三田店",
+        "address": "東京都港区芝４−３−１１ＶＯＲＴ三田駅前４Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6809-3318",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.722672,
+          35.644566
+        ]
+      },
+      "properties": {
+        "id": "minato-021",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "日の出電機　白金店",
+        "address": "東京都港区白金6-1-3",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3442-4194",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.734726,
+          35.656441
+        ]
+      },
+      "properties": {
+        "id": "minato-022",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "メガネ　パリ　ミキ　麻布十番店",
+        "address": "東京都港区麻布十番１−７−３藤原ビル１階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3404-1410",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716492,
+          35.671646
+        ]
+      },
+      "properties": {
+        "id": "minato-023",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "東京ヒアリングケアセンター青山店",
+        "address": "東京都港区北青山２−９−１５三輪ビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3423-4133",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.743301,
+          35.646976
+        ]
+      },
+      "properties": {
+        "id": "minato-024",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "中村無線電気商会",
+        "address": "東京都港区三田３−３−９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3451-0063",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.732224,
+          35.645309
+        ]
+      },
+      "properties": {
+        "id": "minato-025",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "(有)近藤電機",
+        "address": "東京都港区白金１−１５−９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3446-3323",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7453,
+          35.651802
+        ]
+      },
+      "properties": {
+        "id": "minato-026",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "長��ベルヒアリングセンター東京",
+        "address": "東京都港区芝3-17-14三田浜ビル７F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6453-8233",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.751541,
+          35.658531
+        ]
+      },
+      "properties": {
+        "id": "minato-027",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "芝地区総合支所",
+        "address": "港区芝公園1-5-25",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.735794,
+          35.660809
+        ]
+      },
+      "properties": {
+        "id": "minato-028",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "麻布地区総合支所",
+        "address": "港区六本木5-16-45",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.731857,
+          35.674904
+        ]
+      },
+      "properties": {
+        "id": "minato-029",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "赤坂地区総合支所",
+        "address": "港区赤坂4-18-13",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.734207,
+          35.640907
+        ]
+      },
+      "properties": {
+        "id": "minato-030",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "高輪図書館 / 高輪地区総合支所",
+        "address": "港区高輪1-16-25",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.751663,
+          35.646198
+        ]
+      },
+      "properties": {
+        "id": "minato-031",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "港区スポーツセンター / 芝浦港南地区総合支所",
+        "address": "港区芝浦1-16-1",
+        "categories": [
+          "cooking-oil",
+          "dry-battery",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777939,
+          35.63018
+        ]
+      },
+      "properties": {
+        "id": "minato-032",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "台場区民センター",
+        "address": "港区台場1-5-1",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.748352,
+          35.640358
+        ]
+      },
+      "properties": {
+        "id": "minato-033",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "芝浦港南区民センター",
+        "address": "港区芝浦4-13-1",
+        "categories": [
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.751373,
+          35.632515
+        ]
+      },
+      "properties": {
+        "id": "minato-034",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "みなとリサイクル清掃事務所",
+        "address": "港区港南3-9-59",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing",
+          "fluorescent",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730881,
+          35.656281
+        ]
+      },
+      "properties": {
+        "id": "minato-035",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "みなとリサイクル清掃事務所作業連絡所",
+        "address": "港区元麻布3-9-6",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing",
+          "fluorescent",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.756836,
+          35.658585
+        ]
+      },
+      "properties": {
+        "id": "minato-036",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "エコプラザ",
+        "address": "港区浜松町1-13-1",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing",
+          "fluorescent",
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.749573,
+          35.649269
+        ]
+      },
+      "properties": {
+        "id": "minato-037",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "三田いきいきプラザ",
+        "address": "港区芝4-1-17",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.757523,
+          35.658855
+        ]
+      },
+      "properties": {
+        "id": "minato-038",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "神明いきいきプラザ",
+        "address": "港区浜松町1-6-7",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.735153,
+          35.651787
+        ]
+      },
+      "properties": {
+        "id": "minato-039",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "南麻布いきいきプラザ",
+        "address": "港区南麻布1-5-26",
+        "categories": [
+          "dry-battery",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.727066,
+          35.650387
+        ]
+      },
+      "properties": {
+        "id": "minato-040",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "ありすいきいきプラザ",
+        "address": "港区南麻布4-6-7",
+        "categories": [
+          "dry-battery",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.722794,
+          35.660912
+        ]
+      },
+      "properties": {
+        "id": "minato-041",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "西麻布いきいきプラザ",
+        "address": "港区西麻布2-13-3",
+        "categories": [
+          "dry-battery",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.741043,
+          35.656982
+        ]
+      },
+      "properties": {
+        "id": "minato-042",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "飯倉いきいきプラザ",
+        "address": "港区東麻布2-16-11",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.721069,
+          35.66909
+        ]
+      },
+      "properties": {
+        "id": "minato-043",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "青山いきいきプラザ",
+        "address": "港区南青山2-16-5",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.717422,
+          35.666248
+        ]
+      },
+      "properties": {
+        "id": "minato-044",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "青南いきいきプラザ",
+        "address": "港区南青山4-10-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.724762,
+          35.637562
+        ]
+      },
+      "properties": {
+        "id": "minato-045",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "白金台いきいきプラザ",
+        "address": "港区白金台4-8-5",
+        "categories": [
+          "dry-battery",
+          "small-appliance",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.749969,
+          35.661011
+        ]
+      },
+      "properties": {
+        "id": "minato-046",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "みなと図書館",
+        "address": "港区芝公園3-2-25",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.744904,
+          35.644859
+        ]
+      },
+      "properties": {
+        "id": "minato-047",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "三田図書館",
+        "address": "港区芝5-36-4",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.734985,
+          35.657585
+        ]
+      },
+      "properties": {
+        "id": "minato-048",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "麻布図書館",
+        "address": "港区六本木5-12-24",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.725357,
+          35.67149
+        ]
+      },
+      "properties": {
+        "id": "minato-049",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "赤坂図書館",
+        "address": "港区南青山1-3-3",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.74942,
+          35.633514
+        ]
+      },
+      "properties": {
+        "id": "minato-050",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "港南図書館",
+        "address": "港区港南3-3-17",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.759186,
+          35.656849
+        ]
+      },
+      "properties": {
+        "id": "minato-051",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "浜松町駅北口自転車等駐車場",
+        "address": "港区海岸1-2-34",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777864,
+          35.630219
+        ]
+      },
+      "properties": {
+        "id": "minato-052",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "お台場海浜公園前郵便局",
+        "address": "東京都港区台場一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.739949,
+          35.667085
+        ]
+      },
+      "properties": {
+        "id": "minato-053",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "アーク森ビル内郵便局",
+        "address": "東京都港区六本木一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.744688,
+          35.652873
+        ]
+      },
+      "properties": {
+        "id": "minato-054",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "三田国際ビル内郵便局",
+        "address": "東京都港区三田一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.729172,
+          35.660513
+        ]
+      },
+      "properties": {
+        "id": "minato-055",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "六本木ヒルズ郵便局",
+        "address": "東京都港区六本木六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75365,
+          35.664632
+        ]
+      },
+      "properties": {
+        "id": "minato-056",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "新橋四郵便局",
+        "address": "東京都港区新橋四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.744077,
+          35.628519
+        ]
+      },
+      "properties": {
+        "id": "minato-057",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "港港南郵便局",
+        "address": "東京都港区港南二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.723366865905,
+          35.6606461015563
+        ]
+      },
+      "properties": {
+        "id": "minato-058",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "西麻布郵便局",
+        "address": "東京都港区西麻布一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.73533,
+          35.65549
+        ]
+      },
+      "properties": {
+        "id": "minato-059",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "麻布十番郵便局",
+        "address": "東京都港区麻布十番二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.742127,
+          35.670977
+        ]
+      },
+      "properties": {
+        "id": "minato-060",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "小松ビル内郵便局",
+        "address": "東京都港区赤坂二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.761283,
+          35.667172
+        ]
+      },
+      "properties": {
+        "id": "minato-061",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "新橋郵便局",
+        "address": "東京都港区新橋一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.740927756808,
+          35.6606710507843
+        ]
+      },
+      "properties": {
+        "id": "minato-062",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "麻布台ヒルズ郵便局",
+        "address": "東京都港区麻布台一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7517713,
+          35.6628897
+        ]
+      },
+      "properties": {
+        "id": "minato-063",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "芝郵便局",
+        "address": "東京都港区西新橋三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.748043,
+          35.64027
+        ]
+      },
+      "properties": {
+        "id": "minato-064",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "芝浦海岸通郵便局",
+        "address": "東京都港区芝浦四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.723351,
+          35.651364
+        ]
+      },
+      "properties": {
+        "id": "minato-065",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "南麻布五郵便局",
+        "address": "東京都港区南麻布五丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.745144,
+          35.649594
+        ]
+      },
+      "properties": {
+        "id": "minato-066",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "慶應義塾前郵便局",
+        "address": "東京都港区芝五丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730726,
+          35.646811
+        ]
+      },
+      "properties": {
+        "id": "minato-067",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "港白金三郵便局",
+        "address": "東京都港区白金三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.74942,
+          35.647654
+        ]
+      },
+      "properties": {
+        "id": "minato-068",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "港芝四郵便局",
+        "address": "東京都港区芝四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7413812,
+          35.642253
+        ]
+      },
+      "properties": {
+        "id": "minato-069",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "高輪郵便局",
+        "address": "東京都港区三田三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.726842,
+          35.638057
+        ]
+      },
+      "properties": {
+        "id": "minato-070",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "港白金台郵便局",
+        "address": "東京都港区白金台三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.749444,
+          35.666884
+        ]
+      },
+      "properties": {
+        "id": "minato-071",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "虎ノ門ヒルズ郵便局",
+        "address": "東京都港区虎ノ門一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75328,
+          35.669313
+        ]
+      },
+      "properties": {
+        "id": "minato-072",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "西新橋郵便局",
+        "address": "東京都港区西新橋一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7261232,
+          35.6731822
+        ]
+      },
+      "properties": {
+        "id": "minato-073",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "赤坂郵便局",
+        "address": "東京都港区赤坂八丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.756896,
+          35.649965
+        ]
+      },
+      "properties": {
+        "id": "minato-074",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "シーバンスＮ館内郵便局",
+        "address": "東京都港区芝浦一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.739069,
+          35.663827
+        ]
+      },
+      "properties": {
+        "id": "minato-075",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "全特六本木ビル内郵便局",
+        "address": "東京都港区六本木一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.742017,
+          35.626309
+        ]
+      },
+      "properties": {
+        "id": "minato-076",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "品川インターシティ郵便局",
+        "address": "東京都港区港南二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.761018,
+          35.665368
+        ]
+      },
+      "properties": {
+        "id": "minato-077",
+        "prefecture": "tokyo",
+        "city": "minato",
+        "cityLabel": "港区",
+        "name": "汐留シティセンター郵便局",
+        "address": "東京都港区東新橋一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.minato.lg.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}

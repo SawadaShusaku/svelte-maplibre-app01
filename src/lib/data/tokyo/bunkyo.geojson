@@ -1,0 +1,1307 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7524753,
+          35.7080343
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-001",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京シビックセンター",
+        "address": "東京都文京区春日一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7503059,
+          35.7118977
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-002",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区礫川地域活動センター",
+        "address": "東京都文京区小石川二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.74339,
+          35.724496
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-003",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区大原地域活動センター",
+        "address": "東京都文京区千石一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.735976003294,
+          35.7180417780593
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-004",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区大塚地域活動センター",
+        "address": "東京都文京区大塚一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.729761,
+          35.713894
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-005",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区音羽地域活動センター",
+        "address": "東京都文京区音羽一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7639802,
+          35.7081069
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-006",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区湯島地域活動センター",
+        "address": "東京都文京区湯島四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.757997,
+          35.717295
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-007",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区向丘地域活動センター",
+        "address": "東京都文京区向丘一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7642297,
+          35.7191779
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-008",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区根津地域活動センター",
+        "address": "東京都文京区根津二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7615047,
+          35.725591
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-009",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区汐見地域活動センター",
+        "address": "東京都文京区千駄木三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7523414,
+          35.7286069
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-010",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区駒込地域活動センター",
+        "address": "東京都文京区本駒込三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7428145,
+          35.7172359
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-011",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京清掃事務所播磨坂清掃事業所",
+        "address": "東京都文京区小石川五丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.734783,
+          35.710404
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-012",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京福祉センター江戸川橋",
+        "address": "東京都文京区小日向二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.759615,
+          35.707669
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-013",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "本郷四郵便局",
+        "address": "東京都文京区本郷四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.766204,
+          35.710734
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-014",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "東京大学内郵便局",
+        "address": "東京都文京区本郷七丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75205,
+          35.703798
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-015",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "東京ドームシティ郵便局",
+        "address": "東京都文京区後楽一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76865,
+          35.708622
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-016",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "湯島四郵便局",
+        "address": "東京都文京区湯島四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730746,
+          35.710394
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-017",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京関口一郵便局",
+        "address": "東京都文京区関口一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7422897,
+          35.7136113
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-018",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "小石川郵便局",
+        "address": "東京都文京区小石川四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7590331,
+          35.7122591
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-019",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "本郷郵便局",
+        "address": "東京都文京区本郷六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76385,
+          35.718935
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-020",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京根津郵便局",
+        "address": "東京都文京区根津一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.750662,
+          35.714876
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-021",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "小石川一郵便局",
+        "address": "東京都文京区小石川一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.759816,
+          35.731184
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-022",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京千駄木四郵便局",
+        "address": "東京都文京区千駄木四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730154,
+          35.724809
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-023",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京大塚五郵便局",
+        "address": "東京都文京区大塚五丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.747464,
+          35.729672
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-024",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京グリーンコート郵便局",
+        "address": "東京都文京区本駒込二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76470947265625,
+          35.72724914550781
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-025",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "（有）深澤電機商会",
+        "address": "東京都文京区千駄木３−４１−１１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75241088867188,
+          35.708335876464844
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-026",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区　リサイクル清掃課",
+        "address": "東京都文京区春日１−１６−２１　文京シビックセンター１７階リサイクル清掃課　窓口",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7429656982422,
+          35.7171516418457
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-027",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区　播磨坂清掃事業所",
+        "address": "東京都文京区小石川５−４０−２１　２階窓口",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.74755859375,
+          35.705326080322266
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-028",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京区　文京清掃事務所",
+        "address": "東京都文京区後楽１−７−２９",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.752472,
+          35.714134
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-029",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "（株）オリンピック　　白山店",
+        "address": "東京都文京区西片1-17-11",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3813-9121",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.762772,
+          35.730286
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-030",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "メガネストアー　西日暮里店",
+        "address": "東京都文京区千駄木3-50-14プラティーク文京千駄木101",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5685-1548",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763214,
+          35.714146
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-031",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "東大生協本郷第一購買部",
+        "address": "東京都文京区本郷７−３−１東大構内法文２号館地下",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3816-0711",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.753555,
+          35.707893
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-032",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "ホームセンターコーナンドイト後楽園店",
+        "address": "東京都文京区春日１-１６-３０講道館ビル１F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5842-3926",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.760605,
+          35.708229
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-033",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "コルチトーン補聴器株式会社",
+        "address": "東京都文京区本郷４−１−５コルチトーン補聴器ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3813-9911",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.758545,
+          35.702271
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-034",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "株式会社日本コクレア",
+        "address": "東京都文京区本郷２−３−７お茶の水元町ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5844-6955",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.752411,
+          35.708336
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-035",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京シビックセンター1階礫川公園側入口",
+        "address": "文京区春日1-16-21",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent",
+          "small-appliance",
+          "cooking-oil",
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5803-1184。ステージ・エコ（不定期開催）では小型家電、廃食用油、小型充電式電池なども回収",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.742966,
+          35.717152
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-036",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "播磨坂清掃事業所",
+        "address": "文京区小石川5-40-21",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5803-7751",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.750427,
+          35.711956
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-037",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "礫川地域活動センター",
+        "address": "文京区小石川2-18-18",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3813-3638",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.743225,
+          35.724297
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-038",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "大原地域活動センター",
+        "address": "文京区千石1-4-3",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3946-8594",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.734512,
+          35.710438
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-039",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "文京総合福祉センター",
+        "address": "文京区小日向2-16-15",
+        "categories": [
+          "dry-battery",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5940-2901",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.735641,
+          35.718422
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-040",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "大塚地域活動センター",
+        "address": "文京区大塚1-4-1",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3947-2624",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.729919,
+          35.713795
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-041",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "音羽地域活動センター",
+        "address": "文京区音羽1-22-14",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3943-0621",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763641,
+          35.708309
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-042",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "湯島地域活動センター",
+        "address": "文京区本郷7-1-2",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3813-6554",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.758072,
+          35.717339
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-043",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "向丘地域活動センター",
+        "address": "文京区向丘1-20-8",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3813-6668",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.764114,
+          35.719097
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-044",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "根津地域活動センター",
+        "address": "文京区根津2-20-7",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3822-3653",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.761124,
+          35.725468
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-045",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "汐見地域活動センター",
+        "address": "文京区千駄木3-2-6",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3827-8149",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.752182,
+          35.728527
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-046",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "駒込地域活動センター",
+        "address": "文京区本駒込3-22-4",
+        "categories": [
+          "dry-battery",
+          "used-clothing",
+          "fluorescent"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3824-5801",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.755219,
+          35.733509
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-047",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "勤労福祉会館",
+        "address": "文京区本駒込4-35-15",
+        "categories": [
+          "dry-battery",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3823-6711",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.737778,
+          35.710743
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-048",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "水道端図書館",
+        "address": "文京区水道2-16-14",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3945-1621",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.744736,
+          35.725388
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-049",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "東都無線株式会社",
+        "address": "文京区千石1-16-14",
+        "categories": [
+          "fluorescent"
+        ],
+        "hours": "9:00～17:30",
+        "notes": "定休日：日曜・祝日",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730392,
+          35.724754
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-050",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "フジ特販",
+        "address": "文京区大塚5-7-11",
+        "categories": [
+          "fluorescent"
+        ],
+        "hours": "10:00～19:30",
+        "notes": "定休日：日曜・祝日",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.731308,
+          35.709991
+        ]
+      },
+      "properties": {
+        "id": "bunkyo-051",
+        "prefecture": "tokyo",
+        "city": "bunkyo",
+        "cityLabel": "文京区",
+        "name": "コモディイイダ江戸川橋店",
+        "address": "文京区関口1-47-12",
+        "categories": [
+          "fluorescent"
+        ],
+        "hours": "9:00～23:00",
+        "notes": "定休日：なし",
+        "officialUrl": "https://www.city.bunkyo.lg.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}

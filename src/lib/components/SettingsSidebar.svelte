@@ -34,6 +34,10 @@
     solidColor = color;
     setSolidColor(color);
   }
+
+  function handlePlaceholderClick() {
+    open = false;
+  }
 </script>
 
 {#if open}
@@ -114,15 +118,27 @@
       <div class="border-t border-gray-100 my-2"></div>
 
       <!-- メニュー項目例 -->
-      <a href="#" class="block px-4 py-3 rounded-lg text-gray-700 font-bold hover:bg-gray-50 transition-colors">
+      <button
+        type="button"
+        onclick={handlePlaceholderClick}
+        class="block w-full px-4 py-3 rounded-lg text-left text-gray-700 font-bold hover:bg-gray-50 transition-colors"
+      >
         アプリについて
-      </a>
-      <a href="#" class="block px-4 py-3 rounded-lg text-gray-700 font-bold hover:bg-gray-50 transition-colors">
+      </button>
+      <button
+        type="button"
+        onclick={handlePlaceholderClick}
+        class="block w-full px-4 py-3 rounded-lg text-left text-gray-700 font-bold hover:bg-gray-50 transition-colors"
+      >
         データ提供元 (オープンデータ)
-      </a>
-      <a href="#" class="block px-4 py-3 rounded-lg text-gray-700 font-bold hover:bg-gray-50 transition-colors">
+      </button>
+      <button
+        type="button"
+        onclick={handlePlaceholderClick}
+        class="block w-full px-4 py-3 rounded-lg text-left text-gray-700 font-bold hover:bg-gray-50 transition-colors"
+      >
         プライバシーポリシー
-      </a>
+      </button>
 
       <div class="mt-8 pt-6 border-t border-gray-100 px-4">
         <p class="text-xs text-gray-400 font-medium">© 2026 Recycle Map Tokyo</p>

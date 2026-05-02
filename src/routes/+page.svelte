@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
+  import { env } from '$env/dynamic/public';
   import 'maplibre-gl/dist/maplibre-gl.css';
   import {
     MapLibre,
@@ -22,18 +23,12 @@
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
   import { getFacilities, type GeoFeature } from '$lib/data.js';
-  import { WARD_REGISTRY } from '$lib/registry.js';
+  import { getCategorySourceUrl, WARD_REGISTRY } from '$lib/registry.js';
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
 
-  // カテゴリごとの情報源URL（豊島区）
-  const CATEGORY_SOURCE_URLS: Record<string, string> = {
-    'fluorescent': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/026267.html',
-    'dry-battery': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2509251342.html',
-    'cooking-oil': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013326.html',
-    'ink-cartridge': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/022688.html',
-    'small-appliance': 'https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/034106.html'
-  };
+  const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() ?? '';
+  const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() ?? '';
 
   // 初期データ
   const allCategories: CategoryId[] = [
@@ -63,6 +58,7 @@
   let isFetchingRoute = $state(false);
   let travelMode = $state<'foot' | 'bike' | 'car'>('foot');
   let map = $state<maplibregl.Map | undefined>(undefined);
+  let geolocateControl = $state<maplibregl.GeolocateControl | undefined>(undefined);
   let routeError = $state<string | null>(null);
   let popupTab = $state<'basic' | 'details'>('basic');
   let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
@@ -93,6 +89,24 @@
     if (window.innerWidth <= 640) {
       attribution.classList.remove('maplibregl-compact-show');
     }
+  }
+
+  function getGeolocationErrorMessage(err: GeolocationPositionError): string {
+    switch (err.code) {
+      case err.PERMISSION_DENIED:
+        return '位置情報へのアクセスが拒否されました。ブラウザの設定で位置情報を許可してください。';
+      case err.POSITION_UNAVAILABLE:
+        return '現在位置を取得できませんでした。GPS信号が弱い場所の可能性があります。';
+      case err.TIMEOUT:
+        return '位置情報の取得がタイムアウトしました。時間をおいて再度お試しください。';
+      default:
+        return `位置情報の取得に失敗しました: ${err.message}`;
+    }
+  }
+
+  function handleGeolocateError(err: GeolocationPositionError) {
+    console.error('GeolocateControl error:', err);
+    alert(getGeolocationErrorMessage(err));
   }
 
   // データフェッチ
@@ -205,17 +219,23 @@
     routeError = null;
 
     try {
+      if (!osrmBaseUrl) {
+        throw new Error('Routing service is not configured');
+      }
+
       const userCoords = await new Promise<GeolocationCoordinates>((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(
           (pos) => resolve(pos.coords),
-          (err) => reject(err)
+          (err) => reject(err),
+          { enableHighAccuracy: true, timeout: 10000 }
         );
       });
 
       const [lng1, lat1] = [userCoords.longitude, userCoords.latitude];
       const [lng2, lat2] = facility.geometry.coordinates;
 
-      const url = `https://router.project-osrm.org/route/v1/${travelMode}/${lng1},${lat1};${lng2},${lat2}?overview=full&geometries=geojson`;
+      const baseUrl = osrmBaseUrl.replace(/\/$/, '');
+      const url = `${baseUrl}/route/v1/${travelMode}/${lng1},${lat1};${lng2},${lat2}?overview=full&geometries=geojson`;
 
       const res = await fetch(url);
       if (!res.ok) {
@@ -245,7 +265,7 @@
     } catch (err) {
       console.error('Error getting route:', err);
       if (err instanceof GeolocationPositionError) {
-        routeError = `位置情報の取得に失敗しました: ${err.message}`;
+        routeError = getGeolocationErrorMessage(err);
       } else {
         routeError = '経路の取得に失敗しました。ネットワーク接続を確認するか、時間をおいて再度お試しください。';
       }
@@ -258,26 +278,26 @@
 </script>
 
 {#snippet popupCard(f: GeoFeature)}
-  {@const { name, address, categories, hours, notes } = f.properties}
+  {@const { city, name, address, categories, hours, notes } = f.properties}
   <div class="flex w-full h-2">
     {#each categories as cat}
       <div class="flex-1" style:background-color={CATEGORY_COLOR[cat]}></div>
     {/each}
   </div>
-  <div class="p-4">
-    <div class="flex items-start justify-between gap-2 mb-1">
-      <h3 class="font-bold text-lg text-gray-900 leading-snug">{name}</h3>
+  <div class="p-5">
+    <div class="mb-2 flex items-start justify-between gap-3">
+      <h3 class="pr-2 text-xl font-bold leading-snug text-gray-900">{name}</h3>
       <button
         onclick={() => (openPopupId = null)}
-        class="flex-shrink-0 w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center text-gray-500 hover:text-gray-800 transition-colors text-lg"
+        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-black/5 text-xl text-gray-500 transition-colors hover:bg-black/10 hover:text-gray-800"
         aria-label="閉じる"
       >✕</button>
     </div>
     
-    <div class="flex flex-wrap gap-1.5">
+    <div class="flex flex-wrap gap-2">
       {#each categories as cat}
         <span
-          class="px-2 py-0.5 rounded-full text-white text-xs font-bold shadow-sm"
+          class="rounded-full px-2.5 py-1 text-sm font-bold text-white shadow-sm"
           style:background-color={CATEGORY_COLOR[cat]}
         >{CATEGORY_LABEL[cat]}</span>
       {/each}
@@ -285,47 +305,47 @@
   </div>
 
   <!-- タブ -->
-  <div class="px-4 border-b border-gray-100">
-    <div class="flex gap-4">
+  <div class="border-b border-gray-100 px-5">
+    <div class="flex gap-5">
       <button
         onclick={() => popupTab = 'basic'}
-        class="pb-2 text-sm font-bold transition-colors {popupTab === 'basic' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        class="pb-3 text-base font-bold transition-colors {popupTab === 'basic' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
       >基本情報</button>
       <button
         onclick={() => popupTab = 'details'}
-        class="pb-2 text-sm font-bold transition-colors {popupTab === 'details' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        class="pb-3 text-base font-bold transition-colors {popupTab === 'details' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
       >カテゴリ詳細</button>
     </div>
   </div>
 
   <!-- タブコンテンツ -->
-  <div class="px-4 py-3 min-h-[3.5rem]">
+  <div class="min-h-[4.5rem] px-5 py-4">
     {#if popupTab === 'basic'}
-      <p class="text-sm text-gray-700 leading-relaxed">{address}</p>
+      <p class="text-base leading-relaxed text-gray-700">{address}</p>
       {#if hours}
-        <p class="text-sm text-gray-500 mt-1">営業時間: {hours}</p>
+        <p class="mt-2 text-base text-gray-500">営業時間: {hours}</p>
       {/if}
       {#if notes}
-        <p class="text-sm text-amber-600 mt-1">{notes}</p>
+        <p class="mt-2 text-base text-amber-600">{notes}</p>
       {/if}
     {:else}
       {#each categories as cat}
         {@const details = getCategoryDetails(cat)}
         {#if Object.keys(details).length > 0}
-          <div class="mb-3 last:mb-0">
-            <p class="text-sm font-bold mb-1" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
+          <div class="mb-4 last:mb-0">
+            <p class="mb-1.5 text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
             {#each Object.entries(details) as [field, content]}
-              <p class="text-sm text-gray-700 leading-relaxed">{content}</p>
+              <p class="text-base leading-relaxed text-gray-700">{content}</p>
             {/each}
-            {#if CATEGORY_SOURCE_URLS[cat]}
+            {#if getCategorySourceUrl(city, cat)}
               <a
-                href={CATEGORY_SOURCE_URLS[cat]}
+                href={getCategorySourceUrl(city, cat)}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 hover:underline mt-1"
+                class="mt-2 inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-blue-800 hover:underline"
                 title="参考URLを開く"
               >
-                <ExternalLink size={14} />
+                <ExternalLink size={16} />
                 <span>参考URL</span>
               </a>
             {/if}
@@ -335,43 +355,43 @@
     {/if}
   </div>
 
-  <div class="px-4 pb-4 pt-3 border-t border-gray-100 flex items-center justify-between bg-gray-50/50 gap-4">
-    <div class="flex items-center gap-0 bg-gray-100 rounded-lg p-1">
+  <div class="flex flex-col gap-3 border-t border-gray-100 bg-gray-50/50 px-5 pb-5 pt-4 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
+    <div class="flex items-center justify-center gap-0 rounded-xl bg-gray-100 p-1.5 min-[420px]:justify-start">
       <button
         onclick={() => travelMode = 'foot'}
-        class="relative h-10 w-14 rounded-md flex items-center justify-center transition-colors {travelMode === 'foot' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        class="relative flex h-12 w-16 items-center justify-center rounded-lg transition-colors {travelMode === 'foot' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
         aria-label="徒歩"
       >
-        <Footprints size={22} />
+        <Footprints size={26} />
         {#if travelMode === 'foot'}
-          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-emerald-600 rounded-full"></span>
+          <span class="absolute bottom-0 left-1/2 h-0.5 w-11 -translate-x-1/2 rounded-full bg-emerald-600"></span>
         {/if}
       </button>
       <button
         onclick={() => travelMode = 'bike'}
-        class="relative h-10 w-14 rounded-md flex items-center justify-center transition-colors {travelMode === 'bike' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        class="relative flex h-12 w-16 items-center justify-center rounded-lg transition-colors {travelMode === 'bike' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
         aria-label="自転車"
       >
-        <Bike size={22} />
+        <Bike size={26} />
         {#if travelMode === 'bike'}
-          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-emerald-600 rounded-full"></span>
+          <span class="absolute bottom-0 left-1/2 h-0.5 w-11 -translate-x-1/2 rounded-full bg-emerald-600"></span>
         {/if}
       </button>
       <button
         onclick={() => travelMode = 'car'}
-        class="relative h-10 w-14 rounded-md flex items-center justify-center transition-colors {travelMode === 'car' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        class="relative flex h-12 w-16 items-center justify-center rounded-lg transition-colors {travelMode === 'car' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
         aria-label="車"
       >
-        <Car size={22} />
+        <Car size={26} />
         {#if travelMode === 'car'}
-          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-0.5 bg-emerald-600 rounded-full"></span>
+          <span class="absolute bottom-0 left-1/2 h-0.5 w-11 -translate-x-1/2 rounded-full bg-emerald-600"></span>
         {/if}
       </button>
     </div>
     <button
       onclick={() => getRoute(f)}
       disabled={isFetchingRoute}
-      class="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-2.5 text-sm font-bold text-white shadow-md hover:bg-blue-700 transition-colors disabled:opacity-50 min-w-[10rem]"
+      class="inline-flex w-full items-center justify-center rounded-xl bg-blue-600 px-8 py-3 text-base font-bold text-white shadow-md transition-colors hover:bg-blue-700 disabled:opacity-50 min-[420px]:w-auto min-[420px]:min-w-[11rem]"
     >
       {isFetchingRoute ? '検索中...' : '経路を検索'}
     </button>
@@ -440,7 +460,7 @@
   <MapLibre
     bind:map={map}
     class="h-full w-full"
-    style="https://tiles.openfreemap.org/styles/liberty"
+    style={mapStyleUrl}
     center={[139.7159, 35.7324]}
     zoom={13.4}
     attributionControl={false}
@@ -448,11 +468,16 @@
     <!-- MapLibre UI Controls -->
     <AttributionControl position="bottom-right" />
     <NavigationControl position="bottom-right" />
-    <GeolocateControl 
+    <GeolocateControl
+      bind:control={geolocateControl}
       position="bottom-right"
       trackUserLocation={true}
       showAccuracyCircle={true}
       showUserLocation={true}
+      positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
+      fitBoundsOptions={isMobile ? { padding: { top: 100, bottom: 100, left: 20, right: 20 }, maxZoom: 14 } : { padding: 80, maxZoom: 14 }}
+      onerror={handleGeolocateError}
+      autoTrigger={true}
     />
     <FullScreenControl position="bottom-right" />
 
@@ -505,7 +530,7 @@
 
       {#if openPopupId === id && !isMobile}
         <Popup lnglat={[lng, lat]} onclose={() => { openPopupId = null; popupTab = 'basic'; }} closeButton={false} closeOnClick={false} maxWidth="none" offset={[0, -24]}>
-          <div class="relative w-96 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 overflow-hidden text-left">
+          <div class="relative w-[28rem] max-w-[calc(100vw-2rem)] bg-white/95 text-left backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 overflow-hidden">
             {@render popupCard(feature)}
           </div>
         </Popup>
@@ -517,7 +542,7 @@
     {@const openFacility = facilities.find(f => f.properties.id === openPopupId)}
     {#if openFacility}
       <div
-        class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md rounded-t-2xl shadow-[0_-8px_32px_rgba(0,0,0,0.15)] max-h-[60vh] flex flex-col"
+        class="fixed bottom-2 left-2 right-2 z-50 flex max-h-[72vh] flex-col overflow-hidden rounded-3xl bg-white/95 shadow-[0_-8px_32px_rgba(0,0,0,0.15)] backdrop-blur-md"
         transition:fly={{ y: 300, duration: 300, opacity: 1 }}
         style="padding-bottom: max(env(safe-area-inset-bottom), 16px)"
       >
