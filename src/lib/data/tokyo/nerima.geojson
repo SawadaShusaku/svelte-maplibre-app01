@@ -1,0 +1,4275 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6522965,
+          35.735654
+        ]
+      },
+      "properties": {
+        "id": "nerima-001",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬区役所",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5779477,
+          35.7249725
+        ]
+      },
+      "properties": {
+        "id": "nerima-002",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "関町リサイクルセンター",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布回収：毎週土曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6478684,
+          35.7560459
+        ]
+      },
+      "properties": {
+        "id": "nerima-003",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "春日町リサイクルセンター",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布回収：毎週土曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6600652,
+          35.7370873
+        ]
+      },
+      "properties": {
+        "id": "nerima-004",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "豊玉リサイクルセンター",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布回収：毎週土曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6235067,
+          35.7484766
+        ]
+      },
+      "properties": {
+        "id": "nerima-005",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "資源循環センター",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.590809,
+          35.763096
+        ]
+      },
+      "properties": {
+        "id": "nerima-006",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉リサイクルセンター",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge",
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "",
+        "notes": "古布回収：毎週土曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.590041707607,
+          35.7311742632749
+        ]
+      },
+      "properties": {
+        "id": "nerima-007",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井清掃事務所",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638846,
+          35.736502
+        ]
+      },
+      "properties": {
+        "id": "nerima-008",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬中村郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.660519,
+          35.737273
+        ]
+      },
+      "properties": {
+        "id": "nerima-009",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬桜台郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.574762,
+          35.723215
+        ]
+      },
+      "properties": {
+        "id": "nerima-010",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬関町郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666277,
+          35.751878
+        ]
+      },
+      "properties": {
+        "id": "nerima-011",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬氷川台郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.615875,
+          35.741562
+        ]
+      },
+      "properties": {
+        "id": "nerima-012",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬高野台駅前郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.604559,
+          35.743656
+        ]
+      },
+      "properties": {
+        "id": "nerima-013",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井公園駅前郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.664702,
+          35.766916
+        ]
+      },
+      "properties": {
+        "id": "nerima-014",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬北町郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6526326,
+          35.7353457
+        ]
+      },
+      "properties": {
+        "id": "nerima-015",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5938738,
+          35.7412349
+        ]
+      },
+      "properties": {
+        "id": "nerima-016",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5879903,
+          35.7651652
+        ]
+      },
+      "properties": {
+        "id": "nerima-017",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6305056,
+          35.7591283
+        ]
+      },
+      "properties": {
+        "id": "nerima-018",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "光が丘郵便局",
+        "address": "練馬区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.62847900390625,
+          35.73556900024414
+        ]
+      },
+      "properties": {
+        "id": "nerima-019",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（有）大野無線電気",
+        "address": "東京都練馬区貫井３−６−４",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66021728515625,
+          35.739173889160156
+        ]
+      },
+      "properties": {
+        "id": "nerima-020",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（有）ヤマト家庭電器サービス　ヤマト電器",
+        "address": "東京都練馬区桜台４−１４−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63885498046875,
+          35.736141204833984
+        ]
+      },
+      "properties": {
+        "id": "nerima-021",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）フジ電気商会",
+        "address": "東京都練馬区中村北３−２２−１１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.62893676757812,
+          35.73675537109375
+        ]
+      },
+      "properties": {
+        "id": "nerima-022",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社どりーむ館",
+        "address": "東京都練馬区貫井３−１４−８",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.65542602539062,
+          35.7568359375
+        ]
+      },
+      "properties": {
+        "id": "nerima-023",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）サテライト・ウェイブ　サテラ平和台",
+        "address": "東京都練馬区早宮２−１６−３２",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.64808654785156,
+          35.73196792602539
+        ]
+      },
+      "properties": {
+        "id": "nerima-024",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）花園電気",
+        "address": "東京都練馬区中村１−７−１４",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5900115966797,
+          35.727474212646484
+        ]
+      },
+      "properties": {
+        "id": "nerima-025",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（有）マイコニック",
+        "address": "東京都練馬区上石神井４−１０−３３",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66287231445312,
+          35.732276916503906
+        ]
+      },
+      "properties": {
+        "id": "nerima-026",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（有）ソノベ電機商会",
+        "address": "東京都練馬区豊玉北３−６−３桜台フラワーホーム１１２",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6574249267578,
+          35.73015594482422
+        ]
+      },
+      "properties": {
+        "id": "nerima-027",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "コジマ×ビックカメラ豊玉店　２階レジカウンター、３階レジカウンター",
+        "address": "東京都練馬区豊玉中２−２８−１０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6151580810547,
+          35.73764419555664
+        ]
+      },
+      "properties": {
+        "id": "nerima-028",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）ヤマダデンキ　テックランド練馬本店",
+        "address": "東京都練馬区南田中３−３０−５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.58721923828125,
+          35.76829147338867
+        ]
+      },
+      "properties": {
+        "id": "nerima-029",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）ヤマダデンキ　テックランド大泉学園店ＰＣ館",
+        "address": "東京都練馬区大泉学園町４−２７−２１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5869598388672,
+          35.76850128173828
+        ]
+      },
+      "properties": {
+        "id": "nerima-030",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）ヤマダデンキ　テックランド大泉学園店家電館",
+        "address": "東京都練馬区大泉学園町６−１−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.65235900878906,
+          35.75796890258789
+        ]
+      },
+      "properties": {
+        "id": "nerima-031",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）ヤマダデンキ　テックランド平和台駅前店",
+        "address": "東京都練馬区北町６−３２−５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6283721923828,
+          35.760009765625
+        ]
+      },
+      "properties": {
+        "id": "nerima-032",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "イオンリテール（株）　イオン練馬店",
+        "address": "東京都練馬区光が丘５−１−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657104,
+          35.732292
+        ]
+      },
+      "properties": {
+        "id": "nerima-033",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "コーナンPRO WORK&TOOLドイト豊玉中",
+        "address": "東京都練馬区豊玉中２-２４-２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3991-2411",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.647705,
+          35.74736
+        ]
+      },
+      "properties": {
+        "id": "nerima-034",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "志村電機株式会社",
+        "address": "東京都練馬区春日町1-11-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3990-5550",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.606461,
+          35.76096
+        ]
+      },
+      "properties": {
+        "id": "nerima-035",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社大泉電化サービスファミック本店",
+        "address": "東京都練馬区大泉町２−５１−２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3924-2219",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641174,
+          35.766453
+        ]
+      },
+      "properties": {
+        "id": "nerima-036",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "誠幸デンキ",
+        "address": "東京都練馬区田柄４−３２−４シルバースレッドマンション１０１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3930-4501",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666428,
+          35.748859
+        ]
+      },
+      "properties": {
+        "id": "nerima-037",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "サミットストア氷川台駅前店",
+        "address": "東京都練馬区桜台３−４５−８",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5946-3310",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.579025,
+          35.739315
+        ]
+      },
+      "properties": {
+        "id": "nerima-038",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "エニータイム　ロッコウ",
+        "address": "東京都練馬区東大泉7-6-7センチュリー東大泉",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3922-4560",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.622421,
+          35.766579
+        ]
+      },
+      "properties": {
+        "id": "nerima-039",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "レッツゴーイイダ",
+        "address": "東京都練馬区旭町１−３７−１３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3975-5420",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.587219,
+          35.768291
+        ]
+      },
+      "properties": {
+        "id": "nerima-040",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "�螢筌泪瀬妊鵐�　テックランド大泉学園店ＰＣ館",
+        "address": "東京都練馬区大泉学園町４丁目２７−２１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5935-0685",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654327,
+          35.735622
+        ]
+      },
+      "properties": {
+        "id": "nerima-041",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネストアー　練馬店",
+        "address": "東京都練馬区豊玉北5-23AGポイント",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3948-2148",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.655426,
+          35.756836
+        ]
+      },
+      "properties": {
+        "id": "nerima-042",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社  サテライト・ウェイブ",
+        "address": "東京都練馬区早宮2-16-32",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3559-2411",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628677,
+          35.735481
+        ]
+      },
+      "properties": {
+        "id": "nerima-043",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネストアー　富士見台店",
+        "address": "東京都練馬区貫井3-3-9",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3926-8222",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638474,
+          35.753384
+        ]
+      },
+      "properties": {
+        "id": "nerima-044",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネ パリ ミキ　練馬春日町店",
+        "address": "東京都練馬区春日町４−１７−１４",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5241-5088",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631027,
+          35.753613
+        ]
+      },
+      "properties": {
+        "id": "nerima-045",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "サンドラッグ光が丘",
+        "address": "東京都練馬区高松４−４−１２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3970-3090",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599564,
+          35.726391
+        ]
+      },
+      "properties": {
+        "id": "nerima-046",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "オーケー下石神井店",
+        "address": "東京都練馬区下石神井4-30-12",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6913-2702",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673141,
+          35.736084
+        ]
+      },
+      "properties": {
+        "id": "nerima-047",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネストアー　江古田店",
+        "address": "東京都練馬区旭丘1-66-2ライフェリア江古田102号室",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3954-5698",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.648087,
+          35.731968
+        ]
+      },
+      "properties": {
+        "id": "nerima-048",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社　花園電気",
+        "address": "東京都練馬区中村1-7-14",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3999-6356",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.593506,
+          35.718506
+        ]
+      },
+      "properties": {
+        "id": "nerima-049",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "オリンピック　関町店",
+        "address": "東京都練馬区関町南1-1-4",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3928-2311",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.662872,
+          35.732277
+        ]
+      },
+      "properties": {
+        "id": "nerima-050",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "有限会社ソノベ電機商会",
+        "address": "東京都練馬区豊玉北3-6-3桜台フラワーホーム112",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3992-0025",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.586166,
+          35.77346
+        ]
+      },
+      "properties": {
+        "id": "nerima-051",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "サミットストア大泉学園前店",
+        "address": "東京都練馬区大泉学園町６−２９−３０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3924-8116",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.662125,
+          35.728371
+        ]
+      },
+      "properties": {
+        "id": "nerima-052",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "オーケー豊玉南店",
+        "address": "東京都練馬区豊玉南1-1-14",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6914-5177",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.597473,
+          35.757751
+        ]
+      },
+      "properties": {
+        "id": "nerima-053",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ホームセンターコーナン　練馬大泉店",
+        "address": "東京都練馬区大泉町五丁目6番51号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6904-5708",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628372,
+          35.76001
+        ]
+      },
+      "properties": {
+        "id": "nerima-054",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "和真メガネ光が丘店",
+        "address": "東京都練馬区光が丘５−１−１リヴィン５階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3976-9233",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63858,
+          35.73558
+        ]
+      },
+      "properties": {
+        "id": "nerima-055",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社トリイ電気商会",
+        "address": "東京都練馬区中村北３−２２−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3990-9854",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.656616,
+          35.735363
+        ]
+      },
+      "properties": {
+        "id": "nerima-056",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ミミー補聴器　練馬店",
+        "address": "東京都練馬区豊玉北５−５−１ファミール豊玉１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5877-6033",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.58696,
+          35.768501
+        ]
+      },
+      "properties": {
+        "id": "nerima-057",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "�螢筌泪瀬妊鵐�　テックランド大泉学園店家電館",
+        "address": "東京都練馬区大泉学園町６−１−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5387-5811",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63884,
+          35.74575
+        ]
+      },
+      "properties": {
+        "id": "nerima-058",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ノイエ・ナカムラ",
+        "address": "東京都練馬区春日町５−７−９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3990-2058",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628372,
+          35.76001
+        ]
+      },
+      "properties": {
+        "id": "nerima-059",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社でんきのこだま",
+        "address": "東京都練馬区光が丘５−１−１ＩＭＡ光が丘２Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3977-2171",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.597473,
+          35.757751
+        ]
+      },
+      "properties": {
+        "id": "nerima-060",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "スーパーバリュー　練馬大泉店",
+        "address": "東京都練馬区大泉町５−６−５１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5933-1520",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628372,
+          35.76001
+        ]
+      },
+      "properties": {
+        "id": "nerima-061",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネの愛眼 イオン練馬店",
+        "address": "東京都練馬区光が丘5-1-1イオン練馬店３Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3975-0117",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.615158,
+          35.737644
+        ]
+      },
+      "properties": {
+        "id": "nerima-062",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "�螢筌泪瀬妊鵐�　テックランド練馬本店",
+        "address": "東京都練馬区南田中３−３０−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5910-7688",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.597809,
+          35.751907
+        ]
+      },
+      "properties": {
+        "id": "nerima-063",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（有）マツダ電気",
+        "address": "東京都練馬区東大泉２-１４-１５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3924-1048",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.609207,
+          35.744408
+        ]
+      },
+      "properties": {
+        "id": "nerima-064",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "リオネットセンター　石神井公園",
+        "address": "東京都練馬区石神井町２−１３−５−１０６グリーンハイムたちばな",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5393-5330",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.620193,
+          35.754219
+        ]
+      },
+      "properties": {
+        "id": "nerima-065",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "眼鏡市場　練馬谷原",
+        "address": "東京都練馬区谷原１丁目２２-１４",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5923-0858",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628372,
+          35.76001
+        ]
+      },
+      "properties": {
+        "id": "nerima-066",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネ　パリミキ 光が丘IMA店",
+        "address": "東京都練馬区光が丘5-1-1光が丘イマミセ1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6904-0760",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.595932,
+          35.774891
+        ]
+      },
+      "properties": {
+        "id": "nerima-067",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "コメリ　ハードアンドグリーン　大泉学園店",
+        "address": "東京都練馬区大泉学園町８丁目２５‐２４",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5947-6701",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.652359,
+          35.757969
+        ]
+      },
+      "properties": {
+        "id": "nerima-068",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "�螢筌泪瀬妊鵐�テックランド平和台駅前店",
+        "address": "東京都練馬区北町６−３２−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5920-0235",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.655548,
+          35.737637
+        ]
+      },
+      "properties": {
+        "id": "nerima-069",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "AudioNova練馬店",
+        "address": "東京都練馬区練馬１−２−２八百弘ビル１F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6914-9031",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639755,
+          35.751324
+        ]
+      },
+      "properties": {
+        "id": "nerima-070",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "サミットストア練馬春日町店",
+        "address": "東京都練馬区春日町５−３１−２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3825-5462",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639297,
+          35.755127
+        ]
+      },
+      "properties": {
+        "id": "nerima-071",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "マチダ電器",
+        "address": "東京都練馬区春日町４−１９−１７",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3999-4490",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657425,
+          35.730156
+        ]
+      },
+      "properties": {
+        "id": "nerima-072",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ豊玉店",
+        "address": "東京都練馬区豊玉中２−２８−１０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5999-5520",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670609,
+          35.73798
+        ]
+      },
+      "properties": {
+        "id": "nerima-073",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "いわくらでんき",
+        "address": "東京都練馬区栄町６−３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3991-2031",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.596771,
+          35.750473
+        ]
+      },
+      "properties": {
+        "id": "nerima-074",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "眼鏡市場　練馬大泉学園",
+        "address": "東京都練馬区東大泉2-1-26",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5947-4103",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.614853,
+          35.75174
+        ]
+      },
+      "properties": {
+        "id": "nerima-075",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "有限会社　谷原電機",
+        "address": "東京都練馬区谷原2-14-15",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3996-8518",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638855,
+          35.736141
+        ]
+      },
+      "properties": {
+        "id": "nerima-076",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社フジ電気商会",
+        "address": "東京都練馬区中村北３-２２-１１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3998-4515",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.653214,
+          35.735676
+        ]
+      },
+      "properties": {
+        "id": "nerima-077",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "（株）元吉医料器械　城北補聴器　練馬店",
+        "address": "東京都練馬区豊玉北５−２９−４井門ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5984-0330",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.607269,
+          35.74506
+        ]
+      },
+      "properties": {
+        "id": "nerima-078",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネストアー　石神井公園店",
+        "address": "東京都練馬区石神井町2-14-15ピアレスＢ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5910-4818",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5849,
+          35.751637
+        ]
+      },
+      "properties": {
+        "id": "nerima-079",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ミミー補聴器�蠡臉�学園店",
+        "address": "東京都練馬区東大泉4-26-６加藤マンション",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6339-4336",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674332,
+          35.737907
+        ]
+      },
+      "properties": {
+        "id": "nerima-080",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "山賀電気株式会社",
+        "address": "東京都練馬区小竹町１−５５−２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3972-2355",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66481,
+          35.750084
+        ]
+      },
+      "properties": {
+        "id": "nerima-081",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネストアー　氷川台店",
+        "address": "東京都練馬区氷川台3-39-7ミリオンアネックス氷川台1-A",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5912-2688",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.587296,
+          35.773575
+        ]
+      },
+      "properties": {
+        "id": "nerima-082",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "サンドラッグ大泉学園町",
+        "address": "東京都練馬区大泉学園町７−１５−１１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3978-3065",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.582642,
+          35.737736
+        ]
+      },
+      "properties": {
+        "id": "nerima-083",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネの愛眼　石神井店",
+        "address": "東京都練馬区石神井台6-15-3",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3924-3033",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.586868,
+          35.750473
+        ]
+      },
+      "properties": {
+        "id": "nerima-084",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネスーパー大泉学園",
+        "address": "東京都練馬区東大泉1-32-7石泉ビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3867-3811",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.59494,
+          35.75275
+        ]
+      },
+      "properties": {
+        "id": "nerima-085",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "和真 大泉店",
+        "address": "東京都練馬区東大泉2-10-11リヴィンオズ4F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3925-3260",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.586517,
+          35.771488
+        ]
+      },
+      "properties": {
+        "id": "nerima-086",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネ パリ ミキ　大泉学園通り店",
+        "address": "東京都練馬区大泉学園町６−１９−４３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3921-3056",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.583145,
+          35.732948
+        ]
+      },
+      "properties": {
+        "id": "nerima-087",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "サミットストア石神井台店",
+        "address": "東京都練馬区石神井台４−６−３２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3929-3341",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.581177,
+          35.738926
+        ]
+      },
+      "properties": {
+        "id": "nerima-088",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "フジ電化",
+        "address": "東京都練馬区石神井台６−１９−３６",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3924-4515",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.615677,
+          35.76099
+        ]
+      },
+      "properties": {
+        "id": "nerima-089",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "オーケー土支田店",
+        "address": "東京都練馬区土支田2-19-5",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5935-7521",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.649551,
+          35.747562
+        ]
+      },
+      "properties": {
+        "id": "nerima-090",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社よしや早宮店",
+        "address": "東京都練馬区早宮3-42",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3993-3264",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628937,
+          35.736755
+        ]
+      },
+      "properties": {
+        "id": "nerima-091",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "株式会社　どりーむかん",
+        "address": "東京都練馬区貫井３-１４-８どりーむかん（水曜・日曜定休日）",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3999-7848",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654678,
+          35.757275
+        ]
+      },
+      "properties": {
+        "id": "nerima-092",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネストアー　平和台店",
+        "address": "東京都練馬区早宮2-17-50平和台STビル��",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5398-4388",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.591431,
+          35.726841
+        ]
+      },
+      "properties": {
+        "id": "nerima-093",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "メガネ・補聴器　パリミキ　上石神井店",
+        "address": "東京都練馬区上石神井２−２５−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5991-4770",
+        "officialUrl": "https://www.city.nerima.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.623596,
+          35.748894
+        ]
+      },
+      "properties": {
+        "id": "nerima-094",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬区資源循環センター",
+        "address": "東京都練馬区谷原1丁目2番20号",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎週日曜日（午前9時から正午まで）",
+        "notes": "古布回収：毎週日曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.59903,
+          35.754162
+        ]
+      },
+      "properties": {
+        "id": "nerima-095",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "三原台地域集会所",
+        "address": "東京都練馬区三原台3丁目13番17号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.612778,
+          35.751457
+        ]
+      },
+      "properties": {
+        "id": "nerima-096",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "谷原地域集会所",
+        "address": "東京都練馬区谷原5丁目6番7号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.611694,
+          35.745602
+        ]
+      },
+      "properties": {
+        "id": "nerima-097",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "高野台地域集会所",
+        "address": "東京都練馬区高野台3丁目28番11号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.624634,
+          35.738503
+        ]
+      },
+      "properties": {
+        "id": "nerima-098",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "富士見台地区区民館",
+        "address": "東京都練馬区富士見台3丁目10番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.616913,
+          35.733322
+        ]
+      },
+      "properties": {
+        "id": "nerima-099",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "南田中地域集会所",
+        "address": "東京都練馬区南田中2丁目18番36号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602905,
+          35.743645
+        ]
+      },
+      "properties": {
+        "id": "nerima-100",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井庁舎1階",
+        "address": "東京都練馬区石神井町3丁目30番26号",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "古布回収：毎週土曜日 午後2時～午後3時。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.60379,
+          35.734077
+        ]
+      },
+      "properties": {
+        "id": "nerima-101",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "下石神井地区区民館",
+        "address": "東京都練馬区下石神井6丁目8番15号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5923,
+          35.729355
+        ]
+      },
+      "properties": {
+        "id": "nerima-102",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "上石神井北地域集会所",
+        "address": "東京都練馬区上石神井2丁目36番18号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.591827,
+          35.736485
+        ]
+      },
+      "properties": {
+        "id": "nerima-103",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井台みどり地域集会所",
+        "address": "東京都練馬区石神井台2丁目13番6号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.577576,
+          35.729862
+        ]
+      },
+      "properties": {
+        "id": "nerima-104",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "関町北地区区民館",
+        "address": "東京都練馬区関町北4丁目12番21号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.582748,
+          35.718681
+        ]
+      },
+      "properties": {
+        "id": "nerima-105",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "立野地区区民館",
+        "address": "東京都練馬区立野町15番42号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.583237,
+          35.771576
+        ]
+      },
+      "properties": {
+        "id": "nerima-106",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉学園町地域集会所",
+        "address": "東京都練馬区大泉学園町6丁目20番36号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.592621,
+          35.77272
+        ]
+      },
+      "properties": {
+        "id": "nerima-107",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉学園地区区民館",
+        "address": "東京都練馬区大泉学園町8丁目9番5号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.60434,
+          35.764664
+        ]
+      },
+      "properties": {
+        "id": "nerima-108",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "北大泉地区区民館",
+        "address": "東京都練馬区大泉町2丁目41番26号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.595764,
+          35.763962
+        ]
+      },
+      "properties": {
+        "id": "nerima-109",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉町地域集会所",
+        "address": "東京都練馬区大泉町4丁目35番17号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.588028,
+          35.755867
+        ]
+      },
+      "properties": {
+        "id": "nerima-110",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "東大泉地区区民館",
+        "address": "東京都練馬区東大泉3丁目53番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.587784,
+          35.7486
+        ]
+      },
+      "properties": {
+        "id": "nerima-111",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "勤労福祉会館",
+        "address": "東京都練馬区東大泉5丁目40番36号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.580612,
+          35.743484
+        ]
+      },
+      "properties": {
+        "id": "nerima-112",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "東大泉地域集会所",
+        "address": "東京都練馬区東大泉7丁目27番51号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.570572,
+          35.739319
+        ]
+      },
+      "properties": {
+        "id": "nerima-113",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "南大泉地区区民館",
+        "address": "東京都練馬区南大泉2丁目19番26号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.572723,
+          35.759975
+        ]
+      },
+      "properties": {
+        "id": "nerima-114",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "西大泉地区区民館",
+        "address": "東京都練馬区西大泉5丁目3番32号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第2土曜日（午前9時から正午まで） 改修工事に伴い、令和7年6月から令和8年9月末（予定）まで西大泉児童館（西大泉3-21-16）で回収",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.663177,
+          35.745651
+        ]
+      },
+      "properties": {
+        "id": "nerima-115",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "桜台地区区民館",
+        "address": "東京都練馬区桜台3丁目39番17号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673462,
+          35.738827
+        ]
+      },
+      "properties": {
+        "id": "nerima-116",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "小竹地域集会所",
+        "address": "東京都練馬区小竹町1丁目63番2号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.661636,
+          35.732838
+        ]
+      },
+      "properties": {
+        "id": "nerima-117",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "豊玉北地区区民館",
+        "address": "東京都練馬区豊玉北3丁目7番9号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651672,
+          35.73571
+        ]
+      },
+      "properties": {
+        "id": "nerima-118",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬区役所正面玄関前",
+        "address": "東京都練馬区豊玉北6丁目12番1号",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "paper-pack"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "古布回収：毎週土曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.635544,
+          35.738159
+        ]
+      },
+      "properties": {
+        "id": "nerima-119",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "中村橋区民センター",
+        "address": "東京都練馬区貫井1丁目9番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.642761,
+          35.729885
+        ]
+      },
+      "properties": {
+        "id": "nerima-120",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "中村地域集会所",
+        "address": "東京都練馬区中村南2丁目23番12号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628922,
+          35.773434
+        ]
+      },
+      "properties": {
+        "id": "nerima-121",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "旭町北地区区民館",
+        "address": "東京都練馬区旭町2丁目30番16号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.630356,
+          35.75914
+        ]
+      },
+      "properties": {
+        "id": "nerima-122",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "光が丘区民センター1階",
+        "address": "東京都練馬区光が丘2丁目9番6号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.625824,
+          35.757977
+        ]
+      },
+      "properties": {
+        "id": "nerima-123",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "光が丘地区区民館",
+        "address": "東京都練馬区光が丘3丁目9番4号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637253,
+          35.76231
+        ]
+      },
+      "properties": {
+        "id": "nerima-124",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "田柄地区区民館",
+        "address": "東京都練馬区田柄3丁目28番13号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638794,
+          35.747654
+        ]
+      },
+      "properties": {
+        "id": "nerima-125",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "春日町南地区区民館",
+        "address": "東京都練馬区春日町5丁目20番25号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.625595,
+          35.750095
+        ]
+      },
+      "properties": {
+        "id": "nerima-126",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "高松地区区民館",
+        "address": "東京都練馬区高松3丁目24番27号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.624939,
+          35.763283
+        ]
+      },
+      "properties": {
+        "id": "nerima-127",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "旭町南地区区民館",
+        "address": "東京都練馬区高松5丁目23番15号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.611603,
+          35.764431
+        ]
+      },
+      "properties": {
+        "id": "nerima-128",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "土支田地域集会所",
+        "address": "東京都練馬区土支田2丁目40番21号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6604,
+          35.767437
+        ]
+      },
+      "properties": {
+        "id": "nerima-129",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "北町地区区民館",
+        "address": "東京都練馬区北町2丁目26番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.655548,
+          35.761116
+        ]
+      },
+      "properties": {
+        "id": "nerima-130",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "北町第二地区区民館",
+        "address": "東京都練馬区北町6丁目24番101号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666153,
+          35.761749
+        ]
+      },
+      "properties": {
+        "id": "nerima-131",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "錦デイサービスセンター",
+        "address": "東京都練馬区錦2丁目6番14号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666931,
+          35.756992
+        ]
+      },
+      "properties": {
+        "id": "nerima-132",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "氷川台地区区民館",
+        "address": "東京都練馬区氷川台2丁目16番14号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651016,
+          35.750736
+        ]
+      },
+      "properties": {
+        "id": "nerima-133",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "早宮地区区民館",
+        "address": "東京都練馬区早宮4丁目14番5号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日（午前9時から正午まで）",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651672,
+          35.73571
+        ]
+      },
+      "properties": {
+        "id": "nerima-134",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬区西庁舎入口",
+        "address": "東京都練馬区豊玉北6-12-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602905,
+          35.743645
+        ]
+      },
+      "properties": {
+        "id": "nerima-135",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬区石神井庁舎正面入口",
+        "address": "東京都練馬区石神井町3-30-26",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.585373,
+          35.738464
+        ]
+      },
+      "properties": {
+        "id": "nerima-136",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ファミリーマート石神井台六丁目店",
+        "address": "東京都練馬区石神井台6丁目7番3号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.573837,
+          35.761726
+        ]
+      },
+      "properties": {
+        "id": "nerima-137",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ファミリーマート西大泉四丁目店",
+        "address": "東京都練馬区西大泉4丁目22番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.61232,
+          35.729305
+        ]
+      },
+      "properties": {
+        "id": "nerima-138",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ヨークフーズ石神井店",
+        "address": "東京都練馬区下石神井1-2-8",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.616714,
+          35.740818
+        ]
+      },
+      "properties": {
+        "id": "nerima-139",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ヨークフーズ練馬高野台店",
+        "address": "東京都練馬区高野台1-7-27 エミオ練馬高野台1階",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.65654,
+          35.756165
+        ]
+      },
+      "properties": {
+        "id": "nerima-140",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ヨークマート練馬平和台店",
+        "address": "東京都練馬区早宮2-2-28",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.605331,
+          35.743813
+        ]
+      },
+      "properties": {
+        "id": "nerima-141",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "ヨークフーズ石神井公園店",
+        "address": "東京都練馬区石神井町3-23-15",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/abura.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.58992,
+          35.731178
+        ]
+      },
+      "properties": {
+        "id": "nerima-142",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井清掃事務所",
+        "address": "東京都練馬区上石神井3丁目34番25号",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "毎週土曜日 午前9時～正午",
+        "notes": "古布回収：毎週土曜日 午前9時～正午。毎月2回、各地区で回収（詳細は区HP参照）。シャツ・下着・ジーンズ・スーツ・着物など身につけるすべての衣類、革製ジャンパー・コート・ダウンジャケット、毛布、シーツ、タオル、カーテン等。汚れのあるもの、電熱式防寒服、綿わたの入っているもの、ふとん、ベッドパット、マットレス、ゴム製品、靴等は不可。",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/kohukaisyu220603.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.596146,
+          35.750656
+        ]
+      },
+      "properties": {
+        "id": "nerima-143",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉特別養護老人ホーム",
+        "address": "東京都練馬区東大泉2丁目11番21号",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "毎週日曜日 午後1時～午後3時",
+        "notes": "古布回収：毎週日曜日 午後1時～午後3時。毎月2回、各地区で回収（詳細は区HP参照）。シャツ・下着・ジーンズ・スーツ・着物など身につけるすべての衣類、革製ジャンパー・コート・ダウンジャケット、毛布、シーツ、タオル、カーテン等。汚れのあるもの、電熱式防寒服、綿わたの入っているもの、ふとん、ベッドパット、マットレス、ゴム製品、靴等は不可。",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/kohukaisyu220603.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667007,
+          35.739285
+        ]
+      },
+      "properties": {
+        "id": "nerima-144",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "桜台地域集会所",
+        "address": "東京都練馬区桜台1-22-9",
+        "categories": [
+          "dry-battery",
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639755,
+          35.750622
+        ]
+      },
+      "properties": {
+        "id": "nerima-145",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "春日町地域集会所",
+        "address": "東京都練馬区春日町5-30-1",
+        "categories": [
+          "dry-battery",
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.614075,
+          35.763226
+        ]
+      },
+      "properties": {
+        "id": "nerima-146",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "土支田中央地域集会所",
+        "address": "東京都練馬区土支田2-32-8",
+        "categories": [
+          "dry-battery",
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.624802,
+          35.77422
+        ]
+      },
+      "properties": {
+        "id": "nerima-147",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "旭町地域集会所",
+        "address": "東京都練馬区旭町3-11-6",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.645218,
+          35.763691
+        ]
+      },
+      "properties": {
+        "id": "nerima-148",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "田柄地域集会所",
+        "address": "東京都練馬区田柄2-6-22",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.61644,
+          35.740971
+        ]
+      },
+      "properties": {
+        "id": "nerima-149",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬高野台駅前地域集会所",
+        "address": "東京都練馬区高野台1-7-29",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.592285,
+          35.72533
+        ]
+      },
+      "properties": {
+        "id": "nerima-150",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "上石神井南地域集会所",
+        "address": "東京都練馬区上石神井1-6-16",
+        "categories": [
+          "dry-battery",
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.573715,
+          35.751011
+        ]
+      },
+      "properties": {
+        "id": "nerima-151",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "南大泉地域集会所",
+        "address": "東京都練馬区南大泉5-26-19",
+        "categories": [
+          "dry-battery",
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.588547,
+          35.765415
+        ]
+      },
+      "properties": {
+        "id": "nerima-152",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉北地域集会所",
+        "address": "東京都練馬区大泉学園町4-21-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.664581,
+          35.760174
+        ]
+      },
+      "properties": {
+        "id": "nerima-153",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "平和台図書館",
+        "address": "東京都練馬区平和台1-36-17",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.580002,
+          35.721016
+        ]
+      },
+      "properties": {
+        "id": "nerima-154",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "関町図書館",
+        "address": "東京都練馬区関町南3-11-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.608948,
+          35.765217
+        ]
+      },
+      "properties": {
+        "id": "nerima-155",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "稲荷山図書館",
+        "address": "東京都練馬区大泉町1-3-18",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.574707,
+          35.743267
+        ]
+      },
+      "properties": {
+        "id": "nerima-156",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "南大泉図書館",
+        "address": "東京都練馬区南大泉1-44-7",
+        "categories": [
+          "dry-battery",
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.628571,
+          35.763763
+        ]
+      },
+      "properties": {
+        "id": "nerima-157",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "光が丘図書館",
+        "address": "東京都練馬区光が丘4-1-5",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.652206,
+          35.733635
+        ]
+      },
+      "properties": {
+        "id": "nerima-158",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "練馬図書館",
+        "address": "東京都練馬区豊玉北6-8-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599564,
+          35.736507
+        ]
+      },
+      "properties": {
+        "id": "nerima-159",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "石神井図書館",
+        "address": "東京都練馬区石神井台1-16-31",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.676193,
+          35.741848
+        ]
+      },
+      "properties": {
+        "id": "nerima-160",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "小竹図書館",
+        "address": "東京都練馬区小竹町2-43-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.586899,
+          35.760887
+        ]
+      },
+      "properties": {
+        "id": "nerima-161",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉図書館",
+        "address": "東京都練馬区大泉学園町2-21-17",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.611206,
+          35.737961
+        ]
+      },
+      "properties": {
+        "id": "nerima-162",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "南田中図書館",
+        "address": "東京都練馬区南田中5-15-22",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.635727,
+          35.737694
+        ]
+      },
+      "properties": {
+        "id": "nerima-163",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "貫井図書館",
+        "address": "東京都練馬区貫井1-36-16",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639755,
+          35.751324
+        ]
+      },
+      "properties": {
+        "id": "nerima-164",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "春日町図書館",
+        "address": "東京都練馬区春日町5-31-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.658707,
+          35.754429
+        ]
+      },
+      "properties": {
+        "id": "nerima-165",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "早宮区民事務所",
+        "address": "東京都練馬区早宮1-44-19",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.587463,
+          35.749428
+        ]
+      },
+      "properties": {
+        "id": "nerima-166",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉区民事務所",
+        "address": "東京都練馬区東大泉1-28-1",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.578064,
+          35.724442
+        ]
+      },
+      "properties": {
+        "id": "nerima-167",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "関区民事務所",
+        "address": "東京都練馬区関町北1-7-2",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639008,
+          35.752403
+        ]
+      },
+      "properties": {
+        "id": "nerima-168",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "春日町青少年館",
+        "address": "東京都練馬区春日町4-16-9",
+        "categories": [
+          "dry-battery"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.584732,
+          35.765625
+        ]
+      },
+      "properties": {
+        "id": "nerima-169",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "大泉学園町体育館",
+        "address": "東京都練馬区大泉学園町5-14-24",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.665543,
+          35.745445
+        ]
+      },
+      "properties": {
+        "id": "nerima-170",
+        "prefecture": "tokyo",
+        "city": "nerima",
+        "cityLabel": "練馬区",
+        "name": "桜台体育館",
+        "address": "東京都練馬区桜台3-28-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.nerima.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}

@@ -16,7 +16,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京シビックセンター",
-        "address": "東京都文京区春日一丁目",
+        "address": "東京都文京区春日1丁目16-21",
         "categories": [
           "ink-cartridge"
         ],
@@ -41,7 +41,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区礫川地域活動センター",
-        "address": "東京都文京区小石川二丁目",
+        "address": "東京都文京区小石川2丁目18-18",
         "categories": [
           "ink-cartridge"
         ],
@@ -66,7 +66,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区大原地域活動センター",
-        "address": "東京都文京区千石一丁目",
+        "address": "東京都文京区千石1丁目4-3",
         "categories": [
           "ink-cartridge"
         ],
@@ -91,7 +91,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区大塚地域活動センター",
-        "address": "東京都文京区大塚一丁目",
+        "address": "東京都文京区大塚1丁目5-17 大塚地域活動センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -116,7 +116,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区音羽地域活動センター",
-        "address": "東京都文京区音羽一丁目",
+        "address": "東京都文京区音羽1丁目22-14",
         "categories": [
           "ink-cartridge"
         ],
@@ -141,7 +141,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区湯島地域活動センター",
-        "address": "東京都文京区湯島四丁目",
+        "address": "東京都文京区湯島4丁目1-20",
         "categories": [
           "ink-cartridge"
         ],
@@ -166,7 +166,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区向丘地域活動センター",
-        "address": "東京都文京区向丘一丁目",
+        "address": "東京都文京区向丘1丁目20-8 コート・フェリシア",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +191,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区根津地域活動センター",
-        "address": "東京都文京区根津二丁目",
+        "address": "東京都文京区根津2丁目20-7 文京区立不忍通りふれあい館 2階",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +216,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区汐見地域活動センター",
-        "address": "東京都文京区千駄木三丁目",
+        "address": "東京都文京区千駄木3丁目2-2-4",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +241,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京区駒込地域活動センター",
-        "address": "東京都文京区本駒込三丁目",
+        "address": "東京都文京区本駒込3丁目22-4",
         "categories": [
           "ink-cartridge"
         ],
@@ -266,7 +266,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京清掃事務所播磨坂清掃事業所",
-        "address": "東京都文京区小石川五丁目",
+        "address": "東京都文京区小石川5丁目40-21 メゾン 桜 1F",
         "categories": [
           "ink-cartridge"
         ],
@@ -291,7 +291,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京福祉センター江戸川橋",
-        "address": "東京都文京区小日向二丁目",
+        "address": "東京都文京区小日向2丁目16-15",
         "categories": [
           "ink-cartridge"
         ],
@@ -316,7 +316,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "本郷四郵便局",
-        "address": "東京都文京区本郷四丁目",
+        "address": "東京都文京区本郷4丁目2-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -341,7 +341,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "東京大学内郵便局",
-        "address": "東京都文京区本郷七丁目",
+        "address": "東京都文京区本郷7丁目3-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -366,7 +366,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "東京ドームシティ郵便局",
-        "address": "東京都文京区後楽一丁目",
+        "address": "東京都文京区後楽1丁目3-61",
         "categories": [
           "ink-cartridge"
         ],
@@ -391,7 +391,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "湯島四郵便局",
-        "address": "東京都文京区湯島四丁目",
+        "address": "東京都文京区湯島4丁目6-11 湯島ハイタウンA棟 204",
         "categories": [
           "ink-cartridge"
         ],
@@ -416,7 +416,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京関口一郵便局",
-        "address": "東京都文京区関口一丁目",
+        "address": "東京都文京区関口1丁目23-6 プラザ江戸川橋 B1F",
         "categories": [
           "ink-cartridge"
         ],
@@ -441,7 +441,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "小石川郵便局",
-        "address": "東京都文京区小石川四丁目",
+        "address": "東京都文京区小石川4丁目4-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -466,7 +466,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "本郷郵便局",
-        "address": "東京都文京区本郷六丁目",
+        "address": "東京都文京区本郷6丁目1-15",
         "categories": [
           "ink-cartridge"
         ],
@@ -491,7 +491,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京根津郵便局",
-        "address": "東京都文京区根津一丁目",
+        "address": "東京都文京区根津1丁目17-1 シーアイマンション根津弥生坂 1階105号室",
         "categories": [
           "ink-cartridge"
         ],
@@ -516,7 +516,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "小石川一郵便局",
-        "address": "東京都文京区小石川一丁目",
+        "address": "東京都文京区小石川1丁目27-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -541,7 +541,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京千駄木四郵便局",
-        "address": "東京都文京区千駄木四丁目",
+        "address": "東京都文京区千駄木4丁目6-7",
         "categories": [
           "ink-cartridge"
         ],
@@ -566,7 +566,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京大塚五郵便局",
-        "address": "東京都文京区大塚五丁目",
+        "address": "東京都文京区大塚5丁目7-11",
         "categories": [
           "ink-cartridge"
         ],
@@ -591,7 +591,7 @@
         "city": "bunkyo",
         "cityLabel": "文京区",
         "name": "文京グリーンコート郵便局",
-        "address": "東京都文京区本駒込二丁目",
+        "address": "東京都文京区本駒込2丁目28-28",
         "categories": [
           "ink-cartridge"
         ],

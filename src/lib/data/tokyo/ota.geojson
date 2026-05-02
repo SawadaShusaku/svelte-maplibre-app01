@@ -3503,7 +3503,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "久が原特別出張所",
-        "address": "東京都大田区久が原四丁目",
+        "address": "東京都大田区久が原4丁目12-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -3528,7 +3528,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "入新井特別出張所",
-        "address": "東京都大田区大森北四丁目",
+        "address": "東京都大田区大森北4丁目16-4",
         "categories": [
           "ink-cartridge"
         ],
@@ -3553,7 +3553,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大森地域庁舎",
-        "address": "東京都大田区大森本町一丁目",
+        "address": "東京都大田区大森本町1丁目4-1 八幡橋児童公園",
         "categories": [
           "ink-cartridge"
         ],
@@ -3578,7 +3578,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大田区役所本庁舎",
-        "address": "東京都大田区蒲田五丁目",
+        "address": "東京都大田区蒲田5丁目13-14",
         "categories": [
           "ink-cartridge"
         ],
@@ -3603,7 +3603,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "調布地域庁舎",
-        "address": "東京都大田区雪谷大塚町",
+        "address": "東京都大田区雪谷大塚町4-4-6",
         "categories": [
           "ink-cartridge"
         ],
@@ -3628,7 +3628,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "蒲田地域庁舎",
-        "address": "東京都大田区蒲田本町二丁目",
+        "address": "東京都大田区蒲田本町2丁目1-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -3653,7 +3653,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "糀谷・羽田地域庁舎",
-        "address": "東京都大田区東糀谷一丁目",
+        "address": "東京都大田区東糀谷1丁目21-21-15",
         "categories": [
           "ink-cartridge"
         ],
@@ -3678,7 +3678,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "消費者生活センター",
-        "address": "東京都大田区蒲田五丁目",
+        "address": "東京都大田区蒲田5丁目13-26",
         "categories": [
           "ink-cartridge"
         ],
@@ -3703,7 +3703,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大森東特別出張所",
-        "address": "東京都大田区大森南二丁目",
+        "address": "東京都大田区大森南2丁目2-15 大田区立森ケ崎保育園",
         "categories": [
           "ink-cartridge"
         ],
@@ -3728,7 +3728,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大森西特別出張所",
-        "address": "東京都大田区大森西二丁目",
+        "address": "東京都大田区大森西2丁目16-2",
         "categories": [
           "ink-cartridge"
         ],
@@ -3753,7 +3753,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "馬込特別出張所",
-        "address": "東京都大田区中馬込三丁目",
+        "address": "東京都大田区中馬込3丁目25-2 馬込保育園",
         "categories": [
           "ink-cartridge"
         ],
@@ -3778,7 +3778,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "池上特別出張所",
-        "address": "東京都大田区池上一丁目",
+        "address": "東京都大田区池上1丁目29-6 大田区池上特別出張所",
         "categories": [
           "ink-cartridge"
         ],
@@ -3803,7 +3803,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "新井宿特別出張所",
-        "address": "東京都大田区中央一丁目",
+        "address": "東京都大田区中央1丁目21-6 大田区新井宿特別出張所",
         "categories": [
           "ink-cartridge"
         ],
@@ -3828,7 +3828,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "嶺町特別出張所",
-        "address": "東京都大田区田園調布本町",
+        "address": "東京都大田区田園調布本町7-1 1",
         "categories": [
           "ink-cartridge"
         ],
@@ -3853,7 +3853,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "田園調布特別出張所",
-        "address": "東京都大田区田園調布一丁目",
+        "address": "東京都大田区田園調布1丁目30-1 田園調布富士見会館",
         "categories": [
           "ink-cartridge"
         ],
@@ -3878,7 +3878,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "鵜の木特別出張所",
-        "address": "東京都大田区南久が原二丁目",
+        "address": "東京都大田区南久が原2丁目30-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -3903,7 +3903,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "雪谷特別出張所",
-        "address": "東京都大田区雪谷大塚町",
+        "address": "東京都大田区雪谷大塚町4-4-6",
         "categories": [
           "ink-cartridge"
         ],
@@ -3928,7 +3928,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "千束特別出張所",
-        "address": "東京都大田区北千束二丁目",
+        "address": "東京都大田区北千束2丁目35-8",
         "categories": [
           "ink-cartridge"
         ],
@@ -3953,7 +3953,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "糀谷特別出張所",
-        "address": "東京都大田区西糀谷二丁目",
+        "address": "東京都大田区西糀谷2丁目14-13 大田区糀谷特別出張所",
         "categories": [
           "ink-cartridge"
         ],
@@ -3978,7 +3978,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "羽田特別出張所",
-        "address": "東京都大田区羽田一丁目",
+        "address": "東京都大田区羽田1丁目18-13",
         "categories": [
           "ink-cartridge"
         ],
@@ -4003,7 +4003,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "六郷特別出張所",
-        "address": "東京都大田区仲六郷二丁目",
+        "address": "東京都大田区仲六郷2丁目42-17",
         "categories": [
           "ink-cartridge"
         ],
@@ -4028,7 +4028,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "矢口特別出張所",
-        "address": "東京都大田区矢口二丁目",
+        "address": "東京都大田区矢口2丁目21-21-14",
         "categories": [
           "ink-cartridge"
         ],
@@ -4053,7 +4053,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "蒲田西特別出張所",
-        "address": "東京都大田区西蒲田七丁目",
+        "address": "東京都大田区西蒲田7丁目12-2",
         "categories": [
           "ink-cartridge"
         ],
@@ -4078,7 +4078,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "田園調布郵便局",
-        "address": "東京都大田区南雪谷二丁目",
+        "address": "東京都大田区南雪谷2丁目21-2",
         "categories": [
           "ink-cartridge"
         ],
@@ -4103,7 +4103,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大田西糀谷三郵便局",
-        "address": "東京都大田区西糀谷三丁目",
+        "address": "東京都大田区西糀谷3丁目20-2",
         "categories": [
           "ink-cartridge"
         ],
@@ -4128,7 +4128,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大田鵜の木郵便局",
-        "address": "東京都大田区鵜の木二丁目",
+        "address": "東京都大田区鵜の木2丁目3-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -4153,7 +4153,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大森駅前郵便局",
-        "address": "東京都大田区大森北一丁目",
+        "address": "東京都大田区大森北1丁目29-11",
         "categories": [
           "ink-cartridge"
         ],
@@ -4178,7 +4178,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "羽田空港郵便局",
-        "address": "東京都大田区羽田空港三丁目",
+        "address": "東京都大田区羽田空港3丁目3-2 羽田空港国内線 第1旅客ターミナル",
         "categories": [
           "ink-cartridge"
         ],
@@ -4203,7 +4203,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "千鳥郵便局",
-        "address": "東京都大田区千鳥二丁目",
+        "address": "東京都大田区千鳥2丁目34-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -4228,7 +4228,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大森郵便局",
-        "address": "東京都大田区山王三丁目",
+        "address": "東京都大田区山王3丁目9-13",
         "categories": [
           "ink-cartridge"
         ],
@@ -4253,7 +4253,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "池上郵便局",
-        "address": "東京都大田区池上三丁目",
+        "address": "東京都大田区池上3丁目39-3",
         "categories": [
           "ink-cartridge"
         ],
@@ -4278,7 +4278,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "蒲田郵便局",
-        "address": "東京都大田区蒲田本町一丁目",
+        "address": "東京都大田区蒲田本町1丁目2-8 日本郵便蒲田郵便局",
         "categories": [
           "ink-cartridge"
         ],
@@ -4303,7 +4303,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大岡山駅前郵便局",
-        "address": "東京都大田区北千束三丁目",
+        "address": "東京都大田区北千束3丁目26-12 B1",
         "categories": [
           "ink-cartridge"
         ],
@@ -4328,7 +4328,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "田園調布駅前郵便局",
-        "address": "東京都大田区田園調布三丁目",
+        "address": "東京都大田区田園調布3丁目1-8",
         "categories": [
           "ink-cartridge"
         ],
@@ -4353,7 +4353,7 @@
         "city": "ota",
         "cityLabel": "大田区",
         "name": "大田東雪谷二郵便局",
-        "address": "東京都大田区東雪谷二丁目",
+        "address": "東京都大田区東雪谷2丁目22-13",
         "categories": [
           "ink-cartridge"
         ],

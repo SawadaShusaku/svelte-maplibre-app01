@@ -6,156 +6,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.7400462,
-          35.7641476
-        ]
-      },
-      "properties": {
-        "id": "kita-001",
-        "prefecture": "tokyo",
-        "city": "kita",
-        "cityLabel": "北区",
-        "name": "北区清掃事務所",
-        "address": "北区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.kita.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7601429,
-          35.7426168
-        ]
-      },
-      "properties": {
-        "id": "kita-002",
-        "prefecture": "tokyo",
-        "city": "kita",
-        "cityLabel": "北区",
-        "name": "滝野川清掃庁舎",
-        "address": "北区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.kita.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.6924553,
-          35.7846822
-        ]
-      },
-      "properties": {
-        "id": "kita-003",
-        "prefecture": "tokyo",
-        "city": "kita",
-        "cityLabel": "北区",
-        "name": "浮間清掃事業所",
-        "address": "北区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.kita.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7554824,
-          35.740164
-        ]
-      },
-      "properties": {
-        "id": "kita-004",
-        "prefecture": "tokyo",
-        "city": "kita",
-        "cityLabel": "北区",
-        "name": "富士見橋エコー広場館",
-        "address": "北区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.kita.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.713804,
-          35.7646635
-        ]
-      },
-      "properties": {
-        "id": "kita-005",
-        "prefecture": "tokyo",
-        "city": "kita",
-        "cityLabel": "北区",
-        "name": "北ノ台スポーツ多目的広場",
-        "address": "北区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.kita.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.725823,
-          35.7455633
-        ]
-      },
-      "properties": {
-        "id": "kita-006",
-        "prefecture": "tokyo",
-        "city": "kita",
-        "cityLabel": "北区",
-        "name": "滝野川西エコー広場館",
-        "address": "北区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.kita.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.7218668,
           35.7761566
         ]
@@ -166,7 +16,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "赤羽区民事務所",
-        "address": "北区",
+        "address": "東京都北区赤羽1丁目1-38",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +41,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "王子郵便局",
-        "address": "北区",
+        "address": "東京都北区王子6丁目2-28",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +66,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "赤羽駅前郵便局",
-        "address": "北区",
+        "address": "東京都北区赤羽西1丁目33-13",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +91,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "赤羽郵便局",
-        "address": "北区",
+        "address": "東京都北区赤羽南1丁目12-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -266,7 +116,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "北堀船郵便局",
-        "address": "北区",
+        "address": "東京都北区堀船2丁目2-18",
         "categories": [
           "ink-cartridge"
         ],
@@ -291,7 +141,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "滝野川郵便局",
-        "address": "北区",
+        "address": "東京都北区滝野川6丁目28-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -316,7 +166,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "十条仲原郵便局",
-        "address": "北区",
+        "address": "東京都北区十条仲原1丁目22-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -341,7 +191,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "王子五郵便局",
-        "address": "北区",
+        "address": "東京都北区王子5丁目10-8",
         "categories": [
           "ink-cartridge"
         ],
@@ -366,7 +216,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "赤羽岩淵駅前郵便局",
-        "address": "北区",
+        "address": "東京都北区赤羽1丁目55-9",
         "categories": [
           "ink-cartridge"
         ],
@@ -391,7 +241,7 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "中里郵便局",
-        "address": "北区",
+        "address": "東京都北区中里2丁目1-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -1366,11 +1216,12 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "北区清掃事務所",
-        "address": "東京都北区豊島8-4-3",
+        "address": "東京都北区豊島8丁目4-3",
         "categories": [
           "cooking-oil",
           "used-clothing",
-          "paper-pack"
+          "paper-pack",
+          "ink-cartridge"
         ],
         "hours": "毎月第2土曜日 10時00分～14時00分",
         "notes": "",
@@ -1393,11 +1244,12 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "滝野川清掃庁舎",
-        "address": "東京都北区東田端2-18-15",
+        "address": "東京都北区東田端2丁目18-15 東京都交通局田端寮",
         "categories": [
           "cooking-oil",
           "used-clothing",
-          "paper-pack"
+          "paper-pack",
+          "ink-cartridge"
         ],
         "hours": "毎月第2土曜日 10時00分～14時00分",
         "notes": "",
@@ -1410,8 +1262,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.692795,
-          35.784107
+          139.6924553,
+          35.7846822
         ]
       },
       "properties": {
@@ -1424,7 +1276,8 @@
         "categories": [
           "cooking-oil",
           "used-clothing",
-          "paper-pack"
+          "paper-pack",
+          "ink-cartridge"
         ],
         "hours": "毎月第2土曜日 10時00分～14時00分",
         "notes": "",
@@ -1447,11 +1300,12 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "富士見橋エコー広場館",
-        "address": "東京都北区田端5-16-1",
+        "address": "東京都北区田端5丁目16-1",
         "categories": [
           "cooking-oil",
           "used-clothing",
-          "paper-pack"
+          "paper-pack",
+          "ink-cartridge"
         ],
         "hours": "毎月第2日曜日 10時00分～14時00分",
         "notes": "",
@@ -1501,11 +1355,12 @@
         "city": "kita",
         "cityLabel": "北区",
         "name": "滝野川西エコー広場館",
-        "address": "東京都北区滝野川6-21-25",
+        "address": "東京都北区滝野川6丁目21-25 西区民センタ 5階",
         "categories": [
           "cooking-oil",
           "used-clothing",
-          "paper-pack"
+          "paper-pack",
+          "ink-cartridge"
         ],
         "hours": "毎月第2日曜日 10時00分～14時00分",
         "notes": "",
@@ -1671,8 +1526,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.713806,
-          35.763802
+          139.713804,
+          35.7646635
         ]
       },
       "properties": {
@@ -1684,7 +1539,8 @@
         "address": "東京都北区上十条5-14-4",
         "categories": [
           "used-clothing",
-          "paper-pack"
+          "paper-pack",
+          "ink-cartridge"
         ],
         "hours": "各施設の開館時間に準じます",
         "notes": "洗濯した古着・古布をビニール袋に入れて回収ボックスへ",

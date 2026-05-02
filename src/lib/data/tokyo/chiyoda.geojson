@@ -521,7 +521,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "千代田区役所",
-        "address": "千代田区九段南1-2-1",
+        "address": "東京都千代田区九段南1丁目2-1",
         "categories": [
           "small-appliance",
           "cooking-oil",
@@ -552,7 +552,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "麹町出張所",
-        "address": "千代田区麹町2-8",
+        "address": "東京都千代田区麹町2丁目8-9",
         "categories": [
           "small-appliance",
           "cooking-oil",
@@ -583,7 +583,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "富士見出張所",
-        "address": "千代田区富士見1-6-7",
+        "address": "東京都千代田区富士見1丁目6-7",
         "categories": [
           "small-appliance",
           "cooking-oil",
@@ -614,7 +614,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神保町出張所",
-        "address": "千代田区神田神保町2-40",
+        "address": "東京都千代田区神田神保町2丁目40-5",
         "categories": [
           "small-appliance",
           "ink-cartridge"
@@ -643,7 +643,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神田公園出張所",
-        "address": "千代田区神田司町2-2",
+        "address": "東京都千代田区神田司町2丁目2 千代田区立神田児童公園",
         "categories": [
           "small-appliance",
           "cooking-oil",
@@ -674,7 +674,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "万世橋出張所",
-        "address": "千代田区外神田1-1-11",
+        "address": "東京都千代田区外神田1丁目1-11 千代田区万世橋出張所",
         "categories": [
           "small-appliance",
           "ink-cartridge"
@@ -703,7 +703,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "和泉橋出張所",
-        "address": "千代田区神田佐久間町1-11-7",
+        "address": "東京都千代田区神田佐久間町1丁目11 産報佐久間ビル",
         "categories": [
           "small-appliance",
           "cooking-oil",
@@ -904,7 +904,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "千代田清掃事務所",
-        "address": "千代田区外神田1-1-6",
+        "address": "東京都千代田区神田須田町1丁目24-10",
         "categories": [
           "small-appliance",
           "cooking-oil",
@@ -1022,7 +1022,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "リサイクルセンター鎌倉橋",
-        "address": "千代田区内神田2-1-8 スポーツセンター地下1階",
+        "address": "東京都千代田区内神田2丁目1-8",
         "categories": [
           "cooking-oil",
           "used-clothing",
@@ -1042,8 +1042,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.766266,
-          35.683708
+          139.765787,
+          35.684133
         ]
       },
       "properties": {
@@ -1070,8 +1070,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.769562,
-          35.682667
+          139.770415,
+          35.683417
         ]
       },
       "properties": {
@@ -1098,8 +1098,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.764679,
-          35.679085
+          139.764692,
+          35.680068
         ]
       },
       "properties": {
@@ -1136,7 +1136,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "麹町郵便局",
-        "address": "千代田区九段南4-5-9",
+        "address": "東京都千代田区九段南4丁目5-9",
         "categories": [
           "ink-cartridge"
         ],
@@ -1164,7 +1164,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "KDDI大手町ビル内郵便局",
-        "address": "千代田区大手町1-8-1",
+        "address": "東京都千代田区大手町1丁目8-1 KDDI大手町ビル 1F",
         "categories": [
           "ink-cartridge"
         ],
@@ -1182,8 +1182,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.767426,
-          35.686779
+          139.766412,
+          35.686816
         ]
       },
       "properties": {
@@ -1220,7 +1220,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "千代田岩本町郵便局",
-        "address": "千代田区岩本町2-11-9",
+        "address": "東京都千代田区岩本町2丁目11-9",
         "categories": [
           "ink-cartridge"
         ],
@@ -1248,7 +1248,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "長野県東京事務所（都道府県会館）",
-        "address": "千代田区平河町2-6-3 都道府県会館12階",
+        "address": "東京都千代田区平河町2丁目6-3",
         "categories": [
           "ink-cartridge"
         ],
@@ -1276,7 +1276,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "第一生命館内郵便局",
-        "address": "千代田区有楽町1-13-1",
+        "address": "東京都千代田区有楽町1丁目13-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -1304,7 +1304,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "東神田郵便局",
-        "address": "千代田区東神田2-4-5",
+        "address": "東京都千代田区東神田2丁目4-5 東神田 堀商ビル 5F",
         "categories": [
           "ink-cartridge"
         ],
@@ -1322,8 +1322,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.744385,
-          35.677414
+          139.744844,
+          35.675884
         ]
       },
       "properties": {
@@ -1360,7 +1360,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "山王パークタワー内郵便局",
-        "address": "千代田区永田町2-11-1",
+        "address": "東京都千代田区永田町2丁目11-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -1388,7 +1388,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "山王グランドビル内郵便局",
-        "address": "千代田区永田町2-14-2",
+        "address": "東京都千代田区永田町2丁目14-2",
         "categories": [
           "ink-cartridge"
         ],
@@ -1416,7 +1416,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "小川町駅前郵便局",
-        "address": "千代田区神田小川町1-3-1",
+        "address": "東京都千代田区神田小川町1丁目3-1 NBF小川町ビルディング6階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1444,7 +1444,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "小川町郵便局",
-        "address": "千代田区神田小川町3-22",
+        "address": "東京都千代田区神田小川町3丁目22",
         "categories": [
           "ink-cartridge"
         ],
@@ -1472,7 +1472,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神田郵便局",
-        "address": "千代田区神田淡路町2-12",
+        "address": "東京都千代田区神田淡路町2丁目12",
         "categories": [
           "ink-cartridge"
         ],
@@ -1500,7 +1500,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神田北神保町郵便局",
-        "address": "千代田区神田神保町2-2",
+        "address": "東京都千代田区神田神保町2丁目2 共同ビル 神保町",
         "categories": [
           "ink-cartridge"
         ],
@@ -1528,7 +1528,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神田錦町郵便局",
-        "address": "千代田区神田錦町1-17-4",
+        "address": "東京都千代田区神田錦町1丁目17-4 錦町司ビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -1556,7 +1556,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神田須田町郵便局",
-        "address": "千代田区神田須田町2-8",
+        "address": "東京都千代田区神田須田町2丁目8",
         "categories": [
           "ink-cartridge"
         ],
@@ -1584,7 +1584,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "神田今川橋郵便局",
-        "address": "千代田区鍛冶町1-7-11",
+        "address": "東京都千代田区鍛冶町1丁目7-11 鍛冶町1-7-11 KCAビル5F",
         "categories": [
           "ink-cartridge"
         ],
@@ -1612,7 +1612,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "千代田鍛冶町郵便局",
-        "address": "千代田区鍛冶町2-11-22",
+        "address": "東京都千代田区鍛冶町2丁目11-22",
         "categories": [
           "ink-cartridge"
         ],
@@ -1630,8 +1630,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.752213,
-          35.673378
+          139.751791,
+          35.674402
         ]
       },
       "properties": {
@@ -1658,8 +1658,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.74791,
-          35.671192
+          139.747113,
+          35.670986
         ]
       },
       "properties": {
@@ -1696,7 +1696,7 @@
         "city": "chiyoda",
         "cityLabel": "千代田区",
         "name": "海事ビル内郵便局",
-        "address": "千代田区麹町4-5",
+        "address": "東京都千代田区麹町4丁目5-1 海事センタービル",
         "categories": [
           "ink-cartridge"
         ],

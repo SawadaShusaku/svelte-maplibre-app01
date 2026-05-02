@@ -16,7 +16,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "田道ふれあい館1階 / 目黒区エコプラザ",
-        "address": "目黒区目黒1-25-26",
+        "address": "東京都目黒区目黒1丁目25-26",
         "categories": [
           "cooking-oil",
           "dry-battery",
@@ -1783,7 +1783,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "下目黒郵便局",
-        "address": "東京都目黒区下目黒三丁目",
+        "address": "東京都目黒区下目黒3丁目2-3 Ｗ－スペース2",
         "categories": [
           "ink-cartridge"
         ],
@@ -1808,7 +1808,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "目黒郵便局",
-        "address": "東京都目黒区目黒本町一丁目",
+        "address": "東京都目黒区目黒本町1丁目15-16",
         "categories": [
           "ink-cartridge"
         ],
@@ -1833,7 +1833,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "目黒大橋郵便局",
-        "address": "東京都目黒区大橋一丁目",
+        "address": "東京都目黒区大橋1丁目10-1-103",
         "categories": [
           "ink-cartridge"
         ],
@@ -1858,7 +1858,7 @@
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "目黒自由が丘郵便局",
-        "address": "東京都目黒区自由が丘二丁目",
+        "address": "東京都目黒区自由が丘2丁目11-19",
         "categories": [
           "ink-cartridge"
         ],

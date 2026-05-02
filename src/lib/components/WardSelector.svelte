@@ -43,7 +43,7 @@
 
   {#if open}
     <div class="absolute top-full right-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-lg shadow-xl border border-white/50 p-3 z-50">
-      <div class="max-h-80 overflow-y-auto">
+      <div class="max-h-[min(24rem,calc(100vh-7rem))] overflow-y-auto sm:max-h-[min(30rem,calc(100vh-8rem))]">
         <button
           onclick={() => { selectedKeys = [...allKeys]; open = false; }}
           class="w-full text-left px-3 py-2 rounded-md text-sm font-medium transition-colors {selectedKeys.length === allKeys.length ? 'bg-blue-50 text-blue-700' : 'text-gray-700 hover:bg-gray-100'}"

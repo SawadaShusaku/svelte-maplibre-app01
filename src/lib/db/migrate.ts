@@ -65,7 +65,13 @@ const COLLECTORS = [
 	{ id: 'shibuya-city', name: '渋谷区環境課', url: 'https://www.city.shibuya.tokyo.jp/' },
 	{ id: 'nakano-city', name: '中野区環境課', url: 'https://www.city.tokyo-nakano.lg.jp/' },
 	{ id: 'suginami-city', name: '杉並区環境課', url: 'https://www.city.suginami.tokyo.jp/' },
-	{ id: 'kita-city', name: '北区環境課', url: 'https://www.city.kita.lg.jp/' }
+	{ id: 'kita-city', name: '北区環境課', url: 'https://www.city.kita.lg.jp/' },
+	{ id: 'arakawa-city', name: '荒川区環境課', url: 'https://www.city.arakawa.tokyo.jp/' },
+	{ id: 'itabashi-city', name: '板橋区環境課', url: 'https://www.city.itabashi.tokyo.jp/' },
+	{ id: 'nerima-city', name: '練馬区環境課', url: 'https://www.city.nerima.tokyo.jp/' },
+	{ id: 'adachi-city', name: '足立区環境課', url: 'https://www.city.adachi.tokyo.jp/' },
+	{ id: 'katsushika-city', name: '葛飾区環境課', url: 'https://www.city.katsushika.lg.jp/' },
+	{ id: 'edogawa-city', name: '江戸川区環境課', url: 'https://www.city.edogawa.tokyo.jp/' }
 ];
 
 // Wards configuration
@@ -86,7 +92,13 @@ const WARDS = [
 	{ id: 'shibuya', prefecture: 'tokyo', city_label: '渋谷区', url: 'https://www.city.shibuya.tokyo.jp/' },
 	{ id: 'nakano', prefecture: 'tokyo', city_label: '中野区', url: 'https://www.city.tokyo-nakano.lg.jp/' },
 	{ id: 'suginami', prefecture: 'tokyo', city_label: '杉並区', url: 'https://www.city.suginami.tokyo.jp/' },
-	{ id: 'kita', prefecture: 'tokyo', city_label: '北区', url: 'https://www.city.kita.lg.jp/' }
+	{ id: 'kita', prefecture: 'tokyo', city_label: '北区', url: 'https://www.city.kita.lg.jp/' },
+	{ id: 'arakawa', prefecture: 'tokyo', city_label: '荒川区', url: 'https://www.city.arakawa.tokyo.jp/' },
+	{ id: 'itabashi', prefecture: 'tokyo', city_label: '板橋区', url: 'https://www.city.itabashi.tokyo.jp/' },
+	{ id: 'nerima', prefecture: 'tokyo', city_label: '練馬区', url: 'https://www.city.nerima.tokyo.jp/' },
+	{ id: 'adachi', prefecture: 'tokyo', city_label: '足立区', url: 'https://www.city.adachi.tokyo.jp/' },
+	{ id: 'katsushika', prefecture: 'tokyo', city_label: '葛飾区', url: 'https://www.city.katsushika.lg.jp/' },
+	{ id: 'edogawa', prefecture: 'tokyo', city_label: '江戸川区', url: 'https://www.city.edogawa.tokyo.jp/' }
 ];
 
 async function migrate() {
@@ -238,6 +250,18 @@ async function migrate() {
 					collectorId = 'suginami-city';
 				} else if (city === 'kita') {
 					collectorId = 'kita-city';
+				} else if (city === 'arakawa') {
+					collectorId = 'arakawa-city';
+				} else if (city === 'itabashi') {
+					collectorId = 'itabashi-city';
+				} else if (city === 'nerima') {
+					collectorId = 'nerima-city';
+				} else if (city === 'adachi') {
+					collectorId = 'adachi-city';
+				} else if (city === 'katsushika') {
+					collectorId = 'katsushika-city';
+				} else if (city === 'edogawa') {
+					collectorId = 'edogawa-city';
 				}
 				
 				// Insert facility

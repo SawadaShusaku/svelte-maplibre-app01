@@ -54,6 +54,16 @@ function genId() {
   return id;
 }
 
+function findExistingFeature(name, address) {
+  // Check by name first
+  let existing = geojson.features.find(f => f.properties.name === name);
+  if (existing) return existing;
+  // Then check by address
+  existing = geojson.features.find(f => f.properties.address === address);
+  if (existing) return existing;
+  return null;
+}
+
 function makeFeature(name, address, lat, lon, categories, notes = '', url = '') {
   const officialUrl = url || `https://www.city.${CITY_CODE}.lg.jp/`;
   return {
@@ -73,6 +83,23 @@ function makeFeature(name, address, lat, lon, categories, notes = '', url = '') 
       categoryUrls: {}
     }
   };
+}
+
+function mergeOrAddFeature(feature, categoriesToAdd) {
+  const existing = findExistingFeature(feature.properties.name, feature.properties.address);
+  if (existing) {
+    let changed = false;
+    for (const cat of categoriesToAdd) {
+      if (!existing.properties.categories.includes(cat)) {
+        existing.properties.categories.push(cat);
+        changed = true;
+      }
+    }
+    return { merged: true, changed };
+  } else {
+    geojson.features.push(feature);
+    return { merged: false };
+  }
 }
 
 /* ===================== 1. Ink Collection (has coordinates) ===================== */
@@ -99,8 +126,8 @@ function processInkCollection() {
     const name = cols[5];
     if (isNaN(lat) || isNaN(lon)) continue;
 
-    geojson.features.push(makeFeature(name, WARD_NAME, lat, lon, ['ink-cartridge']));
-    added++;
+    const result = mergeOrAddFeature(makeFeature(name, WARD_NAME, lat, lon, ['ink-cartridge']), ['ink-cartridge']);
+    if (!result.merged) added++;
   }
   console.log(`  Ink collection: ${added} added`);
   return added;
@@ -136,14 +163,14 @@ function processJbrcShops() {
 
     if (isNaN(lat) || isNaN(lon)) continue;
 
-    geojson.features.push(makeFeature(
+    const result = mergeOrAddFeature(makeFeature(
       name.replace(/["]/g, '').trim(),
       fullAddress.replace(/["]/g, '').trim() || WARD_NAME,
       lat, lon,
       ['rechargeable-battery'],
       'JBRC（日本小型家電リサイクル協会）回収拠点'
-    ));
-    added++;
+    ), ['rechargeable-battery']);
+    if (!result.merged) added++;
   }
   console.log(`  JBRC shops: ${added} added`);
   return added;
@@ -244,15 +271,15 @@ async function processButtonBattery() {
     }
 
     if (coords) {
-      geojson.features.push(makeFeature(
+      const result = mergeOrAddFeature(makeFeature(
         entry.name,
         cleanAddr,
         coords.lat,
         coords.lon,
         ['button-battery'],
         entry.tel ? `TEL: ${entry.tel}` : ''
-      ));
-      added++;
+      ), ['button-battery']);
+      if (!result.merged) added++;
     } else {
       console.log(`    [SKIP] No geocode: ${entry.name} | ${cleanAddr}`);
       skipped++;

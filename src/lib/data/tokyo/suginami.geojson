@@ -16,7 +16,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並区役所",
-        "address": "杉並区",
+        "address": "東京都杉並区阿佐谷南1丁目15-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -41,7 +41,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並清掃事務所",
-        "address": "杉並区",
+        "address": "東京都杉並区成田東5丁目15-20 杉並区清掃事務所",
         "categories": [
           "ink-cartridge"
         ],
@@ -66,7 +66,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並清掃事務所方南支所",
-        "address": "杉並区",
+        "address": "東京都杉並区方南1丁目3-4 杉並合同庁舎",
         "categories": [
           "ink-cartridge"
         ],
@@ -91,7 +91,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並清掃事務所高円寺車庫",
-        "address": "杉並区",
+        "address": "東京都杉並区高円寺南2丁目35-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -116,7 +116,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "中央図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区荻窪3丁目40-18 荻窪グリーンハイツ",
         "categories": [
           "ink-cartridge"
         ],
@@ -141,7 +141,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "宮前図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区宮前5丁目5-21",
         "categories": [
           "ink-cartridge"
         ],
@@ -166,7 +166,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "西荻図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区西荻北2丁目33-9",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +191,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "阿佐谷図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区阿佐谷北3丁目36-14",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +216,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "高井戸図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区高井戸東1丁目28-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +241,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "永福図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区永福3丁目51-51",
         "categories": [
           "ink-cartridge"
         ],
@@ -266,7 +266,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "南荻窪図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区南荻窪1丁目10-12",
         "categories": [
           "ink-cartridge"
         ],
@@ -291,7 +291,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "下井草図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区下井草3丁目26-5 下井草図書館",
         "categories": [
           "ink-cartridge"
         ],
@@ -316,7 +316,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "方南図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区方南1丁目51-2",
         "categories": [
           "ink-cartridge"
         ],
@@ -341,7 +341,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "今川図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区今川4丁目12-10 今川図書館",
         "categories": [
           "ink-cartridge"
         ],
@@ -366,7 +366,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "柿木図書館",
-        "address": "杉並区",
+        "address": "東京都杉並区上井草1丁目6-13 区立柿木図書館",
         "categories": [
           "ink-cartridge"
         ],
@@ -391,7 +391,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "環境活動推進センター",
-        "address": "杉並区",
+        "address": "東京都杉並区高井戸東3丁目7-番4号",
         "categories": [
           "ink-cartridge"
         ],
@@ -416,7 +416,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "阿佐谷地域区民センター",
-        "address": "杉並区",
+        "address": "東京都杉並区阿佐谷南1丁目47-17",
         "categories": [
           "ink-cartridge"
         ],
@@ -441,7 +441,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "井草地域区民センター",
-        "address": "杉並区",
+        "address": "東京都杉並区下井草5丁目7-22 杉並区立井草地域区民センター",
         "categories": [
           "ink-cartridge"
         ],
@@ -466,7 +466,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "永福和泉地域区民センター",
-        "address": "杉並区",
+        "address": "東京都杉並区和泉3丁目8-18 永福和泉地域区民センター B1 軽運動室",
         "categories": [
           "ink-cartridge"
         ],
@@ -491,7 +491,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "高井戸地域区民センター",
-        "address": "杉並区",
+        "address": "東京都杉並区高井戸東3丁目7-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -516,7 +516,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "西荻地域区民センター",
-        "address": "杉並区",
+        "address": "東京都杉並区桃井4丁目3 桃井四丁目（バス）",
         "categories": [
           "ink-cartridge"
         ],
@@ -541,7 +541,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "高円寺地域区民センター",
-        "address": "杉並区",
+        "address": "東京都杉並区梅里1丁目22",
         "categories": [
           "ink-cartridge"
         ],
@@ -566,7 +566,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "荻窪郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区桃井2丁目6-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -591,7 +591,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並桜上水郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区下高井戸1丁目23-9",
         "categories": [
           "ink-cartridge"
         ],
@@ -616,7 +616,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "高円寺駅前郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区高円寺北2丁目20-7 三貴丸ビル",
         "categories": [
           "ink-cartridge"
         ],
@@ -641,7 +641,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並南郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区浜田山4丁目5-30",
         "categories": [
           "ink-cartridge"
         ],
@@ -666,7 +666,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "荻窪四郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区荻窪4丁目22-11",
         "categories": [
           "ink-cartridge"
         ],
@@ -691,7 +691,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "阿佐谷駅前郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区阿佐谷南3丁目35-8 パークハウス阿佐ヶ谷レジデンス 1階",
         "categories": [
           "ink-cartridge"
         ],
@@ -716,7 +716,7 @@
         "city": "suginami",
         "cityLabel": "杉並区",
         "name": "杉並郵便局",
-        "address": "杉並区",
+        "address": "東京都杉並区成田東4丁目38-14 日本郵便杉並郵便局",
         "categories": [
           "ink-cartridge"
         ],

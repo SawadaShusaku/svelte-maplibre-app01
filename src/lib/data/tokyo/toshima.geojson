@@ -47,7 +47,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "みらい館大明",
-        "address": "豊島区池袋3-30-8",
+        "address": "東京都豊島区池袋3丁目30-8",
         "categories": [
           "fluorescent",
           "ink-cartridge",
@@ -82,7 +82,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "豊島清掃事務所",
-        "address": "豊島区池袋本町1-7-3",
+        "address": "東京都豊島区池袋本町1丁目7-3",
         "categories": [
           "cooking-oil",
           "ink-cartridge",
@@ -339,7 +339,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば池袋",
-        "address": "豊島区池袋4-21-10",
+        "address": "東京都豊島区池袋4丁目21-10 池袋第二児童館区民集会所",
         "categories": [
           "cooking-oil",
           "ink-cartridge"
@@ -426,8 +426,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.746658,
-          35.737057
+          139.7475636,
+          35.7370393
         ]
       },
       "properties": {
@@ -468,7 +468,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば仰高",
-        "address": "豊島区駒込4-12-3",
+        "address": "東京都豊島区駒込4丁目12-3",
         "categories": [
           "cooking-oil",
           "fluorescent",
@@ -501,7 +501,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば清和第一",
-        "address": "豊島区巣鴨3-15-20",
+        "address": "東京都豊島区巣鴨3丁目15-8",
         "categories": [
           "cooking-oil",
           "fluorescent",
@@ -566,7 +566,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "雑司が谷地域文化創造館",
-        "address": "豊島区雑司が谷3-1-7",
+        "address": "東京都豊島区雑司が谷3丁目1-7",
         "categories": [
           "cooking-oil",
           "small-appliance",
@@ -663,7 +663,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば高松",
-        "address": "豊島区高松2-25-9",
+        "address": "東京都豊島区高松2丁目25-9 区民ひろば高松",
         "categories": [
           "cooking-oil",
           "ink-cartridge",
@@ -686,8 +686,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.691254,
-          35.735889
+          139.690629,
+          35.735564
         ]
       },
       "properties": {
@@ -761,7 +761,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば西巣鴨第一",
-        "address": "豊島区西巣鴨2-35-3",
+        "address": "東京都豊島区西巣鴨2丁目35-3 区民ひろば西巣鴨第一",
         "categories": [
           "cooking-oil",
           "small-appliance",
@@ -794,7 +794,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "シルバー人材センター",
-        "address": "豊島区東池袋2-55-6",
+        "address": "東京都豊島区東池袋2丁目55-6 3F シルバー人材センター内1F",
         "categories": [
           "cooking-oil",
           "ink-cartridge",
@@ -859,7 +859,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "東部区民事務所 / 東部障害支援センター",
-        "address": "豊島区南大塚2-36-2",
+        "address": "東京都豊島区南大塚2丁目36-2 都営南大塚二丁目アパート 都営南大塚2丁目アパート",
         "categories": [
           "cooking-oil",
           "ink-cartridge"
@@ -891,7 +891,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば富士見台",
-        "address": "豊島区南長崎1-6-1",
+        "address": "東京都豊島区南長崎1丁目6-1",
         "categories": [
           "cooking-oil",
           "small-appliance",
@@ -956,7 +956,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば目白",
-        "address": "豊島区目白2-20-26",
+        "address": "東京都豊島区目白2丁目20-26",
         "categories": [
           "cooking-oil",
           "small-appliance",
@@ -1082,7 +1082,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "豊島リサイクルセンター",
-        "address": "豊島区北大塚3-29-11",
+        "address": "東京都豊島区北大塚3丁目29-11",
         "categories": [
           "fluorescent",
           "small-appliance",
@@ -1149,7 +1149,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば千早",
-        "address": "豊島区要町3-7-10",
+        "address": "東京都豊島区要町3丁目7-10",
         "categories": [
           "fluorescent",
           "ink-cartridge",
@@ -1217,7 +1217,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "巣鴨地域文化創造館",
-        "address": "豊島区巣鴨4-15-11",
+        "address": "東京都豊島区巣鴨4丁目15-11",
         "categories": [
           "fluorescent",
           "small-appliance",
@@ -1251,7 +1251,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "としま産業振興プラザIKE・Biz",
-        "address": "豊島区西池袋2-37-4",
+        "address": "東京都豊島区西池袋2丁目37-4",
         "categories": [
           "small-appliance",
           "ink-cartridge",
@@ -1284,7 +1284,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろば朋有",
-        "address": "豊島区東池袋2-38-10",
+        "address": "東京都豊島区東池袋2丁目38-10",
         "categories": [
           "small-appliance",
           "ink-cartridge",
@@ -1307,8 +1307,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.730331,
-          35.728771
+          139.7298233,
+          35.7292289
         ]
       },
       "properties": {
@@ -1317,7 +1317,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "南大塚地域文化創造館",
-        "address": "豊島区南大塚2-36-1",
+        "address": "東京都豊島区南大塚2丁目36-2 都営南大塚二丁目アパート 都営南大塚2丁目アパート",
         "categories": [
           "small-appliance",
           "ink-cartridge",
@@ -1350,7 +1350,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "区民ひろばさくら第二",
-        "address": "豊島区長崎6-37-11",
+        "address": "東京都豊島区長崎6丁目37-11",
         "categories": [
           "small-appliance",
           "ink-cartridge"
@@ -1382,7 +1382,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "千早地域文化創造館",
-        "address": "豊島区千早2-35-12",
+        "address": "東京都豊島区千早2丁目44-2",
         "categories": [
           "ink-cartridge",
           "dry-battery"
@@ -1414,7 +1414,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "千早図書館",
-        "address": "豊島区千早2-44-2",
+        "address": "東京都豊島区千早2丁目44-2",
         "categories": [
           "ink-cartridge",
           "dry-battery"
@@ -1446,7 +1446,7 @@
         "city": "toshima",
         "cityLabel": "豊島区",
         "name": "北大塚区民事務所",
-        "address": "豊島区北大塚1-15-10",
+        "address": "東京都豊島区北大塚1丁目15-10",
         "categories": [
           "ink-cartridge"
         ],

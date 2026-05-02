@@ -1330,7 +1330,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "お台場海浜公園前郵便局",
-        "address": "東京都港区台場一丁目",
+        "address": "東京都港区台場1丁目5-4-301",
         "categories": [
           "ink-cartridge"
         ],
@@ -1355,7 +1355,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "アーク森ビル内郵便局",
-        "address": "東京都港区六本木一丁目",
+        "address": "東京都港区赤坂1丁目12-32",
         "categories": [
           "ink-cartridge"
         ],
@@ -1380,7 +1380,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "三田国際ビル内郵便局",
-        "address": "東京都港区三田一丁目",
+        "address": "東京都港区三田1丁目4-28 三田国際ビル 25階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1405,7 +1405,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "六本木ヒルズ郵便局",
-        "address": "東京都港区六本木六丁目",
+        "address": "東京都港区六本木6丁目10-1 六本木ヒルズ森タワー 17F",
         "categories": [
           "ink-cartridge"
         ],
@@ -1430,7 +1430,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "新橋四郵便局",
-        "address": "東京都港区新橋四丁目",
+        "address": "東京都港区新橋4丁目30-6",
         "categories": [
           "ink-cartridge"
         ],
@@ -1455,7 +1455,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "港港南郵便局",
-        "address": "東京都港区港南二丁目",
+        "address": "東京都港区港南2丁目4-13",
         "categories": [
           "ink-cartridge"
         ],
@@ -1480,7 +1480,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "西麻布郵便局",
-        "address": "東京都港区西麻布一丁目",
+        "address": "東京都港区西麻布1丁目13-14 シャロム西麻布 3階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1505,7 +1505,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "麻布十番郵便局",
-        "address": "東京都港区麻布十番二丁目",
+        "address": "東京都港区麻布十番2丁目3-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -1530,7 +1530,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "小松ビル内郵便局",
-        "address": "東京都港区赤坂二丁目",
+        "address": "東京都港区赤坂2丁目3-6 コマツビルディング",
         "categories": [
           "ink-cartridge"
         ],
@@ -1555,7 +1555,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "新橋郵便局",
-        "address": "東京都港区新橋一丁目",
+        "address": "東京都港区新橋1丁目6-9",
         "categories": [
           "ink-cartridge"
         ],
@@ -1580,7 +1580,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "麻布台ヒルズ郵便局",
-        "address": "東京都港区麻布台一丁目",
+        "address": "東京都港区麻布台1丁目3-1 4F",
         "categories": [
           "ink-cartridge"
         ],
@@ -1605,7 +1605,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "芝郵便局",
-        "address": "東京都港区西新橋三丁目",
+        "address": "東京都中央区銀座3丁目4-5",
         "categories": [
           "ink-cartridge"
         ],
@@ -1630,7 +1630,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "芝浦海岸通郵便局",
-        "address": "東京都港区芝浦四丁目",
+        "address": "東京都港区芝浦4丁目13-23",
         "categories": [
           "ink-cartridge"
         ],
@@ -1655,7 +1655,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "南麻布五郵便局",
-        "address": "東京都港区南麻布五丁目",
+        "address": "東京都港区南麻布5丁目16-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -1680,7 +1680,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "慶應義塾前郵便局",
-        "address": "東京都港区芝五丁目",
+        "address": "東京都港区芝5丁目13-18",
         "categories": [
           "ink-cartridge"
         ],
@@ -1705,7 +1705,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "港白金三郵便局",
-        "address": "東京都港区白金三丁目",
+        "address": "東京都港区白金3丁目1-8",
         "categories": [
           "ink-cartridge"
         ],
@@ -1730,7 +1730,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "港芝四郵便局",
-        "address": "東京都港区芝四丁目",
+        "address": "東京都港区芝4丁目13-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -1755,7 +1755,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "高輪郵便局",
-        "address": "東京都港区三田三丁目",
+        "address": "東京都港区三田3丁目8-6",
         "categories": [
           "ink-cartridge"
         ],
@@ -1780,7 +1780,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "港白金台郵便局",
-        "address": "東京都港区白金台三丁目",
+        "address": "東京都港区白金台3丁目2-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -1805,7 +1805,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "虎ノ門ヒルズ郵便局",
-        "address": "東京都港区虎ノ門一丁目",
+        "address": "東京都港区虎ノ門1丁目23-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -1830,7 +1830,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "西新橋郵便局",
-        "address": "東京都港区西新橋一丁目",
+        "address": "東京都港区西新橋1丁目5-13",
         "categories": [
           "ink-cartridge"
         ],
@@ -1855,7 +1855,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "赤坂郵便局",
-        "address": "東京都港区赤坂八丁目",
+        "address": "東京都港区赤坂8丁目4-16",
         "categories": [
           "ink-cartridge"
         ],
@@ -1880,7 +1880,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "シーバンスＮ館内郵便局",
-        "address": "東京都港区芝浦一丁目",
+        "address": "東京都港区芝浦1丁目2-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -1905,7 +1905,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "全特六本木ビル内郵便局",
-        "address": "東京都港区六本木一丁目",
+        "address": "東京都港区六本木1丁目7-27",
         "categories": [
           "ink-cartridge"
         ],
@@ -1930,7 +1930,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "品川インターシティ郵便局",
-        "address": "東京都港区港南二丁目",
+        "address": "東京都港区港南2丁目15-2 品川インターシティビルS&R棟3階",
         "categories": [
           "ink-cartridge"
         ],
@@ -1955,7 +1955,7 @@
         "city": "minato",
         "cityLabel": "港区",
         "name": "汐留シティセンター郵便局",
-        "address": "東京都港区東新橋一丁目",
+        "address": "東京都港区東新橋1丁目5-2",
         "categories": [
           "ink-cartridge"
         ],

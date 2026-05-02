@@ -16,7 +16,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野本町三郵便局",
-        "address": "東京都中野区本町三丁目",
+        "address": "東京都中野区本町3丁目31-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -41,7 +41,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "富士見台駅前郵便局",
-        "address": "東京都中野区上鷺宮四丁目",
+        "address": "東京都中野区上鷺宮4丁目16-16-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -66,7 +66,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野南台二郵便局",
-        "address": "東京都中野区南台二丁目",
+        "address": "東京都中野区南台2丁目51-10",
         "categories": [
           "ink-cartridge"
         ],
@@ -91,7 +91,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野北郵便局",
-        "address": "東京都中野区丸山一丁目",
+        "address": "東京都中野区丸山1丁目28 中野北郵便局前",
         "categories": [
           "ink-cartridge"
         ],
@@ -116,7 +116,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野野方五郵便局",
-        "address": "東京都中野区野方五丁目",
+        "address": "東京都中野区野方5丁目3-7",
         "categories": [
           "ink-cartridge"
         ],
@@ -141,7 +141,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野郵便局",
-        "address": "東京都中野区中野二丁目",
+        "address": "東京都中野区中野2丁目27-19",
         "categories": [
           "ink-cartridge"
         ],
@@ -166,7 +166,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野大和町郵便局",
-        "address": "東京都中野区大和町一丁目",
+        "address": "東京都中野区大和町1丁目64-64-1",
         "categories": [
           "ink-cartridge"
         ],
@@ -191,7 +191,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野弥生郵便局",
-        "address": "東京都中野区弥生町一丁目",
+        "address": "東京都中野区弥生町1丁目19-8",
         "categories": [
           "ink-cartridge"
         ],
@@ -216,7 +216,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "落合郵便局",
-        "address": "東京都中野区東中野四丁目",
+        "address": "東京都中野区東中野4丁目27-21",
         "categories": [
           "ink-cartridge"
         ],
@@ -241,7 +241,7 @@
         "city": "nakano",
         "cityLabel": "中野区",
         "name": "中野坂上郵便局",
-        "address": "東京都中野区本町一丁目",
+        "address": "東京都中野区本町1丁目32-2 ハーモニータワー12Fペットゴー",
         "categories": [
           "ink-cartridge"
         ],
