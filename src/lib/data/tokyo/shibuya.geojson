@@ -1,0 +1,3480 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7062004,
+          35.6615413
+        ]
+      },
+      "properties": {
+        "id": "shibuya-001",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所（美竹分庁舎）",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709444,
+          35.672733
+        ]
+      },
+      "properties": {
+        "id": "shibuya-002",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷神宮前郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7040784,
+          35.6602914
+        ]
+      },
+      "properties": {
+        "id": "shibuya-003",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.712888,
+          35.648805
+        ]
+      },
+      "properties": {
+        "id": "shibuya-004",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷橋郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.708916,
+          35.662766
+        ]
+      },
+      "properties": {
+        "id": "shibuya-005",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷青山通郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.701934,
+          35.680834
+        ]
+      },
+      "properties": {
+        "id": "shibuya-006",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "代々木駅前通郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705093,
+          35.666628
+        ]
+      },
+      "properties": {
+        "id": "shibuya-007",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "神宮前六郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.708297,
+          35.654024
+        ]
+      },
+      "properties": {
+        "id": "shibuya-008",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷東二郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.664612,
+          35.673923
+        ]
+      },
+      "properties": {
+        "id": "shibuya-009",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷笹塚郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695132,
+          35.660138
+        ]
+      },
+      "properties": {
+        "id": "shibuya-010",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷松濤郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690524,
+          35.668098
+        ]
+      },
+      "properties": {
+        "id": "shibuya-011",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷富ケ谷一郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.708033,
+          35.646259
+        ]
+      },
+      "properties": {
+        "id": "shibuya-012",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿駅前郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696143,
+          35.657176
+        ]
+      },
+      "properties": {
+        "id": "shibuya-013",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷道玄坂郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.682311,
+          35.669643
+        ]
+      },
+      "properties": {
+        "id": "shibuya-014",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷上原郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6823548,
+          35.6768471
+        ]
+      },
+      "properties": {
+        "id": "shibuya-015",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "代々木郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697776,
+          35.687793
+        ]
+      },
+      "properties": {
+        "id": "shibuya-016",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "新宿駅南口郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.71321,
+          35.64227
+        ]
+      },
+      "properties": {
+        "id": "shibuya-017",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿ガーデンプレイス郵便局",
+        "address": "渋谷区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69981384277344,
+          35.682193756103516
+        ]
+      },
+      "properties": {
+        "id": "shibuya-018",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "矢崎電機（株）",
+        "address": "東京都渋谷区代々木１−１３−９アン黒岩１０１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69692993164062,
+          35.65547561645508
+        ]
+      },
+      "properties": {
+        "id": "shibuya-019",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "（株）リビングニホンドウ",
+        "address": "東京都渋谷区南平台町３−１５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69818115234375,
+          35.65996170043945
+        ]
+      },
+      "properties": {
+        "id": "shibuya-020",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "（株）ヤマダデンキ　ＬＡＢＩ渋谷",
+        "address": "東京都渋谷区道玄坂２−２９−２０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.71336364746094,
+          35.6436653137207
+        ]
+      },
+      "properties": {
+        "id": "shibuya-021",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ＤＣＭ（株）　ＤＣＭ　ＤＩＹ　ｐｌａｃｅ",
+        "address": "東京都渋谷区恵比寿４丁目２０番７号恵比寿ガーデンプレイス　センタープラザ　１Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69955444335938,
+          35.659385681152344
+        ]
+      },
+      "properties": {
+        "id": "shibuya-022",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ビックカメラ渋谷ハチ公口店　レジカウンター",
+        "address": "東京都渋谷区道玄坂２−５−９",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70216369628906,
+          35.6599006652832
+        ]
+      },
+      "properties": {
+        "id": "shibuya-023",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ビックカメラ渋谷東口店　レジカウンター",
+        "address": "東京都渋谷区渋谷１−２４−１２",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.704559,
+          35.659813
+        ]
+      },
+      "properties": {
+        "id": "shibuya-024",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ブルーム渋谷店",
+        "address": "東京都渋谷区渋谷２−１９−２０宮益坂村瀬ビル２階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3406-3341",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.713791,
+          35.671455
+        ]
+      },
+      "properties": {
+        "id": "shibuya-025",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "�蟆�山電気商会",
+        "address": "東京都渋谷区神宮前３−４２−９",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3401-0773",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700668,
+          35.662086
+        ]
+      },
+      "properties": {
+        "id": "shibuya-026",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "メガネ　パリ　ミキ　渋谷店",
+        "address": "東京都渋谷区神南１丁目２１番１号日本生命ビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3496-7538",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.701614,
+          35.682076
+        ]
+      },
+      "properties": {
+        "id": "shibuya-027",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "有限会社代々木補聴器センター",
+        "address": "東京都渋谷区代々木１−２８−１ダムビル２階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3320-1670",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.704758,
+          35.657658
+        ]
+      },
+      "properties": {
+        "id": "shibuya-028",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "リオネットセンター渋谷店",
+        "address": "東京都渋谷区渋谷3-6-19第一矢木ビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5467-4021",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677383,
+          35.679108
+        ]
+      },
+      "properties": {
+        "id": "shibuya-029",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "有限会社パラックス",
+        "address": "東京都渋谷区幡ケ谷２−３−８",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3377-7197",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.717102,
+          35.648624
+        ]
+      },
+      "properties": {
+        "id": "shibuya-030",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ヒヤリング・ディストリビュータ・ジャパン株式会社　池田補聴器　広尾店",
+        "address": "東京都渋谷区広尾１丁目１０−６広尾ピア寿々1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6447-7455",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699814,
+          35.682194
+        ]
+      },
+      "properties": {
+        "id": "shibuya-031",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "矢崎　電機��",
+        "address": "東京都渋谷区代々木1-13-9アンクロイワ1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3375-1486",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699661,
+          35.686485
+        ]
+      },
+      "properties": {
+        "id": "shibuya-032",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "リオネットセンター",
+        "address": "東京都渋谷区代々木2-1-5JR南新宿ビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3379-5524",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698181,
+          35.659962
+        ]
+      },
+      "properties": {
+        "id": "shibuya-033",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "�螢筌泪瀬妊鵐�　LABI渋谷",
+        "address": "東京都渋谷区道玄坂２−２９−２０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5456-6300",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.713364,
+          35.643665
+        ]
+      },
+      "properties": {
+        "id": "shibuya-034",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ＤＣＭ DIY place",
+        "address": "東京都渋谷区恵比寿4丁目20番7号恵比寿ガーデンプレイスセンタープラザ1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5421-7330",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.668381,
+          35.673744
+        ]
+      },
+      "properties": {
+        "id": "shibuya-035",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ビジョンメガネ笹塚ＳＭ店",
+        "address": "東京都渋谷区笹塚１−４８−１４笹塚ショッピングモール２Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3485-8145",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70784,
+          35.646236
+        ]
+      },
+      "properties": {
+        "id": "shibuya-036",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "有限会社　　岩崎電機商會",
+        "address": "東京都渋谷区恵比寿南１−２−１０エビスユニオンビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3713-3892",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706726,
+          35.677067
+        ]
+      },
+      "properties": {
+        "id": "shibuya-037",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "オーケー千駄ヶ谷店",
+        "address": "東京都渋谷区千駄ヶ谷3-33-2",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 036721-1756",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667816,
+          35.676331
+        ]
+      },
+      "properties": {
+        "id": "shibuya-038",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "株式会社あきもと",
+        "address": "東京都渋谷区笹塚２−４２−１７あきもとビル1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3377-7171",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686127,
+          35.674278
+        ]
+      },
+      "properties": {
+        "id": "shibuya-039",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "オーケー初台店",
+        "address": "東京都渋谷区初台2-5-7",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3378-3921",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700668,
+          35.660862
+        ]
+      },
+      "properties": {
+        "id": "shibuya-040",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "眼鏡市場  渋谷",
+        "address": "東京都渋谷区宇田川町２０番１号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5459-6918",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705566,
+          35.666706
+        ]
+      },
+      "properties": {
+        "id": "shibuya-041",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "株式会社　ナショナル・フオート",
+        "address": "東京都渋谷区神宮前６−１３−１１NPビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3486-7761",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69693,
+          35.655476
+        ]
+      },
+      "properties": {
+        "id": "shibuya-042",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "株式会社リビングニホンドウ",
+        "address": "東京都渋谷区南平台町3-15",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3461-8269",
+        "officialUrl": "https://www.city.shibuya.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699387,
+          35.66256
+        ]
+      },
+      "properties": {
+        "id": "shibuya-043",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "勤労福祉会館",
+        "address": "渋谷区神南1-19-8",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716446,
+          35.647762
+        ]
+      },
+      "properties": {
+        "id": "shibuya-044",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "新橋出張所 (入口右)",
+        "address": "渋谷区恵比寿1-27-10",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693085,
+          35.658886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-045",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター大向 (入口横)",
+        "address": "渋谷区松濤1-26-6",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681381,
+          35.689068
+        ]
+      },
+      "properties": {
+        "id": "shibuya-046",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター二軒家",
+        "address": "渋谷区本町3-35-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709045,
+          35.653782
+        ]
+      },
+      "properties": {
+        "id": "shibuya-047",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "氷川区民会館 (2階入口)",
+        "address": "渋谷区東2-20-18",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.684738,
+          35.679703
+        ]
+      },
+      "properties": {
+        "id": "shibuya-048",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "初台区民会館 (2階入口)",
+        "address": "渋谷区初台1-33-10",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670197,
+          35.677567
+        ]
+      },
+      "properties": {
+        "id": "shibuya-049",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "笹塚区民会館 (1階廊下脇)",
+        "address": "渋谷区笹塚3-1-9",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677032,
+          35.679886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-050",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "幡ヶ谷社会教育館 (1階託児室前)",
+        "address": "渋谷区幡ヶ谷2-50-2",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.719559,
+          35.645233
+        ]
+      },
+      "properties": {
+        "id": "shibuya-051",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿社会教育館 (駐車場内)",
+        "address": "渋谷区恵比寿2-27-18",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706604,
+          35.647366
+        ]
+      },
+      "properties": {
+        "id": "shibuya-052",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "長谷戸社会教育館(入口横)",
+        "address": "渋谷区恵比寿西1-23-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709869,
+          35.678024
+        ]
+      },
+      "properties": {
+        "id": "shibuya-053",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "千駄ヶ谷社会教育館 (1階受付脇)",
+        "address": "渋谷区千駄ヶ谷1-6-5",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678406,
+          35.66663
+        ]
+      },
+      "properties": {
+        "id": "shibuya-054",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "上原社会教育館 (1階入口)",
+        "address": "渋谷区上原3-13-8",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692917,
+          35.678665
+        ]
+      },
+      "properties": {
+        "id": "shibuya-055",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "はつらつセンター参宮橋(1階入口横)",
+        "address": "渋谷区代々木4-4-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706223,
+          35.661739
+        ]
+      },
+      "properties": {
+        "id": "shibuya-056",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所（入口正面）",
+        "address": "渋谷区渋谷1-2-17",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697052,
+          35.662384
+        ]
+      },
+      "properties": {
+        "id": "shibuya-057",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所 宇田川分室（1階入口）",
+        "address": "渋谷区宇田川町11-9",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705185,
+          35.667683
+        ]
+      },
+      "properties": {
+        "id": "shibuya-058",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター神宮前",
+        "address": "渋谷区神宮前6-10-14",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689362,
+          35.672184
+        ]
+      },
+      "properties": {
+        "id": "shibuya-059",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "YCC 代々木八幡コミュニティセンター",
+        "address": "渋谷区代々木5-1-15",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680313,
+          35.684822
+        ]
+      },
+      "properties": {
+        "id": "shibuya-060",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町CC 本町コミュニティセンター",
+        "address": "渋谷区本町4-39-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683182,
+          35.682587
+        ]
+      },
+      "properties": {
+        "id": "shibuya-061",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町リサイクルセンター",
+        "address": "渋谷区本町1-56-2",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "",
+        "notes": "回収拠点",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697189,
+          35.663475
+        ]
+      },
+      "properties": {
+        "id": "shibuya-062",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "区役所本庁舎",
+        "address": "東京都渋谷区宇田川町1-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699387,
+          35.66256
+        ]
+      },
+      "properties": {
+        "id": "shibuya-063",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "勤労福祉会館",
+        "address": "東京都渋谷区神南1-19-8",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693085,
+          35.658886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-064",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター大向",
+        "address": "東京都渋谷区松濤1-26-6",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70018,
+          35.655972
+        ]
+      },
+      "properties": {
+        "id": "shibuya-065",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "文化総合センター大和田",
+        "address": "東京都渋谷区桜丘町23-21",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703857,
+          35.649837
+        ]
+      },
+      "properties": {
+        "id": "shibuya-066",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "代官山スポーツプラザ",
+        "address": "東京都渋谷区代官山町17-9",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706604,
+          35.647366
+        ]
+      },
+      "properties": {
+        "id": "shibuya-067",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "長谷戸社会教育館",
+        "address": "東京都渋谷区恵比寿西1-23-4",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.707367,
+          35.650116
+        ]
+      },
+      "properties": {
+        "id": "shibuya-068",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター恵比寿",
+        "address": "東京都渋谷区恵比寿西2-8-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.719559,
+          35.645233
+        ]
+      },
+      "properties": {
+        "id": "shibuya-069",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿社会教育館",
+        "address": "東京都渋谷区恵比寿2-27-18",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716446,
+          35.647762
+        ]
+      },
+      "properties": {
+        "id": "shibuya-070",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "新橋出張所",
+        "address": "東京都渋谷区恵比寿1-27-10",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706223,
+          35.661739
+        ]
+      },
+      "properties": {
+        "id": "shibuya-071",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所",
+        "address": "東京都渋谷区渋谷1-2-17",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706421,
+          35.673378
+        ]
+      },
+      "properties": {
+        "id": "shibuya-072",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "中央図書館",
+        "address": "東京都渋谷区神宮前1-4-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703339,
+          35.685722
+        ]
+      },
+      "properties": {
+        "id": "shibuya-073",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷スポーツ共育プラザ&ラボすぽっと",
+        "address": "東京都渋谷区千駄ヶ谷5-27-11",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709869,
+          35.678024
+        ]
+      },
+      "properties": {
+        "id": "shibuya-074",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "千駄ヶ谷社会教育館",
+        "address": "東京都渋谷区千駄ヶ谷1-6-5",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678406,
+          35.66663
+        ]
+      },
+      "properties": {
+        "id": "shibuya-075",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "上原社会教育館",
+        "address": "東京都渋谷区上原3-13-8",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677841,
+          35.674896
+        ]
+      },
+      "properties": {
+        "id": "shibuya-076",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "西原出張所",
+        "address": "東京都渋谷区西原2-28-9",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680557,
+          35.675529
+        ]
+      },
+      "properties": {
+        "id": "shibuya-077",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "スポーツセンター",
+        "address": "東京都渋谷区西原1-40-18",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666382,
+          35.674431
+        ]
+      },
+      "properties": {
+        "id": "shibuya-078",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ホープ就労支援センター渋谷",
+        "address": "東京都渋谷区笹塚2-16-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695847,
+          35.682037
+        ]
+      },
+      "properties": {
+        "id": "shibuya-079",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター代々木",
+        "address": "東京都渋谷区代々木3-51-8",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689362,
+          35.672184
+        ]
+      },
+      "properties": {
+        "id": "shibuya-080",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "YCC代々木八幡コミュニティセンター",
+        "address": "東京都渋谷区代々木5-1-15",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677032,
+          35.679886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-081",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "幡ヶ谷社会教育館",
+        "address": "東京都渋谷区幡ヶ谷2-50-2",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683182,
+          35.682587
+        ]
+      },
+      "properties": {
+        "id": "shibuya-082",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町リサイクルセンター",
+        "address": "東京都渋谷区本町1-56-2",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680313,
+          35.684822
+        ]
+      },
+      "properties": {
+        "id": "shibuya-083",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町CC本町コミュニティセンター",
+        "address": "東京都渋谷区本町4-39-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681595,
+          35.680576
+        ]
+      },
+      "properties": {
+        "id": "shibuya-084",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町図書館",
+        "address": "東京都渋谷区本町1-33-5",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709381,
+          35.650887
+        ]
+      },
+      "properties": {
+        "id": "shibuya-085",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ひがし健康プラザ",
+        "address": "東京都渋谷区東3-14-13",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692917,
+          35.678665
+        ]
+      },
+      "properties": {
+        "id": "shibuya-086",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "はつらつセンター参宮橋",
+        "address": "東京都渋谷区代々木4-4-1",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705185,
+          35.667683
+        ]
+      },
+      "properties": {
+        "id": "shibuya-087",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター神宮前",
+        "address": "東京都渋谷区神宮前6-10-14",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "",
+        "notes": "小型家電回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/mini_elec.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706223,
+          35.661739
+        ]
+      },
+      "properties": {
+        "id": "shibuya-088",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所",
+        "address": "東京都渋谷区渋谷1-2-17",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "月〜金 8:30〜17:00、土 8:30〜15:55",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703857,
+          35.649837
+        ]
+      },
+      "properties": {
+        "id": "shibuya-089",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "代官山スポーツプラザ",
+        "address": "東京都渋谷区代官山町17-9",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "開館日 9:00〜20:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.701294,
+          35.651402
+        ]
+      },
+      "properties": {
+        "id": "shibuya-090",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "猿楽トレーニングジム",
+        "address": "東京都渋谷区猿楽町12-35",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "開館日 9:00〜20:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.719559,
+          35.645233
+        ]
+      },
+      "properties": {
+        "id": "shibuya-091",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿社会教育館",
+        "address": "東京都渋谷区恵比寿2-27-18",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "月・水〜土 9:00〜21:00、日 9:00〜17:30",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678406,
+          35.66663
+        ]
+      },
+      "properties": {
+        "id": "shibuya-092",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "上原社会教育館",
+        "address": "東京都渋谷区上原3-13-8",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "いつでも可",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677032,
+          35.679886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-093",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "幡ヶ谷社会教育館",
+        "address": "東京都渋谷区幡ヶ谷2-50-2",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "いつでも可",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709869,
+          35.678024
+        ]
+      },
+      "properties": {
+        "id": "shibuya-094",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "千駄ヶ谷社会教育館",
+        "address": "東京都渋谷区千駄ヶ谷1-6-5",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "火〜土 9:00〜20:30、日 9:00〜17:30",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709381,
+          35.650887
+        ]
+      },
+      "properties": {
+        "id": "shibuya-095",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ひがし健康プラザ",
+        "address": "東京都渋谷区東3-14-13",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "開館日 9:00〜20:30",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681335,
+          35.675034
+        ]
+      },
+      "properties": {
+        "id": "shibuya-096",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "総合ケアコミュニティ・せせらぎ",
+        "address": "東京都渋谷区西原1-40-10",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "火〜日 9:00〜17:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706421,
+          35.673378
+        ]
+      },
+      "properties": {
+        "id": "shibuya-097",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "中央図書館",
+        "address": "東京都渋谷区神宮前1-4-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "火〜土 9:00〜21:00、月・日 9:00〜18:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689362,
+          35.672184
+        ]
+      },
+      "properties": {
+        "id": "shibuya-098",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "YCC代々木八幡コミュニティセンター",
+        "address": "東京都渋谷区代々木5-1-15",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "月〜土 9:00〜22:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683121,
+          35.688335
+        ]
+      },
+      "properties": {
+        "id": "shibuya-099",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "児童青少年センターフレンズ本町",
+        "address": "東京都渋谷区本町3-7-6",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "開館日 10:00〜20:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683182,
+          35.682587
+        ]
+      },
+      "properties": {
+        "id": "shibuya-100",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町リサイクルセンター",
+        "address": "東京都渋谷区本町1-56-2",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "火〜日 9:00〜17:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680313,
+          35.684822
+        ]
+      },
+      "properties": {
+        "id": "shibuya-101",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町CC本町コミュニティセンター",
+        "address": "東京都渋谷区本町4-39-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "月〜金 8:30〜21:00、土日祝 9:00〜21:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67421,
+          35.677509
+        ]
+      },
+      "properties": {
+        "id": "shibuya-102",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "はつらつセンター幡ヶ谷",
+        "address": "東京都渋谷区幡ヶ谷2-19-14",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "金〜水 9:00〜21:00、日 9:00〜18:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6978,
+          35.684605
+        ]
+      },
+      "properties": {
+        "id": "shibuya-103",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター代々木の杜",
+        "address": "東京都渋谷区代々木2-35-1",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "火〜土 9:00〜21:00、日 9:00〜17:00",
+        "notes": "古布・衣類回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697189,
+          35.663475
+        ]
+      },
+      "properties": {
+        "id": "shibuya-104",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "区役所本庁舎",
+        "address": "東京都渋谷区宇田川町1-1",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699387,
+          35.66256
+        ]
+      },
+      "properties": {
+        "id": "shibuya-105",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "勤労福祉会館",
+        "address": "東京都渋谷区神南1-19-8",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716446,
+          35.647762
+        ]
+      },
+      "properties": {
+        "id": "shibuya-106",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "新橋出張所",
+        "address": "東京都渋谷区恵比寿1-27-10",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.682907,
+          35.668499
+        ]
+      },
+      "properties": {
+        "id": "shibuya-107",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "上原出張所",
+        "address": "東京都渋谷区上原1-18-6",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677841,
+          35.674896
+        ]
+      },
+      "properties": {
+        "id": "shibuya-108",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "西原出張所",
+        "address": "東京都渋谷区西原2-28-9",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705536,
+          35.681225
+        ]
+      },
+      "properties": {
+        "id": "shibuya-109",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "千駄ヶ谷出張所",
+        "address": "東京都渋谷区千駄ヶ谷4-25-14",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709045,
+          35.653782
+        ]
+      },
+      "properties": {
+        "id": "shibuya-110",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "氷川区民会館",
+        "address": "東京都渋谷区東2-20-18",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.684738,
+          35.679703
+        ]
+      },
+      "properties": {
+        "id": "shibuya-111",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "初台区民会館",
+        "address": "東京都渋谷区初台1-33-10",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695847,
+          35.682037
+        ]
+      },
+      "properties": {
+        "id": "shibuya-112",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター代々木",
+        "address": "東京都渋谷区代々木3-51-8",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.711014,
+          35.646336
+        ]
+      },
+      "properties": {
+        "id": "shibuya-113",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿駅前出張所",
+        "address": "東京都渋谷区恵比寿4-2-6",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670197,
+          35.677567
+        ]
+      },
+      "properties": {
+        "id": "shibuya-114",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "笹塚区民会館",
+        "address": "東京都渋谷区笹塚3-1-9",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.676147,
+          35.679737
+        ]
+      },
+      "properties": {
+        "id": "shibuya-115",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "幡ヶ谷区民会館",
+        "address": "東京都渋谷区幡ヶ谷3-4-1",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689362,
+          35.672184
+        ]
+      },
+      "properties": {
+        "id": "shibuya-116",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "YCC代々木八幡コミュニティセンター",
+        "address": "東京都渋谷区代々木5-1-15",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683182,
+          35.682587
+        ]
+      },
+      "properties": {
+        "id": "shibuya-117",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町リサイクルセンター",
+        "address": "東京都渋谷区本町1-56-2",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680313,
+          35.684822
+        ]
+      },
+      "properties": {
+        "id": "shibuya-118",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町CC本町コミュニティセンター",
+        "address": "東京都渋谷区本町4-39-1",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705185,
+          35.667683
+        ]
+      },
+      "properties": {
+        "id": "shibuya-119",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター神宮前",
+        "address": "東京都渋谷区神宮前6-10-14",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693085,
+          35.658886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-120",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "地域交流センター大向",
+        "address": "東京都渋谷区松濤1-26-6",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709381,
+          35.650887
+        ]
+      },
+      "properties": {
+        "id": "shibuya-121",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "ひがし健康プラザ",
+        "address": "東京都渋谷区東3-14-13",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70018,
+          35.655972
+        ]
+      },
+      "properties": {
+        "id": "shibuya-122",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "文化総合センター大和田",
+        "address": "東京都渋谷区桜丘町23-21",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680557,
+          35.675529
+        ]
+      },
+      "properties": {
+        "id": "shibuya-123",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "スポーツセンター",
+        "address": "東京都渋谷区西原1-40-18",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.701294,
+          35.651402
+        ]
+      },
+      "properties": {
+        "id": "shibuya-124",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "猿楽トレーニングジム",
+        "address": "東京都渋谷区猿楽町12-35",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703857,
+          35.649837
+        ]
+      },
+      "properties": {
+        "id": "shibuya-125",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "代官山スポーツプラザ",
+        "address": "東京都渋谷区代官山町17-9",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706421,
+          35.673378
+        ]
+      },
+      "properties": {
+        "id": "shibuya-126",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "中央図書館",
+        "address": "東京都渋谷区神宮前1-4-1",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681595,
+          35.680576
+        ]
+      },
+      "properties": {
+        "id": "shibuya-127",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "本町図書館",
+        "address": "東京都渋谷区本町1-33-5",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716904,
+          35.648769
+        ]
+      },
+      "properties": {
+        "id": "shibuya-128",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "臨川みんなの図書館",
+        "address": "東京都渋谷区広尾1-9-17",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677032,
+          35.679886
+        ]
+      },
+      "properties": {
+        "id": "shibuya-129",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "幡ヶ谷社会教育館",
+        "address": "東京都渋谷区幡ヶ谷2-50-2",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.719559,
+          35.645233
+        ]
+      },
+      "properties": {
+        "id": "shibuya-130",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "恵比寿社会教育館",
+        "address": "東京都渋谷区恵比寿2-27-18",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706604,
+          35.647366
+        ]
+      },
+      "properties": {
+        "id": "shibuya-131",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "長谷戸社会教育館",
+        "address": "東京都渋谷区恵比寿西1-23-4",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709869,
+          35.678024
+        ]
+      },
+      "properties": {
+        "id": "shibuya-132",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "千駄ヶ谷社会教育館",
+        "address": "東京都渋谷区千駄ヶ谷1-6-5",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678406,
+          35.66663
+        ]
+      },
+      "properties": {
+        "id": "shibuya-133",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "上原社会教育館",
+        "address": "東京都渋谷区上原3-13-8",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690704,
+          35.66888
+        ]
+      },
+      "properties": {
+        "id": "shibuya-134",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "はつらつセンター富ヶ谷",
+        "address": "東京都渋谷区富ヶ谷1-8-5",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692917,
+          35.678665
+        ]
+      },
+      "properties": {
+        "id": "shibuya-135",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "はつらつセンター参宮橋",
+        "address": "東京都渋谷区代々木4-4-1",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706223,
+          35.661739
+        ]
+      },
+      "properties": {
+        "id": "shibuya-136",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所",
+        "address": "東京都渋谷区渋谷1-2-17",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697052,
+          35.662384
+        ]
+      },
+      "properties": {
+        "id": "shibuya-137",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "渋谷区清掃事務所 宇田川分室",
+        "address": "東京都渋谷区宇田川町11-9",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681335,
+          35.675034
+        ]
+      },
+      "properties": {
+        "id": "shibuya-138",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "総合ケアコミュニティ・せせらぎ",
+        "address": "東京都渋谷区西原1-40-10",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703766,
+          35.660564
+        ]
+      },
+      "properties": {
+        "id": "shibuya-139",
+        "prefecture": "tokyo",
+        "city": "shibuya",
+        "cityLabel": "渋谷区",
+        "name": "商工会館",
+        "address": "東京都渋谷区渋谷1-12-5",
+        "categories": [
+          "paper-pack"
+        ],
+        "hours": "",
+        "notes": "紙パック回収ボックス設置",
+        "officialUrl": "https://www.city.shibuya.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}
