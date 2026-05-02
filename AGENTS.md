@@ -197,6 +197,15 @@ binding = "ASSETS"
 
 Do **not** use GitHub Actions for deployment — the Cloudflare Git integration handles builds and deployments automatically.
 
+## Skills
+
+This repository includes a local Jujutsu skill for agents that support project-level skills:
+
+- `.agents/skills/jujutsu-skill/SKILL.md`
+- `.codex/skills/jujutsu-skill/SKILL.md`
+
+Use this skill when working with `jj` commands, bookmarks, rebasing, revsets, or conflict resolution in this repository.
+
 ## Aliases
 
 - `$lib` → `src/lib/` (SvelteKit default)

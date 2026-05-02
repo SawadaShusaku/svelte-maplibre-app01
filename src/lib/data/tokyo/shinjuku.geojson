@@ -6,38 +6,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6916481,
-          35.6891848
-        ]
-      },
-      "properties": {
-        "id": "shinjuku-001",
-        "prefecture": "tokyo",
-        "city": "shinjuku",
-        "cityLabel": "新宿区",
-        "name": "信濃町駅前郵便局 / 北新宿三郵便局 / 四谷特別出張所 / 新宿区役所本庁舎 / 東京都庁舎（４ヶ所） / 新宿清掃事務所 / 西早稲田リサイクル活動センター / 環境学習情報センター / 箪笥町特別出張所 / 榎町特別出張所 / 若松町特別出張所 / 大久保特別出張所 / 戸塚特別出張所 / 落合第一特別出張所 / 落合第二特別出張所 / 柏木特別出張所 / 角筈特別出張所 / 新宿リサイクル活動センター / 新宿東清掃センター / 新宿下落合三郵便局 / 新宿西落合郵便局 / 四谷駅前郵便局 / 新宿神楽坂郵便局 / 新宿郵便局 / 新宿大久保郵便局 / 新宿天神郵便局 / 飯田橋駅東口郵便局 / 新宿保健会館内郵便局 / 新宿第一生命ビル内郵便局 / 新宿北郵便局 / 新宿野村ビル内郵便局 / 牛込郵便局 / 四谷通二郵便局 / 牛込若松町郵便局 / 新宿諏訪町郵便局 / 新宿小滝橋郵便局 / 新宿センタービル内郵便局 / 東京オペラシティ郵便局 / 新宿二郵便局 / 高田馬場二郵便局 / 新宿パークタワー内郵便局 / 新宿アイタウン郵便局 / 新宿下落合四郵便局",
-        "address": "新宿区",
-        "categories": [
-          "cooking-oil",
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.shinjuku.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.69842529296875,
           35.68859100341797
         ]
       },
       "properties": {
-        "id": "shinjuku-002",
+        "id": "shinjuku-001",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -62,7 +36,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-003",
+        "id": "shinjuku-002",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -88,7 +62,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-004",
+        "id": "shinjuku-003",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -113,7 +87,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-005",
+        "id": "shinjuku-004",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -138,7 +112,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-006",
+        "id": "shinjuku-005",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -163,7 +137,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-007",
+        "id": "shinjuku-006",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -188,7 +162,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-008",
+        "id": "shinjuku-007",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -213,7 +187,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-009",
+        "id": "shinjuku-008",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -238,7 +212,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-010",
+        "id": "shinjuku-009",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -263,7 +237,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-011",
+        "id": "shinjuku-010",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -288,7 +262,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-012",
+        "id": "shinjuku-011",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -313,7 +287,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-013",
+        "id": "shinjuku-012",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -338,7 +312,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-014",
+        "id": "shinjuku-013",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -363,7 +337,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-015",
+        "id": "shinjuku-014",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -388,7 +362,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-016",
+        "id": "shinjuku-015",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -413,7 +387,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-017",
+        "id": "shinjuku-016",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -438,12 +412,12 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-018",
+        "id": "shinjuku-017",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
         "name": "眼鏡市場　新宿京王モール",
-        "address": "東京都新宿区西新宿１ー１京王モールB１F",
+        "address": "東京都新宿区西新宿-京王モールB１F",
         "categories": [
           "button-battery"
         ],
@@ -463,7 +437,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-019",
+        "id": "shinjuku-018",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -488,7 +462,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-020",
+        "id": "shinjuku-019",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -513,7 +487,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-021",
+        "id": "shinjuku-020",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -538,7 +512,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-022",
+        "id": "shinjuku-021",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -563,7 +537,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-023",
+        "id": "shinjuku-022",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -588,7 +562,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-024",
+        "id": "shinjuku-023",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -613,7 +587,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-025",
+        "id": "shinjuku-024",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -638,7 +612,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-026",
+        "id": "shinjuku-025",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -663,7 +637,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-027",
+        "id": "shinjuku-026",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -688,7 +662,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-028",
+        "id": "shinjuku-027",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -713,7 +687,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-029",
+        "id": "shinjuku-028",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -738,7 +712,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-030",
+        "id": "shinjuku-029",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -763,7 +737,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-031",
+        "id": "shinjuku-030",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -788,7 +762,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-032",
+        "id": "shinjuku-031",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -813,7 +787,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-033",
+        "id": "shinjuku-032",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -838,7 +812,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-034",
+        "id": "shinjuku-033",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -863,7 +837,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-035",
+        "id": "shinjuku-034",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -888,7 +862,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-036",
+        "id": "shinjuku-035",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -913,7 +887,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-037",
+        "id": "shinjuku-036",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -938,7 +912,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-038",
+        "id": "shinjuku-037",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -963,7 +937,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-039",
+        "id": "shinjuku-038",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -988,7 +962,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-040",
+        "id": "shinjuku-039",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1014,7 +988,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-041",
+        "id": "shinjuku-040",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1040,7 +1014,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-042",
+        "id": "shinjuku-041",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1065,7 +1039,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-043",
+        "id": "shinjuku-042",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1091,7 +1065,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-044",
+        "id": "shinjuku-043",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1117,7 +1091,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-045",
+        "id": "shinjuku-044",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1143,7 +1117,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-046",
+        "id": "shinjuku-045",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1169,7 +1143,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-047",
+        "id": "shinjuku-046",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1194,7 +1168,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-048",
+        "id": "shinjuku-047",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1220,7 +1194,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-049",
+        "id": "shinjuku-048",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1246,7 +1220,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-050",
+        "id": "shinjuku-049",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1272,7 +1246,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-051",
+        "id": "shinjuku-050",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1300,7 +1274,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-052",
+        "id": "shinjuku-051",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1328,7 +1302,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-053",
+        "id": "shinjuku-052",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1353,7 +1327,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-054",
+        "id": "shinjuku-053",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1380,7 +1354,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-055",
+        "id": "shinjuku-054",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1405,7 +1379,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-056",
+        "id": "shinjuku-055",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1430,7 +1404,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-057",
+        "id": "shinjuku-056",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1455,7 +1429,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-058",
+        "id": "shinjuku-057",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1480,7 +1454,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-059",
+        "id": "shinjuku-058",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1505,7 +1479,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-060",
+        "id": "shinjuku-059",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1530,7 +1504,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-061",
+        "id": "shinjuku-060",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1555,7 +1529,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-062",
+        "id": "shinjuku-061",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1580,7 +1554,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-063",
+        "id": "shinjuku-062",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1605,7 +1579,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-064",
+        "id": "shinjuku-063",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1630,7 +1604,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-065",
+        "id": "shinjuku-064",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1655,7 +1629,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-066",
+        "id": "shinjuku-065",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1680,7 +1654,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-067",
+        "id": "shinjuku-066",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1705,7 +1679,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-068",
+        "id": "shinjuku-067",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1730,7 +1704,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-069",
+        "id": "shinjuku-068",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1755,7 +1729,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-070",
+        "id": "shinjuku-069",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1780,7 +1754,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-071",
+        "id": "shinjuku-070",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1805,7 +1779,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-072",
+        "id": "shinjuku-071",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1830,7 +1804,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-073",
+        "id": "shinjuku-072",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1855,7 +1829,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-074",
+        "id": "shinjuku-073",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1880,7 +1854,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-075",
+        "id": "shinjuku-074",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1905,7 +1879,7 @@
         ]
       },
       "properties": {
-        "id": "shinjuku-076",
+        "id": "shinjuku-075",
         "prefecture": "tokyo",
         "city": "shinjuku",
         "cityLabel": "新宿区",
@@ -1916,6 +1890,1081 @@
         ],
         "hours": "",
         "notes": "京王百貨店6階",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.72011273723,
+          35.6796941807592
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-076",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "信濃町駅前郵便局",
+        "address": "東京都新宿区南元町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692236,
+          35.701963
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-077",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "北新宿三郵便局",
+        "address": "東京都新宿区北新宿三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7145262,
+          35.6875412
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-078",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "四谷特別出張所",
+        "address": "東京都新宿区内藤町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7034632,
+          35.6938901
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-079",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿区役所本庁舎",
+        "address": "東京都新宿区歌舞伎町一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6916481,
+          35.6891848
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-080",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "東京都庁舎（４ヶ所）",
+        "address": "東京都新宿区西新宿二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7045454,
+          35.7166765
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-081",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿清掃事務所",
+        "address": "東京都新宿区下落合二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.712267,
+          35.7110218
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-082",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "西早稲田リサイクル活動センター",
+        "address": "東京都新宿区西早稲田三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6886067,
+          35.6910206
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-083",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "環境学習情報センター",
+        "address": "東京都新宿区西新宿二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7341823,
+          35.7005708
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-084",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "箪笥町特別出張所",
+        "address": "東京都新宿区箪笥町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7267353,
+          35.7054645
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-085",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "榎町特別出張所",
+        "address": "東京都新宿区早稲田町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7164087,
+          35.6990704
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-086",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "若松町特別出張所",
+        "address": "東京都新宿区若松町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7068042,
+          35.7015865
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-087",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "大久保特別出張所",
+        "address": "東京都新宿区大久保二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7050899,
+          35.7144101
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-088",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "戸塚特別出張所",
+        "address": "東京都新宿区高田馬場二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6949936,
+          35.7187175
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-089",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "落合第一特別出張所",
+        "address": "東京都新宿区下落合四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6830641,
+          35.7198337
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-090",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "落合第二特別出張所",
+        "address": "東京都新宿区中落合四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6902701,
+          35.6985114
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-091",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "柏木特別出張所",
+        "address": "東京都新宿区北新宿二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6890956,
+          35.6861962
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-092",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "角筈特別出張所",
+        "address": "東京都新宿区西新宿四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702848,
+          35.712861
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-093",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿リサイクル活動センター",
+        "address": "東京都新宿区高田馬場四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.724234,
+          35.68872
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-094",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿東清掃センター",
+        "address": "東京都新宿区四谷三栄町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703942,
+          35.722755
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-095",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿下落合三郵便局",
+        "address": "東京都新宿区下落合三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68064,
+          35.720199
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-096",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿西落合郵便局",
+        "address": "東京都新宿区西落合一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.729374,
+          35.687297
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-097",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "四谷駅前郵便局",
+        "address": "東京都新宿区四谷一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.739418,
+          35.701893
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-098",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿神楽坂郵便局",
+        "address": "東京都新宿区神楽坂四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696703,
+          35.6903237
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-099",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿郵便局",
+        "address": "東京都新宿区西新宿一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706097,
+          35.702021
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-100",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿大久保郵便局",
+        "address": "東京都新宿区大久保二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.731174,
+          35.705267
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-101",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿天神郵便局",
+        "address": "東京都新宿区天神町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.743228,
+          35.703192
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-102",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "飯田橋駅東口郵便局",
+        "address": "東京都新宿区下宮比町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.735891,
+          35.693883
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-103",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿保健会館内郵便局",
+        "address": "東京都新宿区市谷砂土原町一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69107,
+          35.691699
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-104",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿第一生命ビル内郵便局",
+        "address": "東京都新宿区西新宿二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7084815,
+          35.7074193
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-105",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿北郵便局",
+        "address": "東京都新宿区大久保三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695133,
+          35.693354
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-106",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿野村ビル内郵便局",
+        "address": "東京都新宿区西新宿一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7311797,
+          35.6997097
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-107",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "牛込郵便局",
+        "address": "東京都新宿区北山伏町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.726235,
+          35.688472
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-108",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "四谷通二郵便局",
+        "address": "東京都新宿区四谷三栄町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.721227,
+          35.699755
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-109",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "牛込若松町郵便局",
+        "address": "東京都新宿区若松町",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.704369,
+          35.710847
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-110",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿諏訪町郵便局",
+        "address": "東京都新宿区高田馬場一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6949,
+          35.709878
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-111",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿小滝橋郵便局",
+        "address": "東京都新宿区高田馬場四丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695553,
+          35.691803
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-112",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿センタービル内郵便局",
+        "address": "東京都新宿区西新宿一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686881,
+          35.682904
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-113",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "東京オペラシティ郵便局",
+        "address": "東京都新宿区西新宿三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.707534,
+          35.690182
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-114",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿二郵便局",
+        "address": "東京都新宿区新宿二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.707255,
+          35.713207
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-115",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "高田馬場二郵便局",
+        "address": "東京都新宿区高田馬場二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690982,
+          35.685346
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-116",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿パークタワー内郵便局",
+        "address": "東京都新宿区西新宿三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687836,
+          35.693561
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-117",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿アイタウン郵便局",
+        "address": "東京都新宿区西新宿六丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.shinjuku.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696162,
+          35.72211
+        ]
+      },
+      "properties": {
+        "id": "shinjuku-118",
+        "prefecture": "tokyo",
+        "city": "shinjuku",
+        "cityLabel": "新宿区",
+        "name": "新宿下落合四郵便局",
+        "address": "東京都新宿区目白五丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
         "officialUrl": "https://www.city.shinjuku.lg.jp/",
         "categoryUrls": {}
       }

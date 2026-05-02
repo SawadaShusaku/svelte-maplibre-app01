@@ -27,8 +27,10 @@
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
 
-  const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() ?? '';
-  const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() ?? '';
+  const DEFAULT_OSRM_BASE_URL = 'https://router.project-osrm.org';
+  const DEFAULT_MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/liberty';
+  const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() || DEFAULT_OSRM_BASE_URL;
+  const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() || DEFAULT_MAP_STYLE_URL;
 
   // 初期データ
   const allCategories: CategoryId[] = [
@@ -63,6 +65,7 @@
   let popupTab = $state<'basic' | 'details'>('basic');
   let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
   let isMobile = $state(browser ? window.innerWidth <= 640 : false);
+  let facilitiesRequestVersion = 0;
 
   // ボトムシートスワイプ検出
   let touchStartY = $state(0);
@@ -112,15 +115,18 @@
   // データフェッチ
   $effect(() => {
     if (!browser) return;
+    const requestVersion = ++facilitiesRequestVersion;
     
     // Spread to convert proxy to regular array
     getFacilities([...selectedCityKeys], [...selectedCategories]).then((f) => {
+      if (requestVersion !== facilitiesRequestVersion) return;
       facilities = f;
       // 表示対象外になったポップアップを閉じる
       if (openPopupId && !f.find((x) => x.properties.id === openPopupId)) {
         openPopupId = null;
       }
     }).catch(err => {
+      if (requestVersion !== facilitiesRequestVersion) return;
       console.error('Failed to load facilities:', err);
     });
   });
@@ -429,8 +435,8 @@
       onclick={() => (isTitleCollapsed = true)}
       aria-label="タイトルを閉じる"
     >
-      <p class="map-title-kicker">TOSHIMA WARD</p>
-      <p class="map-title-text">豊島区リサイクルマップ<span class="map-title-note">（仮）</span></p>
+      <p class="map-title-kicker">TOKYO RECYCLE MAP</p>
+      <p class="map-title-text">東京リサイクルマップ</p>
     </button>
   {/if}
   
@@ -614,13 +620,6 @@
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: rgba(17, 24, 39, 0.92);
-  }
-
-  .map-title-note {
-    margin-left: 0.2rem;
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: rgba(75, 85, 99, 0.8);
   }
 
   @media (max-width: 640px) {

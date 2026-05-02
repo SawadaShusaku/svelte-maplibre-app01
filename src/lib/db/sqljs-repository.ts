@@ -79,32 +79,18 @@ export class SqlJsRepository implements Repository {
 	}
 
 	getFacilities(wardIds: string[], categoryIds: string[]): FacilityWithCategories[] {
-		if (wardIds.length === 0) return [];
+		if (wardIds.length === 0 || categoryIds.length === 0) return [];
 
 		const wardPlaceholders = wardIds.map(() => '?').join(',');
-
-		// If no categories selected, return all facilities in the wards
-		let facilityQuery: string;
-		let queryParams: string[];
-
-		if (categoryIds.length === 0) {
-			facilityQuery = `
-				SELECT DISTINCT f.*
-				FROM facilities f
-				WHERE f.ward_id IN (${wardPlaceholders})
-			`;
-			queryParams = wardIds;
-		} else {
-			const categoryPlaceholders = categoryIds.map(() => '?').join(',');
-			facilityQuery = `
-				SELECT DISTINCT f.*
-				FROM facilities f
-				JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE f.ward_id IN (${wardPlaceholders})
-				AND fc.category_id IN (${categoryPlaceholders})
-			`;
-			queryParams = [...wardIds, ...categoryIds];
-		}
+		const categoryPlaceholders = categoryIds.map(() => '?').join(',');
+		const facilityQuery = `
+			SELECT DISTINCT f.*
+			FROM facilities f
+			JOIN facility_categories fc ON f.id = fc.facility_id
+			WHERE f.ward_id IN (${wardPlaceholders})
+			AND fc.category_id IN (${categoryPlaceholders})
+		`;
+		const queryParams = [...wardIds, ...categoryIds];
 
 		const facilities = this.execQuery(facilityQuery, queryParams) as Facility[];
 

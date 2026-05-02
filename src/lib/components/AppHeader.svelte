@@ -29,22 +29,30 @@
 
   // 利用可能なカテゴリを動的に取得
   let availableCategories = $state<CategoryId[]>([]);
+  let categoryRequestVersion = 0;
   
   $effect(() => {
     if (!browser) return;
     
     const wardIds = selectedKeys.map((key: string) => key.split('/')[1]);
+    const visibleCategorySet = new Set(allCategories);
+    const requestVersion = ++categoryRequestVersion;
     
     getAvailableCategories(wardIds).then(categories => {
-      availableCategories = categories as CategoryId[];
+      if (requestVersion !== categoryRequestVersion) return;
+
+      const filteredCategories = (categories as CategoryId[]).filter((cat) =>
+        visibleCategorySet.has(cat)
+      );
+      availableCategories = filteredCategories;
       
       // 選択中のカテゴリで利用可能でないものを解除
       selectedCategories = selectedCategories.filter((cat: CategoryId) => 
-        availableCategories.includes(cat)
+        filteredCategories.includes(cat)
       );
       // If no previously-selected categories are available, select all available ones
-      if (selectedCategories.length === 0 && availableCategories.length > 0) {
-        selectedCategories = [...availableCategories];
+      if (selectedCategories.length === 0 && filteredCategories.length > 0) {
+        selectedCategories = [...filteredCategories];
       }
     });
   });

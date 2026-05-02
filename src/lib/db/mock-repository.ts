@@ -75,10 +75,13 @@ export class MockRepository implements Repository {
 	}
 
 	getFacilities(wardIds: string[], categoryIds: string[]): FacilityWithCategories[] {
+		if (wardIds.length === 0 || categoryIds.length === 0) {
+			return [];
+		}
+
 		return this.facilities.filter(f => {
 			const hasWard = wardIds.includes(f.ward_id);
-			// If no categories selected, return all facilities in the wards
-			const hasCategory = categoryIds.length === 0 || f.categories.some(c => categoryIds.includes(c));
+			const hasCategory = f.categories.some(c => categoryIds.includes(c));
 			return hasWard && hasCategory;
 		});
 	}

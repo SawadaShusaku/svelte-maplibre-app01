@@ -36,37 +36,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.709056,
-          35.631379
-        ]
-      },
-      "properties": {
-        "id": "meguro-002",
-        "prefecture": "tokyo",
-        "city": "meguro",
-        "cityLabel": "目黒区",
-        "name": "下目黒郵便局 / 目黒郵便局 / 目黒大橋郵便局 / 目黒自由が丘郵便局",
-        "address": "目黒区",
-        "categories": [
-          "ink-cartridge"
-        ],
-        "hours": "",
-        "notes": "",
-        "officialUrl": "https://www.city.meguro.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.69837951660156,
           35.6426887512207
         ]
       },
       "properties": {
-        "id": "meguro-003",
+        "id": "meguro-002",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -91,7 +66,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-004",
+        "id": "meguro-003",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -116,7 +91,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-005",
+        "id": "meguro-004",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -141,7 +116,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-006",
+        "id": "meguro-005",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -166,7 +141,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-007",
+        "id": "meguro-006",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -192,7 +167,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-008",
+        "id": "meguro-007",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -218,7 +193,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-009",
+        "id": "meguro-008",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -244,7 +219,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-010",
+        "id": "meguro-009",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -269,7 +244,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-011",
+        "id": "meguro-010",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -294,7 +269,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-012",
+        "id": "meguro-011",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -319,7 +294,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-013",
+        "id": "meguro-012",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -344,7 +319,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-014",
+        "id": "meguro-013",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -369,7 +344,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-015",
+        "id": "meguro-014",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -394,7 +369,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-016",
+        "id": "meguro-015",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -419,7 +394,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-017",
+        "id": "meguro-016",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -444,7 +419,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-018",
+        "id": "meguro-017",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -469,7 +444,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-019",
+        "id": "meguro-018",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -494,7 +469,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-020",
+        "id": "meguro-019",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -519,7 +494,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-021",
+        "id": "meguro-020",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -544,12 +519,12 @@
         ]
       },
       "properties": {
-        "id": "meguro-022",
+        "id": "meguro-021",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
         "name": "眼鏡市場　自由が丘マリ・クレール",
-        "address": "東京都目黒区自由が丘１ー９ー３自由が丘第２ビル１階",
+        "address": "東京都目黒区自由が丘-ー３自由が丘第２ビル１階",
         "categories": [
           "button-battery"
         ],
@@ -569,7 +544,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-023",
+        "id": "meguro-022",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -594,7 +569,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-024",
+        "id": "meguro-023",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -619,7 +594,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-025",
+        "id": "meguro-024",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -644,7 +619,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-026",
+        "id": "meguro-025",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -669,7 +644,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-027",
+        "id": "meguro-026",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -694,7 +669,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-028",
+        "id": "meguro-027",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -719,7 +694,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-029",
+        "id": "meguro-028",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -744,7 +719,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-030",
+        "id": "meguro-029",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -769,7 +744,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-031",
+        "id": "meguro-030",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -795,7 +770,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-032",
+        "id": "meguro-031",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -820,7 +795,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-033",
+        "id": "meguro-032",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -845,7 +820,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-034",
+        "id": "meguro-033",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -870,7 +845,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-035",
+        "id": "meguro-034",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -895,7 +870,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-036",
+        "id": "meguro-035",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -921,7 +896,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-037",
+        "id": "meguro-036",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -947,7 +922,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-038",
+        "id": "meguro-037",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -972,7 +947,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-039",
+        "id": "meguro-038",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -997,7 +972,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-040",
+        "id": "meguro-039",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1023,7 +998,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-041",
+        "id": "meguro-040",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1048,7 +1023,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-042",
+        "id": "meguro-041",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1073,7 +1048,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-043",
+        "id": "meguro-042",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1098,7 +1073,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-044",
+        "id": "meguro-043",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1123,7 +1098,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-045",
+        "id": "meguro-044",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1148,7 +1123,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-046",
+        "id": "meguro-045",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1173,7 +1148,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-047",
+        "id": "meguro-046",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1198,7 +1173,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-048",
+        "id": "meguro-047",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1223,7 +1198,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-049",
+        "id": "meguro-048",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1248,7 +1223,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-050",
+        "id": "meguro-049",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1274,7 +1249,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-051",
+        "id": "meguro-050",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1299,7 +1274,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-052",
+        "id": "meguro-051",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1324,7 +1299,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-053",
+        "id": "meguro-052",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1350,7 +1325,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-054",
+        "id": "meguro-053",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1375,7 +1350,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-055",
+        "id": "meguro-054",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1400,7 +1375,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-056",
+        "id": "meguro-055",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1426,7 +1401,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-057",
+        "id": "meguro-056",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1451,7 +1426,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-058",
+        "id": "meguro-057",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1476,7 +1451,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-059",
+        "id": "meguro-058",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1501,7 +1476,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-060",
+        "id": "meguro-059",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1526,7 +1501,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-061",
+        "id": "meguro-060",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1551,7 +1526,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-062",
+        "id": "meguro-061",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1576,7 +1551,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-063",
+        "id": "meguro-062",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1601,7 +1576,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-064",
+        "id": "meguro-063",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1627,7 +1602,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-065",
+        "id": "meguro-064",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1652,7 +1627,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-066",
+        "id": "meguro-065",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1678,7 +1653,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-067",
+        "id": "meguro-066",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1703,7 +1678,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-068",
+        "id": "meguro-067",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1728,7 +1703,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-069",
+        "id": "meguro-068",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1753,7 +1728,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-070",
+        "id": "meguro-069",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1778,7 +1753,7 @@
         ]
       },
       "properties": {
-        "id": "meguro-071",
+        "id": "meguro-070",
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
@@ -1790,6 +1765,106 @@
         "hours": "",
         "notes": "回収拠点",
         "officialUrl": "https://www.city.meguro.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709056,
+          35.631379
+        ]
+      },
+      "properties": {
+        "id": "meguro-071",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "下目黒郵便局",
+        "address": "東京都目黒区下目黒三丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6938525,
+          35.627745
+        ]
+      },
+      "properties": {
+        "id": "meguro-072",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒郵便局",
+        "address": "東京都目黒区目黒本町一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686554,
+          35.651373
+        ]
+      },
+      "properties": {
+        "id": "meguro-073",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒大橋郵便局",
+        "address": "東京都目黒区大橋一丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667146,
+          35.607967
+        ]
+      },
+      "properties": {
+        "id": "meguro-074",
+        "prefecture": "tokyo",
+        "city": "meguro",
+        "cityLabel": "目黒区",
+        "name": "目黒自由が丘郵便局",
+        "address": "東京都目黒区自由が丘二丁目",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.meguro.lg.jp/",
         "categoryUrls": {}
       }
     }

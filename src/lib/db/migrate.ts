@@ -63,7 +63,9 @@ const COLLECTORS = [
 	{ id: 'ota-city', name: '大田区環境課', url: 'https://www.city.ota.tokyo.jp/' },
 	{ id: 'setagaya-city', name: '世田谷区環境課', url: 'https://www.city.setagaya.lg.jp/' },
 	{ id: 'shibuya-city', name: '渋谷区環境課', url: 'https://www.city.shibuya.tokyo.jp/' },
-	{ id: 'nakano-city', name: '中野区環境課', url: 'https://www.city.tokyo-nakano.lg.jp/' }
+	{ id: 'nakano-city', name: '中野区環境課', url: 'https://www.city.tokyo-nakano.lg.jp/' },
+	{ id: 'suginami-city', name: '杉並区環境課', url: 'https://www.city.suginami.tokyo.jp/' },
+	{ id: 'kita-city', name: '北区環境課', url: 'https://www.city.kita.lg.jp/' }
 ];
 
 // Wards configuration
@@ -82,7 +84,9 @@ const WARDS = [
 	{ id: 'ota', prefecture: 'tokyo', city_label: '大田区', url: 'https://www.city.ota.tokyo.jp/' },
 	{ id: 'setagaya', prefecture: 'tokyo', city_label: '世田谷区', url: 'https://www.city.setagaya.lg.jp/' },
 	{ id: 'shibuya', prefecture: 'tokyo', city_label: '渋谷区', url: 'https://www.city.shibuya.tokyo.jp/' },
-	{ id: 'nakano', prefecture: 'tokyo', city_label: '中野区', url: 'https://www.city.tokyo-nakano.lg.jp/' }
+	{ id: 'nakano', prefecture: 'tokyo', city_label: '中野区', url: 'https://www.city.tokyo-nakano.lg.jp/' },
+	{ id: 'suginami', prefecture: 'tokyo', city_label: '杉並区', url: 'https://www.city.suginami.tokyo.jp/' },
+	{ id: 'kita', prefecture: 'tokyo', city_label: '北区', url: 'https://www.city.kita.lg.jp/' }
 ];
 
 async function migrate() {
@@ -230,6 +234,10 @@ async function migrate() {
 					collectorId = 'shibuya-city';
 				} else if (city === 'nakano') {
 					collectorId = 'nakano-city';
+				} else if (city === 'suginami') {
+					collectorId = 'suginami-city';
+				} else if (city === 'kita') {
+					collectorId = 'kita-city';
 				}
 				
 				// Insert facility
