@@ -8,6 +8,7 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 npm run dev              # Build DB then start development server (http://localhost:5173)
 npm run build            # Production build (includes DB migration)
 npm run build:db         # Migrate GeoJSON to SQLite (src/lib/db/migrate.ts)
+npm run audit:data       # Audit GeoJSON data quality (read-only)
 npm run preview          # Preview production build
 npm run check            # Type-check with svelte-check
 npm run check:watch      # Type-check in watch mode
@@ -70,9 +71,10 @@ src/lib/db/
 
 The SQLite database (`static/recycling.db`) is a **build artifact** generated from GeoJSON. It must never be edited directly. To change facility data, edit the GeoJSON files and run `npm run build:db`.
 
-**Scripts directory** (`scripts/`) contains only two files:
+**Scripts directory** (`scripts/`) contains:
 - `migrate-to-sqlite.ts` — Build script that reads GeoJSON and produces SQLite
 - `smoke-test.ts` — Build verification script
+- `audit-geojson.ts` — GeoJSON data quality audit (read-only, runs before `build:db`)
 
 All other data transformation scripts (geocoding, CSV conversion, auditing) have been removed. Data corrections should be made directly in GeoJSON.
 
@@ -205,6 +207,15 @@ This repository includes a local Jujutsu skill for agents that support project-l
 - `.codex/skills/jujutsu-skill/SKILL.md`
 
 Use this skill when working with `jj` commands, bookmarks, rebasing, revsets, or conflict resolution in this repository.
+
+### Jujutsu Workflow
+
+- For any new feature, fix, or OpenSpec change, prefer a separate `jj workspace` over a bookmark-only workflow. Use sibling directories named `{repo}.{workspace}` and keep the workspace name equal to the directory name.
+- Create workspaces from the main repo with commands such as `jj workspace add ../svelte-maplibre-app01.feature-a -r main`. Always use `../...` or an absolute path. Do not run `jj workspace add feature-a`, which would create a nested workspace inside the current one.
+- Use one workspace per concurrent AI agent. Do not rely on `jj new` alone inside the same workspace when agents may touch the same files or generated assets. Use bookmarks for publishing and remote tracking, not as the primary isolation boundary.
+- Recommended one-time setup: `jj config set --user snapshot.auto-update-stale true`. Optional zsh safeguard: `preexec() { [[ -d .jj ]] && jj status >/dev/null 2>&1 }`.
+- Dependencies, caches, and untracked files are workspace-local. Run installs inside each workspace as needed, and manually link or copy files such as `.env`.
+- Cleanup requires both `jj workspace forget <name>` and removal of the sibling workspace directory.
 
 ## Aliases
 

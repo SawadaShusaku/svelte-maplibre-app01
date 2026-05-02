@@ -90,7 +90,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "（株）ヤマダデンキ　ＹＡＭＡＤＡｗｅｂ．ｃｏｍ江東新砂店 / �螢筌泪瀬妊鵐� YAMADA web.com  江東新砂店",
+        "name": "（株）ヤマダデンキ　ＹＡＭＡＤＡｗｅｂ．ｃｏｍ江東新砂店",
         "address": "東京都江東区新砂３−１−１３",
         "categories": [
           "button-battery",
@@ -392,7 +392,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ南砂町SUNAMO店",
+        "name": "カメラ南砂町SUNAMO店",
         "address": "東京都江東区新砂３−４−３１南砂町ショッピングセンターSUNAMO2階",
         "categories": [
           "button-battery"
@@ -492,7 +492,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "�螢灰献沺．灰献沺潺咼奪�カメラ有明ガーデン店",
+        "name": "コジマ×ビックカメラ 有明ガーデン店",
         "address": "東京都江東区有明２−１−８ガーデンショッピングシティ3階",
         "categories": [
           "button-battery"
@@ -667,7 +667,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "�螢灰献沺．灰献沺潺咼奪�カメラKAMEIDO　CLOCK店",
+        "name": "カメラKAMEIDO　CLOCK店",
         "address": "東京都江東区亀戸６−３１−６KAMEIDOCLOCK３階",
         "categories": [
           "button-battery"
@@ -774,31 +774,6 @@
         ],
         "hours": "",
         "notes": "TEL: 03-3630-3781",
-        "officialUrl": "https://www.city.koto.lg.jp/",
-        "categoryUrls": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.827011,
-          35.68877
-        ]
-      },
-      "properties": {
-        "id": "koto-032",
-        "prefecture": "tokyo",
-        "city": "koto",
-        "cityLabel": "江東区",
-        "name": "�蠖�晃電気センター",
-        "address": "東京都江東区大島４丁目３−７",
-        "categories": [
-          "button-battery"
-        ],
-        "hours": "",
-        "notes": "TEL: 03-3685-1048",
         "officialUrl": "https://www.city.koto.lg.jp/",
         "categoryUrls": {}
       }
@@ -967,7 +942,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "�螢筌泪瀬妊鵐�　テックランド スーパービバホーム豊洲店",
+        "name": "ヤマダデンキ テックランドスーパービバホーム豊洲店",
         "address": "東京都江東区豊洲３丁目４−８スーパービバホーム豊洲店２階",
         "categories": [
           "button-battery"
@@ -1042,7 +1017,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "�螢筌泪瀬妊鵐�　ヤマダアウトレット南砂店",
+        "name": "ヤマダアウトレット南砂店",
         "address": "東京都江東区南砂２丁目３２−１",
         "categories": [
           "button-battery"
@@ -1067,7 +1042,7 @@
         "prefecture": "tokyo",
         "city": "koto",
         "cityLabel": "江東区",
-        "name": "�蠹臙� 江東猿江店",
+        "name": "江東猿江店",
         "address": "東京都江東区猿江2-16-3",
         "categories": [
           "button-battery"

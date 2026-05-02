@@ -171,7 +171,7 @@
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
-        "name": "（株）ヤマダデンキ　ＬＡＢＩ　自由が丘 / �螢筌泪瀬妊鵐�　ＬＡＢＩ　自由が丘",
+        "name": "（株）ヤマダデンキ　ＬＡＢＩ　自由が丘",
         "address": "東京都目黒区緑が丘２−１７−９",
         "categories": [
           "button-battery",
@@ -197,7 +197,7 @@
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
-        "name": "（株）山崎商会　マツヤデンキ　学芸大学店 / �螢筌泪瀬妊鵐�　マツヤデンキ　学芸大学店",
+        "name": "（株）山崎商会　マツヤデンキ　学芸大学店",
         "address": "東京都目黒区鷹番２−２１−１１",
         "categories": [
           "button-battery",
@@ -348,7 +348,7 @@
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
-        "name": "�螢筌泪瀬妊鵐�　マツヤデンキ　西小山店",
+        "name": "マツヤデンキ　西小山店",
         "address": "東京都目黒区原町１−６−６",
         "categories": [
           "button-battery"
@@ -373,7 +373,7 @@
         "prefecture": "tokyo",
         "city": "meguro",
         "cityLabel": "目黒区",
-        "name": "エイド�蠎�由が丘",
+        "name": "由が丘",
         "address": "東京都目黒区自由が丘1-13-14自由が丘スカイビル",
         "categories": [
           "button-battery"

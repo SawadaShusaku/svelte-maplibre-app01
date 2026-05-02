@@ -1,0 +1,2348 @@
+ {
+   "type": "FeatureCollection",
+   "features": [
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7400462,
+           35.7641476
+         ]
+       },
+       "properties": {
+         "id": "kita-001",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北区清掃事務所",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7601429,
+           35.7426168
+         ]
+       },
+       "properties": {
+         "id": "kita-002",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川清掃庁舎",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.6924553,
+           35.7846822
+         ]
+       },
+       "properties": {
+         "id": "kita-003",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "浮間清掃事業所",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7554824,
+           35.740164
+         ]
+       },
+       "properties": {
+         "id": "kita-004",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "富士見橋エコー広場館",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.713804,
+           35.7646635
+         ]
+       },
+       "properties": {
+         "id": "kita-005",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北ノ台スポーツ多目的広場",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.725823,
+           35.7455633
+         ]
+       },
+       "properties": {
+         "id": "kita-006",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川西エコー広場館",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7218668,
+           35.7761566
+         ]
+       },
+       "properties": {
+         "id": "kita-007",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽区民事務所",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7406157,
+           35.7610229
+         ]
+       },
+       "properties": {
+         "id": "kita-008",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "王子郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.717641,
+           35.777767
+         ]
+       },
+       "properties": {
+         "id": "kita-009",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽駅前郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7237721,
+           35.7772954
+         ]
+       },
+       "properties": {
+         "id": "kita-010",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.746784,
+           35.752208
+         ]
+       },
+       "properties": {
+         "id": "kita-011",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北堀船郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.724547,
+           35.743905
+         ]
+       },
+       "properties": {
+         "id": "kita-012",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.720548,
+           35.763151
+         ]
+       },
+       "properties": {
+         "id": "kita-013",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "十条仲原郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.735885,
+           35.765562
+         ]
+       },
+       "properties": {
+         "id": "kita-014",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "王子五郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.721036,
+           35.783163
+         ]
+       },
+       "properties": {
+         "id": "kita-015",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽岩淵駅前郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.74942,
+           35.737996
+         ]
+       },
+       "properties": {
+         "id": "kita-016",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "中里郵便局",
+         "address": "北区",
+         "categories": [
+           "ink-cartridge"
+         ],
+         "hours": "",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7441864013672,
+           35.7520866394043
+         ]
+       },
+       "properties": {
+         "id": "kita-017",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（株）Ｊｏｓｈｉｎ　王子店",
+         "address": "東京都北区堀船１−２３−１３",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.74093627929688,
+           35.75674057006836
+         ]
+       },
+       "properties": {
+         "id": "kita-018",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "佐藤電機（株）　商品管理課　家電部",
+         "address": "東京都北区豊島１−３０−３佐藤電機ビル１Ｆ倉庫",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7382354736328,
+           35.74350357055664
+         ]
+       },
+       "properties": {
+         "id": "kita-019",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（有）フタバ　フタバデンキショップ山田",
+         "address": "東京都北区西ケ原３−５７−９",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.72476196289062,
+           35.74633026123047
+         ]
+       },
+       "properties": {
+         "id": "kita-020",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（株）フクダヤ",
+         "address": "東京都北区滝野川６−４５−２",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7473907470703,
+           35.74043655395508
+         ]
+       },
+       "properties": {
+         "id": "kita-021",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（株）金子電気",
+         "address": "東京都北区西ケ原１−３−７",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7321319580078,
+           35.77409744262695
+         ]
+       },
+       "properties": {
+         "id": "kita-022",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（株）ヤマダデンキ　テックランド　イオンスタイル赤羽店",
+         "address": "東京都北区神谷３−１２−１イオンスタイル赤羽２Ｆ",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.72096252441406,
+           35.77878189086914
+         ]
+       },
+       "properties": {
+         "id": "kita-023",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "アークランズ（株）　ビバホームビーンズ赤羽店",
+         "address": "東京都北区赤羽１−１−１",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7528076171875,
+           35.76359939575195
+         ]
+       },
+       "properties": {
+         "id": "kita-024",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "アークランズ（株）　ビバホーム豊島５丁目店",
+         "address": "東京都北区豊島４−１８−２４",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7299346923828,
+           35.7684440612793
+         ]
+       },
+       "properties": {
+         "id": "kita-025",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ＤＣＭ（株）　ＤＣＭ東十条店",
+         "address": "東京都北区神谷２−２−１",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.71994018554688,
+           35.77681350708008
+         ]
+       },
+       "properties": {
+         "id": "kita-026",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（株）イトーヨーカ堂　赤羽店",
+         "address": "東京都北区赤羽西１−７−１",
+         "categories": [
+           "rechargeable-battery"
+         ],
+         "hours": "",
+         "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.725418,
+           35.74548
+         ]
+       },
+       "properties": {
+         "id": "kita-027",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ドラッグストアクリエイトS・D北区滝野川店",
+         "address": "東京都北区滝野川6-21-19",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5961-1766",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.71994,
+           35.776814
+         ]
+       },
+       "properties": {
+         "id": "kita-028",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "イトーヨーカ堂　赤羽店",
+         "address": "東京都北区赤羽西１−７−１",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3905-5111",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.719116,
+           35.778515
+         ]
+       },
+       "properties": {
+         "id": "kita-029",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "リオネットセンター城北",
+         "address": "東京都北区赤羽西１−３９−６",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3909-3311",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.71994,
+           35.776814
+         ]
+       },
+       "properties": {
+         "id": "kita-030",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "和真　赤羽イトーヨーカドー店",
+         "address": "東京都北区赤羽西1-7-1イトーヨーカドー6F",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3900-2368",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.730423,
+           35.766933
+         ]
+       },
+       "properties": {
+         "id": "kita-031",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "みみエイド東十条店",
+         "address": "東京都北区東十条３−１２−３",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5944-6141",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.721741,
+           35.761429
+         ]
+       },
+       "properties": {
+         "id": "kita-032",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ジュエリーこまつ株式会社",
+         "address": "東京都北区十条仲原1-2-1",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 0359932256",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.730164,
+           35.761757
+         ]
+       },
+       "properties": {
+         "id": "kita-033",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "株式会社オウシンデンキ",
+         "address": "東京都北区東十条１−１９−１２",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3927-0031",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.697708,
+           35.784382
+         ]
+       },
+       "properties": {
+         "id": "kita-034",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "オーケー北赤羽店",
+         "address": "東京都北区浮間5-3-27",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5918-6605",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.747086,
+           35.740307
+         ]
+       },
+       "properties": {
+         "id": "kita-035",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "株式会社フジレック",
+         "address": "東京都北区西ケ原1-3-4",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3910-5400",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.747391,
+           35.740437
+         ]
+       },
+       "properties": {
+         "id": "kita-036",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "株式会社　金子電気",
+         "address": "東京都北区西ケ原１−３−７",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3910-0660",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.744186,
+           35.752087
+         ]
+       },
+       "properties": {
+         "id": "kita-037",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ホームセンターコーナン王子堀船店",
+         "address": "東京都北区堀船１−２３−１３",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5902-3500",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.737045,
+           35.754593
+         ]
+       },
+       "properties": {
+         "id": "kita-038",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "メガネスーパー王子",
+         "address": "東京都北区王子1-10-15リバティ館１Ｆ",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5902-5666",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.71904,
+           35.765255
+         ]
+       },
+       "properties": {
+         "id": "kita-039",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "オーケー十条店",
+         "address": "東京都北区十条仲原３−１４−５",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5963-5028",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.745987,
+           35.763809
+         ]
+       },
+       "properties": {
+         "id": "kita-040",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "有限会社サンワ電気サービス",
+         "address": "東京都北区豊島４-５-９",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3927-3838",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.720215,
+           35.779625
+         ]
+       },
+       "properties": {
+         "id": "kita-041",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ブルーム赤羽店",
+         "address": "東京都北区赤羽1-18-3富士越ビル1F",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3903-2286",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.73558,
+           35.747856
+         ]
+       },
+       "properties": {
+         "id": "kita-042",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+-        "name": "�螢侫�ダヤ",
++        "name": "株式会社フクダヤ",
+         "address": "東京都北区滝野川北区滝野川６−４５−２",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3916-0325",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.732132,
+           35.774097
+         ]
+       },
+       "properties": {
+         "id": "kita-043",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ヤマダデンキテックランドイオンスタイル赤羽店",
+         "address": "東京都北区神谷3丁目12-1イオンスタスタイル赤羽2F",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5939-7708",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.723633,
+           35.779247
+         ]
+       },
+       "properties": {
+         "id": "kita-044",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "眼鏡市場　赤羽スズラン通り店",
+         "address": "東京都北区赤羽２丁目１ー２１",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5249-4088",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.744186,
+           35.752087
+         ]
+       },
+       "properties": {
+         "id": "kita-045",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ジョーシン　王子店",
+         "address": "東京都北区堀船一丁目２３番１３号",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5959-2311",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.735825,
+           35.741272
+         ]
+       },
+       "properties": {
+         "id": "kita-046",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "クリエイトS・D北区西ヶ原店",
+         "address": "東京都北区西ヶ原4-51-13",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5961-6265",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.723953,
+           35.779312
+         ]
+       },
+       "properties": {
+         "id": "kita-047",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "メガネスーパー赤羽LaLaガーデン",
+         "address": "東京都北区赤羽2-4-9蝶屋ビル１Ｆ",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5249-3688",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.69722,
+           35.784389
+         ]
+       },
+       "properties": {
+         "id": "kita-048",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+-        "name": "�蠹臙� ホームズ北赤羽店",
++        "name": "島忠 ホームズ北赤羽店",
+         "address": "東京都北区浮間5-3-24",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 050-1712-4349",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.752808,
+           35.763599
+         ]
+       },
+       "properties": {
+         "id": "kita-049",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ビバホーム豊島５丁目店",
+         "address": "東京都北区豊島4丁目18番24号",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5959-0911",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.744186,
+           35.752087
+         ]
+       },
+       "properties": {
+         "id": "kita-050",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "コーナンPRO王子堀船店",
+         "address": "東京都北区堀船１−２３−１３",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5902-3611",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.729935,
+           35.768444
+         ]
+       },
+       "properties": {
+         "id": "kita-051",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ＤＣＭ東十条店",
+         "address": "東京都北区神谷２−２−１",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5939-4261",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.724594,
+           35.779362
+         ]
+       },
+       "properties": {
+         "id": "kita-052",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "（株）和真　赤羽すずらん通り店",
+         "address": "東京都北区赤羽２−４−１３",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3902-4545",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.720963,
+           35.778782
+         ]
+       },
+       "properties": {
+         "id": "kita-053",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ビバホームビーンズ赤羽店",
+         "address": "東京都北区赤羽１丁目１番１号",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-5249-8011",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.717758,
+           35.761333
+         ]
+       },
+       "properties": {
+         "id": "kita-054",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "(株)三栄商会　さんえいでんき",
+         "address": "東京都北区上十条３−２２−２",
+         "categories": [
+           "button-battery"
+         ],
+         "hours": "",
+         "notes": "TEL: 03-3907-2945",
+         "officialUrl": "https://www.city.kita.lg.jp/",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.740051,
+           35.764095
+         ]
+       },
+       "properties": {
+         "id": "kita-055",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北区清掃事務所",
+         "address": "東京都北区豊島8-4-3",
+         "categories": [
+           "cooking-oil",
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "毎月第2土曜日 10時00分～14時00分",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.760422,
+           35.742405
+         ]
+       },
+       "properties": {
+         "id": "kita-056",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川清掃庁舎",
+         "address": "東京都北区東田端2-18-15",
+         "categories": [
+           "cooking-oil",
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "毎月第2土曜日 10時00分～14時00分",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.692795,
+           35.784107
+         ]
+       },
+       "properties": {
+         "id": "kita-057",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "浮間清掃事業所",
+         "address": "東京都北区浮間5-13-1",
+         "categories": [
+           "cooking-oil",
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "毎月第2土曜日 10時00分～14時00分",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.755569,
+           35.740139
+         ]
+       },
+       "properties": {
+         "id": "kita-058",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "富士見橋エコー広場館",
+         "address": "東京都北区田端5-16-1",
+         "categories": [
+           "cooking-oil",
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "毎月第2日曜日 10時00分～14時00分",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.72171,
+           35.775787
+         ]
+       },
+       "properties": {
+         "id": "kita-059",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽区民事務所管理室",
+         "address": "東京都北区赤羽1-1-38",
+         "categories": [
+           "cooking-oil",
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "毎月第2日曜日 10時00分～14時00分 ※赤羽区民事務所閉庁の場合、回収は行いません。",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.726074,
+           35.745735
+         ]
+       },
+       "properties": {
+         "id": "kita-060",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川西エコー広場館",
+         "address": "東京都北区滝野川6-21-25",
+         "categories": [
+           "cooking-oil",
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "毎月第2日曜日 10時00分～14時00分",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.71994,
+           35.776814
+         ]
+       },
+       "properties": {
+         "id": "kita-061",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "イトーヨーカドー赤羽店",
+         "address": "東京都北区赤羽西1丁目7-1",
+         "categories": [
+           "cooking-oil"
+         ],
+         "hours": "民間施設",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.739578,
+           35.755348
+         ]
+       },
+       "properties": {
+         "id": "kita-062",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ヨークフーズ王子店",
+         "address": "東京都北区王子1丁目23-5",
+         "categories": [
+           "cooking-oil"
+         ],
+         "hours": "民間施設",
+         "notes": "",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002048.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.732971,
+           35.753128
+         ]
+       },
+       "properties": {
+         "id": "kita-063",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北区役所別館南側",
+         "address": "東京都北区王子本町1-11-9",
+         "categories": [
+           "used-clothing"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "洗濯した古着・古布をビニール袋に入れて回収ボックスへ",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002046.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.723923,
+           35.777493
+         ]
+       },
+       "properties": {
+         "id": "kita-064",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽会館",
+         "address": "東京都北区赤羽南1-13-1",
+         "categories": [
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "洗濯した古着・古布をビニール袋に入れて回収ボックスへ",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002046.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.699142,
+           35.790462
+         ]
+       },
+       "properties": {
+         "id": "kita-065",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "浮間地域振興室",
+         "address": "東京都北区浮間2-10-2",
+         "categories": [
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "洗濯した古着・古布をビニール袋に入れて回収ボックスへ",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002046.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.728882,
+           35.765209
+         ]
+       },
+       "properties": {
+         "id": "kita-066",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "東十条地域振興室",
+         "address": "東京都北区東十条3-2-14",
+         "categories": [
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "洗濯した古着・古布をビニール袋に入れて回収ボックスへ",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002046.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.713806,
+           35.763802
+         ]
+       },
+       "properties": {
+         "id": "kita-067",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北ノ台スポーツ多目的広場",
+         "address": "東京都北区上十条5-14-4",
+         "categories": [
+           "used-clothing",
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "洗濯した古着・古布をビニール袋に入れて回収ボックスへ",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002046.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.707016,
+           35.785671
+         ]
+       },
+       "properties": {
+         "id": "kita-068",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽北区民センター（赤羽北ふれあい館）",
+         "address": "東京都北区赤羽北2-25-8",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.714615,
+           35.776333
+         ]
+       },
+       "properties": {
+         "id": "kita-069",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "ヌーヴェル赤羽台自治会",
+         "address": "東京都北区赤羽台2-3-5",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.710312,
+           35.775597
+         ]
+       },
+       "properties": {
+         "id": "kita-070",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽西福祉作業所",
+         "address": "東京都北区赤羽西5-7-5",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置。※発泡トレイ回収不可",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.708099,
+           35.7728
+         ]
+       },
+       "properties": {
+         "id": "kita-071",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "若葉福祉園",
+         "address": "東京都北区赤羽西6-9-2",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置。※発泡トレイ回収不可",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.730957,
+           35.771599
+         ]
+       },
+       "properties": {
+         "id": "kita-072",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "神谷区民センター（神谷ふれあい館）",
+         "address": "東京都北区神谷3-35-17",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.707977,
+           35.779705
+         ]
+       },
+       "properties": {
+         "id": "kita-073",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "桐ケ丘地域振興室",
+         "address": "東京都北区桐ヶ丘2-7-22",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.731827,
+           35.777645
+         ]
+       },
+       "properties": {
+         "id": "kita-074",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "志茂ふれあい館",
+         "address": "東京都北区志茂1-34-17",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.714996,
+           35.771053
+         ]
+       },
+       "properties": {
+         "id": "kita-075",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "赤羽西地域振興室",
+         "address": "東京都北区西が丘1-5-2",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.736511,
+           35.754681
+         ]
+       },
+       "properties": {
+         "id": "kita-076",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北とぴあ",
+         "address": "東京都北区王子1-11-1",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.741852,
+           35.761318
+         ]
+       },
+       "properties": {
+         "id": "kita-077",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "あすなろ福祉園",
+         "address": "東京都北区王子6-4-6",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置。※発泡トレイ回収不可",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.735092,
+           35.752769
+         ]
+       },
+       "properties": {
+         "id": "kita-078",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "北区役所第二庁舎",
+         "address": "東京都北区王子本町1-2-11",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.728439,
+           35.75351
+         ]
+       },
+       "properties": {
+         "id": "kita-079",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "中央公園文化センター",
+         "address": "東京都北区十条台1-2-1",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.727951,
+           35.753231
+         ]
+       },
+       "properties": {
+         "id": "kita-080",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "中央図書館",
+         "address": "東京都北区十条台1-2-5",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.719864,
+           35.763706
+         ]
+       },
+       "properties": {
+         "id": "kita-081",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "十条地域振興室",
+         "address": "東京都北区十条仲原1-20-10",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.7397,
+           35.758568
+         ]
+       },
+       "properties": {
+         "id": "kita-082",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "王子区民センター（王子ふれあい館）",
+         "address": "東京都北区豊島1-14-12",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.748138,
+           35.760265
+         ]
+       },
+       "properties": {
+         "id": "kita-083",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "豊島区民センター（豊島ふれあい館）",
+         "address": "東京都北区豊島3-27-22",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.729874,
+           35.757874
+         ]
+       },
+       "properties": {
+         "id": "kita-084",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "障害者福祉センター",
+         "address": "東京都北区中十条1-2-18",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.745926,
+           35.754887
+         ]
+       },
+       "properties": {
+         "id": "kita-085",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "堀船地域振興室",
+         "address": "東京都北区堀船2-16-11",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.742279,
+           35.749832
+         ]
+       },
+       "properties": {
+         "id": "kita-086",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "栄町子どもセンター",
+         "address": "東京都北区栄町33-3",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置。※発泡トレイ回収不可",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.75119,
+           35.749508
+         ]
+       },
+       "properties": {
+         "id": "kita-087",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "昭和町区民センター（昭和町ふれあい館）",
+         "address": "東京都北区昭和町3-10-7",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.733917,
+           35.746933
+         ]
+       },
+       "properties": {
+         "id": "kita-088",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川東区民センター（滝野川東ふれあい館）",
+         "address": "東京都北区滝野川1-46-7",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.72699,
+           35.748383
+         ]
+       },
+       "properties": {
+         "id": "kita-089",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川保育園",
+         "address": "東京都北区滝野川3-46-2",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置。※発泡トレイ回収不可",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.756882,
+           35.734287
+         ]
+       },
+       "properties": {
+         "id": "kita-090",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "田端区民センター（田端ふれあい館）",
+         "address": "東京都北区田端3-16-2",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.74736,
+           35.743183
+         ]
+       },
+       "properties": {
+         "id": "kita-091",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "滝野川会館",
+         "address": "東京都北区西ヶ原1-23-3",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.763535,
+           35.739624
+         ]
+       },
+       "properties": {
+         "id": "kita-092",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "東田端地域振興室",
+         "address": "東京都北区東田端1-12-14",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           139.761703,
+           35.739502
+         ]
+       },
+       "properties": {
+         "id": "kita-093",
+         "prefecture": "tokyo",
+         "city": "kita",
+         "cityLabel": "北区",
+         "name": "東田端ふれあい館",
+         "address": "東京都北区東田端2-20-51",
+         "categories": [
+           "paper-pack"
+         ],
+         "hours": "各施設の開館時間に準じます",
+         "notes": "紙パック・発泡トレイ回収容器（サンクルポスト）設置",
+         "officialUrl": "https://www.city.kita.lg.jp/living/bins/1002013/1002040/1002047.html",
+         "categoryUrls": {}
+       }
+     }
+   ]
+ }
