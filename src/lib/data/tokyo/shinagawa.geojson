@@ -531,8 +531,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.485973,
-          35.631654
+          139.7282635,
+          35.6241798
         ]
       },
       "properties": {
@@ -541,7 +541,7 @@
         "city": "shinagawa",
         "cityLabel": "品川区",
         "name": "総合体育館",
-        "address": "東京都稲城市長峰一丁目",
+        "address": "東京都品川区東五反田二丁目",
         "categories": [
           "ink-cartridge"
         ],

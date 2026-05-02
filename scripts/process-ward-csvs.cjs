@@ -91,15 +91,16 @@ function processInkCollection() {
     const line = lines[i].trim();
     if (!line) continue;
     const cols = line.split(',');
-    if (cols.length < 6) continue;
+    if (cols.length < 7) continue;
     if (cols[4] !== WARD_NAME) continue;
 
     const lat = parseFloat(cols[1]);
     const lon = parseFloat(cols[2]);
     const name = cols[5];
+    const address = cols[6] && cols[6].trim() ? cols[6].trim() : WARD_NAME;
     if (isNaN(lat) || isNaN(lon)) continue;
 
-    geojson.features.push(makeFeature(name, WARD_NAME, lat, lon, ['ink-cartridge']));
+    geojson.features.push(makeFeature(name, address, lat, lon, ['ink-cartridge']));
     added++;
   }
   console.log(`  Ink collection: ${added} added`);
