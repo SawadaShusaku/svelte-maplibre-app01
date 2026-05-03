@@ -2,6 +2,10 @@ export type MarkerStyle = 'adaptive' | 'solid' | 'gradient';
 
 export type LogoFont = 'dela-gothic' | 'zen-kaku-gothic' | 'm-plus-rounded' | 'klee-one';
 
+export type FontTarget = 'logo' | 'popup' | 'ui';
+
+export type FontChoices = Record<FontTarget, LogoFont>;
+
 export type CategoryId =
   | 'rechargeable-battery'
   | 'button-battery'
