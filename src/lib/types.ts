@@ -8,6 +8,7 @@ export type FontChoices = Record<FontTarget, LogoFont>;
 
 export type CategoryId =
   | 'rechargeable-battery'
+  | 'e-bike-rechargeable-battery'
   | 'button-battery'
   | 'dry-battery'
   | 'small-appliance'
@@ -16,7 +17,8 @@ export type CategoryId =
   | 'cooking-oil'
   | 'used-clothing'
   | 'paper-pack'
-  | 'styrofoam';
+  | 'styrofoam'
+  | 'heated-tobacco-device';
 
 export interface RecycleFacility {
   id: string;

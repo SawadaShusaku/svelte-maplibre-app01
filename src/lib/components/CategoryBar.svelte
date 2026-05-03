@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Battery, Lightbulb, Droplet, Printer, Smartphone, Shirt, Package, Box, ChevronLeft, ChevronRight } from 'lucide-svelte';
+  import { Battery, BatteryCharging, Lightbulb, Droplet, Printer, Smartphone, Shirt, Package, Box, Recycle, ChevronLeft, ChevronRight } from 'lucide-svelte';
   import { CATEGORY_COLOR, CATEGORY_LABEL } from '$lib/db/categories.js';
   import type { CategoryId } from '$lib/types.js';
 
@@ -57,6 +57,7 @@
 
   const CATEGORY_ICON: Record<CategoryId, typeof Battery> = {
     'rechargeable-battery': Battery,
+    'e-bike-rechargeable-battery': BatteryCharging,
     'button-battery': Battery,
     'dry-battery': Battery,
     'small-appliance': Smartphone,
@@ -66,6 +67,7 @@
     'used-clothing': Shirt,
     'paper-pack': Package,
     'styrofoam': Box,
+    'heated-tobacco-device': Recycle,
   };
 </script>
 
@@ -110,8 +112,8 @@
         >
           <span
             class="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
-            style:background-color={isActive ? `${catColor}25` : 'rgba(156, 163, 175, 0.3)'}
-            style:color={isActive ? catColor : '#9ca3af'}
+            style:background-color={isActive ? catColor : 'rgba(156, 163, 175, 0.3)'}
+            style:color={isActive ? '#ffffff' : '#9ca3af'}
           >
             <IconComponent size={18} strokeWidth={2.5} />
           </span>

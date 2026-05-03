@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
- * GeoJSON to SQLite Migration Script
+ * GeoJSON to local SQLite validation database migration script.
  * 
- * SOURCE OF TRUTH: src/lib/data/{prefecture}/{city}.geojson
+ * TRANSITIONAL INPUT: src/lib/data/{prefecture}/{city}.geojson
  * 
- * This script reads GeoJSON files and creates a SQLite database.
+ * This script reads GeoJSON files and creates a dev-only SQLite database.
+ * Do not write generated facility databases into static public assets.
  * 
- * To add/modify facilities, edit the GeoJSON files directly.
- * Then run: npm run build:db
+ * To inspect the transitional GeoJSON data locally, run: npm run build:db:local
  */
 
 import fs from 'fs';
@@ -24,6 +24,7 @@ const projectRoot = path.resolve(__dirname, '../../..');
 // Category definitions with new split
 const CATEGORIES = [
 	{ id: 'rechargeable-battery', label: '小型充電式電池', color: '#dc2626', icon: 'Battery' },
+	{ id: 'e-bike-rechargeable-battery', label: '自転車用充電式電池', color: '#ef4444', icon: 'BatteryCharging' },
 	{ id: 'dry-battery', label: '乾電池', color: '#7dd3fc', icon: 'Battery' },
 	{ id: 'button-battery', label: 'ボタン電池', color: '#fde047', icon: 'Battery' },
 	{ id: 'small-appliance', label: '小型家電', color: '#0891b2', icon: 'Smartphone' },
@@ -32,18 +33,21 @@ const CATEGORIES = [
 	{ id: 'cooking-oil', label: '廃食用油', color: '#c9956a', icon: 'Droplet' },
 	{ id: 'used-clothing', label: '古布・衣類', color: '#db2777', icon: 'Shirt' },
 	{ id: 'paper-pack', label: '紙パック', color: '#059669', icon: 'Package' },
-	{ id: 'styrofoam', label: '発泡スチロール', color: '#8b5cf6', icon: 'Box' }
+	{ id: 'styrofoam', label: '発泡スチロール', color: '#8b5cf6', icon: 'Box' },
+	{ id: 'heated-tobacco-device', label: '加熱式たばこ機器等', color: '#64748b', icon: 'Recycle' }
 ];
 
 // Category details for warnings
 const CATEGORY_DETAILS = [
 	{ category_id: 'rechargeable-battery', field: 'warning', content: '端子を絶縁テープで覆うこと。可燃ごみに出さない。' },
 	{ category_id: 'rechargeable-battery', field: 'examples', content: 'リチウムイオン電池、モバイルバッテリー、充電式電池' },
+	{ category_id: 'e-bike-rechargeable-battery', field: 'warning', content: '対象機器・電池の回収条件は店舗や回収協力店ごとに異なるため、持ち込み前に確認してください。' },
 	{ category_id: 'button-battery', field: 'examples', content: '時計、体温計、電卓、補聴器用電池' },
 	{ category_id: 'dry-battery', field: 'note', content: '可燃ごみとしても出せますが、回収が推奨されます' },
 	{ category_id: 'small-appliance', field: 'note', content: '金属資源回収（都市鉱山）の対象' },
 	{ category_id: 'fluorescent', field: 'warning', content: '割れた場合は直接触れない。水銀対策のため専用回収。' },
-	{ category_id: 'fluorescent', field: 'examples', content: '蛍光管、電球型蛍光灯、環形蛍光灯' }
+	{ category_id: 'fluorescent', field: 'examples', content: '蛍光管、電球型蛍光灯、環形蛍光灯' },
+	{ category_id: 'heated-tobacco-device', field: 'note', content: '加熱式たばこ機器等の回収対象や受付方法は店舗により異なる場合があります。' }
 ];
 
 // Collectors
@@ -104,8 +108,10 @@ const WARDS = [
 async function migrate() {
 	console.log('Starting GeoJSON to SQLite migration...');
 	
-	// Create database
-	const dbPath = path.join(projectRoot, 'static', 'recycling.db');
+	// Create dev-only validation database. Keep this outside static public assets.
+	const dbPath = process.env.SQLITE_OUTPUT_PATH
+		? path.resolve(projectRoot, process.env.SQLITE_OUTPUT_PATH)
+		: path.join(projectRoot, '.local', 'recycling-dev.db');
 	fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 	
 	const db = new Database(dbPath);

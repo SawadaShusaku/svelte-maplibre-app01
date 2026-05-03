@@ -5,10 +5,16 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 ## Commands
 
 ```bash
-npm run dev              # Build DB then start development server (http://localhost:5173)
-npm run build            # Production build (includes DB migration)
-npm run build:db         # Migrate GeoJSON to SQLite (src/lib/db/migrate.ts)
+npm run dev              # Start Vite dev server without D1 binding
+npm run dev:d1           # Start local Cloudflare Worker/D1 development server
+npm run build            # Production build (D1/API path; no static DB generation)
+npm run build:db:local   # Generate dev-only local SQLite validation DB in .local/
+npm run d1:schema:local  # Apply D1 schema to local D1
 npm run audit:data       # Audit GeoJSON data quality (read-only)
+npm run audit:private-data # Fail if private data or bulk DB artifacts are tracked
+npm run validate:d1-seed # Validate private D1 seed JSON before import
+npm run deploy:preview   # Deploy Worker using wrangler env.preview
+npm run deploy:prod      # Deploy Worker using wrangler env.production
 npm run preview          # Preview production build
 npm run check            # Type-check with svelte-check
 npm run check:watch      # Type-check in watch mode
@@ -19,14 +25,14 @@ npm run smoke            # Build + start preview server + verify HTTP 200
 
 ## Architecture
 
-This is a **SvelteKit + MapLibre GL + SQLite** application using Svelte 5 runes mode.
+This is a **SvelteKit + MapLibre GL + Cloudflare D1** application using Svelte 5 runes mode. SQLite remains available only as a dev/local validation format.
 
 ### Stack Overview
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
 | **Framework** | SvelteKit 2.x + Svelte 5 | UI framework with runes mode |
-| **Database** | SQLite (sql.js) | Client-side embedded database |
+| **Database** | Cloudflare D1 | Production public serving database behind Worker API |
 | **Maps** | MapLibre GL + svelte-maplibre-gl | Interactive map rendering |
 | **Styling** | Tailwind CSS v4 | Utility-first CSS |
 | **Testing** | Vitest (unit) + Playwright (E2E) | Test framework |
@@ -35,7 +41,9 @@ This is a **SvelteKit + MapLibre GL + SQLite** application using Svelte 5 runes 
 
 ### Database Architecture
 
-**SQLite Database Schema** (`src/lib/db/schema.sql`):
+Production data is served from Cloudflare D1 through Worker/SvelteKit API routes. The browser must not download a bulk SQLite database from static assets.
+
+**D1 Public Serving Schema** (`d1/schema.sql`):
 - `categories` — Recycling categories (dry-battery, rechargeable-battery, etc.)
 - `category_details` — Warnings and examples per category
 - `collectors` — Collection organizations (JBRC, city offices)
@@ -44,39 +52,41 @@ This is a **SvelteKit + MapLibre GL + SQLite** application using Svelte 5 runes 
 - `facilities` — Recycling facility locations
 - `facility_categories` — Many-to-many: which categories each facility accepts
 
-**Repository Pattern** (`src/lib/db/`):
+**Server Data Access**:
 ```
-src/lib/db/
-├── repository.ts          # Interface definition
-├── sqljs-repository.ts    # Browser implementation (sql.js)
-├── mock-repository.ts     # Test implementation (in-memory)
-├── index.ts              # Factory and exports
-├── init.ts               # Database initialization
-├── schema.sql            # Database schema
-└── categories.json       # Category definitions
+src/lib/server/d1-repository.ts    # D1 query implementation for server API routes
+src/routes/api/                   # Minimized public API responses
+src/lib/data.ts                   # Browser-facing fetch wrapper used by components
 ```
 
 **Data Flow**:
-1. Build time: `src/lib/db/migrate.ts` converts GeoJSON → SQLite
-2. Runtime: `sql.js` loads `static/recycling.db` in browser
-3. Repository interface abstracts database operations
-4. Components use `data.ts` functions which delegate to Repository
+1. Private pipeline generates private D1 seed/import artifacts from normalized data
+2. Cloudflare D1 stores public serving tables
+3. Worker/SvelteKit API routes query D1 through the `RECYCLING_DB` binding
+4. Browser code fetches minimized API responses through `src/lib/data.ts`
+5. Local SQLite may be generated only as a dev-only validation artifact outside `static/`
 
 ### Data Source of Truth
 
-**GeoJSON files are the single source of truth** for facility data.
+The long-term source of truth is the separate private data pipeline: upstream snapshots, raw source responses, normalized private data, geocoding cache, and quality reports.
 
-- `src/lib/data/tokyo/toshima.geojson` — Toshima ward facilities (master)
-- `src/lib/data/tokyo/chiyoda.geojson` — Chiyoda ward facilities (master)
+The current repository still contains GeoJSON as a transitional derived input:
 
-The SQLite database (`static/recycling.db`) is a **build artifact** generated from GeoJSON. It must never be edited directly. To change facility data, edit the GeoJSON files and run `npm run build:db`.
+- `src/lib/data/tokyo/toshima.geojson` — Toshima ward facilities (derived app input)
+- `src/lib/data/tokyo/chiyoda.geojson` — Chiyoda ward facilities (derived app input)
 
-**Scripts directory** (`scripts/`) contains:
-- `migrate-to-sqlite.ts` — Build script that reads GeoJSON and produces SQLite
-- `smoke-test.ts` — Build verification script
-- `audit-geojson.ts` — GeoJSON data quality audit (read-only, runs before `build:db`)
+Do not publish `static/recycling.db` or any other bulk database file. If local SQLite inspection is needed, run `npm run build:db:local`, which writes `.local/recycling-dev.db`.
 
-All other data transformation scripts (geocoding, CSV conversion, auditing) have been removed. Data corrections should be made directly in GeoJSON.
+Private CSV snapshots, raw HTML/JSON responses, geocoding caches, complete normalized private datasets, D1 seed/import dumps, and local validation databases must not be committed to this public app repository. See `docs/data-pipeline-policy.md`.
+
+**Scripts directory** (`scripts/`) contains current build/audit scripts:
+- `src/lib/db/migrate.ts` — Dev-only local SQLite validation script that reads transitional GeoJSON
+- `tests/smoke.ts` — Build verification script
+- `scripts/audit-geojson.ts` — GeoJSON data quality audit
+- `scripts/audit-private-data-boundary.ts` — public repository private-data boundary audit
+- `scripts/validate-d1-public-data.ts` — validates private D1 seed JSON before import
+
+CSV files that were removed earlier were old app/runtime data sources or intermediate files. New upstream snapshots and D1 seed/import outputs are kept in the private data pipeline project, not under `docs/`.
 
 ### Key Implementation Details
 
@@ -138,8 +148,11 @@ src/
 4. Update ward's available categories in migration script if needed
 
 **Geocoding (for new facility coordinates)**:
-- For Japanese addresses, use **GSI Japan Address Search API** (`https://msearch.gsi.go.jp/address-search/AddressSearch?q=...`)
+- For Japanese addresses, use **GSI Japan Address Search API** first (`https://msearch.gsi.go.jp/address-search/AddressSearch?q=...`)
+- Use Google Geocoding API only as a fallback for failed or review-needed rows.
 - Do NOT use Nominatim for Japanese addresses — it frequently returns no results or incorrect coordinates
+- Do NOT rate geocoding confidence by exact Japanese address string equality. Differences like `491-3` versus `491番地` are normal notation changes, not low-confidence evidence by themselves.
+- Do NOT assign fallback coordinates such as municipality centroids without explicit human approval.
 - Example: `curl -s "https://msearch.gsi.go.jp/address-search/AddressSearch?q=豊島区東池袋4-5-2"`
 
 **New Category**:
@@ -151,16 +164,17 @@ src/
 
 ### Common Issues
 
-**sql.js WASM loading**:
-- Ensure `static/sql-wasm.wasm` exists
-- Check `locateFile` in `init.ts` returns correct path
+**D1 binding missing**:
+- Local D1-backed development should use `npm run dev:d1`
+- `wrangler.toml` uses the binding name `RECYCLING_DB`
+- Replace placeholder D1 `database_id` values after creating the Cloudflare D1 databases
 
 **Proxy object errors**:
 - Spread state arrays: `getFacilities([...selectedCities], [...selectedCategories])`
 
-**Type errors with sql.js**:
-- sql.js doesn't have `.all()` method; use `step()` + `getAsObject()` loop
-- See `SqlJsRepository` for correct pattern
+**D1 query errors**:
+- D1 uses `prepare(...).bind(...).all<T>()` and `first<T>()`
+- Keep API responses minimized; do not add private pipeline fields to public responses
 
 ## Deployment
 
@@ -180,13 +194,34 @@ This project is deployed to **Cloudflare Workers with Static Assets**.
 ### Example `wrangler.toml`
 
 ```toml
-name = "svelte-maplibre-app01"
+name = "svelte-maplibre-app01-dev"
 main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2026-04-29"
 
 [assets]
 directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
+
+[[d1_databases]]
+binding = "RECYCLING_DB"
+database_name = "recycling-facilities-dev"
+database_id = "<replace-with-dev-d1-id>"
+
+[env.preview]
+name = "svelte-maplibre-app01-preview"
+
+[[env.preview.d1_databases]]
+binding = "RECYCLING_DB"
+database_name = "recycling-facilities-preview"
+database_id = "<replace-with-preview-d1-id>"
+
+[env.production]
+name = "svelte-maplibre-app01"
+
+[[env.production.d1_databases]]
+binding = "RECYCLING_DB"
+database_name = "recycling-facilities-prod"
+database_id = "<replace-with-production-d1-id>"
 ```
 
 ### Deploy settings (Cloudflare Dashboard)
@@ -194,8 +229,12 @@ binding = "ASSETS"
 | Setting | Value |
 |---------|-------|
 | Build command | `npm run build` |
-| Deploy command | `npx wrangler deploy` |
+| Deploy command | `npm run deploy:prod` |
 | Root directory | `/` |
+
+Do **not** use bare `npx wrangler deploy` in the Cloudflare Git integration for production. It uses the root Wrangler environment and can bind the dev D1 configuration. Use `npm run deploy:prod` so `[env.production]` and `recycling-facilities-prod` are selected.
+
+The root Wrangler worker name must remain distinct from `[env.production].name`. Keep the root name dev-only, for example `svelte-maplibre-app01-dev`, so an accidental bare deploy cannot update the production Worker with dev bindings.
 
 Do **not** use GitHub Actions for deployment — the Cloudflare Git integration handles builds and deployments automatically.
 

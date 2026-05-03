@@ -7,6 +7,12 @@
       "icon": "Battery"
     },
     {
+      "id": "e-bike-rechargeable-battery",
+      "label": "自転車用充電式電池",
+      "color": "#ef4444",
+      "icon": "BatteryCharging"
+    },
+    {
       "id": "dry-battery",
       "label": "乾電池",
       "color": "#7dd3fc",
@@ -59,6 +65,12 @@
       "label": "発泡スチロール",
       "color": "#8b5cf6",
       "icon": "Box"
+    },
+    {
+      "id": "heated-tobacco-device",
+      "label": "加熱式たばこ機器等",
+      "color": "#64748b",
+      "icon": "Recycle"
     }
   ],
   "details": [
@@ -71,6 +83,11 @@
       "category_id": "rechargeable-battery",
       "field": "examples",
       "content": "リチウムイオン電池、モバイルバッテリー、充電式電池"
+    },
+    {
+      "category_id": "e-bike-rechargeable-battery",
+      "field": "warning",
+      "content": "対象機器・電池の回収条件は店舗や回収協力店ごとに異なるため、持ち込み前に確認してください。"
     },
     {
       "category_id": "button-battery",
@@ -111,6 +128,11 @@
       "category_id": "ink-cartridge",
       "field": "note",
       "content": "純正・互換インクカートリッジどちらも回収可。包装材は外して出す。"
+    },
+    {
+      "category_id": "heated-tobacco-device",
+      "field": "note",
+      "content": "加熱式たばこ機器等の回収対象や受付方法は店舗により異なる場合があります。"
     }
   ]
 }

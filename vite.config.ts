@@ -7,13 +7,4 @@ export default defineConfig({
   server: {
     host: true,
   },
-  optimizeDeps: {
-    include: ['sql.js']
-  },
-  build: {
-    rollupOptions: {
-      external: [/\.sqlite$/]
-    }
-  },
-  assetsInclude: ['**/*.db']
 });

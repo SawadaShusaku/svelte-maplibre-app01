@@ -67,11 +67,28 @@ pnpm-lock.yaml
 # Backup files
 *.bak
 
+# Private data pipeline outputs
+*.csv
+raw/
+exports/
+cache/
+normalized/
+.local/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.seed.sql
+*-seed.sql
+*-import.sql
+d1/seed*.sql
+d1/import*.sql
+
 # jj version control
 .jj/
 
 # Build artifacts
-static/recycling.db
+static/*.db
 
 # Ensure we keep specs tracked
 !openspec/
