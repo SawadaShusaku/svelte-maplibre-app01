@@ -3,13 +3,13 @@
 	import { onMount } from 'svelte';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import { getLogoFont, applyLogoFont } from '$lib/font-style.js';
+	import { applyFontChoices } from '$lib/font-style.js';
 
 	const gtagId = env.PUBLIC_GTAG_ID?.trim() ?? '';
 	let { children } = $props();
 
 	onMount(() => {
-		applyLogoFont(getLogoFont());
+		applyFontChoices();
 	});
 </script>
 

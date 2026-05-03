@@ -2,20 +2,30 @@
 @import 'tailwindcss';
 
 :root {
-  --logo-font: "Dela Gothic One";
+  --font-logo: "Dela Gothic One";
+  --font-popup: "Klee One";
+  --font-ui: "Zen Kaku Gothic New";
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-family: var(--font-ui), -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .brand-display {
-  font-family: var(--logo-font), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-family: var(--font-logo), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+.font-popup {
+  font-family: var(--font-popup), "Iowan Old Style", "Palatino Linotype", "Noto Serif JP", "Hiragino Mincho ProN", serif;
+}
+
+.font-ui {
+  font-family: var(--font-ui), -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 }
 
 .brand-title-jp {
@@ -50,6 +60,7 @@ html, body {
     0 8px 24px rgba(0, 0, 0, 0.18),
     0 24px 48px rgba(0, 0, 0, 0.22) !important;
   overflow: hidden !important;
+  font-family: var(--font-popup), "Iowan Old Style", "Palatino Linotype", "Noto Serif JP", "Hiragino Mincho ProN", serif;
 }
 
 /* チップ（三角）もガラス色に合わせる */
