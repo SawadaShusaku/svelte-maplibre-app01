@@ -24,6 +24,7 @@
     Popup
   } from 'svelte-maplibre-gl';
   import maplibregl from 'maplibre-gl';
+  import type { ExpressionSpecification } from '@maplibre/maplibre-gl-style-spec';
   import { ChevronRight, Footprints, Bike, Car, ExternalLink } from 'lucide-svelte';
   import { fly } from 'svelte/transition';
 
@@ -98,6 +99,61 @@
   const selectedFacility = $derived(resolveSelectedFacility(facilityIndex, selectedFacilityId));
   const markerSourceData = $derived(buildMarkerFeatureCollection(facilities, markerStyle, solidColor));
   const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities));
+  type ClusterZoomValues = {
+    wideArea: number;
+    wardArea: number;
+    transition: number;
+  };
+
+  const CLUSTER_WIDE_AREA_ZOOM = 8;
+  const CLUSTER_WARD_AREA_ZOOM = 10;
+  const CLUSTER_ZOOM_INTERPOLATION_BASE = 2;
+  const CLUSTER_RADIUS_PX: ClusterZoomValues = {
+    wideArea: 18,
+    wardArea: 33,
+    transition: 45
+  };
+  const CLUSTER_HALO_RADIUS_PX: ClusterZoomValues = {
+    wideArea: 22,
+    wardArea: 40,
+    transition: 54
+  };
+  const CLUSTER_TEXT_SIZE_PX: ClusterZoomValues = {
+    wideArea: 10.5,
+    wardArea: 14.5,
+    transition: 17
+  };
+  const CLUSTER_COLOR = '#0f766e';
+  const CLUSTER_HALO_COLOR = '#14b8a6';
+  const CLUSTER_LABEL_HALO_COLOR = '#064e3b';
+  const CLUSTER_CIRCLE_OPACITY = 0.94;
+  const CLUSTER_HALO_OPACITY = 0.18;
+  const CLUSTER_CIRCLE_STROKE_COLOR = '#ffffff';
+  const CLUSTER_CIRCLE_STROKE_WIDTH = 4;
+  const CLUSTER_HALO_STROKE_WIDTH = 1;
+  const CLUSTER_COUNT_FONT_SCALE = 0.88;
+  const CLUSTER_LABEL_LINE_HEIGHT = 1.28;
+  const CLUSTER_LABEL_HALO_WIDTH = 1.3;
+  const CLUSTER_LABEL_HALO_BLUR = 0.4;
+  const CLUSTER_LABEL_FONT = ['Noto Sans Bold'];
+
+  function interpolateClusterValueByZoom(values: ClusterZoomValues): ExpressionSpecification {
+    return [
+      'interpolate',
+      ['exponential', CLUSTER_ZOOM_INTERPOLATION_BASE],
+      ['zoom'],
+      CLUSTER_WIDE_AREA_ZOOM,
+      values.wideArea,
+      CLUSTER_WARD_AREA_ZOOM,
+      values.wardArea,
+      WARD_SUMMARY_MAX_ZOOM,
+      values.transition
+    ];
+  }
+
+  const CLUSTER_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_RADIUS_PX);
+  const CLUSTER_HALO_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_HALO_RADIUS_PX);
+  const CLUSTER_TEXT_SIZE_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_TEXT_SIZE_PX);
 
   // ボトムシートスワイプ検出
   let touchStartY = $state(0);
@@ -605,14 +661,29 @@
         data={wardSummarySourceData}
       >
         <CircleLayer
+          id="ward-summary-halos"
+          maxzoom={WARD_SUMMARY_MAX_ZOOM}
+          paint={{
+            'circle-color': CLUSTER_HALO_COLOR,
+            'circle-radius': CLUSTER_HALO_RADIUS_BY_ZOOM,
+            'circle-opacity': CLUSTER_HALO_OPACITY,
+            'circle-stroke-color': CLUSTER_COLOR,
+            'circle-stroke-width': CLUSTER_HALO_STROKE_WIDTH,
+            'circle-stroke-opacity': CLUSTER_HALO_OPACITY
+          }}
+          onclick={handleWardSummaryClick}
+          onmouseenter={handleLayerMouseEnter}
+          onmouseleave={handleLayerMouseLeave}
+        />
+        <CircleLayer
           id="ward-summary-circles"
           maxzoom={WARD_SUMMARY_MAX_ZOOM}
           paint={{
-            'circle-color': '#0f766e',
-            'circle-radius': 26,
-            'circle-opacity': 0.9,
-            'circle-stroke-color': '#ffffff',
-            'circle-stroke-width': 2
+            'circle-color': CLUSTER_COLOR,
+            'circle-radius': CLUSTER_RADIUS_BY_ZOOM,
+            'circle-opacity': CLUSTER_CIRCLE_OPACITY,
+            'circle-stroke-color': CLUSTER_CIRCLE_STROKE_COLOR,
+            'circle-stroke-width': CLUSTER_CIRCLE_STROKE_WIDTH
           }}
           onclick={handleWardSummaryClick}
           onmouseenter={handleLayerMouseEnter}
@@ -622,14 +693,26 @@
           id="ward-summary-labels"
           maxzoom={WARD_SUMMARY_MAX_ZOOM}
           layout={{
-            'text-field': ['get', 'cityLabel'],
-            'text-size': 11,
-            'text-font': ['Noto Sans Regular'],
+            'text-field': [
+              'format',
+              ['get', 'cityLabel'],
+              { 'font-scale': 1 },
+              '\n',
+              {},
+              ['concat', ['to-string', ['get', 'facilityCount']], '件'],
+              { 'font-scale': CLUSTER_COUNT_FONT_SCALE }
+            ],
+            'text-size': CLUSTER_TEXT_SIZE_BY_ZOOM,
+            'text-font': CLUSTER_LABEL_FONT,
+            'text-line-height': CLUSTER_LABEL_LINE_HEIGHT,
             'text-allow-overlap': true,
             'text-ignore-placement': true
           }}
           paint={{
-            'text-color': '#ffffff'
+            'text-color': CLUSTER_CIRCLE_STROKE_COLOR,
+            'text-halo-color': CLUSTER_LABEL_HALO_COLOR,
+            'text-halo-width': CLUSTER_LABEL_HALO_WIDTH,
+            'text-halo-blur': CLUSTER_LABEL_HALO_BLUR
           }}
           onclick={handleWardSummaryClick}
           onmouseenter={handleLayerMouseEnter}

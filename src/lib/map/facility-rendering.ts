@@ -4,8 +4,10 @@ import type { FeatureCollection, Point } from 'geojson';
 import type { GeoFeature } from '$lib/data.js';
 import type { CategoryId, MarkerStyle } from '$lib/types.js';
 
-export const INDIVIDUAL_MARKER_MIN_ZOOM = 13;
-export const WARD_SUMMARY_MAX_ZOOM = 12.99;
+export const CLUSTER_TRANSITION_ZOOM = 11.75;
+export const INDIVIDUAL_MARKER_MIN_ZOOM = CLUSTER_TRANSITION_ZOOM;
+export const WARD_SUMMARY_MAX_ZOOM = CLUSTER_TRANSITION_ZOOM;
+export const WARD_SUMMARY_CLICK_ZOOM = 14;
 export const MARKER_ICON_WIDTH = 32;
 export const MARKER_ICON_HEIGHT = 42;
 export const MARKER_ICON_SIZE = 27 / MARKER_ICON_WIDTH;
@@ -176,16 +178,15 @@ export function fitToWardSummary(
 	summary: WardSummaryFeatureProperties,
 	isMobile: boolean
 ): void {
-	map.fitBounds(
-		[
-			[summary.minLng, summary.minLat],
-			[summary.maxLng, summary.maxLat]
-		],
-		{
-			padding: isMobile
-				? { top: 80, bottom: 120, left: 24, right: 24 }
-				: { top: 80, bottom: 80, left: 80, right: 80 },
-			maxZoom: 13
-		}
-	);
+	const center: [number, number] = [
+		(summary.minLng + summary.maxLng) / 2,
+		(summary.minLat + summary.maxLat) / 2
+	];
+
+	map.easeTo({
+		center,
+		zoom: WARD_SUMMARY_CLICK_ZOOM,
+		offset: isMobile ? [0, -window.innerHeight * 0.2] : [0, 0],
+		duration: 500
+	});
 }
