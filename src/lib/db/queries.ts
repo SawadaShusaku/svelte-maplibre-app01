@@ -51,6 +51,8 @@ export function getFacilities(wardIds: string[], categoryIds: string[]): Facilit
 		latitude: number;
 		longitude: number;
 		url: string | null;
+		official_url: string | null;
+		category_urls: string | null;
 		collector_id: string | null;
 		hours: string | null;
 		notes: string | null;
@@ -70,6 +72,8 @@ export function getFacilities(wardIds: string[], categoryIds: string[]): Facilit
 			latitude: f.latitude,
 			longitude: f.longitude,
 			url: f.url,
+			official_url: f.official_url,
+			category_urls: f.category_urls,
 			collector_id: f.collector_id,
 			hours: f.hours,
 			notes: f.notes,
@@ -175,6 +179,8 @@ export function searchFacilities(query: string, wardIds: string[]): FacilityWith
 		latitude: number;
 		longitude: number;
 		url: string | null;
+		official_url: string | null;
+		category_urls: string | null;
 		collector_id: string | null;
 		hours: string | null;
 		notes: string | null;
@@ -192,6 +198,8 @@ export function searchFacilities(query: string, wardIds: string[]): FacilityWith
 			latitude: f.latitude,
 			longitude: f.longitude,
 			url: f.url,
+			official_url: f.official_url,
+			category_urls: f.category_urls,
 			collector_id: f.collector_id,
 			hours: f.hours,
 			notes: f.notes,

@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@700&family=M+PLUS+Rounded+1c:wght@700&family=Klee+One:wght@600&display=swap');
 @import 'tailwindcss';
+
+:root {
+  --logo-font: "Dela Gothic One";
+}
 
 html, body {
   height: 100%;
@@ -7,6 +12,16 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.brand-display {
+  font-family: var(--logo-font), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+.brand-title-jp {
+  display: block;
+  transform: scaleY(1.14);
+  transform-origin: left center;
 }
 
 /* MapLibre ポップアップのカスタムスタイル */

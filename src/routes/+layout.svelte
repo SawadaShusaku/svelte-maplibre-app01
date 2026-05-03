@@ -1,10 +1,16 @@
 <script lang="ts">
 	import { env } from '$env/dynamic/public';
+	import { onMount } from 'svelte';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { getLogoFont, applyLogoFont } from '$lib/font-style.js';
 
 	const gtagId = env.PUBLIC_GTAG_ID?.trim() ?? '';
 	let { children } = $props();
+
+	onMount(() => {
+		applyLogoFont(getLogoFont());
+	});
 </script>
 
 <svelte:head>

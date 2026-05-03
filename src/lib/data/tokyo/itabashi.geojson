@@ -1,0 +1,2477 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674946,
+          35.790384
+        ]
+      },
+      "properties": {
+        "id": "itabashi-001",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "パークホームズ板橋蓮根　２番街",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696948,
+          35.774231
+        ]
+      },
+      "properties": {
+        "id": "itabashi-002",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋志村郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69732,
+          35.755306
+        ]
+      },
+      "properties": {
+        "id": "itabashi-003",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "中板橋郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631322,
+          35.776174
+        ]
+      },
+      "properties": {
+        "id": "itabashi-004",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋成増郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.643263,
+          35.770563
+        ]
+      },
+      "properties": {
+        "id": "itabashi-005",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋赤塚新町郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.704463,
+          35.748635
+        ]
+      },
+      "properties": {
+        "id": "itabashi-006",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "大山駅前郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67788,
+          35.765719
+        ]
+      },
+      "properties": {
+        "id": "itabashi-007",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋中台郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678008,
+          35.784144
+        ]
+      },
+      "properties": {
+        "id": "itabashi-008",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋蓮根郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691643,
+          35.77152
+        ]
+      },
+      "properties": {
+        "id": "itabashi-009",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋前野郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654877,
+          35.769993
+        ]
+      },
+      "properties": {
+        "id": "itabashi-010",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋徳丸三郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702127,
+          35.76936
+        ]
+      },
+      "properties": {
+        "id": "itabashi-011",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋蓮沼郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686231,
+          35.7780664
+        ]
+      },
+      "properties": {
+        "id": "itabashi-012",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋北郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6586555,
+          35.786181
+        ]
+      },
+      "properties": {
+        "id": "itabashi-013",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋西郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7136211,
+          35.7492569
+        ]
+      },
+      "properties": {
+        "id": "itabashi-014",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716006,
+          35.753007
+        ]
+      },
+      "properties": {
+        "id": "itabashi-015",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋四郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.705507,
+          35.764326
+        ]
+      },
+      "properties": {
+        "id": "itabashi-016",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋清水郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673975,
+          35.762219
+        ]
+      },
+      "properties": {
+        "id": "itabashi-017",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "上板橋郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702186,
+          35.747557
+        ]
+      },
+      "properties": {
+        "id": "itabashi-018",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋ハッピーロード郵便局",
+        "address": "板橋区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68222045898438,
+          35.764244079589844
+        ]
+      },
+      "properties": {
+        "id": "itabashi-019",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "（有）わくい電器",
+        "address": "東京都板橋区常盤台４−６−１７",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6480255126953,
+          35.7869873046875
+        ]
+      },
+      "properties": {
+        "id": "itabashi-020",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "（有）本橋電気",
+        "address": "東京都板橋区高島平５−３５−１０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67446899414062,
+          35.76539611816406
+        ]
+      },
+      "properties": {
+        "id": "itabashi-021",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ上板橋店　２階レジカウンター",
+        "address": "東京都板橋区上板橋３−１４−２０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66311645507812,
+          35.78167724609375
+        ]
+      },
+      "properties": {
+        "id": "itabashi-022",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ高島平店　２階レジカウンター、４階レジカウンター",
+        "address": "東京都板橋区徳丸７−２５−８",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6864013671875,
+          35.77827835083008
+        ]
+      },
+      "properties": {
+        "id": "itabashi-023",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ志村店　持帰レジカウンター、サービスカウンター",
+        "address": "東京都板橋区志村３−２６−４",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6875,
+          35.79232406616211
+        ]
+      },
+      "properties": {
+        "id": "itabashi-024",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ　ベルクスモール浮間舟渡店",
+        "address": "東京都板橋区舟渡１−６−２２ベルクスモール浮間舟渡２Ｆ",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69351196289062,
+          35.77919387817383
+        ]
+      },
+      "properties": {
+        "id": "itabashi-025",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "（株）ヤマダデンキ　テックランドセブンタウン小豆沢店",
+        "address": "東京都板橋区小豆沢三丁目９番４号セブンタウン小豆沢内",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69354248046875,
+          35.770423889160156
+        ]
+      },
+      "properties": {
+        "id": "itabashi-026",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "アークランズ（株）　ビバホーム板橋前野店",
+        "address": "東京都板橋区前野町３−３７−１８",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66607666015625,
+          35.7897834777832
+        ]
+      },
+      "properties": {
+        "id": "itabashi-027",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ＤＣＭ（株）　ＤＣＭ高島平店",
+        "address": "東京都板橋区高島平９−２３−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.66079711914062,
+          35.7694206237793
+        ]
+      },
+      "properties": {
+        "id": "itabashi-028",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "イオンリテール（株）　イオンスタイル板橋店",
+        "address": "東京都板橋区徳丸２−６−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686401,
+          35.778278
+        ]
+      },
+      "properties": {
+        "id": "itabashi-029",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ志村店",
+        "address": "東京都板橋区志村３−２６−４志村ショッピングセンター内",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5916-1311",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700668,
+          35.749279
+        ]
+      },
+      "properties": {
+        "id": "itabashi-030",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "株式会社よしや大山店",
+        "address": "東京都板橋区大山町36-7",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3973-5815",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689514,
+          35.768726
+        ]
+      },
+      "properties": {
+        "id": "itabashi-031",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "メガネ　パリミキ　板橋カスミ店",
+        "address": "東京都板橋区前野町３−２０−１フードスクエアカスミ板橋前野町店１階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5918-7702",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.672043,
+          35.76125
+        ]
+      },
+      "properties": {
+        "id": "itabashi-032",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オーケー上板橋店",
+        "address": "東京都板橋区桜川3-25-4",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6906-6035",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709808,
+          35.753193
+        ]
+      },
+      "properties": {
+        "id": "itabashi-033",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "株式会社よしや仲宿店",
+        "address": "東京都板橋区仲宿43-6",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3962-1591",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697998,
+          35.75618
+        ]
+      },
+      "properties": {
+        "id": "itabashi-034",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "株式会社よしや中板橋店",
+        "address": "東京都板橋区中板橋16-10",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3962-0448",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706238,
+          35.760189
+        ]
+      },
+      "properties": {
+        "id": "itabashi-035",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オーケー板橋本町店",
+        "address": "東京都板橋区本町38-9",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5944-1550",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654495,
+          35.779808
+        ]
+      },
+      "properties": {
+        "id": "itabashi-036",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コーナンPRO　板橋徳丸店",
+        "address": "東京都板橋区徳丸8丁目4番2号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5945-1757",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.685577,
+          35.786629
+        ]
+      },
+      "properties": {
+        "id": "itabashi-037",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コーナンPRO志村坂下店",
+        "address": "東京都板橋区東坂下二丁目17番8号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6454-5714",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693512,
+          35.779194
+        ]
+      },
+      "properties": {
+        "id": "itabashi-038",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "（株）ヤマダデンキ　テックランド セブンタウン小豆沢店",
+        "address": "東京都板橋区小豆沢三丁目９番４号セブンタウン小豆沢内",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5939-8888",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.663345,
+          35.789631
+        ]
+      },
+      "properties": {
+        "id": "itabashi-039",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ビジョンメガネ高島平店",
+        "address": "東京都板橋区高島平８−１１−１１ＳＤビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3935-2949",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.646332,
+          35.772747
+        ]
+      },
+      "properties": {
+        "id": "itabashi-040",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "眼鏡市場　板橋下赤塚",
+        "address": "東京都板橋区赤塚２-５-１１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5967-0858",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.663467,
+          35.790173
+        ]
+      },
+      "properties": {
+        "id": "itabashi-041",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "眼鏡市場　高島平",
+        "address": "東京都板橋区高島平８−１９−１５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5922-6538",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.660797,
+          35.769421
+        ]
+      },
+      "properties": {
+        "id": "itabashi-042",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "眼鏡のアイガン　イオン板橋店",
+        "address": "東京都板橋区徳丸2-6-1イオン板橋ショッピングセンター４F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5920-2501",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.712906,
+          35.750126
+        ]
+      },
+      "properties": {
+        "id": "itabashi-043",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "あんしゃらら",
+        "address": "東京都板橋区板橋3-２−６メゾンミキ１０２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5944-1848",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.643967,
+          35.772533
+        ]
+      },
+      "properties": {
+        "id": "itabashi-044",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "眼鏡工房たちばな",
+        "address": "東京都板橋区赤塚２−１４−２１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 0339388233",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693542,
+          35.770424
+        ]
+      },
+      "properties": {
+        "id": "itabashi-045",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ビバホーム板橋前野店",
+        "address": "東京都板橋区前野町３丁目３７番１８号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5914-3411",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637711,
+          35.76955
+        ]
+      },
+      "properties": {
+        "id": "itabashi-046",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "株式会社　よしや　光が丘店",
+        "address": "東京都板橋区赤塚新町3-32-13",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3977-2231",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.663116,
+          35.781677
+        ]
+      },
+      "properties": {
+        "id": "itabashi-047",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ高島平店",
+        "address": "東京都板橋区徳丸7-25-8",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5399-8051",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666077,
+          35.789783
+        ]
+      },
+      "properties": {
+        "id": "itabashi-048",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "メガネ パリ ミキ　高島平とうきゅう店",
+        "address": "東京都板橋区高島平９−２３−１高島平とうきゅう１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3934-3026",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673859,
+          35.762417
+        ]
+      },
+      "properties": {
+        "id": "itabashi-049",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "（株）市橋電気",
+        "address": "東京都板橋区上板橋２−８−１９市橋ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3934-0603",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673706,
+          35.78603
+        ]
+      },
+      "properties": {
+        "id": "itabashi-050",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "メガネストアー　西台本店",
+        "address": "東京都板橋区高島平1-79-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3559-3578",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6875,
+          35.792324
+        ]
+      },
+      "properties": {
+        "id": "itabashi-051",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラベルクスモール浮間舟渡店",
+        "address": "東京都板橋区舟渡１−６−２２ベルクスモール浮間舟渡２階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6454-5522",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.642883,
+          35.772697
+        ]
+      },
+      "properties": {
+        "id": "itabashi-052",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "アカツキデンキ",
+        "address": "東京都板橋区赤塚２−１４−１１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3979-0550",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.710632,
+          35.751995
+        ]
+      },
+      "properties": {
+        "id": "itabashi-053",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "メガネストアー　板橋仲宿店",
+        "address": "東京都板橋区板橋3-9-10",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6905-0288",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68338,
+          35.745209
+        ]
+      },
+      "properties": {
+        "id": "itabashi-054",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "川又電化サービス",
+        "address": "東京都板橋区向原3-7-S6",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3956-1677",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677567,
+          35.776775
+        ]
+      },
+      "properties": {
+        "id": "itabashi-055",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "メガネ パリ ミキ　中台店",
+        "address": "東京都板橋区相生町１９−２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3559-0788",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674896,
+          35.785866
+        ]
+      },
+      "properties": {
+        "id": "itabashi-056",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ダイエ−西台店",
+        "address": "東京都板橋区蓮根3-8-12",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3965-1751",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677994,
+          35.765251
+        ]
+      },
+      "properties": {
+        "id": "itabashi-057",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "タスク補聴器　板橋店",
+        "address": "東京都板橋区常盤台4-29-18",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6913-0630",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.703171,
+          35.748901
+        ]
+      },
+      "properties": {
+        "id": "itabashi-058",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "眼鏡市場　板橋大山",
+        "address": "東京都板橋区大山東町５８番１号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6905-2188",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702393,
+          35.782486
+        ]
+      },
+      "properties": {
+        "id": "itabashi-059",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ベルコスモ有限会社",
+        "address": "東京都板橋区小豆沢４−２４−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3969-4071",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.688889,
+          35.750977
+        ]
+      },
+      "properties": {
+        "id": "itabashi-060",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オーケー大谷口店",
+        "address": "東京都板橋区大谷口北町37-7",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6905-8252",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.660797,
+          35.769421
+        ]
+      },
+      "properties": {
+        "id": "itabashi-061",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "イオンスタイル板橋",
+        "address": "東京都板橋区徳丸2-6-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5398-3131",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.711929,
+          35.751049
+        ]
+      },
+      "properties": {
+        "id": "itabashi-062",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "有限会社伊藤無線",
+        "address": "東京都板橋区板橋3-14-1MCビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3961-4562",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683792,
+          35.752911
+        ]
+      },
+      "properties": {
+        "id": "itabashi-063",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "有限会社 東山電気",
+        "address": "東京都板橋区東山町31-13",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3956-2463",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675949,
+          35.746227
+        ]
+      },
+      "properties": {
+        "id": "itabashi-064",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オーケー小茂根店",
+        "address": "東京都板橋区小茂根１−３２−２１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3974-2371",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631958,
+          35.776733
+        ]
+      },
+      "properties": {
+        "id": "itabashi-065",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "リオネットセンター城北　成増店",
+        "address": "東京都板橋区成増２−１６−５グレース成増１階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6789-3311",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.645844,
+          35.778004
+        ]
+      },
+      "properties": {
+        "id": "itabashi-066",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "共栄電気",
+        "address": "東京都板橋区赤塚6-21-10",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3939-2040",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687302,
+          35.784969
+        ]
+      },
+      "properties": {
+        "id": "itabashi-067",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オリンピックおりーぶ志村坂下店",
+        "address": "東京都板橋区東坂下2-12-8",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5915-1301",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699387,
+          35.749454
+        ]
+      },
+      "properties": {
+        "id": "itabashi-068",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "（株）元吉医科器械　城北補聴器",
+        "address": "東京都板橋区大山町４１−１６マウンパティー１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5966-0331",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666077,
+          35.789783
+        ]
+      },
+      "properties": {
+        "id": "itabashi-069",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ＤＣＭ高島平店",
+        "address": "東京都板橋区高島平９−２３−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5399-2501",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687897,
+          35.75098
+        ]
+      },
+      "properties": {
+        "id": "itabashi-070",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "芹沢電気商会",
+        "address": "東京都板橋区大谷口北町５６−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3956-5210",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67569,
+          35.745609
+        ]
+      },
+      "properties": {
+        "id": "itabashi-071",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オリンピック小竹向原店",
+        "address": "東京都板橋区小茂根1-32-9",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6891-0555",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686142,
+          35.750366
+        ]
+      },
+      "properties": {
+        "id": "itabashi-072",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "有限会社　岩井電機サービス",
+        "address": "東京都板橋区大谷口北町85-7",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3956-3724",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696289,
+          35.768539
+        ]
+      },
+      "properties": {
+        "id": "itabashi-073",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "オーケー板橋大原店",
+        "address": "東京都板橋区大原町４４−２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5915-5221",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674469,
+          35.765396
+        ]
+      },
+      "properties": {
+        "id": "itabashi-074",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "コジマ×ビックカメラ上板橋店",
+        "address": "東京都板橋区上板橋３-１４-２０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5399-2271",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677063,
+          35.763733
+        ]
+      },
+      "properties": {
+        "id": "itabashi-075",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "メガネスーパー上板橋駅前",
+        "address": "東京都板橋区常盤台4-32-3蔵本ビル１Ｆ",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5922-1055",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.712753,
+          35.752804
+        ]
+      },
+      "properties": {
+        "id": "itabashi-076",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "セゾン販売企画(有)　でんきのミヨシヤ",
+        "address": "東京都板橋区仲宿36-1宮地ビル1F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3962-3448",
+        "officialUrl": "https://www.city.itabashi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709503,
+          35.750694
+        ]
+      },
+      "properties": {
+        "id": "itabashi-077",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋区役所北館7階 資源循環推進課窓口",
+        "address": "東京都板橋区板橋2-66-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689056,
+          35.745907
+        ]
+      },
+      "properties": {
+        "id": "itabashi-078",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "大谷口地域センター",
+        "address": "東京都板橋区大谷口2-12-5",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "午前9時から午後9時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679611,
+          35.76347
+        ]
+      },
+      "properties": {
+        "id": "itabashi-079",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "常盤台地域センター",
+        "address": "東京都板橋区常盤台4-14-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "午前9時から午後9時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.685089,
+          35.787804
+        ]
+      },
+      "properties": {
+        "id": "itabashi-080",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋東清掃事務所",
+        "address": "東京都板橋区東坂下2-20-9",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.676331,
+          35.795918
+        ]
+      },
+      "properties": {
+        "id": "itabashi-081",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "リサイクルプラザ",
+        "address": "東京都板橋区舟渡4-16-6",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.688889,
+          35.768944
+        ]
+      },
+      "properties": {
+        "id": "itabashi-082",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "エコポリスセンター",
+        "address": "東京都板橋区前野町4-6-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681732,
+          35.752247
+        ]
+      },
+      "properties": {
+        "id": "itabashi-083",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "桜川地域センター",
+        "address": "東京都板橋区東新町2-45-6",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.645477,
+          35.778679
+        ]
+      },
+      "properties": {
+        "id": "itabashi-084",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "赤塚支所",
+        "address": "東京都板橋区赤塚6-38-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.632736,
+          35.774536
+        ]
+      },
+      "properties": {
+        "id": "itabashi-085",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "まなぽーと成増（成増生涯学習センター）",
+        "address": "東京都板橋区成増1-12-4",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "午前9時から午後9時30分",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666794,
+          35.769127
+        ]
+      },
+      "properties": {
+        "id": "itabashi-086",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "板橋西清掃事務所",
+        "address": "東京都板橋区徳丸1-16-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.664566,
+          35.791729
+        ]
+      },
+      "properties": {
+        "id": "itabashi-087",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "熱帯環境植物館",
+        "address": "東京都板橋区高島平8-29-2",
+        "categories": [
+          "cooking-oil",
+          "used-clothing",
+          "small-appliance"
+        ],
+        "hours": "午前10時から午後6時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700653,
+          35.761024
+        ]
+      },
+      "properties": {
+        "id": "itabashi-088",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "富士見地域センター",
+        "address": "東京都板橋区富士見町3-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.715027,
+          35.746544
+        ]
+      },
+      "properties": {
+        "id": "itabashi-089",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ヨークマート下板橋店",
+        "address": "東京都板橋区板橋2-1-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.694962,
+          35.780003
+        ]
+      },
+      "properties": {
+        "id": "itabashi-090",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "ヨークフーズ with ザ・ガーデン自由が丘 小豆沢店",
+        "address": "東京都板橋区小豆沢3-9-5",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695831,
+          35.77668
+        ]
+      },
+      "properties": {
+        "id": "itabashi-091",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "志村坂上地域センター",
+        "address": "東京都板橋区小豆沢2-19-15",
+        "categories": [
+          "used-clothing"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "廃食用油の回収は行っておりません。古布・古着・毛布のみの回収。",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.716568,
+          35.748623
+        ]
+      },
+      "properties": {
+        "id": "itabashi-092",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "巣鴨信用金庫板橋支店",
+        "address": "東京都板橋区板橋1-42-18",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "8時55分～15時00分",
+        "notes": "ペットボトル等のふたがしっかり閉まる容器に入れてお持ちください",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.710037,
+          35.751701
+        ]
+      },
+      "properties": {
+        "id": "itabashi-093",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "株式会社飯田商店 板橋センター（コスモ石油）",
+        "address": "東京都板橋区板橋3-9-4",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "ペットボトル等のふたがしっかり閉まる容器に入れてお持ちください",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670746,
+          35.789577
+        ]
+      },
+      "properties": {
+        "id": "itabashi-094",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "丸富興業株式会社 高島平21（コスモ石油）",
+        "address": "東京都板橋区高島平9-11-1",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "ペットボトル等のふたがしっかり閉まる容器に入れてお持ちください",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031276.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.708633,
+          35.750027
+        ]
+      },
+      "properties": {
+        "id": "itabashi-095",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "情報処理センター",
+        "address": "東京都板橋区板橋2-65-6",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031268.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696503,
+          35.751335
+        ]
+      },
+      "properties": {
+        "id": "itabashi-096",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "仲町ふれあい館",
+        "address": "東京都板橋区仲町20-5",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031268.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.659134,
+          35.786999
+        ]
+      },
+      "properties": {
+        "id": "itabashi-097",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "高島平地域センター",
+        "address": "東京都板橋区高島平3-12-28",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031268.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.702408,
+          35.766449
+        ]
+      },
+      "properties": {
+        "id": "itabashi-098",
+        "prefecture": "tokyo",
+        "city": "itabashi",
+        "cityLabel": "板橋区",
+        "name": "清水地域センター",
+        "address": "東京都板橋区泉町16-16",
+        "categories": [
+          "small-appliance"
+        ],
+        "hours": "午前9時から午後5時",
+        "notes": "",
+        "officialUrl": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kyoten/1031268.html",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}

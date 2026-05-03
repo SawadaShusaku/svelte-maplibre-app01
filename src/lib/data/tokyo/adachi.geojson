@@ -1,0 +1,2436 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.799183,
+          35.749351
+        ]
+      },
+      "properties": {
+        "id": "adachi-001",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立中居郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.788768,
+          35.79576
+        ]
+      },
+      "properties": {
+        "id": "adachi-002",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立西竹の塚郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803029,
+          35.776149
+        ]
+      },
+      "properties": {
+        "id": "adachi-003",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立梅島郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8022341,
+          35.7913347
+        ]
+      },
+      "properties": {
+        "id": "adachi-004",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立北郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810577,
+          35.807274
+        ]
+      },
+      "properties": {
+        "id": "adachi-005",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立花畑五郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.841107,
+          35.786497
+        ]
+      },
+      "properties": {
+        "id": "adachi-006",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立佐野郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.769652,
+          35.782823
+        ]
+      },
+      "properties": {
+        "id": "adachi-007",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立江北郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810389,
+          35.789475
+        ]
+      },
+      "properties": {
+        "id": "adachi-008",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立保木間郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7807533,
+          35.7723868
+        ]
+      },
+      "properties": {
+        "id": "adachi-009",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立西郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.811411,
+          35.7434133
+        ]
+      },
+      "properties": {
+        "id": "adachi-010",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.806794,
+          35.804492
+        ]
+      },
+      "properties": {
+        "id": "adachi-011",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "花畑西郵便局",
+        "address": "足立区",
+        "categories": [
+          "ink-cartridge"
+        ],
+        "hours": "",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.77099609375,
+          35.75520706176758
+        ]
+      },
+      "properties": {
+        "id": "adachi-012",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ケーズホールディングス　ケーズデンキ足立店",
+        "address": "東京都足立区小台１−２０−６",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.81494140625,
+          35.77873611450195
+        ]
+      },
+      "properties": {
+        "id": "adachi-013",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ケーズホールディングス　ケーズデンキ足立一ツ家店",
+        "address": "東京都足立区一ツ家３−８−１８",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7896270751953,
+          35.800048828125
+        ]
+      },
+      "properties": {
+        "id": "adachi-014",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ケーズホールディングス　ケーズデンキ足立竹の塚店",
+        "address": "東京都足立区伊興本町二丁目１番２２号",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.83949279785156,
+          35.78218460083008
+        ]
+      },
+      "properties": {
+        "id": "adachi-015",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "生活彩館　いちはら",
+        "address": "東京都足立区大谷田５−１３−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.78179931640625,
+          35.774417877197266
+        ]
+      },
+      "properties": {
+        "id": "adachi-016",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（有）中田屋　営業部",
+        "address": "東京都足立区西新井本町５−８−７",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75816345214844,
+          35.75836944580078
+        ]
+      },
+      "properties": {
+        "id": "adachi-017",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（有）山根電機商会　新やまね電気設備",
+        "address": "東京都足立区小台２−２５−１４",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.78192138671875,
+          35.776466369628906
+        ]
+      },
+      "properties": {
+        "id": "adachi-018",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "山田電化ハウス（株）",
+        "address": "東京都足立区西新井栄町３−７−３",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.83792114257812,
+          35.7836799621582
+        ]
+      },
+      "properties": {
+        "id": "adachi-019",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）アイリスプラザ　ダイユニカンパニー　ユニハードウェア大谷田店",
+        "address": "東京都足立区大谷田５−３１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8289794921875,
+          35.777862548828125
+        ]
+      },
+      "properties": {
+        "id": "adachi-020",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "コジマ×ビックカメラ足立加平店　２階レジカウンター、３階レジカウンター",
+        "address": "東京都足立区加平３−１−１５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8031768798828,
+          35.782249450683594
+        ]
+      },
+      "properties": {
+        "id": "adachi-021",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ヤマダデンキ　テックランド足立店",
+        "address": "東京都足立区平野２−１−５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770751953125,
+          35.774818420410156
+        ]
+      },
+      "properties": {
+        "id": "adachi-022",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "コジマ×ビックカメラ江北駅前店　２階レジカウンター、電話機用充電池売場",
+        "address": "東京都足立区西新井本町２−３１−２０",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.794677734375,
+          35.79543685913086
+        ]
+      },
+      "properties": {
+        "id": "adachi-023",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ヤマダデンキ　Ｔｅｃｃ　ＬＩＦＥ　ＳＥＬＥＣＴ足立竹の塚店",
+        "address": "東京都足立区竹の塚五丁目１７番１０号",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.83465576171875,
+          35.79385757446289
+        ]
+      },
+      "properties": {
+        "id": "adachi-024",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "アークランズ（株）　ビバホーム足立神明店",
+        "address": "東京都足立区神明２−６−１４",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.75279235839844,
+          35.775203704833984
+        ]
+      },
+      "properties": {
+        "id": "adachi-025",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ロイヤルホームセンター　足立鹿浜",
+        "address": "東京都足立区堀之内１−１３−１３",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76084899902344,
+          35.78564453125
+        ]
+      },
+      "properties": {
+        "id": "adachi-026",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ＤＣＭ（株）　ＤＣＭ鹿浜店",
+        "address": "東京都足立区鹿浜６−２４−７",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.82562255859375,
+          35.76248550415039
+        ]
+      },
+      "properties": {
+        "id": "adachi-027",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）イトーヨーカ堂　綾瀬店",
+        "address": "東京都足立区綾瀬３−４−２５",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.78578186035156,
+          35.774688720703125
+        ]
+      },
+      "properties": {
+        "id": "adachi-028",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）イトーヨーカ堂　アリオ西新井店",
+        "address": "東京都足立区西新井栄町１−２０−１",
+        "categories": [
+          "rechargeable-battery"
+        ],
+        "hours": "",
+        "notes": "JBRC（日本小型家電リサイクル協会）回収拠点",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767761,
+          35.755894
+        ]
+      },
+      "properties": {
+        "id": "adachi-029",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "島忠 ホームズ足立小台店",
+        "address": "東京都足立区小台1-17-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 050-1712-4334",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.807953,
+          35.794922
+        ]
+      },
+      "properties": {
+        "id": "adachi-030",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "メガネ　パリ　ミキ　保木間店",
+        "address": "東京都足立区保木間３−２０−１４",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5242-3310",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803177,
+          35.782249
+        ]
+      },
+      "properties": {
+        "id": "adachi-031",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ヤマダデンキ　テックランド足立店",
+        "address": "東京都足立区平野２−１−５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5831-2880",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770996,
+          35.755207
+        ]
+      },
+      "properties": {
+        "id": "adachi-032",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ケーズデンキ足立店",
+        "address": "東京都足立区小台1-20-6",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5813-5252",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.814941,
+          35.778736
+        ]
+      },
+      "properties": {
+        "id": "adachi-033",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ケーズデンキ足立一ツ家店",
+        "address": "東京都足立区一ツ家三丁目8番18号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5851-8806",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.759872,
+          35.811157
+        ]
+      },
+      "properties": {
+        "id": "adachi-034",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "電化のサトウ",
+        "address": "東京都足立区入谷3-11-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3853-1761",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810471,
+          35.788712
+        ]
+      },
+      "properties": {
+        "id": "adachi-035",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "眼鏡市場　足立保木間",
+        "address": "東京都足立区保木間1-30-10",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5831-8488",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.797714,
+          35.772202
+        ]
+      },
+      "properties": {
+        "id": "adachi-036",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "メガネストアー　梅島店",
+        "address": "東京都足立区梅田7-36-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5888-3588",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.792572,
+          35.774815
+        ]
+      },
+      "properties": {
+        "id": "adachi-037",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "クリエイトS・D足立西新井栄町店",
+        "address": "東京都足立区西新井栄町1-8-5",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5845-3611",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.839111,
+          35.778793
+        ]
+      },
+      "properties": {
+        "id": "adachi-038",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "島忠 大谷田店",
+        "address": "東京都足立区大谷田4-9-20",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5697-6811",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.767761,
+          35.755894
+        ]
+      },
+      "properties": {
+        "id": "adachi-039",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "オーケー足立小台店",
+        "address": "東京都足立区小台1-17-1",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5284-4571",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.779419,
+          35.78252
+        ]
+      },
+      "properties": {
+        "id": "adachi-040",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "オーケー西新井店",
+        "address": "東京都足立区西新井1-39-8",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5647-8960",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.774261,
+          35.762367
+        ]
+      },
+      "properties": {
+        "id": "adachi-041",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ホームセンターコーナン足立扇店",
+        "address": "東京都足立区扇１４-１０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5647-5751",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.785782,
+          35.774689
+        ]
+      },
+      "properties": {
+        "id": "adachi-042",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "イトーヨーカ堂　アリオ西新井店",
+        "address": "東京都足立区西新井栄町１−２０−１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3852-9111",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.772278,
+          35.77438
+        ]
+      },
+      "properties": {
+        "id": "adachi-043",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ホームセンターコーナンドイト西新井店",
+        "address": "東京都足立区西新井本町２-３１-１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3896-6241",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.803436,
+          35.774006
+        ]
+      },
+      "properties": {
+        "id": "adachi-044",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "クリエイトS・D足立中央本町店",
+        "address": "東京都足立区中央本町1-15-3",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5845-3321",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.793457,
+          35.794353
+        ]
+      },
+      "properties": {
+        "id": "adachi-045",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "宮内百貨店",
+        "address": "東京都足立区竹の塚６-９-３",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3859-3381",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770752,
+          35.774818
+        ]
+      },
+      "properties": {
+        "id": "adachi-046",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "コジマ×ビックカメラ江北駅前店",
+        "address": "東京都足立区西新井本町２ー３１ー２０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5838-1866",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.795731,
+          35.794956
+        ]
+      },
+      "properties": {
+        "id": "adachi-047",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "株式会社　でんきち竹の塚店",
+        "address": "東京都足立区竹の塚5-17-1イトーヨーカドー竹の塚店",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3859-0115",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.756332,
+          35.783302
+        ]
+      },
+      "properties": {
+        "id": "adachi-048",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "眼鏡市場　足立鹿浜",
+        "address": "東京都足立区鹿浜４丁目２５番１２号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5838-1388",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.801849,
+          35.798588
+        ]
+      },
+      "properties": {
+        "id": "adachi-049",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "コーナンPRO足立竹ノ塚店",
+        "address": "東京都足立区西保木間２-１-２４",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5851-5705",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.816925,
+          35.790764
+        ]
+      },
+      "properties": {
+        "id": "adachi-050",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "オリンピック保木間店",
+        "address": "東京都足立区東保木間1-26-22",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3883-3810",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.760849,
+          35.785645
+        ]
+      },
+      "properties": {
+        "id": "adachi-051",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ＤＣＭ鹿浜店",
+        "address": "東京都足立区鹿浜６−２４−７",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3857-8288",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.774475,
+          35.812298
+        ]
+      },
+      "properties": {
+        "id": "adachi-052",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "菊地電機商会",
+        "address": "東京都足立区舎人３−５−２１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3897-3248",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.827744,
+          35.762264
+        ]
+      },
+      "properties": {
+        "id": "adachi-053",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "株式会社　デンキのタナカ",
+        "address": "東京都足立区綾瀬３−１１−２１",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3620-5858",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.795258,
+          35.742153
+        ]
+      },
+      "properties": {
+        "id": "adachi-054",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "眼鏡市場　ポンテポルタ千住",
+        "address": "東京都足立区千住橋戸町１−１３１階１１３区画",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5284-3431",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.761597,
+          35.773228
+        ]
+      },
+      "properties": {
+        "id": "adachi-055",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（有）長沼電気商会",
+        "address": "東京都足立区江北3-7-9",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-38901484",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825623,
+          35.762486
+        ]
+      },
+      "properties": {
+        "id": "adachi-056",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "イトーヨーカ堂　綾瀬店",
+        "address": "東京都足立区綾瀬３−４−２５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3620-2911",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810226,
+          35.769863
+        ]
+      },
+      "properties": {
+        "id": "adachi-057",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）タニグチ",
+        "address": "東京都足立区弘道１−２８−２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3889-8226",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.790878,
+          35.791477
+        ]
+      },
+      "properties": {
+        "id": "adachi-058",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "タスク補聴器　竹の塚店",
+        "address": "東京都足立区竹の塚1-23-9",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3884-3933",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798157,
+          35.766693
+        ]
+      },
+      "properties": {
+        "id": "adachi-059",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "オリンピック梅島店",
+        "address": "東京都足立区梅田6-9-15",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5888-9211",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.829361,
+          35.76062
+        ]
+      },
+      "properties": {
+        "id": "adachi-060",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "メガネストアー　綾瀬店",
+        "address": "東京都足立区綾瀬2-36-6臼倉第一ビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3838-3958",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.754868,
+          35.783466
+        ]
+      },
+      "properties": {
+        "id": "adachi-061",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "有限会社  大和田商会",
+        "address": "東京都足立区鹿浜３−２９−１６",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3899-3136",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.801559,
+          35.747223
+        ]
+      },
+      "properties": {
+        "id": "adachi-062",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "メガネスーパー北千住",
+        "address": "東京都足立区千住1-24-6第２タチカワビル",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3882-1944",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.843201,
+          35.775215
+        ]
+      },
+      "properties": {
+        "id": "adachi-063",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "株式会社イングコジョー",
+        "address": "東京都足立区東和４−２４−１５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3620-0606",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.752792,
+          35.775204
+        ]
+      },
+      "properties": {
+        "id": "adachi-064",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ロイヤルホームセンター足立鹿浜",
+        "address": "東京都足立区堀之内1-13-13",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5647-5711",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.836533,
+          35.78426
+        ]
+      },
+      "properties": {
+        "id": "adachi-065",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "クリエイトS・D足立谷中店",
+        "address": "東京都足立区谷中5-14-12",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5697-9590",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.828979,
+          35.777863
+        ]
+      },
+      "properties": {
+        "id": "adachi-066",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "コジマ×ビックカメラ足立加平店",
+        "address": "東京都足立区加平３ー１ー１５",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5682-1115",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.790207,
+          35.775471
+        ]
+      },
+      "properties": {
+        "id": "adachi-067",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ビジョンメガネ西新井駅前店",
+        "address": "東京都足立区西新井栄町１−１３−１０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5888-3568",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.834656,
+          35.793858
+        ]
+      },
+      "properties": {
+        "id": "adachi-068",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ビバホーム足立神明店",
+        "address": "東京都足立区神明２丁目６番１４号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5673-3211",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.789627,
+          35.800049
+        ]
+      },
+      "properties": {
+        "id": "adachi-069",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ケーズデンキ足立竹の塚店",
+        "address": "東京都足立区伊興本町二丁目１番22号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5809-5516",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.794678,
+          35.795437
+        ]
+      },
+      "properties": {
+        "id": "adachi-070",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）ヤマダデンキ　Tecc LIFE SELECT 足立竹の塚店",
+        "address": "東京都足立区竹の塚五丁目１７番１０号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6625-2906",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.778564,
+          35.78603
+        ]
+      },
+      "properties": {
+        "id": "adachi-071",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "有限会社石川電器",
+        "address": "東京都足立区西新井５−４１−１７",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3898-2220",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.832687,
+          35.777519
+        ]
+      },
+      "properties": {
+        "id": "adachi-072",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "メガネストアー　北綾瀬店",
+        "address": "東京都足立区谷中4-9-21ホワイトストーン1階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5616-0668",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.823837,
+          35.760952
+        ]
+      },
+      "properties": {
+        "id": "adachi-073",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "タスク補聴器　綾瀬店",
+        "address": "東京都足立区綾瀬1-32-13",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5680-6106",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.774445,
+          35.788857
+        ]
+      },
+      "properties": {
+        "id": "adachi-074",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（有）和幸電器",
+        "address": "東京都足立区西新井４−２６−２９−１Ｆサンライズマンション",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3897-3464",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.785797,
+          35.785408
+        ]
+      },
+      "properties": {
+        "id": "adachi-075",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "眼鏡市場　足立栗原",
+        "address": "東京都足立区栗原４丁目１２番２１号",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5838-1078",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.785782,
+          35.774689
+        ]
+      },
+      "properties": {
+        "id": "adachi-076",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "和真メガネ　アリオ西新井店",
+        "address": "東京都足立区西新井栄町1-20-1アリオ西新井内3F",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-6807-2297",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825623,
+          35.762486
+        ]
+      },
+      "properties": {
+        "id": "adachi-077",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "眼鏡市場　イトーヨーカドー綾瀬",
+        "address": "東京都足立区綾瀬３-４-２５イトーヨーカドー綾瀬店２階",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5613-8558",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.823105,
+          35.786884
+        ]
+      },
+      "properties": {
+        "id": "adachi-078",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "東伸電器販売（有）",
+        "address": "東京都足立区南花畑１−２−２８",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3885-1938",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770721,
+          35.770824
+        ]
+      },
+      "properties": {
+        "id": "adachi-079",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "コーナンPRO足立扇店",
+        "address": "東京都足立区扇３-１４-１０",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5647-5761",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.798828,
+          35.792725
+        ]
+      },
+      "properties": {
+        "id": "adachi-080",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "メガネストアー　竹の塚店",
+        "address": "東京都足立区竹の塚3-20-12竹の塚ショッピングセンター",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-3858-0738",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810852,
+          35.780533
+        ]
+      },
+      "properties": {
+        "id": "adachi-081",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "オーケー一ツ家店",
+        "address": "東京都足立区一ツ家１−１２−１２",
+        "categories": [
+          "button-battery"
+        ],
+        "hours": "",
+        "notes": "TEL: 03-5831-6767",
+        "officialUrl": "https://www.city.adachi.lg.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.79332,
+          35.804642
+        ]
+      },
+      "properties": {
+        "id": "adachi-082",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立清掃事務所",
+        "address": "東京都足立区東伊興三丁目23番9号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日 午前9時から正午まで",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.816452,
+          35.786789
+        ]
+      },
+      "properties": {
+        "id": "adachi-083",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "保塚地域学習センター",
+        "address": "東京都足立区保塚町7番16号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日 午前9時から正午まで",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.758743,
+          35.783966
+        ]
+      },
+      "properties": {
+        "id": "adachi-084",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "鹿浜地域学習センター",
+        "address": "東京都足立区鹿浜六丁目8番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日 午前9時から正午まで",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.805023,
+          35.775124
+        ]
+      },
+      "properties": {
+        "id": "adachi-085",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "足立区役所本庁舎",
+        "address": "東京都足立区中央本町一丁目17番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日 午前9時から正午まで",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.800491,
+          35.74728
+        ]
+      },
+      "properties": {
+        "id": "adachi-086",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "あだち産業センター",
+        "address": "東京都足立区千住一丁目5番7号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "毎月第3土曜日 午前9時から正午まで",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.785782,
+          35.774689
+        ]
+      },
+      "properties": {
+        "id": "adachi-087",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "イトーヨーカドー アリオ西新井店",
+        "address": "東京都足立区西新井栄町一丁目20番1号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.802994,
+          35.778103
+        ]
+      },
+      "properties": {
+        "id": "adachi-088",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ヨークフーズ 梅島店",
+        "address": "東京都足立区梅島二丁目31番26号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.781723,
+          35.77002
+        ]
+      },
+      "properties": {
+        "id": "adachi-089",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ヨークプライス 西新井店",
+        "address": "東京都足立区興野一丁目12番7号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.825623,
+          35.762486
+        ]
+      },
+      "properties": {
+        "id": "adachi-090",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "イトーヨーカドー 綾瀬店",
+        "address": "東京都足立区綾瀬三丁目4番25号",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.800613,
+          35.751228
+        ]
+      },
+      "properties": {
+        "id": "adachi-091",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "ヨークフーズ 千住店",
+        "address": "東京都足立区千住三丁目2番地",
+        "categories": [
+          "cooking-oil"
+        ],
+        "hours": "民間施設",
+        "notes": "",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/gomi/syokuyouaburakaisyuu.html",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.753769,
+          35.757206
+        ]
+      },
+      "properties": {
+        "id": "adachi-092",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "グリーンリサイクル（株）",
+        "address": "東京都足立区宮城1-4-8",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎月第1日曜日 9時～12時",
+        "notes": "資源買取市。古紙・缶・廃食用油・ペットボトル・衣類・布を現金買取。足立区民のみ（本人確認書類必要）。",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.830673,
+          35.782986
+        ]
+      },
+      "properties": {
+        "id": "adachi-093",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）新井商店",
+        "address": "東京都足立区北加平町8-26",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎月第1日曜日 9時～12時",
+        "notes": "資源買取市。古紙・缶・廃食用油・ペットボトル・衣類・布を現金買取。足立区民のみ（本人確認書類必要）。",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.757553,
+          35.807285
+        ]
+      },
+      "properties": {
+        "id": "adachi-094",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）トベ商事",
+        "address": "東京都足立区入谷8-10-29",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "偶数月第2日曜日 9時～12時",
+        "notes": "資源買取市。古紙・缶・廃食用油・ペットボトル・衣類・布を現金買取。足立区民のみ（本人確認書類必要）。",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763306,
+          35.76614
+        ]
+      },
+      "properties": {
+        "id": "adachi-095",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "飛鳥興産（株）",
+        "address": "東京都足立区江北2-3-18",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎月第3日曜日 9時～12時",
+        "notes": "資源買取市。古紙・缶・廃食用油・ペットボトル・衣類・布を現金買取。足立区民のみ（本人確認書類必要）。",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763504,
+          35.784698
+        ]
+      },
+      "properties": {
+        "id": "adachi-096",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）要興業",
+        "address": "東京都足立区鹿浜7-10",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "毎月第4日曜日 9時～13時",
+        "notes": "資源買取市。古紙・缶・廃食用油・ペットボトル・衣類・布を現金買取。足立区民のみ（本人確認書類必要）。",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.81189,
+          35.79969
+        ]
+      },
+      "properties": {
+        "id": "adachi-097",
+        "prefecture": "tokyo",
+        "city": "adachi",
+        "cityLabel": "足立区",
+        "name": "（株）遠藤商店",
+        "address": "東京都足立区花畑1-14-1",
+        "categories": [
+          "cooking-oil",
+          "used-clothing"
+        ],
+        "hours": "月～金曜日 8時～17時、第2・4・5土曜日 8時～12時（祝日・年末年始を除く）",
+        "notes": "資源買取市。古紙・缶・廃食用油・ペットボトル・衣類・布を現金買取。足立区民のみ（本人確認書類必要）。",
+        "officialUrl": "https://www.city.adachi.tokyo.jp/",
+        "categoryUrls": {}
+      }
+    }
+  ]
+}
