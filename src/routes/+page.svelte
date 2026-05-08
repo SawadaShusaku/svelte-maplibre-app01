@@ -20,16 +20,17 @@
     GeoJSONSource,
     CircleLayer,
     LineLayer,
-    SymbolLayer,
-    Popup
+    SymbolLayer
   } from 'svelte-maplibre-gl';
   import maplibregl from 'maplibre-gl';
   import type { ExpressionSpecification } from '@maplibre/maplibre-gl-style-spec';
-  import { ChevronRight, Footprints, Bike, Car, ExternalLink } from 'lucide-svelte';
+  import { ChevronLeft, ChevronRight, Footprints, Bike, Car, ExternalLink } from 'lucide-svelte';
   import { fly } from 'svelte/transition';
+  import { cubicOut } from 'svelte/easing';
 
   import AppHeader from '$lib/components/AppHeader.svelte';
   import SettingsSidebar from '$lib/components/SettingsSidebar.svelte';
+  import MapMarker from '$lib/components/MapMarker.svelte';
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
 
@@ -49,6 +50,7 @@
   } from '$lib/map/facility-rendering.js';
   import { getMarkerImage } from '$lib/map/marker-images.js';
   import { getCategorySourceUrl, WARD_REGISTRY } from '$lib/registry.js';
+  import { fetchNearbyThumbs, type MapillaryThumb } from '$lib/mapillary.js';
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
 
@@ -86,6 +88,7 @@
   let isFetchingRoute = $state(false);
   let travelMode = $state<'foot' | 'bike' | 'car'>('foot');
   let map = $state<maplibregl.Map | undefined>(undefined);
+  let heroMap = $state<maplibregl.Map | undefined>(undefined);
   let geolocateControl = $state<maplibregl.GeolocateControl | undefined>(undefined);
   let routeError = $state<string | null>(null);
   let popupTab = $state<'basic' | 'details'>('basic');
@@ -154,21 +157,130 @@
   const CLUSTER_HALO_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_HALO_RADIUS_PX);
   const CLUSTER_TEXT_SIZE_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_TEXT_SIZE_PX);
 
-  // ボトムシートスワイプ検出
-  let touchStartY = $state(0);
-  let touchStartTime = $state(0);
+  // ボトムシート: ドラッグでリサイズ
+  const SHEET_DEFAULT_VH = 60;
+  const SHEET_MIN_VH = 22;
+  const SHEET_MAX_VH = 92;
+  const SHEET_CLOSE_THRESHOLD_VH = 18;
 
-  function handleTouchStart(e: TouchEvent) {
-    touchStartY = e.touches[0].clientY;
-    touchStartTime = Date.now();
+  let sheetHeightVh = $state(SHEET_DEFAULT_VH);
+  let dragStartY = 0;
+  let dragStartHeightVh = 0;
+  let isDragging = $state(false);
+
+  function handleSheetPointerDown(e: PointerEvent) {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    dragStartY = e.clientY;
+    dragStartHeightVh = sheetHeightVh;
+    isDragging = true;
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
   }
 
-  function handleTouchEnd(e: TouchEvent) {
-    const deltaY = e.changedTouches[0].clientY - touchStartY;
-    const duration = Date.now() - touchStartTime;
-    if (deltaY > 30 && duration < 500) {
+  function handleSheetPointerMove(e: PointerEvent) {
+    if (!isDragging) return;
+    const dy = e.clientY - dragStartY;
+    const vhPerPx = 100 / window.innerHeight;
+    const next = dragStartHeightVh - dy * vhPerPx;
+    sheetHeightVh = Math.max(SHEET_MIN_VH - 6, Math.min(SHEET_MAX_VH, next));
+  }
+
+  function handleSheetPointerUp(e: PointerEvent) {
+    if (!isDragging) return;
+    isDragging = false;
+    try {
+      (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
+    } catch {}
+    if (sheetHeightVh < SHEET_CLOSE_THRESHOLD_VH) {
       selectedFacilityId = null;
+      sheetHeightVh = SHEET_DEFAULT_VH;
+    } else {
+      sheetHeightVh = Math.max(SHEET_MIN_VH, sheetHeightVh);
     }
+  }
+
+  $effect(() => {
+    if (selectedFacilityId === null) {
+      sheetHeightVh = SHEET_DEFAULT_VH;
+    }
+  });
+
+  // 詳細パネルのヒーローマップを選択施設に追従
+  $effect(() => {
+    if (!heroMap || !selectedFacility) return;
+    heroMap.setCenter(selectedFacility.geometry.coordinates);
+  });
+
+  // 詳細パネルのヒーロー: Mapillary 画像があればカルーセル表示、なければミニマップ
+  let heroThumbs = $state<MapillaryThumb[]>([]);
+  let heroThumbLoading = $state(false);
+  let heroIndex = $state(0);
+  const heroThumb = $derived(heroThumbs[heroIndex] ?? null);
+
+  $effect(() => {
+    const facility = selectedFacility;
+    if (!facility) {
+      heroThumbs = [];
+      heroIndex = 0;
+      heroThumbLoading = false;
+      return;
+    }
+
+    const [lng, lat] = facility.geometry.coordinates;
+    heroThumbs = [];
+    heroIndex = 0;
+    heroThumbLoading = true;
+
+    let cancelled = false;
+    fetchNearbyThumbs(lng, lat)
+      .then((thumbs) => {
+        if (cancelled) return;
+        heroThumbs = thumbs;
+        heroIndex = 0;
+        heroThumbLoading = false;
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        console.warn('[mapillary] effect catch', err);
+        heroThumbLoading = false;
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  });
+
+  function heroPrev() {
+    if (heroThumbs.length === 0) return;
+    heroIndex = (heroIndex - 1 + heroThumbs.length) % heroThumbs.length;
+  }
+  function heroNext() {
+    if (heroThumbs.length === 0) return;
+    heroIndex = (heroIndex + 1) % heroThumbs.length;
+  }
+
+  // ヒーロー画像のスワイプ（左右で前/次の画像へ）
+  const SWIPE_THRESHOLD_PX = 40;
+  let heroSwipeStartX = 0;
+  let heroSwipeStartY = 0;
+  let heroSwipeActive = false;
+
+  function handleHeroPointerDown(e: PointerEvent) {
+    if (heroThumbs.length < 2) return;
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    heroSwipeStartX = e.clientX;
+    heroSwipeStartY = e.clientY;
+    heroSwipeActive = true;
+  }
+
+  function handleHeroPointerUp(e: PointerEvent) {
+    if (!heroSwipeActive) return;
+    heroSwipeActive = false;
+    const dx = e.clientX - heroSwipeStartX;
+    const dy = e.clientY - heroSwipeStartY;
+    if (Math.abs(dx) < SWIPE_THRESHOLD_PX) return;
+    if (Math.abs(dy) > Math.abs(dx)) return; // vertical swipe → ignore (sheet drag)
+    if (dx < 0) heroNext();
+    else heroPrev();
   }
 
   function syncMobileAttributionState() {
@@ -418,124 +530,197 @@
 
 </script>
 
-{#snippet popupCard(f: GeoFeature)}
-  {@const { city, name, address, categories, hours, notes } = f.properties}
-  <div class="flex w-full h-2">
-    {#each categories as cat}
-      <div class="flex-1" style:background-color={CATEGORY_COLOR[cat]}></div>
-    {/each}
-  </div>
-  <div class="p-5">
-    <div class="mb-2 flex items-start justify-between gap-3">
-      <h3 class="pr-2 text-xl font-bold leading-snug text-gray-900">{name}</h3>
-      <button
-        onclick={() => (selectedFacilityId = null)}
-        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-black/5 text-xl text-gray-500 transition-colors hover:bg-black/10 hover:text-gray-800"
-        aria-label="閉じる"
-      >✕</button>
+{#snippet heroBlock(f: GeoFeature)}
+  <div class="detail-panel__hero">
+    <div class="detail-panel__hero-map-wrap" class:detail-panel__hero-map-wrap--hidden={Boolean(heroThumb)}>
+      <MapLibre
+        bind:map={heroMap}
+        class="detail-panel__hero-map"
+        style={mapStyleUrl}
+        center={f.geometry.coordinates}
+        zoom={16.5}
+        interactive={false}
+        attributionControl={false}
+      ></MapLibre>
+      <div class="detail-panel__hero-pin" aria-hidden="true">
+        <MapMarker
+          categories={f.properties.categories as CategoryId[]}
+          style={markerStyle}
+          solidColor={solidColor}
+          id={`hero-${f.properties.id}`}
+        />
+      </div>
     </div>
-    
-    <div class="flex flex-wrap gap-2">
-      {#each categories as cat}
-        <span
-          class="rounded-full px-2.5 py-1 text-sm font-bold text-white shadow-sm"
-          style:background-color={CATEGORY_COLOR[cat]}
-        >{CATEGORY_LABEL[cat]}</span>
-      {/each}
-    </div>
-  </div>
-
-  <!-- タブ -->
-  <div class="border-b border-gray-100 px-5">
-    <div class="flex gap-5">
-      <button
-        onclick={() => popupTab = 'basic'}
-        class="pb-3 text-base font-bold transition-colors {popupTab === 'basic' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
-      >基本情報</button>
-      <button
-        onclick={() => popupTab = 'details'}
-        class="pb-3 text-base font-bold transition-colors {popupTab === 'details' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
-      >カテゴリ詳細</button>
-    </div>
-  </div>
-
-  <!-- タブコンテンツ -->
-  <div class="min-h-[4.5rem] px-5 py-4">
-    {#if popupTab === 'basic'}
-      <p class="text-base leading-relaxed text-gray-700">{address}</p>
-      {#if hours}
-        <p class="mt-2 text-base text-gray-500">営業時間: {hours}</p>
+    {#if heroThumb}
+      <div
+        class="detail-panel__hero-photo-wrap"
+        role="presentation"
+        onpointerdown={handleHeroPointerDown}
+        onpointerup={handleHeroPointerUp}
+        onpointercancel={() => (heroSwipeActive = false)}
+      >
+        {#key heroThumb.id}
+          <img
+            class="detail-panel__hero-photo"
+            src={heroThumb.url}
+            alt={f.properties.name}
+            loading="eager"
+            decoding="async"
+            draggable="false"
+            onerror={() => { heroThumbs = heroThumbs.filter((t) => t.id !== heroThumb!.id); }}
+          />
+        {/key}
+      </div>
+      {#if heroThumbs.length > 1}
+        <button class="detail-panel__hero-nav detail-panel__hero-nav--prev" onclick={heroPrev} aria-label="前の画像">
+          <ChevronLeft size={18} strokeWidth={2.6} />
+        </button>
+        <button class="detail-panel__hero-nav detail-panel__hero-nav--next" onclick={heroNext} aria-label="次の画像">
+          <ChevronRight size={18} strokeWidth={2.6} />
+        </button>
+        <div class="detail-panel__hero-dots">
+          {#each heroThumbs as t, i (t.id)}
+            <button
+              type="button"
+              class="detail-panel__hero-dot"
+              class:detail-panel__hero-dot--active={i === heroIndex}
+              onclick={() => (heroIndex = i)}
+              aria-label="画像 {i + 1}/{heroThumbs.length}"
+              aria-current={i === heroIndex}
+            ></button>
+          {/each}
+        </div>
+        <span class="detail-panel__hero-counter">{heroIndex + 1}/{heroThumbs.length}</span>
       {/if}
-      {#if notes}
-        <p class="mt-2 text-base text-amber-600">{notes}</p>
+      {#if heroThumb.capturedAt}
+        <span class="detail-panel__hero-date" title="撮影日">
+          {new Date(heroThumb.capturedAt).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' })}
+        </span>
       {/if}
-    {:else}
-      {#each categories as cat}
-        {@const details = getCategoryDetails(cat)}
-        {#if Object.keys(details).length > 0}
-          <div class="mb-4 last:mb-0">
-            <p class="mb-1.5 text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
-            {#each Object.entries(details) as [field, content]}
-              <p class="text-base leading-relaxed text-gray-700">{content}</p>
-            {/each}
-            {#if getCategorySourceUrl(city, cat)}
-              <a
-                href={getCategorySourceUrl(city, cat)}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-2 inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-blue-800 hover:underline"
-                title="参考URLを開く"
-              >
-                <ExternalLink size={16} />
-                <span>参考URL</span>
-              </a>
-            {/if}
-          </div>
-        {/if}
-      {/each}
+      <a class="detail-panel__hero-credit" href="https://www.mapillary.com/app/?image_key={heroThumb.id}" target="_blank" rel="noopener noreferrer" title="Mapillary で開く">
+        Mapillary
+      </a>
+    {:else if heroThumbLoading}
+      <div class="detail-panel__hero-loading" aria-hidden="true"></div>
     {/if}
   </div>
+{/snippet}
 
-  <div class="flex flex-col gap-3 border-t border-gray-100 bg-gray-50/50 px-5 pb-5 pt-4 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
-    <div class="flex items-center justify-center gap-0 rounded-xl bg-gray-100 p-1.5 min-[420px]:justify-start">
-      <button
-        onclick={() => travelMode = 'foot'}
-        class="relative flex h-12 w-16 items-center justify-center rounded-lg transition-colors {travelMode === 'foot' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
-        aria-label="徒歩"
-      >
-        <Footprints size={26} />
-        {#if travelMode === 'foot'}
-          <span class="absolute bottom-0 left-1/2 h-0.5 w-11 -translate-x-1/2 rounded-full bg-emerald-600"></span>
+{#snippet popupCard(f: GeoFeature)}
+  {@const { city, name, address, categories, hours, notes } = f.properties}
+  <div class="popup-scroll flex flex-col">
+    <div class="px-5 pt-5">
+      <div class="mb-2 flex items-start justify-between gap-3">
+        <h3 class="pr-2 text-xl font-bold leading-snug text-gray-900">{name}</h3>
+        <button
+          onclick={() => (selectedFacilityId = null)}
+          class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-black/5 text-xl text-gray-500 transition-colors hover:bg-black/10 hover:text-gray-800"
+          aria-label="閉じる"
+        >✕</button>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        {#each categories as cat}
+          <span
+            class="rounded-full px-2.5 py-1 text-sm font-bold text-white shadow-sm"
+            style:background-color={CATEGORY_COLOR[cat]}
+          >{CATEGORY_LABEL[cat]}</span>
+        {/each}
+      </div>
+    </div>
+
+    <!-- タブ -->
+    <div class="border-b border-gray-100 px-5 mt-4">
+      <div class="flex gap-5">
+        <button
+          onclick={() => popupTab = 'basic'}
+          class="pb-3 text-base font-bold transition-colors {popupTab === 'basic' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        >基本情報</button>
+        <button
+          onclick={() => popupTab = 'details'}
+          class="pb-3 text-base font-bold transition-colors {popupTab === 'details' ? 'text-gray-900 border-b-2 border-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+        >カテゴリ詳細</button>
+      </div>
+    </div>
+
+    <!-- タブコンテンツ -->
+    <div class="min-h-[4.5rem] flex-1 overflow-y-auto px-5 py-4">
+      {#if popupTab === 'basic'}
+        <p class="text-base leading-relaxed text-gray-700">{address}</p>
+        {#if hours}
+          <p class="mt-2 text-base text-gray-500">営業時間: {hours}</p>
         {/if}
-      </button>
-      <button
-        onclick={() => travelMode = 'bike'}
-        class="relative flex h-12 w-16 items-center justify-center rounded-lg transition-colors {travelMode === 'bike' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
-        aria-label="自転車"
-      >
-        <Bike size={26} />
-        {#if travelMode === 'bike'}
-          <span class="absolute bottom-0 left-1/2 h-0.5 w-11 -translate-x-1/2 rounded-full bg-emerald-600"></span>
+        {#if notes}
+          <p class="mt-2 text-base text-amber-600">{notes}</p>
         {/if}
-      </button>
+      {:else}
+        {#each categories as cat}
+          {@const details = getCategoryDetails(cat)}
+          {#if Object.keys(details).length > 0}
+            <div class="mb-4 last:mb-0">
+              <p class="mb-1.5 text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
+              {#each Object.entries(details) as [_, content]}
+                <p class="text-base leading-relaxed text-gray-700">{content}</p>
+              {/each}
+              {#if getCategorySourceUrl(city, cat)}
+                <a
+                  href={getCategorySourceUrl(city, cat)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-2 inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-blue-800 hover:underline"
+                  title="参考URLを開く"
+                >
+                  <ExternalLink size={16} />
+                  <span>参考URL</span>
+                </a>
+              {/if}
+            </div>
+          {/if}
+        {/each}
+      {/if}
+    </div>
+
+    <div class="flex items-center gap-3 border-t border-gray-100 bg-gray-50/50 px-4 pb-5 pt-4">
+      <div class="flex flex-shrink-0 items-center gap-0 rounded-xl bg-gray-100 p-1">
+        <button
+          onclick={() => travelMode = 'foot'}
+          class="relative flex h-11 w-12 items-center justify-center rounded-lg transition-colors {travelMode === 'foot' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+          aria-label="徒歩"
+        >
+          <Footprints size={22} />
+          {#if travelMode === 'foot'}
+            <span class="absolute bottom-0 left-1/2 h-0.5 w-7 -translate-x-1/2 rounded-full bg-emerald-600"></span>
+          {/if}
+        </button>
+        <button
+          onclick={() => travelMode = 'bike'}
+          class="relative flex h-11 w-12 items-center justify-center rounded-lg transition-colors {travelMode === 'bike' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+          aria-label="自転車"
+        >
+          <Bike size={22} />
+          {#if travelMode === 'bike'}
+            <span class="absolute bottom-0 left-1/2 h-0.5 w-7 -translate-x-1/2 rounded-full bg-emerald-600"></span>
+          {/if}
+        </button>
+        <button
+          onclick={() => travelMode = 'car'}
+          class="relative flex h-11 w-12 items-center justify-center rounded-lg transition-colors {travelMode === 'car' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
+          aria-label="車"
+        >
+          <Car size={22} />
+          {#if travelMode === 'car'}
+            <span class="absolute bottom-0 left-1/2 h-0.5 w-7 -translate-x-1/2 rounded-full bg-emerald-600"></span>
+          {/if}
+        </button>
+      </div>
       <button
-        onclick={() => travelMode = 'car'}
-        class="relative flex h-12 w-16 items-center justify-center rounded-lg transition-colors {travelMode === 'car' ? 'text-emerald-600' : 'text-gray-400 hover:text-gray-600'}"
-        aria-label="車"
+        onclick={() => getRoute(f)}
+        disabled={isFetchingRoute}
+        class="inline-flex min-w-0 flex-1 items-center justify-center rounded-xl bg-blue-600 px-4 py-3 text-base font-bold text-white shadow-md transition-colors hover:bg-blue-700 disabled:opacity-50"
       >
-        <Car size={26} />
-        {#if travelMode === 'car'}
-          <span class="absolute bottom-0 left-1/2 h-0.5 w-11 -translate-x-1/2 rounded-full bg-emerald-600"></span>
-        {/if}
+        {isFetchingRoute ? '検索中...' : '経路を検索'}
       </button>
     </div>
-    <button
-      onclick={() => getRoute(f)}
-      disabled={isFetchingRoute}
-      class="inline-flex w-full items-center justify-center rounded-xl bg-blue-600 px-8 py-3 text-base font-bold text-white shadow-md transition-colors hover:bg-blue-700 disabled:opacity-50 min-[420px]:w-auto min-[420px]:min-w-[11rem]"
-    >
-      {isFetchingRoute ? '検索中...' : '経路を検索'}
-    </button>
   </div>
 {/snippet}
 
@@ -555,7 +740,10 @@
 <SettingsSidebar bind:open={sidebarOpen} bind:markerStyle bind:solidColor />
 
 <!-- 地図エリア（フルスクリーン） -->
-<div class="relative w-full h-screen bg-gray-100 overflow-hidden">
+<div
+  class="relative w-full h-screen bg-gray-100 overflow-hidden"
+  class:map-shifted={selectedFacility && !isMobile}
+>
   {#if isTitleCollapsed}
     <button
       class="map-title-tab map-title-anchor absolute z-20"
@@ -739,32 +927,48 @@
         />
       </GeoJSONSource>
 
-      {#if selectedFacility && !isMobile}
-        <Popup lnglat={selectedFacility.geometry.coordinates} onclose={() => { selectedFacilityId = null; popupTab = 'basic'; }} closeButton={false} closeOnClick={false} maxWidth="none" offset={[0, -24]}>
-          <div class="relative w-[28rem] max-w-[calc(100vw-2rem)] bg-white/95 text-left backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 overflow-hidden">
-            {@render popupCard(selectedFacility)}
-          </div>
-        </Popup>
-      {/if}
 	  </MapLibre>
-	
+
+	  {#if selectedFacility && !isMobile}
+	    <aside
+	      class="detail-panel"
+	      aria-label="施設詳細"
+	      transition:fly={{ x: 440, duration: 320, easing: cubicOut }}
+	    >
+	      <button
+	        class="detail-panel__collapse"
+	        onclick={() => (selectedFacilityId = null)}
+	        aria-label="パネルを閉じる"
+	      >
+	        <ChevronRight size={18} strokeWidth={2.4} />
+	      </button>
+	      {@render heroBlock(selectedFacility)}
+	      {@render popupCard(selectedFacility)}
+	    </aside>
+	  {/if}
+
 	  {#if isMobile && selectedFacility}
+        <div class="bottom-sheet-backdrop" onclick={() => (selectedFacilityId = null)} role="presentation"></div>
 	      <div
-	        class="fixed bottom-2 left-2 right-2 z-50 flex max-h-[72vh] flex-col overflow-hidden rounded-3xl bg-white/95 shadow-[0_-8px_32px_rgba(0,0,0,0.15)] backdrop-blur-md"
-	        transition:fly={{ y: 300, duration: 300, opacity: 1 }}
-        style="padding-bottom: max(env(safe-area-inset-bottom), 16px)"
-      >
+	        class="bottom-sheet"
+          class:bottom-sheet--dragging={isDragging}
+	        transition:fly={{ y: 600, duration: 360, opacity: 1 }}
+          style="height: {sheetHeightVh}vh"
+        >
         <div
-          class="flex-shrink-0 pt-3 pb-2 flex justify-center touch-pan-y"
+          class="bottom-sheet__handle"
           role="button"
           tabindex="-1"
-          aria-label="スワイプで閉じる"
-          ontouchstart={handleTouchStart}
-          ontouchend={handleTouchEnd}
+          aria-label="ドラッグで高さ調整"
+          onpointerdown={handleSheetPointerDown}
+          onpointermove={handleSheetPointerMove}
+          onpointerup={handleSheetPointerUp}
+          onpointercancel={handleSheetPointerUp}
 	        >
-	          <div class="w-12 h-1.5 rounded-full bg-gray-300"></div>
+	          <div class="bottom-sheet__handle-bar"></div>
 	        </div>
-	        <div class="flex-1 overflow-y-auto">
+	        <div class="bottom-sheet__body">
+	          {@render heroBlock(selectedFacility)}
 	          {@render popupCard(selectedFacility)}
 	        </div>
 	      </div>
@@ -839,14 +1043,333 @@
     }
   }
 
-  /* svelte-maplibre-gl のポップアップスタイルをリセット */
+  /* svelte-maplibre-gl のポップアップ枠を透明化（refined-popupが自前で枠を持つ） */
   :global(.maplibregl-popup-content) {
     padding: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
-    border-radius: 1rem !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
   :global(.maplibregl-popup-tip) {
-    border-top-color: rgba(255, 255, 255, 0.95) !important;
+    border-top-color: #ffffff !important;
+  }
+
+  /* Shift right-side map controls when detail panel is open (panel = 400px wide) */
+  :global(.maplibregl-ctrl-top-right),
+  :global(.maplibregl-ctrl-bottom-right) {
+    transition: transform 0.32s cubic-bezier(0.32, 0.72, 0.24, 1);
+  }
+  .map-shifted :global(.maplibregl-ctrl-top-right),
+  .map-shifted :global(.maplibregl-ctrl-bottom-right) {
+    transform: translateX(calc(-1 * min(400px, calc(100vw - 32px))));
+  }
+
+  /* === Desktop: facility detail side panel === */
+  .detail-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(400px, calc(100% - 32px));
+    background: #ffffff;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -16px 0 40px rgba(15, 23, 42, 0.12), -4px 0 8px rgba(15, 23, 42, 0.06);
+    overflow: visible;
+  }
+  /* Edge-mounted collapse handle (Google Maps style) */
+  .detail-panel__collapse {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 24px;
+    height: 56px;
+    border: 0;
+    border-radius: 8px 0 0 8px;
+    background: #ffffff;
+    color: #4a525b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: -4px 2px 12px rgba(15, 23, 42, 0.12), -1px 0 0 rgba(15, 23, 42, 0.04);
+    transition: color 0.15s ease, background 0.15s ease;
+    z-index: 1;
+  }
+  .detail-panel__collapse:hover { color: #0b1116; background: #f7f8fa; }
+  /* Hide the snippet's inline ✕ inside the docked panel (use edge handle instead) */
+  .detail-panel :global(.popup-scroll button[aria-label="閉じる"]) {
+    display: none;
+  }
+  .detail-panel :global(.popup-scroll > .px-5.pt-5 > .mb-2) {
+    padding-right: 0;
+  }
+  .popup-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  /* Hero at top of detail panel: Mapillary photo if available, else mini-map */
+  .detail-panel__hero {
+    position: relative;
+    height: 180px;
+    flex-shrink: 0;
+    background: #e9e6df;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+  .detail-panel__hero-map-wrap {
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.25s ease;
+  }
+  .detail-panel__hero-map-wrap--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  :global(.detail-panel__hero-map) {
+    width: 100%;
+    height: 100%;
+  }
+  .detail-panel__hero-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .detail-panel__hero-pin :global(svg) {
+    width: 36px;
+    height: auto;
+  }
+  .detail-panel__hero-photo-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    touch-action: pan-y;
+    cursor: grab;
+  }
+  .detail-panel__hero-photo-wrap:active { cursor: grabbing; }
+  .detail-panel__hero-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    animation: hero-photo-in 0.3s ease;
+  }
+  @keyframes hero-photo-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .detail-panel__hero-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.55);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    backdrop-filter: blur(4px);
+    transition: background 0.15s ease, transform 0.15s ease;
+    opacity: 0;
+  }
+  .detail-panel__hero:hover .detail-panel__hero-nav { opacity: 1; }
+  .detail-panel__hero-nav:hover { background: rgba(15, 23, 42, 0.75); }
+  .detail-panel__hero-nav--prev { left: 5px; }
+  .detail-panel__hero-nav--next { right: 5px; }
+  .detail-panel__hero-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 4;
+    max-width: calc(100% - 16px);
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4px;
+  }
+  .detail-panel__hero-dot {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.25);
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .detail-panel__hero-dot:hover {
+    background: rgba(255, 255, 255, 0.85);
+    transform: scale(1.2);
+  }
+  .detail-panel__hero-dot--active {
+    background: #ffffff;
+    transform: scale(1.3);
+  }
+  .detail-panel__hero-date {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 4;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+  }
+  .detail-panel__hero-counter {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 4;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+  }
+  .detail-panel__hero:hover .detail-panel__hero-counter { opacity: 1; }
+  .detail-panel__hero-credit {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 4;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+  }
+  .detail-panel__hero:hover .detail-panel__hero-date,
+  .detail-panel__hero:hover .detail-panel__hero-credit {
+    opacity: 1;
+  }
+  .detail-panel__hero-credit:hover { text-decoration: underline; }
+  .detail-panel__hero-loading {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 2px;
+    z-index: 4;
+    background: linear-gradient(90deg, transparent, rgba(15, 23, 42, 0.32), transparent);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    animation: hero-loading 1.1s linear infinite;
+  }
+  @keyframes hero-loading {
+    from { background-position: -30% 0; }
+    to { background-position: 130% 0; }
+  }
+  /* Hide attribution / controls inside the hero mini-map */
+  .detail-panel__hero :global(.maplibregl-ctrl) { display: none !important; }
+  .detail-panel__hero :global(.maplibregl-canvas) { cursor: default; }
+
+  /* === Bottom sheet (mobile) === */
+  .bottom-sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.18);
+    z-index: 49;
+    animation: bottom-sheet-fade 0.2s ease;
+  }
+  @keyframes bottom-sheet-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .bottom-sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: #ffffff;
+    border-radius: 23px 23px 0 0;
+    box-shadow: 0 -12px 40px rgba(15, 23, 42, 0.18);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: height 0.18s ease;
+    max-width: 100vw;
+  }
+  .bottom-sheet--dragging {
+    transition: none;
+    user-select: none;
+  }
+  .bottom-sheet__handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 0;
+    touch-action: none;
+    cursor: grab;
+  }
+  .bottom-sheet__handle:active { cursor: grabbing; }
+  .bottom-sheet__handle-bar {
+    width: 44px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 999px;
+    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.35);
+    transition: background 0.15s ease;
+  }
+  .bottom-sheet__handle:hover .bottom-sheet__handle-bar { background: #ffffff; }
+  .bottom-sheet__body {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-sheet :global(.detail-panel__hero) {
+    flex-shrink: 0;
+  }
+  /* When refined-popup renders inside bottom-sheet, drop the popup's own card chrome */
+  .bottom-sheet :global(.refined-popup) {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    animation: none;
+    flex: 1;
   }
 </style>

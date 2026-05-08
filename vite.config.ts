@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [tailwindcss(), sveltekit()],
   server: {
     host: true,
+    fs: {
+      allow: ['..', '../../..', '../../../..'],
+    },
   },
   optimizeDeps: {
     include: ['sql.js']
