@@ -61,15 +61,12 @@
   ];
 
   const fontOptions: LogoFont[] = [
-    'dela-gothic',
     'zen-kaku-gothic',
     'm-plus-rounded',
     'klee-one',
   ];
 
   const fontTargets: { key: FontTarget; label: string }[] = [
-    { key: 'logo', label: 'ロゴフォント' },
-    { key: 'popup', label: 'ポップアップフォント' },
     { key: 'ui', label: 'UIフォント' },
   ];
 
@@ -121,13 +118,12 @@
   }
 
   function getFontPreviewStyle(font: LogoFont): string {
-    const map: Record<LogoFont, string> = {
-      'dela-gothic': '"Dela Gothic One"',
+    const map: Partial<Record<LogoFont, string>> = {
       'zen-kaku-gothic': '"Zen Kaku Gothic New"',
       'm-plus-rounded': '"M PLUS Rounded 1c"',
       'klee-one': '"Klee One"',
     };
-    return `font-family: ${map[font]}, sans-serif;`;
+    return `font-family: ${map[font] ?? 'inherit'}, sans-serif;`;
   }
 </script>
 
