@@ -657,23 +657,26 @@
         {#each categories as cat}
           {@const details = getCategoryDetails(cat)}
           {#if Object.keys(details).length > 0}
+            {@const sourceUrl = getCategorySourceUrl(city, cat)}
             <div class="mb-4 last:mb-0">
-              <p class="mb-1.5 text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
+              <div class="mb-1.5 flex items-center gap-2">
+                <p class="text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
+                {#if sourceUrl}
+                  <a
+                    href={sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex h-6 w-6 items-center justify-center rounded-md text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-800"
+                    aria-label="参考URLを開く"
+                    title="参考URLを開く"
+                  >
+                    <ExternalLink size={14} />
+                  </a>
+                {/if}
+              </div>
               {#each Object.entries(details) as [_, content]}
                 <p class="text-base leading-relaxed text-gray-700">{content}</p>
               {/each}
-              {#if getCategorySourceUrl(city, cat)}
-                <a
-                  href={getCategorySourceUrl(city, cat)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="mt-2 inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-blue-800 hover:underline"
-                  title="参考URLを開く"
-                >
-                  <ExternalLink size={16} />
-                  <span>参考URL</span>
-                </a>
-              {/if}
             </div>
           {/if}
         {/each}

@@ -4,13 +4,12 @@ const LEGACY_STORAGE_KEY = 'recycling-map:logo-font';
 const STORAGE_KEY = 'recycling-map:font-choices';
 
 const DEFAULT_CHOICES: FontChoices = {
-  logo: 'dela-gothic',
+  logo: 'zen-kaku-gothic',
   popup: 'klee-one',
   ui: 'zen-kaku-gothic',
 };
 
 const fontMap: Record<LogoFont, string> = {
-  'dela-gothic': '"Dela Gothic One"',
   'zen-kaku-gothic': '"Zen Kaku Gothic New"',
   'm-plus-rounded': '"M PLUS Rounded 1c"',
   'klee-one': '"Klee One"',
@@ -91,7 +90,6 @@ export function applyFontChoices(): void {
 
 export function getLogoFontLabel(font: LogoFont): string {
   const labels: Record<LogoFont, string> = {
-    'dela-gothic': 'Dela Gothic One',
     'zen-kaku-gothic': 'Zen Kaku Gothic New',
     'm-plus-rounded': 'M PLUS Rounded 1c',
     'klee-one': 'Klee One',
