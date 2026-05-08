@@ -13,6 +13,19 @@
     setFontChoice,
     getLogoFontLabel,
   } from '$lib/font-style.js';
+  import {
+    X,
+    ChevronRight,
+    ChevronLeft,
+    Palette,
+    Type,
+    HelpCircle,
+    FileText,
+    Sparkles,
+    ShieldCheck,
+  } from 'lucide-svelte';
+  import { fade, fly } from 'svelte/transition';
+  import { cubicOut } from 'svelte/easing';
 
   let {
     open = $bindable(false),
@@ -28,7 +41,6 @@
 
   let currentSection = $state<Section>('home');
 
-  // Font state managed internally via CSS variables
   let logoFont = $state<LogoFont>(getFontChoice('logo'));
   let popupFont = $state<LogoFont>(getFontChoice('popup'));
   let uiFont = $state<LogoFont>(getFontChoice('ui'));
@@ -38,12 +50,14 @@
     description?: string;
     href?: string;
     external?: boolean;
+    icon: typeof HelpCircle;
+    accent?: boolean;
   };
 
-  const styleOptions: { value: MarkerStyle; label: string }[] = [
-    { value: 'adaptive', label: '同心円（デフォルト）' },
-    { value: 'solid', label: '単色' },
-    { value: 'gradient', label: 'グラデーション' },
+  const styleOptions: { value: MarkerStyle; label: string; sub: string }[] = [
+    { value: 'adaptive', label: '同心円（デフォルト）', sub: 'カテゴリ数に応じて自動切替' },
+    { value: 'solid', label: '単色', sub: '指定した1色で統一' },
+    { value: 'gradient', label: 'グラデーション', sub: 'カテゴリ色をグラデーション表示' },
   ];
 
   const fontOptions: LogoFont[] = [
@@ -59,16 +73,26 @@
     { key: 'ui', label: 'UIフォント' },
   ];
 
-  const infoMenuItems: InfoMenuItem[] = [
-    { label: '使い方', href: '/usage' },
-    { label: 'データについて' },
-    { label: '更新情報' },
-    { label: 'プライバシーポリシー' },
+  const settingSections = [
+    {
+      id: 'marker' as Section,
+      label: 'マーカーデザイン',
+      sub: '同心円・単色・グラデーション',
+      icon: Palette,
+    },
+    {
+      id: 'fonts' as Section,
+      label: 'フォント設定',
+      sub: 'ロゴ・ポップアップ・UI',
+      icon: Type,
+    },
   ];
 
-  const settingSections = [
-    { id: 'marker' as Section, label: 'マーカーデザイン', description: 'マーカーの色とデザイン' },
-    { id: 'fonts' as Section, label: 'フォント設定', description: 'ロゴ・ポップアップ・UIのフォント' },
+  const infoMenuItems: InfoMenuItem[] = [
+    { label: '使い方', href: '/usage', icon: HelpCircle, accent: true },
+    { label: 'データについて', icon: FileText },
+    { label: '更新情報', icon: Sparkles },
+    { label: 'プライバシーポリシー', icon: ShieldCheck },
   ];
 
   function handleStyleChange(style: MarkerStyle) {
@@ -108,212 +132,462 @@
 </script>
 
 {#if open}
-  <!-- バックグラウンドのオーバーレイ -->
   <div
-    class="fixed inset-0 bg-black/30 backdrop-blur-sm z-40 transition-opacity"
+    class="refined-backdrop"
     onclick={() => (open = false)}
     role="button"
     tabindex="0"
     onkeydown={(e) => e.key === 'Escape' && (open = false)}
     aria-label="閉じる"
+    transition:fade={{ duration: 200 }}
   ></div>
 
-  <!-- サイドバー本体 -->
   <aside
-    class="fixed top-0 left-0 bottom-0 w-[min(22rem,calc(100vw-1rem))] bg-white shadow-2xl z-50 flex flex-col transition-transform duration-300 transform translate-x-0"
+    class="refined-sidebar"
+    aria-label="設定メニュー"
+    transition:fly={{ x: -420, duration: 320, easing: cubicOut }}
   >
-    <button
-      onclick={() => (open = false)}
-      class="absolute right-0 top-5 z-10 flex h-12 w-7 translate-x-full items-center justify-center rounded-r-xl border border-l-0 border-slate-200 bg-white/95 text-[#00766f] shadow-lg shadow-slate-900/10 backdrop-blur transition-colors hover:bg-slate-50 hover:text-slate-950"
-      aria-label="サイドバーをしまう"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="17"
-        height="17"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-      >
-        <path d="m15 18-6-6 6-6" />
-      </svg>
-    </button>
-
-    <!-- ロゴヘッダー -->
-    <div class="border-b border-slate-200 bg-white px-5 py-3">
-      <div class="flex items-center justify-between gap-3">
-        <div class="flex min-w-0 items-center gap-2.5">
-          <img src={brandLogo} alt="" class="h-11 w-11 flex-shrink-0" />
-          <div class="min-w-0">
-            <p class="brand-display text-[0.8rem] leading-none tracking-[0.18em] text-[#00766f]">{SITE_NAME_EN.toUpperCase()}</p>
-            <p class="brand-display brand-title-jp mt-0.5 text-[1.68rem] leading-none tracking-[-0.065em] text-slate-950">{SITE_NAME_JA}</p>
-          </div>
-          <h2 class="sr-only">表示設定と案内</h2>
-        </div>
+    <header class="refined-sidebar__head">
+      <img src={brandLogo} alt="" class="refined-sidebar__logo" />
+      <div class="refined-sidebar__brand">
+        <p class="refined-sidebar__brand-kicker">{SITE_NAME_EN.toUpperCase()}</p>
+        <p class="refined-sidebar__brand-title">{SITE_NAME_JA}</p>
       </div>
-    </div>
+      <button class="refined-sidebar__close" onclick={() => (open = false)} aria-label="閉じる">
+        <X size={18} />
+      </button>
+    </header>
 
-    <div class="flex-1 overflow-y-auto px-4 py-3 space-y-5">
+    <div class="refined-sidebar__body">
       {#if currentSection === 'home'}
-        <!-- ホームビュー: セクション一覧 -->
-        <section class="space-y-2.5">
-          <div class="px-2">
-            <h3 class="text-sm font-black text-gray-800">表示設定</h3>
-          </div>
+        <section class="refined-section">
+          <h3 class="refined-section__title">表示設定</h3>
+          {#each settingSections as sec}
+            {@const Icon = sec.icon}
+            <button class="refined-list-row" onclick={() => goSection(sec.id)}>
+              <span class="refined-list-row__icon">
+                <Icon size={18} />
+              </span>
+              <div class="refined-list-row__main">
+                <p class="refined-list-row__label">{sec.label}</p>
+                <p class="refined-list-row__sub">{sec.sub}</p>
+              </div>
+              <ChevronRight class="refined-list-row__chev" size={16} />
+            </button>
+          {/each}
+        </section>
 
-          <div class="space-y-2">
-            {#each settingSections as sec}
-              <button
-                onclick={() => goSection(sec.id)}
-                class="group flex w-full items-start justify-between gap-3 rounded-2xl border border-gray-100 bg-white px-4 py-3 text-left shadow-sm transition-colors hover:bg-gray-50"
+        <section class="refined-section">
+          <h3 class="refined-section__title">情報・ヘルプ</h3>
+          {#each infoMenuItems as item}
+            {@const Icon = item.icon}
+            {@const available = Boolean(item.href)}
+            {#if available}
+              <a
+                href={item.href}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noopener noreferrer' : undefined}
+                class="refined-list-row"
               >
-                <div class="min-w-0">
-                  <span class="text-sm font-bold text-gray-800">{sec.label}</span>
-                  <p class="mt-0.5 text-xs leading-5 text-gray-500">{sec.description}</p>
-                </div>
-                <span class="mt-1 text-gray-300 transition-colors group-hover:text-gray-500">›</span>
-              </button>
-            {/each}
-          </div>
-        </section>
-
-        <!-- 情報・ヘルプ -->
-        <section class="space-y-2.5">
-          <div class="px-2">
-            <h3 class="text-sm font-black text-gray-800">情報・ヘルプ</h3>
-          </div>
-
-          <div class="space-y-2">
-            {#each infoMenuItems as item}
-              {@const available = Boolean(item.href)}
-              {#if available}
-                <a
-                  href={item.href}
-                  target={item.external ? '_blank' : undefined}
-                  rel={item.external ? 'noopener noreferrer' : undefined}
-                  class="group flex w-full items-start justify-between gap-3 rounded-2xl border border-gray-100 bg-white px-4 py-3 text-left shadow-sm transition-colors hover:bg-gray-50"
+                <span
+                  class="refined-list-row__icon {item.accent ? 'refined-list-row__icon--accent' : ''}"
                 >
-                  <div class="min-w-0">
-                    <span class="text-sm font-bold text-gray-800">{item.label}</span>
-                    {#if item.description}
-                      <p class="mt-1 text-xs leading-5 text-gray-500">{item.description}</p>
-                    {/if}
-                  </div>
-                  <span class="mt-1 text-gray-300 transition-colors group-hover:text-gray-500">›</span>
-                </a>
-              {:else}
-                <div
-                  class="flex w-full items-start justify-between gap-3 rounded-2xl border border-gray-100 bg-gray-50/70 px-4 py-3 text-left shadow-sm"
-                  aria-hidden="true"
-                >
-                  <div class="min-w-0">
-                    <span class="text-sm font-bold text-gray-500">{item.label}</span>
-                    {#if item.description}
-                      <p class="mt-1 text-xs leading-5 text-gray-400">{item.description}</p>
-                    {/if}
-                  </div>
-                  <span class="mt-1 text-gray-200">›</span>
+                  <Icon size={18} />
+                </span>
+                <div class="refined-list-row__main">
+                  <p class="refined-list-row__label">{item.label}</p>
+                  {#if item.description}
+                    <p class="refined-list-row__sub">{item.description}</p>
+                  {/if}
                 </div>
-              {/if}
-            {/each}
-          </div>
+                <ChevronRight class="refined-list-row__chev" size={16} />
+              </a>
+            {:else}
+              <div class="refined-list-row refined-list-row--disabled" aria-disabled="true">
+                <span class="refined-list-row__icon">
+                  <Icon size={18} />
+                </span>
+                <div class="refined-list-row__main">
+                  <p class="refined-list-row__label">{item.label}</p>
+                  {#if item.description}
+                    <p class="refined-list-row__sub">{item.description}</p>
+                  {/if}
+                </div>
+                <ChevronRight class="refined-list-row__chev" size={16} />
+              </div>
+            {/if}
+          {/each}
         </section>
-
-        <div class="mt-6 pt-5 border-t border-gray-100 px-4">
-          <p class="text-xs text-gray-400 font-medium">© 2026 {SITE_NAME_EN}</p>
-        </div>
 
       {:else if currentSection === 'marker'}
-        <!-- マーカーデザイン詳細 -->
-        <div class="space-y-2">
-          <button
-            onclick={goHome}
-            class="inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-gray-800 transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            戻る
-          </button>
-          <h3 class="text-base font-black text-gray-900">マーカーデザイン</h3>
-        </div>
+        <button class="refined-back" onclick={goHome}>
+          <ChevronLeft size={16} />
+          戻る
+        </button>
+        <h3 class="refined-detail-title">マーカーデザイン</h3>
 
-        <div class="rounded-2xl border border-gray-100 bg-gray-50/80 px-4 py-3.5 shadow-sm">
-          <div class="mt-2 space-y-2.5">
-            {#each styleOptions as opt}
-              <label class="flex items-center gap-3 rounded-xl bg-white px-3 py-3 shadow-sm ring-1 ring-gray-100 cursor-pointer transition-colors hover:bg-gray-50">
-                <input
-                  type="radio"
-                  name="marker-style"
-                  value={opt.value}
-                  checked={markerStyle === opt.value}
-                  onchange={() => handleStyleChange(opt.value)}
-                  class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <span class="text-sm font-medium text-gray-700">{opt.label}</span>
-              </label>
-            {/each}
-          </div>
-
-          {#if markerStyle === 'solid'}
-            <div class="mt-4 flex items-center justify-between gap-3 rounded-xl border border-dashed border-gray-200 bg-white px-3 py-3">
-              <label for="solid-color" class="text-sm font-medium text-gray-600">単色マーカーの色</label>
-              <div class="flex items-center gap-2">
-                <input
-                  id="solid-color"
-                  type="color"
-                  value={solidColor}
-                  oninput={(e) => handleSolidColorChange(e.currentTarget.value)}
-                  class="h-9 w-9 rounded cursor-pointer border border-gray-200 bg-transparent"
-                />
-                <span class="text-xs text-gray-400 font-mono">{solidColor}</span>
-              </div>
-            </div>
-          {/if}
-        </div>
-
-      {:else if currentSection === 'fonts'}
-        <!-- フォント設定詳細 -->
-        <div class="space-y-2">
-          <button
-            onclick={goHome}
-            class="inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-gray-800 transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            戻る
-          </button>
-          <h3 class="text-base font-black text-gray-900">フォント設定</h3>
-        </div>
-
-        <div class="space-y-5">
-          {#each fontTargets as ft}
-            {@const currentValue = ft.key === 'logo' ? logoFont : ft.key === 'popup' ? popupFont : uiFont}
-            <div class="rounded-2xl border border-gray-100 bg-gray-50/80 px-4 py-3.5 shadow-sm">
-              <h4 class="text-sm font-black text-gray-800 mb-3">{ft.label}</h4>
-              <div class="space-y-2.5">
-                {#each fontOptions as opt}
-                  <label
-                    class="flex items-center gap-3 rounded-xl bg-white px-3 py-3 shadow-sm ring-1 ring-gray-100 cursor-pointer transition-colors hover:bg-gray-50"
-                    style={getFontPreviewStyle(opt)}
-                  >
-                    <input
-                      type="radio"
-                      name="font-{ft.key}"
-                      value={opt}
-                      checked={currentValue === opt}
-                      onchange={() => handleFontChange(ft.key, opt)}
-                      class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 flex-shrink-0"
-                    />
-                    <span class="text-sm font-medium text-gray-700">{getLogoFontLabel(opt)}</span>
-                  </label>
-                {/each}
-              </div>
-            </div>
+        <div class="refined-options">
+          {#each styleOptions as opt}
+            <label class="refined-option" class:refined-option--selected={markerStyle === opt.value}>
+              <input
+                type="radio"
+                name="marker-style"
+                value={opt.value}
+                checked={markerStyle === opt.value}
+                onchange={() => handleStyleChange(opt.value)}
+              />
+              <span class="refined-option__radio" aria-hidden="true"></span>
+              <span class="refined-option__main">
+                <span class="refined-option__label">{opt.label}</span>
+                <span class="refined-option__sub">{opt.sub}</span>
+              </span>
+            </label>
           {/each}
         </div>
+
+        {#if markerStyle === 'solid'}
+          <div class="refined-color-row">
+            <label for="solid-color">単色マーカーの色</label>
+            <div class="refined-color-row__pick">
+              <input
+                id="solid-color"
+                type="color"
+                value={solidColor}
+                oninput={(e) => handleSolidColorChange(e.currentTarget.value)}
+              />
+              <span class="refined-color-row__hex">{solidColor}</span>
+            </div>
+          </div>
+        {/if}
+
+      {:else if currentSection === 'fonts'}
+        <button class="refined-back" onclick={goHome}>
+          <ChevronLeft size={16} />
+          戻る
+        </button>
+        <h3 class="refined-detail-title">フォント設定</h3>
+
+        {#each fontTargets as ft}
+          {@const currentValue = ft.key === 'logo' ? logoFont : ft.key === 'popup' ? popupFont : uiFont}
+          <div class="refined-font-group">
+            <p class="refined-font-group__label">{ft.label}</p>
+            <div class="refined-options">
+              {#each fontOptions as opt}
+                <label
+                  class="refined-option"
+                  class:refined-option--selected={currentValue === opt}
+                  style={getFontPreviewStyle(opt)}
+                >
+                  <input
+                    type="radio"
+                    name="font-{ft.key}"
+                    value={opt}
+                    checked={currentValue === opt}
+                    onchange={() => handleFontChange(ft.key, opt)}
+                  />
+                  <span class="refined-option__radio" aria-hidden="true"></span>
+                  <span class="refined-option__main">
+                    <span class="refined-option__label">{getLogoFontLabel(opt)}</span>
+                  </span>
+                </label>
+              {/each}
+            </div>
+          </div>
+        {/each}
       {/if}
     </div>
+
+    <footer class="refined-sidebar__footer">© 2026 {SITE_NAME_EN}</footer>
   </aside>
 {/if}
+
+<style>
+  .refined-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.32);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 40;
+  }
+
+  .refined-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(400px, calc(100% - 32px));
+    background: #fff;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 24px 64px rgba(15, 23, 42, 0.18), 0 8px 16px rgba(15, 23, 42, 0.08);
+  }
+
+  .refined-sidebar__head {
+    padding: 18px 18px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+  }
+  .refined-sidebar__logo {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  .refined-sidebar__brand {
+    min-width: 0;
+    flex: 1;
+  }
+  .refined-sidebar__brand-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #00766f;
+    margin: 0 0 3px;
+    line-height: 1;
+  }
+  .refined-sidebar__brand-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0b1116;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .refined-sidebar__close {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7480;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    flex-shrink: 0;
+  }
+  .refined-sidebar__close:hover { background: #f7f8fa; color: #0b1116; }
+
+  .refined-sidebar__body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 16px 24px;
+  }
+
+  .refined-section { margin-bottom: 22px; }
+  .refined-section:last-child { margin-bottom: 0; }
+  .refined-section__title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #6b7480;
+    text-transform: uppercase;
+    margin: 0 8px 10px;
+  }
+
+  .refined-list-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+    font: inherit;
+  }
+  .refined-list-row + .refined-list-row { margin-top: 2px; }
+  .refined-list-row:hover { background: #f7f8fa; }
+  .refined-list-row:active { transform: scale(0.99); }
+  .refined-list-row--disabled {
+    cursor: default;
+    opacity: 0.55;
+  }
+  .refined-list-row--disabled:hover { background: transparent; }
+
+  .refined-list-row__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    color: #1a2127;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .refined-list-row__icon :global(svg) {
+    width: 20px;
+    height: 20px;
+  }
+  .refined-list-row__icon--accent {
+    background: #ecfdf5;
+    color: #00766f;
+  }
+  .refined-list-row__main {
+    flex: 1;
+    min-width: 0;
+  }
+  .refined-list-row__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0b1116;
+    margin: 0 0 2px;
+    line-height: 1.3;
+  }
+  .refined-list-row__sub {
+    font-size: 13.5px;
+    color: #6b7480;
+    margin: 0;
+    line-height: 1.4;
+  }
+  :global(.refined-list-row__chev) {
+    color: #9ba3ad;
+    flex-shrink: 0;
+  }
+
+  .refined-sidebar__footer {
+    padding: 14px 22px 18px;
+    border-top: 1px solid rgba(15, 23, 42, 0.05);
+    font-size: 11px;
+    color: #9ba3ad;
+  }
+
+  /* Detail screens */
+  .refined-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: 0;
+    color: #6b7480;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+  .refined-back:hover { color: #0b1116; background: #f7f8fa; }
+
+  .refined-detail-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #0b1116;
+    letter-spacing: -0.01em;
+    margin: 0 8px 14px;
+  }
+
+  .refined-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .refined-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    position: relative;
+  }
+  .refined-option:hover { background: #f7f8fa; }
+  .refined-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .refined-option__radio {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #cbd5e1;
+    flex-shrink: 0;
+    position: relative;
+    transition: border-color 0.15s ease;
+  }
+  .refined-option--selected .refined-option__radio {
+    border-color: #0b1116;
+  }
+  .refined-option--selected .refined-option__radio::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #0b1116;
+    border-radius: 50%;
+  }
+  .refined-option__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    flex: 1;
+  }
+  .refined-option__label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0b1116;
+    line-height: 1.3;
+  }
+  .refined-option__sub {
+    font-size: 13px;
+    color: #6b7480;
+    line-height: 1.4;
+  }
+
+  .refined-color-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    margin-top: 10px;
+  }
+  .refined-color-row label {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #1a2127;
+  }
+  .refined-color-row__pick {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .refined-color-row__pick input[type="color"] {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    padding: 2px;
+  }
+  .refined-color-row__hex {
+    font-size: 11.5px;
+    color: #6b7480;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  .refined-font-group {
+    margin-bottom: 18px;
+  }
+  .refined-font-group:last-child { margin-bottom: 0; }
+  .refined-font-group__label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #4a525b;
+    letter-spacing: 0.04em;
+    margin: 0 8px 6px;
+  }
+</style>
