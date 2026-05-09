@@ -72,12 +72,12 @@ private data pipeline  →  private D1 seed/import  →  Cloudflare D1  →  Wor
 
 ### D1 の推奨名
 
-- dev/local: `recycling-facilities-dev`
+- dev/local: use the preview binding locally via `npm run dev:d1`
 - preview/staging: `recycling-facilities-preview`
 - production: `recycling-facilities-prod`
 - binding name: `RECYCLING_DB`
 
-作成後、`wrangler.toml` の `database_id` placeholder を差し替えてください。
+`wrangler.toml` の root 環境には D1 binding を置きません。D1 binding は `[env.preview]` と `[env.production]` にだけ置き、production deploy では必ず `npm run deploy:prod` を使います。
 
 ### D1 schema の適用
 
@@ -103,9 +103,9 @@ preview 環境へ手動デプロイする場合:
 npm run deploy:preview
 ```
 
-bare `npx wrangler deploy` は使わないでください。`[env.production]` を選ばず、dev 用 D1 binding を参照してビルド/デプロイが失敗する可能性があります。
+bare `npx wrangler deploy` は使わないでください。`[env.production]` を選ばず、root の dev 専用 Worker を対象にします。
 
-`wrangler.toml` の root `name` は production と同名にしません。root は `svelte-maplibre-app01-dev` のような dev 専用 Worker 名にしておき、誤って bare deploy しても production Worker を dev binding で上書きしない構成にします。
+`wrangler.toml` の root `name` は production と同名にしません。root は `svelte-maplibre-app01-dev` のような dev 専用 Worker 名にし、root には placeholder D1 database ID を置かない構成にします。
 
 ### ローカルSQLite検証
 

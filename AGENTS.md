@@ -165,9 +165,9 @@ src/
 ### Common Issues
 
 **D1 binding missing**:
-- Local D1-backed development should use `npm run dev:d1`
+- Local D1-backed development should use `npm run dev:d1`, which runs Wrangler with the preview environment locally
 - `wrangler.toml` uses the binding name `RECYCLING_DB`
-- Replace placeholder D1 `database_id` values after creating the Cloudflare D1 databases
+- Root Wrangler config intentionally has no D1 binding; preview and production bindings live under explicit environments
 
 **Proxy object errors**:
 - Spread state arrays: `getFacilities([...selectedCities], [...selectedCategories])`
@@ -202,11 +202,6 @@ compatibility_date = "2026-04-29"
 directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
 
-[[d1_databases]]
-binding = "RECYCLING_DB"
-database_name = "recycling-facilities-dev"
-database_id = "<replace-with-dev-d1-id>"
-
 [env.preview]
 name = "svelte-maplibre-app01-preview"
 
@@ -232,9 +227,9 @@ database_id = "<replace-with-production-d1-id>"
 | Deploy command | `npm run deploy:prod` |
 | Root directory | `/` |
 
-Do **not** use bare `npx wrangler deploy` in the Cloudflare Git integration for production. It uses the root Wrangler environment and can bind the dev D1 configuration. Use `npm run deploy:prod` so `[env.production]` and `recycling-facilities-prod` are selected.
+Do **not** use bare `npx wrangler deploy` in the Cloudflare Git integration for production. It uses the root Wrangler environment, which is dev-only and has no production D1 binding. Use `npm run deploy:prod` so `[env.production]` and `recycling-facilities-prod` are selected.
 
-The root Wrangler worker name must remain distinct from `[env.production].name`. Keep the root name dev-only, for example `svelte-maplibre-app01-dev`, so an accidental bare deploy cannot update the production Worker with dev bindings.
+The root Wrangler worker name must remain distinct from `[env.production].name`. Keep the root name dev-only, for example `svelte-maplibre-app01-dev`, so an accidental bare deploy cannot update the production Worker. Root config must not contain placeholder D1 database IDs.
 
 Do **not** use GitHub Actions for deployment — the Cloudflare Git integration handles builds and deployments automatically.
 

@@ -9,16 +9,9 @@ binding = "ASSETS"
 # Mapillary クライアントトークンは `npx wrangler secret put MAPILLARY_TOKEN`
 # でサーバ専用シークレットとして登録します（ブラウザには公開されません）。
 
-# Recommended database names:
-# - recycling-facilities-dev
-# - recycling-facilities-preview
-# - recycling-facilities-prod
-#
-# Replace the placeholder database_id values after creating the D1 databases.
-[[d1_databases]]
-binding = "RECYCLING_DB"
-database_name = "recycling-facilities-dev"
-database_id = "00000000-0000-0000-0000-000000000000"
+# D1 bindings are intentionally defined only under explicit environments.
+# Bare `wrangler deploy` targets the root dev Worker and must not bind a placeholder
+# or production database by accident.
 
 [env.preview]
 name = "svelte-maplibre-app01-preview"
