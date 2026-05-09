@@ -1,5 +1,5 @@
 import { error, json } from '@sveltejs/kit';
-import { MAPILLARY_TOKEN } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import type { RequestHandler } from './$types';
 
 /**
@@ -110,12 +110,14 @@ export const GET: RequestHandler = async ({ url, platform }) => {
     }
   }
 
-  if (!MAPILLARY_TOKEN) {
+  const mapillaryToken = platform?.env?.MAPILLARY_TOKEN ?? env.MAPILLARY_TOKEN;
+
+  if (!mapillaryToken) {
     throw error(500, 'MAPILLARY_TOKEN secret not configured');
   }
 
   const apiUrl =
-    `${ENDPOINT}?access_token=${encodeURIComponent(MAPILLARY_TOKEN)}` +
+    `${ENDPOINT}?access_token=${encodeURIComponent(mapillaryToken)}` +
     `&bbox=${bboxAround(lng, lat, radius)}` +
     `&fields=id,thumb_1024_url,captured_at,is_pano,compass_angle,computed_compass_angle,computed_geometry,geometry` +
     `&limit=24`;
