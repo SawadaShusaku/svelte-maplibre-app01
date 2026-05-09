@@ -10,13 +10,4 @@ export default defineConfig({
       allow: ['..', '../../..', '../../../..'],
     },
   },
-  optimizeDeps: {
-    include: ['sql.js']
-  },
-  build: {
-    rollupOptions: {
-      external: [/\.sqlite$/]
-    }
-  },
-  assetsInclude: ['**/*.db']
 });

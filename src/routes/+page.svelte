@@ -61,9 +61,9 @@
 
   // 初期データ
   const allCategories: CategoryId[] = [
-    'rechargeable-battery', 'button-battery', 'dry-battery',
+    'rechargeable-battery', 'e-bike-rechargeable-battery', 'button-battery', 'dry-battery',
     'small-appliance', 'fluorescent', 'ink-cartridge',
-    'cooking-oil', 'used-clothing'
+    'cooking-oil', 'heated-tobacco-device', 'used-clothing', 'paper-pack', 'styrofoam'
   ];
   const allCityKeys = WARD_REGISTRY.map((w) => `${w.prefecture}/${w.city}`);
 
@@ -138,6 +138,13 @@
   const CLUSTER_LABEL_HALO_WIDTH = 1.3;
   const CLUSTER_LABEL_HALO_BLUR = 0.4;
   const CLUSTER_LABEL_FONT = ['Noto Sans Bold'];
+  type OsrmRouteResponse = {
+    routes?: Array<{
+      geometry: LineString;
+      distance: number;
+      duration: number;
+    }>;
+  };
 
   function interpolateClusterValueByZoom(values: ClusterZoomValues): ExpressionSpecification {
     return [
@@ -494,7 +501,7 @@
       if (!res.ok) {
         throw new Error(`Failed to fetch route: ${res.statusText}`);
       }
-      const data = await res.json();
+      const data = await res.json() as OsrmRouteResponse;
 
       if (data.routes && data.routes.length > 0) {
         const route = data.routes[0];
