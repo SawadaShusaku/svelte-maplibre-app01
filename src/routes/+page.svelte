@@ -34,7 +34,7 @@
   import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
 
-  import { getFacilities, type GeoFeature } from '$lib/data.js';
+  import { getAreas, getFacilities, type AreaScope, type GeoFeature, type PublicArea } from '$lib/data.js';
   import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER } from '$lib/site.js';
   import {
     buildFacilityIndex,
@@ -44,12 +44,13 @@
     fitToWardSummary,
     INDIVIDUAL_MARKER_MIN_ZOOM,
     MARKER_ICON_SIZE,
+    PREFECTURE_SUMMARY_MAX_ZOOM,
     WARD_SUMMARY_MAX_ZOOM,
     panToFacility,
     resolveSelectedFacility
   } from '$lib/map/facility-rendering.js';
   import { getMarkerImage } from '$lib/map/marker-images.js';
-  import { getCategorySourceUrl, WARD_REGISTRY } from '$lib/registry.js';
+  import { getCategorySourceUrl } from '$lib/registry.js';
   import { fetchNearbyThumbs, type MapillaryThumb } from '$lib/mapillary.js';
   import type { CategoryId, MarkerStyle } from '$lib/types.js';
   import type { LineString } from 'geojson';
@@ -65,12 +66,11 @@
     'small-appliance', 'fluorescent', 'ink-cartridge',
     'cooking-oil', 'heated-tobacco-device', 'used-clothing', 'paper-pack', 'styrofoam'
   ];
-  const allCityKeys = WARD_REGISTRY.map((w) => `${w.prefecture}/${w.city}`);
-
-
   // 状態管理
   let selectedCategories = $state<CategoryId[]>([...allCategories]);
-  let selectedCityKeys = $state<string[]>([...allCityKeys]);
+  let areas = $state<PublicArea[]>([]);
+  let selectedCityKeys = $state<string[]>([]);
+  let areaScope = $state<AreaScope>('all');
   let sidebarOpen = $state(false);
   let facilities = $state<GeoFeature[]>([]);
   let selectedFacilityId = $state<string | null>(null);
@@ -96,11 +96,14 @@
   let isMobile = $state(browser ? window.innerWidth <= 640 : false);
   let facilitiesRequestVersion = 0;
   let markerImagesRequestVersion = 0;
+  let currentZoom = $state(5.2);
+  const allCityKeys = $derived(areas.map((area) => `${area.prefecture}/${area.id}`));
 
   const facilityIndex = $derived(buildFacilityIndex(facilities));
   const selectedFacility = $derived(resolveSelectedFacility(facilityIndex, selectedFacilityId));
   const markerSourceData = $derived(buildMarkerFeatureCollection(facilities, markerStyle, solidColor));
-  const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities));
+  const summaryLevel = $derived(currentZoom < PREFECTURE_SUMMARY_MAX_ZOOM ? 'prefecture' : 'municipality');
+  const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities, summaryLevel));
   type ClusterZoomValues = {
     wideArea: number;
     wardArea: number;
@@ -209,6 +212,16 @@
     if (selectedFacilityId === null) {
       sheetHeightVh = SHEET_DEFAULT_VH;
     }
+  });
+
+  $effect(() => {
+    if (!browser) return;
+
+    getAreas().then((loadedAreas) => {
+      areas = loadedAreas;
+    }).catch((err) => {
+      console.error('Failed to load areas:', err);
+    });
   });
 
   // 詳細パネルのヒーローマップを選択施設に追従
@@ -323,13 +336,16 @@
     if (!browser) return;
     
     // Spread to convert proxy to regular array
-    getFacilities([...selectedCityKeys], [...selectedCategories]).then((f) => {
+    const requestVersion = ++facilitiesRequestVersion;
+    getFacilities([...selectedCityKeys], [...selectedCategories], areaScope).then((f) => {
+      if (requestVersion !== facilitiesRequestVersion) return;
       facilities = f;
       // 表示対象外になったポップアップを閉じる
       if (selectedFacilityId && !f.find((x) => x.properties.id === selectedFacilityId)) {
         selectedFacilityId = null;
       }
     }).catch(err => {
+      if (requestVersion !== facilitiesRequestVersion) return;
       console.error('Failed to load facilities:', err);
     });
   });
@@ -386,6 +402,13 @@
   $effect(() => {
     if (!browser || !map) return;
 
+    const currentMap = map;
+    currentZoom = currentMap.getZoom();
+    const handleMove = () => {
+      currentZoom = currentMap.getZoom();
+    };
+    currentMap.on('moveend', handleMove);
+    currentMap.on('zoomend', handleMove);
     syncMobileAttributionState();
     const frameId = window.requestAnimationFrame(() => {
       syncMobileAttributionState();
@@ -400,6 +423,8 @@
     window.addEventListener('resize', handleResize);
     return () => {
       window.cancelAnimationFrame(frameId);
+      currentMap.off('moveend', handleMove);
+      currentMap.off('zoomend', handleMove);
       window.removeEventListener('resize', handleResize);
     };
   });
@@ -444,6 +469,7 @@
       {
         city: city ?? '',
         cityLabel: typeof summary.cityLabel === 'string' ? summary.cityLabel : '',
+        summaryType: summary.summaryType === 'prefecture' ? 'prefecture' : 'municipality',
         facilityCount: Number(summary.facilityCount ?? 0),
         minLng,
         minLat,
@@ -740,6 +766,8 @@
   {searchResults} 
   bind:selectedKeys={selectedCityKeys} 
   allKeys={allCityKeys} 
+  bind:areaScope
+  {areas}
   bind:selectedCategories 
   {allCategories} 
   onSelectFacility={handleSelectFacility}
@@ -800,8 +828,8 @@
     bind:map={map}
     class="h-full w-full"
     style={mapStyleUrl}
-    center={[139.7159, 35.7324]}
-    zoom={13.4}
+    center={[137.5, 38.2]}
+    zoom={5.2}
     attributionControl={false}
   >
     <!-- MapLibre UI Controls -->

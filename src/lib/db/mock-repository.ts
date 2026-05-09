@@ -76,7 +76,7 @@ export class MockRepository implements Repository {
 
 	getFacilities(wardIds: string[], categoryIds: string[]): FacilityWithCategories[] {
 		return this.facilities.filter(f => {
-			const hasWard = wardIds.includes(f.ward_id);
+			const hasWard = wardIds.length === 0 || wardIds.includes(f.ward_id);
 			// If no categories selected, return all facilities in the wards
 			const hasCategory = categoryIds.length === 0 || f.categories.some(c => categoryIds.includes(c));
 			return hasWard && hasCategory;
@@ -90,7 +90,7 @@ export class MockRepository implements Repository {
 	searchFacilities(query: string, wardIds: string[]): FacilityWithCategories[] {
 		const q = query.toLowerCase();
 		return this.facilities.filter(f => {
-			const inWard = wardIds.includes(f.ward_id);
+			const inWard = wardIds.length === 0 || wardIds.includes(f.ward_id);
 			const matchesQuery = f.name.toLowerCase().includes(q) || 
 			                    f.address.toLowerCase().includes(q);
 			return inWard && matchesQuery;

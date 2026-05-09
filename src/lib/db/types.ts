@@ -53,6 +53,8 @@ export interface FacilityCategory {
 
 // Extended types with joined data
 export interface FacilityWithCategories extends Facility {
+	prefecture?: string;
+	city_label?: string;
 	categories: string[];
 }
 

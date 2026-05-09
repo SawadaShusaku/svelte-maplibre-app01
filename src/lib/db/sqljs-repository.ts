@@ -79,9 +79,8 @@ export class SqlJsRepository implements Repository {
 	}
 
 	getFacilities(wardIds: string[], categoryIds: string[]): FacilityWithCategories[] {
-		if (wardIds.length === 0) return [];
-
 		const wardPlaceholders = wardIds.map(() => '?').join(',');
+		const wardFilter = wardIds.length > 0 ? `f.ward_id IN (${wardPlaceholders})` : '1 = 1';
 
 		// If no categories selected, return all facilities in the wards
 		let facilityQuery: string;
@@ -89,18 +88,20 @@ export class SqlJsRepository implements Repository {
 
 		if (categoryIds.length === 0) {
 			facilityQuery = `
-				SELECT DISTINCT f.*
+				SELECT DISTINCT f.*, w.prefecture, w.city_label
 				FROM facilities f
-				WHERE f.ward_id IN (${wardPlaceholders})
+				JOIN wards w ON w.id = f.ward_id
+				WHERE ${wardFilter}
 			`;
 			queryParams = wardIds;
 		} else {
 			const categoryPlaceholders = categoryIds.map(() => '?').join(',');
 			facilityQuery = `
-				SELECT DISTINCT f.*
+				SELECT DISTINCT f.*, w.prefecture, w.city_label
 				FROM facilities f
+				JOIN wards w ON w.id = f.ward_id
 				JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE f.ward_id IN (${wardPlaceholders})
+				WHERE ${wardFilter}
 				AND fc.category_id IN (${categoryPlaceholders})
 			`;
 			queryParams = [...wardIds, ...categoryIds];
@@ -123,7 +124,10 @@ export class SqlJsRepository implements Repository {
 	}
 
 	getFacilityById(id: string): FacilityWithCategories | null {
-		const facilities = this.execQuery('SELECT * FROM facilities WHERE id = ?', [id]) as Facility[];
+		const facilities = this.execQuery(
+			'SELECT f.*, w.prefecture, w.city_label FROM facilities f JOIN wards w ON w.id = f.ward_id WHERE f.id = ?',
+			[id]
+		) as Array<Facility & { prefecture: string; city_label: string }>;
 		if (facilities.length === 0) return null;
 
 		const f = facilities[0];
@@ -139,16 +143,18 @@ export class SqlJsRepository implements Repository {
 	}
 
 	searchFacilities(query: string, wardIds: string[]): FacilityWithCategories[] {
-		if (!query.trim() || wardIds.length === 0) return [];
+		if (!query.trim()) return [];
 
 		const wardPlaceholders = wardIds.map(() => '?').join(',');
+		const wardFilter = wardIds.length > 0 ? `f.ward_id IN (${wardPlaceholders})` : '1 = 1';
 		const searchTerm = `%${query.trim()}%`;
 
 		const facilityQuery = `
-			SELECT DISTINCT f.*
+			SELECT DISTINCT f.*, w.prefecture, w.city_label
 			FROM facilities f
+			JOIN wards w ON w.id = f.ward_id
 			JOIN facility_categories fc ON f.id = fc.facility_id
-			WHERE f.ward_id IN (${wardPlaceholders})
+			WHERE ${wardFilter}
 			AND (f.name LIKE ? OR f.address LIKE ?)
 			LIMIT 50
 		`;
