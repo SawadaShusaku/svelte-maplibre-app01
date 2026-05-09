@@ -9,9 +9,11 @@ binding = "ASSETS"
 # Mapillary クライアントトークンは `npx wrangler secret put MAPILLARY_TOKEN`
 # でサーバ専用シークレットとして登録します（ブラウザには公開されません）。
 
-# D1 bindings are intentionally defined only under explicit environments.
-# Bare `wrangler deploy` targets the root dev Worker and must not bind a placeholder
-# or production database by accident.
+# Root config is the production Worker used by Cloudflare Git integration.
+[[d1_databases]]
+binding = "RECYCLING_DB"
+database_name = "recycling-facilities-prod"
+database_id = "36efb56c-0cc8-45a3-a1f3-6eb81777adbf"
 
 [env.preview]
 name = "svelte-maplibre-app01-preview"
@@ -20,11 +22,3 @@ name = "svelte-maplibre-app01-preview"
 binding = "RECYCLING_DB"
 database_name = "recycling-facilities-preview"
 database_id = "26327863-633c-47e0-a352-ddc798b0a3e3"
-
-[env.production]
-name = "svelte-maplibre-app01"
-
-[[env.production.d1_databases]]
-binding = "RECYCLING_DB"
-database_name = "recycling-facilities-prod"
-database_id = "36efb56c-0cc8-45a3-a1f3-6eb81777adbf"

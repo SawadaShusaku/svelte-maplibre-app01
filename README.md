@@ -77,7 +77,7 @@ private data pipeline  →  private D1 seed/import  →  Cloudflare D1  →  Wor
 - production: `recycling-facilities-prod`
 - binding name: `RECYCLING_DB`
 
-`wrangler.toml` の root 環境には D1 binding を置きません。D1 binding は `[env.preview]` と `[env.production]` にだけ置き、production deploy では必ず `npm run deploy:prod` を使います。
+Cloudflare Git integration では root `name` が Dashboard の Worker 名と一致している必要があるため、`wrangler.toml` の root 環境を production として扱います。preview だけ `[env.preview]` で分けます。
 
 ### D1 schema の適用
 
@@ -91,7 +91,7 @@ npm run d1:schema:prod
 
 ### デプロイ
 
-Cloudflare Git 連携の production deploy command は、root 環境ではなく Wrangler の production 環境を明示します。
+Cloudflare Git 連携の production deploy command は root production Worker をデプロイします。
 
 ```sh
 npm run deploy:prod
@@ -103,9 +103,7 @@ preview 環境へ手動デプロイする場合:
 npm run deploy:preview
 ```
 
-bare `npx wrangler deploy` は使わないでください。`[env.production]` を選ばず、root の dev 専用 Worker を対象にします。
-
-`wrangler.toml` の root `name` は production と同名にしません。root は `svelte-maplibre-app01-dev` のような dev 専用 Worker 名にし、root には placeholder D1 database ID を置かない構成にします。
+root は production Worker なので、手動で production へデプロイする場合も `npm run deploy:prod` を使います。preview 確認は `npm run deploy:preview` を使います。
 
 ### ローカルSQLite検証
 
