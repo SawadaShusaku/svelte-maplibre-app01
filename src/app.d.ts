@@ -9,6 +9,7 @@ declare global {
 		interface Platform {
 			env?: {
 				MAPILLARY_CACHE?: KVNamespace;
+				MAPILLARY_TOKEN?: string;
 			};
 		}
 	}
