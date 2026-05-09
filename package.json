@@ -2,6 +2,7 @@
 	"name": "svelte-maplibre-app01",
 	"private": true,
 	"version": "0.0.1",
+	"license": "MIT",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -13,6 +14,8 @@
 		"d1:schema:preview": "wrangler d1 execute recycling-facilities-preview --env preview --remote --file d1/schema.sql",
 		"d1:schema:prod": "wrangler d1 execute recycling-facilities-prod --remote --file d1/schema.sql",
 		"d1:check-env": "tsx scripts/check-d1-env.ts",
+		"dedupe:d1-seed": "tsx scripts/dedupe-d1-public-data.ts",
+		"normalize:d1-seed": "tsx scripts/normalize-d1-public-data.ts",
 		"deploy:preview": "wrangler deploy --env preview",
 		"deploy:prod": "wrangler deploy",
 		"validate:d1-seed": "tsx scripts/validate-d1-public-data.ts",

@@ -30,4 +30,9 @@ export interface RecycleFacility {
   categories: CategoryId[];
   hours: string;
   notes: string;
+  imageUrl?: string | null;
+  imageAlt?: string | null;
+  imageCredit?: string | null;
+  imageSourceUrl?: string | null;
+  mapillaryImageId?: string | null;
 }

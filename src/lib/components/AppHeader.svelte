@@ -33,17 +33,20 @@
 
   // 利用可能なカテゴリを動的に取得
   let availableCategories = $state<CategoryId[]>([]);
-  
+  let categoryRequestVersion = 0;
+
   $effect(() => {
     if (!browser) return;
-    
+
     const wardIds = selectedKeys.map((key: string) => key.split('/')[1]).filter(Boolean);
-    
+    const requestVersion = ++categoryRequestVersion;
+
     getAvailableCategories(wardIds, areaScope).then(categories => {
+      if (requestVersion !== categoryRequestVersion) return;
       availableCategories = categories as CategoryId[];
-      
+
       // 選択中のカテゴリで利用可能でないものを解除
-      selectedCategories = selectedCategories.filter((cat: CategoryId) => 
+      selectedCategories = selectedCategories.filter((cat: CategoryId) =>
         availableCategories.includes(cat)
       );
       // If no previously-selected categories are available, select all available ones

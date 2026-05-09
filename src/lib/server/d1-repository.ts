@@ -1,4 +1,4 @@
-import type { Category, Collector, Facility, FacilityWithCategories, Ward } from '$lib/db/types';
+import type { Category, Collector, Facility, FacilityWithCategories, PublicCollectionEntry, Ward } from '$lib/db/types';
 
 type FacilityRow = Facility & {
 	categories: string | null;
@@ -9,6 +9,40 @@ type FacilityRow = Facility & {
 type CategoryDetailRow = {
 	field: string;
 	content: string;
+};
+
+type PlaceRow = {
+	id: string;
+	area_id: string;
+	canonical_name: string;
+	display_address: string;
+	latitude: number;
+	longitude: number;
+	url: string | null;
+	image_url: string | null;
+	image_alt: string | null;
+	image_credit: string | null;
+	image_source_url: string | null;
+	mapillary_image_id: string | null;
+	categories: string | null;
+	prefecture: string;
+	city_label: string;
+	hours: string | null;
+	notes: string | null;
+	source_url: string | null;
+};
+
+type PlaceCategoryRow = {
+	place_id: string;
+	category_id: string;
+	hours: string | null;
+	notes: string | null;
+	source_url: string | null;
+};
+
+type CollectionEntryRow = PublicCollectionEntry & {
+	data_source_name: string | null;
+	data_source_url: string | null;
 };
 
 const CATEGORY_ORDER = [
@@ -61,6 +95,52 @@ function toFacility(row: FacilityRow): FacilityWithCategories {
 	};
 }
 
+function toFacilityFromPlace(row: PlaceRow): FacilityWithCategories {
+	return {
+		id: row.id,
+		ward_id: row.area_id,
+		name: row.canonical_name,
+		address: row.display_address,
+		latitude: row.latitude,
+		longitude: row.longitude,
+		url: row.url,
+		official_url: row.source_url,
+		category_urls: null,
+		collector_id: null,
+		hours: row.hours,
+		notes: row.notes,
+		image_url: row.image_url,
+		image_alt: row.image_alt,
+		image_credit: row.image_credit,
+		image_source_url: row.image_source_url,
+		mapillary_image_id: row.mapillary_image_id,
+		prefecture: row.prefecture,
+		city_label: row.city_label,
+		categories: parseCategories(row.categories)
+	};
+}
+
+function attachCategories(rows: PlaceRow[], categoryRows: PlaceCategoryRow[]): FacilityWithCategories[] {
+	const byPlace = new Map<string, { categories: Set<string>; hours: string | null; notes: string | null; sourceUrl: string | null }>();
+	for (const row of categoryRows) {
+		const existing = byPlace.get(row.place_id) ?? { categories: new Set<string>(), hours: null, notes: null, sourceUrl: null };
+		existing.categories.add(row.category_id);
+		existing.hours ??= row.hours;
+		existing.notes ??= row.notes;
+		existing.sourceUrl ??= row.source_url;
+		byPlace.set(row.place_id, existing);
+	}
+	return rows.map((row) => {
+		const facility = toFacilityFromPlace(row);
+		const entry = byPlace.get(row.id);
+		facility.categories = entry ? [...entry.categories].sort() : [];
+		facility.hours = entry?.hours ?? facility.hours;
+		facility.notes = entry?.notes ?? facility.notes;
+		facility.official_url = entry?.sourceUrl ?? facility.official_url;
+		return facility;
+	});
+}
+
 function sortCategories(categories: Category[]): Category[] {
 	const order = new Map(CATEGORY_ORDER.map((id, index) => [id, index]));
 	return [...categories].sort((a, b) => {
@@ -74,7 +154,9 @@ export class D1Repository {
 	constructor(private readonly db: D1Database) {}
 
 	async getWards(): Promise<Ward[]> {
-		const result = await this.db.prepare('SELECT * FROM wards ORDER BY prefecture, city_label').all<Ward>();
+		const result = await this.db
+			.prepare('SELECT id, prefecture, city_label, url FROM areas WHERE is_active = 1 ORDER BY prefecture, city_label')
+			.all<Ward>();
 		return result.results ?? [];
 	}
 
@@ -86,16 +168,21 @@ export class D1Repository {
 	}
 
 	async getAvailableCategories(wardIds: string[]): Promise<Category[]> {
-		if (wardIds.length === 0) return [];
+		const params: string[] = [];
+		const areaFilter = wardIds.length > 0 ? `p.area_id IN (${placeholders(wardIds)})` : '1 = 1';
+		params.push(...wardIds);
 
 		const result = await this.db
 			.prepare(`
 				SELECT DISTINCT c.id, c.label, c.color, c.icon
 				FROM categories c
-				JOIN ward_categories wc ON c.id = wc.category_id
-				WHERE wc.ward_id IN (${placeholders(wardIds)})
+				JOIN place_collection_entries pce ON c.id = pce.category_id
+				JOIN places p ON p.id = pce.place_id
+				WHERE p.is_active = 1
+				AND pce.is_active = 1
+				AND ${areaFilter}
 			`)
-			.bind(...wardIds)
+			.bind(...params)
 			.all<Category>();
 
 		return sortCategories(result.results ?? []);
@@ -115,67 +202,101 @@ export class D1Repository {
 	}
 
 	async getCollectors(): Promise<Collector[]> {
-		const result = await this.db.prepare('SELECT * FROM collectors ORDER BY name').all<Collector>();
+		const result = await this.db
+			.prepare('SELECT id, name, url, organization_name, license_note, last_fetched_at, is_active, created_at, updated_at FROM data_sources WHERE is_active = 1 ORDER BY name')
+			.all<Collector>();
 		return result.results ?? [];
 	}
 
 	async getFacilities(wardIds: string[], categoryIds: string[]): Promise<FacilityWithCategories[]> {
 		const params: string[] = [];
-		const wardFilter = wardIds.length > 0 ? `f.ward_id IN (${placeholders(wardIds)})` : '1 = 1';
-		let categoryFilter = '';
-		params.push(...wardIds);
+		const areaFilter = wardIds.length > 0 ? `p.area_id IN (${placeholders(wardIds)})` : '1 = 1';
+		let categoryJoin = '';
 
 		if (categoryIds.length > 0) {
-			categoryFilter = `
-				AND EXISTS (
-					SELECT 1
-					FROM facility_categories selected_fc
-					WHERE selected_fc.facility_id = f.id
-					AND selected_fc.category_id IN (${placeholders(categoryIds)})
-				)
+			categoryJoin = `
+				JOIN place_collection_entries selected_pce
+					ON selected_pce.place_id = p.id
+					AND selected_pce.is_active = 1
+					AND selected_pce.category_id IN (${placeholders(categoryIds)})
 			`;
 			params.push(...categoryIds);
 		}
+		params.push(...wardIds);
 
 		const result = await this.db
 			.prepare(`
 				SELECT
-					f.*,
-					w.prefecture,
-					w.city_label,
-					GROUP_CONCAT(fc.category_id) AS categories
-				FROM facilities f
-				JOIN wards w ON w.id = f.ward_id
-				LEFT JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE ${wardFilter}
-				${categoryFilter}
-				GROUP BY f.id
-				ORDER BY f.ward_id, f.name
+					p.id,
+					p.area_id,
+					p.canonical_name,
+					p.display_address,
+					p.latitude,
+					p.longitude,
+					p.url,
+					p.image_url,
+					p.image_alt,
+					p.image_credit,
+					p.image_source_url,
+					p.mapillary_image_id,
+					a.prefecture,
+					a.city_label,
+					NULL AS hours,
+					NULL AS notes,
+					NULL AS source_url,
+					NULL AS categories
+				FROM places p
+				JOIN areas a ON a.id = p.area_id
+				${categoryJoin}
+				WHERE p.is_active = 1
+				AND ${areaFilter}
+				GROUP BY p.id
+				ORDER BY p.area_id, p.canonical_name
 			`)
 			.bind(...params)
-			.all<FacilityRow>();
+			.all<PlaceRow>();
 
-		return (result.results ?? []).map(toFacility);
+		const places = result.results ?? [];
+		const categoryRows = await this.getCategoryRowsForFacilities(wardIds, categoryIds);
+		return attachCategories(places, categoryRows);
 	}
 
 	async getFacilityById(id: string): Promise<FacilityWithCategories | null> {
 		const row = await this.db
 			.prepare(`
 				SELECT
-					f.*,
-					w.prefecture,
-					w.city_label,
-					GROUP_CONCAT(fc.category_id) AS categories
-				FROM facilities f
-				JOIN wards w ON w.id = f.ward_id
-				LEFT JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE f.id = ?
-				GROUP BY f.id
+					p.id,
+					p.area_id,
+					p.canonical_name,
+					p.display_address,
+					p.latitude,
+					p.longitude,
+					p.url,
+					p.image_url,
+					p.image_alt,
+					p.image_credit,
+					p.image_source_url,
+					p.mapillary_image_id,
+					a.prefecture,
+					a.city_label,
+					MIN(pce.hours) AS hours,
+					MIN(pce.notes) AS notes,
+					MIN(pce.source_url) AS source_url,
+					GROUP_CONCAT(DISTINCT pce.category_id) AS categories
+				FROM places p
+				JOIN areas a ON a.id = p.area_id
+				LEFT JOIN place_collection_entries pce ON p.id = pce.place_id AND pce.is_active = 1
+				WHERE p.id = ?
+				AND p.is_active = 1
+				GROUP BY p.id
 			`)
 			.bind(id)
-			.first<FacilityRow>();
+			.first<PlaceRow>();
 
-		return row ? toFacility(row) : null;
+		if (!row) return null;
+		const facility = toFacilityFromPlace(row);
+		facility.collection_entries = await this.getCollectionEntries([id]);
+		return facility;
 	}
 
 	async searchFacilities(query: string, wardIds: string[]): Promise<FacilityWithCategories[]> {
@@ -183,21 +304,27 @@ export class D1Repository {
 		if (keywords.length === 0) return [];
 
 		const params: string[] = [];
-		const wardFilter = wardIds.length > 0 ? `f.ward_id IN (${placeholders(wardIds)})` : '1 = 1';
+		const areaFilter = wardIds.length > 0 ? `p.area_id IN (${placeholders(wardIds)})` : '1 = 1';
 		params.push(...wardIds);
 		const clauses = keywords.map((keyword) => {
 			const term = `%${escapeLikePattern(keyword)}%`;
-			params.push(term, term, term);
+			params.push(term, term, term, term, term, term);
 			return `
 				(
-					f.name LIKE ? ESCAPE '\\'
-					OR f.address LIKE ? ESCAPE '\\'
+					p.canonical_name LIKE ? ESCAPE '\\'
+					OR p.display_address LIKE ? ESCAPE '\\'
 					OR EXISTS (
 						SELECT 1
-						FROM facility_categories search_fc
-						JOIN categories search_c ON search_c.id = search_fc.category_id
-						WHERE search_fc.facility_id = f.id
-						AND search_c.label LIKE ? ESCAPE '\\'
+						FROM place_collection_entries search_pce
+						JOIN categories search_c ON search_c.id = search_pce.category_id
+						WHERE search_pce.place_id = p.id
+						AND search_pce.is_active = 1
+						AND (
+							search_c.label LIKE ? ESCAPE '\\'
+							OR search_pce.source_display_name LIKE ? ESCAPE '\\'
+							OR search_pce.source_address LIKE ? ESCAPE '\\'
+							OR search_pce.notes LIKE ? ESCAPE '\\'
+						)
 					)
 				)
 			`;
@@ -206,23 +333,93 @@ export class D1Repository {
 		const result = await this.db
 			.prepare(`
 				SELECT
-					f.*,
-					w.prefecture,
-					w.city_label,
-					GROUP_CONCAT(fc.category_id) AS categories
-				FROM facilities f
-				JOIN wards w ON w.id = f.ward_id
-				LEFT JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE ${wardFilter}
+					p.id,
+					p.area_id,
+					p.canonical_name,
+					p.display_address,
+					p.latitude,
+					p.longitude,
+					p.url,
+					p.image_url,
+					p.image_alt,
+					p.image_credit,
+					p.image_source_url,
+					p.mapillary_image_id,
+					a.prefecture,
+					a.city_label,
+					MIN(pce.hours) AS hours,
+					MIN(pce.notes) AS notes,
+					MIN(pce.source_url) AS source_url,
+					GROUP_CONCAT(DISTINCT pce.category_id) AS categories
+				FROM places p
+				JOIN areas a ON a.id = p.area_id
+				LEFT JOIN place_collection_entries pce ON p.id = pce.place_id AND pce.is_active = 1
+				WHERE p.is_active = 1
+				AND ${areaFilter}
 				AND ${clauses.join(' AND ')}
-				GROUP BY f.id
-				ORDER BY f.ward_id, f.name
+				GROUP BY p.id
+				ORDER BY p.area_id, p.canonical_name
 				LIMIT 50
 			`)
 			.bind(...params)
-			.all<FacilityRow>();
+			.all<PlaceRow>();
 
-		return (result.results ?? []).map(toFacility);
+		return (result.results ?? []).map(toFacilityFromPlace);
+	}
+
+	private async getCollectionEntries(placeIds: string[]): Promise<PublicCollectionEntry[]> {
+		if (placeIds.length === 0) return [];
+		const result = await this.db
+			.prepare(`
+				SELECT
+					pce.*,
+					ds.name AS data_source_name,
+					ds.url AS data_source_url
+				FROM place_collection_entries pce
+				JOIN data_sources ds ON ds.id = pce.data_source_id
+				WHERE pce.is_active = 1
+				AND pce.place_id IN (${placeholders(placeIds)})
+				ORDER BY pce.category_id, ds.name
+			`)
+			.bind(...placeIds)
+			.all<CollectionEntryRow>();
+		return result.results ?? [];
+	}
+
+	private async getCategoryRowsForFacilities(wardIds: string[], categoryIds: string[]): Promise<PlaceCategoryRow[]> {
+		const params: string[] = [];
+		const areaFilter = wardIds.length > 0 ? `p.area_id IN (${placeholders(wardIds)})` : '1 = 1';
+		let categoryJoin = '';
+		if (categoryIds.length > 0) {
+			categoryJoin = `
+				JOIN place_collection_entries selected_pce
+					ON selected_pce.place_id = p.id
+					AND selected_pce.is_active = 1
+					AND selected_pce.category_id IN (${placeholders(categoryIds)})
+			`;
+			params.push(...categoryIds);
+		}
+		params.push(...wardIds);
+		const result = await this.db
+			.prepare(`
+				SELECT
+					pce.place_id,
+					pce.category_id,
+					pce.hours,
+					pce.notes,
+					pce.source_url
+				FROM place_collection_entries pce
+				JOIN places p ON p.id = pce.place_id
+				${categoryJoin}
+				WHERE p.is_active = 1
+				AND pce.is_active = 1
+				AND ${areaFilter}
+				GROUP BY pce.id
+				ORDER BY pce.place_id, pce.category_id
+			`)
+			.bind(...params)
+			.all<PlaceCategoryRow>();
+		return result.results ?? [];
 	}
 }
 

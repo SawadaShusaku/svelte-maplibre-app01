@@ -23,10 +23,36 @@ export interface GeoFeature {
 		categories: string[];
 		hours: string | null;
 		notes: string | null;
+		imageUrl: string | null;
+		imageAlt: string | null;
+		imageCredit: string | null;
+		imageSourceUrl: string | null;
+		mapillaryImageId: string | null;
 		officialUrl: string | null;
 		categoryUrls: Record<string, string> | null;
+		collectionEntries?: PublicCollectionEntryRecord[];
 	};
 }
+
+export type PublicCollectionEntryRecord = {
+	id: string;
+	place_id: string;
+	category_id: string;
+	data_source_id: string;
+	source_display_name: string | null;
+	source_address: string | null;
+	source_url: string | null;
+	hours: string | null;
+	notes: string | null;
+	location_hint: string | null;
+	image_url: string | null;
+	image_alt: string | null;
+	image_credit: string | null;
+	image_source_url: string | null;
+	mapillary_image_id: string | null;
+	data_source_name?: string | null;
+	data_source_url?: string | null;
+};
 
 type PublicFacilityRecord = {
 	id: string;
@@ -42,7 +68,13 @@ type PublicFacilityRecord = {
 	category_urls: string | null;
 	hours: string | null;
 	notes: string | null;
+	image_url: string | null;
+	image_alt: string | null;
+	image_credit: string | null;
+	image_source_url: string | null;
+	mapillary_image_id: string | null;
 	categories: string[];
+	collection_entries?: PublicCollectionEntryRecord[];
 };
 
 const facilitiesCache = new Map<string, Promise<GeoFeature[]>>();
@@ -88,8 +120,14 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 			categories: f.categories,
 			hours: f.hours,
 			notes: f.notes,
+			imageUrl: f.image_url,
+			imageAlt: f.image_alt,
+			imageCredit: f.image_credit,
+			imageSourceUrl: f.image_source_url,
+			mapillaryImageId: f.mapillary_image_id,
 			officialUrl: f.official_url,
-			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null
+			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null,
+			collectionEntries: f.collection_entries ?? []
 		}
 	};
 }

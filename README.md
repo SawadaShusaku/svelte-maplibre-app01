@@ -29,6 +29,23 @@ npm run dev
 npm run dev -- --open
 ```
 
+### Safe Chain (推奨)
+
+このプロジェクトでは、悪意のある npm パッケージから開発環境を保護するため、[Aikido Safe Chain](https://github.com/AikidoSec/safe-chain) の導入を推奨しています。
+
+**インストール:**
+
+```sh
+# macOS / Linux
+curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh
+
+# ターミナルを再起動後、検証
+npm safe-chain-verify
+# → "OK: Safe-chain works!" と表示されれば成功
+```
+
+Safe Chain は `npm install` などのパッケージマネージャーコマンドを自動的にラップし、マルウェアや48時間以内に公開された新規パッケージをブロックします。デプロイコマンドや既存のビルドスクリプトへの変更は不要です。
+
 公開設定は `.env.example` を元に `.env` を作成して設定します。
 
 ```env
@@ -146,3 +163,23 @@ npm run build:db:local
 
 ### 加熱式たばこ機器等の回収・リサイクル活動
 - https://www.tioj.or.jp/recycling/index.html
+
+## License
+
+本プロジェクトのソースコードは [MIT License](LICENSE) の下で公開されています。
+
+### 使用ライブラリ・サービス
+
+本プロジェクトは以下のオープンソースライブラリ・サービスを使用しています：
+
+- [SvelteKit](https://kit.svelte.dev/) / [Svelte](https://svelte.dev/) (MIT)
+- [MapLibre GL](https://maplibre.org/) (BSD-3-Clause)
+- [MIERUNE Arenarium](https://www.mierune.co.jp/) (MIT) - マーカー/ポップアップレンダリング
+- [OpenFreeMap](https://openfreemap.org/) - 地図タイル
+- [Tailwind CSS](https://tailwindcss.com/) (MIT)
+- [Cloudflare Workers](https://workers.cloudflare.com/) / [D1](https://developers.cloudflare.com/d1/)
+
+### データの取り扱い
+
+- 回収拠点データは各自治体・データソースの利用規約に従います
+- 地図タイルは [OpenFreeMap](https://openfreemap.org/) の利用規約に従います
