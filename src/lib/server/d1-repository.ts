@@ -28,6 +28,12 @@ function placeholders(values: string[]): string {
 	return values.map(() => '?').join(',');
 }
 
+const LIKE_ESCAPE_CHAR = '\\';
+
+export function escapeLikePattern(value: string): string {
+	return value.replace(/[\\%_]/g, (match) => `${LIKE_ESCAPE_CHAR}${match}`);
+}
+
 function parseCategories(value: string | null): string[] {
 	if (!value) return [];
 	return value.split(',').filter(Boolean);
@@ -168,18 +174,18 @@ export class D1Repository {
 
 		const params: string[] = [...wardIds];
 		const clauses = keywords.map((keyword) => {
-			const term = `%${keyword}%`;
+			const term = `%${escapeLikePattern(keyword)}%`;
 			params.push(term, term, term);
 			return `
 				(
-					f.name LIKE ?
-					OR f.address LIKE ?
+					f.name LIKE ? ESCAPE '\\'
+					OR f.address LIKE ? ESCAPE '\\'
 					OR EXISTS (
 						SELECT 1
 						FROM facility_categories search_fc
 						JOIN categories search_c ON search_c.id = search_fc.category_id
 						WHERE search_fc.facility_id = f.id
-						AND search_c.label LIKE ?
+						AND search_c.label LIKE ? ESCAPE '\\'
 					)
 				)
 			`;
