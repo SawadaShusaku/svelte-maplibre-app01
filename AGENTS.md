@@ -14,7 +14,7 @@ npm run audit:data       # Audit GeoJSON data quality (read-only)
 npm run audit:private-data # Fail if private data or bulk DB artifacts are tracked
 npm run validate:d1-seed # Validate private D1 seed JSON before import
 npm run deploy:preview   # Deploy Worker using wrangler env.preview
-npm run deploy:prod      # Deploy Worker using wrangler env.production
+npm run deploy:prod      # Deploy root production Worker
 npm run preview          # Preview production build
 npm run check            # Type-check with svelte-check
 npm run check:watch      # Type-check in watch mode
@@ -167,7 +167,7 @@ src/
 **D1 binding missing**:
 - Local D1-backed development should use `npm run dev:d1`, which runs Wrangler with the preview environment locally
 - `wrangler.toml` uses the binding name `RECYCLING_DB`
-- Root Wrangler config intentionally has no D1 binding; preview and production bindings live under explicit environments
+- Root Wrangler config is production and binds `recycling-facilities-prod`; preview uses `[env.preview]`
 
 **Proxy object errors**:
 - Spread state arrays: `getFacilities([...selectedCities], [...selectedCategories])`
@@ -194,13 +194,18 @@ This project is deployed to **Cloudflare Workers with Static Assets**.
 ### Example `wrangler.toml`
 
 ```toml
-name = "svelte-maplibre-app01-dev"
+name = "svelte-maplibre-app01"
 main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2026-04-29"
 
 [assets]
 directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
+
+[[d1_databases]]
+binding = "RECYCLING_DB"
+database_name = "recycling-facilities-prod"
+database_id = "<replace-with-production-d1-id>"
 
 [env.preview]
 name = "svelte-maplibre-app01-preview"
@@ -210,13 +215,6 @@ binding = "RECYCLING_DB"
 database_name = "recycling-facilities-preview"
 database_id = "<replace-with-preview-d1-id>"
 
-[env.production]
-name = "svelte-maplibre-app01"
-
-[[env.production.d1_databases]]
-binding = "RECYCLING_DB"
-database_name = "recycling-facilities-prod"
-database_id = "<replace-with-production-d1-id>"
 ```
 
 ### Deploy settings (Cloudflare Dashboard)
@@ -227,9 +225,7 @@ database_id = "<replace-with-production-d1-id>"
 | Deploy command | `npm run deploy:prod` |
 | Root directory | `/` |
 
-Do **not** use bare `npx wrangler deploy` in the Cloudflare Git integration for production. It uses the root Wrangler environment, which is dev-only and has no production D1 binding. Use `npm run deploy:prod` so `[env.production]` and `recycling-facilities-prod` are selected.
-
-The root Wrangler worker name must remain distinct from `[env.production].name`. Keep the root name dev-only, for example `svelte-maplibre-app01-dev`, so an accidental bare deploy cannot update the production Worker. Root config must not contain placeholder D1 database IDs.
+Cloudflare Git integration requires the root `name` in `wrangler.toml` to match the connected Dashboard Worker. The root configuration is therefore production and must bind `recycling-facilities-prod`. Preview/staging deploys use `[env.preview]`.
 
 Do **not** use GitHub Actions for deployment — the Cloudflare Git integration handles builds and deployments automatically.
 
