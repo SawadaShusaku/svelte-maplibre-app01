@@ -25,6 +25,8 @@ declare global {
 		interface Platform {
 			env?: {
 				RECYCLING_DB?: D1Database;
+				MAPILLARY_CACHE?: KVNamespace;
+				MAPILLARY_TOKEN?: string;
 			};
 		}
 	}

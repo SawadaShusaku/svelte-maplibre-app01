@@ -6,6 +6,9 @@ compatibility_date = "2026-04-29"
 directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
 
+# Mapillary クライアントトークンは `npx wrangler secret put MAPILLARY_TOKEN`
+# でサーバ専用シークレットとして登録します（ブラウザには公開されません）。
+
 # Recommended database names:
 # - recycling-facilities-dev
 # - recycling-facilities-preview

@@ -112,8 +112,8 @@
         >
           <span
             class="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
-            style:background-color={isActive ? catColor : 'rgba(156, 163, 175, 0.3)'}
-            style:color={isActive ? '#ffffff' : '#9ca3af'}
+            style:background-color={isActive ? catColor : 'rgba(156, 163, 175, 0.45)'}
+            style:color={isActive ? '#ffffff' : '#ffffff'}
           >
             <IconComponent size={18} strokeWidth={2.5} />
           </span>
