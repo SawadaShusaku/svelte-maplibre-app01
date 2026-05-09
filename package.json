@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"dev:d1": "wrangler dev --local --persist-to .wrangler/state",
+		"dev:d1": "wrangler dev --env preview --local --persist-to .wrangler/state",
 		"build": "npm run audit:private-data && vite build",
 		"build:db": "npm run build:db:local",
 		"build:db:local": "npm run audit:private-data && npm run audit:data && tsx src/lib/db/migrate.ts",
