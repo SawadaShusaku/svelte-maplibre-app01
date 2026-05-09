@@ -61,7 +61,7 @@
   const allCategories: CategoryId[] = [
     'rechargeable-battery', 'e-bike-rechargeable-battery', 'button-battery', 'dry-battery',
     'small-appliance', 'fluorescent', 'ink-cartridge',
-    'cooking-oil', 'heated-tobacco-device', 'used-clothing'
+    'cooking-oil', 'heated-tobacco-device', 'used-clothing', 'paper-pack', 'styrofoam'
   ];
   const allCityKeys = WARD_REGISTRY.map((w) => `${w.prefecture}/${w.city}`);
 
