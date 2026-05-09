@@ -41,11 +41,16 @@ describe('marker-utils', () => {
 		it('maps categories to their colors', () => {
 			const cats: CategoryId[] = ['dry-battery', 'rechargeable-battery'];
 			const colors = getMarkerColors(cats);
-			expect(colors).toEqual(['#7dd3fc', '#dc2626']);
+			expect(colors).toEqual(['#7dd3fc', '#10b981']);
 		});
 
 		it('returns empty array for empty categories', () => {
 			expect(getMarkerColors([])).toEqual([]);
+		});
+
+		it('drops unknown category colors before SVG generation', () => {
+			const colors = getMarkerColors(['office' as CategoryId, 'dry-battery']);
+			expect(colors).toEqual(['#7dd3fc']);
 		});
 	});
 

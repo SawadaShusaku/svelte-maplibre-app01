@@ -23,7 +23,7 @@ const projectRoot = path.resolve(__dirname, '../../..');
 
 // Category definitions with new split
 const CATEGORIES = [
-	{ id: 'rechargeable-battery', label: '小型充電式電池', color: '#dc2626', icon: 'Battery' },
+	{ id: 'rechargeable-battery', label: '小型充電式電池', color: '#10b981', icon: 'BatteryCharging' },
 	{ id: 'e-bike-rechargeable-battery', label: '自転車用充電式電池', color: '#ef4444', icon: 'BatteryCharging' },
 	{ id: 'dry-battery', label: '乾電池', color: '#7dd3fc', icon: 'Battery' },
 	{ id: 'button-battery', label: 'ボタン電池', color: '#fde047', icon: 'Battery' },

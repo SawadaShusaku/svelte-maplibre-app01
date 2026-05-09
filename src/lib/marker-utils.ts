@@ -16,7 +16,9 @@ export function getEffectiveMode(
 }
 
 export function getMarkerColors(categories: CategoryId[]): string[] {
-	return categories.map((c) => CATEGORY_COLOR[c]);
+	return categories
+		.map((c) => CATEGORY_COLOR[c])
+		.filter((color): color is string => typeof color === 'string' && color.length > 0);
 }
 
 export interface DonutSegment {

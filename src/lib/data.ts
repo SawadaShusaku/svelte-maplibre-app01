@@ -1,4 +1,5 @@
 import { WARD_REGISTRY } from './registry';
+import { CATEGORY_COLOR } from './db/categories';
 import type { Category } from './db/types';
 
 export type AreaScope = 'all' | 'selected';
@@ -61,8 +62,8 @@ type PublicFacilityRecord = {
 	city_label: string;
 	name: string;
 	address: string;
-	latitude: number;
-	longitude: number;
+		latitude: number | null;
+		longitude: number | null;
 	url: string | null;
 	official_url: string | null;
 	category_urls: string | null;
@@ -103,7 +104,30 @@ function appendListParam(params: URLSearchParams, name: string, values: string[]
 	}
 }
 
-function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
+function isPublicCategory(category: string): boolean {
+	return Object.hasOwn(CATEGORY_COLOR, category);
+}
+
+function normalizeCategories(categories: string[] | null | undefined): string[] {
+	if (!Array.isArray(categories)) return [];
+	return categories.filter((category) => typeof category === 'string' && isPublicCategory(category));
+}
+
+function parseCategoryUrls(value: string | null): Record<string, string> | null {
+	if (!value) return null;
+	try {
+		const parsed = JSON.parse(value) as unknown;
+		return parsed && typeof parsed === 'object' && !Array.isArray(parsed)
+			? parsed as Record<string, string>
+			: null;
+	} catch {
+		return null;
+	}
+}
+
+function toGeoFeature(f: PublicFacilityRecord): GeoFeature | null {
+	if (!Number.isFinite(f.longitude) || !Number.isFinite(f.latitude)) return null;
+
 	return {
 		type: 'Feature' as const,
 		geometry: {
@@ -117,7 +141,7 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 			cityLabel: f.city_label || getWardLabel(f.ward_id),
 			name: f.name,
 			address: f.address,
-			categories: f.categories,
+			categories: normalizeCategories(f.categories),
 			hours: f.hours,
 			notes: f.notes,
 			imageUrl: f.image_url,
@@ -126,10 +150,17 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 			imageSourceUrl: f.image_source_url,
 			mapillaryImageId: f.mapillary_image_id,
 			officialUrl: f.official_url,
-			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null,
+			categoryUrls: parseCategoryUrls(f.category_urls),
 			collectionEntries: f.collection_entries ?? []
 		}
 	};
+}
+
+function toGeoFeatures(records: PublicFacilityRecord[]): GeoFeature[] {
+	return records.flatMap((record) => {
+		const feature = toGeoFeature(record);
+		return feature ? [feature] : [];
+	});
 }
 
 /**
@@ -172,7 +203,7 @@ async function loadFacilities(
 	appendListParam(params, 'categories', selectedCategories);
 
 	const data = await fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`);
-	return data.facilities.map(toGeoFeature);
+	return toGeoFeatures(data.facilities);
 }
 
 export async function getAreas(): Promise<PublicArea[]> {
@@ -217,7 +248,7 @@ export async function searchFacilities(
 	const params = new URLSearchParams({ q: query });
 	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	const data = await fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`);
-	return data.facilities.map(toGeoFeature);
+	return toGeoFeatures(data.facilities);
 }
 
 // Helper to get ward label
