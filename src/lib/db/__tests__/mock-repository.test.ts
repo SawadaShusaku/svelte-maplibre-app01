@@ -58,6 +58,8 @@ describe('MockRepository', () => {
 				{
 					id: 'fac-1',
 					ward_id: 'toshima',
+					prefecture: '東京都',
+					city_label: '豊島区',
 					name: '池袋図書館',
 					address: '豊島区池袋',
 					latitude: 35.73,
@@ -73,6 +75,8 @@ describe('MockRepository', () => {
 				{
 					id: 'fac-2',
 					ward_id: 'chiyoda',
+					prefecture: '東京都',
+					city_label: '千代田区',
 					name: '千代田区役所',
 					address: '千代田区',
 					latitude: 35.69,
@@ -111,6 +115,8 @@ describe('MockRepository', () => {
 			const facility: FacilityWithCategories = {
 				id: 'fac-1',
 				ward_id: 'toshima',
+				prefecture: '東京都',
+					city_label: '豊島区',
 				name: '池袋図書館',
 				address: '豊島区池袋',
 				latitude: 35.73,
@@ -142,6 +148,8 @@ describe('MockRepository', () => {
 				{
 					id: 'fac-1',
 					ward_id: 'toshima',
+					prefecture: '東京都',
+					city_label: '豊島区',
 					name: '池袋図書館',
 					address: '豊島区池袋',
 					latitude: 35.73,
@@ -157,6 +165,8 @@ describe('MockRepository', () => {
 				{
 					id: 'fac-2',
 					ward_id: 'toshima',
+					prefecture: '東京都',
+					city_label: '豊島区',
 					name: '豊島区役所',
 					address: '豊島区',
 					latitude: 35.73,

@@ -1,6 +1,15 @@
 import { WARD_REGISTRY } from './registry';
 import type { Category } from './db/types';
 
+export type AreaScope = 'all' | 'selected';
+
+export interface PublicArea {
+	id: string;
+	prefecture: string;
+	city_label: string;
+	url: string | null;
+}
+
 export interface GeoFeature {
 	type: 'Feature';
 	geometry: { type: 'Point'; coordinates: [number, number] };
@@ -22,6 +31,8 @@ export interface GeoFeature {
 type PublicFacilityRecord = {
 	id: string;
 	ward_id: string;
+	prefecture: string;
+	city_label: string;
 	name: string;
 	address: string;
 	latitude: number;
@@ -35,6 +46,7 @@ type PublicFacilityRecord = {
 };
 
 const facilitiesCache = new Map<string, Promise<GeoFeature[]>>();
+const areasCache = new Map<string, Promise<PublicArea[]>>();
 
 async function fetchJson<T>(url: string): Promise<T> {
 	const response = await fetch(url);
@@ -53,6 +65,12 @@ function encodeList(values: string[]): string {
 	return values.join(',');
 }
 
+function appendListParam(params: URLSearchParams, name: string, values: string[]): void {
+	if (values.length > 0) {
+		params.set(name, encodeList(values));
+	}
+}
+
 function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 	return {
 		type: 'Feature' as const,
@@ -62,9 +80,9 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 		},
 		properties: {
 			id: f.id,
-			prefecture: 'tokyo',
+			prefecture: f.prefecture,
 			city: f.ward_id,
-			cityLabel: getWardLabel(f.ward_id),
+			cityLabel: f.city_label || getWardLabel(f.ward_id),
 			name: f.name,
 			address: f.address,
 			categories: f.categories,
@@ -81,9 +99,11 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
  */
 export async function getFacilities(
 	selectedCities: string[],
-	selectedCategories: string[]
+	selectedCategories: string[],
+	areaScope: AreaScope = 'selected'
 ): Promise<GeoFeature[]> {
 	const cacheKey = JSON.stringify({
+		areaScope,
 		cities: [...selectedCities].sort(),
 		categories: [...selectedCategories].sort()
 	});
@@ -92,7 +112,7 @@ export async function getFacilities(
 		return cached;
 	}
 
-	const promise = loadFacilities(selectedCities, selectedCategories).catch(error => {
+	const promise = loadFacilities(selectedCities, selectedCategories, areaScope).catch(error => {
 		facilitiesCache.delete(cacheKey);
 		throw error;
 	});
@@ -102,24 +122,46 @@ export async function getFacilities(
 
 async function loadFacilities(
 	selectedCities: string[],
-	selectedCategories: string[]
+	selectedCategories: string[],
+	areaScope: AreaScope
 ): Promise<GeoFeature[]> {
 	// Convert city keys to ward IDs (e.g., "tokyo/toshima" -> "toshima")
 	const wardIds = toWardIds(selectedCities);
-	const params = new URLSearchParams({
-		wards: encodeList(wardIds),
-		categories: encodeList(selectedCategories)
-	});
+	if (areaScope === 'selected' && wardIds.length === 0) return [];
+
+	const params = new URLSearchParams();
+	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
+	appendListParam(params, 'categories', selectedCategories);
 
 	const data = await fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`);
 	return data.facilities.map(toGeoFeature);
 }
 
+export async function getAreas(): Promise<PublicArea[]> {
+	const cached = areasCache.get('areas');
+	if (cached) return cached;
+
+	const promise = fetchJson<{ wards: PublicArea[] }>('/api/wards')
+		.then(({ wards }) => wards)
+		.catch(error => {
+			areasCache.delete('areas');
+			throw error;
+		});
+	areasCache.set('areas', promise);
+	return promise;
+}
+
 /**
  * Get available categories for selected wards
  */
-export async function getAvailableCategories(wardIds: string[]): Promise<string[]> {
-	const params = new URLSearchParams({ wards: encodeList(wardIds) });
+export async function getAvailableCategories(
+	wardIds: string[],
+	areaScope: AreaScope = 'selected'
+): Promise<string[]> {
+	if (areaScope === 'selected' && wardIds.length === 0) return [];
+
+	const params = new URLSearchParams();
+	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	const { categories } = await fetchJson<{ categories: Category[] }>(`/api/categories?${params}`);
 	return categories.map(c => c.id);
 }
@@ -129,12 +171,13 @@ export async function getAvailableCategories(wardIds: string[]): Promise<string[
  */
 export async function searchFacilities(
 	query: string,
-	wardIds: string[]
+	wardIds: string[],
+	areaScope: AreaScope = 'selected'
 ): Promise<GeoFeature[]> {
-	const params = new URLSearchParams({
-		wards: encodeList(wardIds),
-		q: query
-	});
+	if (areaScope === 'selected' && wardIds.length === 0) return [];
+
+	const params = new URLSearchParams({ q: query });
+	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	const data = await fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`);
 	return data.facilities.map(toGeoFeature);
 }

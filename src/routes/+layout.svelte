@@ -17,14 +17,12 @@
 	<link rel="icon" href={favicon} />
 	{#if gtagId}
 		<script async src={`https://www.googletagmanager.com/gtag/js?id=${gtagId}`}></script>
-		<script>
-			{`
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', '${gtagId}');
-			`}
-		</script>
+		{@html `<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', ${JSON.stringify(gtagId)});
+		</script>`}
 	{/if}
 </svelte:head>
 {@render children()}

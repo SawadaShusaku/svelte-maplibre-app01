@@ -5,9 +5,11 @@ import type { GeoFeature } from '$lib/data.js';
 import type { CategoryId, MarkerStyle } from '$lib/types.js';
 
 export const CLUSTER_TRANSITION_ZOOM = 11.75;
+export const PREFECTURE_SUMMARY_MAX_ZOOM = 7.5;
 export const INDIVIDUAL_MARKER_MIN_ZOOM = CLUSTER_TRANSITION_ZOOM;
 export const WARD_SUMMARY_MAX_ZOOM = CLUSTER_TRANSITION_ZOOM;
 export const WARD_SUMMARY_CLICK_ZOOM = 14;
+export const PREFECTURE_SUMMARY_CLICK_ZOOM = 8.75;
 export const MARKER_ICON_WIDTH = 32;
 export const MARKER_ICON_HEIGHT = 42;
 export const MARKER_ICON_SIZE = 27 / MARKER_ICON_WIDTH;
@@ -27,6 +29,7 @@ export interface MarkerImageDescriptor {
 export interface WardSummaryFeatureProperties {
 	city: string;
 	cityLabel: string;
+	summaryType: 'prefecture' | 'municipality';
 	facilityCount: number;
 	minLng: number;
 	minLat: number;
@@ -103,14 +106,17 @@ export function buildMarkerImageDescriptors(
 }
 
 export function buildWardSummaryFeatureCollection(
-	facilities: GeoFeature[]
+	facilities: GeoFeature[],
+	level: 'prefecture' | 'municipality' = 'municipality'
 ): FeatureCollection<Point, WardSummaryFeatureProperties> {
 	const summaries = new Map<string, WardSummaryFeatureProperties>();
 
 	for (const facility of facilities) {
 		const [lng, lat] = facility.geometry.coordinates;
-		const { city, cityLabel } = facility.properties;
-		const existing = summaries.get(city);
+		const { city, cityLabel, prefecture } = facility.properties;
+		const key = level === 'prefecture' ? prefecture : city;
+		const label = level === 'prefecture' ? prefecture : cityLabel;
+		const existing = summaries.get(key);
 
 		if (existing) {
 			existing.facilityCount += 1;
@@ -121,9 +127,10 @@ export function buildWardSummaryFeatureCollection(
 			continue;
 		}
 
-		summaries.set(city, {
-			city,
-			cityLabel,
+		summaries.set(key, {
+			city: key,
+			cityLabel: label,
+			summaryType: level,
 			facilityCount: 1,
 			minLng: lng,
 			minLat: lat,
@@ -185,7 +192,7 @@ export function fitToWardSummary(
 
 	map.easeTo({
 		center,
-		zoom: WARD_SUMMARY_CLICK_ZOOM,
+		zoom: summary.summaryType === 'prefecture' ? PREFECTURE_SUMMARY_CLICK_ZOOM : WARD_SUMMARY_CLICK_ZOOM,
 		offset: isMobile ? [0, -window.innerHeight * 0.2] : [0, 0],
 		duration: 500
 	});

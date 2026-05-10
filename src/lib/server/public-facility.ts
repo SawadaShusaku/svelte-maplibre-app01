@@ -3,6 +3,8 @@ import type { FacilityWithCategories } from '$lib/db/types';
 export type PublicFacility = {
 	id: string;
 	ward_id: string;
+	prefecture: string;
+	city_label: string;
 	name: string;
 	address: string;
 	latitude: number;
@@ -19,6 +21,8 @@ export function toPublicFacility(facility: FacilityWithCategories): PublicFacili
 	return {
 		id: facility.id,
 		ward_id: facility.ward_id,
+		prefecture: facility.prefecture ?? facility.ward_id,
+		city_label: facility.city_label ?? facility.ward_id,
 		name: facility.name,
 		address: facility.address,
 		latitude: facility.latitude,

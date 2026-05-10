@@ -4,7 +4,7 @@
   import WardSelector from './WardSelector.svelte';
   import CategoryBar from './CategoryBar.svelte';
   import { getAvailableCategories } from '$lib/data.js';
-  import { CATEGORY_LABEL } from '$lib/db/categories.js';
+  import type { AreaScope, PublicArea } from '$lib/data.js';
   import type { CategoryId } from '$lib/types.js';
 
   let {
@@ -12,6 +12,8 @@
     searchResults = [],
     selectedKeys = $bindable([]),
     allKeys = [],
+    areaScope = $bindable('all'),
+    areas = [],
     selectedCategories = $bindable([]),
     allCategories = [],
     onSelectFacility,
@@ -21,6 +23,8 @@
     searchResults: any[];
     selectedKeys: string[];
     allKeys: string[];
+    areaScope: AreaScope;
+    areas: PublicArea[];
     selectedCategories: CategoryId[];
     allCategories: CategoryId[];
     onSelectFacility: (facility: any) => void;
@@ -33,9 +37,9 @@
   $effect(() => {
     if (!browser) return;
     
-    const wardIds = selectedKeys.map((key: string) => key.split('/')[1]);
+    const wardIds = selectedKeys.map((key: string) => key.split('/')[1]).filter(Boolean);
     
-    getAvailableCategories(wardIds).then(categories => {
+    getAvailableCategories(wardIds, areaScope).then(categories => {
       availableCategories = categories as CategoryId[];
       
       // 選択中のカテゴリで利用可能でないものを解除
@@ -72,7 +76,7 @@
     </div>
 
     <!-- 区選択プルダウン -->
-    <WardSelector bind:selectedKeys allKeys={allKeys} />
+    <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} />
 
     <!-- カテゴリ選択バー: 残りのスペースを埋める -->
     <div class="flex-1 min-w-0 overflow-hidden">
@@ -100,7 +104,7 @@
         <SearchBar bind:value={searchQuery} results={searchResults} onselect={onSelectFacility} />
       </div>
 
-      <WardSelector bind:selectedKeys allKeys={allKeys} />
+      <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} />
     </div>
 
     <!-- 下段: カテゴリ -->
@@ -130,7 +134,7 @@
       </div>
 
       <div class="flex-shrink-0 ml-auto">
-        <WardSelector bind:selectedKeys allKeys={allKeys} />
+        <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} />
       </div>
     </div>
 

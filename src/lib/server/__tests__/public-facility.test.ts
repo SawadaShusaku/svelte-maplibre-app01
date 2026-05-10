@@ -7,6 +7,8 @@ describe('toPublicFacility', () => {
 		const facility: FacilityWithCategories = {
 			id: 'facility-1',
 			ward_id: 'ward-1',
+			prefecture: '東京都',
+			city_label: '千代田区',
 			name: '回収店',
 			address: '東京都千代田区',
 			latitude: 35.69,
@@ -25,6 +27,8 @@ describe('toPublicFacility', () => {
 		expect(publicFacility).toEqual({
 			id: 'facility-1',
 			ward_id: 'ward-1',
+			prefecture: '東京都',
+			city_label: '千代田区',
 			name: '回収店',
 			address: '東京都千代田区',
 			latitude: 35.69,

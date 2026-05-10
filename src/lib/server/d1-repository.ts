@@ -2,6 +2,8 @@ import type { Category, Collector, Facility, FacilityWithCategories, Ward } from
 
 type FacilityRow = Facility & {
 	categories: string | null;
+	prefecture: string;
+	city_label: string;
 };
 
 type CategoryDetailRow = {
@@ -53,6 +55,8 @@ function toFacility(row: FacilityRow): FacilityWithCategories {
 		collector_id: row.collector_id,
 		hours: row.hours,
 		notes: row.notes,
+		prefecture: row.prefecture,
+		city_label: row.city_label,
 		categories: parseCategories(row.categories)
 	};
 }
@@ -70,7 +74,7 @@ export class D1Repository {
 	constructor(private readonly db: D1Database) {}
 
 	async getWards(): Promise<Ward[]> {
-		const result = await this.db.prepare('SELECT * FROM wards ORDER BY city_label').all<Ward>();
+		const result = await this.db.prepare('SELECT * FROM wards ORDER BY prefecture, city_label').all<Ward>();
 		return result.results ?? [];
 	}
 
@@ -116,10 +120,10 @@ export class D1Repository {
 	}
 
 	async getFacilities(wardIds: string[], categoryIds: string[]): Promise<FacilityWithCategories[]> {
-		if (wardIds.length === 0) return [];
-
-		const params: string[] = [...wardIds];
+		const params: string[] = [];
+		const wardFilter = wardIds.length > 0 ? `f.ward_id IN (${placeholders(wardIds)})` : '1 = 1';
 		let categoryFilter = '';
+		params.push(...wardIds);
 
 		if (categoryIds.length > 0) {
 			categoryFilter = `
@@ -137,10 +141,13 @@ export class D1Repository {
 			.prepare(`
 				SELECT
 					f.*,
+					w.prefecture,
+					w.city_label,
 					GROUP_CONCAT(fc.category_id) AS categories
 				FROM facilities f
+				JOIN wards w ON w.id = f.ward_id
 				LEFT JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE f.ward_id IN (${placeholders(wardIds)})
+				WHERE ${wardFilter}
 				${categoryFilter}
 				GROUP BY f.id
 				ORDER BY f.ward_id, f.name
@@ -156,8 +163,11 @@ export class D1Repository {
 			.prepare(`
 				SELECT
 					f.*,
+					w.prefecture,
+					w.city_label,
 					GROUP_CONCAT(fc.category_id) AS categories
 				FROM facilities f
+				JOIN wards w ON w.id = f.ward_id
 				LEFT JOIN facility_categories fc ON f.id = fc.facility_id
 				WHERE f.id = ?
 				GROUP BY f.id
@@ -170,9 +180,11 @@ export class D1Repository {
 
 	async searchFacilities(query: string, wardIds: string[]): Promise<FacilityWithCategories[]> {
 		const keywords = query.trim().split(/\s+/).filter(Boolean);
-		if (keywords.length === 0 || wardIds.length === 0) return [];
+		if (keywords.length === 0) return [];
 
-		const params: string[] = [...wardIds];
+		const params: string[] = [];
+		const wardFilter = wardIds.length > 0 ? `f.ward_id IN (${placeholders(wardIds)})` : '1 = 1';
+		params.push(...wardIds);
 		const clauses = keywords.map((keyword) => {
 			const term = `%${escapeLikePattern(keyword)}%`;
 			params.push(term, term, term);
@@ -195,10 +207,13 @@ export class D1Repository {
 			.prepare(`
 				SELECT
 					f.*,
+					w.prefecture,
+					w.city_label,
 					GROUP_CONCAT(fc.category_id) AS categories
 				FROM facilities f
+				JOIN wards w ON w.id = f.ward_id
 				LEFT JOIN facility_categories fc ON f.id = fc.facility_id
-				WHERE f.ward_id IN (${placeholders(wardIds)})
+				WHERE ${wardFilter}
 				AND ${clauses.join(' AND ')}
 				GROUP BY f.id
 				ORDER BY f.ward_id, f.name
