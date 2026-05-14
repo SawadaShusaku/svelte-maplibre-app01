@@ -91,9 +91,9 @@ Private-only fields such as raw payloads, full source query details, private cac
 
 ## Geocoding Rules
 
-Use GSI Japan Address Search API first for Japanese address-to-coordinate geocoding.
+Use Google Geocoding API as the unified address-to-coordinate provider for public map coordinates. Existing upstream coordinates, including source CSV coordinates, must not be mixed into public serving data without an explicit migration decision; regenerate them through the same Google Geocoding workflow so distance-based place grouping uses one coordinate basis.
 
-Use Google Geocoding API only for rows that fail GSI or need focused review. Google Places may be useful for name repair, but it is not the default address-to-coordinate provider.
+Use GSI Japan Address Search API only for comparison, audit, or exception investigation. Do not use a chained public coordinate workflow that tries GSI before Google, because GSI can return a coarse or wrong representative point while still appearing to succeed.
 
 Never assign municipality centroids, city hall coordinates, or category representative points as silent fallbacks. Failed rows must remain unresolved until reviewed or explicitly approved.
 

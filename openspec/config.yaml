@@ -9,7 +9,7 @@ context: |
   Data source of truth: private upstream snapshots / normalized private data pipeline outside the public app repository. CSV/raw source data are private and must not be committed to the public app.
   Current app database flow: GeoJSON files in src/lib/data/{prefecture}/{city}.geojson generate static/recycling.db. This is a current implementation detail to be migrated; static/recycling.db and derived GeoJSON are build/serving artifacts, not long-term authoritative data.
   Testing: npm run smoke (required for browser-only API changes), npm run test (Vitest), npm run test:e2e (Playwright)
-  Geocoding: GSI Japan Address Search API first (https://msearch.gsi.go.jp/address-search/AddressSearch?q=...), Google Geocoding only as fallback for failed or review-needed rows. Never use Nominatim for Japanese addresses. Do not rate geocode confidence by exact Japanese address string equality; judge administrative-area consistency and report review reasons.
+  Geocoding: use Google Geocoding API as the unified provider for public map coordinates, including rows whose upstream CSV already contained coordinates. GSI Japan Address Search API may be used for comparison/audit only, not for normal public coordinate generation. Never use Nominatim for Japanese addresses. Do not rate geocode confidence by exact Japanese address string equality; judge administrative-area consistency and report review reasons.
 
 # Jujutsu (jj) workflow rules
 jj_workflow: |

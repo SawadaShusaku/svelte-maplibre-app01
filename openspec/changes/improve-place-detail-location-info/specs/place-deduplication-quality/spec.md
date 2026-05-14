@@ -4,9 +4,21 @@
 The public dataset SHALL represent one real-world collection place as one `places` record with one marker when source rows can be identified as the same destination-level place. For this app, the same building or destination-level place SHALL generally be one public place, because the marker design supports multiple categories and category-specific destination details can be retained on collection entries.
 
 #### Scenario: Same place across categories
-- **WHEN** reviewed vector candidate groups identify source rows for the same building or destination-level place
+- **WHEN** automatic display-coordinate grouping or reviewed vector candidate groups identify source rows for the same building or destination-level place
 - **THEN** the public output contains one place record
 - **AND** active collection entries associated with that place preserve all categories and data-source-specific listing fields
+
+#### Scenario: Same reliable display coordinate auto merges
+- **WHEN** two or more active source rows have the same public display coordinate after unified Google geocoding
+- **AND** the coordinate is a Google `ROOFTOP` result, an accepted Places `PLACE` result, or an explicitly reviewed manual coordinate
+- **THEN** the public output automatically groups them under one place record and one marker
+- **AND** each original source/category listing remains visible through collection entries
+- **AND** address-key or vector similarity is not required to permit this grouping
+
+#### Scenario: Same coarse geocoder coordinate does not auto merge
+- **WHEN** two or more active source rows share a coordinate from Google `GEOMETRIC_CENTER`, `RANGE_INTERPOLATED`, or `APPROXIMATE`
+- **THEN** the public output does not automatically merge them only because the coordinates match
+- **AND** those rows remain separate or appear as address/vector review candidates
 
 #### Scenario: Same place with source-specific listing names
 - **WHEN** category-specific or data-source-specific listing names describe the same building or destination-level place
@@ -23,8 +35,13 @@ The public dataset SHALL represent one real-world collection place as one `place
 - **THEN** the public output keeps them as separate places unless a review decision says otherwise
 - **AND** the system does not merge them based only on vector similarity
 
+#### Scenario: Same address but separate buildings
+- **WHEN** source rows share a normalized address but describe different buildings or independently navigated destinations
+- **THEN** the public output keeps them separate unless they have the same display coordinate or a review decision says to merge
+- **AND** same normalized address alone does not cause automatic merging
+
 ### Requirement: Optional vector-assisted candidate ranking
-Vector search SHALL be used as the primary duplicate candidate discovery and ranking mechanism for public place generation. The first implementation SHALL be review-first: vector similarity produces candidate groups, and automatic merging is optional for later clearly safe cases.
+Vector search SHALL be used as duplicate candidate discovery and ranking for public place generation after same-display-coordinate automatic grouping. Vector similarity SHALL produce candidate groups for review and SHALL NOT be required for rows that already share the same display coordinate.
 
 #### Scenario: Vector candidate is similar
 - **WHEN** vector search identifies two or more source rows as likely duplicates
@@ -39,7 +56,7 @@ Vector search SHALL be used as the primary duplicate candidate discovery and ran
 ## ADDED Requirements
 
 ### Requirement: Simple vector duplicate candidate generation
-The deduplication process SHALL generate candidate groups using embeddings built from public place identity text, including facility name, listing name, address, administrative area, category labels, source name, and approved public location or note text.
+The deduplication process SHALL generate candidate groups using embeddings built from public place identity text variants after same-display-coordinate grouping. Candidate text MAY include facility or listing names, address/building text, administrative area, and approved public location or note text, but category labels SHALL NOT be a hard identity requirement because this app intentionally merges multiple categories under one building-level marker.
 
 #### Scenario: Japanese notation differs
 - **WHEN** two source rows describe the same place with different Japanese address notation, building-name omission, category suffixes, or source-specific wording

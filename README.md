@@ -1,4 +1,4 @@
-# sv
+# 全国リサイクルマップ (Japan Recycle Map)
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
@@ -22,11 +22,15 @@ npx sv@0.13.2 create --template minimal --types ts --install npm svelte-maplibre
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
+**開発サーバー（DBなし・UIのみ）**:
 ```sh
 npm run dev
+```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+**開発サーバー（Cloudflare D1 データベース接続あり）** [推奨]:
+実際のマップデータやAPIの動作を確認する場合はこちらを使用してください。
+```sh
+npm run dev:d1
 ```
 
 ### Safe Chain (推奨)
@@ -82,8 +86,7 @@ private data pipeline  →  private D1 seed/import  →  Cloudflare D1  →  Wor
 - **非公開データパイプライン** が、上流CSV/raw/geocoding cache/正規化データの長期的なsource of truthです
 - **Cloudflare D1** は本番の public serving DB です。source of truth ではなく派生成果物です
 - **Worker API** はアプリ表示に必要な最小限の施設・区・カテゴリ情報だけを返します
-- **GeoJSONファイル** (`src/lib/data/tokyo/toshima.geojson` など) は移行期間中の派生入力です
-- **ローカルSQLite** は開発・検証用に `.local/` など配信されない場所へ生成します
+
 - 上流CSV、raw HTML/JSON、geocoding cache、正規化済みの完全データセット、D1 seed/import、SQLite DB は公開アプリリポジトリや静的配布物に置きません
 - 詳細な方針は [docs/data-pipeline-policy.md](docs/data-pipeline-policy.md) を参照してください
 
@@ -122,27 +125,9 @@ npm run deploy:preview
 
 root は production Worker なので、手動で production へデプロイする場合も `npm run deploy:prod` を使います。preview 確認は `npm run deploy:preview` を使います。
 
-### ローカルSQLite検証
 
-移行期間中の GeoJSON をローカル SQLite として確認する場合:
 
-```sh
-npm run build:db:local
-```
 
-出力先は `.local/recycling-dev.db` です。`static/` には生成しません。
-
-### 自治体のURL・出典URLを更新する場合
-
-- 自治体ごとの公式URLやカテゴリ別の出典URLは [src/lib/registry.ts](/Volumes/ASMT%202462%20NVME%20Media/Projects/svelte-maplibre-app01/src/lib/registry.ts) で管理します
-- 施設データ本体はこれまで通り GeoJSON が source of truth です
-- URL メタデータを将来 DB から引きたくなった場合も、まずは `registry.ts` などのリポジトリ内データを元に migration する方針を推奨します
-
-### 新しい市区町村を追加する場合
-
-1. `src/lib/registry.ts` の `WARD_REGISTRY` に市区町村を追加
-2. `src/lib/data/{都道府県}/{市区町村}.geojson` にGeoJSONファイルを作成
-3. `npm run build:db` を実行
 
 ## データソース
 

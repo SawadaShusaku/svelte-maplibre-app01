@@ -18,6 +18,12 @@ The public serving database SHALL represent one real-world map location as one `
 - **THEN** the public output uses one `places` record for the building-level marker
 - **AND** each category/source-specific destination detail is retained in the relevant `place_collection_entries.location_hint`
 
+#### Scenario: Coarse coordinate notice is preserved
+- **WHEN** a public place uses a remaining coarse Google fallback coordinate after Places refinement, such as `APPROXIMATE`, `GEOMETRIC_CENTER`, or `RANGE_INTERPOLATED`
+- **THEN** the public output preserves the user-facing coordinate notice text: "この地点は、データ提供元の住所をもとにGoogle APIが推定した位置です。"
+- **AND** the public output does not expose raw Google `location_type`, `place_id`, confidence scores, or private review metadata
+- **AND** the place remains active unless manual review marks the source row inactive
+
 ## ADDED Requirements
 
 ### Requirement: Public location hints

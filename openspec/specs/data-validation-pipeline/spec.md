@@ -61,14 +61,15 @@ Define the validation and geocoding quality rules that must be applied before re
 
 #### Scenario: 日本住所のジオコーディング
 - **WHEN** 住所から緯度経度を取得する
-- **THEN** GSI Japan Address Search APIを第一候補として使用すること
-- **AND** GSIで取得できない、または確認が必要な場合のみGoogle Geocoding APIをフォールバックとして使用してよい
-- **AND** Nominatimを日本住所の第一候補として使用しないこと
+- **THEN** 公開地図用座標はGoogle Geocoding APIで統一生成すること
+- **AND** 既存CSVに緯度経度がある場合も、公開用座標として混在させず同じGoogleジオコーディング処理で作り直すこと
+- **AND** GSI Japan Address Search APIは比較・監査・例外調査用に限定し、公開用座標生成の通常経路に含めないこと
+- **AND** Nominatimを日本住所のジオコーディングに使用しないこと
 
 #### Scenario: 座標出典の保持
 - **WHEN** 座標をCSVまたは正規化データへ保存する
 - **THEN** `coordinate_source` に `official`, `gsi_address_search`, `google_geocoding`, `manual` などの出典を保存すること
-- **AND** `geocoded_at`, `geocode_query`, `geocode_match_address`, `geocode_status` を監査用に保持すること
+- **AND** `geocoded_at`, `geocode_query`, `geocode_match_address`, `geocode_status`, `geocode_location_type`, `geocode_place_id` を監査用に保持すること
 
 #### Scenario: フォールバック座標の禁止
 - **WHEN** ジオコーディングが失敗する

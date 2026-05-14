@@ -56,12 +56,111 @@ describe('place deduplication helpers', () => {
 		expect(normalizePlaceName('千代田区神田公園')).toBe('神田公園');
 	});
 
-	it('auto-merges the known Kanda sample when address and coordinates are compatible', () => {
+	it('keeps the known Kanda sample in review when coordinates are near but not identical', () => {
 		const decision = decidePlaceMerge(oilStockyard, inkBase);
-		expect(decision.kind).toBe('auto-merge');
+		expect(decision.kind).toBe('review');
 		expect(decision.reasons).toContain('same-normalized-address');
 		expect(decision.reasons).toContain('compatible-normalized-name');
-		expect(decision.reasons).toContain('compatible-coordinates');
+		expect(decision.reasons).toContain('near-display-coordinate');
+		expect(decision.reasons).not.toContain('same-display-coordinate');
+	});
+
+	it('auto-merges rows that share the same display coordinate', () => {
+		const sameDisplayCoordinate: DedupablePlace = {
+			...inkBase,
+			id: 'ink-kanda-same-coordinate',
+			name: '神田リサイクル受付',
+			address: '東京都千代田区神田司町2-2 神田庁舎内',
+			latitude: oilStockyard.latitude,
+			longitude: oilStockyard.longitude,
+			coordinate_source: 'google_geocoding',
+			geocode_location_type: 'ROOFTOP'
+		};
+
+		const decision = decidePlaceMerge({
+			...oilStockyard,
+			coordinate_source: 'google_geocoding',
+			geocode_location_type: 'ROOFTOP'
+		}, sameDisplayCoordinate);
+		expect(decision.kind).toBe('auto-merge');
+		expect(decision.reasons).toContain('same-display-coordinate');
+	});
+
+	it('does not auto-merge shared coarse geocoder representative points', () => {
+		const approximateTownPoint: DedupablePlace = {
+			...inkBase,
+			id: 'approximate-town-point',
+			name: '別住所の店舗',
+			address: '東京都千代田区外神田1-1',
+			latitude: oilStockyard.latitude,
+			longitude: oilStockyard.longitude,
+			coordinate_source: 'google_geocoding',
+			geocode_location_type: 'APPROXIMATE'
+		};
+
+		const decision = decidePlaceMerge({
+			...oilStockyard,
+			coordinate_source: 'google_geocoding',
+			geocode_location_type: 'APPROXIMATE'
+		}, approximateTownPoint);
+		expect(decision.kind).toBe('separate');
+		expect(decision.reasons).toContain('same-display-coordinate');
+		expect(decision.reasons).toContain('coarse-display-coordinate');
+	});
+
+	it('does not auto-merge shared geometric center points', () => {
+		const geometricCenterPoint: DedupablePlace = {
+			...inkBase,
+			id: 'geometric-center-point',
+			name: '別住所の店舗',
+			address: '東京都千代田区外神田1-1',
+			latitude: oilStockyard.latitude,
+			longitude: oilStockyard.longitude,
+			coordinate_source: 'google_geocoding',
+			geocode_location_type: 'GEOMETRIC_CENTER'
+		};
+
+		const decision = decidePlaceMerge({
+			...oilStockyard,
+			coordinate_source: 'google_geocoding',
+			geocode_location_type: 'GEOMETRIC_CENTER'
+		}, geometricCenterPoint);
+		expect(decision.kind).toBe('separate');
+		expect(decision.reasons).toContain('same-display-coordinate');
+		expect(decision.reasons).toContain('coarse-display-coordinate');
+	});
+
+	it('does not auto-merge separate buildings that only share a normalized address', () => {
+		const colocatedAddressDifferentBuilding: DedupablePlace = {
+			...inkBase,
+			id: 'child-center',
+			name: '南児童センター',
+			address: oilStockyard.address,
+			latitude: 35.695,
+			longitude: 139.769
+		};
+
+		const decision = decidePlaceMerge(oilStockyard, colocatedAddressDifferentBuilding);
+		expect(decision.kind).toBe('separate');
+		expect(decision.reasons).toContain('same-normalized-address');
+		expect(decision.reasons).not.toContain('same-display-coordinate');
+	});
+
+	it('keeps same-address near-coordinate candidates for review without auto-merging', () => {
+		const nearSameAddress: DedupablePlace = {
+			...inkBase,
+			id: 'near-same-address',
+			name: '神田公園別受付',
+			address: oilStockyard.address,
+			latitude: 35.69403,
+			longitude: 139.76802
+		};
+
+		const decision = decidePlaceMerge(oilStockyard, nearSameAddress);
+		expect(decision.kind).toBe('review');
+		expect(decision.reasons).toContain('same-normalized-address');
+		expect(decision.reasons).toContain('near-display-coordinate');
+		expect(decision.reasons).not.toContain('same-display-coordinate');
 	});
 
 	it('does not auto-merge similar names when coordinates are incompatible', () => {
@@ -76,7 +175,14 @@ describe('place deduplication helpers', () => {
 	});
 
 	it('merges categories for automatic duplicate public places', () => {
-		const merged = mergeAutoDuplicatePlaces([oilStockyard, inkBase]);
+		const sameDisplayCoordinate: DedupablePlace = {
+			...inkBase,
+			id: 'ink-kanda-same-coordinate',
+			latitude: oilStockyard.latitude,
+			longitude: oilStockyard.longitude
+		};
+
+		const merged = mergeAutoDuplicatePlaces([oilStockyard, sameDisplayCoordinate]);
 		expect(merged).toHaveLength(1);
 		expect(merged[0].categories?.sort()).toEqual(['cooking-oil', 'ink-cartridge']);
 	});

@@ -7,6 +7,8 @@ export type DedupablePlace = {
 	city_label?: string | null;
 	latitude?: number | null;
 	longitude?: number | null;
+	coordinate_source?: string | null;
+	geocode_location_type?: string | null;
 	categories?: string[];
 };
 
@@ -21,6 +23,9 @@ export type DuplicateCandidate = {
 	b: DedupablePlace;
 	decision: PlaceMergeDecision;
 };
+
+export const DISPLAY_COORDINATE_PRECISION = 6;
+export const NEAR_COORDINATE_REVIEW_METERS = 15;
 
 const KANJI_NUMERALS: Record<string, string> = {
 	一: '1',
@@ -106,6 +111,12 @@ export function createDedupeKey(place: Pick<DedupablePlace, 'name' | 'address' |
 	].join('|');
 }
 
+export function displayCoordinateKey(place: Pick<DedupablePlace, 'latitude' | 'longitude'>): string | null {
+	if (typeof place.latitude !== 'number' || typeof place.longitude !== 'number') return null;
+	if (!Number.isFinite(place.latitude) || !Number.isFinite(place.longitude)) return null;
+	return `${place.latitude.toFixed(DISPLAY_COORDINATE_PRECISION)},${place.longitude.toFixed(DISPLAY_COORDINATE_PRECISION)}`;
+}
+
 function hasSameAdminArea(a: DedupablePlace, b: DedupablePlace): boolean {
 	const aArea = a.ward_id ?? a.city_label ?? '';
 	const bArea = b.ward_id ?? b.city_label ?? '';
@@ -117,6 +128,20 @@ function duplicateBucketKey(place: DedupablePlace): string | null {
 	const normalizedAddress = normalizeJapaneseAddress(place.address);
 	if (!adminArea || !normalizedAddress) return null;
 	return `${place.prefecture ?? ''}|${adminArea}|${normalizedAddress}`;
+}
+
+function coordinateBucketKey(place: DedupablePlace): string | null {
+	const key = displayCoordinateKey(place);
+	return key ? `coordinate|${key}` : null;
+}
+
+function hasReliableDisplayCoordinate(place: DedupablePlace): boolean {
+	const source = normalizeSpaces(place.coordinate_source ?? '').toLowerCase();
+	const locationType = normalizeSpaces(place.geocode_location_type ?? '').toUpperCase();
+	if (source === 'manual') return true;
+	if (source.startsWith('google_places_')) return true;
+	if (source === 'google_geocoding') return locationType === 'ROOFTOP';
+	return true;
 }
 
 export function distanceMeters(a: DedupablePlace, b: DedupablePlace): number | null {
@@ -151,20 +176,26 @@ export function decidePlaceMerge(a: DedupablePlace, b: DedupablePlace): PlaceMer
 	const normalizedNameA = normalizePlaceName(a.name);
 	const normalizedNameB = normalizePlaceName(b.name);
 	const distance = distanceMeters(a, b);
+	const coordinateKeyA = displayCoordinateKey(a);
+	const coordinateKeyB = displayCoordinateKey(b);
 
 	if (hasSameAdminArea(a, b)) reasons.push('same-admin-area');
 	if (normalizedAddressA && normalizedAddressA === normalizedAddressB) reasons.push('same-normalized-address');
 	if (namesCompatible(normalizedNameA, normalizedNameB)) reasons.push('compatible-normalized-name');
-	if (distance != null && distance <= 40) reasons.push('compatible-coordinates');
+	if (coordinateKeyA && coordinateKeyA === coordinateKeyB) reasons.push('same-display-coordinate');
+	if (reasons.includes('same-display-coordinate') && (!hasReliableDisplayCoordinate(a) || !hasReliableDisplayCoordinate(b))) {
+		reasons.push('coarse-display-coordinate');
+	}
+	if (distance != null && distance <= NEAR_COORDINATE_REVIEW_METERS) reasons.push('near-display-coordinate');
 
-	const hasStrongAddress = reasons.includes('same-admin-area') && reasons.includes('same-normalized-address');
-	const hasStrongCoordinates = distance != null && distance <= 40;
-	const hasCompatibleName = reasons.includes('compatible-normalized-name');
-
-	if (hasStrongAddress && hasStrongCoordinates && hasCompatibleName) {
+	if (reasons.includes('same-display-coordinate') && !reasons.includes('coarse-display-coordinate')) {
 		return { kind: 'auto-merge', reasons, distanceMeters: distance };
 	}
-	if ((hasStrongAddress && hasCompatibleName) || (hasStrongAddress && hasStrongCoordinates) || (hasCompatibleName && hasStrongCoordinates)) {
+	const hasStrongAddress = reasons.includes('same-admin-area') && reasons.includes('same-normalized-address');
+	const hasNearCoordinates = reasons.includes('near-display-coordinate');
+	const hasCompatibleName = reasons.includes('compatible-normalized-name');
+
+	if ((hasStrongAddress && hasCompatibleName) || (hasStrongAddress && hasNearCoordinates) || (hasCompatibleName && hasNearCoordinates)) {
 		return { kind: 'review', reasons, distanceMeters: distance };
 	}
 	return { kind: 'separate', reasons, distanceMeters: distance };
@@ -173,18 +204,22 @@ export function decidePlaceMerge(a: DedupablePlace, b: DedupablePlace): PlaceMer
 export function findDuplicateCandidates(places: DedupablePlace[]): DuplicateCandidate[] {
 	const candidates: DuplicateCandidate[] = [];
 	const buckets = new Map<string, DedupablePlace[]>();
+	const seenPairs = new Set<string>();
 
 	for (const place of places) {
-		const key = duplicateBucketKey(place);
-		if (!key) continue;
-		const bucket = buckets.get(key) ?? [];
-		bucket.push(place);
-		buckets.set(key, bucket);
+		for (const key of [coordinateBucketKey(place), duplicateBucketKey(place)].filter((value): value is string => Boolean(value))) {
+			const bucket = buckets.get(key) ?? [];
+			bucket.push(place);
+			buckets.set(key, bucket);
+		}
 	}
 
 	for (const bucket of buckets.values()) {
 		for (let i = 0; i < bucket.length; i += 1) {
 			for (let j = i + 1; j < bucket.length; j += 1) {
+				const pairKey = [bucket[i].id, bucket[j].id].sort().join('\t');
+				if (seenPairs.has(pairKey)) continue;
+				seenPairs.add(pairKey);
 				const decision = decidePlaceMerge(bucket[i], bucket[j]);
 				if (decision.kind !== 'separate') {
 					candidates.push({ a: bucket[i], b: bucket[j], decision });
