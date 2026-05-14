@@ -61,20 +61,33 @@ Use the same binding name, `RECYCLING_DB`, for all environments.
 
 Local SQLite is allowed only as a development or validation artifact outside public static assets, for example under `.local/` or in the private data pipeline project.
 
-## Approved Public Facility Fields
+## Approved Public Serving Fields
 
-Derived public facility outputs should be minimized to fields required by the app:
+Derived public outputs should be minimized to fields required by the app.
 
-- stable public facility ID
-- name
-- normalized address
+Place-level fields:
+
+- stable public place ID
+- canonical display name
+- display address and normalized address
 - latitude and longitude
-- categories
-- city/ward identifiers and labels
-- hours, notes, official URL, and category URLs when approved for display
-- collector/source label suitable for public UI
+- area identifiers and labels
+- approved place-level media fields
+- active flag and update timestamps
+- deterministic dedupe key
 
-Private-only fields such as raw payloads, full source query details, private cache entries, and full upstream snapshots must remain private.
+Collection-entry fields:
+
+- stable public entry ID
+- place ID, category ID, and data source ID
+- listing name and listing address from the public source
+- source URL
+- hours, notes, and location hints when approved for display
+- approved entry-level media fields
+- source fetched/published timestamps where available
+- active flag and update timestamps
+
+Private-only fields such as raw payloads, full source query details, private cache entries, private review metadata, full upstream snapshots, and confidence-like fields must remain private.
 
 ## Geocoding Rules
 
@@ -84,15 +97,9 @@ Use Google Geocoding API only for rows that fail GSI or need focused review. Goo
 
 Never assign municipality centroids, city hall coordinates, or category representative points as silent fallbacks. Failed rows must remain unresolved until reviewed or explicitly approved.
 
-`geocode_confidence` is not an exact Japanese address string equality score. Normal notation differences such as `491-3` versus `491番地`, full-width digits, kanji numerals, postal codes, or building-name omission do not make a row low confidence by themselves.
+Do not use confidence score fields in the public schema, public API, or public seed output. Normal notation differences such as `491-3` versus `491番地`, full-width digits, kanji numerals, postal codes, or building-name omission are address normalization issues, not public confidence states.
 
-Use:
-
-- `high`: administrative area is consistent
-- `medium`: parent city is consistent but ward/district changed or needs review
-- `low`: prefecture or municipality clearly contradicts the source row
-
-Rows with `medium` or `low` confidence must carry `geocode_review_reason`.
+Rows that fail geocoding or contradict the source area must stay in the private pipeline with deterministic review status and review reasons until reviewed or explicitly approved.
 
 ## Deduplication Rules
 
@@ -108,4 +115,6 @@ Use these signals:
 
 If two rows represent the same physical facility and accept multiple categories, publish one facility with multiple categories. Do not create duplicate public markers for the same location.
 
-If a duplicate decision is ambiguous, leave records unmerged and report them for human review.
+If two sources differ only by normal Japanese address notation, corporate notation, or category-specific facility suffixes, normalize those differences before deduplication.
+
+The public D1 model stores one deduplicated `place` and multiple `place_collection_entries` for category-specific source details. If a duplicate decision is ambiguous, leave records unmerged and report group-oriented review candidates. Do not generate left/right pair reports for new review output.

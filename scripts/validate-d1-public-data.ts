@@ -1,20 +1,66 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {
+	containsInternalPublicNote,
+	containsTokenBearingUrl,
+	isApprovedPublicMediaUrl
+} from '../src/lib/public-data-quality';
+import { findDuplicateCandidates, type DedupablePlace } from '../src/lib/data-quality/place-dedup';
 
 type PublicFacility = {
 	id?: unknown;
 	ward_id?: unknown;
+	prefecture?: unknown;
+	city_label?: unknown;
 	name?: unknown;
 	address?: unknown;
 	latitude?: unknown;
 	longitude?: unknown;
 	categories?: unknown;
+	hours?: unknown;
+	notes?: unknown;
+	image_url?: unknown;
+	image_alt?: unknown;
+	image_credit?: unknown;
+	image_source_url?: unknown;
+	mapillary_image_id?: unknown;
 	geocode_confidence?: unknown;
 	geocode_status?: unknown;
 };
 
+type PublicPlace = {
+	id?: unknown;
+	area_id?: unknown;
+	canonical_name?: unknown;
+	display_address?: unknown;
+	normalized_address?: unknown;
+	latitude?: unknown;
+	longitude?: unknown;
+	dedupe_key?: unknown;
+	is_active?: unknown;
+	[key: string]: unknown;
+};
+
+type PublicCollectionEntry = {
+	id?: unknown;
+	place_id?: unknown;
+	category_id?: unknown;
+	data_source_id?: unknown;
+	source_display_name?: unknown;
+	source_address?: unknown;
+	normalized_source_address?: unknown;
+	source_url?: unknown;
+	hours?: unknown;
+	notes?: unknown;
+	location_hint?: unknown;
+	is_active?: unknown;
+	[key: string]: unknown;
+};
+
 type PublicData = {
 	facilities?: PublicFacility[];
+	places?: PublicPlace[];
+	place_collection_entries?: PublicCollectionEntry[];
 };
 
 type Issue = {
@@ -33,8 +79,19 @@ if (!inputPath) {
 const resolvedPath = path.resolve(inputPath);
 const data = JSON.parse(fs.readFileSync(resolvedPath, 'utf-8')) as PublicData;
 const facilities = Array.isArray(data.facilities) ? data.facilities : [];
+const places = Array.isArray(data.places) ? data.places : [];
+const entries = Array.isArray(data.place_collection_entries) ? data.place_collection_entries : [];
 const issues: Issue[] = [];
 const ids = new Set<string>();
+const dedupPlaces: DedupablePlace[] = [];
+
+function validateNoConfidence(id: string, record: Record<string, unknown>): void {
+	for (const key of Object.keys(record)) {
+		if (/confidence/i.test(key)) {
+			issues.push({ id, message: `confidence-like field is not allowed: ${key}` });
+		}
+	}
+}
 
 function text(value: unknown): string {
 	return typeof value === 'string' ? value.trim() : '';
@@ -42,6 +99,20 @@ function text(value: unknown): string {
 
 function number(value: unknown): number | null {
 	return typeof value === 'number' && Number.isFinite(value) ? value : null;
+}
+
+function validatePublicText(id: string, field: string, value: unknown): void {
+	if (containsInternalPublicNote(value)) {
+		issues.push({ id, message: `internal pipeline note in public field '${field}'` });
+	}
+}
+
+function validateMediaUrl(id: string, field: string, value: unknown): void {
+	if (containsTokenBearingUrl(value)) {
+		issues.push({ id, message: `token-bearing media/source URL in public field '${field}'` });
+	} else if (typeof value === 'string' && value.trim().length > 0 && !isApprovedPublicMediaUrl(value)) {
+		issues.push({ id, message: `unapproved media URL in public field '${field}'` });
+	}
 }
 
 for (const facility of facilities) {
@@ -52,6 +123,7 @@ for (const facility of facilities) {
 		? facility.categories.filter((category): category is string => typeof category === 'string' && category.trim().length > 0)
 		: [];
 
+	validateNoConfidence(id, facility as Record<string, unknown>);
 	if (!text(facility.id)) issues.push({ id, message: 'missing id' });
 	if (ids.has(id)) issues.push({ id, message: 'duplicate public facility id' });
 	ids.add(id);
@@ -63,10 +135,87 @@ for (const facility of facilities) {
 	if (categories.length === 0) issues.push({ id, message: 'missing categories' });
 	if (facility.geocode_status === 'failed') issues.push({ id, message: 'unresolved failed geocoding row' });
 	if (facility.geocode_confidence === 'low') issues.push({ id, message: 'unresolved low-confidence geocoding row' });
+	validatePublicText(id, 'name', facility.name);
+	validatePublicText(id, 'address', facility.address);
+	validatePublicText(id, 'hours', facility.hours);
+	validatePublicText(id, 'notes', facility.notes);
+	validatePublicText(id, 'image_alt', facility.image_alt);
+	validatePublicText(id, 'image_credit', facility.image_credit);
+	validateMediaUrl(id, 'image_url', facility.image_url);
+	validateMediaUrl(id, 'image_source_url', facility.image_source_url);
+
+	if (text(facility.id) && text(facility.name) && text(facility.address)) {
+		dedupPlaces.push({
+			id: text(facility.id),
+			name: text(facility.name),
+			address: text(facility.address),
+			prefecture: text(facility.prefecture) || null,
+			ward_id: text(facility.ward_id) || null,
+			city_label: text(facility.city_label) || null,
+			latitude,
+			longitude,
+			categories
+		});
+	}
 }
 
-if (facilities.length === 0) {
-	issues.push({ id: '(dataset)', message: 'no facilities found' });
+const placeIds = new Set<string>();
+for (const place of places) {
+	const id = text(place.id) || '(missing place id)';
+	const latitude = number(place.latitude);
+	const longitude = number(place.longitude);
+	validateNoConfidence(id, place);
+	if (!text(place.id)) issues.push({ id, message: 'missing place id' });
+	if (placeIds.has(id)) issues.push({ id, message: 'duplicate public place id' });
+	placeIds.add(id);
+	if (!text(place.area_id)) issues.push({ id, message: 'missing area_id' });
+	if (!text(place.canonical_name)) issues.push({ id, message: 'missing canonical_name' });
+	if (!text(place.display_address)) issues.push({ id, message: 'missing display_address' });
+	if (!text(place.normalized_address)) issues.push({ id, message: 'missing normalized_address' });
+	if (!text(place.dedupe_key)) issues.push({ id, message: 'missing dedupe_key' });
+	if (latitude === null || latitude < 20 || latitude > 46) issues.push({ id, message: 'invalid latitude' });
+	if (longitude === null || longitude < 122 || longitude > 154) issues.push({ id, message: 'invalid longitude' });
+	validatePublicText(id, 'canonical_name', place.canonical_name);
+	validatePublicText(id, 'display_address', place.display_address);
+	validateMediaUrl(id, 'image_url', place.image_url);
+	validateMediaUrl(id, 'image_source_url', place.image_source_url);
+}
+
+for (const entry of entries) {
+	const id = text(entry.id) || '(missing entry id)';
+	validateNoConfidence(id, entry);
+	if (!text(entry.id)) issues.push({ id, message: 'missing entry id' });
+	if (!text(entry.place_id)) issues.push({ id, message: 'missing place_id' });
+	if (!text(entry.category_id)) issues.push({ id, message: 'missing category_id' });
+	if (!text(entry.data_source_id)) issues.push({ id, message: 'missing data_source_id' });
+	if (places.length > 0 && text(entry.place_id) && !placeIds.has(text(entry.place_id))) {
+		issues.push({ id, message: 'entry references missing place_id' });
+	}
+	validatePublicText(id, 'source_display_name', entry.source_display_name);
+	validatePublicText(id, 'source_address', entry.source_address);
+	validatePublicText(id, 'hours', entry.hours);
+	validatePublicText(id, 'notes', entry.notes);
+	validatePublicText(id, 'location_hint', entry.location_hint);
+	validateMediaUrl(id, 'source_url', entry.source_url);
+	validateMediaUrl(id, 'image_url', entry.image_url);
+	validateMediaUrl(id, 'image_source_url', entry.image_source_url);
+}
+
+const duplicateCandidates = findDuplicateCandidates(dedupPlaces);
+for (const candidate of duplicateCandidates) {
+	if (candidate.decision.kind === 'auto-merge') {
+		issues.push({
+			id: `${candidate.a.id} / ${candidate.b.id}`,
+			message: `safe duplicate public place candidate must be merged before import (${candidate.decision.reasons.join(', ')})`
+		});
+	}
+}
+
+if (facilities.length === 0 && places.length === 0) {
+	issues.push({ id: '(dataset)', message: 'no facilities or places found' });
+}
+if (places.length > 0 && entries.length === 0) {
+	issues.push({ id: '(dataset)', message: 'places found but no place_collection_entries found' });
 }
 
 if (issues.length > 0) {
@@ -80,4 +229,8 @@ if (issues.length > 0) {
 	process.exit(1);
 }
 
-console.log(`D1 public data validation passed: ${facilities.length} facilities`);
+console.log(`D1 public data validation passed: ${facilities.length} facilities, ${places.length} places, ${entries.length} collection entries`);
+if (duplicateCandidates.length > 0) {
+	const reviewCount = duplicateCandidates.filter((candidate) => candidate.decision.kind === 'review').length;
+	console.log(`D1 public data validation noted ${reviewCount} ambiguous duplicate candidate(s) for private review`);
+}

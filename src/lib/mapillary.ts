@@ -15,6 +15,9 @@ export type MapillaryThumb = {
   id: string;
   url: string;
   capturedAt: number | null;
+  alt?: string | null;
+  credit?: string | null;
+  sourceUrl?: string | null;
 };
 
 const cache = new Map<string, Promise<MapillaryThumb[]>>();

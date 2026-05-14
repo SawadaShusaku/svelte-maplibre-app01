@@ -246,6 +246,21 @@
     }
 
     const [lng, lat] = facility.geometry.coordinates;
+    const approvedImageUrl = facility.properties.imageUrl;
+    if (approvedImageUrl) {
+      heroThumbs = [{
+        id: facility.properties.mapillaryImageId ?? `facility-media-${facility.properties.id}`,
+        url: approvedImageUrl,
+        capturedAt: null,
+        alt: facility.properties.imageAlt ?? facility.properties.name,
+        credit: facility.properties.imageCredit,
+        sourceUrl: facility.properties.imageSourceUrl ?? null
+      }];
+      heroIndex = 0;
+      heroThumbLoading = false;
+      return;
+    }
+
     heroThumbs = [];
     heroIndex = 0;
     heroThumbLoading = true;
@@ -596,7 +611,7 @@
           <img
             class="detail-panel__hero-photo"
             src={heroThumb.url}
-            alt={f.properties.name}
+            alt={heroThumb.alt ?? f.properties.name}
             loading="eager"
             decoding="async"
             draggable="false"
@@ -630,9 +645,15 @@
           {new Date(heroThumb.capturedAt).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' })}
         </span>
       {/if}
-      <a class="detail-panel__hero-credit" href="https://www.mapillary.com/app/?image_key={heroThumb.id}" target="_blank" rel="noopener noreferrer" title="Mapillary で開く">
-        Mapillary
-      </a>
+      {#if heroThumb.sourceUrl}
+        <a class="detail-panel__hero-credit" href={heroThumb.sourceUrl} target="_blank" rel="noopener noreferrer" title="画像の出典を開く">
+          {heroThumb.credit ?? '画像出典'}
+        </a>
+      {:else if heroThumb.id}
+        <a class="detail-panel__hero-credit" href="https://www.mapillary.com/app/?image_key={heroThumb.id}" target="_blank" rel="noopener noreferrer" title="Mapillary で開く">
+          {heroThumb.credit ?? 'Mapillary'}
+        </a>
+      {/if}
     {:else if heroThumbLoading}
       <div class="detail-panel__hero-loading" aria-hidden="true"></div>
     {/if}
@@ -640,7 +661,7 @@
 {/snippet}
 
 {#snippet popupCard(f: GeoFeature)}
-  {@const { city, name, address, categories, hours, notes } = f.properties}
+  {@const { city, name, address, categories, hours, notes, collectionEntries = [] } = f.properties}
   <div class="popup-scroll flex flex-col">
     <div class="px-5 pt-5">
       <div class="mb-2 flex items-start justify-between gap-3">
@@ -689,8 +710,9 @@
       {:else}
         {#each categories as cat}
           {@const details = getCategoryDetails(cat)}
-          {#if Object.keys(details).length > 0}
-            {@const sourceUrl = getCategorySourceUrl(city, cat)}
+          {@const categoryEntries = collectionEntries.filter((entry) => entry.category_id === cat)}
+          {#if Object.keys(details).length > 0 || categoryEntries.length > 0}
+            {@const sourceUrl = categoryEntries[0]?.source_url ?? getCategorySourceUrl(city, cat)}
             <div class="mb-4 last:mb-0">
               <div class="mb-1.5 flex items-center gap-2">
                 <p class="text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
@@ -709,6 +731,28 @@
               </div>
               {#each Object.entries(details) as [_, content]}
                 <p class="text-base leading-relaxed text-gray-700">{content}</p>
+              {/each}
+              {#each categoryEntries as entry}
+                <div class="mt-2 border-l-2 border-gray-200 pl-3 text-sm leading-relaxed text-gray-600">
+                  {#if entry.source_display_name && entry.source_display_name !== name}
+                    <p><span class="font-bold text-gray-700">掲載名:</span> {entry.source_display_name}</p>
+                  {/if}
+                  {#if entry.source_address && entry.source_address !== address}
+                    <p><span class="font-bold text-gray-700">掲載住所:</span> {entry.source_address}</p>
+                  {/if}
+                  {#if entry.data_source_name}
+                    <p><span class="font-bold text-gray-700">データソース:</span> {entry.data_source_name}</p>
+                  {/if}
+                  {#if entry.hours}
+                    <p><span class="font-bold text-gray-700">受付:</span> {entry.hours}</p>
+                  {/if}
+                  {#if entry.location_hint}
+                    <p><span class="font-bold text-gray-700">設置場所:</span> {entry.location_hint}</p>
+                  {/if}
+                  {#if entry.notes}
+                    <p><span class="font-bold text-gray-700">補足:</span> {entry.notes}</p>
+                  {/if}
+                </div>
               {/each}
             </div>
           {/if}

@@ -176,8 +176,8 @@ async function migrate() {
 	const prefectures = fs.readdirSync(dataDir);
 	
 	const insertFacility = db.prepare(
-		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, official_url, category_urls, collector_id, hours, notes) ' +
-		'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, official_url, category_urls, collector_id, hours, notes, image_url, image_alt, image_credit, image_source_url, mapillary_image_id) ' +
+		'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
 	);
 	const insertFacilityCategory = db.prepare(
 		'INSERT INTO facility_categories (facility_id, category_id) VALUES (?, ?)'
@@ -275,6 +275,11 @@ async function migrate() {
 				const categoryUrls = props.categoryUrls && typeof props.categoryUrls === 'object'
 					? JSON.stringify(props.categoryUrls)
 					: null;
+				const imageUrl = typeof props.imageUrl === 'string' ? props.imageUrl : null;
+				const imageAlt = typeof props.imageAlt === 'string' ? props.imageAlt : null;
+				const imageCredit = typeof props.imageCredit === 'string' ? props.imageCredit : null;
+				const imageSourceUrl = typeof props.imageSourceUrl === 'string' ? props.imageSourceUrl : null;
+				const mapillaryImageId = typeof props.mapillaryImageId === 'string' ? props.mapillaryImageId : null;
 
 				insertFacility.run(
 					props.id,
@@ -288,7 +293,12 @@ async function migrate() {
 					categoryUrls,
 					collectorId,
 					props.hours || null,
-					props.notes || null
+					props.notes || null,
+					imageUrl,
+					imageAlt,
+					imageCredit,
+					imageSourceUrl,
+					mapillaryImageId
 				);
 				
 				// Insert facility categories
