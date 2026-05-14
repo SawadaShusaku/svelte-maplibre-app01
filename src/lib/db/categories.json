@@ -3,14 +3,14 @@
     {
       "id": "rechargeable-battery",
       "label": "充電池",
-      "color": "#dc2626",
-      "icon": "Battery"
+      "color": "#10b981",
+      "icon": "BatteryCharging"
     },
     {
       "id": "e-bike-rechargeable-battery",
       "label": "自転車用充電池",
       "color": "#f97316",
-      "icon": "BatteryCharging"
+      "icon": "Bike"
     },
     {
       "id": "dry-battery",
@@ -22,7 +22,7 @@
       "id": "button-battery",
       "label": "ボタン電池",
       "color": "#fde047",
-      "icon": "Battery"
+      "icon": "CircleDot"
     },
     {
       "id": "small-appliance",
@@ -70,7 +70,7 @@
       "id": "heated-tobacco-device",
       "label": "加熱式たばこ機器等",
       "color": "#64748b",
-      "icon": "Recycle"
+      "icon": "Cigarette"
     }
   ],
   "details": [

@@ -90,6 +90,7 @@
   let map = $state<maplibregl.Map | undefined>(undefined);
   let heroMap = $state<maplibregl.Map | undefined>(undefined);
   let geolocateControl = $state<maplibregl.GeolocateControl | undefined>(undefined);
+  let canUseGeolocation = $state(false);
   let routeError = $state<string | null>(null);
   let popupTab = $state<'basic' | 'details'>('basic');
   let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
@@ -102,6 +103,10 @@
   const facilityIndex = $derived(buildFacilityIndex(facilities));
   const selectedFacility = $derived(resolveSelectedFacility(facilityIndex, selectedFacilityId));
   const markerSourceData = $derived(buildMarkerFeatureCollection(facilities, markerStyle, solidColor));
+  const markerImageIds = $derived(new Set(markerImages.map((markerImage) => markerImage.id)));
+  const markerIconsReady = $derived(
+    markerSourceData.features.every((feature) => markerImageIds.has(feature.properties.iconKey))
+  );
   const summaryLevel = $derived(currentZoom < PREFECTURE_SUMMARY_MAX_ZOOM ? 'prefecture' : 'municipality');
   const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities, summaryLevel));
   type ClusterZoomValues = {
@@ -166,6 +171,24 @@
   const CLUSTER_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_RADIUS_PX);
   const CLUSTER_HALO_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_HALO_RADIUS_PX);
   const CLUSTER_TEXT_SIZE_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_TEXT_SIZE_PX);
+
+  function installStyleImageMissingFallback(currentMap: maplibregl.Map): () => void {
+    const handleMissingImage = (event: maplibregl.MapStyleImageMissingEvent) => {
+      const id = event.id;
+      if (!id || id.startsWith('marker--')) return;
+
+      try {
+        if (!currentMap.hasImage(id)) {
+          currentMap.addImage(id, new ImageData(1, 1), { pixelRatio: 1 });
+        }
+      } catch {
+        // Missing base-style sprites are decorative; avoid noisy console warnings.
+      }
+    };
+
+    currentMap.on('styleimagemissing', handleMissingImage);
+    return () => currentMap.off('styleimagemissing', handleMissingImage);
+  }
 
   // ボトムシート: ドラッグでリサイズ
   const SHEET_DEFAULT_VH = 60;
@@ -342,11 +365,34 @@
   }
 
   function handleGeolocateError(err: GeolocationPositionError) {
-    console.error('GeolocateControl error:', err);
     alert(getGeolocationErrorMessage(err));
   }
 
   // データフェッチ
+  $effect(() => {
+    if (!browser) return;
+    let cancelled = false;
+    canUseGeolocation = false;
+
+    if (!('geolocation' in navigator)) return;
+    if (!navigator.permissions) {
+      canUseGeolocation = true;
+      return;
+    }
+
+    navigator.permissions.query({ name: 'geolocation' }).then((permission) => {
+      if (cancelled) return;
+      canUseGeolocation = permission.state !== 'denied';
+    }).catch(() => {
+      if (cancelled) return;
+      canUseGeolocation = true;
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  });
+
   $effect(() => {
     if (!browser) return;
     
@@ -377,7 +423,7 @@
       const textToSearch = [
         name, 
         address, 
-        ...categories.map(c => CATEGORY_LABEL[c])
+        ...categories.map(c => CATEGORY_LABEL[c] ?? c)
       ].join(" ").toLowerCase();
       
       return q.every(keyword => textToSearch.includes(keyword));
@@ -424,6 +470,7 @@
     };
     currentMap.on('moveend', handleMove);
     currentMap.on('zoomend', handleMove);
+    const uninstallMissingImageFallback = installStyleImageMissingFallback(currentMap);
     syncMobileAttributionState();
     const frameId = window.requestAnimationFrame(() => {
       syncMobileAttributionState();
@@ -440,8 +487,14 @@
       window.cancelAnimationFrame(frameId);
       currentMap.off('moveend', handleMove);
       currentMap.off('zoomend', handleMove);
+      uninstallMissingImageFallback();
       window.removeEventListener('resize', handleResize);
     };
+  });
+
+  $effect(() => {
+    if (!browser || !heroMap) return;
+    return installStyleImageMissingFallback(heroMap);
   });
 
   // 検索結果の選択ハンドラ
@@ -879,17 +932,19 @@
     <!-- MapLibre UI Controls -->
     <AttributionControl position="bottom-right" />
     <NavigationControl position="bottom-right" />
-    <GeolocateControl
-      bind:control={geolocateControl}
-      position="bottom-right"
-      trackUserLocation={false}
-      showAccuracyCircle={true}
-      showUserLocation={true}
-      positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
-      fitBoundsOptions={isMobile ? { padding: { top: 100, bottom: 100, left: 20, right: 20 }, maxZoom: 14 } : { padding: 80, maxZoom: 14 }}
-      onerror={handleGeolocateError}
-      autoTrigger={true}
-    />
+    {#if canUseGeolocation}
+      <GeolocateControl
+        bind:control={geolocateControl}
+        position="bottom-right"
+        trackUserLocation={false}
+        showAccuracyCircle={true}
+        showUserLocation={true}
+        positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
+        fitBoundsOptions={isMobile ? { padding: { top: 100, bottom: 100, left: 20, right: 20 }, maxZoom: 14 } : { padding: 80, maxZoom: 14 }}
+        onerror={handleGeolocateError}
+        autoTrigger={true}
+      />
+    {/if}
     <FullScreenControl position="bottom-right" />
 
 	    {#if routeGeoJSON}
@@ -989,25 +1044,27 @@
         />
       </GeoJSONSource>
 
-      <GeoJSONSource
-        id="facilities"
-        data={markerSourceData}
-      >
-        <SymbolLayer
-          id="facility-markers"
-          minzoom={INDIVIDUAL_MARKER_MIN_ZOOM}
-          layout={{
-            'icon-image': ['get', 'iconKey'],
-            'icon-size': MARKER_ICON_SIZE,
-            'icon-anchor': 'bottom',
-            'icon-allow-overlap': true,
-            'icon-ignore-placement': true
-          }}
-          onclick={handleFacilityLayerClick}
-          onmouseenter={handleLayerMouseEnter}
-          onmouseleave={handleLayerMouseLeave}
-        />
-      </GeoJSONSource>
+      {#if markerIconsReady}
+        <GeoJSONSource
+          id="facilities"
+          data={markerSourceData}
+        >
+          <SymbolLayer
+            id="facility-markers"
+            minzoom={INDIVIDUAL_MARKER_MIN_ZOOM}
+            layout={{
+              'icon-image': ['get', 'iconKey'],
+              'icon-size': MARKER_ICON_SIZE,
+              'icon-anchor': 'bottom',
+              'icon-allow-overlap': true,
+              'icon-ignore-placement': true
+            }}
+            onclick={handleFacilityLayerClick}
+            onmouseenter={handleLayerMouseEnter}
+            onmouseleave={handleLayerMouseLeave}
+          />
+        </GeoJSONSource>
+      {/if}
 
 	  </MapLibre>
 

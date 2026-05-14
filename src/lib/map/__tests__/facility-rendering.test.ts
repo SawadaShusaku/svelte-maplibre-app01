@@ -58,6 +58,53 @@ describe('buildWardSummaryFeatureCollection', () => {
 		expect(summary.features.map((item) => item.properties.cityLabel).sort()).toEqual(['大阪府', '東京都']);
 		expect(summary.features.find((item) => item.properties.city === '東京都')?.properties.facilityCount).toBe(2);
 	});
+
+	it('skips facilities with invalid coordinates before building summary features', () => {
+		const summary = buildWardSummaryFeatureCollection([
+			feature('valid', '東京都', 'toshima', '豊島区', [139.7, 35.7]),
+			feature('invalid', '東京都', 'chiyoda', '千代田区', [null as unknown as number, 35.69])
+		], 'municipality');
+
+		expect(summary.features).toHaveLength(1);
+		expect(summary.features[0].properties.city).toBe('toshima');
+	});
+});
+
+describe('buildMarkerFeatureCollection', () => {
+	it('renders one marker feature for one public place even when it has multiple categories', () => {
+		const markers = buildMarkerFeatureCollection([
+			feature('kanda-park-office', '東京都', 'chiyoda', '千代田区', [139.768, 35.694], [
+				'cooking-oil',
+				'ink-cartridge'
+			])
+		], 'adaptive');
+
+		expect(markers.features).toHaveLength(1);
+		expect(markers.features[0].properties.facilityId).toBe('kanda-park-office');
+	});
+
+	it('keeps one marker for a place with three or more categories', () => {
+		const markers = buildMarkerFeatureCollection([
+			feature('multi-counter', '東京都', 'chiyoda', '千代田区', [139.769, 35.695], [
+				'button-battery',
+				'cooking-oil',
+				'ink-cartridge'
+			])
+		], 'adaptive');
+
+		expect(markers.features).toHaveLength(1);
+		expect(markers.features[0].properties.iconKey).toContain('button-battery__cooking-oil__ink-cartridge');
+	});
+
+	it('skips marker features with invalid coordinates', () => {
+		const markers = buildMarkerFeatureCollection([
+			feature('valid', '東京都', 'chiyoda', '千代田区', [139.769, 35.695]),
+			feature('invalid', '東京都', 'chiyoda', '千代田区', [139.769, null as unknown as number])
+		], 'adaptive');
+
+		expect(markers.features).toHaveLength(1);
+		expect(markers.features[0].properties.facilityId).toBe('valid');
+	});
 });
 
 describe('buildMarkerFeatureCollection', () => {

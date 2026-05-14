@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Battery, BatteryCharging, Lightbulb, Droplet, Printer, Smartphone, Shirt, Package, Box, Recycle, ChevronLeft, ChevronRight } from 'lucide-svelte';
+  import { Battery, BatteryCharging, Bike, Cigarette, CircleDot, Lightbulb, Droplet, Printer, Smartphone, Shirt, Package, Box, ChevronLeft, ChevronRight } from 'lucide-svelte';
   import { CATEGORY_COLOR, CATEGORY_LABEL } from '$lib/db/categories.js';
   import type { CategoryId } from '$lib/types.js';
 
@@ -56,9 +56,9 @@
   }
 
   const CATEGORY_ICON: Record<CategoryId, typeof Battery> = {
-    'rechargeable-battery': Battery,
-    'e-bike-rechargeable-battery': BatteryCharging,
-    'button-battery': Battery,
+    'rechargeable-battery': BatteryCharging,
+    'e-bike-rechargeable-battery': Bike,
+    'button-battery': CircleDot,
     'dry-battery': Battery,
     'small-appliance': Smartphone,
     'fluorescent': Lightbulb,
@@ -67,7 +67,7 @@
     'used-clothing': Shirt,
     'paper-pack': Package,
     'styrofoam': Box,
-    'heated-tobacco-device': Recycle,
+    'heated-tobacco-device': Cigarette,
   };
 </script>
 

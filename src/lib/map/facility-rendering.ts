@@ -61,6 +61,15 @@ export function getMarkerIconKey(
 		.toLowerCase();
 }
 
+function isFiniteCoordinatePair(coordinates: unknown): coordinates is [number, number] {
+	return (
+		Array.isArray(coordinates) &&
+		coordinates.length >= 2 &&
+		Number.isFinite(coordinates[0]) &&
+		Number.isFinite(coordinates[1])
+	);
+}
+
 export function buildMarkerFeatureCollection(
 	facilities: GeoFeature[],
 	style: MarkerStyle,
@@ -68,17 +77,19 @@ export function buildMarkerFeatureCollection(
 ): FeatureCollection<Point, MarkerFeatureProperties> {
 	return {
 		type: 'FeatureCollection',
-		features: facilities.map((facility) => ({
-			type: 'Feature',
-			geometry: {
-				type: 'Point',
-				coordinates: facility.geometry.coordinates
-			},
-			properties: {
-				facilityId: facility.properties.id,
-				iconKey: getMarkerIconKey(facility.properties.categories as CategoryId[], style, solidColor)
-			}
-		}))
+		features: facilities
+			.filter((facility) => isFiniteCoordinatePair(facility.geometry.coordinates))
+			.map((facility) => ({
+				type: 'Feature',
+				geometry: {
+					type: 'Point',
+					coordinates: facility.geometry.coordinates
+				},
+				properties: {
+					facilityId: facility.properties.id,
+					iconKey: getMarkerIconKey(facility.properties.categories as CategoryId[], style, solidColor)
+				}
+			}))
 	};
 }
 
@@ -90,6 +101,7 @@ export function buildMarkerImageDescriptors(
 	const descriptors = new Map<string, MarkerImageDescriptor>();
 
 	for (const facility of facilities) {
+		if (!isFiniteCoordinatePair(facility.geometry.coordinates)) continue;
 		const categories = facility.properties.categories as CategoryId[];
 		const iconKey = getMarkerIconKey(categories, style, solidColor);
 		if (!descriptors.has(iconKey)) {
@@ -112,10 +124,12 @@ export function buildWardSummaryFeatureCollection(
 	const summaries = new Map<string, WardSummaryFeatureProperties>();
 
 	for (const facility of facilities) {
+		if (!isFiniteCoordinatePair(facility.geometry.coordinates)) continue;
 		const [lng, lat] = facility.geometry.coordinates;
 		const { city, cityLabel, prefecture } = facility.properties;
 		const key = level === 'prefecture' ? prefecture : city;
 		const label = level === 'prefecture' ? prefecture : cityLabel;
+		if (!key || !label) continue;
 		const existing = summaries.get(key);
 
 		if (existing) {
