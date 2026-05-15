@@ -1,5 +1,7 @@
 # 全国リサイクルマップ (Japan Recycle Map)
 
+![スクリーンショット](docs/screenshots/screenshot-main.png)
+
 リサイクル対象となる電池・インクカートリッジ・使用済み食用油・加熱式たばこ機器などの
 回収拠点を、地図上から横断的に検索できるWebアプリケーションです。
 
@@ -8,12 +10,12 @@
 本アプリは複数のデータソースを統合し、ユーザーが品目と地域から
 最寄りの拠点を一度に確認できるようにすることを目的としています。
 
+**[ライブデモ](https://svelte-maplibre-app01.negamamiura.workers.dev/)**
+
 ## ご利用にあたって
 
 メーカーや製品の状態によっては回収対象外となる場合があります。
 各拠点の受け入れ条件は、必ず拠点詳細または各データソースの公式情報をご確認ください。
-
-**[ライブデモ](https://svelte-maplibre-app01.negamamiura.workers.dev/)**
 
 ## 主な機能
 
@@ -29,7 +31,6 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [svelte-maplibre-gl](https://github.com/MIERUNE/svelte-maplibre-gl)（[MIERUNE](https://www.mierune.co.jp/)開発）
 - [MapLibre GL](https://maplibre.org/)
-- [Arenarium](https://www.mierune.co.jp/)（`@arenarium/maps-integration-maplibre`）
 - [Lucide Svelte](https://lucide.dev/) - アイコン
 - [Tailwind CSS](https://tailwindcss.com/) v4
 - [Cloudflare Workers](https://workers.cloudflare.com/) / [D1](https://developers.cloudflare.com/d1/)
