@@ -2,7 +2,7 @@
   <title>{buildPageTitle()}</title>
   <meta
     name="description"
-    content={`${SITE_NAME_JA}。東京のリサイクル回収施設を地図で探せるアプリ。区の選択、カテゴリ絞り込み、施設情報の確認ができます。`}
+    content={`${SITE_NAME_JA}。全国のリサイクル回収施設を地図で探せるアプリ。市区町村の選択、カテゴリ絞り込み、施設情報の確認ができます。`}
   />
 </svelte:head>
 

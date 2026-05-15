@@ -16,6 +16,8 @@ type PublicFacility = {
 	address?: unknown;
 	latitude?: unknown;
 	longitude?: unknown;
+	coordinate_source?: unknown;
+	geocode_location_type?: unknown;
 	categories?: unknown;
 	hours?: unknown;
 	notes?: unknown;
@@ -154,6 +156,8 @@ for (const facility of facilities) {
 			city_label: text(facility.city_label) || null,
 			latitude,
 			longitude,
+			coordinate_source: text(facility.coordinate_source) || null,
+			geocode_location_type: text(facility.geocode_location_type) || null,
 			categories
 		});
 	}

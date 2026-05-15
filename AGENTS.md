@@ -46,7 +46,8 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 5. After preview verification, apply to production D1.
 
 **Geocoding rules** (details in [docs/data-pipeline-policy.md](docs/data-pipeline-policy.md)):
-- GSI Japan Address Search API first; Google Geocoding API fallback.
+- Google Geocoding API is the unified provider for public map coordinates.
+- GSI Japan Address Search API is comparison/audit only, not part of normal public coordinate generation.
 - Never Nominatim. Never assign fallback centroids without human approval.
 - Do NOT add confidence score fields to public schema/API/seed.
 

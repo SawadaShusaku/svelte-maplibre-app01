@@ -323,15 +323,18 @@ function writeSql(seed: NormalizedSeed, sqlPath: string): void {
 
 function writeGroupReview(seed: NormalizedSeed, reviewMdPath?: string, reviewCsvPath?: string): number {
 	const placesById = new Map(seed.places.map((place) => [String(place.id), place]));
-	const candidates = findDuplicateCandidates(seed.places.map((place) => ({
-		id: String(place.id),
-		name: String(place.canonical_name),
-		address: String(place.display_address),
-		prefecture: text(place.prefecture) ?? undefined,
-		ward_id: text(place.area_id) ?? undefined,
-		city_label: null,
-		latitude: typeof place.latitude === 'number' ? place.latitude : null,
-		longitude: typeof place.longitude === 'number' ? place.longitude : null
+	const candidates = findDuplicateCandidates(seed.facilities.map((facility) => ({
+		id: String(facility.id),
+		name: String(facility.name),
+		address: String(facility.address),
+		prefecture: text(facility.prefecture) ?? undefined,
+		ward_id: text(facility.ward_id) ?? undefined,
+		city_label: text(facility.city_label) ?? undefined,
+		coordinate_source: text(facility.coordinate_source) ?? undefined,
+		geocode_location_type: text(facility.geocode_location_type) ?? undefined,
+		categories: categoryList(facility.categories),
+		latitude: typeof facility.latitude === 'number' ? facility.latitude : null,
+		longitude: typeof facility.longitude === 'number' ? facility.longitude : null
 	}))).filter((candidate) => candidate.decision.kind === 'review');
 
 	const groupRows = candidates.flatMap((candidate) => [
