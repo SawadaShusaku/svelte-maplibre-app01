@@ -201,16 +201,29 @@
   let dragStartHeightVh = 0;
   let isDragging = $state(false);
 
+  /** Check whether a pointer event started on an interactive child element */
+  function isInteractiveTarget(e: PointerEvent): boolean {
+    const el = e.target as HTMLElement | null;
+    if (!el) return false;
+    return Boolean(el.closest('button, a, input, select, textarea, [data-prevent-drag]'));
+  }
+
+  let sheetDragPointerId: number | null = null;
+
   function handleSheetPointerDown(e: PointerEvent) {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
+    if (isInteractiveTarget(e)) return;
     dragStartY = e.clientY;
     dragStartHeightVh = sheetHeightVh;
     isDragging = true;
-    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    sheetDragPointerId = e.pointerId;
+    try {
+      (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    } catch {}
   }
 
   function handleSheetPointerMove(e: PointerEvent) {
-    if (!isDragging) return;
+    if (!isDragging || e.pointerId !== sheetDragPointerId) return;
     const dy = e.clientY - dragStartY;
     const vhPerPx = 100 / window.innerHeight;
     const next = dragStartHeightVh - dy * vhPerPx;
@@ -218,8 +231,9 @@
   }
 
   function handleSheetPointerUp(e: PointerEvent) {
-    if (!isDragging) return;
+    if (!isDragging || e.pointerId !== sheetDragPointerId) return;
     isDragging = false;
+    sheetDragPointerId = null;
     try {
       (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
     } catch {}
@@ -717,13 +731,8 @@
   {@const { city, name, address, categories, hours, notes, collectionEntries = [] } = f.properties}
   <div class="popup-scroll flex flex-col">
     <div class="px-5 pt-5">
-      <div class="mb-2 flex items-start justify-between gap-3">
-        <h3 class="pr-2 text-xl font-bold leading-snug text-gray-900">{name}</h3>
-        <button
-          onclick={() => (selectedFacilityId = null)}
-          class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-black/5 text-xl text-gray-500 transition-colors hover:bg-black/10 hover:text-gray-800"
-          aria-label="閉じる"
-        >✕</button>
+      <div class="mb-2 flex items-start gap-3">
+        <h3 class="text-xl font-bold leading-snug text-gray-900">{name}</h3>
       </div>
 
       <div class="flex flex-wrap gap-2">
@@ -1092,17 +1101,16 @@
 	        class="bottom-sheet"
           class:bottom-sheet--dragging={isDragging}
 	        transition:fly={{ y: 600, duration: 360, opacity: 1 }}
-          style="height: {sheetHeightVh}vh"
-        >
-        <div
-          class="bottom-sheet__handle"
-          role="button"
-          tabindex="-1"
-          aria-label="ドラッグで高さ調整"
+          style="height: {sheetHeightVh}vh; touch-action: none;"
+          role="dialog"
+          aria-label="施設詳細"
           onpointerdown={handleSheetPointerDown}
           onpointermove={handleSheetPointerMove}
           onpointerup={handleSheetPointerUp}
           onpointercancel={handleSheetPointerUp}
+        >
+        <div
+          class="bottom-sheet__handle"
 	        >
 	          <div class="bottom-sheet__handle-bar"></div>
 	        </div>
@@ -1241,13 +1249,7 @@
     z-index: 1;
   }
   .detail-panel__collapse:hover { color: #0b1116; background: #f7f8fa; }
-  /* Hide the snippet's inline ✕ inside the docked panel (use edge handle instead) */
-  .detail-panel :global(.popup-scroll button[aria-label="閉じる"]) {
-    display: none;
-  }
-  .detail-panel :global(.popup-scroll > .px-5.pt-5 > .mb-2) {
-    padding-right: 0;
-  }
+
   .popup-scroll {
     flex: 1;
     min-height: 0;
@@ -1256,7 +1258,7 @@
   /* Hero at top of detail panel: Mapillary photo if available, else mini-map */
   .detail-panel__hero {
     position: relative;
-    height: 180px;
+    height: 148px;
     flex-shrink: 0;
     background: #e9e6df;
     overflow: hidden;
@@ -1477,10 +1479,9 @@
     display: flex;
     justify-content: center;
     padding: 8px 0 0;
-    touch-action: none;
-    cursor: grab;
+    pointer-events: none;
   }
-  .bottom-sheet__handle:active { cursor: grabbing; }
+
   .bottom-sheet__handle-bar {
     width: 44px;
     height: 5px;
