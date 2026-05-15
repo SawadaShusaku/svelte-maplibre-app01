@@ -5,6 +5,7 @@
   import CategoryBar from './CategoryBar.svelte';
   import { getAvailableCategories } from '$lib/data.js';
   import type { AreaScope, PublicArea } from '$lib/data.js';
+  import type { Category } from '$lib/db/types.js';
   import type { CategoryId } from '$lib/types.js';
 
   let {
@@ -15,7 +16,6 @@
     areaScope = $bindable('all'),
     areas = [],
     selectedCategories = $bindable([]),
-    allCategories = [],
     onSelectFacility,
     onMenuClick,
   } = $props<{
@@ -26,32 +26,28 @@
     areaScope: AreaScope;
     areas: PublicArea[];
     selectedCategories: CategoryId[];
-    allCategories: CategoryId[];
     onSelectFacility: (facility: any) => void;
     onMenuClick: () => void;
   }>();
 
   // 利用可能なカテゴリを動的に取得
-  let availableCategories = $state<CategoryId[]>([]);
-  let categoryRequestVersion = 0;
-
+  let availableCategories = $state<Category[]>([]);
+  
   $effect(() => {
     if (!browser) return;
-
+    
     const wardIds = selectedKeys.map((key: string) => key.split('/')[1]).filter(Boolean);
-    const requestVersion = ++categoryRequestVersion;
-
+    
     getAvailableCategories(wardIds, areaScope).then(categories => {
-      if (requestVersion !== categoryRequestVersion) return;
-      availableCategories = categories as CategoryId[];
-
+      availableCategories = categories;
+      
       // 選択中のカテゴリで利用可能でないものを解除
-      selectedCategories = selectedCategories.filter((cat: CategoryId) =>
-        availableCategories.includes(cat)
+      selectedCategories = selectedCategories.filter((cat: CategoryId) => 
+        availableCategories.some((category) => category.id === cat)
       );
       // If no previously-selected categories are available, select all available ones
       if (selectedCategories.length === 0 && availableCategories.length > 0) {
-        selectedCategories = [...availableCategories];
+        selectedCategories = availableCategories.map((category) => category.id as CategoryId);
       }
     });
   });

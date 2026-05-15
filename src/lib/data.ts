@@ -1,5 +1,4 @@
 import { WARD_REGISTRY } from './registry';
-import { CATEGORY_COLOR } from './db/categories';
 import type { Category } from './db/types';
 
 export type AreaScope = 'all' | 'selected';
@@ -62,8 +61,8 @@ type PublicFacilityRecord = {
 	city_label: string;
 	name: string;
 	address: string;
-		latitude: number | null;
-		longitude: number | null;
+	latitude: number;
+	longitude: number;
 	url: string | null;
 	official_url: string | null;
 	category_urls: string | null;
@@ -80,6 +79,9 @@ type PublicFacilityRecord = {
 
 const facilitiesCache = new Map<string, Promise<GeoFeature[]>>();
 const areasCache = new Map<string, Promise<PublicArea[]>>();
+let categoriesCache: Promise<{ categories: Category[]; details: CategoryDetailsById }> | null = null;
+
+export type CategoryDetailsById = Record<string, Record<string, string>>;
 
 async function fetchJson<T>(url: string): Promise<T> {
 	const response = await fetch(url);
@@ -104,30 +106,7 @@ function appendListParam(params: URLSearchParams, name: string, values: string[]
 	}
 }
 
-function isPublicCategory(category: string): boolean {
-	return Object.hasOwn(CATEGORY_COLOR, category);
-}
-
-function normalizeCategories(categories: string[] | null | undefined): string[] {
-	if (!Array.isArray(categories)) return [];
-	return categories.filter((category) => typeof category === 'string' && isPublicCategory(category));
-}
-
-function parseCategoryUrls(value: string | null): Record<string, string> | null {
-	if (!value) return null;
-	try {
-		const parsed = JSON.parse(value) as unknown;
-		return parsed && typeof parsed === 'object' && !Array.isArray(parsed)
-			? parsed as Record<string, string>
-			: null;
-	} catch {
-		return null;
-	}
-}
-
-function toGeoFeature(f: PublicFacilityRecord): GeoFeature | null {
-	if (!Number.isFinite(f.longitude) || !Number.isFinite(f.latitude)) return null;
-
+function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 	return {
 		type: 'Feature' as const,
 		geometry: {
@@ -141,7 +120,7 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature | null {
 			cityLabel: f.city_label || getWardLabel(f.ward_id),
 			name: f.name,
 			address: f.address,
-			categories: normalizeCategories(f.categories),
+			categories: f.categories,
 			hours: f.hours,
 			notes: f.notes,
 			imageUrl: f.image_url,
@@ -150,17 +129,10 @@ function toGeoFeature(f: PublicFacilityRecord): GeoFeature | null {
 			imageSourceUrl: f.image_source_url,
 			mapillaryImageId: f.mapillary_image_id,
 			officialUrl: f.official_url,
-			categoryUrls: parseCategoryUrls(f.category_urls),
+			categoryUrls: f.category_urls ? JSON.parse(f.category_urls) : null,
 			collectionEntries: f.collection_entries ?? []
 		}
 	};
-}
-
-function toGeoFeatures(records: PublicFacilityRecord[]): GeoFeature[] {
-	return records.flatMap((record) => {
-		const feature = toGeoFeature(record);
-		return feature ? [feature] : [];
-	});
 }
 
 /**
@@ -203,7 +175,7 @@ async function loadFacilities(
 	appendListParam(params, 'categories', selectedCategories);
 
 	const data = await fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`);
-	return toGeoFeatures(data.facilities);
+	return data.facilities.map(toGeoFeature);
 }
 
 export async function getAreas(): Promise<PublicArea[]> {
@@ -220,19 +192,30 @@ export async function getAreas(): Promise<PublicArea[]> {
 	return promise;
 }
 
+export async function getCategories(): Promise<{ categories: Category[]; details: CategoryDetailsById }> {
+	if (categoriesCache) return categoriesCache;
+
+	categoriesCache = fetchJson<{ categories: Category[]; details: CategoryDetailsById }>('/api/categories')
+		.catch(error => {
+			categoriesCache = null;
+			throw error;
+		});
+	return categoriesCache;
+}
+
 /**
  * Get available categories for selected wards
  */
 export async function getAvailableCategories(
 	wardIds: string[],
 	areaScope: AreaScope = 'selected'
-): Promise<string[]> {
+): Promise<Category[]> {
 	if (areaScope === 'selected' && wardIds.length === 0) return [];
 
 	const params = new URLSearchParams();
 	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	const { categories } = await fetchJson<{ categories: Category[] }>(`/api/categories?${params}`);
-	return categories.map(c => c.id);
+	return categories;
 }
 
 /**
@@ -248,7 +231,7 @@ export async function searchFacilities(
 	const params = new URLSearchParams({ q: query });
 	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	const data = await fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`);
-	return toGeoFeatures(data.facilities);
+	return data.facilities.map(toGeoFeature);
 }
 
 // Helper to get ward label

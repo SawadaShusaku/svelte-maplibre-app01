@@ -5,14 +5,24 @@ import type { GeoFeature } from '$lib/data.js';
 import type { CategoryId, MarkerStyle } from '$lib/types.js';
 
 export const CLUSTER_TRANSITION_ZOOM = 11.75;
-export const PREFECTURE_SUMMARY_MAX_ZOOM = 7.5;
+export const PREFECTURE_SUMMARY_MAX_ZOOM = 10;
 export const INDIVIDUAL_MARKER_MIN_ZOOM = CLUSTER_TRANSITION_ZOOM;
 export const WARD_SUMMARY_MAX_ZOOM = CLUSTER_TRANSITION_ZOOM;
 export const WARD_SUMMARY_CLICK_ZOOM = 14;
 export const PREFECTURE_SUMMARY_CLICK_ZOOM = 8.75;
+export const CLUSTER_PREFECTURE_ZOOM = 8;
+export const CLUSTER_WIDE_AREA_ZOOM = 9;
+export const CLUSTER_WARD_AREA_ZOOM = 10;
+export const CLUSTER_WIDE_AREA_RADIUS_PX = 28;
+export const CLUSTER_WARD_AREA_RADIUS_PX = 35;
 export const MARKER_ICON_WIDTH = 32;
 export const MARKER_ICON_HEIGHT = 42;
 export const MARKER_ICON_SIZE = 27 / MARKER_ICON_WIDTH;
+
+const METERS_PER_DEGREE_LATITUDE = 111_320;
+const FALLBACK_MUNICIPALITY_AREA_M2 = 75_000_000;
+const PREFECTURE_CLUSTER_MIN_RADIUS_SCALE = 1.15;
+const PREFECTURE_CLUSTER_MAX_RADIUS_SCALE = 1.8;
 
 export interface MarkerFeatureProperties {
 	facilityId: string;
@@ -31,6 +41,9 @@ export interface WardSummaryFeatureProperties {
 	cityLabel: string;
 	summaryType: 'prefecture' | 'municipality';
 	facilityCount: number;
+	clusterRadiusScale: number;
+	sumLng: number;
+	sumLat: number;
 	minLng: number;
 	minLat: number;
 	maxLng: number;
@@ -117,10 +130,33 @@ export function buildMarkerImageDescriptors(
 	return [...descriptors.values()];
 }
 
-export function buildWardSummaryFeatureCollection(
-	facilities: GeoFeature[],
-	level: 'prefecture' | 'municipality' = 'municipality'
-): FeatureCollection<Point, WardSummaryFeatureProperties> {
+type SummaryLevel = WardSummaryFeatureProperties['summaryType'];
+
+function clamp(value: number, min: number, max: number): number {
+	return Math.max(min, Math.min(max, value));
+}
+
+function getBoundingBoxAreaM2(summary: WardSummaryFeatureProperties): number {
+	const centerLatRadians = ((summary.minLat + summary.maxLat) / 2) * Math.PI / 180;
+	const metersPerDegreeLongitude = METERS_PER_DEGREE_LATITUDE * Math.cos(centerLatRadians);
+	const widthM = Math.max(0, summary.maxLng - summary.minLng) * metersPerDegreeLongitude;
+	const heightM = Math.max(0, summary.maxLat - summary.minLat) * METERS_PER_DEGREE_LATITUDE;
+
+	return widthM * heightM;
+}
+
+function median(values: number[]): number | null {
+	if (values.length === 0) return null;
+
+	const sorted = [...values].sort((a, b) => a - b);
+	const midpoint = Math.floor(sorted.length / 2);
+
+	return sorted.length % 2 === 0
+		? (sorted[midpoint - 1] + sorted[midpoint]) / 2
+		: sorted[midpoint];
+}
+
+function buildSummaryMap(facilities: GeoFeature[], level: SummaryLevel): Map<string, WardSummaryFeatureProperties> {
 	const summaries = new Map<string, WardSummaryFeatureProperties>();
 
 	for (const facility of facilities) {
@@ -134,6 +170,8 @@ export function buildWardSummaryFeatureCollection(
 
 		if (existing) {
 			existing.facilityCount += 1;
+			existing.sumLng += lng;
+			existing.sumLat += lat;
 			existing.minLng = Math.min(existing.minLng, lng);
 			existing.minLat = Math.min(existing.minLat, lat);
 			existing.maxLng = Math.max(existing.maxLng, lng);
@@ -146,11 +184,54 @@ export function buildWardSummaryFeatureCollection(
 			cityLabel: label,
 			summaryType: level,
 			facilityCount: 1,
+			clusterRadiusScale: 1,
+			sumLng: lng,
+			sumLat: lat,
 			minLng: lng,
 			minLat: lat,
 			maxLng: lng,
 			maxLat: lat
 		});
+	}
+
+	return summaries;
+}
+
+function getMunicipalityReferenceAreaM2(facilities: GeoFeature[]): number {
+	const municipalityAreas = [...buildSummaryMap(facilities, 'municipality').values()]
+		.map(getBoundingBoxAreaM2)
+		.filter((areaM2) => areaM2 > 0);
+
+	return median(municipalityAreas) ?? FALLBACK_MUNICIPALITY_AREA_M2;
+}
+
+function getPrefectureClusterRadiusScale(summary: WardSummaryFeatureProperties, referenceAreaM2: number): number {
+	const areaM2 = getBoundingBoxAreaM2(summary);
+	if (areaM2 <= 0) return 1;
+
+	const areaRadiusRatio = Math.sqrt(areaM2 / referenceAreaM2);
+	const zoomPixelRatio = 2 ** (CLUSTER_WIDE_AREA_ZOOM - CLUSTER_WARD_AREA_ZOOM);
+	const displayedRadiusRatio = CLUSTER_WARD_AREA_RADIUS_PX / CLUSTER_WIDE_AREA_RADIUS_PX;
+
+	// Display radius is proportional to sqrt(area) * 2^zoom.
+	return clamp(
+		areaRadiusRatio * zoomPixelRatio * displayedRadiusRatio,
+		PREFECTURE_CLUSTER_MIN_RADIUS_SCALE,
+		PREFECTURE_CLUSTER_MAX_RADIUS_SCALE
+	);
+}
+
+export function buildWardSummaryFeatureCollection(
+	facilities: GeoFeature[],
+	level: SummaryLevel = 'municipality'
+): FeatureCollection<Point, WardSummaryFeatureProperties> {
+	const summaries = buildSummaryMap(facilities, level);
+
+	if (level === 'prefecture') {
+		const referenceAreaM2 = getMunicipalityReferenceAreaM2(facilities);
+		for (const summary of summaries.values()) {
+			summary.clusterRadiusScale = getPrefectureClusterRadiusScale(summary, referenceAreaM2);
+		}
 	}
 
 	return {
@@ -160,8 +241,8 @@ export function buildWardSummaryFeatureCollection(
 			geometry: {
 				type: 'Point',
 				coordinates: [
-					(summary.minLng + summary.maxLng) / 2,
-					(summary.minLat + summary.maxLat) / 2
+					summary.sumLng / summary.facilityCount,
+					summary.sumLat / summary.facilityCount
 				]
 			},
 			properties: summary
@@ -199,10 +280,12 @@ export function fitToWardSummary(
 	summary: WardSummaryFeatureProperties,
 	isMobile: boolean
 ): void {
-	const center: [number, number] = [
-		(summary.minLng + summary.maxLng) / 2,
-		(summary.minLat + summary.maxLat) / 2
-	];
+	const center: [number, number] = summary.facilityCount > 0
+		? [summary.sumLng / summary.facilityCount, summary.sumLat / summary.facilityCount]
+		: [
+			(summary.minLng + summary.maxLng) / 2,
+			(summary.minLat + summary.maxLat) / 2
+		];
 
 	map.easeTo({
 		center,

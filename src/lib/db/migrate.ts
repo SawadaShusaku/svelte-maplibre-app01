@@ -23,10 +23,10 @@ const projectRoot = path.resolve(__dirname, '../../..');
 
 // Category definitions with new split
 const CATEGORIES = [
-	{ id: 'rechargeable-battery', label: '小型充電式電池', color: '#10b981', icon: 'BatteryCharging' },
-	{ id: 'e-bike-rechargeable-battery', label: '自転車用充電式電池', color: '#ef4444', icon: 'BatteryCharging' },
+	{ id: 'rechargeable-battery', label: '充電池', color: '#10b981', icon: 'BatteryCharging' },
+	{ id: 'e-bike-rechargeable-battery', label: '自転車用充電池', color: '#f97316', icon: 'Bike' },
 	{ id: 'dry-battery', label: '乾電池', color: '#7dd3fc', icon: 'Battery' },
-	{ id: 'button-battery', label: 'ボタン電池', color: '#fde047', icon: 'Battery' },
+	{ id: 'button-battery', label: 'ボタン電池', color: '#fde047', icon: 'CircleDot' },
 	{ id: 'small-appliance', label: '小型家電', color: '#0891b2', icon: 'Smartphone' },
 	{ id: 'fluorescent', label: '蛍光灯', color: '#fdba74', icon: 'Lightbulb' },
 	{ id: 'ink-cartridge', label: 'インクカートリッジ', color: '#a855f7', icon: 'Printer' },
@@ -34,7 +34,7 @@ const CATEGORIES = [
 	{ id: 'used-clothing', label: '古布・衣類', color: '#db2777', icon: 'Shirt' },
 	{ id: 'paper-pack', label: '紙パック', color: '#059669', icon: 'Package' },
 	{ id: 'styrofoam', label: '発泡スチロール', color: '#8b5cf6', icon: 'Box' },
-	{ id: 'heated-tobacco-device', label: '加熱式たばこ機器等', color: '#64748b', icon: 'Recycle' }
+	{ id: 'heated-tobacco-device', label: '加熱式たばこ機器等', color: '#64748b', icon: 'Cigarette' }
 ];
 
 // Category details for warnings

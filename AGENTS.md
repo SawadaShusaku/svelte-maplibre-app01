@@ -6,8 +6,9 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 | Command | Purpose |
 |---------|---------|
-| `npm run dev` | Vite dev server (no D1) |
-| `npm run dev:d1` | Local Wrangler dev server with D1 |
+| `npm run dev` | Vite dev server with local D1 via Cloudflare platform proxy |
+| `npm run dev:worker` | Local Wrangler dev server with D1, using built Worker output |
+| `npm run dev:remote` | Wrangler dev against remote preview D1 |
 | `npm run build` | Production build |
 | `npm run check` | Type-check with svelte-check |
 | `npm run test` | Unit tests (Vitest + MockRepository) |
@@ -15,6 +16,8 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 | `npm run smoke` | **Build + preview + HTTP 200** — run this for SSR/browser-API changes |
 | `npm run build:db:local` | Dev-only SQLite validation DB → `.local/recycling-dev.db` |
 | `npm run d1:schema:local` | Apply D1 schema to local D1 |
+| `npm run d1:categories:local` | Apply category label/color/icon/order metadata to local D1 |
+| `npm run d1:sync:local` | Overwrite local D1 from remote production D1 (`-- --from=preview` for preview) |
 | `npm run audit:data` | GeoJSON data quality audit (read-only) |
 | `npm run audit:private-data` | Fail if private data or bulk DB artifacts are tracked |
 | `npm run validate:d1-seed` | Validate private D1 seed JSON before import |
@@ -46,8 +49,7 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 5. After preview verification, apply to production D1.
 
 **Geocoding rules** (details in [docs/data-pipeline-policy.md](docs/data-pipeline-policy.md)):
-- Google Geocoding API is the unified provider for public map coordinates.
-- GSI Japan Address Search API is comparison/audit only, not part of normal public coordinate generation.
+- GSI Japan Address Search API first; Google Geocoding API fallback.
 - Never Nominatim. Never assign fallback centroids without human approval.
 - Do NOT add confidence score fields to public schema/API/seed.
 
@@ -59,7 +61,7 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 ## Common Issues
 
-- **D1 binding missing**: use `npm run dev:d1` (Wrangler preview env). Binding name is `RECYCLING_DB`.
+- **D1 binding missing**: use `npm run dev` (Vite + Cloudflare platform proxy). Binding name is `RECYCLING_DB`.
 - **Proxy object errors**: spread state arrays before passing to functions.
 - **D1 query errors**: use `prepare(...).bind(...).all<T>()` / `first<T>()`. Keep API responses minimized.
 
@@ -72,17 +74,6 @@ Cloudflare **Workers with Static Assets**.
 - **Required files**: `wrangler.toml` (root env = production; preview under `[env.preview]`), `worker-configuration.d.ts`
 - **Binding**: `RECYCLING_DB`
 - Do **not** use GitHub Actions — Cloudflare Git integration handles builds/deploys automatically.
-
-### Safe Chain (Supply-chain Security)
-
-This project uses [Aikido Safe Chain](https://github.com/AikidoSec/safe-chain) to protect against malicious npm packages during builds.
-
-**Cloudflare Dashboard Build Command** (already configured):
-```bash
-curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh -s -- --ci && npm run build
-```
-
-**Deploy commands** (`npm run deploy:prod`, `npm run deploy:preview`) do **not** need modification — Safe Chain only intercepts package installs, not deployments.
 
 ## Skills & VCS
 

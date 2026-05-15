@@ -1,4 +1,3 @@
-import { CATEGORY_COLOR } from '$lib/db/categories.js';
 import {
 	buildGradientStops,
 	buildPieSegments,
@@ -17,6 +16,7 @@ function buildMarkerSvg(
 	categories: CategoryId[],
 	style: MarkerStyle,
 	iconKey: string,
+	categoryColors: ReadonlyMap<string, string>,
 	solidColor?: string
 ): string {
 	const safeId = iconKey.replace(/[^a-z0-9]/gi, '-');
@@ -26,10 +26,10 @@ function buildMarkerSvg(
 	const leftHalfId = `left-half-${safeId}`;
 	const rightHalfId = `right-half-${safeId}`;
 
-	const colors = getMarkerColors(categories);
+	const colors = getMarkerColors(categories, categoryColors);
 	const effectiveMode = getEffectiveMode(style, categories.length);
 	const primaryColor =
-		style === 'solid' && solidColor ? solidColor : colors[0] ?? CATEGORY_COLOR['dry-battery'];
+		style === 'solid' && solidColor ? solidColor : colors[0] ?? categoryColors.get('dry-battery') ?? '#7dd3fc';
 	const ringSegments =
 		effectiveMode === 'ring' ? buildPieSegments(colors, 16, 17, 25) : [];
 	const gradientStops =
@@ -116,8 +116,15 @@ async function svgToImageData(svg: string): Promise<ImageData> {
 	return ctx.getImageData(0, 0, canvas.width, canvas.height);
 }
 
-export function getMarkerImage(descriptor: MarkerImageDescriptor): Promise<ImageData> {
-	const cached = markerImageCache.get(descriptor.iconKey);
+export function getMarkerImage(
+	descriptor: MarkerImageDescriptor,
+	categoryColors: ReadonlyMap<string, string>
+): Promise<ImageData> {
+	const cacheKey = [
+		descriptor.iconKey,
+		...descriptor.categories.map((category) => categoryColors.get(category) ?? '')
+	].join('--');
+	const cached = markerImageCache.get(cacheKey);
 	if (cached) return cached;
 
 	const promise = svgToImageData(
@@ -125,9 +132,10 @@ export function getMarkerImage(descriptor: MarkerImageDescriptor): Promise<Image
 			descriptor.categories,
 			descriptor.style,
 			descriptor.iconKey,
+			categoryColors,
 			descriptor.solidColor
 		)
 	);
-	markerImageCache.set(descriptor.iconKey, promise);
+	markerImageCache.set(cacheKey, promise);
 	return promise;
 }

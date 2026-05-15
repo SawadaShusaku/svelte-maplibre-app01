@@ -1,5 +1,6 @@
 import type { CategoryId, MarkerStyle } from './types.js';
-import { CATEGORY_COLOR } from './db/categories.js';
+
+const EMPTY_CATEGORY_COLORS = new Map<string, string>();
 
 export type RenderMode = 'solid' | 'split' | 'ring' | 'gradient';
 
@@ -15,10 +16,11 @@ export function getEffectiveMode(
 	return 'ring';
 }
 
-export function getMarkerColors(categories: CategoryId[]): string[] {
-	return categories
-		.map((c) => CATEGORY_COLOR[c])
-		.filter((color): color is string => typeof color === 'string' && color.length > 0);
+export function getMarkerColors(
+	categories: CategoryId[],
+	categoryColors: ReadonlyMap<string, string> = EMPTY_CATEGORY_COLORS
+): string[] {
+	return categories.map((category) => categoryColors.get(category) ?? '#7dd3fc');
 }
 
 export interface DonutSegment {
