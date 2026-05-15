@@ -13,7 +13,7 @@
 メーカーや製品の状態によっては回収対象外となる場合があります。
 各拠点の受け入れ条件は、必ず拠点詳細または各データソースの公式情報をご確認ください。
 
-**[ライブデモ](https://your-domain.example.com)**
+**[ライブデモ](https://svelte-maplibre-app01.negamamiura.workers.dev/)**
 
 ## 主な機能
 
