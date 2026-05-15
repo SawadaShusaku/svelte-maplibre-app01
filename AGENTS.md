@@ -84,8 +84,6 @@ curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/inst
 
 **Deploy commands** (`npm run deploy:prod`, `npm run deploy:preview`) do **not** need modification — Safe Chain only intercepts package installs, not deployments.
 
-**For local development**: See README.md for installation instructions.
-
 ## Skills & VCS
 
 - **Jujutsu workflow**: see `.codex/skills/jujutsu-skill/SKILL.md`
