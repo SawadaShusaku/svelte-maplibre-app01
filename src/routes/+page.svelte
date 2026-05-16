@@ -407,6 +407,14 @@
     alert(getGeolocationErrorMessage(err));
   }
 
+  let pendingPrefectureZoom = $state<string | null>(null);
+
+  function handleSelectPrefecture(prefecture: string) {
+    if (prefecture) {
+      pendingPrefectureZoom = prefecture;
+    }
+  }
+
   // データフェッチ
   $effect(() => {
     if (!browser) return;
@@ -419,6 +427,17 @@
       // 表示対象外になったポップアップを閉じる
       if (selectedFacilityId && !f.find((x) => x.properties.id === selectedFacilityId)) {
         selectedFacilityId = null;
+      }
+
+      // 都道府県が選択された場合のオートズーム
+      if (pendingPrefectureZoom && map && facilities.length > 0) {
+        const summaryFeature = buildWardSummaryFeatureCollection(facilities, 'prefecture')
+          .features.find(feat => feat.properties.city === pendingPrefectureZoom);
+        
+        if (summaryFeature) {
+          fitToWardSummary(map, summaryFeature.properties, isMobile);
+        }
+        pendingPrefectureZoom = null;
       }
     }).catch(err => {
       if (requestVersion !== facilitiesRequestVersion) return;
@@ -883,6 +902,7 @@
   bind:selectedCategories 
   onSelectFacility={handleSelectFacility}
   onMenuClick={() => (sidebarOpen = true)}
+  onSelectPrefecture={handleSelectPrefecture}
 />
 
 <!-- 設定サイドバー -->
