@@ -18,6 +18,7 @@
     selectedCategories = $bindable([]),
     onSelectFacility,
     onMenuClick,
+    onSelectPrefecture = undefined,
   } = $props<{
     searchQuery: string;
     searchResults: any[];
@@ -28,6 +29,7 @@
     selectedCategories: CategoryId[];
     onSelectFacility: (facility: any) => void;
     onMenuClick: () => void;
+    onSelectPrefecture?: (prefecture: string) => void;
   }>();
 
   // 利用可能なカテゴリを動的に取得
@@ -75,7 +77,7 @@
     </div>
 
     <!-- 区選択プルダウン -->
-    <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} />
+    <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} {onSelectPrefecture} />
 
     <!-- カテゴリ選択バー: 残りのスペースを埋める -->
     <div class="flex-1 min-w-0 overflow-hidden">
@@ -103,7 +105,7 @@
         <SearchBar bind:value={searchQuery} results={searchResults} onselect={onSelectFacility} />
       </div>
 
-      <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} />
+      <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} {onSelectPrefecture} />
     </div>
 
     <!-- 下段: カテゴリ -->
@@ -133,7 +135,7 @@
       </div>
 
       <div class="flex-shrink-0 ml-auto">
-        <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} />
+        <WardSelector bind:selectedKeys bind:areaScope allKeys={allKeys} {areas} {onSelectPrefecture} />
       </div>
     </div>
 

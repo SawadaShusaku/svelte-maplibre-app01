@@ -170,6 +170,20 @@ async function loadFacilities(
 	const wardIds = toWardIds(selectedCities);
 	if (areaScope === 'selected' && wardIds.length === 0) return [];
 
+	const CHUNK_SIZE = 50;
+	if (areaScope === 'selected' && wardIds.length > CHUNK_SIZE) {
+		const promises = [];
+		for (let i = 0; i < wardIds.length; i += CHUNK_SIZE) {
+			const chunk = wardIds.slice(i, i + CHUNK_SIZE);
+			const params = new URLSearchParams();
+			appendListParam(params, 'wards', chunk);
+			appendListParam(params, 'categories', selectedCategories);
+			promises.push(fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`));
+		}
+		const results = await Promise.all(promises);
+		return results.flatMap(data => data.facilities).map(toGeoFeature);
+	}
+
 	const params = new URLSearchParams();
 	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	appendListParam(params, 'categories', selectedCategories);
@@ -212,6 +226,25 @@ export async function getAvailableCategories(
 ): Promise<Category[]> {
 	if (areaScope === 'selected' && wardIds.length === 0) return [];
 
+	const CHUNK_SIZE = 50;
+	if (areaScope === 'selected' && wardIds.length > CHUNK_SIZE) {
+		const promises = [];
+		for (let i = 0; i < wardIds.length; i += CHUNK_SIZE) {
+			const chunk = wardIds.slice(i, i + CHUNK_SIZE);
+			const params = new URLSearchParams();
+			appendListParam(params, 'wards', chunk);
+			promises.push(fetchJson<{ categories: Category[] }>(`/api/categories?${params}`));
+		}
+		const results = await Promise.all(promises);
+		const map = new Map<string, Category>();
+		for (const res of results) {
+			for (const cat of res.categories) {
+				map.set(cat.id, cat);
+			}
+		}
+		return Array.from(map.values()).sort((a, b) => a.sort_order - b.sort_order);
+	}
+
 	const params = new URLSearchParams();
 	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);
 	const { categories } = await fetchJson<{ categories: Category[] }>(`/api/categories?${params}`);
@@ -227,6 +260,19 @@ export async function searchFacilities(
 	areaScope: AreaScope = 'selected'
 ): Promise<GeoFeature[]> {
 	if (areaScope === 'selected' && wardIds.length === 0) return [];
+
+	const CHUNK_SIZE = 50;
+	if (areaScope === 'selected' && wardIds.length > CHUNK_SIZE) {
+		const promises = [];
+		for (let i = 0; i < wardIds.length; i += CHUNK_SIZE) {
+			const chunk = wardIds.slice(i, i + CHUNK_SIZE);
+			const params = new URLSearchParams({ q: query });
+			appendListParam(params, 'wards', chunk);
+			promises.push(fetchJson<{ facilities: PublicFacilityRecord[] }>(`/api/facilities?${params}`));
+		}
+		const results = await Promise.all(promises);
+		return results.flatMap(data => data.facilities).map(toGeoFeature);
+	}
 
 	const params = new URLSearchParams({ q: query });
 	if (areaScope === 'selected') appendListParam(params, 'wards', wardIds);

@@ -6,12 +6,24 @@
     allKeys = [],
     areaScope = $bindable('all'),
     areas = [],
+    onSelectPrefecture = undefined,
   } = $props<{
     selectedKeys: string[];
     allKeys: string[];
     areaScope: AreaScope;
     areas: PublicArea[];
+    onSelectPrefecture?: (prefecture: string) => void;
   }>();
+
+  const PREFECTURES = [
+    '北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県',
+    '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県',
+    '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県',
+    '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県',
+    '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県',
+    '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県',
+    '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県'
+  ];
 
   const prefectureGroups = $derived.by(() => {
     const groups = new Map<string, PublicArea[]>();
@@ -20,16 +32,26 @@
       list.push(area);
       groups.set(area.prefecture, list);
     }
-    return [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ja'));
+    return [...groups.entries()].sort((a, b) => {
+      const indexA = PREFECTURES.indexOf(a[0]);
+      const indexB = PREFECTURES.indexOf(b[0]);
+      const posA = indexA === -1 ? 999 : indexA;
+      const posB = indexB === -1 ? 999 : indexB;
+      return posA - posB;
+    });
   });
   let open = $state(false);
 
-  function toggleCity(key: string) {
+  function togglePrefecture(prefecture: string, prefectureAreas: PublicArea[]) {
     areaScope = 'selected';
-    if (selectedKeys.length === 1 && selectedKeys[0] === key) {
+    const prefectureKeys = prefectureAreas.map(a => `${a.prefecture}/${a.id}`);
+    const isCurrentlySelected = selectedKeys.length > 0 && selectedKeys[0].startsWith(`${prefecture}/`);
+
+    if (isCurrentlySelected) {
       selectedKeys = [];
     } else {
-      selectedKeys = [key];
+      selectedKeys = prefectureKeys;
+      if (onSelectPrefecture) onSelectPrefecture(prefecture);
     }
     open = false;
   }
@@ -45,9 +67,7 @@
       ? "全国"
       : selectedKeys.length === 0
       ? "選択なし"
-      : selectedKeys.length === 1
-      ? areas.find((area: PublicArea) => `${area.prefecture}/${area.id}` === selectedKeys[0])?.city_label || "選択中"
-      : "複数選択"
+      : selectedKeys[0].split('/')[0]
   );
 </script>
 
@@ -73,17 +93,13 @@
         </button>
         <div class="h-px bg-gray-200 my-2"></div>
         {#each prefectureGroups as [prefecture, prefectureAreas]}
-          <div class="text-xs font-bold text-gray-400 px-3 mt-2 mb-1">{prefecture}</div>
-          {#each prefectureAreas as area}
-            {@const key = `${area.prefecture}/${area.id}`}
-            {@const active = areaScope === 'selected' && selectedKeys.length === 1 && selectedKeys[0] === key}
-            <button
-              onclick={() => toggleCity(key)}
-              class="w-full text-left px-3 py-2 rounded-md text-sm transition-colors {active ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700 hover:bg-gray-100'}"
-            >
-              {area.city_label}
-            </button>
-          {/each}
+          {@const active = areaScope === 'selected' && selectedKeys.length > 0 && selectedKeys[0].startsWith(`${prefecture}/`)}
+          <button
+            onclick={() => togglePrefecture(prefecture, prefectureAreas)}
+            class="w-full text-left px-3 py-2 rounded-md text-sm transition-colors {active ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700 hover:bg-gray-100'}"
+          >
+            {prefecture}
+          </button>
         {/each}
       </div>
     </div>
