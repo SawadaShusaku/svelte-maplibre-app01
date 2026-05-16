@@ -4,6 +4,11 @@
     name="description"
     content={`${SITE_NAME_JA}。東京のリサイクル回収施設を地図で探せるアプリ。区の選択、カテゴリ絞り込み、施設情報の確認ができます。`}
   />
+
+  <!-- OGP override for home page -->
+  <meta property="og:title" content={buildPageTitle()} />
+  <meta property="og:description" content="日本全国のリサイクル拠点を探すマップ。東京23区の回収施設・充電器設置場所を地図で確認できます。" />
+  <meta property="og:url" content={SITE_URL} />
 </svelte:head>
 
 <script lang="ts">
@@ -35,7 +40,7 @@
 
   import { getAreas, getCategories, getFacilities, type AreaScope, type CategoryDetailsById, type GeoFeature, type PublicArea } from '$lib/data.js';
   import type { Category } from '$lib/db/types.js';
-  import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER } from '$lib/site.js';
+  import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER, SITE_URL } from '$lib/site.js';
   import {
     buildFacilityIndex,
     buildMarkerFeatureCollection,
