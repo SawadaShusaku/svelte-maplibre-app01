@@ -10,7 +10,8 @@ export const GET: RequestHandler = async ({ platform, url }) => {
 		const categories = wardIds.length > 0
 			? await repo.getAvailableCategories(wardIds)
 			: await repo.getCategories();
-		return json({ categories });
+		const details = await repo.getAllCategoryDetails();
+		return json({ categories, details });
 	} catch (error) {
 		return jsonError(error instanceof Error ? error.message : 'Failed to load categories', 503);
 	}

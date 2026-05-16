@@ -1,47 +1,154 @@
-# 全国リサイクルマップ (Japan Recycle Map)
+# sv
 
-![スクリーンショット](docs/screenshots/screenshot-main.png)
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-リサイクル対象となる電池・インクカートリッジ・使用済み食用油・加熱式たばこ機器などの
-回収拠点を、地図上から横断的に検索できるWebアプリケーションです。
+## Creating a project
 
-これらの品目は事業者ごとに回収拠点情報が分散しており、
-「どこに持ち込めばよいか分からない」ことが適切なリサイクルの障壁になっています。
-本アプリは複数のデータソースを統合し、ユーザーが品目と地域から
-最寄りの拠点を一度に確認できるようにすることを目的としています。
+If you're seeing this, you've probably already done this step. Congrats!
 
-**[ライブデモ](https://svelte-maplibre-app01.negamamiura.workers.dev/)**
+```sh
+# create a new project
+npx sv create my-app
+```
 
-## ご利用にあたって
+To recreate this project with the same configuration:
 
-メーカーや製品の状態によっては回収対象外となる場合があります。
-各拠点の受け入れ条件は、必ず拠点詳細または各データソースの公式情報をご確認ください。
+```sh
+# recreate this project
+npx sv@0.13.2 create --template minimal --types ts --install npm svelte-maplibre-app01
+```
 
-## 主な機能
+## Developing
 
-- 回収拠点のマーカー表示
-- 品目別フィルタリング
-- テキスト検索
-- 距離計測とルート検索
-- 拠点詳細情報の表示
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## 技術スタック
+```sh
+npm run dev
 
-- [SvelteKit](https://kit.svelte.dev/) / [Svelte 5](https://svelte.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [svelte-maplibre-gl](https://github.com/MIERUNE/svelte-maplibre-gl)（[MIERUNE](https://www.mierune.co.jp/)開発）
-- [MapLibre GL](https://maplibre.org/)
-- [Lucide Svelte](https://lucide.dev/) - アイコン
-- [Tailwind CSS](https://tailwindcss.com/) v4
-- [Cloudflare Workers](https://workers.cloudflare.com/) / [D1](https://developers.cloudflare.com/d1/)
-- [OpenFreeMap](https://openfreemap.org/) - 地図タイル
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+公開設定は `.env.example` を元に `.env` を作成して設定します。
+
+```env
+PUBLIC_GTAG_ID=G-XXXXXXXXXX
+PUBLIC_OSRM_BASE_URL=https://router.project-osrm.org
+PUBLIC_MAP_STYLE_URL=https://tiles.openfreemap.org/styles/liberty
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+
+## データの管理・更新方法
+
+このアプリケーションの本番データ配信は、Cloudflare D1 を Worker/SvelteKit API 経由で読む方針です。ブラウザへ `static/recycling.db` のような一括取得可能なDBファイルを配布しません。
+
+長期的な source of truth は、別プロジェクトの非公開データパイプラインで管理します。SQLite は開発・検証用には使えますが、配信される静的アセットには置きません。
+
+### データフロー
+
+```
+private data pipeline  →  private D1 seed/import  →  Cloudflare D1  →  Worker API  →  browser
+```
+
+- **非公開データパイプライン** が、上流CSV/raw/geocoding cache/正規化データの長期的なsource of truthです
+- **Cloudflare D1** は本番の public serving DB です。source of truth ではなく派生成果物です
+- **Worker API** はアプリ表示に必要な最小限の施設・区・カテゴリ情報だけを返します
+- **GeoJSONファイル** (`src/lib/data/tokyo/toshima.geojson` など) は移行期間中の派生入力です
+- **ローカルSQLite** は開発・検証用に `.local/` など配信されない場所へ生成します
+- 上流CSV、raw HTML/JSON、geocoding cache、正規化済みの完全データセット、D1 seed/import、SQLite DB は公開アプリリポジトリや静的配布物に置きません
+- 詳細な方針は [docs/data-pipeline-policy.md](docs/data-pipeline-policy.md) を参照してください
+
+### D1 の推奨名
+
+- local: `recycling-facilities-local` via `npm run dev`
+- preview/staging: `recycling-facilities-preview`
+- production: `recycling-facilities-prod`
+- binding name: `RECYCLING_DB`
+
+Cloudflare Git integration では root `name` が Dashboard の Worker 名と一致している必要があるため、`wrangler.toml` の root 環境を production として扱います。preview だけ `[env.preview]` で分けます。
+
+### D1 schema の適用
+
+```sh
+npm run d1:schema:local
+npm run d1:schema:preview
+npm run d1:schema:prod
+```
+
+カテゴリのラベル・色・アイコン・表示順は D1 の `categories` / `category_details` を source of truth とします。seed/import 後にカテゴリメタデータを更新する場合は次を実行します。
+
+```sh
+npm run d1:categories:local
+npm run d1:categories:preview
+npm run d1:categories:prod
+```
+
+データ入り seed/import SQL は非公開データパイプライン側で生成し、公開アプリリポジトリにはコミットしません。
+
+ローカルD1をリモートD1と同期する場合は、次のコマンドでローカルD1を上書きします。
+
+```sh
+npm run d1:sync:local
+npm run d1:sync:local -- --from=preview
+```
+
+### デプロイ
+
+Cloudflare Git 連携の production deploy command は root production Worker をデプロイします。
+
+```sh
+npm run deploy:prod
+```
+
+preview 環境へ手動デプロイする場合:
+
+```sh
+npm run deploy:preview
+```
+
+root は production Worker なので、手動で production へデプロイする場合も `npm run deploy:prod` を使います。preview 確認は `npm run deploy:preview` を使います。
+
+### ローカルSQLite検証
+
+移行期間中の GeoJSON をローカル SQLite として確認する場合:
+
+```sh
+npm run build:db:local
+```
+
+出力先は `.local/recycling-dev.db` です。`static/` には生成しません。
+
+### 自治体のURL・出典URLを更新する場合
+
+- 自治体ごとの公式URLやカテゴリ別の出典URLは [src/lib/registry.ts](/Volumes/ASMT%202462%20NVME%20Media/Projects/svelte-maplibre-app01/src/lib/registry.ts) で管理します
+- 施設データ本体はこれまで通り GeoJSON が source of truth です
+- URL メタデータを将来 DB から引きたくなった場合も、まずは `registry.ts` などのリポジトリ内データを元に migration する方針を推奨します
+
+### 新しい市区町村を追加する場合
+
+1. `src/lib/registry.ts` の `WARD_REGISTRY` に市区町村を追加
+2. `src/lib/data/{都道府県}/{市区町村}.geojson` にGeoJSONファイルを作成
+3. `npm run build:db` を実行
 
 ## データソース
 
-以下の外部データソースから取得・整形したデータを使用しています。
+以下の外部データソースから取得・整形した上流データのスナップショットは、別プロジェクトの非公開データパイプラインで管理します。公開アプリリポジトリにはCSVスナップショットを置きません。
 
 ### 一般社団法人電池工業会
 - http://www.botankaishu.jp/srch/srch10.php
+
 
 ### 一般社団法人JBRC
 - https://www.jbrc-system.com/page/pc/techc010/
@@ -54,16 +161,3 @@
 
 ### 加熱式たばこ機器等の回収・リサイクル活動
 - https://www.tioj.or.jp/recycling/index.html
-
-## セルフホスティング
-
-ご自身の環境で本アプリケーションを構築・デプロイする場合は、[docs/self-hosting.md](docs/self-hosting.md) を参照してください。
-
-## License
-
-本プロジェクトのソースコードは [MIT License](LICENSE) の下で公開されています。
-
-### データの取り扱い
-
-- 回収拠点データは各自治体・データソースの利用規約に従います
-- 地図タイルは [OpenFreeMap](https://openfreemap.org/) の利用規約に従います

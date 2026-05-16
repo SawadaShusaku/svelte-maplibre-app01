@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Battery, BatteryCharging, Bike, Cigarette, CircleDot, Lightbulb, Droplet, Printer, Smartphone, Shirt, Package, Box, ChevronLeft, ChevronRight } from 'lucide-svelte';
-  import { CATEGORY_COLOR, CATEGORY_LABEL } from '$lib/db/categories.js';
+  import type { Category } from '$lib/db/types.js';
   import type { CategoryId } from '$lib/types.js';
 
   let {
@@ -8,7 +8,7 @@
     categories = [],
   } = $props<{
     selected: CategoryId[];
-    categories: CategoryId[];
+    categories: Category[];
   }>();
 
   let scrollContainer = $state<HTMLDivElement | null>(null);
@@ -41,34 +41,38 @@
   }
 
   function toggle(cat: CategoryId) {
-    const isAllSelected = categories.every((c: CategoryId) => selected.includes(c));
+    const isAllSelected = categories.every((category: Category) => selected.includes(category.id as CategoryId));
     
     if (isAllSelected) {
       // All selected → click one to filter to only that category
       selected = [cat];
     } else if (selected.includes(cat)) {
       // Only this one selected → click to show all again
-      selected = [...categories];
+      selected = categories.map((category: Category) => category.id as CategoryId);
     } else {
       // Select only this category (switch from another single-select)
       selected = [cat];
     }
   }
 
-  const CATEGORY_ICON: Record<CategoryId, typeof Battery> = {
-    'rechargeable-battery': BatteryCharging,
-    'e-bike-rechargeable-battery': Bike,
-    'button-battery': CircleDot,
-    'dry-battery': Battery,
-    'small-appliance': Smartphone,
-    'fluorescent': Lightbulb,
-    'ink-cartridge': Printer,
-    'cooking-oil': Droplet,
-    'used-clothing': Shirt,
-    'paper-pack': Package,
-    'styrofoam': Box,
-    'heated-tobacco-device': Cigarette,
+  const ICONS: Record<string, typeof Battery> = {
+    Battery,
+    BatteryCharging,
+    Bike,
+    CircleDot,
+    Smartphone,
+    Lightbulb,
+    Printer,
+    Droplet,
+    Shirt,
+    Package,
+    Box,
+    Cigarette,
   };
+
+  function getIcon(icon: string): typeof Battery {
+    return ICONS[icon] ?? Battery;
+  }
 </script>
 
 <div class="relative flex items-center">
@@ -95,12 +99,11 @@
         この区では回収カテゴリが設定されていません
       </div>
     {:else}
-      {#each categories as cat (cat)}
-        {@const typedCat = cat as CategoryId}
-        {@const isAllSelected = categories.every((c: CategoryId) => selected.includes(c))}
+      {#each categories as cat (cat.id)}
+        {@const typedCat = cat.id as CategoryId}
+        {@const isAllSelected = categories.every((category: Category) => selected.includes(category.id as CategoryId))}
         {@const isActive = isAllSelected || selected.includes(typedCat)}
-        {@const catColor = CATEGORY_COLOR[typedCat]}
-        {@const IconComponent = CATEGORY_ICON[typedCat]}
+        {@const IconComponent = getIcon(cat.icon)}
         <button
           onclick={() => toggle(typedCat)}
           class="flex-shrink-0 flex items-center px-3 py-1 rounded-full font-bold text-base transition-all tracking-wide border-0"
@@ -112,12 +115,12 @@
         >
           <span
             class="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
-            style:background-color={isActive ? catColor : 'rgba(156, 163, 175, 0.45)'}
+            style:background-color={isActive ? cat.color : 'rgba(156, 163, 175, 0.45)'}
             style:color={isActive ? '#ffffff' : '#ffffff'}
           >
             <IconComponent size={18} strokeWidth={2.5} />
           </span>
-          <span class="ml-1.5">{CATEGORY_LABEL[typedCat]}</span>
+          <span class="ml-1.5">{cat.label}</span>
         </button>
       {/each}
     {/if}

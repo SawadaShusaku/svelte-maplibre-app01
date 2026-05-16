@@ -2,7 +2,7 @@
   <title>{buildPageTitle()}</title>
   <meta
     name="description"
-    content={`${SITE_NAME_JA}。全国のリサイクル回収施設を地図で探せるアプリ。市区町村の選択、カテゴリ絞り込み、施設情報の確認ができます。`}
+    content={`${SITE_NAME_JA}。東京のリサイクル回収施設を地図で探せるアプリ。区の選択、カテゴリ絞り込み、施設情報の確認ができます。`}
   />
 </svelte:head>
 
@@ -31,16 +31,21 @@
   import AppHeader from '$lib/components/AppHeader.svelte';
   import SettingsSidebar from '$lib/components/SettingsSidebar.svelte';
   import MapMarker from '$lib/components/MapMarker.svelte';
-  import { CATEGORY_COLOR, CATEGORY_LABEL, getCategoryDetails } from '$lib/db/categories.js';
   import { getMarkerStyle, getSolidColor } from '$lib/marker-style.js';
 
-  import { getAreas, getFacilities, type AreaScope, type GeoFeature, type PublicArea } from '$lib/data.js';
+  import { getAreas, getCategories, getFacilities, type AreaScope, type CategoryDetailsById, type GeoFeature, type PublicArea } from '$lib/data.js';
+  import type { Category } from '$lib/db/types.js';
   import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER } from '$lib/site.js';
   import {
     buildFacilityIndex,
     buildMarkerFeatureCollection,
     buildMarkerImageDescriptors,
     buildWardSummaryFeatureCollection,
+    CLUSTER_PREFECTURE_ZOOM,
+    CLUSTER_WARD_AREA_RADIUS_PX,
+    CLUSTER_WARD_AREA_ZOOM,
+    CLUSTER_WIDE_AREA_RADIUS_PX,
+    CLUSTER_WIDE_AREA_ZOOM,
     fitToWardSummary,
     INDIVIDUAL_MARKER_MIN_ZOOM,
     MARKER_ICON_SIZE,
@@ -60,15 +65,11 @@
   const osrmBaseUrl = env.PUBLIC_OSRM_BASE_URL?.trim() || DEFAULT_OSRM_BASE_URL;
   const mapStyleUrl = env.PUBLIC_MAP_STYLE_URL?.trim() || DEFAULT_MAP_STYLE_URL;
 
-  // 初期データ
-  const allCategories: CategoryId[] = [
-    'rechargeable-battery', 'e-bike-rechargeable-battery', 'button-battery', 'dry-battery',
-    'small-appliance', 'fluorescent', 'ink-cartridge',
-    'cooking-oil', 'heated-tobacco-device', 'used-clothing', 'paper-pack', 'styrofoam'
-  ];
   // 状態管理
-  let selectedCategories = $state<CategoryId[]>([...allCategories]);
+  let selectedCategories = $state<CategoryId[]>([]);
   let areas = $state<PublicArea[]>([]);
+  let categoryMetadata = $state<Category[]>([]);
+  let categoryDetails = $state<CategoryDetailsById>({});
   let selectedCityKeys = $state<string[]>([]);
   let areaScope = $state<AreaScope>('all');
   let sidebarOpen = $state(false);
@@ -84,13 +85,12 @@
 
   // ルーティング・地図管理
   let routeGeoJSON = $state<LineString | null>(null);
-  let routeInfo = $state<{ distance: number, googleMapsUrl: string } | null>(null);
+  let routeInfo = $state<{ distance: number, duration: number } | null>(null);
   let isFetchingRoute = $state(false);
   let travelMode = $state<'foot' | 'bike' | 'car'>('foot');
   let map = $state<maplibregl.Map | undefined>(undefined);
   let heroMap = $state<maplibregl.Map | undefined>(undefined);
   let geolocateControl = $state<maplibregl.GeolocateControl | undefined>(undefined);
-  let canUseGeolocation = $state(false);
   let routeError = $state<string | null>(null);
   let popupTab = $state<'basic' | 'details'>('basic');
   let isTitleCollapsed = $state(browser ? window.innerWidth <= 640 : false);
@@ -102,11 +102,9 @@
 
   const facilityIndex = $derived(buildFacilityIndex(facilities));
   const selectedFacility = $derived(resolveSelectedFacility(facilityIndex, selectedFacilityId));
+  const categoryById = $derived(new Map(categoryMetadata.map((category) => [category.id, category])));
+  const categoryColors = $derived(new Map(categoryMetadata.map((category) => [category.id, category.color])));
   const markerSourceData = $derived(buildMarkerFeatureCollection(facilities, markerStyle, solidColor));
-  const markerImageIds = $derived(new Set(markerImages.map((markerImage) => markerImage.id)));
-  const markerIconsReady = $derived(
-    markerSourceData.features.every((feature) => markerImageIds.has(feature.properties.iconKey))
-  );
   const summaryLevel = $derived(currentZoom < PREFECTURE_SUMMARY_MAX_ZOOM ? 'prefecture' : 'municipality');
   const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities, summaryLevel));
   type ClusterZoomValues = {
@@ -115,22 +113,32 @@
     transition: number;
   };
 
-  const CLUSTER_WIDE_AREA_ZOOM = 8;
-  const CLUSTER_WARD_AREA_ZOOM = 10;
+  function getCategoryLabel(categoryId: string): string {
+    return categoryById.get(categoryId)?.label ?? categoryId;
+  }
+
+  function getCategoryColor(categoryId: string): string {
+    return categoryById.get(categoryId)?.color ?? '#7dd3fc';
+  }
+
   const CLUSTER_ZOOM_INTERPOLATION_BASE = 2;
+  const CLUSTER_COUNTRY_ZOOM = 5.2;
+  const CLUSTER_COUNTRY_RADIUS_SCALE = 0.76;
+  const CLUSTER_PREFECTURE_RADIUS_SCALE = 0.9;
+  const CLUSTER_TEXT_AREA_SCALE = 0.88;
   const CLUSTER_RADIUS_PX: ClusterZoomValues = {
-    wideArea: 18,
-    wardArea: 33,
+    wideArea: CLUSTER_WIDE_AREA_RADIUS_PX,
+    wardArea: CLUSTER_WARD_AREA_RADIUS_PX,
     transition: 45
   };
   const CLUSTER_HALO_RADIUS_PX: ClusterZoomValues = {
-    wideArea: 22,
-    wardArea: 40,
+    wideArea: 34,
+    wardArea: 42,
     transition: 54
   };
   const CLUSTER_TEXT_SIZE_PX: ClusterZoomValues = {
-    wideArea: 10.5,
-    wardArea: 14.5,
+    wideArea: 13,
+    wardArea: 15,
     transition: 17
   };
   const CLUSTER_COLOR = '#0f766e';
@@ -154,28 +162,13 @@
     }>;
   };
 
-  function buildGoogleMapsDirectionsUrl(destination: [number, number]): string {
-    const [lng, lat] = destination;
-    const googleTravelMode = travelMode === 'foot'
-      ? 'walking'
-      : travelMode === 'bike'
-        ? 'bicycling'
-        : 'driving';
-    const params = new URLSearchParams({
-      api: '1',
-      destination: `${lat},${lng}`,
-      travelmode: googleTravelMode,
-      dir_action: 'navigate'
-    });
-
-    return `https://www.google.com/maps/dir/?${params.toString()}`;
-  }
-
   function interpolateClusterValueByZoom(values: ClusterZoomValues): ExpressionSpecification {
     return [
       'interpolate',
       ['exponential', CLUSTER_ZOOM_INTERPOLATION_BASE],
       ['zoom'],
+      CLUSTER_PREFECTURE_ZOOM,
+      values.wideArea * 0.72,
       CLUSTER_WIDE_AREA_ZOOM,
       values.wideArea,
       CLUSTER_WARD_AREA_ZOOM,
@@ -185,27 +178,43 @@
     ];
   }
 
-  const CLUSTER_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_RADIUS_PX);
-  const CLUSTER_HALO_RADIUS_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_HALO_RADIUS_PX);
-  const CLUSTER_TEXT_SIZE_BY_ZOOM = interpolateClusterValueByZoom(CLUSTER_TEXT_SIZE_PX);
+  function scaleClusterValueByArea(values: ClusterZoomValues): ExpressionSpecification {
+    const scale: ExpressionSpecification = ['coalesce', ['get', 'clusterRadiusScale'], 1];
+    const scaledWideAreaValue: ExpressionSpecification = ['*', values.wideArea, scale];
 
-  function installStyleImageMissingFallback(currentMap: maplibregl.Map): () => void {
-    const handleMissingImage = (event: maplibregl.MapStyleImageMissingEvent) => {
-      const id = event.id;
-      if (!id || id.startsWith('marker--')) return;
-
-      try {
-        if (!currentMap.hasImage(id)) {
-          currentMap.addImage(id, new ImageData(1, 1), { pixelRatio: 1 });
-        }
-      } catch {
-        // Missing base-style sprites are decorative; avoid noisy console warnings.
-      }
-    };
-
-    currentMap.on('styleimagemissing', handleMissingImage);
-    return () => currentMap.off('styleimagemissing', handleMissingImage);
+    return [
+      'interpolate',
+      ['exponential', CLUSTER_ZOOM_INTERPOLATION_BASE],
+      ['zoom'],
+      CLUSTER_COUNTRY_ZOOM,
+      ['*', values.wideArea * CLUSTER_COUNTRY_RADIUS_SCALE, scale],
+      CLUSTER_PREFECTURE_ZOOM,
+      ['*', values.wideArea * CLUSTER_PREFECTURE_RADIUS_SCALE, scale],
+      CLUSTER_WIDE_AREA_ZOOM,
+      scaledWideAreaValue,
+      CLUSTER_WARD_AREA_ZOOM,
+      ['*', values.wardArea, scale],
+      WARD_SUMMARY_MAX_ZOOM,
+      ['*', values.transition, scale]
+    ];
   }
+
+  function multiplyClusterZoomValues(
+    values: ClusterZoomValues,
+    multiplier: number
+  ): ClusterZoomValues {
+    return {
+      wideArea: values.wideArea * multiplier,
+      wardArea: values.wardArea * multiplier,
+      transition: values.transition * multiplier
+    };
+  }
+
+  const CLUSTER_RADIUS_BY_ZOOM = scaleClusterValueByArea(CLUSTER_RADIUS_PX);
+  const CLUSTER_HALO_RADIUS_BY_ZOOM = scaleClusterValueByArea(CLUSTER_HALO_RADIUS_PX);
+  const CLUSTER_TEXT_SIZE_BY_ZOOM = scaleClusterValueByArea(
+    multiplyClusterZoomValues(CLUSTER_TEXT_SIZE_PX, CLUSTER_TEXT_AREA_SCALE)
+  );
 
   // ボトムシート: ドラッグでリサイズ
   const SHEET_DEFAULT_VH = 60;
@@ -218,29 +227,16 @@
   let dragStartHeightVh = 0;
   let isDragging = $state(false);
 
-  /** Check whether a pointer event started on an interactive child element */
-  function isInteractiveTarget(e: PointerEvent): boolean {
-    const el = e.target as HTMLElement | null;
-    if (!el) return false;
-    return Boolean(el.closest('button, a, input, select, textarea, [data-prevent-drag]'));
-  }
-
-  let sheetDragPointerId: number | null = null;
-
   function handleSheetPointerDown(e: PointerEvent) {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
-    if (isInteractiveTarget(e)) return;
     dragStartY = e.clientY;
     dragStartHeightVh = sheetHeightVh;
     isDragging = true;
-    sheetDragPointerId = e.pointerId;
-    try {
-      (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
-    } catch {}
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
   }
 
   function handleSheetPointerMove(e: PointerEvent) {
-    if (!isDragging || e.pointerId !== sheetDragPointerId) return;
+    if (!isDragging) return;
     const dy = e.clientY - dragStartY;
     const vhPerPx = 100 / window.innerHeight;
     const next = dragStartHeightVh - dy * vhPerPx;
@@ -248,9 +244,8 @@
   }
 
   function handleSheetPointerUp(e: PointerEvent) {
-    if (!isDragging || e.pointerId !== sheetDragPointerId) return;
+    if (!isDragging) return;
     isDragging = false;
-    sheetDragPointerId = null;
     try {
       (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
     } catch {}
@@ -270,6 +265,13 @@
 
   $effect(() => {
     if (!browser) return;
+
+    getCategories().then(({ categories, details }) => {
+      categoryMetadata = categories;
+      categoryDetails = details;
+    }).catch((err) => {
+      console.error('Failed to load categories:', err);
+    });
 
     getAreas().then((loadedAreas) => {
       areas = loadedAreas;
@@ -396,34 +398,11 @@
   }
 
   function handleGeolocateError(err: GeolocationPositionError) {
+    console.error('GeolocateControl error:', err);
     alert(getGeolocationErrorMessage(err));
   }
 
   // データフェッチ
-  $effect(() => {
-    if (!browser) return;
-    let cancelled = false;
-    canUseGeolocation = false;
-
-    if (!('geolocation' in navigator)) return;
-    if (!navigator.permissions) {
-      canUseGeolocation = true;
-      return;
-    }
-
-    navigator.permissions.query({ name: 'geolocation' }).then((permission) => {
-      if (cancelled) return;
-      canUseGeolocation = permission.state !== 'denied';
-    }).catch(() => {
-      if (cancelled) return;
-      canUseGeolocation = true;
-    });
-
-    return () => {
-      cancelled = true;
-    };
-  });
-
   $effect(() => {
     if (!browser) return;
     
@@ -454,7 +433,7 @@
       const textToSearch = [
         name, 
         address, 
-        ...categories.map(c => CATEGORY_LABEL[c] ?? c)
+        ...categories.map(getCategoryLabel)
       ].join(" ").toLowerCase();
       
       return q.every(keyword => textToSearch.includes(keyword));
@@ -474,13 +453,15 @@
   $effect(() => {
     if (!browser) return;
 
+    if (categoryMetadata.length === 0) return;
+
     const descriptors = buildMarkerImageDescriptors(facilities, markerStyle, solidColor);
     const requestVersion = ++markerImagesRequestVersion;
 
     Promise.all(
       descriptors.map(async (descriptor) => ({
         id: descriptor.iconKey,
-        image: await getMarkerImage(descriptor)
+        image: await getMarkerImage(descriptor, categoryColors)
       }))
     ).then((images) => {
       if (requestVersion !== markerImagesRequestVersion) return;
@@ -501,7 +482,6 @@
     };
     currentMap.on('moveend', handleMove);
     currentMap.on('zoomend', handleMove);
-    const uninstallMissingImageFallback = installStyleImageMissingFallback(currentMap);
     syncMobileAttributionState();
     const frameId = window.requestAnimationFrame(() => {
       syncMobileAttributionState();
@@ -518,14 +498,8 @@
       window.cancelAnimationFrame(frameId);
       currentMap.off('moveend', handleMove);
       currentMap.off('zoomend', handleMove);
-      uninstallMissingImageFallback();
       window.removeEventListener('resize', handleResize);
     };
-  });
-
-  $effect(() => {
-    if (!browser || !heroMap) return;
-    return installStyleImageMissingFallback(heroMap);
   });
 
   // 検索結果の選択ハンドラ
@@ -559,9 +533,11 @@
     const minLat = Number(summary.minLat);
     const maxLng = Number(summary.maxLng);
     const maxLat = Number(summary.maxLat);
+    const sumLng = Number(summary.sumLng);
+    const sumLat = Number(summary.sumLat);
     const city = typeof summary.city === 'string' ? summary.city : null;
 
-    if ([minLng, minLat, maxLng, maxLat].some(Number.isNaN)) return;
+    if ([minLng, minLat, maxLng, maxLat, sumLng, sumLat].some(Number.isNaN)) return;
 
     fitToWardSummary(
       map,
@@ -570,6 +546,9 @@
         cityLabel: typeof summary.cityLabel === 'string' ? summary.cityLabel : '',
         summaryType: summary.summaryType === 'prefecture' ? 'prefecture' : 'municipality',
         facilityCount: Number(summary.facilityCount ?? 0),
+        clusterRadiusScale: Number(summary.clusterRadiusScale ?? 1),
+        sumLng,
+        sumLat,
         minLng,
         minLat,
         maxLng,
@@ -633,7 +612,7 @@
         routeGeoJSON = route.geometry;
         routeInfo = {
           distance: route.distance,
-          googleMapsUrl: buildGoogleMapsDirectionsUrl(facility.geometry.coordinates),
+          duration: route.duration,
         };
 
         if (map && routeGeoJSON) {
@@ -748,16 +727,21 @@
   {@const { city, name, address, categories, hours, notes, collectionEntries = [] } = f.properties}
   <div class="popup-scroll flex flex-col">
     <div class="px-5 pt-5">
-      <div class="mb-2 flex items-start gap-3">
-        <h3 class="text-xl font-bold leading-snug text-gray-900">{name}</h3>
+      <div class="mb-2 flex items-start justify-between gap-3">
+        <h3 class="pr-2 text-xl font-bold leading-snug text-gray-900">{name}</h3>
+        <button
+          onclick={() => (selectedFacilityId = null)}
+          class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-black/5 text-xl text-gray-500 transition-colors hover:bg-black/10 hover:text-gray-800"
+          aria-label="閉じる"
+        >✕</button>
       </div>
 
       <div class="flex flex-wrap gap-2">
         {#each categories as cat}
           <span
             class="rounded-full px-2.5 py-1 text-sm font-bold text-white shadow-sm"
-            style:background-color={CATEGORY_COLOR[cat]}
-          >{CATEGORY_LABEL[cat]}</span>
+            style:background-color={getCategoryColor(cat)}
+          >{getCategoryLabel(cat)}</span>
         {/each}
       </div>
     </div>
@@ -788,13 +772,13 @@
         {/if}
       {:else}
         {#each categories as cat}
-          {@const details = getCategoryDetails(cat)}
+          {@const details = categoryDetails[cat] ?? {}}
           {@const categoryEntries = collectionEntries.filter((entry) => entry.category_id === cat)}
           {#if Object.keys(details).length > 0 || categoryEntries.length > 0}
             {@const sourceUrl = categoryEntries[0]?.source_url ?? getCategorySourceUrl(city, cat)}
             <div class="mb-4 last:mb-0">
               <div class="mb-1.5 flex items-center gap-2">
-                <p class="text-base font-bold" style:color={CATEGORY_COLOR[cat]}>{CATEGORY_LABEL[cat]}</p>
+                <p class="text-base font-bold" style:color={getCategoryColor(cat)}>{getCategoryLabel(cat)}</p>
                 {#if sourceUrl}
                   <a
                     href={sourceUrl}
@@ -892,7 +876,6 @@
   bind:areaScope
   {areas}
   bind:selectedCategories 
-  {allCategories} 
   onSelectFacility={handleSelectFacility}
   onMenuClick={() => (sidebarOpen = true)}
 />
@@ -932,6 +915,9 @@
           <p class="text-sm font-medium text-gray-800">
             距離: <span class="font-black text-lg text-blue-600">{(routeInfo.distance / 1000).toFixed(1)}</span> <span class="text-gray-500">km</span>
           </p>
+          <p class="text-sm font-medium text-gray-800">
+            所要時間: <span class="font-black text-lg text-blue-600">{Math.round(routeInfo.duration / 60)}</span> <span class="text-gray-500">分</span>
+          </p>
         </div>
       </div>
       <button
@@ -941,15 +927,6 @@
       >
         ✕
       </button>
-      <a
-        href={routeInfo.googleMapsUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex h-10 flex-shrink-0 items-center justify-center gap-2 rounded-xl bg-gray-900 px-4 text-sm font-bold text-white shadow-sm transition-colors hover:bg-gray-800"
-      >
-        <ExternalLink size={16} />
-        Googleマップ
-      </a>
     </div>
   {/if}
 
@@ -964,19 +941,17 @@
     <!-- MapLibre UI Controls -->
     <AttributionControl position="bottom-right" />
     <NavigationControl position="bottom-right" />
-    {#if canUseGeolocation}
-      <GeolocateControl
-        bind:control={geolocateControl}
-        position="bottom-right"
-        trackUserLocation={false}
-        showAccuracyCircle={true}
-        showUserLocation={true}
-        positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
-        fitBoundsOptions={isMobile ? { padding: { top: 100, bottom: 100, left: 20, right: 20 }, maxZoom: 14 } : { padding: 80, maxZoom: 14 }}
-        onerror={handleGeolocateError}
-        autoTrigger={true}
-      />
-    {/if}
+    <GeolocateControl
+      bind:control={geolocateControl}
+      position="bottom-right"
+      trackUserLocation={false}
+      showAccuracyCircle={true}
+      showUserLocation={true}
+      positionOptions={{ enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }}
+      fitBoundsOptions={isMobile ? { padding: { top: 100, bottom: 100, left: 20, right: 20 }, maxZoom: 14 } : { padding: 80, maxZoom: 14 }}
+      onerror={handleGeolocateError}
+      autoTrigger={true}
+    />
     <FullScreenControl position="bottom-right" />
 
 	    {#if routeGeoJSON}
@@ -1076,27 +1051,25 @@
         />
       </GeoJSONSource>
 
-      {#if markerIconsReady}
-        <GeoJSONSource
-          id="facilities"
-          data={markerSourceData}
-        >
-          <SymbolLayer
-            id="facility-markers"
-            minzoom={INDIVIDUAL_MARKER_MIN_ZOOM}
-            layout={{
-              'icon-image': ['get', 'iconKey'],
-              'icon-size': MARKER_ICON_SIZE,
-              'icon-anchor': 'bottom',
-              'icon-allow-overlap': true,
-              'icon-ignore-placement': true
-            }}
-            onclick={handleFacilityLayerClick}
-            onmouseenter={handleLayerMouseEnter}
-            onmouseleave={handleLayerMouseLeave}
-          />
-        </GeoJSONSource>
-      {/if}
+      <GeoJSONSource
+        id="facilities"
+        data={markerSourceData}
+      >
+        <SymbolLayer
+          id="facility-markers"
+          minzoom={INDIVIDUAL_MARKER_MIN_ZOOM}
+          layout={{
+            'icon-image': ['get', 'iconKey'],
+            'icon-size': MARKER_ICON_SIZE,
+            'icon-anchor': 'bottom',
+            'icon-allow-overlap': true,
+            'icon-ignore-placement': true
+          }}
+          onclick={handleFacilityLayerClick}
+          onmouseenter={handleLayerMouseEnter}
+          onmouseleave={handleLayerMouseLeave}
+        />
+      </GeoJSONSource>
 
 	  </MapLibre>
 
@@ -1124,16 +1097,17 @@
 	        class="bottom-sheet"
           class:bottom-sheet--dragging={isDragging}
 	        transition:fly={{ y: 600, duration: 360, opacity: 1 }}
-          style="height: {sheetHeightVh}vh; touch-action: none;"
-          role="dialog"
-          aria-label="施設詳細"
+          style="height: {sheetHeightVh}vh"
+        >
+        <div
+          class="bottom-sheet__handle"
+          role="button"
+          tabindex="-1"
+          aria-label="ドラッグで高さ調整"
           onpointerdown={handleSheetPointerDown}
           onpointermove={handleSheetPointerMove}
           onpointerup={handleSheetPointerUp}
           onpointercancel={handleSheetPointerUp}
-        >
-        <div
-          class="bottom-sheet__handle"
 	        >
 	          <div class="bottom-sheet__handle-bar"></div>
 	        </div>
@@ -1272,7 +1246,13 @@
     z-index: 1;
   }
   .detail-panel__collapse:hover { color: #0b1116; background: #f7f8fa; }
-
+  /* Hide the snippet's inline ✕ inside the docked panel (use edge handle instead) */
+  .detail-panel :global(.popup-scroll button[aria-label="閉じる"]) {
+    display: none;
+  }
+  .detail-panel :global(.popup-scroll > .px-5.pt-5 > .mb-2) {
+    padding-right: 0;
+  }
   .popup-scroll {
     flex: 1;
     min-height: 0;
@@ -1281,7 +1261,7 @@
   /* Hero at top of detail panel: Mapillary photo if available, else mini-map */
   .detail-panel__hero {
     position: relative;
-    height: 148px;
+    height: 180px;
     flex-shrink: 0;
     background: #e9e6df;
     overflow: hidden;
@@ -1502,9 +1482,10 @@
     display: flex;
     justify-content: center;
     padding: 8px 0 0;
-    pointer-events: none;
+    touch-action: none;
+    cursor: grab;
   }
-
+  .bottom-sheet__handle:active { cursor: grabbing; }
   .bottom-sheet__handle-bar {
     width: 44px;
     height: 5px;

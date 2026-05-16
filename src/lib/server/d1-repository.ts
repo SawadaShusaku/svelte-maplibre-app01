@@ -45,21 +45,6 @@ type CollectionEntryRow = PublicCollectionEntry & {
 	data_source_url: string | null;
 };
 
-const CATEGORY_ORDER = [
-	'rechargeable-battery',
-	'e-bike-rechargeable-battery',
-	'dry-battery',
-	'button-battery',
-	'small-appliance',
-	'fluorescent',
-	'ink-cartridge',
-	'cooking-oil',
-	'used-clothing',
-	'paper-pack',
-	'styrofoam',
-	'heated-tobacco-device'
-];
-
 function placeholders(values: string[]): string {
 	return values.map(() => '?').join(',');
 }
@@ -141,15 +126,6 @@ function attachCategories(rows: PlaceRow[], categoryRows: PlaceCategoryRow[]): F
 	});
 }
 
-function sortCategories(categories: Category[]): Category[] {
-	const order = new Map(CATEGORY_ORDER.map((id, index) => [id, index]));
-	return [...categories].sort((a, b) => {
-		const aOrder = order.get(a.id) ?? 999;
-		const bOrder = order.get(b.id) ?? 999;
-		return aOrder - bOrder || a.label.localeCompare(b.label, 'ja');
-	});
-}
-
 export class D1Repository {
 	constructor(private readonly db: D1Database) {}
 
@@ -164,7 +140,7 @@ export class D1Repository {
 		const result = await this.db
 			.prepare('SELECT id, label, color, icon FROM categories ORDER BY sort_order, id')
 			.all<Category>();
-		return sortCategories(result.results ?? []);
+		return result.results ?? [];
 	}
 
 	async getAvailableCategories(wardIds: string[]): Promise<Category[]> {
@@ -181,11 +157,12 @@ export class D1Repository {
 				WHERE p.is_active = 1
 				AND pce.is_active = 1
 				AND ${areaFilter}
+				ORDER BY c.sort_order, c.id
 			`)
 			.bind(...params)
 			.all<Category>();
 
-		return sortCategories(result.results ?? []);
+		return result.results ?? [];
 	}
 
 	async getCategoryDetails(categoryId: string): Promise<Record<string, string>> {
@@ -199,6 +176,19 @@ export class D1Repository {
 			details[row.field] = row.content;
 		}
 		return details;
+	}
+
+	async getAllCategoryDetails(): Promise<Record<string, Record<string, string>>> {
+		const result = await this.db
+			.prepare('SELECT category_id, field, content FROM category_details')
+			.all<CategoryDetailRow & { category_id: string }>();
+
+		const detailsByCategory: Record<string, Record<string, string>> = {};
+		for (const row of result.results ?? []) {
+			detailsByCategory[row.category_id] ??= {};
+			detailsByCategory[row.category_id][row.field] = row.content;
+		}
+		return detailsByCategory;
 	}
 
 	async getCollectors(): Promise<Collector[]> {
