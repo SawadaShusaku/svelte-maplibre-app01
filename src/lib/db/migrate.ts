@@ -118,9 +118,13 @@ async function migrate() {
 	
 	// Drop existing tables if they exist (for clean migration)
 	db.exec(`
+		DROP TABLE IF EXISTS place_collection_entries;
+		DROP TABLE IF EXISTS places;
+		DROP TABLE IF EXISTS data_sources;
 		DROP TABLE IF EXISTS facility_categories;
 		DROP TABLE IF EXISTS facilities;
 		DROP TABLE IF EXISTS ward_categories;
+		DROP TABLE IF EXISTS areas;
 		DROP TABLE IF EXISTS collectors;
 		DROP TABLE IF EXISTS wards;
 		DROP TABLE IF EXISTS category_details;
@@ -171,9 +175,9 @@ async function migrate() {
 	}
 	console.log(`Inserted ${WARDS.length} wards.`);
 	
-	// Process GeoJSON files
+	// Process legacy GeoJSON files when present.
 	const dataDir = path.join(projectRoot, 'src', 'lib', 'data');
-	const prefectures = fs.readdirSync(dataDir);
+	const prefectures = fs.existsSync(dataDir) ? fs.readdirSync(dataDir) : [];
 	
 	const insertFacility = db.prepare(
 		'INSERT INTO facilities (id, ward_id, name, address, latitude, longitude, url, official_url, category_urls, collector_id, hours, notes, image_url, image_alt, image_credit, image_source_url, mapillary_image_id) ' +

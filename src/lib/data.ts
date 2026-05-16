@@ -106,6 +106,10 @@ function appendListParam(params: URLSearchParams, name: string, values: string[]
 	}
 }
 
+function getCategorySortOrder(category: Category): number {
+	return typeof category.sort_order === 'number' ? category.sort_order : 999;
+}
+
 function toGeoFeature(f: PublicFacilityRecord): GeoFeature {
 	return {
 		type: 'Feature' as const,
@@ -242,7 +246,7 @@ export async function getAvailableCategories(
 				map.set(cat.id, cat);
 			}
 		}
-		return Array.from(map.values()).sort((a, b) => a.sort_order - b.sort_order);
+		return Array.from(map.values()).sort((a, b) => getCategorySortOrder(a) - getCategorySortOrder(b));
 	}
 
 	const params = new URLSearchParams();

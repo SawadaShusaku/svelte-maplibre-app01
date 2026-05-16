@@ -5,6 +5,7 @@ export interface Category {
 	label: string;
 	color: string;
 	icon: string;
+	sort_order?: number;
 }
 
 export interface CategoryDetail {

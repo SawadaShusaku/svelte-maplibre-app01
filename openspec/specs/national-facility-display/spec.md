@@ -31,7 +31,7 @@ The app SHALL distinguish nationwide display from explicit area filtering.
 - **AND** the app does not treat the empty selected list as nationwide scope
 
 ### Requirement: Zoom-level administrative aggregation
-The map SHALL change display mode by zoom level from individual facilities to municipality or ward summaries and then prefecture summaries.
+The map SHALL change display mode by zoom level from individual facilities to municipality or ward administrative polygon summaries and then prefecture administrative polygon summaries.
 
 #### Scenario: High zoom individual facilities
 - **WHEN** the map is zoomed into a local area
@@ -41,16 +41,19 @@ The map SHALL change display mode by zoom level from individual facilities to mu
 #### Scenario: Mid zoom municipality summaries
 - **WHEN** the map is at an intermediate regional zoom
 - **THEN** facilities are summarized by municipality or ward
+- **AND** those summaries are rendered as administrative area polygons with count labels
 - **AND** Tokyo facilities summarize to ward-level groups before individual markers are shown
 
 #### Scenario: Low zoom prefecture summaries
 - **WHEN** the map is zoomed out to a national or multi-prefecture view
 - **THEN** facilities are summarized by prefecture
+- **AND** those summaries are rendered as prefecture polygons with count labels
 - **AND** Tokyo ward summaries are further summarized into a Tokyo prefecture group
 
 #### Scenario: Aggregates respect filters
 - **WHEN** category filters or area filters are active
 - **THEN** prefecture and municipality summary counts reflect only the currently matching facilities
+- **AND** the rendered administrative polygons reflect the same filtered counts
 
 ### Requirement: National source metadata fallback
 The app SHALL not require local registry source metadata for a facility to be displayed.
@@ -59,4 +62,3 @@ The app SHALL not require local registry source metadata for a facility to be di
 - **WHEN** a D1 facility belongs to an area that does not exist in `WARD_REGISTRY`
 - **THEN** the facility remains visible on the map and list
 - **AND** source URL controls are omitted or disabled only for the missing metadata
-

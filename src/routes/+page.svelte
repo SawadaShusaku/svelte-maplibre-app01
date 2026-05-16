@@ -23,7 +23,7 @@
     AttributionControl,
     Image,
     GeoJSONSource,
-    CircleLayer,
+    FillLayer,
     LineLayer,
     SymbolLayer
   } from 'svelte-maplibre-gl';
@@ -41,6 +41,11 @@
   import { getAreas, getCategories, getFacilities, type AreaScope, type CategoryDetailsById, type GeoFeature, type PublicArea } from '$lib/data.js';
   import type { Category } from '$lib/db/types.js';
   import { buildPageTitle, SITE_NAME_JA, SITE_NAME_KICKER, SITE_URL } from '$lib/site.js';
+  import {
+    buildAdministrativeSummaryFeatureCollections,
+    loadAdminBoundaryCollection,
+    type AdminBoundaryCollection
+  } from '$lib/map/admin-boundaries.js';
   import {
     buildFacilityIndex,
     buildMarkerFeatureCollection,
@@ -83,6 +88,10 @@
   let markerStyle = $state<MarkerStyle>(getMarkerStyle());
   let solidColor = $state<string>(getSolidColor());
   let markerImages = $state<Array<{ id: string; image: ImageData }>>([]);
+  let prefectureBoundaryCollection = $state<AdminBoundaryCollection | null>(null);
+  let municipalityBoundaryCollection = $state<AdminBoundaryCollection | null>(null);
+  let prefectureBoundariesLoading = false;
+  let municipalityBoundariesLoading = false;
   
   // 検索管理
   let searchQuery = $state("");
@@ -112,6 +121,56 @@
   const markerSourceData = $derived(buildMarkerFeatureCollection(facilities, markerStyle, solidColor));
   const summaryLevel = $derived(currentZoom < PREFECTURE_SUMMARY_MAX_ZOOM ? 'prefecture' : 'municipality');
   const wardSummarySourceData = $derived(buildWardSummaryFeatureCollection(facilities, summaryLevel));
+  const activeBoundaryCollection = $derived(
+    summaryLevel === 'prefecture' ? prefectureBoundaryCollection : municipalityBoundaryCollection
+  );
+  const administrativeSummarySourceData = $derived(
+    buildAdministrativeSummaryFeatureCollections(activeBoundaryCollection, wardSummarySourceData, summaryLevel)
+  );
+  const administrativeSummaryFillColor = $derived<ExpressionSpecification>(
+    summaryLevel === 'municipality'
+      ? [
+          'interpolate',
+          ['linear'],
+          ['get', 'facilityCount'],
+          0,
+          '#f0fdf4',
+          1,
+          '#22c55e',
+          10,
+          '#facc15',
+          30,
+          '#f97316',
+          80,
+          '#dc2626'
+        ]
+      : [
+          'interpolate',
+          ['linear'],
+          ['get', 'facilityCount'],
+          0,
+          '#dcfce7',
+          1,
+          '#86efac',
+          10,
+          '#22c55e',
+          50,
+          '#15803d',
+          100,
+          '#065f46'
+        ]
+  );
+  const administrativeSummaryFillOpacity = $derived<ExpressionSpecification>([
+    'interpolate',
+    ['linear'],
+    ['zoom'],
+    CLUSTER_PREFECTURE_ZOOM,
+    summaryLevel === 'prefecture' ? 0.52 : 0.42,
+    CLUSTER_WARD_AREA_ZOOM,
+    summaryLevel === 'prefecture' ? 0.62 : 0.52,
+    WARD_SUMMARY_MAX_ZOOM,
+    summaryLevel === 'prefecture' ? 0.7 : 0.62
+  ]);
   type ClusterZoomValues = {
     wideArea: number;
     wardArea: number;
@@ -497,6 +556,45 @@
   });
 
   $effect(() => {
+    if (!browser) return;
+
+    if (summaryLevel === 'prefecture') {
+      if (prefectureBoundaryCollection || prefectureBoundariesLoading) return;
+      prefectureBoundariesLoading = true;
+      loadAdminBoundaryCollection('prefecture')
+        .then(({ collection, stats }) => {
+          prefectureBoundaryCollection = collection;
+          if (stats.missingGeometry > 0) {
+            console.info(`Skipped ${stats.missingGeometry} prefecture boundary features without geometry.`);
+          }
+        })
+        .catch((err) => {
+          console.error('Failed to load prefecture boundaries:', err);
+        })
+        .finally(() => {
+          prefectureBoundariesLoading = false;
+        });
+      return;
+    }
+
+    if (municipalityBoundaryCollection || municipalityBoundariesLoading) return;
+    municipalityBoundariesLoading = true;
+    loadAdminBoundaryCollection('municipality')
+      .then(({ collection, stats }) => {
+        municipalityBoundaryCollection = collection;
+        if (stats.missingGeometry > 0) {
+          console.info(`Skipped ${stats.missingGeometry} municipality boundary features without geometry.`);
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to load municipality boundaries:', err);
+      })
+      .finally(() => {
+        municipalityBoundariesLoading = false;
+      });
+  });
+
+  $effect(() => {
     if (!browser || !map) return;
 
     const currentMap = map;
@@ -559,17 +657,20 @@
     const maxLat = Number(summary.maxLat);
     const sumLng = Number(summary.sumLng);
     const sumLat = Number(summary.sumLat);
+    const facilityCount = Number(summary.facilityCount ?? 0);
     const city = typeof summary.city === 'string' ? summary.city : null;
 
+    if (facilityCount <= 0) return;
     if ([minLng, minLat, maxLng, maxLat, sumLng, sumLat].some(Number.isNaN)) return;
 
     fitToWardSummary(
       map,
       {
+        prefecture: typeof summary.prefecture === 'string' ? summary.prefecture : '',
         city: city ?? '',
         cityLabel: typeof summary.cityLabel === 'string' ? summary.cityLabel : '',
         summaryType: summary.summaryType === 'prefecture' ? 'prefecture' : 'municipality',
-        facilityCount: Number(summary.facilityCount ?? 0),
+        facilityCount,
         clusterRadiusScale: Number(summary.clusterRadiusScale ?? 1),
         sumLng,
         sumLat,
@@ -1013,38 +1114,49 @@
       {/each}
 
       <GeoJSONSource
-        id="ward-summaries"
-        data={wardSummarySourceData}
+        id="administrative-summary-polygons"
+        data={administrativeSummarySourceData.polygons}
       >
-        <CircleLayer
-          id="ward-summary-halos"
+        <FillLayer
+          id="administrative-summary-fills"
           maxzoom={WARD_SUMMARY_MAX_ZOOM}
           paint={{
-            'circle-color': CLUSTER_HALO_COLOR,
-            'circle-radius': CLUSTER_HALO_RADIUS_BY_ZOOM,
-            'circle-opacity': CLUSTER_HALO_OPACITY,
-            'circle-stroke-color': CLUSTER_COLOR,
-            'circle-stroke-width': CLUSTER_HALO_STROKE_WIDTH,
-            'circle-stroke-opacity': CLUSTER_HALO_OPACITY
+            'fill-color': administrativeSummaryFillColor,
+            'fill-opacity': administrativeSummaryFillOpacity,
+            'fill-outline-color': CLUSTER_COLOR
           }}
           onclick={handleWardSummaryClick}
           onmouseenter={handleLayerMouseEnter}
           onmouseleave={handleLayerMouseLeave}
         />
-        <CircleLayer
-          id="ward-summary-circles"
+        <LineLayer
+          id="administrative-summary-outlines"
           maxzoom={WARD_SUMMARY_MAX_ZOOM}
           paint={{
-            'circle-color': CLUSTER_COLOR,
-            'circle-radius': CLUSTER_RADIUS_BY_ZOOM,
-            'circle-opacity': CLUSTER_CIRCLE_OPACITY,
-            'circle-stroke-color': CLUSTER_CIRCLE_STROKE_COLOR,
-            'circle-stroke-width': CLUSTER_CIRCLE_STROKE_WIDTH
+            'line-color': CLUSTER_COLOR,
+            'line-width': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              CLUSTER_PREFECTURE_ZOOM,
+              0.7,
+              CLUSTER_WARD_AREA_ZOOM,
+              1.2,
+              WARD_SUMMARY_MAX_ZOOM,
+              1.8
+            ],
+            'line-opacity': 0.86
           }}
           onclick={handleWardSummaryClick}
           onmouseenter={handleLayerMouseEnter}
           onmouseleave={handleLayerMouseLeave}
         />
+      </GeoJSONSource>
+
+      <GeoJSONSource
+        id="administrative-summary-labels"
+        data={administrativeSummarySourceData.labels}
+      >
         <SymbolLayer
           id="ward-summary-labels"
           maxzoom={WARD_SUMMARY_MAX_ZOOM}

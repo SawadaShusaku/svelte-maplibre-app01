@@ -37,6 +37,7 @@ export interface MarkerImageDescriptor {
 }
 
 export interface WardSummaryFeatureProperties {
+	prefecture: string;
 	city: string;
 	cityLabel: string;
 	summaryType: 'prefecture' | 'municipality';
@@ -180,6 +181,7 @@ function buildSummaryMap(facilities: GeoFeature[], level: SummaryLevel): Map<str
 		}
 
 		summaries.set(key, {
+			prefecture,
 			city: key,
 			cityLabel: label,
 			summaryType: level,
