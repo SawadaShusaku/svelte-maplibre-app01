@@ -8,6 +8,10 @@
 
 	const gtagId = env.PUBLIC_GTAG_ID?.trim() ?? '';
 	let { children } = $props();
+
+	onMount(() => {
+		applyFontChoices();
+	});
 </script>
 
 <svelte:head>
@@ -18,7 +22,7 @@
 	<meta property="og:description" content="日本全国のリサイクル拠点を探すマップ。東京23区の回収施設・充電器設置場所を地図で確認できます。" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={SITE_URL} />
-	<meta property="og:image" content={`${SITE_URL}/ogp-default.svg`} />
+	<meta property="og:image" content={`${SITE_URL}/ogp-default.png`} />
 	<meta name="twitter:card" content="summary_large_image" />
 
 	{#if gtagId}

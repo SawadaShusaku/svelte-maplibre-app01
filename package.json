@@ -60,6 +60,7 @@
 	},
 	"dependencies": {
 		"@arenarium/maps-integration-maplibre": "^1.0.24",
+		"canvas": "^3.2.3",
 		"lucide-svelte": "^1.0.1",
 		"maplibre-gl": "^5.24.0",
 		"sql.js": "^1.14.1"
