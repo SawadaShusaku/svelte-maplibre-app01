@@ -138,7 +138,7 @@ export class D1Repository {
 
 	async getCategories(): Promise<Category[]> {
 		const result = await this.db
-			.prepare('SELECT id, label, color, icon FROM categories ORDER BY sort_order, id')
+			.prepare('SELECT id, label, color, icon, sort_order FROM categories ORDER BY sort_order, id')
 			.all<Category>();
 		return result.results ?? [];
 	}
@@ -150,7 +150,7 @@ export class D1Repository {
 
 		const result = await this.db
 			.prepare(`
-				SELECT DISTINCT c.id, c.label, c.color, c.icon
+				SELECT DISTINCT c.id, c.label, c.color, c.icon, c.sort_order
 				FROM categories c
 				JOIN place_collection_entries pce ON c.id = pce.category_id
 				JOIN places p ON p.id = pce.place_id
