@@ -1,0 +1,9 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blob-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C1E1C1" />
+      <stop offset="100%" stop-color="#AEE1FF" />
+    </linearGradient>
+  </defs>
+  <path d="M 164.8 55.4 C 181.8 74.3 194.2 97.4 186 116.8 C 177.7 136.1 148.9 151.7 122.8 165.1 C 96.7 178.6 73.4 190 49.6 182 C 25.8 174 1.5 146.6 0.1 118.8 C -1.4 91 22.1 62.7 44.3 43.1 C 66.5 23.5 87.5 12.6 109.8 12.9 C 132.2 13.2 147.8 36.5 164.8 55.4 Z" fill="url(#blob-grad2)" />
+</svg>
