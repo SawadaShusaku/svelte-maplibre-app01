@@ -1,4 +1,4 @@
-name = "svelte-maplibre-app01"
+name = "recycle-map-jp-svelte"
 main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2026-04-29"
 
@@ -20,7 +20,7 @@ database_name = "recycling-facilities-prod"
 database_id = "36efb56c-0cc8-45a3-a1f3-6eb81777adbf"
 
 [env.local]
-name = "svelte-maplibre-app01-local"
+name = "recycle-map-jp-svelte-local"
 
 [[env.local.d1_databases]]
 binding = "RECYCLING_DB"
@@ -28,7 +28,7 @@ database_name = "recycling-facilities-local"
 database_id = "00000000-0000-0000-0000-000000000001"
 
 [env.preview]
-name = "svelte-maplibre-app01-preview"
+name = "recycle-map-jp-svelte-preview"
 
 [[env.preview.d1_databases]]
 binding = "RECYCLING_DB"
